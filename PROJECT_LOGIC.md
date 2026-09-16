@@ -136,7 +136,10 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 - 涉及「光环/增益」的条件，值填的是**技能 ID**（例如条件类型 15 + 值 `703` = 目标身上没有 Garrote）。
 - `AssistedCombatStep.OrderIndex` 与 `AssistedCombatRule.OrderIndex` 是游戏内的排序字段，
   但本管线**不按它排序**（见第 9 节）。
-- 技能名缺失（本期 3 个 ID）渲染为 `'Unknown Spell (<id>)'` 占位，不中断运行。
+- **由 spellID 解析出的名称一律带 `[id:<spellID>]` 后缀**（步骤标题、`{spell}` 占位符、
+  Spell 型条件参数），把输出文本与 DB2 的技能 ID 对应起来；数值型参数（层数、距离、
+  百分比、毫秒）不带标签。
+- 技能名缺失（本期 3 个 ID）渲染为 `'Unknown Spell[id:<id>]'` 占位，不中断运行。
 
 ---
 
@@ -256,7 +259,8 @@ classes = {
 | 名称 | 说明 |
 | --- | --- |
 | `SpellIndex.get_name(id)` | 返回技能名；未收录返回 `None` |
-| `SpellIndex.display_name(id)` | 返回技能名；未收录返回 `Unknown Spell (ID)` |
+| `SpellIndex.display_name(id)` | 返回**不带标签**的显示名；未收录返回 `Unknown Spell` |
+| `SpellIndex.labelled(id)` | 返回 `<名称>[id:<spellID>]`；未收录返回 `Unknown Spell[id:<spellID>]`（渲染统一入口） |
 | `collect_required_spell_ids(steps, condition_map)` | 步骤技能 + ValueN 以 spell 开头的规则的参数，丢弃 0 |
 | `read_spell_index(path, required_ids)` | 单次流式扫描，只保留所需 ID（命中完即停） |
 
@@ -270,11 +274,13 @@ classes = {
 | --- | --- |
 | `load_condition_map(path)` | 读取映射表（参数同 db2） |
 | `condition_props(condition_map, type, rule_id)` | 取映射行；缺行时抛带类型与规则 ID 的 `ValueError` |
-| `render_rule(condition_map, rule, spell_name, spell_index)` | 渲染一条规则为一行（含 4 空格缩进） |
+| `render_rule(condition_map, rule, spell_id, spell_index)` | 渲染一条规则为一行（含 4 空格缩进）；`spell_id` 是该步的技能 ID |
 | `render_rotation(condition_map, steps, spell_index)` | 渲染整段文本（不含首行专精名） |
 
 渲染逻辑与旧版一致：`spell` = 当前步骤技能名（带单引号），`arg1..arg3` = `ConditionValue1..3`，
 Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + template + '"')` 得到最终行。
+名称一律经 `SpellIndex.labelled()` 取值，因此步骤标题与条件行里的名称、ID 标签必然一致
+（标题行用同一个 `spell_id`）。
 
 **维护映射表时的限制（只针对模板，不针对技能名）**：
 
@@ -282,7 +288,7 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 - 不能出现反斜杠 `\`（会被当成转义字符）；
 - `{` `}` 只允许是设计好的占位符 `{spell}` / `{arg1}` / `{arg2}` / `{arg3}`，不能有其它花括号；
 - 技能名与条件值是作为**变量值**插入渲染结果的，不受上述限制：含撇号等任意字符都安全
-  （实例：`output/monk/windwalker.txt` 里的 `'The Emperor's Capacitor'`，以及旧产物里
+  （实例：`output/monk/windwalker.txt` 里的 `'The Emperor's Capacitor[id:393039]'`，以及旧产物里
   `'Word of Mass Recall (OLD)'` 这类带括号的名字）。
 
 维护映射表后可以这样自检（仓库根目录执行，`chr(34)`/`chr(92)` 避免引号嵌套）：
@@ -309,12 +315,12 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 
 ## 8. 输出格式细节
 
-固定结构（与旧版 `out/*.txt` 一致）：
+固定结构（行结构与旧版 `out/*.txt` 一致；本期起技能名带 `[id:<spellID>]` 标签，文本不再与旧产物逐字节一致）：
 
 ```
-<专精名>                 ← 首行：输出层显式写入
-<N>: Spell: <技能名>      ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
-    <条件1>               ← 4 空格缩进，模板渲染结果
+<专精名>                              ← 首行：输出层显式写入
+<N>: Spell: <技能名>[id:<spellID>]     ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
+    <条件1>                            ← 4 空格缩进，模板渲染结果
     <条件2>
 ```
 
@@ -322,8 +328,13 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 
 | 占位符 | 取值来源 | 特例 |
 | --- | --- | --- |
-| `{spell}` | 当前步骤的技能名 | 用于「天赋已点 / 技能不可用 / 射程内 / 剩余充能」等以本技能为主语的条件 |
-| `{arg1}` `{arg2}` `{arg3}` | `ConditionValue1..3` | 映射表对应 `ValueN` 以 `spell` 开头时，解析成带单引号的技能名 |
+| `{spell}` | 当前步骤的技能名 | 用于「天赋已点 / 技能不可用 / 射程内 / 剩余充能」等以本技能为主语的条件；带步骤 `SpellID` 的标签 |
+| `{arg1}` `{arg2}` `{arg3}` | `ConditionValue1..3` | 映射表对应 `ValueN` 以 `spell` 开头时，解析成带单引号、带自身 ID 标签的技能名 |
+
+标签由 `SpellIndex.labelled()` 统一生成：格式固定为 `<名称>[id:<十进制 spellID>]`（无空格、不补零），
+步骤标题行不加引号，条件行仍用单引号包裹。SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
+只有由 spellID 解析出的名称会带标签，数值型参数（层数 / 距离 / 百分比 / 毫秒）保持纯数字。
+本期数据共 3431 处标签：693 个步骤标题 + 2738 条条件行。
 
 ### 8.1 数据规模与覆盖（12.1.0.69814 实测）
 
@@ -335,9 +346,13 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 | 规则中出现的条件类型 | 55 种（映射表 0–70 共 71 行；未使用的 16 种，其中 15 种标 `Active=N`） |
 | 需要解析名字的技能 ID | 551 个（步骤技能 + Spell 型规则参数去重、去 0） |
 | SpellName 命中 / 缺失 | 548 / 3（缺失：194310、389387、470058） |
+| 输出里的 `[id:` 标签 | 3431 处（693 个步骤标题 + 2738 条条件行；其中 3 处为 `Unknown Spell[id:…]`） |
 | 输出文件 | 40 个 / 13 个职业目录 |
 
 ### 8.2 与旧版 11.2 产物的比对结论（第一期验证）
+
+> 本期（第二期）起技能名追加 `[id:<spellID>]` 标签，产物不再与旧版逐字节一致；
+> 下列结论只针对行结构，仍然成立。
 
 - 文件集合：旧 39 个 → 新 40 个（新增 Demon Hunter / Devourer）；
 - 结构：两者的首行形态、`N: Spell:` 编号连续性、条件行 4 空格缩进都一致，无异常；
@@ -358,7 +373,7 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
    被当作技能 ID 去查名字，旧产物因此出现 `'Spells' charges`（查不到 ID 时甚至查到别的技能名）。
    现改为 `Charge Count`，直接输出数字。12.1 的 10 条类型 63 规则 `ConditionValue1` 全为 2，类型 64 无数据。
 3. **缺失技能名的占位**：`194310 / 389387 / 470058` 在 SpellName 表中不存在（各被 1 条规则引用），
-   渲染为 `'Unknown Spell (<id>)'`，不再中途失败。
+   渲染为 `'Unknown Spell[id:<id>]'`（ID 由统一标签承载），不再中途失败。
 4. **未知条件类型报错**：映射表缺行时不再让 `iloc[0]` 抛 `IndexError`，
    而是抛 `ValueError`（带 `ConditionType` 与规则 ID），便于定位要补的映射行。
 

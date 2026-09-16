@@ -1,247 +1,247 @@
 Assassination
-0: Spell: Garrote
-    if target does not have buff/debuff 'Garrote'
-    if talent 'Garrote' is taken
-    if player has resources to cast spell 'Garrote'
-    if spell 'Garrote' is off cooldown
-    if spell 'Garrote' is within allowed range
-1: Spell: Rupture
-    if target does not have buff/debuff 'Rupture'
+0: Spell: Garrote[id:703]
+    if target does not have buff/debuff 'Garrote[id:703]'
+    if talent 'Garrote[id:703]' is taken
+    if player has resources to cast spell 'Garrote[id:703]'
+    if spell 'Garrote[id:703]' is off cooldown
+    if spell 'Garrote[id:703]' is within allowed range
+1: Spell: Rupture[id:1943]
+    if target does not have buff/debuff 'Rupture[id:1943]'
     if player has more than 5 combo points
-    if talent 'Rupture' is taken
-    if player has resources to cast spell 'Rupture'
-    if spell 'Rupture' is off cooldown
-    if spell 'Rupture' is within allowed range
-    if player does not have buff/debuff 'Darkest Night'
-2: Spell: Kingsbane
-    if talent 'Kingsbane' is taken
-    if player has resources to cast spell 'Kingsbane'
-    if spell 'Kingsbane' is off cooldown
-    if spell 'Kingsbane' is within allowed range
-    if target has buff/debuff 'Garrote'
-    if target has buff/debuff 'Rupture'
-    if player has buff/debuff 'Implacable'
+    if talent 'Rupture[id:1943]' is taken
+    if player has resources to cast spell 'Rupture[id:1943]'
+    if spell 'Rupture[id:1943]' is off cooldown
+    if spell 'Rupture[id:1943]' is within allowed range
+    if player does not have buff/debuff 'Darkest Night[id:457280]'
+2: Spell: Kingsbane[id:385627]
+    if talent 'Kingsbane[id:385627]' is taken
+    if player has resources to cast spell 'Kingsbane[id:385627]'
+    if spell 'Kingsbane[id:385627]' is off cooldown
+    if spell 'Kingsbane[id:385627]' is within allowed range
+    if target has buff/debuff 'Garrote[id:703]'
+    if target has buff/debuff 'Rupture[id:1943]'
+    if player has buff/debuff 'Implacable[id:1265387]'
     if player has less than 1 combo points
-3: Spell: Eviscerate
+3: Spell: Eviscerate[id:196819]
     if player has more than 5 combo points
-    if talent 'Eviscerate' is taken
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if spell 'Eviscerate' is within allowed range
-    if player does not have buff/debuff 'Darkest Night'
-4: Spell: Sinister Strike
-    if talent 'Sinister Strike' is taken
-    if player has resources to cast spell 'Sinister Strike'
-    if spell 'Sinister Strike' is off cooldown
-    if spell 'Sinister Strike' is within allowed range
-5: Spell: Ambush
-    if player has buff/debuff 'Blindside'
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if spell 'Ambush' is within allowed range
-6: Spell: Fan of Knives
+    if talent 'Eviscerate[id:196819]' is taken
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player does not have buff/debuff 'Darkest Night[id:457280]'
+4: Spell: Sinister Strike[id:1752]
+    if talent 'Sinister Strike[id:1752]' is taken
+    if player has resources to cast spell 'Sinister Strike[id:1752]'
+    if spell 'Sinister Strike[id:1752]' is off cooldown
+    if spell 'Sinister Strike[id:1752]' is within allowed range
+5: Spell: Ambush[id:8676]
+    if player has buff/debuff 'Blindside[id:121153]'
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
+    if spell 'Ambush[id:8676]' is within allowed range
+6: Spell: Fan of Knives[id:51723]
     if there are more than 3 targets within 10 yards of player
-    if talent 'Fan of Knives' is taken
-    if player has resources to cast spell 'Fan of Knives'
-    if spell 'Fan of Knives' is off cooldown
-7: Spell: Poisoned Knife
-    if talent 'Poisoned Knife' is taken
-    if player has resources to cast spell 'Poisoned Knife'
-    if spell 'Poisoned Knife' is off cooldown
-    if spell 'Poisoned Knife' is within allowed range
-    if player does not have buff/debuff 'Stealth'
-    if player does not have buff/debuff 'Vanish'
+    if talent 'Fan of Knives[id:51723]' is taken
+    if player has resources to cast spell 'Fan of Knives[id:51723]'
+    if spell 'Fan of Knives[id:51723]' is off cooldown
+7: Spell: Poisoned Knife[id:185565]
+    if talent 'Poisoned Knife[id:185565]' is taken
+    if player has resources to cast spell 'Poisoned Knife[id:185565]'
+    if spell 'Poisoned Knife[id:185565]' is off cooldown
+    if spell 'Poisoned Knife[id:185565]' is within allowed range
+    if player does not have buff/debuff 'Stealth[id:1784]'
+    if player does not have buff/debuff 'Vanish[id:11327]'
     if player has more than 70 energy
     if target is more than 15 yards away
-8: Spell: Deadly Poison
-    if talent 'Deadly Poison' is taken
-    if player has resources to cast spell 'Deadly Poison'
-    if spell 'Deadly Poison' is off cooldown
-    if player does not have buff/debuff 'Deadly Poison'
-    if player does not have buff/debuff 'Wound Poison'
-    if player does not have buff/debuff 'Dragon-Tempered Blades'
-9: Spell: Sinister Strike
-10: Spell: Eviscerate
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if talent 'Eviscerate' is taken
+8: Spell: Deadly Poison[id:2823]
+    if talent 'Deadly Poison[id:2823]' is taken
+    if player has resources to cast spell 'Deadly Poison[id:2823]'
+    if spell 'Deadly Poison[id:2823]' is off cooldown
+    if player does not have buff/debuff 'Deadly Poison[id:2823]'
+    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player does not have buff/debuff 'Dragon-Tempered Blades[id:381801]'
+9: Spell: Sinister Strike[id:1752]
+10: Spell: Eviscerate[id:196819]
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if talent 'Eviscerate[id:196819]' is taken
     if player has more than 5 combo points
-    if spell 'Eviscerate' is within allowed range
-    if player has buff/debuff 'Darkest Night'
-    if player does not have buff/debuff 'Deeper Stratagem'
-    if player does not have buff/debuff 'Sanguine Stratagem'
-11: Spell: Eviscerate
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if talent 'Eviscerate' is taken
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player has buff/debuff 'Darkest Night[id:457280]'
+    if player does not have buff/debuff 'Deeper Stratagem[id:193531]'
+    if player does not have buff/debuff 'Sanguine Stratagem[id:457512]'
+11: Spell: Eviscerate[id:196819]
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if talent 'Eviscerate[id:196819]' is taken
     if player has more than 6 combo points
-    if spell 'Eviscerate' is within allowed range
-    if player has buff/debuff 'Darkest Night'
-    if player does not have buff/debuff 'Sanguine Stratagem'
-    if player has buff/debuff 'Deeper Stratagem'
-12: Spell: Eviscerate
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if talent 'Eviscerate' is taken
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player has buff/debuff 'Darkest Night[id:457280]'
+    if player does not have buff/debuff 'Sanguine Stratagem[id:457512]'
+    if player has buff/debuff 'Deeper Stratagem[id:193531]'
+12: Spell: Eviscerate[id:196819]
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if talent 'Eviscerate[id:196819]' is taken
     if player has more than 6 combo points
-    if spell 'Eviscerate' is within allowed range
-    if player has buff/debuff 'Darkest Night'
-    if player does not have buff/debuff 'Deeper Stratagem'
-    if player has buff/debuff 'Sanguine Stratagem'
-13: Spell: Eviscerate
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if talent 'Eviscerate' is taken
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player has buff/debuff 'Darkest Night[id:457280]'
+    if player does not have buff/debuff 'Deeper Stratagem[id:193531]'
+    if player has buff/debuff 'Sanguine Stratagem[id:457512]'
+13: Spell: Eviscerate[id:196819]
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if talent 'Eviscerate[id:196819]' is taken
     if player has more than 7 combo points
-    if spell 'Eviscerate' is within allowed range
-    if player has buff/debuff 'Darkest Night'
-    if player has buff/debuff 'Deeper Stratagem'
-    if player has buff/debuff 'Sanguine Stratagem'
-14: Spell: Slice and Dice
-    if player does not have buff/debuff 'Slice and Dice'
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player has buff/debuff 'Darkest Night[id:457280]'
+    if player has buff/debuff 'Deeper Stratagem[id:193531]'
+    if player has buff/debuff 'Sanguine Stratagem[id:457512]'
+14: Spell: Slice and Dice[id:315496]
+    if player does not have buff/debuff 'Slice and Dice[id:315496]'
     if player has more than 5 combo points
-    if talent 'Slice and Dice' is taken
-    if player has resources to cast spell 'Slice and Dice'
-    if spell 'Slice and Dice' is off cooldown
-    if player does not have buff/debuff 'Cut to the Chase'
-15: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
+    if talent 'Slice and Dice[id:315496]' is taken
+    if player has resources to cast spell 'Slice and Dice[id:315496]'
+    if spell 'Slice and Dice[id:315496]' is off cooldown
+    if player does not have buff/debuff 'Cut to the Chase[id:51667]'
+15: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth'
-    if player does not have buff/debuff 'Improved Garrote'
-16: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
+    if player has buff/debuff 'Stealth[id:1784]'
+    if player does not have buff/debuff 'Improved Garrote[id:381632]'
+16: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth'
-    if player does not have buff/debuff 'Improved Garrote'
-17: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
+    if player has buff/debuff 'Stealth[id:115191]'
+    if player does not have buff/debuff 'Improved Garrote[id:381632]'
+17: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Vanish'
-    if player does not have buff/debuff 'Improved Garrote'
-18: Spell: Garrote
-    if talent 'Garrote' is taken
-    if player has resources to cast spell 'Garrote'
-    if spell 'Garrote' is off cooldown
+    if player has buff/debuff 'Vanish[id:11327]'
+    if player does not have buff/debuff 'Improved Garrote[id:381632]'
+18: Spell: Garrote[id:703]
+    if talent 'Garrote[id:703]' is taken
+    if player has resources to cast spell 'Garrote[id:703]'
+    if spell 'Garrote[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth'
-19: Spell: Garrote
-    if talent 'Garrote' is taken
-    if player has resources to cast spell 'Garrote'
-    if spell 'Garrote' is off cooldown
+    if player has buff/debuff 'Stealth[id:1784]'
+19: Spell: Garrote[id:703]
+    if talent 'Garrote[id:703]' is taken
+    if player has resources to cast spell 'Garrote[id:703]'
+    if spell 'Garrote[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth'
-20: Spell: Garrote
-    if talent 'Garrote' is taken
-    if player has resources to cast spell 'Garrote'
-    if spell 'Garrote' is off cooldown
+    if player has buff/debuff 'Stealth[id:115191]'
+20: Spell: Garrote[id:703]
+    if talent 'Garrote[id:703]' is taken
+    if player has resources to cast spell 'Garrote[id:703]'
+    if spell 'Garrote[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Vanish'
-21: Spell: Atrophic Poison
-    if talent 'Atrophic Poison' is taken
-    if player has resources to cast spell 'Atrophic Poison'
-    if spell 'Atrophic Poison' is off cooldown
-    if player does not have buff/debuff 'Atrophic Poison'
-22: Spell: Deadly Poison
-    if talent 'Deadly Poison' is taken
-    if player has resources to cast spell 'Deadly Poison'
-    if spell 'Deadly Poison' is off cooldown
-    if player does not have buff/debuff 'Deadly Poison'
-    if player has buff/debuff 'Dragon-Tempered Blades'
-23: Spell: Amplifying Poison
-    if talent 'Amplifying Poison' is taken
-    if player has resources to cast spell 'Amplifying Poison'
-    if spell 'Amplifying Poison' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison'
-    if player has buff/debuff 'Dragon-Tempered Blades'
-    if player does not have buff/debuff 'Wound Poison'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)'
-24: Spell: Wound Poison
-    if talent 'Wound Poison' is taken
-    if player has resources to cast spell 'Wound Poison'
-    if spell 'Wound Poison' is off cooldown
-    if player does not have buff/debuff 'Wound Poison'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)'
-    if player does not have buff/debuff 'Amplifying Poison'
-    if player has buff/debuff 'Dragon-Tempered Blades'
-25: Spell: Instant Poison
-    if talent 'Instant Poison' is taken
-    if player has resources to cast spell 'Instant Poison'
-    if spell 'Instant Poison' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison'
-    if player has buff/debuff 'Dragon-Tempered Blades'
-    if player does not have buff/debuff 'Wound Poison'
-    if player does not have buff/debuff 'Instant Poison'
-26: Spell: Numbing Poison
-    if talent 'Numbing Poison' is taken
-    if player has resources to cast spell 'Numbing Poison'
-    if spell 'Numbing Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-27: Spell: Crippling Poison
-    if talent 'Crippling Poison' is taken
-    if player has resources to cast spell 'Crippling Poison'
-    if spell 'Crippling Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-    if player does not have buff/debuff 'Atrophic Poison'
-    if player does not have buff/debuff 'Crippling Poison'
-    if player does not have buff/debuff 'Dragon-Tempered Blades'
-28: Spell: Amplifying Poison
-    if talent 'Amplifying Poison' is taken
-    if player has resources to cast spell 'Amplifying Poison'
-    if spell 'Amplifying Poison' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison'
-    if player has buff/debuff 'Dragon-Tempered Blades'
-    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)'
-29: Spell: Crippling Poison
-    if talent 'Crippling Poison' is taken
-    if player has resources to cast spell 'Crippling Poison'
-    if spell 'Crippling Poison' is off cooldown
-    if player has buff/debuff 'Dragon-Tempered Blades'
-    if player does not have buff/debuff 'Crippling Poison'
-30: Spell: Deathmark
-    if talent 'Deathmark' is taken
-    if player has resources to cast spell 'Deathmark'
-    if spell 'Deathmark' is off cooldown
-    if target has buff/debuff 'Garrote'
-    if target has buff/debuff 'Rupture'
+    if player has buff/debuff 'Vanish[id:11327]'
+21: Spell: Atrophic Poison[id:381637]
+    if talent 'Atrophic Poison[id:381637]' is taken
+    if player has resources to cast spell 'Atrophic Poison[id:381637]'
+    if spell 'Atrophic Poison[id:381637]' is off cooldown
+    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
+22: Spell: Deadly Poison[id:2823]
+    if talent 'Deadly Poison[id:2823]' is taken
+    if player has resources to cast spell 'Deadly Poison[id:2823]'
+    if spell 'Deadly Poison[id:2823]' is off cooldown
+    if player does not have buff/debuff 'Deadly Poison[id:2823]'
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+23: Spell: Amplifying Poison[id:381664]
+    if talent 'Amplifying Poison[id:381664]' is taken
+    if player has resources to cast spell 'Amplifying Poison[id:381664]'
+    if spell 'Amplifying Poison[id:381664]' is off cooldown
+    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+24: Spell: Wound Poison[id:8679]
+    if talent 'Wound Poison[id:8679]' is taken
+    if player has resources to cast spell 'Wound Poison[id:8679]'
+    if spell 'Wound Poison[id:8679]' is off cooldown
+    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+25: Spell: Instant Poison[id:315584]
+    if talent 'Instant Poison[id:315584]' is taken
+    if player has resources to cast spell 'Instant Poison[id:315584]'
+    if spell 'Instant Poison[id:315584]' is off cooldown
+    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player does not have buff/debuff 'Instant Poison[id:315584]'
+26: Spell: Numbing Poison[id:5761]
+    if talent 'Numbing Poison[id:5761]' is taken
+    if player has resources to cast spell 'Numbing Poison[id:5761]'
+    if spell 'Numbing Poison[id:5761]' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison[id:5761]'
+27: Spell: Crippling Poison[id:3408]
+    if talent 'Crippling Poison[id:3408]' is taken
+    if player has resources to cast spell 'Crippling Poison[id:3408]'
+    if spell 'Crippling Poison[id:3408]' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison[id:5761]'
+    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
+    if player does not have buff/debuff 'Crippling Poison[id:3408]'
+    if player does not have buff/debuff 'Dragon-Tempered Blades[id:381801]'
+28: Spell: Amplifying Poison[id:381664]
+    if talent 'Amplifying Poison[id:381664]' is taken
+    if player has resources to cast spell 'Amplifying Poison[id:381664]'
+    if spell 'Amplifying Poison[id:381664]' is off cooldown
+    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+29: Spell: Crippling Poison[id:3408]
+    if talent 'Crippling Poison[id:3408]' is taken
+    if player has resources to cast spell 'Crippling Poison[id:3408]'
+    if spell 'Crippling Poison[id:3408]' is off cooldown
+    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+    if player does not have buff/debuff 'Crippling Poison[id:3408]'
+30: Spell: Deathmark[id:360194]
+    if talent 'Deathmark[id:360194]' is taken
+    if player has resources to cast spell 'Deathmark[id:360194]'
+    if spell 'Deathmark[id:360194]' is off cooldown
+    if target has buff/debuff 'Garrote[id:703]'
+    if target has buff/debuff 'Rupture[id:1943]'
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'Deathmark' is within allowed range
-31: Spell: Kingsbane
-    if target has buff/debuff 'Rupture'
-    if target has buff/debuff 'Garrote'
-    if spell 'Kingsbane' is within allowed range
-    if spell 'Kingsbane' is off cooldown
-    if player has resources to cast spell 'Kingsbane'
-    if talent 'Kingsbane' is taken
-    if player does not have buff/debuff 'Implacable'
-32: Spell: Crimson Tempest
-    if spell 'Crimson Tempest' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest'
-    if talent 'Crimson Tempest' is taken
+    if spell 'Deathmark[id:360194]' is within allowed range
+31: Spell: Kingsbane[id:385627]
+    if target has buff/debuff 'Rupture[id:1943]'
+    if target has buff/debuff 'Garrote[id:703]'
+    if spell 'Kingsbane[id:385627]' is within allowed range
+    if spell 'Kingsbane[id:385627]' is off cooldown
+    if player has resources to cast spell 'Kingsbane[id:385627]'
+    if talent 'Kingsbane[id:385627]' is taken
+    if player does not have buff/debuff 'Implacable[id:1265387]'
+32: Spell: Crimson Tempest[id:1247227]
+    if spell 'Crimson Tempest[id:1247227]' is off cooldown
+    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
+    if talent 'Crimson Tempest[id:1247227]' is taken
     if there are more than 7 targets within 10 yards of player
-    if there are less than 5 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are less than 5 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
-33: Spell: Crimson Tempest
-    if spell 'Crimson Tempest' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest'
-    if talent 'Crimson Tempest' is taken
+33: Spell: Crimson Tempest[id:1247227]
+    if spell 'Crimson Tempest[id:1247227]' is off cooldown
+    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
+    if talent 'Crimson Tempest[id:1247227]' is taken
     if there are more than 5 targets within 10 yards of player
-    if there are less than 3 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are less than 3 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
-34: Spell: Crimson Tempest
-    if spell 'Crimson Tempest' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest'
-    if talent 'Crimson Tempest' is taken
+34: Spell: Crimson Tempest[id:1247227]
+    if spell 'Crimson Tempest[id:1247227]' is off cooldown
+    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
+    if talent 'Crimson Tempest[id:1247227]' is taken
     if there are more than 3 targets within 10 yards of player
-    if there are less than 1 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are less than 1 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703

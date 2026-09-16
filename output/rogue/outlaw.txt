@@ -1,154 +1,154 @@
 Outlaw
-0: Spell: Roll the Bones
-    if talent 'Roll the Bones' is taken
-    if player has resources to cast spell 'Roll the Bones'
-    if spell 'Roll the Bones' is off cooldown
-    if player does not have buff/debuff 'One of a Kind'
-    if player does not have buff/debuff 'Double Trouble'
-    if player does not have buff/debuff 'Triple Threat'
-    if player does not have buff/debuff 'Jackpot'
-1: Spell: Blade Flurry
-    if talent 'Blade Flurry' is taken
-    if player has resources to cast spell 'Blade Flurry'
-    if spell 'Blade Flurry' is off cooldown
+0: Spell: Roll the Bones[id:1214909]
+    if talent 'Roll the Bones[id:1214909]' is taken
+    if player has resources to cast spell 'Roll the Bones[id:1214909]'
+    if spell 'Roll the Bones[id:1214909]' is off cooldown
+    if player does not have buff/debuff 'One of a Kind[id:1214933]'
+    if player does not have buff/debuff 'Double Trouble[id:1214934]'
+    if player does not have buff/debuff 'Triple Threat[id:1214935]'
+    if player does not have buff/debuff 'Jackpot[id:1214937]'
+1: Spell: Blade Flurry[id:13877]
+    if talent 'Blade Flurry[id:13877]' is taken
+    if player has resources to cast spell 'Blade Flurry[id:13877]'
+    if spell 'Blade Flurry[id:13877]' is off cooldown
     if there are more than 2 targets within 10 yards of player
-    if player does not have buff/debuff 'Blade Flurry'
-2: Spell: Killing Spree
-    if talent 'Killing Spree' is taken
-    if player has resources to cast spell 'Killing Spree'
-    if spell 'Killing Spree' is off cooldown
+    if player does not have buff/debuff 'Blade Flurry[id:13877]'
+2: Spell: Killing Spree[id:51690]
+    if talent 'Killing Spree[id:51690]' is taken
+    if player has resources to cast spell 'Killing Spree[id:51690]'
+    if spell 'Killing Spree[id:51690]' is off cooldown
     if player has more than 5 combo points
     if there are more than 1 targets within 8 yards of player
-3: Spell: Between the Eyes
-    if talent 'Between the Eyes' is taken
-    if player has resources to cast spell 'Between the Eyes'
-    if spell 'Between the Eyes' is off cooldown
-    if spell 'Between the Eyes' is within allowed range
+3: Spell: Between the Eyes[id:315341]
+    if talent 'Between the Eyes[id:315341]' is taken
+    if player has resources to cast spell 'Between the Eyes[id:315341]'
+    if spell 'Between the Eyes[id:315341]' is off cooldown
+    if spell 'Between the Eyes[id:315341]' is within allowed range
     if player has more than 5 combo points
-4: Spell: Eviscerate
-    if talent 'Eviscerate' is taken
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if spell 'Eviscerate' is within allowed range
+4: Spell: Eviscerate[id:196819]
+    if talent 'Eviscerate[id:196819]' is taken
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if spell 'Eviscerate[id:196819]' is within allowed range
     if player has more than 5 combo points
-5: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if spell 'Ambush' is within allowed range
-    if player has buff/debuff 'Hidden Opportunity'
-6: Spell: Pistol Shot
-    if talent 'Pistol Shot' is taken
-    if player has resources to cast spell 'Pistol Shot'
-    if spell 'Pistol Shot' is off cooldown
-    if spell 'Pistol Shot' is within allowed range
-    if player has buff/debuff 'Opportunity'
-7: Spell: Sinister Strike
-    if talent 'Sinister Strike' is taken
-    if player has resources to cast spell 'Sinister Strike'
-    if spell 'Sinister Strike' is off cooldown
-    if spell 'Sinister Strike' is within allowed range
-8: Spell: Pistol Shot
-    if talent 'Pistol Shot' is taken
-    if player has resources to cast spell 'Pistol Shot'
-    if spell 'Pistol Shot' is off cooldown
+5: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
+    if spell 'Ambush[id:8676]' is within allowed range
+    if player has buff/debuff 'Hidden Opportunity[id:383281]'
+6: Spell: Pistol Shot[id:185763]
+    if talent 'Pistol Shot[id:185763]' is taken
+    if player has resources to cast spell 'Pistol Shot[id:185763]'
+    if spell 'Pistol Shot[id:185763]' is off cooldown
+    if spell 'Pistol Shot[id:185763]' is within allowed range
+    if player has buff/debuff 'Opportunity[id:195627]'
+7: Spell: Sinister Strike[id:193315]
+    if talent 'Sinister Strike[id:193315]' is taken
+    if player has resources to cast spell 'Sinister Strike[id:193315]'
+    if spell 'Sinister Strike[id:193315]' is off cooldown
+    if spell 'Sinister Strike[id:193315]' is within allowed range
+8: Spell: Pistol Shot[id:185763]
+    if talent 'Pistol Shot[id:185763]' is taken
+    if player has resources to cast spell 'Pistol Shot[id:185763]'
+    if spell 'Pistol Shot[id:185763]' is off cooldown
     if player has more than 99 energy
     if target is more than 15 yards away
-9: Spell: Blade Rush
-    if talent 'Blade Rush' is taken
-    if player has resources to cast spell 'Blade Rush'
-    if spell 'Blade Rush' is off cooldown
-    if spell 'Blade Rush' is within allowed range
-    if player has buff/debuff 'Vigor'
+9: Spell: Blade Rush[id:271877]
+    if talent 'Blade Rush[id:271877]' is taken
+    if player has resources to cast spell 'Blade Rush[id:271877]'
+    if spell 'Blade Rush[id:271877]' is off cooldown
+    if spell 'Blade Rush[id:271877]' is within allowed range
+    if player has buff/debuff 'Vigor[id:14983]'
     if player has less than 174 energy
-10: Spell: Sinister Strike
-11: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if player has buff/debuff 'Stealth'
+10: Spell: Sinister Strike[id:193315]
+11: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
+    if player has buff/debuff 'Stealth[id:115191]'
     if target is less than 40 yards away
     if player has less than 4 combo points
-12: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if player has buff/debuff 'Vanish'
+12: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
+    if player has buff/debuff 'Vanish[id:11327]'
     if target is less than 40 yards away
     if player has less than 4 combo points
-13: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if player has buff/debuff 'Stealth'
+13: Spell: Ambush[id:8676]
+    if talent 'Ambush[id:8676]' is taken
+    if player has resources to cast spell 'Ambush[id:8676]'
+    if spell 'Ambush[id:8676]' is off cooldown
+    if player has buff/debuff 'Stealth[id:1784]'
     if target is less than 40 yards away
     if player has less than 4 combo points
-14: Spell: Wound Poison
-    if talent 'Wound Poison' is taken
-    if player has resources to cast spell 'Wound Poison'
-    if spell 'Wound Poison' is off cooldown
-    if player does not have buff/debuff 'Wound Poison'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)'
-15: Spell: Instant Poison
-    if talent 'Instant Poison' is taken
-    if player has resources to cast spell 'Instant Poison'
-    if spell 'Instant Poison' is off cooldown
-    if player does not have buff/debuff 'Instant Poison'
-    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)'
-16: Spell: Crippling Poison
-    if talent 'Crippling Poison' is taken
-    if player has resources to cast spell 'Crippling Poison'
-    if spell 'Crippling Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-    if player does not have buff/debuff 'Atrophic Poison'
-    if player does not have buff/debuff 'Crippling Poison'
-17: Spell: Atrophic Poison
-    if talent 'Atrophic Poison' is taken
-    if player has resources to cast spell 'Atrophic Poison'
-    if spell 'Atrophic Poison' is off cooldown
-    if player does not have buff/debuff 'Atrophic Poison'
-18: Spell: Numbing Poison
-    if talent 'Numbing Poison' is taken
-    if player has resources to cast spell 'Numbing Poison'
-    if spell 'Numbing Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-19: Spell: Adrenaline Rush
-    if talent 'Adrenaline Rush' is taken
-    if player has resources to cast spell 'Adrenaline Rush'
-    if spell 'Adrenaline Rush' is off cooldown
+14: Spell: Wound Poison[id:8679]
+    if talent 'Wound Poison[id:8679]' is taken
+    if player has resources to cast spell 'Wound Poison[id:8679]'
+    if spell 'Wound Poison[id:8679]' is off cooldown
+    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+15: Spell: Instant Poison[id:315584]
+    if talent 'Instant Poison[id:315584]' is taken
+    if player has resources to cast spell 'Instant Poison[id:315584]'
+    if spell 'Instant Poison[id:315584]' is off cooldown
+    if player does not have buff/debuff 'Instant Poison[id:315584]'
+    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+16: Spell: Crippling Poison[id:3408]
+    if talent 'Crippling Poison[id:3408]' is taken
+    if player has resources to cast spell 'Crippling Poison[id:3408]'
+    if spell 'Crippling Poison[id:3408]' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison[id:5761]'
+    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
+    if player does not have buff/debuff 'Crippling Poison[id:3408]'
+17: Spell: Atrophic Poison[id:381637]
+    if talent 'Atrophic Poison[id:381637]' is taken
+    if player has resources to cast spell 'Atrophic Poison[id:381637]'
+    if spell 'Atrophic Poison[id:381637]' is off cooldown
+    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
+18: Spell: Numbing Poison[id:5761]
+    if talent 'Numbing Poison[id:5761]' is taken
+    if player has resources to cast spell 'Numbing Poison[id:5761]'
+    if spell 'Numbing Poison[id:5761]' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison[id:5761]'
+19: Spell: Adrenaline Rush[id:13750]
+    if talent 'Adrenaline Rush[id:13750]' is taken
+    if player has resources to cast spell 'Adrenaline Rush[id:13750]'
+    if spell 'Adrenaline Rush[id:13750]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player has buff/debuff 'Improved Adrenaline Rush'
+    if player has buff/debuff 'Improved Adrenaline Rush[id:395422]'
     if player has less than 2 combo points
-20: Spell: Blade Flurry
-    if talent 'Blade Flurry' is taken
-    if player has resources to cast spell 'Blade Flurry'
-    if spell 'Blade Flurry' is off cooldown
+20: Spell: Blade Flurry[id:13877]
+    if talent 'Blade Flurry[id:13877]' is taken
+    if player has resources to cast spell 'Blade Flurry[id:13877]'
+    if spell 'Blade Flurry[id:13877]' is off cooldown
     if there are more than 4 targets within 10 yards of player
     if player has less than 4 combo points
-    if player has buff/debuff 'Deft Maneuvers'
-21: Spell: Blade Rush
-    if talent 'Blade Rush' is taken
-    if player has resources to cast spell 'Blade Rush'
-    if spell 'Blade Rush' is off cooldown
-    if spell 'Blade Rush' is within allowed range
-    if player does not have buff/debuff 'Vigor'
+    if player has buff/debuff 'Deft Maneuvers[id:381878]'
+21: Spell: Blade Rush[id:271877]
+    if talent 'Blade Rush[id:271877]' is taken
+    if player has resources to cast spell 'Blade Rush[id:271877]'
+    if spell 'Blade Rush[id:271877]' is off cooldown
+    if spell 'Blade Rush[id:271877]' is within allowed range
+    if player does not have buff/debuff 'Vigor[id:14983]'
     if player has less than 74 energy
-22: Spell: Preparation
-    if talent 'Preparation' is taken
-    if player has resources to cast spell 'Preparation'
-    if spell 'Preparation' is off cooldown
-    if spell 'Adrenaline Rush' is on cooldown
-    if spell 'Between the Eyes' is on cooldown
-    if spell 'Blade Rush' is on cooldown
-23: Spell: Adrenaline Rush
-    if talent 'Adrenaline Rush' is taken
-    if player has resources to cast spell 'Adrenaline Rush'
-    if spell 'Adrenaline Rush' is off cooldown
+22: Spell: Preparation[id:1277933]
+    if talent 'Preparation[id:1277933]' is taken
+    if player has resources to cast spell 'Preparation[id:1277933]'
+    if spell 'Preparation[id:1277933]' is off cooldown
+    if spell 'Adrenaline Rush[id:13750]' is on cooldown
+    if spell 'Between the Eyes[id:315341]' is on cooldown
+    if spell 'Blade Rush[id:271877]' is on cooldown
+23: Spell: Adrenaline Rush[id:13750]
+    if talent 'Adrenaline Rush[id:13750]' is taken
+    if player has resources to cast spell 'Adrenaline Rush[id:13750]'
+    if spell 'Adrenaline Rush[id:13750]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player does not have buff/debuff 'Improved Adrenaline Rush'
-24: Spell: Eviscerate
-    if talent 'Eviscerate' is taken
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if spell 'Eviscerate' is within allowed range
-    if player has buff/debuff 'Fang Strike'
+    if player does not have buff/debuff 'Improved Adrenaline Rush[id:395422]'
+24: Spell: Eviscerate[id:196819]
+    if talent 'Eviscerate[id:196819]' is taken
+    if player has resources to cast spell 'Eviscerate[id:196819]'
+    if spell 'Eviscerate[id:196819]' is off cooldown
+    if spell 'Eviscerate[id:196819]' is within allowed range
+    if player has buff/debuff 'Fang Strike[id:1301405]'

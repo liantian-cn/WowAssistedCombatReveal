@@ -1,140 +1,140 @@
 Feral
-0: Spell: Primal Wrath
+0: Spell: Primal Wrath[id:285381]
     if target is less than 10 yards away
-    if talent 'Primal Wrath' is taken
-    if player has resources to cast spell 'Primal Wrath'
-    if spell 'Primal Wrath' is off cooldown
+    if talent 'Primal Wrath[id:285381]' is taken
+    if player has resources to cast spell 'Primal Wrath[id:285381]'
+    if spell 'Primal Wrath[id:285381]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-    if target does not have buff/debuff 'Rip'
+    if target does not have buff/debuff 'Rip[id:1079]'
     if player has more than 5 combo points
-1: Spell: Ferocious Bite
-    if talent 'Ferocious Bite' is taken
-    if player has resources to cast spell 'Ferocious Bite'
-    if spell 'Ferocious Bite' is off cooldown
+1: Spell: Ferocious Bite[id:22568]
+    if talent 'Ferocious Bite[id:22568]' is taken
+    if player has resources to cast spell 'Ferocious Bite[id:22568]'
+    if spell 'Ferocious Bite[id:22568]' is off cooldown
     if player has more than 5 combo points
-    if spell 'Ferocious Bite' is within allowed range
-2: Spell: Ferocious Bite
-    if talent 'Ferocious Bite' is taken
-    if spell 'Ferocious Bite' is off cooldown
-    if player has buff/debuff 'Apex Predator's Craving'
-    if spell 'Ferocious Bite' is within allowed range
-3: Spell: Cat Form
-    if talent 'Cat Form' is taken
-    if player has resources to cast spell 'Cat Form'
-    if spell 'Cat Form' is off cooldown
-    if player does not have buff/debuff 'Cat Form'
-4: Spell: Feral Frenzy
-    if talent 'Feral Frenzy' is taken
-    if player has resources to cast spell 'Feral Frenzy'
-    if spell 'Feral Frenzy' is off cooldown
+    if spell 'Ferocious Bite[id:22568]' is within allowed range
+2: Spell: Ferocious Bite[id:22568]
+    if talent 'Ferocious Bite[id:22568]' is taken
+    if spell 'Ferocious Bite[id:22568]' is off cooldown
+    if player has buff/debuff 'Apex Predator's Craving[id:391882]'
+    if spell 'Ferocious Bite[id:22568]' is within allowed range
+3: Spell: Cat Form[id:768]
+    if talent 'Cat Form[id:768]' is taken
+    if player has resources to cast spell 'Cat Form[id:768]'
+    if spell 'Cat Form[id:768]' is off cooldown
+    if player does not have buff/debuff 'Cat Form[id:768]'
+4: Spell: Feral Frenzy[id:274837]
+    if talent 'Feral Frenzy[id:274837]' is taken
+    if player has resources to cast spell 'Feral Frenzy[id:274837]'
+    if spell 'Feral Frenzy[id:274837]' is off cooldown
     if player has less than 1 combo points
-    if spell 'Feral Frenzy' is within allowed range
-    if player has buff/debuff 'Tiger's Fury'
-5: Spell: Rake
-    if talent 'Rake' is taken
-    if player has resources to cast spell 'Rake'
-    if spell 'Rake' is off cooldown
-    if target does not have buff/debuff 'Rake'
-    if spell 'Rake' is within allowed range
-6: Spell: Moonfire
-    if talent 'Moonfire' is taken
-    if player has resources to cast spell 'Moonfire'
-    if spell 'Moonfire' is off cooldown
-    if player has buff/debuff 'Lunar Inspiration'
-    if target does not have buff/debuff 'Moonfire'
-7: Spell: Swipe
-    if talent 'Swipe' is taken
-    if player has resources to cast spell 'Swipe'
-    if spell 'Swipe' is off cooldown
+    if spell 'Feral Frenzy[id:274837]' is within allowed range
+    if player has buff/debuff 'Tiger's Fury[id:5217]'
+5: Spell: Rake[id:1822]
+    if talent 'Rake[id:1822]' is taken
+    if player has resources to cast spell 'Rake[id:1822]'
+    if spell 'Rake[id:1822]' is off cooldown
+    if target does not have buff/debuff 'Rake[id:155722]'
+    if spell 'Rake[id:1822]' is within allowed range
+6: Spell: Moonfire[id:8921]
+    if talent 'Moonfire[id:8921]' is taken
+    if player has resources to cast spell 'Moonfire[id:8921]'
+    if spell 'Moonfire[id:8921]' is off cooldown
+    if player has buff/debuff 'Lunar Inspiration[id:155580]'
+    if target does not have buff/debuff 'Moonfire[id:155625]'
+7: Spell: Swipe[id:213764]
+    if talent 'Swipe[id:213764]' is taken
+    if player has resources to cast spell 'Swipe[id:213764]'
+    if spell 'Swipe[id:213764]' is off cooldown
     if target is less than 8 yards away
     if there are more than 3 targets within 10 yards of player
-8: Spell: Shred
-    if talent 'Shred' is taken
-    if player has resources to cast spell 'Shred'
-    if spell 'Shred' is off cooldown
-    if spell 'Shred' is within allowed range
-9: Spell: Rip
-    if talent 'Rip' is taken
-    if player has resources to cast spell 'Rip'
-    if spell 'Rip' is off cooldown
-    if target does not have buff/debuff 'Rip'
+8: Spell: Shred[id:5221]
+    if talent 'Shred[id:5221]' is taken
+    if player has resources to cast spell 'Shred[id:5221]'
+    if spell 'Shred[id:5221]' is off cooldown
+    if spell 'Shred[id:5221]' is within allowed range
+9: Spell: Rip[id:1079]
+    if talent 'Rip[id:1079]' is taken
+    if player has resources to cast spell 'Rip[id:1079]'
+    if spell 'Rip[id:1079]' is off cooldown
+    if target does not have buff/debuff 'Rip[id:1079]'
     if player has more than 5 combo points
-    if spell 'Rip' is within allowed range
-10: Spell: Tiger's Fury
-    if talent 'Tiger's Fury' is taken
-    if player has resources to cast spell 'Tiger's Fury'
-    if spell 'Tiger's Fury' is off cooldown
+    if spell 'Rip[id:1079]' is within allowed range
+10: Spell: Tiger's Fury[id:5217]
+    if talent 'Tiger's Fury[id:5217]' is taken
+    if player has resources to cast spell 'Tiger's Fury[id:5217]'
+    if spell 'Tiger's Fury[id:5217]' is off cooldown
     if player has more than 5 combo points
     if target is less than 8 yards away
-11: Spell: Rake
-12: Spell: Convoke the Spirits
-    if talent 'Convoke the Spirits' is taken
-    if player has resources to cast spell 'Convoke the Spirits'
-    if spell 'Convoke the Spirits' is off cooldown
+11: Spell: Rake[id:1822]
+12: Spell: Convoke the Spirits[id:391528]
+    if talent 'Convoke the Spirits[id:391528]' is taken
+    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
+    if spell 'Convoke the Spirits[id:391528]' is off cooldown
     if target is less than 5 yards away
     if player has less than 3 combo points
-    if player has buff/debuff 'Tiger's Fury'
-13: Spell: Rake
-    if talent 'Rake' is taken
-    if player has resources to cast spell 'Rake'
-    if spell 'Rake' is off cooldown
-    if player has buff/debuff 'Prowl'
-14: Spell: Moonfire
-    if talent 'Moonfire' is taken
-    if player has resources to cast spell 'Moonfire'
-    if spell 'Moonfire' is off cooldown
-    if player has buff/debuff 'Lunar Inspiration'
+    if player has buff/debuff 'Tiger's Fury[id:5217]'
+13: Spell: Rake[id:1822]
+    if talent 'Rake[id:1822]' is taken
+    if player has resources to cast spell 'Rake[id:1822]'
+    if spell 'Rake[id:1822]' is off cooldown
+    if player has buff/debuff 'Prowl[id:5215]'
+14: Spell: Moonfire[id:8921]
+    if talent 'Moonfire[id:8921]' is taken
+    if player has resources to cast spell 'Moonfire[id:8921]'
+    if spell 'Moonfire[id:8921]' is off cooldown
+    if player has buff/debuff 'Lunar Inspiration[id:155580]'
     if target is more than 15 yards away
-15: Spell: Frantic Frenzy
+15: Spell: Frantic Frenzy[id:1243807]
     if target is less than 8 yards away
-    if talent 'Frantic Frenzy' is taken
-    if player has resources to cast spell 'Frantic Frenzy'
-    if spell 'Frantic Frenzy' is off cooldown
+    if talent 'Frantic Frenzy[id:1243807]' is taken
+    if player has resources to cast spell 'Frantic Frenzy[id:1243807]'
+    if spell 'Frantic Frenzy[id:1243807]' is off cooldown
     if player has less than 1 combo points
-    if player has buff/debuff 'Tiger's Fury'
-16: Spell: Chomp
-    if talent 'Chomp' is taken
-    if player has resources to cast spell 'Chomp'
-    if spell 'Chomp' is off cooldown
-    if spell 'Chomp' is within allowed range
-    if player has buff/debuff 'Chomp Enabler'
-17: Spell: Feral Frenzy
-    if talent 'Feral Frenzy' is taken
-    if player has resources to cast spell 'Feral Frenzy'
-    if spell 'Feral Frenzy' is off cooldown
+    if player has buff/debuff 'Tiger's Fury[id:5217]'
+16: Spell: Chomp[id:1244258]
+    if talent 'Chomp[id:1244258]' is taken
+    if player has resources to cast spell 'Chomp[id:1244258]'
+    if spell 'Chomp[id:1244258]' is off cooldown
+    if spell 'Chomp[id:1244258]' is within allowed range
+    if player has buff/debuff 'Chomp Enabler[id:1244393]'
+17: Spell: Feral Frenzy[id:274837]
+    if talent 'Feral Frenzy[id:274837]' is taken
+    if player has resources to cast spell 'Feral Frenzy[id:274837]'
+    if spell 'Feral Frenzy[id:274837]' is off cooldown
     if player has less than 1 combo points
-    if spell 'Feral Frenzy' is within allowed range
-    if spell 'Tiger's Fury' is on cooldown
-18: Spell: Frantic Frenzy
-    if talent 'Frantic Frenzy' is taken
-    if player has resources to cast spell 'Frantic Frenzy'
-    if spell 'Frantic Frenzy' is off cooldown
+    if spell 'Feral Frenzy[id:274837]' is within allowed range
+    if spell 'Tiger's Fury[id:5217]' is on cooldown
+18: Spell: Frantic Frenzy[id:1243807]
+    if talent 'Frantic Frenzy[id:1243807]' is taken
+    if player has resources to cast spell 'Frantic Frenzy[id:1243807]'
+    if spell 'Frantic Frenzy[id:1243807]' is off cooldown
     if player has less than 1 combo points
     if target is less than 8 yards away
-    if spell 'Tiger's Fury' is on cooldown
-19: Spell: Waiting for Energy
-    if talent 'Waiting for Energy' is taken
-    if player has resources to cast spell 'Waiting for Energy'
-    if spell 'Waiting for Energy' is off cooldown
+    if spell 'Tiger's Fury[id:5217]' is on cooldown
+19: Spell: Waiting for Energy[id:1249752]
+    if talent 'Waiting for Energy[id:1249752]' is taken
+    if player has resources to cast spell 'Waiting for Energy[id:1249752]'
+    if spell 'Waiting for Energy[id:1249752]' is off cooldown
     if player has more than 5 combo points
-    if player does not have buff/debuff 'Apex Predator's Craving'
+    if player does not have buff/debuff 'Apex Predator's Craving[id:391882]'
     if player has less than 49 energy
-    if player does not have buff/debuff 'Incarnation: Avatar of Ashamane'
-20: Spell: Waiting for Energy
-    if talent 'Waiting for Energy' is taken
-    if player has resources to cast spell 'Waiting for Energy'
-    if spell 'Waiting for Energy' is off cooldown
+    if player does not have buff/debuff 'Incarnation: Avatar of Ashamane[id:102543]'
+20: Spell: Waiting for Energy[id:1249752]
+    if talent 'Waiting for Energy[id:1249752]' is taken
+    if player has resources to cast spell 'Waiting for Energy[id:1249752]'
+    if spell 'Waiting for Energy[id:1249752]' is off cooldown
     if player has more than 5 combo points
     if player has less than 37 energy
-    if player does not have buff/debuff 'Apex Predator's Craving'
-    if player has buff/debuff 'Incarnation: Avatar of Ashamane'
-21: Spell: Berserk
-    if talent 'Berserk' is taken
-    if player has resources to cast spell 'Berserk'
-    if spell 'Berserk' is off cooldown
+    if player does not have buff/debuff 'Apex Predator's Craving[id:391882]'
+    if player has buff/debuff 'Incarnation: Avatar of Ashamane[id:102543]'
+21: Spell: Berserk[id:106951]
+    if talent 'Berserk[id:106951]' is taken
+    if player has resources to cast spell 'Berserk[id:106951]'
+    if spell 'Berserk[id:106951]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-22: Spell: Mark of the Wild
-    if talent 'Mark of the Wild' is taken
-    if player has resources to cast spell 'Mark of the Wild'
-    if spell 'Mark of the Wild' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight'
+22: Spell: Mark of the Wild[id:1126]
+    if talent 'Mark of the Wild[id:1126]' is taken
+    if player has resources to cast spell 'Mark of the Wild[id:1126]'
+    if spell 'Mark of the Wild[id:1126]' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'

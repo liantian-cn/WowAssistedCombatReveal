@@ -1,158 +1,158 @@
 Elemental
-0: Spell: Earthquake
-    if talent 'Earthquake' is taken
-    if player has resources to cast spell 'Earthquake'
-    if spell 'Earthquake' is off cooldown
+0: Spell: Earthquake[id:61882]
+    if talent 'Earthquake[id:61882]' is taken
+    if player has resources to cast spell 'Earthquake[id:61882]'
+    if spell 'Earthquake[id:61882]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Echoes of Great Sundering'
-1: Spell: Earthquake
-    if talent 'Earthquake' is taken
-    if player has resources to cast spell 'Earthquake'
-    if spell 'Earthquake' is off cooldown
+    if player does not have buff/debuff 'Echoes of Great Sundering[id:384087]'
+1: Spell: Earthquake[id:462620]
+    if talent 'Earthquake[id:462620]' is taken
+    if player has resources to cast spell 'Earthquake[id:462620]'
+    if spell 'Earthquake[id:462620]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Echoes of Great Sundering'
-2: Spell: Elemental Blast
-    if talent 'Elemental Blast' is taken
-    if player has resources to cast spell 'Elemental Blast'
-    if spell 'Elemental Blast' is off cooldown
-3: Spell: Earth Shock
-    if talent 'Earth Shock' is taken
-    if player has resources to cast spell 'Earth Shock'
-    if spell 'Earth Shock' is off cooldown
-4: Spell: Stormkeeper
-    if talent 'Stormkeeper' is taken
-    if player has resources to cast spell 'Stormkeeper'
-    if spell 'Stormkeeper' is off cooldown
-    if player does not have buff/debuff 'Stormkeeper'
-5: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Tempest'
-6: Spell: Chain Lightning
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
-    if player has buff/debuff 'Stormkeeper'
+    if player does not have buff/debuff 'Echoes of Great Sundering[id:384087]'
+2: Spell: Elemental Blast[id:117014]
+    if talent 'Elemental Blast[id:117014]' is taken
+    if player has resources to cast spell 'Elemental Blast[id:117014]'
+    if spell 'Elemental Blast[id:117014]' is off cooldown
+3: Spell: Earth Shock[id:8042]
+    if talent 'Earth Shock[id:8042]' is taken
+    if player has resources to cast spell 'Earth Shock[id:8042]'
+    if spell 'Earth Shock[id:8042]' is off cooldown
+4: Spell: Stormkeeper[id:191634]
+    if talent 'Stormkeeper[id:191634]' is taken
+    if player has resources to cast spell 'Stormkeeper[id:191634]'
+    if spell 'Stormkeeper[id:191634]' is off cooldown
+    if player does not have buff/debuff 'Stormkeeper[id:191634]'
+5: Spell: Lightning Bolt[id:188196]
+    if talent 'Lightning Bolt[id:188196]' is taken
+    if player has resources to cast spell 'Lightning Bolt[id:188196]'
+    if spell 'Lightning Bolt[id:188196]' is off cooldown
+    if player has buff/debuff 'Tempest[id:454015]'
+6: Spell: Chain Lightning[id:188443]
+    if talent 'Chain Lightning[id:188443]' is taken
+    if player has resources to cast spell 'Chain Lightning[id:188443]'
+    if spell 'Chain Lightning[id:188443]' is off cooldown
+    if player has buff/debuff 'Stormkeeper[id:191634]'
     if there are more than 3 targets within 10 yards of target
-7: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Stormkeeper'
-8: Spell: Flame Shock
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
-    if target does not have buff/debuff 'Flame Shock'
+7: Spell: Lightning Bolt[id:188196]
+    if talent 'Lightning Bolt[id:188196]' is taken
+    if player has resources to cast spell 'Lightning Bolt[id:188196]'
+    if spell 'Lightning Bolt[id:188196]' is off cooldown
+    if player has buff/debuff 'Stormkeeper[id:191634]'
+8: Spell: Flame Shock[id:470411]
+    if talent 'Flame Shock[id:470411]' is taken
+    if player has resources to cast spell 'Flame Shock[id:470411]'
+    if spell 'Flame Shock[id:470411]' is off cooldown
+    if target does not have buff/debuff 'Flame Shock[id:188389]'
     if there are less than 2 targets within 10 yards of target
-9: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player does not have buff/debuff 'Master of the Elements'
-    if player has buff/debuff 'Master of the Elements'
-10: Spell: Chain Lightning
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
+9: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+    if player does not have buff/debuff 'Master of the Elements[id:260734]'
+    if player has buff/debuff 'Master of the Elements[id:16166]'
+10: Spell: Chain Lightning[id:188443]
+    if talent 'Chain Lightning[id:188443]' is taken
+    if player has resources to cast spell 'Chain Lightning[id:188443]'
+    if spell 'Chain Lightning[id:188443]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if spell 'Chain Lightning' can be successfully cast
-11: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if spell 'Lightning Bolt' can be successfully cast
-12: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-13: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
+    if spell 'Chain Lightning[id:188443]' can be successfully cast
+11: Spell: Lightning Bolt[id:188196]
+    if talent 'Lightning Bolt[id:188196]' is taken
+    if player has resources to cast spell 'Lightning Bolt[id:188196]'
+    if spell 'Lightning Bolt[id:188196]' is off cooldown
+    if spell 'Lightning Bolt[id:188196]' can be successfully cast
+12: Spell: Ancestral Swiftness[id:443454]
+    if talent 'Ancestral Swiftness[id:443454]' is taken
+    if player has resources to cast spell 'Ancestral Swiftness[id:443454]'
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
+    if player has resources to cast spell 'Ancestral Swiftness[id:443454]'
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
+13: Spell: Ancestral Swiftness[id:443454]
+    if talent 'Ancestral Swiftness[id:443454]' is taken
+    if player has resources to cast spell 'Ancestral Swiftness[id:443454]'
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if spell 'Ancestral Swiftness' is off cooldown
-14: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-    if spell 'Ancestral Swiftness' is off cooldown
-15: Spell: Lava Burst
-16: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player has more than 2 charges of spell 'Lava Burst'
-    if spell 'Lava Burst' can be successfully cast
-17: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player has buff/debuff 'Master of the Elements'
-    if player does not have buff/debuff 'Master of the Elements'
-    if target has buff/debuff 'Flame Shock'
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
+14: Spell: Ancestral Swiftness[id:443454]
+    if talent 'Ancestral Swiftness[id:443454]' is taken
+    if player has resources to cast spell 'Ancestral Swiftness[id:443454]'
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
+    if spell 'Ancestral Swiftness[id:443454]' is off cooldown
+15: Spell: Lava Burst[id:51505]
+16: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+    if player has more than 2 charges of spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' can be successfully cast
+17: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+    if player has buff/debuff 'Master of the Elements[id:16166]'
+    if player does not have buff/debuff 'Master of the Elements[id:260734]'
+    if target has buff/debuff 'Flame Shock[id:188389]'
     if there are less than 2 targets within 10 yards of target
-18: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player does not have buff/debuff 'Master of the Elements'
-19: Spell: Chain Lightning
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
+18: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+    if player does not have buff/debuff 'Master of the Elements[id:16166]'
+19: Spell: Chain Lightning[id:188443]
+    if talent 'Chain Lightning[id:188443]' is taken
+    if player has resources to cast spell 'Chain Lightning[id:188443]'
+    if spell 'Chain Lightning[id:188443]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
-20: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
-21: Spell: Flametongue Weapon
-    if talent 'Flametongue Weapon' is taken
-    if player has resources to cast spell 'Flametongue Weapon'
-    if spell 'Flametongue Weapon' is off cooldown
-    if player does not have buff/debuff 'Flametongue Weapon'
-22: Spell: Thunderstrike Ward
-    if talent 'Thunderstrike Ward' is taken
-    if player has resources to cast spell 'Thunderstrike Ward'
-    if spell 'Thunderstrike Ward' is off cooldown
-    if player does not have buff/debuff 'Thunderstrike Ward'
-23: Spell: Flame Shock
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
+    if player has buff/debuff 'Stormkeeper[id:191634]' with at least 3000 ms left
+20: Spell: Lightning Bolt[id:188196]
+    if talent 'Lightning Bolt[id:188196]' is taken
+    if player has resources to cast spell 'Lightning Bolt[id:188196]'
+    if spell 'Lightning Bolt[id:188196]' is off cooldown
+    if player has buff/debuff 'Stormkeeper[id:191634]' with at least 3000 ms left
+21: Spell: Flametongue Weapon[id:318038]
+    if talent 'Flametongue Weapon[id:318038]' is taken
+    if player has resources to cast spell 'Flametongue Weapon[id:318038]'
+    if spell 'Flametongue Weapon[id:318038]' is off cooldown
+    if player does not have buff/debuff 'Flametongue Weapon[id:319778]'
+22: Spell: Thunderstrike Ward[id:462757]
+    if talent 'Thunderstrike Ward[id:462757]' is taken
+    if player has resources to cast spell 'Thunderstrike Ward[id:462757]'
+    if spell 'Thunderstrike Ward[id:462757]' is off cooldown
+    if player does not have buff/debuff 'Thunderstrike Ward[id:462742]'
+23: Spell: Flame Shock[id:470411]
+    if talent 'Flame Shock[id:470411]' is taken
+    if player has resources to cast spell 'Flame Shock[id:470411]'
+    if spell 'Flame Shock[id:470411]' is off cooldown
     if there are more than 2 targets within 10 yards of target
-    if player does not have buff/debuff 'Purging Flames'
-    if target does not have buff/debuff 'Flame Shock'
-24: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
+    if player does not have buff/debuff 'Purging Flames[id:1259471]'
+    if target does not have buff/debuff 'Flame Shock[id:188389]'
+24: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
     if there are more than 2 targets within 10 yards of target
-    if player has buff/debuff 'Purging Flames'
-25: Spell: Flame Shock
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
+    if player has buff/debuff 'Purging Flames[id:1259491]'
+25: Spell: Flame Shock[id:470411]
+    if talent 'Flame Shock[id:470411]' is taken
+    if player has resources to cast spell 'Flame Shock[id:470411]'
+    if spell 'Flame Shock[id:470411]' is off cooldown
     if there are more than 2 targets within 10 yards of target
-    if player has buff/debuff 'Purging Flames'
-    if player does not have buff/debuff 'Purging Flames'
-26: Spell: Ascendance
-    if talent 'Ascendance' is taken
-    if player has resources to cast spell 'Ascendance'
-    if spell 'Ascendance' is off cooldown
+    if player has buff/debuff 'Purging Flames[id:1259471]'
+    if player does not have buff/debuff 'Purging Flames[id:1259491]'
+26: Spell: Ascendance[id:114050]
+    if talent 'Ascendance[id:114050]' is taken
+    if player has resources to cast spell 'Ascendance[id:114050]'
+    if spell 'Ascendance[id:114050]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-27: Spell: Lightning Shield
-    if talent 'Lightning Shield' is taken
-    if player has resources to cast spell 'Lightning Shield'
-    if spell 'Lightning Shield' is off cooldown
-    if player does not have buff/debuff 'Lightning Shield'
-28: Spell: Skyfury
-    if talent 'Skyfury' is taken
-    if player has resources to cast spell 'Skyfury'
-    if spell 'Skyfury' is off cooldown
-    if player has buff/debuff 'Skyfury Highlight'
+27: Spell: Lightning Shield[id:192106]
+    if talent 'Lightning Shield[id:192106]' is taken
+    if player has resources to cast spell 'Lightning Shield[id:192106]'
+    if spell 'Lightning Shield[id:192106]' is off cooldown
+    if player does not have buff/debuff 'Lightning Shield[id:192106]'
+28: Spell: Skyfury[id:462854]
+    if talent 'Skyfury[id:462854]' is taken
+    if player has resources to cast spell 'Skyfury[id:462854]'
+    if spell 'Skyfury[id:462854]' is off cooldown
+    if player has buff/debuff 'Skyfury Highlight[id:1271904]'

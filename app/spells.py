@@ -5,8 +5,9 @@
 SpellName 表约 11MB / 41 万行，因此只做一次顺序扫描，并且只把命中行放进内存，
 不整体载入 DataFrame，也不整表缓存。
 
-表中查不到名称的 ID（本期数据有 3 个：194310 / 389387 / 470058）不报错，
-由 :meth:`SpellIndex.display_name` 渲染成 ``Unknown Spell (ID)`` 占位。
+输出里的技能名必须可追溯回 spellID，因此统一走 :meth:`SpellIndex.labelled`：
+命中时返回 ``<名称>[id:<spellID>]``；表中查不到名称的 ID（本期数据有 3 个：
+194310 / 389387 / 470058）返回 ``Unknown Spell[id:<spellID>]`` 占位，不报错也不中断渲染。
 """
 
 import csv
@@ -14,8 +15,8 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-# 表中没有该 ID 时的占位文本（不中断渲染）
-UNKNOWN_SPELL_NAME = "Unknown Spell ({spell_id})"
+# 表中没有该 ID 时的占位文本（不中断渲染；ID 由 :meth:`SpellIndex.labelled` 统一附带）
+UNKNOWN_SPELL_NAME = "Unknown Spell"
 
 
 class SpellIndex:
@@ -29,11 +30,19 @@ class SpellIndex:
         return self._names.get(int(spell_id))
 
     def display_name(self, spell_id):
-        """返回技能名；未收录时返回 ``Unknown Spell (ID)`` 占位文本。"""
+        """返回不带 ID 标签的显示名；未收录时返回 ``Unknown Spell`` 占位文本。"""
         name = self.get_name(spell_id)
         if name is None:
-            return UNKNOWN_SPELL_NAME.format(spell_id=int(spell_id))
+            return UNKNOWN_SPELL_NAME
         return name
+
+    def labelled(self, spell_id):
+        """返回"名称 + ID 标签"：``<名称>[id:<spellID>]``，ID 为十进制原值（不补零）。
+
+        渲染输出里的技能名一律经过这里，文本才能直接对照 DB2 中的 spellID；
+        未收录的 ID 输出 ``Unknown Spell[id:<spellID>]``。
+        """
+        return f"{self.display_name(spell_id)}[id:{int(spell_id)}]"
 
     def __len__(self):
         return len(self._names)

@@ -1,104 +1,104 @@
 Havoc
-0: Spell: Blade Dance
-    if talent 'Blade Dance' is taken
-    if player has resources to cast spell 'Blade Dance'
-    if spell 'Blade Dance' is off cooldown
-    if player has buff/debuff 'Metamorphosis'
-    if target has buff/debuff 'Essence Break'
+0: Spell: Blade Dance[id:188499]
+    if talent 'Blade Dance[id:188499]' is taken
+    if player has resources to cast spell 'Blade Dance[id:188499]'
+    if spell 'Blade Dance[id:188499]' is off cooldown
+    if player has buff/debuff 'Metamorphosis[id:162264]'
+    if target has buff/debuff 'Essence Break[id:320338]'
     if target is less than 5 yards away
-1: Spell: Chaos Strike
-    if talent 'Chaos Strike' is taken
-    if player has resources to cast spell 'Chaos Strike'
-    if spell 'Chaos Strike' is off cooldown
-    if spell 'Chaos Strike' is within allowed range
-    if player has buff/debuff 'Metamorphosis'
-    if target has buff/debuff 'Essence Break'
-2: Spell: Throw Glaive
-    if talent 'Throw Glaive' is taken
-    if player has resources to cast spell 'Throw Glaive'
-    if spell 'Throw Glaive' is off cooldown
-    if spell 'Throw Glaive' is within allowed range
-    if player has buff/debuff 'Reaver's Glaive'
-3: Spell: Immolation Aura
-    if talent 'Immolation Aura' is taken
-    if player has resources to cast spell 'Immolation Aura'
-    if spell 'Immolation Aura' is off cooldown
+1: Spell: Chaos Strike[id:162794]
+    if talent 'Chaos Strike[id:162794]' is taken
+    if player has resources to cast spell 'Chaos Strike[id:162794]'
+    if spell 'Chaos Strike[id:162794]' is off cooldown
+    if spell 'Chaos Strike[id:162794]' is within allowed range
+    if player has buff/debuff 'Metamorphosis[id:162264]'
+    if target has buff/debuff 'Essence Break[id:320338]'
+2: Spell: Throw Glaive[id:185123]
+    if talent 'Throw Glaive[id:185123]' is taken
+    if player has resources to cast spell 'Throw Glaive[id:185123]'
+    if spell 'Throw Glaive[id:185123]' is off cooldown
+    if spell 'Throw Glaive[id:185123]' is within allowed range
+    if player has buff/debuff 'Reaver's Glaive[id:444686]'
+3: Spell: Immolation Aura[id:258920]
+    if talent 'Immolation Aura[id:258920]' is taken
+    if player has resources to cast spell 'Immolation Aura[id:258920]'
+    if spell 'Immolation Aura[id:258920]' is off cooldown
     if there are more than 3 targets within 8 yards of player
-4: Spell: Essence Break
-    if talent 'Essence Break' is taken
-    if player has resources to cast spell 'Essence Break'
-    if spell 'Essence Break' is off cooldown
+4: Spell: Essence Break[id:258860]
+    if talent 'Essence Break[id:258860]' is taken
+    if player has resources to cast spell 'Essence Break[id:258860]'
+    if spell 'Essence Break[id:258860]' is off cooldown
     if target is less than 8 yards away
-    if player has buff/debuff 'Metamorphosis'
-    if spell 'Essence Break' is off cooldown
-5: Spell: Blade Dance
-    if talent 'Blade Dance' is taken
-    if player has resources to cast spell 'Blade Dance'
-    if spell 'Blade Dance' is off cooldown
-    if player has buff/debuff 'Metamorphosis'
+    if player has buff/debuff 'Metamorphosis[id:162264]'
+    if spell 'Essence Break[id:258860]' is off cooldown
+5: Spell: Blade Dance[id:188499]
+    if talent 'Blade Dance[id:188499]' is taken
+    if player has resources to cast spell 'Blade Dance[id:188499]'
+    if spell 'Blade Dance[id:188499]' is off cooldown
+    if player has buff/debuff 'Metamorphosis[id:162264]'
     if target is less than 5 yards away
-6: Spell: Eye Beam
-    if talent 'Eye Beam' is taken
-    if player has resources to cast spell 'Eye Beam'
-    if spell 'Eye Beam' is off cooldown
+6: Spell: Eye Beam[id:198013]
+    if talent 'Eye Beam[id:198013]' is taken
+    if player has resources to cast spell 'Eye Beam[id:198013]'
+    if spell 'Eye Beam[id:198013]' is off cooldown
     if target is less than 8 yards away
-7: Spell: Blade Dance
-    if talent 'Blade Dance' is taken
-    if player has resources to cast spell 'Blade Dance'
-    if spell 'Blade Dance' is off cooldown
+7: Spell: Blade Dance[id:188499]
+    if talent 'Blade Dance[id:188499]' is taken
+    if player has resources to cast spell 'Blade Dance[id:188499]'
+    if spell 'Blade Dance[id:188499]' is off cooldown
     if target is less than 5 yards away
-8: Spell: Chaos Strike
-    if talent 'Chaos Strike' is taken
-    if player has resources to cast spell 'Chaos Strike'
-    if spell 'Chaos Strike' is off cooldown
-    if spell 'Chaos Strike' is within allowed range
-    if player has buff/debuff 'Metamorphosis'
-9: Spell: Chaos Strike
-    if talent 'Chaos Strike' is taken
-    if player has resources to cast spell 'Chaos Strike'
-    if spell 'Chaos Strike' is off cooldown
-    if spell 'Chaos Strike' is within allowed range
-10: Spell: Throw Glaive
-    if talent 'Throw Glaive' is taken
-    if player has resources to cast spell 'Throw Glaive'
-    if spell 'Throw Glaive' is off cooldown
-    if spell 'Throw Glaive' is within allowed range
-11: Spell: Chaos Strike
-12: Spell: Immolation Aura
-    if talent 'Immolation Aura' is taken
-    if player has resources to cast spell 'Immolation Aura'
-    if spell 'Immolation Aura' is off cooldown
+8: Spell: Chaos Strike[id:162794]
+    if talent 'Chaos Strike[id:162794]' is taken
+    if player has resources to cast spell 'Chaos Strike[id:162794]'
+    if spell 'Chaos Strike[id:162794]' is off cooldown
+    if spell 'Chaos Strike[id:162794]' is within allowed range
+    if player has buff/debuff 'Metamorphosis[id:162264]'
+9: Spell: Chaos Strike[id:162794]
+    if talent 'Chaos Strike[id:162794]' is taken
+    if player has resources to cast spell 'Chaos Strike[id:162794]'
+    if spell 'Chaos Strike[id:162794]' is off cooldown
+    if spell 'Chaos Strike[id:162794]' is within allowed range
+10: Spell: Throw Glaive[id:185123]
+    if talent 'Throw Glaive[id:185123]' is taken
+    if player has resources to cast spell 'Throw Glaive[id:185123]'
+    if spell 'Throw Glaive[id:185123]' is off cooldown
+    if spell 'Throw Glaive[id:185123]' is within allowed range
+11: Spell: Chaos Strike[id:162794]
+12: Spell: Immolation Aura[id:258920]
+    if talent 'Immolation Aura[id:258920]' is taken
+    if player has resources to cast spell 'Immolation Aura[id:258920]'
+    if spell 'Immolation Aura[id:258920]' is off cooldown
     if there are more than 1 targets within 8 yards of player
-13: Spell: Metamorphosis
-    if talent 'Metamorphosis' is taken
-    if player has resources to cast spell 'Metamorphosis'
-    if spell 'Metamorphosis' is off cooldown
+13: Spell: Metamorphosis[id:191427]
+    if talent 'Metamorphosis[id:191427]' is taken
+    if player has resources to cast spell 'Metamorphosis[id:191427]'
+    if spell 'Metamorphosis[id:191427]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: Fel Rush
-    if talent 'Fel Rush' is taken
-    if player has resources to cast spell 'Fel Rush'
-    if spell 'Fel Rush' is off cooldown
-    if player has buff/debuff 'Inertia'
+14: Spell: Fel Rush[id:344865]
+    if talent 'Fel Rush[id:344865]' is taken
+    if player has resources to cast spell 'Fel Rush[id:344865]'
+    if spell 'Fel Rush[id:344865]' is off cooldown
+    if player has buff/debuff 'Inertia[id:1215159]'
     automation only (not part of the game's Assisted Combat rotation)
-15: Spell: Felblade
-    if talent 'Felblade' is taken
-    if player has resources to cast spell 'Felblade'
-    if spell 'Felblade' is off cooldown
+15: Spell: Felblade[id:232893]
+    if talent 'Felblade[id:232893]' is taken
+    if player has resources to cast spell 'Felblade[id:232893]'
+    if spell 'Felblade[id:232893]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-16: Spell: Vengeful Retreat
-    if talent 'Vengeful Retreat' is taken
-    if player has resources to cast spell 'Vengeful Retreat'
-    if spell 'Vengeful Retreat' is off cooldown
-    if player has buff/debuff 'Inertia'
+16: Spell: Vengeful Retreat[id:198793]
+    if talent 'Vengeful Retreat[id:198793]' is taken
+    if player has resources to cast spell 'Vengeful Retreat[id:198793]'
+    if spell 'Vengeful Retreat[id:198793]' is off cooldown
+    if player has buff/debuff 'Inertia[id:427640]'
     automation only (not part of the game's Assisted Combat rotation)
-17: Spell: The Hunt
-    if talent 'The Hunt' is taken
-    if player has resources to cast spell 'The Hunt'
-    if spell 'The Hunt' is off cooldown
+17: Spell: The Hunt[id:370965]
+    if talent 'The Hunt[id:370965]' is taken
+    if player has resources to cast spell 'The Hunt[id:370965]'
+    if spell 'The Hunt[id:370965]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-18: Spell: Vengeful Retreat
-    if talent 'Vengeful Retreat' is taken
-    if player has resources to cast spell 'Vengeful Retreat'
-    if spell 'Vengeful Retreat' is off cooldown
-    if player has buff/debuff 'Exergy'
+18: Spell: Vengeful Retreat[id:198793]
+    if talent 'Vengeful Retreat[id:198793]' is taken
+    if player has resources to cast spell 'Vengeful Retreat[id:198793]'
+    if spell 'Vengeful Retreat[id:198793]' is off cooldown
+    if player has buff/debuff 'Exergy[id:206476]'
     automation only (not part of the game's Assisted Combat rotation)

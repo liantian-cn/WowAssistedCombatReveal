@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 import main
-from app import output
+from app import output, render
 
 AUTOMATION_ONLY_LINE = "    automation only (not part of the game's Assisted Combat rotation)"
 UNKNOWN_SPELL_IDS = (194310, 389387, 470058)
@@ -38,7 +38,7 @@ def test_generate_all_specs(generated):
 
 
 def test_output_file_structure(generated):
-    """每个文件：首行 = 专精显示名（与文件名对应）；步骤编号从 0 连续；条件行 4 空格缩进。"""
+    """每个文件：首行 = 专精显示名（与文件名对应）；步骤编号从 0 连续且标题带 ID；条件行 4 空格缩进。"""
     _output_dir, files = outputs(generated)
     for path in files:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -47,11 +47,39 @@ def test_output_file_structure(generated):
         numbers = []
         for line in lines[1:]:
             if ": Spell: " in line:
-                assert re.match(r"^\d+: Spell: \S", line), f"{path}: 步骤行格式错误 {line!r}"
+                assert re.match(r"^\d+: Spell: .+\[id:\d+\]$", line), f"{path}: 步骤行格式错误 {line!r}"
                 numbers.append(int(line.split(":", 1)[0]))
             else:
                 assert line.startswith("    ") and len(line) > 4, f"{path}: 条件行格式错误 {line!r}"
         assert numbers == list(range(len(numbers))), f"{path}: 步骤编号不连续 {numbers}"
+
+
+def test_all_resolved_names_carry_id_labels(generated, plan_steps, condition_map, spell_index):
+    """每一处由 spellID 解析出的名称都恰好带一个 [id:<spellID>] 标签。
+
+    期望次数直接由原始数据算得：每个步骤标题 1 个 + 模板里每个引用技能名的占位符 1 个
+    （``{spell}`` 与 ``ValueN`` 以 spell 开头且被模板引用的 ``{argN}``）。多一个或少一个都会失败。
+    """
+    _index, required_ids = spell_index
+    expected = 0
+    for step in plan_steps:
+        expected += 1  # 步骤标题行
+        for rule in step["rules"].values():
+            props = render.condition_props(condition_map, rule["raw"]["ConditionType"], rule["ID"])
+            description = str(props["Description"])
+            expected += description.count("{spell}")
+            for suffix in ("1", "2", "3"):
+                if str(props[f"Value{suffix}"]).lower().startswith("spell"):
+                    expected += description.count(f"{{arg{suffix}}}")
+
+    _output_dir, files = outputs(generated)
+    text = "\n".join(path.read_text(encoding="utf-8") for path in files)
+    assert text.count("[id:") == expected
+    # 标签里的 ID 必须都来自本次需求集合（不可能是凭空写死的数字）
+    assert {int(match) for match in re.findall(r"\[id:(\d+)\]", text)} <= required_ids
+    # 没有任何一处仍使用旧占位写法
+    assert "Unknown Spell (" not in text
+    assert text.count("Unknown Spell") == 3
 
 
 def test_charge_lines_use_numbers(generated):
@@ -61,6 +89,8 @@ def test_charge_lines_use_numbers(generated):
     assert "'Spells' charges" not in text
     assert "'Charge Count'" not in text
     assert len(re.findall(r"more than \d+ charges of spell '", text)) == 10
+    # 层数不带标签，紧跟其后的技能名带标签
+    assert len(re.findall(r"more than \d+ charges of spell '.+\[id:\d+\]'", text)) == 10
 
 
 def test_automation_only_lines(generated):
@@ -71,12 +101,14 @@ def test_automation_only_lines(generated):
 
 
 def test_unknown_spell_placeholders(generated):
-    """3 个缺失技能 ID 都渲染为 'Unknown Spell (ID)'，程序不中断。"""
+    """3 个缺失技能 ID 都渲染为 'Unknown Spell[id:<ID>]'，旧的 `(ID)` 写法归零，程序不中断。"""
     _output_dir, files = outputs(generated)
     text = "\n".join(path.read_text(encoding="utf-8") for path in files)
     for spell_id in UNKNOWN_SPELL_IDS:
-        assert f"'Unknown Spell ({spell_id})'" in text
-    assert text.count("Unknown Spell (") == 3
+        assert f"'Unknown Spell[id:{spell_id}]'" in text
+        assert text.count(f"[id:{spell_id}]") == 1
+    assert text.count("Unknown Spell[id:") == 3
+    assert "Unknown Spell (" not in text
 
 
 def test_run_is_offline_and_scans_spell_table_once(monkeypatch, tmp_path, csv_dir, condition_map_file):

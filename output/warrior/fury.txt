@@ -1,115 +1,115 @@
 Fury
-0: Spell: Rampage
-    if player does not have buff/debuff 'Enrage'
-    if talent 'Rampage' is taken
-    if player has resources to cast spell 'Rampage'
-    if spell 'Rampage' is off cooldown
-    if spell 'Rampage' is within allowed range
-1: Spell: Thunder Clap
-    if player has buff/debuff 'Thunder Blast'
+0: Spell: Rampage[id:184367]
+    if player does not have buff/debuff 'Enrage[id:184362]'
+    if talent 'Rampage[id:184367]' is taken
+    if player has resources to cast spell 'Rampage[id:184367]'
+    if spell 'Rampage[id:184367]' is off cooldown
+    if spell 'Rampage[id:184367]' is within allowed range
+1: Spell: Thunder Clap[id:6343]
+    if player has buff/debuff 'Thunder Blast[id:435615]'
     if target is less than 5 yards away
-    if player has buff/debuff 'Enrage'
-    if talent 'Thunder Clap' is taken
-    if player has resources to cast spell 'Thunder Clap'
-    if spell 'Thunder Clap' is off cooldown
-2: Spell: Odyn's Fury
+    if player has buff/debuff 'Enrage[id:184362]'
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player has resources to cast spell 'Thunder Clap[id:6343]'
+    if spell 'Thunder Clap[id:6343]' is off cooldown
+2: Spell: Odyn's Fury[id:385059]
     if target is less than 12 yards away
-    if talent 'Odyn's Fury' is taken
-    if player has resources to cast spell 'Odyn's Fury'
-    if spell 'Odyn's Fury' is off cooldown
-3: Spell: Thunder Clap
+    if talent 'Odyn's Fury[id:385059]' is taken
+    if player has resources to cast spell 'Odyn's Fury[id:385059]'
+    if spell 'Odyn's Fury[id:385059]' is off cooldown
+3: Spell: Thunder Clap[id:6343]
     if target is less than 5 yards away
-    if player has buff/debuff 'Crashing Thunder'
-    if talent 'Thunder Clap' is taken
-    if player does not have buff/debuff 'Whirlwind'
-    if talent 'Thunder Clap' is taken
-    if player has resources to cast spell 'Thunder Clap'
-    if spell 'Thunder Clap' is off cooldown
-4: Spell: Whirlwind
+    if player has buff/debuff 'Crashing Thunder[id:436707]'
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player does not have buff/debuff 'Whirlwind[id:85739]'
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player has resources to cast spell 'Thunder Clap[id:6343]'
+    if spell 'Thunder Clap[id:6343]' is off cooldown
+4: Spell: Whirlwind[id:190411]
     if target is less than 10 yards away
-    if player does not have buff/debuff 'Crashing Thunder'
-    if talent 'Whirlwind' is taken
-    if player does not have buff/debuff 'Whirlwind'
+    if player does not have buff/debuff 'Crashing Thunder[id:436707]'
+    if talent 'Whirlwind[id:190411]' is taken
+    if player does not have buff/debuff 'Whirlwind[id:85739]'
     if there are more than 3 targets within 0 yards of player
-    if talent 'Whirlwind' is taken
-    if player has resources to cast spell 'Whirlwind'
-    if spell 'Whirlwind' is off cooldown
-5: Spell: Bladestorm
+    if talent 'Whirlwind[id:190411]' is taken
+    if player has resources to cast spell 'Whirlwind[id:190411]'
+    if spell 'Whirlwind[id:190411]' is off cooldown
+5: Spell: Bladestorm[id:227847]
     if target is less than 10 yards away
-    if player has buff/debuff 'Enrage'
-    if talent 'Bladestorm' is taken
-    if player has resources to cast spell 'Bladestorm'
-    if spell 'Bladestorm' is off cooldown
-6: Spell: Rampage
-    if talent 'Rampage' is taken
-    if player has resources to cast spell 'Rampage'
-    if spell 'Rampage' is off cooldown
-    if spell 'Rampage' is within allowed range
-7: Spell: Execute
-    if talent 'Execute' is taken
-    if player has resources to cast spell 'Execute'
-    if spell 'Execute' is off cooldown
-    if spell 'Execute' is within allowed range
-8: Spell: Thunder Clap
+    if player has buff/debuff 'Enrage[id:184362]'
+    if talent 'Bladestorm[id:227847]' is taken
+    if player has resources to cast spell 'Bladestorm[id:227847]'
+    if spell 'Bladestorm[id:227847]' is off cooldown
+6: Spell: Rampage[id:184367]
+    if talent 'Rampage[id:184367]' is taken
+    if player has resources to cast spell 'Rampage[id:184367]'
+    if spell 'Rampage[id:184367]' is off cooldown
+    if spell 'Rampage[id:184367]' is within allowed range
+7: Spell: Execute[id:5308]
+    if talent 'Execute[id:5308]' is taken
+    if player has resources to cast spell 'Execute[id:5308]'
+    if spell 'Execute[id:5308]' is off cooldown
+    if spell 'Execute[id:5308]' is within allowed range
+8: Spell: Thunder Clap[id:6343]
     if target is less than 5 yards away
-    if player has buff/debuff 'Crashing Thunder'
+    if player has buff/debuff 'Crashing Thunder[id:436707]'
     if there are more than 3 targets within 0 yards of player
-    if talent 'Thunder Clap' is taken
-    if player has resources to cast spell 'Thunder Clap'
-    if spell 'Thunder Clap' is off cooldown
-9: Spell: Raging Blow
-    if talent 'Raging Blow' is taken
-    if player has resources to cast spell 'Raging Blow'
-    if spell 'Raging Blow' is off cooldown
-    if spell 'Raging Blow' is within allowed range
-10: Spell: Bloodthirst
-    if talent 'Bloodthirst' is taken
-    if player has resources to cast spell 'Bloodthirst'
-    if spell 'Bloodthirst' is off cooldown
-    if spell 'Bloodthirst' is within allowed range
-11: Spell: Thunder Clap
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player has resources to cast spell 'Thunder Clap[id:6343]'
+    if spell 'Thunder Clap[id:6343]' is off cooldown
+9: Spell: Raging Blow[id:85288]
+    if talent 'Raging Blow[id:85288]' is taken
+    if player has resources to cast spell 'Raging Blow[id:85288]'
+    if spell 'Raging Blow[id:85288]' is off cooldown
+    if spell 'Raging Blow[id:85288]' is within allowed range
+10: Spell: Bloodthirst[id:23881]
+    if talent 'Bloodthirst[id:23881]' is taken
+    if player has resources to cast spell 'Bloodthirst[id:23881]'
+    if spell 'Bloodthirst[id:23881]' is off cooldown
+    if spell 'Bloodthirst[id:23881]' is within allowed range
+11: Spell: Thunder Clap[id:6343]
     if target is less than 5 yards away
-    if player has buff/debuff 'Crashing Thunder'
-    if talent 'Thunder Clap' is taken
-    if player has resources to cast spell 'Thunder Clap'
-    if spell 'Thunder Clap' is off cooldown
-12: Spell: Heroic Throw
-    if talent 'Heroic Throw' is taken
-    if player has resources to cast spell 'Heroic Throw'
-    if spell 'Heroic Throw' is off cooldown
-    if spell 'Heroic Throw' is within allowed range
+    if player has buff/debuff 'Crashing Thunder[id:436707]'
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player has resources to cast spell 'Thunder Clap[id:6343]'
+    if spell 'Thunder Clap[id:6343]' is off cooldown
+12: Spell: Heroic Throw[id:57755]
+    if talent 'Heroic Throw[id:57755]' is taken
+    if player has resources to cast spell 'Heroic Throw[id:57755]'
+    if spell 'Heroic Throw[id:57755]' is off cooldown
+    if spell 'Heroic Throw[id:57755]' is within allowed range
     if target is more than 15 yards away
-13: Spell: Slam
-    if player does not have buff/debuff 'Rampage!'
-14: Spell: Recklessness
-    if talent 'Recklessness' is taken
-    if player has resources to cast spell 'Recklessness'
-    if spell 'Recklessness' is off cooldown
-    if spell 'Recklessness' is off cooldown
+13: Spell: Slam[id:1464]
+    if player does not have buff/debuff 'Rampage![id:209694]'
+14: Spell: Recklessness[id:1719]
+    if talent 'Recklessness[id:1719]' is taken
+    if player has resources to cast spell 'Recklessness[id:1719]'
+    if spell 'Recklessness[id:1719]' is off cooldown
+    if spell 'Recklessness[id:1719]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-15: Spell: Avatar
-    if talent 'Avatar' is taken
-    if player has resources to cast spell 'Avatar'
-    if spell 'Avatar' is off cooldown
-    if spell 'Avatar' is off cooldown
+15: Spell: Avatar[id:107574]
+    if talent 'Avatar[id:107574]' is taken
+    if player has resources to cast spell 'Avatar[id:107574]'
+    if spell 'Avatar[id:107574]' is off cooldown
+    if spell 'Avatar[id:107574]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-16: Spell: Thunder Clap
-    if target does not have buff/debuff 'Rend'
-    if player has resources to cast spell 'Thunder Clap'
-    if spell 'Thunder Clap' is off cooldown
-    if player has buff/debuff 'Storm of Blood'
-    if talent 'Thunder Clap' is taken
-    if player has buff/debuff 'Crashing Thunder'
-17: Spell: Whirlwind
-    if spell 'Whirlwind' is off cooldown
-18: Spell: Battle Shout
-    if talent 'Battle Shout' is taken
-    if player has resources to cast spell 'Battle Shout'
-    if spell 'Battle Shout' is off cooldown
-    if player has buff/debuff 'Battle Shout Highlight'
-19: Spell: Whirlwind
-    if target does not have buff/debuff 'Rend'
-    if talent 'Whirlwind' is taken
-    if player has resources to cast spell 'Whirlwind'
-    if spell 'Whirlwind' is off cooldown
-    if player has buff/debuff 'Storm of Blood'
+16: Spell: Thunder Clap[id:6343]
+    if target does not have buff/debuff 'Rend[id:388539]'
+    if player has resources to cast spell 'Thunder Clap[id:6343]'
+    if spell 'Thunder Clap[id:6343]' is off cooldown
+    if player has buff/debuff 'Storm of Blood[id:1299025]'
+    if talent 'Thunder Clap[id:6343]' is taken
+    if player has buff/debuff 'Crashing Thunder[id:436707]'
+17: Spell: Whirlwind[id:190411]
+    if spell 'Whirlwind[id:190411]' is off cooldown
+18: Spell: Battle Shout[id:6673]
+    if talent 'Battle Shout[id:6673]' is taken
+    if player has resources to cast spell 'Battle Shout[id:6673]'
+    if spell 'Battle Shout[id:6673]' is off cooldown
+    if player has buff/debuff 'Battle Shout Highlight[id:1271909]'
+19: Spell: Whirlwind[id:190411]
+    if target does not have buff/debuff 'Rend[id:388539]'
+    if talent 'Whirlwind[id:190411]' is taken
+    if player has resources to cast spell 'Whirlwind[id:190411]'
+    if spell 'Whirlwind[id:190411]' is off cooldown
+    if player has buff/debuff 'Storm of Blood[id:1299025]'

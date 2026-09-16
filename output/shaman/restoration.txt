@@ -1,48 +1,48 @@
 Restoration
-0: Spell: Chain Lightning
+0: Spell: Chain Lightning[id:188443]
     if there are more than 3 targets within 10 yards of target
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
-    if spell 'Chain Lightning' can be successfully cast
-1: Spell: Flame Shock
-    if target does not have buff/debuff 'Flame Shock'
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
-2: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-3: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if spell 'Lightning Bolt' can be successfully cast
-4: Spell: Lava Burst
-5: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player has more than 2 charges of spell 'Lava Burst'
-    if spell 'Lava Burst' can be successfully cast
-6: Spell: Water Shield
-    if talent 'Water Shield' is taken
-    if player has resources to cast spell 'Water Shield'
-    if spell 'Water Shield' is off cooldown
-    if player does not have buff/debuff 'Water Shield'
-7: Spell: Earthliving Weapon
-    if talent 'Earthliving Weapon' is taken
-    if player has resources to cast spell 'Earthliving Weapon'
-    if spell 'Earthliving Weapon' is off cooldown
-    if player does not have buff/debuff 'Earthliving Weapon'
-8: Spell: Tidecaller's Guard
-    if talent 'Tidecaller's Guard' is taken
-    if player has resources to cast spell 'Tidecaller's Guard'
-    if spell 'Tidecaller's Guard' is off cooldown
-    if player does not have buff/debuff 'Tidecaller's Guard'
-9: Spell: Skyfury
-    if talent 'Skyfury' is taken
-    if player has resources to cast spell 'Skyfury'
-    if spell 'Skyfury' is off cooldown
-    if player has buff/debuff 'Skyfury Highlight'
+    if talent 'Chain Lightning[id:188443]' is taken
+    if player has resources to cast spell 'Chain Lightning[id:188443]'
+    if spell 'Chain Lightning[id:188443]' is off cooldown
+    if spell 'Chain Lightning[id:188443]' can be successfully cast
+1: Spell: Flame Shock[id:470411]
+    if target does not have buff/debuff 'Flame Shock[id:188389]'
+    if talent 'Flame Shock[id:470411]' is taken
+    if player has resources to cast spell 'Flame Shock[id:470411]'
+    if spell 'Flame Shock[id:470411]' is off cooldown
+2: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+3: Spell: Lightning Bolt[id:188196]
+    if talent 'Lightning Bolt[id:188196]' is taken
+    if player has resources to cast spell 'Lightning Bolt[id:188196]'
+    if spell 'Lightning Bolt[id:188196]' is off cooldown
+    if spell 'Lightning Bolt[id:188196]' can be successfully cast
+4: Spell: Lava Burst[id:51505]
+5: Spell: Lava Burst[id:51505]
+    if talent 'Lava Burst[id:51505]' is taken
+    if player has resources to cast spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' is off cooldown
+    if player has more than 2 charges of spell 'Lava Burst[id:51505]'
+    if spell 'Lava Burst[id:51505]' can be successfully cast
+6: Spell: Water Shield[id:52127]
+    if talent 'Water Shield[id:52127]' is taken
+    if player has resources to cast spell 'Water Shield[id:52127]'
+    if spell 'Water Shield[id:52127]' is off cooldown
+    if player does not have buff/debuff 'Water Shield[id:52127]'
+7: Spell: Earthliving Weapon[id:382021]
+    if talent 'Earthliving Weapon[id:382021]' is taken
+    if player has resources to cast spell 'Earthliving Weapon[id:382021]'
+    if spell 'Earthliving Weapon[id:382021]' is off cooldown
+    if player does not have buff/debuff 'Earthliving Weapon[id:382022]'
+8: Spell: Tidecaller's Guard[id:457481]
+    if talent 'Tidecaller's Guard[id:457481]' is taken
+    if player has resources to cast spell 'Tidecaller's Guard[id:457481]'
+    if spell 'Tidecaller's Guard[id:457481]' is off cooldown
+    if player does not have buff/debuff 'Tidecaller's Guard[id:457496]'
+9: Spell: Skyfury[id:462854]
+    if talent 'Skyfury[id:462854]' is taken
+    if player has resources to cast spell 'Skyfury[id:462854]'
+    if spell 'Skyfury[id:462854]' is off cooldown
+    if player has buff/debuff 'Skyfury Highlight[id:1271904]'

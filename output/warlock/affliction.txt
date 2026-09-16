@@ -1,119 +1,119 @@
 Affliction
-0: Spell: Seed of Corruption
-    if talent 'Seed of Corruption' is taken
-    if player has resources to cast spell 'Seed of Corruption'
-    if spell 'Seed of Corruption' is off cooldown
+0: Spell: Seed of Corruption[id:27243]
+    if talent 'Seed of Corruption[id:27243]' is taken
+    if player has resources to cast spell 'Seed of Corruption[id:27243]'
+    if spell 'Seed of Corruption[id:27243]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if target does not have buff/debuff 'Corruption'
-    if player does not have buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-1: Spell: Seed of Corruption
-    if talent 'Seed of Corruption' is taken
-    if player has resources to cast spell 'Seed of Corruption'
-    if spell 'Seed of Corruption' is off cooldown
+    if target does not have buff/debuff 'Corruption[id:146739]'
+    if player does not have buff/debuff 'Wither[id:445465]'
+    if target does not have buff/debuff 'Seed of Corruption[id:27243]'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT][id:1279998]'
+1: Spell: Seed of Corruption[id:27243]
+    if talent 'Seed of Corruption[id:27243]' is taken
+    if player has resources to cast spell 'Seed of Corruption[id:27243]'
+    if spell 'Seed of Corruption[id:27243]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if target does not have buff/debuff 'Wither'
-    if player has buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-2: Spell: Corruption
-    if talent 'Corruption' is taken
-    if player has resources to cast spell 'Corruption'
-    if spell 'Corruption' is off cooldown
-    if target does not have buff/debuff 'Corruption'
-    if player does not have buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-3: Spell: Corruption
-    if talent 'Corruption' is taken
-    if player has resources to cast spell 'Corruption'
-    if spell 'Corruption' is off cooldown
-    if target does not have buff/debuff 'Wither'
-    if player has buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-4: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
+    if target does not have buff/debuff 'Wither[id:445474]'
+    if player has buff/debuff 'Wither[id:445465]'
+    if target does not have buff/debuff 'Seed of Corruption[id:27243]'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT][id:1279998]'
+2: Spell: Corruption[id:172]
+    if talent 'Corruption[id:172]' is taken
+    if player has resources to cast spell 'Corruption[id:172]'
+    if spell 'Corruption[id:172]' is off cooldown
+    if target does not have buff/debuff 'Corruption[id:146739]'
+    if player does not have buff/debuff 'Wither[id:445465]'
+    if target does not have buff/debuff 'Seed of Corruption[id:27243]'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT][id:1279998]'
+3: Spell: Corruption[id:172]
+    if talent 'Corruption[id:172]' is taken
+    if player has resources to cast spell 'Corruption[id:172]'
+    if spell 'Corruption[id:172]' is off cooldown
+    if target does not have buff/debuff 'Wither[id:445474]'
+    if player has buff/debuff 'Wither[id:445465]'
+    if target does not have buff/debuff 'Seed of Corruption[id:27243]'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT][id:1279998]'
+4: Spell: Unstable Affliction[id:1259790]
+    if talent 'Unstable Affliction[id:1259790]' is taken
+    if player has resources to cast spell 'Unstable Affliction[id:1259790]'
+    if spell 'Unstable Affliction[id:1259790]' is off cooldown
     if player has more than 50 soul shards
-5: Spell: Agony
-    if talent 'Agony' is taken
-    if player has resources to cast spell 'Agony'
-    if spell 'Agony' is off cooldown
-    if target does not have buff/debuff 'Agony'
-6: Spell: Haunt
-    if talent 'Haunt' is taken
-    if player has resources to cast spell 'Haunt'
-    if spell 'Haunt' is off cooldown
-7: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-    if player has buff/debuff 'Shard Instability'
-8: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-9: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if spell 'Shadow Bolt' can be successfully cast
-10: Spell: Agony
-    if talent 'Agony' is taken
-    if player has resources to cast spell 'Agony'
-    if spell 'Agony' is off cooldown
-    if target has buff/debuff 'Agony' with at least 4000 ms left
-11: Spell: Shadow Bolt
-12: Spell: Malevolence
-    if talent 'Malevolence' is taken
-    if player has resources to cast spell 'Malevolence'
-    if spell 'Malevolence' is off cooldown
-13: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-    if spell 'Unstable Affliction' can be successfully cast
+5: Spell: Agony[id:980]
+    if talent 'Agony[id:980]' is taken
+    if player has resources to cast spell 'Agony[id:980]'
+    if spell 'Agony[id:980]' is off cooldown
+    if target does not have buff/debuff 'Agony[id:980]'
+6: Spell: Haunt[id:48181]
+    if talent 'Haunt[id:48181]' is taken
+    if player has resources to cast spell 'Haunt[id:48181]'
+    if spell 'Haunt[id:48181]' is off cooldown
+7: Spell: Unstable Affliction[id:1259790]
+    if talent 'Unstable Affliction[id:1259790]' is taken
+    if player has resources to cast spell 'Unstable Affliction[id:1259790]'
+    if spell 'Unstable Affliction[id:1259790]' is off cooldown
+    if player has buff/debuff 'Shard Instability[id:1260269]'
+8: Spell: Unstable Affliction[id:1259790]
+    if talent 'Unstable Affliction[id:1259790]' is taken
+    if player has resources to cast spell 'Unstable Affliction[id:1259790]'
+    if spell 'Unstable Affliction[id:1259790]' is off cooldown
+9: Spell: Shadow Bolt[id:686]
+    if talent 'Shadow Bolt[id:686]' is taken
+    if player has resources to cast spell 'Shadow Bolt[id:686]'
+    if spell 'Shadow Bolt[id:686]' is off cooldown
+    if spell 'Shadow Bolt[id:686]' can be successfully cast
+10: Spell: Agony[id:980]
+    if talent 'Agony[id:980]' is taken
+    if player has resources to cast spell 'Agony[id:980]'
+    if spell 'Agony[id:980]' is off cooldown
+    if target has buff/debuff 'Agony[id:980]' with at least 4000 ms left
+11: Spell: Shadow Bolt[id:686]
+12: Spell: Malevolence[id:442726]
+    if talent 'Malevolence[id:442726]' is taken
+    if player has resources to cast spell 'Malevolence[id:442726]'
+    if spell 'Malevolence[id:442726]' is off cooldown
+13: Spell: Unstable Affliction[id:1259790]
+    if talent 'Unstable Affliction[id:1259790]' is taken
+    if player has resources to cast spell 'Unstable Affliction[id:1259790]'
+    if spell 'Unstable Affliction[id:1259790]' is off cooldown
+    if spell 'Unstable Affliction[id:1259790]' can be successfully cast
     if player has more than 20 soul shards
-14: Spell: Summon Felhunter
-    if talent 'Summon Felhunter' is taken
-    if player has resources to cast spell 'Summon Felhunter'
-    if spell 'Summon Felhunter' is off cooldown
+14: Spell: Summon Felhunter[id:691]
+    if talent 'Summon Felhunter[id:691]' is taken
+    if player has resources to cast spell 'Summon Felhunter[id:691]'
+    if spell 'Summon Felhunter[id:691]' is off cooldown
     if player has no pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice'
-    if spell 'Summon Felhunter' can be successfully cast
-    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
-15: Spell: Grimoire of Sacrifice
-    if talent 'Grimoire of Sacrifice' is taken
-    if player has resources to cast spell 'Grimoire of Sacrifice'
-    if spell 'Grimoire of Sacrifice' is off cooldown
+    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
+    if spell 'Summon Felhunter[id:691]' can be successfully cast
+    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT][id:1288970]'
+15: Spell: Grimoire of Sacrifice[id:108503]
+    if talent 'Grimoire of Sacrifice[id:108503]' is taken
+    if player has resources to cast spell 'Grimoire of Sacrifice[id:108503]'
+    if spell 'Grimoire of Sacrifice[id:108503]' is off cooldown
     if player has pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice'
-16: Spell: Summon Imp
-    if talent 'Summon Imp' is taken
-    if player has resources to cast spell 'Summon Imp'
-    if spell 'Summon Imp' is off cooldown
+    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
+16: Spell: Summon Imp[id:688]
+    if talent 'Summon Imp[id:688]' is taken
+    if player has resources to cast spell 'Summon Imp[id:688]'
+    if spell 'Summon Imp[id:688]' is off cooldown
     if player has no pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice'
-    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
-17: Spell: Summon Darkglare
-    if talent 'Summon Darkglare' is taken
-    if player has resources to cast spell 'Summon Darkglare'
-    if spell 'Summon Darkglare' is off cooldown
+    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
+    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT][id:1288970]'
+17: Spell: Summon Darkglare[id:205180]
+    if talent 'Summon Darkglare[id:205180]' is taken
+    if player has resources to cast spell 'Summon Darkglare[id:205180]'
+    if spell 'Summon Darkglare[id:205180]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-18: Spell: Dark Harvest
-    if talent 'Dark Harvest' is taken
-    if player has resources to cast spell 'Dark Harvest'
-    if spell 'Dark Harvest' is off cooldown
-19: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if player has more than 2 stacks of buff/debuff 'Nightfall'
-20: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if player has buff/debuff 'Nightfall' with at least 3000 ms left
+18: Spell: Dark Harvest[id:1257052]
+    if talent 'Dark Harvest[id:1257052]' is taken
+    if player has resources to cast spell 'Dark Harvest[id:1257052]'
+    if spell 'Dark Harvest[id:1257052]' is off cooldown
+19: Spell: Shadow Bolt[id:686]
+    if talent 'Shadow Bolt[id:686]' is taken
+    if player has resources to cast spell 'Shadow Bolt[id:686]'
+    if spell 'Shadow Bolt[id:686]' is off cooldown
+    if player has more than 2 stacks of buff/debuff 'Nightfall[id:264571]'
+20: Spell: Shadow Bolt[id:686]
+    if talent 'Shadow Bolt[id:686]' is taken
+    if player has resources to cast spell 'Shadow Bolt[id:686]'
+    if spell 'Shadow Bolt[id:686]' is off cooldown
+    if player has buff/debuff 'Nightfall[id:264571]' with at least 3000 ms left

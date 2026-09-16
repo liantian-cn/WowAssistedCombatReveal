@@ -1,107 +1,107 @@
 Retribution
-0: Spell: Execution Sentence
-    if talent 'Execution Sentence' is taken
-    if player has resources to cast spell 'Execution Sentence'
-    if spell 'Execution Sentence' is off cooldown
-    if spell 'Execution Sentence' is within allowed range
-1: Spell: Wake of Ashes
-    if talent 'Wake of Ashes' is taken
-    if player has resources to cast spell 'Wake of Ashes'
-    if player has buff/debuff 'Hammer of Light'
-    if spell 'Wake of Ashes' is within allowed range
-2: Spell: Templar's Verdict
-    if talent 'Templar's Verdict' is taken
-    if player has resources to cast spell 'Templar's Verdict'
-    if spell 'Templar's Verdict' is off cooldown
+0: Spell: Execution Sentence[id:343527]
+    if talent 'Execution Sentence[id:343527]' is taken
+    if player has resources to cast spell 'Execution Sentence[id:343527]'
+    if spell 'Execution Sentence[id:343527]' is off cooldown
+    if spell 'Execution Sentence[id:343527]' is within allowed range
+1: Spell: Wake of Ashes[id:255937]
+    if talent 'Wake of Ashes[id:255937]' is taken
+    if player has resources to cast spell 'Wake of Ashes[id:255937]'
+    if player has buff/debuff 'Hammer of Light[id:427441]'
+    if spell 'Wake of Ashes[id:255937]' is within allowed range
+2: Spell: Templar's Verdict[id:85256]
+    if talent 'Templar's Verdict[id:85256]' is taken
+    if player has resources to cast spell 'Templar's Verdict[id:85256]'
+    if spell 'Templar's Verdict[id:85256]' is off cooldown
     if there are less than 2 targets within 10 yards of player
-    if player does not have buff/debuff 'Hammer of Light'
-    if spell 'Templar's Verdict' is within allowed range
-3: Spell: Blade of Justice
-    if talent 'Blade of Justice' is taken
-    if player has resources to cast spell 'Blade of Justice'
-    if spell 'Blade of Justice' is off cooldown
-    if player has buff/debuff 'Expurgation'
-    if target does not have buff/debuff 'Expurgation'
-    if spell 'Blade of Justice' is within allowed range
-4: Spell: Divine Storm
-    if talent 'Divine Storm' is taken
-    if player has resources to cast spell 'Divine Storm'
-    if spell 'Divine Storm' is off cooldown
+    if player does not have buff/debuff 'Hammer of Light[id:427441]'
+    if spell 'Templar's Verdict[id:85256]' is within allowed range
+3: Spell: Blade of Justice[id:184575]
+    if talent 'Blade of Justice[id:184575]' is taken
+    if player has resources to cast spell 'Blade of Justice[id:184575]'
+    if spell 'Blade of Justice[id:184575]' is off cooldown
+    if player has buff/debuff 'Expurgation[id:383344]'
+    if target does not have buff/debuff 'Expurgation[id:383346]'
+    if spell 'Blade of Justice[id:184575]' is within allowed range
+4: Spell: Divine Storm[id:53385]
+    if talent 'Divine Storm[id:53385]' is taken
+    if player has resources to cast spell 'Divine Storm[id:53385]'
+    if spell 'Divine Storm[id:53385]' is off cooldown
     if there are more than 2 targets within 10 yards of player
     if player has more than 3 holy power
-    if player does not have buff/debuff 'Hammer of Light'
-5: Spell: Wake of Ashes
-    if talent 'Wake of Ashes' is taken
-    if player has resources to cast spell 'Wake of Ashes'
-    if spell 'Wake of Ashes' is off cooldown
+    if player does not have buff/debuff 'Hammer of Light[id:427441]'
+5: Spell: Wake of Ashes[id:255937]
+    if talent 'Wake of Ashes[id:255937]' is taken
+    if player has resources to cast spell 'Wake of Ashes[id:255937]'
+    if spell 'Wake of Ashes[id:255937]' is off cooldown
     if target is less than 10 yards away
-6: Spell: Templar's Verdict
-    if talent 'Templar's Verdict' is taken
-    if player has resources to cast spell 'Templar's Verdict'
-    if spell 'Templar's Verdict' is off cooldown
-    if player has buff/debuff 'Empyrean Legacy'
+6: Spell: Templar's Verdict[id:85256]
+    if talent 'Templar's Verdict[id:85256]' is taken
+    if player has resources to cast spell 'Templar's Verdict[id:85256]'
+    if spell 'Templar's Verdict[id:85256]' is off cooldown
+    if player has buff/debuff 'Empyrean Legacy[id:387178]'
     if player has more than 5 holy power
-    if player does not have buff/debuff 'Hammer of Light'
-    if spell 'Templar's Verdict' is within allowed range
-7: Spell: Divine Toll
+    if player does not have buff/debuff 'Hammer of Light[id:427441]'
+    if spell 'Templar's Verdict[id:85256]' is within allowed range
+7: Spell: Divine Toll[id:375576]
     if target is less than 30 yards away
-    if talent 'Divine Toll' is taken
-    if player has resources to cast spell 'Divine Toll'
-    if spell 'Divine Toll' is off cooldown
+    if talent 'Divine Toll[id:375576]' is taken
+    if player has resources to cast spell 'Divine Toll[id:375576]'
+    if spell 'Divine Toll[id:375576]' is off cooldown
     if there are more than 3 targets within 10 yards of player
     if player has less than 1 holy power
-8: Spell: Divine Storm
-    if talent 'Divine Storm' is taken
-    if player has resources to cast spell 'Divine Storm'
-    if spell 'Divine Storm' is off cooldown
-    if player has buff/debuff 'Empyrean Power'
-    if player does not have buff/debuff 'Hammer of Light'
-9: Spell: Divine Toll
+8: Spell: Divine Storm[id:53385]
+    if talent 'Divine Storm[id:53385]' is taken
+    if player has resources to cast spell 'Divine Storm[id:53385]'
+    if spell 'Divine Storm[id:53385]' is off cooldown
+    if player has buff/debuff 'Empyrean Power[id:326733]'
+    if player does not have buff/debuff 'Hammer of Light[id:427441]'
+9: Spell: Divine Toll[id:375576]
     if target is less than 30 yards away
-    if talent 'Divine Toll' is taken
-    if player has resources to cast spell 'Divine Toll'
-    if spell 'Divine Toll' is off cooldown
+    if talent 'Divine Toll[id:375576]' is taken
+    if player has resources to cast spell 'Divine Toll[id:375576]'
+    if spell 'Divine Toll[id:375576]' is off cooldown
     if player has less than 3 holy power
     if there are less than 2 targets within 10 yards of player
-10: Spell: Blade of Justice
-    if talent 'Blade of Justice' is taken
-    if player has resources to cast spell 'Blade of Justice'
-    if spell 'Blade of Justice' is off cooldown
+10: Spell: Blade of Justice[id:184575]
+    if talent 'Blade of Justice[id:184575]' is taken
+    if player has resources to cast spell 'Blade of Justice[id:184575]'
+    if spell 'Blade of Justice[id:184575]' is off cooldown
     if player has less than 3 holy power
-    if spell 'Blade of Justice' is within allowed range
-11: Spell: Crusader Strike
-    if talent 'Crusader Strike' is taken
-    if player has resources to cast spell 'Crusader Strike'
-    if spell 'Crusader Strike' is off cooldown
-    if spell 'Crusader Strike' is within allowed range
-12: Spell: Judgment
-    if talent 'Judgment' is taken
-    if player has resources to cast spell 'Judgment'
-    if spell 'Judgment' is off cooldown
+    if spell 'Blade of Justice[id:184575]' is within allowed range
+11: Spell: Crusader Strike[id:35395]
+    if talent 'Crusader Strike[id:35395]' is taken
+    if player has resources to cast spell 'Crusader Strike[id:35395]'
+    if spell 'Crusader Strike[id:35395]' is off cooldown
+    if spell 'Crusader Strike[id:35395]' is within allowed range
+12: Spell: Judgment[id:20271]
+    if talent 'Judgment[id:20271]' is taken
+    if player has resources to cast spell 'Judgment[id:20271]'
+    if spell 'Judgment[id:20271]' is off cooldown
     if player has less than 3 holy power
-    if spell 'Judgment' is within allowed range
-13: Spell: Templar's Verdict
-    if talent 'Templar's Verdict' is taken
-    if player has resources to cast spell 'Templar's Verdict'
-    if spell 'Templar's Verdict' is off cooldown
-    if player does not have buff/debuff 'Hammer of Light'
-    if spell 'Templar's Verdict' is within allowed range
-14: Spell: Crusader Strike
-    if talent 'Crusader Strike' is taken
-    if player has resources to cast spell 'Crusader Strike'
-    if spell 'Crusader Strike' is off cooldown
-    if player does not have buff/debuff 'Crusading Strikes'
-    if spell 'Crusader Strike' is within allowed range
-15: Spell: Judgment
-16: Spell: Judgment
-    if player has buff/debuff 'Avenging Wrath'
-    if talent 'Judgment' is taken
-    if player has resources to cast spell 'Judgment'
-    if spell 'Judgment' is off cooldown
+    if spell 'Judgment[id:20271]' is within allowed range
+13: Spell: Templar's Verdict[id:85256]
+    if talent 'Templar's Verdict[id:85256]' is taken
+    if player has resources to cast spell 'Templar's Verdict[id:85256]'
+    if spell 'Templar's Verdict[id:85256]' is off cooldown
+    if player does not have buff/debuff 'Hammer of Light[id:427441]'
+    if spell 'Templar's Verdict[id:85256]' is within allowed range
+14: Spell: Crusader Strike[id:35395]
+    if talent 'Crusader Strike[id:35395]' is taken
+    if player has resources to cast spell 'Crusader Strike[id:35395]'
+    if spell 'Crusader Strike[id:35395]' is off cooldown
+    if player does not have buff/debuff 'Crusading Strikes[id:404542]'
+    if spell 'Crusader Strike[id:35395]' is within allowed range
+15: Spell: Judgment[id:20271]
+16: Spell: Judgment[id:20271]
+    if player has buff/debuff 'Avenging Wrath[id:31884]'
+    if talent 'Judgment[id:20271]' is taken
+    if player has resources to cast spell 'Judgment[id:20271]'
+    if spell 'Judgment[id:20271]' is off cooldown
     if player has less than 3 holy power
-    if spell 'Judgment' is within allowed range
-17: Spell: Avenging Wrath
-    if talent 'Avenging Wrath' is taken
-    if player has resources to cast spell 'Avenging Wrath'
-    if spell 'Avenging Wrath' is off cooldown
+    if spell 'Judgment[id:20271]' is within allowed range
+17: Spell: Avenging Wrath[id:31884]
+    if talent 'Avenging Wrath[id:31884]' is taken
+    if player has resources to cast spell 'Avenging Wrath[id:31884]'
+    if spell 'Avenging Wrath[id:31884]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

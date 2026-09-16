@@ -1,61 +1,61 @@
 Devourer
-0: Spell: Void Ray
-    if talent 'Void Ray' is taken
-    if player has resources to cast spell 'Void Ray'
-    if spell 'Void Ray' is off cooldown
+0: Spell: Void Ray[id:473728]
+    if talent 'Void Ray[id:473728]' is taken
+    if player has resources to cast spell 'Void Ray[id:473728]'
+    if spell 'Void Ray[id:473728]' is off cooldown
     if target is less than 30 yards away
-1: Spell: Immolation Aura
-    if talent 'Immolation Aura' is taken
-    if player has resources to cast spell 'Immolation Aura'
-    if spell 'Immolation Aura' is off cooldown
-    if player does not have buff/debuff 'Spontaneous Immolation'
-    if player does not have buff/debuff 'Soul Immolation'
-2: Spell: Void Metamorphosis
-    if talent 'Void Metamorphosis' is taken
-    if player has resources to cast spell 'Void Metamorphosis'
-    if spell 'Void Metamorphosis' is off cooldown
+1: Spell: Immolation Aura[id:258920]
+    if talent 'Immolation Aura[id:258920]' is taken
+    if player has resources to cast spell 'Immolation Aura[id:258920]'
+    if spell 'Immolation Aura[id:258920]' is off cooldown
+    if player does not have buff/debuff 'Spontaneous Immolation[id:1246556]'
+    if player does not have buff/debuff 'Soul Immolation[id:1241937]'
+2: Spell: Void Metamorphosis[id:1217605]
+    if talent 'Void Metamorphosis[id:1217605]' is taken
+    if player has resources to cast spell 'Void Metamorphosis[id:1217605]'
+    if spell 'Void Metamorphosis[id:1217605]' is off cooldown
     if target is less than 25 yards away
-    if player does not have buff/debuff 'Void Metamorphosis'
+    if player does not have buff/debuff 'Void Metamorphosis[id:1217605]'
     automation only (not part of the game's Assisted Combat rotation)
-3: Spell: Consume
-    if talent 'Consume' is taken
-    if player has resources to cast spell 'Consume'
-    if spell 'Consume' is off cooldown
-    if spell 'Consume' is within allowed range
-4: Spell: Consume
-5: Spell: Reap
-    if talent 'Reap' is taken
-    if player has resources to cast spell 'Reap'
-    if spell 'Reap' is off cooldown
-    if spell 'Reap' is within allowed range
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
-6: Spell: Void Metamorphosis
-    if talent 'Void Metamorphosis' is taken
-    if player has resources to cast spell 'Void Metamorphosis'
-    if spell 'Void Metamorphosis' is off cooldown
-    if player has buff/debuff 'Collapsing Star'
+3: Spell: Consume[id:473662]
+    if talent 'Consume[id:473662]' is taken
+    if player has resources to cast spell 'Consume[id:473662]'
+    if spell 'Consume[id:473662]' is off cooldown
+    if spell 'Consume[id:473662]' is within allowed range
+4: Spell: Consume[id:473662]
+5: Spell: Reap[id:1226019]
+    if talent 'Reap[id:1226019]' is taken
+    if player has resources to cast spell 'Reap[id:1226019]'
+    if spell 'Reap[id:1226019]' is off cooldown
+    if spell 'Reap[id:1226019]' is within allowed range
+    if player has more than 4 stacks of buff/debuff 'Soul Fragments[id:1245577]'
+6: Spell: Void Metamorphosis[id:1217605]
+    if talent 'Void Metamorphosis[id:1217605]' is taken
+    if player has resources to cast spell 'Void Metamorphosis[id:1217605]'
+    if spell 'Void Metamorphosis[id:1217605]' is off cooldown
+    if player has buff/debuff 'Collapsing Star[id:1221171]'
     if target is less than 30 yards away
-7: Spell: The Hunt
-    if talent 'The Hunt' is taken
-    if player has resources to cast spell 'The Hunt'
-    if spell 'The Hunt' is off cooldown
+7: Spell: The Hunt[id:1246167]
+    if talent 'The Hunt[id:1246167]' is taken
+    if player has resources to cast spell 'The Hunt[id:1246167]'
+    if spell 'The Hunt[id:1246167]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'The Hunt' is within allowed range
-8: Spell: Voidblade
-    if talent 'Voidblade' is taken
-    if player has resources to cast spell 'Voidblade'
-    if spell 'Voidblade' is off cooldown
+    if spell 'The Hunt[id:1246167]' is within allowed range
+8: Spell: Voidblade[id:1245412]
+    if talent 'Voidblade[id:1245412]' is taken
+    if player has resources to cast spell 'Voidblade[id:1245412]'
+    if spell 'Voidblade[id:1245412]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'Voidblade' is within allowed range
-9: Spell: Reap
-    if talent 'Reap' is taken
-    if player has resources to cast spell 'Reap'
-    if spell 'Reap' is off cooldown
-    if player has buff/debuff 'Moment of Craving'
-    if spell 'Reap' is within allowed range
-10: Spell: Void Ray
-    if talent 'Void Ray' is taken
-    if player has resources to cast spell 'Void Ray'
-    if spell 'Void Ray' is off cooldown
+    if spell 'Voidblade[id:1245412]' is within allowed range
+9: Spell: Reap[id:1226019]
+    if talent 'Reap[id:1226019]' is taken
+    if player has resources to cast spell 'Reap[id:1226019]'
+    if spell 'Reap[id:1226019]' is off cooldown
+    if player has buff/debuff 'Moment of Craving[id:1238495]'
+    if spell 'Reap[id:1226019]' is within allowed range
+10: Spell: Void Ray[id:473728]
+    if talent 'Void Ray[id:473728]' is taken
+    if player has resources to cast spell 'Void Ray[id:473728]'
+    if spell 'Void Ray[id:473728]' is off cooldown
     if target is less than 25 yards away
-    if player has buff/debuff 'Void Metamorphosis'
+    if player has buff/debuff 'Void Metamorphosis[id:1217605]'

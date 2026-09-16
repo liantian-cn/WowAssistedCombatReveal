@@ -1,104 +1,104 @@
 Unholy
-0: Spell: Outbreak
-    if talent 'Outbreak' is taken
-    if player has resources to cast spell 'Outbreak'
-    if spell 'Outbreak' is off cooldown
-    if target does not have buff/debuff 'Virulent Plague'
-1: Spell: Dark Transformation
-    if talent 'Dark Transformation' is taken
-    if player has resources to cast spell 'Dark Transformation'
-    if spell 'Dark Transformation' is off cooldown
+0: Spell: Outbreak[id:77575]
+    if talent 'Outbreak[id:77575]' is taken
+    if player has resources to cast spell 'Outbreak[id:77575]'
+    if spell 'Outbreak[id:77575]' is off cooldown
+    if target does not have buff/debuff 'Virulent Plague[id:191587]'
+1: Spell: Dark Transformation[id:1233448]
+    if talent 'Dark Transformation[id:1233448]' is taken
+    if player has resources to cast spell 'Dark Transformation[id:1233448]'
+    if spell 'Dark Transformation[id:1233448]' is off cooldown
     if player has pet
-2: Spell: Scourge Strike
-    if talent 'Scourge Strike' is taken
-    if player has resources to cast spell 'Scourge Strike'
-    if spell 'Scourge Strike' is off cooldown
-    if spell 'Scourge Strike' is within allowed range
-    if player has less than 1 stacks of buff/debuff 'Lesser Ghoul'
-3: Spell: Death Coil
-    if talent 'Death Coil' is taken
-    if player has resources to cast spell 'Death Coil'
-    if spell 'Death Coil' is off cooldown
-    if player has buff/debuff 'Sudden Doom'
+2: Spell: Scourge Strike[id:55090]
+    if talent 'Scourge Strike[id:55090]' is taken
+    if player has resources to cast spell 'Scourge Strike[id:55090]'
+    if spell 'Scourge Strike[id:55090]' is off cooldown
+    if spell 'Scourge Strike[id:55090]' is within allowed range
+    if player has less than 1 stacks of buff/debuff 'Lesser Ghoul[id:1254252]'
+3: Spell: Death Coil[id:47541]
+    if talent 'Death Coil[id:47541]' is taken
+    if player has resources to cast spell 'Death Coil[id:47541]'
+    if spell 'Death Coil[id:47541]' is off cooldown
+    if player has buff/debuff 'Sudden Doom[id:81340]'
     if there are less than 3 targets within 10 yards of target
-4: Spell: Epidemic
-    if talent 'Epidemic' is taken
-    if player has resources to cast spell 'Epidemic'
-    if spell 'Epidemic' is off cooldown
-    if target has buff/debuff 'Virulent Plague'
+4: Spell: Epidemic[id:207317]
+    if talent 'Epidemic[id:207317]' is taken
+    if player has resources to cast spell 'Epidemic[id:207317]'
+    if spell 'Epidemic[id:207317]' is off cooldown
+    if target has buff/debuff 'Virulent Plague[id:191587]'
     if there are more than 4 targets within 10 yards of target
-    if player has buff/debuff 'Sudden Doom'
-5: Spell: Death Coil
-    if talent 'Death Coil' is taken
-    if player has resources to cast spell 'Death Coil'
-    if spell 'Death Coil' is off cooldown
-6: Spell: Rune Strike
-    if talent 'Rune Strike' is taken
-    if player has resources to cast spell 'Rune Strike'
-    if spell 'Rune Strike' is off cooldown
-    if spell 'Rune Strike' is within allowed range
-7: Spell: Soul Reaper
-    if talent 'Soul Reaper' is taken
-    if player has resources to cast spell 'Soul Reaper'
-    if spell 'Soul Reaper' is off cooldown
+    if player has buff/debuff 'Sudden Doom[id:81340]'
+5: Spell: Death Coil[id:47541]
+    if talent 'Death Coil[id:47541]' is taken
+    if player has resources to cast spell 'Death Coil[id:47541]'
+    if spell 'Death Coil[id:47541]' is off cooldown
+6: Spell: Rune Strike[id:316239]
+    if talent 'Rune Strike[id:316239]' is taken
+    if player has resources to cast spell 'Rune Strike[id:316239]'
+    if spell 'Rune Strike[id:316239]' is off cooldown
+    if spell 'Rune Strike[id:316239]' is within allowed range
+7: Spell: Soul Reaper[id:343294]
+    if talent 'Soul Reaper[id:343294]' is taken
+    if player has resources to cast spell 'Soul Reaper[id:343294]'
+    if spell 'Soul Reaper[id:343294]' is off cooldown
     if target has less than 35% health
-    if spell 'Soul Reaper' is within allowed range
-8: Spell: Scourge Strike
-    if talent 'Scourge Strike' is taken
-    if player has resources to cast spell 'Scourge Strike'
-    if spell 'Scourge Strike' is off cooldown
-    if target has buff/debuff 'Unknown Spell (194310)'
-    if spell 'Scourge Strike' is within allowed range
-9: Spell: Putrefy
-    if talent 'Putrefy' is taken
-    if player has resources to cast spell 'Putrefy'
-    if spell 'Putrefy' is off cooldown
-    if player has buff/debuff 'Lesser Ghoul'
-    if spell 'Putrefy' is within allowed range
-10: Spell: Raise Dead
-    if talent 'Raise Dead' is taken
-    if player has resources to cast spell 'Raise Dead'
-    if spell 'Raise Dead' is off cooldown
+    if spell 'Soul Reaper[id:343294]' is within allowed range
+8: Spell: Scourge Strike[id:55090]
+    if talent 'Scourge Strike[id:55090]' is taken
+    if player has resources to cast spell 'Scourge Strike[id:55090]'
+    if spell 'Scourge Strike[id:55090]' is off cooldown
+    if target has buff/debuff 'Unknown Spell[id:194310]'
+    if spell 'Scourge Strike[id:55090]' is within allowed range
+9: Spell: Putrefy[id:1247378]
+    if talent 'Putrefy[id:1247378]' is taken
+    if player has resources to cast spell 'Putrefy[id:1247378]'
+    if spell 'Putrefy[id:1247378]' is off cooldown
+    if player has buff/debuff 'Lesser Ghoul[id:1242998]'
+    if spell 'Putrefy[id:1247378]' is within allowed range
+10: Spell: Raise Dead[id:46585]
+    if talent 'Raise Dead[id:46585]' is taken
+    if player has resources to cast spell 'Raise Dead[id:46585]'
+    if spell 'Raise Dead[id:46585]' is off cooldown
     if player has no pet
-11: Spell: Rune Strike
-12: Spell: Festering Strike
-    if player has buff/debuff 'Festering Scythe'
-    if player has resources to cast spell 'Festering Strike'
-    if target does not have buff/debuff 'Festering Scythe'
-13: Spell: Rune Strike
-    if spell 'Rune Strike' is within allowed range
-    if player has less than 2 stacks of buff/debuff 'Lesser Ghoul'
-    if spell 'Rune Strike' is off cooldown
-    if player has resources to cast spell 'Rune Strike'
-    if talent 'Rune Strike' is taken
-14: Spell: Outbreak
-    if talent 'Outbreak' is taken
-    if player has resources to cast spell 'Outbreak'
-    if spell 'Outbreak' is off cooldown
-    if player has buff/debuff 'Blightfall'
-15: Spell: Army of the Dead
-    if talent 'Army of the Dead' is taken
-    if player has resources to cast spell 'Army of the Dead'
-    if spell 'Army of the Dead' is off cooldown
-16: Spell: Death Coil
+11: Spell: Rune Strike[id:316239]
+12: Spell: Festering Strike[id:85948]
+    if player has buff/debuff 'Festering Scythe[id:458123]'
+    if player has resources to cast spell 'Festering Strike[id:85948]'
+    if target does not have buff/debuff 'Festering Scythe[id:1241077]'
+13: Spell: Rune Strike[id:316239]
+    if spell 'Rune Strike[id:316239]' is within allowed range
+    if player has less than 2 stacks of buff/debuff 'Lesser Ghoul[id:1254252]'
+    if spell 'Rune Strike[id:316239]' is off cooldown
+    if player has resources to cast spell 'Rune Strike[id:316239]'
+    if talent 'Rune Strike[id:316239]' is taken
+14: Spell: Outbreak[id:77575]
+    if talent 'Outbreak[id:77575]' is taken
+    if player has resources to cast spell 'Outbreak[id:77575]'
+    if spell 'Outbreak[id:77575]' is off cooldown
+    if player has buff/debuff 'Blightfall[id:1271975]'
+15: Spell: Army of the Dead[id:42650]
+    if talent 'Army of the Dead[id:42650]' is taken
+    if player has resources to cast spell 'Army of the Dead[id:42650]'
+    if spell 'Army of the Dead[id:42650]' is off cooldown
+16: Spell: Death Coil[id:47541]
     if player has more than 500 runic power
     if there are less than 3 targets within 10 yards of target
-    if spell 'Death Coil' is off cooldown
-    if player has buff/debuff 'Forbidden Knowledge'
-17: Spell: Epidemic
+    if spell 'Death Coil[id:47541]' is off cooldown
+    if player has buff/debuff 'Forbidden Knowledge[id:1242223]'
+17: Spell: Epidemic[id:207317]
     if player has more than 500 runic power
     if there are more than 4 targets within 10 yards of target
-    if target has buff/debuff 'Virulent Plague'
-    if player has buff/debuff 'Forbidden Knowledge'
-18: Spell: Scourge Strike
-    if player has more than 3 stacks of buff/debuff 'Lesser Ghoul'
-    if spell 'Scourge Strike' is within allowed range
-    if spell 'Scourge Strike' is off cooldown
-    if player has resources to cast spell 'Scourge Strike'
-    if talent 'Scourge Strike' is taken
-19: Spell: Soul Reaper
-    if talent 'Soul Reaper' is taken
-    if player has resources to cast spell 'Soul Reaper'
-    if spell 'Soul Reaper' is off cooldown
-    if spell 'Soul Reaper' is within allowed range
-    if player has buff/debuff 'Reaping'
+    if target has buff/debuff 'Virulent Plague[id:191587]'
+    if player has buff/debuff 'Forbidden Knowledge[id:1242223]'
+18: Spell: Scourge Strike[id:55090]
+    if player has more than 3 stacks of buff/debuff 'Lesser Ghoul[id:1254252]'
+    if spell 'Scourge Strike[id:55090]' is within allowed range
+    if spell 'Scourge Strike[id:55090]' is off cooldown
+    if player has resources to cast spell 'Scourge Strike[id:55090]'
+    if talent 'Scourge Strike[id:55090]' is taken
+19: Spell: Soul Reaper[id:343294]
+    if talent 'Soul Reaper[id:343294]' is taken
+    if player has resources to cast spell 'Soul Reaper[id:343294]'
+    if spell 'Soul Reaper[id:343294]' is off cooldown
+    if spell 'Soul Reaper[id:343294]' is within allowed range
+    if player has buff/debuff 'Reaping[id:1242654]'

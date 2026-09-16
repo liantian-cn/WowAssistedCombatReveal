@@ -1,75 +1,75 @@
 Guardian
-0: Spell: Thrash
+0: Spell: Thrash[id:77758]
     if target is less than 8 yards away
-    if talent 'Thrash' is taken
-    if player has resources to cast spell 'Thrash'
-    if spell 'Thrash' is off cooldown
+    if talent 'Thrash[id:77758]' is taken
+    if player has resources to cast spell 'Thrash[id:77758]'
+    if spell 'Thrash[id:77758]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-1: Spell: Bear Form
-    if talent 'Bear Form' is taken
-    if player has resources to cast spell 'Bear Form'
-    if spell 'Bear Form' is off cooldown
-    if player does not have buff/debuff 'Bear Form'
-2: Spell: Moonfire
-    if talent 'Moonfire' is taken
-    if player has resources to cast spell 'Moonfire'
-    if spell 'Moonfire' is off cooldown
-    if target does not have buff/debuff 'Moonfire'
-3: Spell: Mangle
-    if talent 'Mangle' is taken
-    if player has resources to cast spell 'Mangle'
-    if spell 'Mangle' is off cooldown
-    if spell 'Mangle' is within allowed range
-4: Spell: Maul
-    if talent 'Maul' is taken
-    if player has resources to cast spell 'Maul'
-    if spell 'Maul' is off cooldown
+1: Spell: Bear Form[id:5487]
+    if talent 'Bear Form[id:5487]' is taken
+    if player has resources to cast spell 'Bear Form[id:5487]'
+    if spell 'Bear Form[id:5487]' is off cooldown
+    if player does not have buff/debuff 'Bear Form[id:5487]'
+2: Spell: Moonfire[id:8921]
+    if talent 'Moonfire[id:8921]' is taken
+    if player has resources to cast spell 'Moonfire[id:8921]'
+    if spell 'Moonfire[id:8921]' is off cooldown
+    if target does not have buff/debuff 'Moonfire[id:164812]'
+3: Spell: Mangle[id:33917]
+    if talent 'Mangle[id:33917]' is taken
+    if player has resources to cast spell 'Mangle[id:33917]'
+    if spell 'Mangle[id:33917]' is off cooldown
+    if spell 'Mangle[id:33917]' is within allowed range
+4: Spell: Maul[id:6807]
+    if talent 'Maul[id:6807]' is taken
+    if player has resources to cast spell 'Maul[id:6807]'
+    if spell 'Maul[id:6807]' is off cooldown
     if player has more than 80 rage
-    if spell 'Maul' is within allowed range
-5: Spell: Thrash
+    if spell 'Maul[id:6807]' is within allowed range
+5: Spell: Thrash[id:77758]
     if target is less than 8 yards away
-    if talent 'Thrash' is taken
-    if player has resources to cast spell 'Thrash'
-    if spell 'Thrash' is off cooldown
-6: Spell: Swipe
-    if talent 'Swipe' is taken
-    if player has resources to cast spell 'Swipe'
-    if spell 'Swipe' is off cooldown
+    if talent 'Thrash[id:77758]' is taken
+    if player has resources to cast spell 'Thrash[id:77758]'
+    if spell 'Thrash[id:77758]' is off cooldown
+6: Spell: Swipe[id:213764]
+    if talent 'Swipe[id:213764]' is taken
+    if player has resources to cast spell 'Swipe[id:213764]'
+    if spell 'Swipe[id:213764]' is off cooldown
     if target is less than 8 yards away
-7: Spell: Moonfire
-    if talent 'Moonfire' is taken
-    if player has resources to cast spell 'Moonfire'
-    if spell 'Moonfire' is off cooldown
-    if player has buff/debuff 'Galactic Guardian'
-8: Spell: Lunar Beam
+7: Spell: Moonfire[id:8921]
+    if talent 'Moonfire[id:8921]' is taken
+    if player has resources to cast spell 'Moonfire[id:8921]'
+    if spell 'Moonfire[id:8921]' is off cooldown
+    if player has buff/debuff 'Galactic Guardian[id:213708]'
+8: Spell: Lunar Beam[id:204066]
     if target is less than 8 yards away
-    if talent 'Lunar Beam' is taken
-    if player has resources to cast spell 'Lunar Beam'
-    if spell 'Lunar Beam' is off cooldown
-9: Spell: Swipe
-10: Spell: Convoke the Spirits
-    if talent 'Convoke the Spirits' is taken
-    if player has resources to cast spell 'Convoke the Spirits'
-    if spell 'Convoke the Spirits' is off cooldown
+    if talent 'Lunar Beam[id:204066]' is taken
+    if player has resources to cast spell 'Lunar Beam[id:204066]'
+    if spell 'Lunar Beam[id:204066]' is off cooldown
+9: Spell: Swipe[id:213764]
+10: Spell: Convoke the Spirits[id:391528]
+    if talent 'Convoke the Spirits[id:391528]' is taken
+    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
+    if spell 'Convoke the Spirits[id:391528]' is off cooldown
     if target is less than 5 yards away
-11: Spell: Moonfire
-    if talent 'Moonfire' is taken
-    if player has resources to cast spell 'Moonfire'
-    if spell 'Moonfire' is off cooldown
-    if spell 'Moonfire' is within allowed range
+11: Spell: Moonfire[id:8921]
+    if talent 'Moonfire[id:8921]' is taken
+    if player has resources to cast spell 'Moonfire[id:8921]'
+    if spell 'Moonfire[id:8921]' is off cooldown
+    if spell 'Moonfire[id:8921]' is within allowed range
     if target is more than 10 yards away
-12: Spell: Berserk
-    if talent 'Berserk' is taken
-    if player has resources to cast spell 'Berserk'
-    if spell 'Berserk' is off cooldown
+12: Spell: Berserk[id:50334]
+    if talent 'Berserk[id:50334]' is taken
+    if player has resources to cast spell 'Berserk[id:50334]'
+    if spell 'Berserk[id:50334]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: Convoke the Spirits
-    if talent 'Convoke the Spirits' is taken
-    if player has resources to cast spell 'Convoke the Spirits'
-    if spell 'Convoke the Spirits' is off cooldown
+13: Spell: Convoke the Spirits[id:391528]
+    if talent 'Convoke the Spirits[id:391528]' is taken
+    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
+    if spell 'Convoke the Spirits[id:391528]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: Mark of the Wild
-    if talent 'Mark of the Wild' is taken
-    if player has resources to cast spell 'Mark of the Wild'
-    if spell 'Mark of the Wild' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight'
+14: Spell: Mark of the Wild[id:1126]
+    if talent 'Mark of the Wild[id:1126]' is taken
+    if player has resources to cast spell 'Mark of the Wild[id:1126]'
+    if spell 'Mark of the Wild[id:1126]' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'

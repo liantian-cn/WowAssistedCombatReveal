@@ -1,36 +1,36 @@
 Holy
-0: Spell: Holy Word: Chastise
-    if talent 'Holy Word: Chastise' is taken
-    if player has resources to cast spell 'Holy Word: Chastise'
-    if spell 'Holy Word: Chastise' is off cooldown
-1: Spell: Shadow Word: Pain
-    if talent 'Shadow Word: Pain' is taken
-    if player has resources to cast spell 'Shadow Word: Pain'
-    if spell 'Shadow Word: Pain' is off cooldown
-    if player has buff/debuff 'Burning Vehemence'
-2: Spell: Holy Nova
-    if talent 'Holy Nova' is taken
-    if player has resources to cast spell 'Holy Nova'
-    if spell 'Holy Nova' is off cooldown
-    if player does not have buff/debuff 'Burning Vehemence'
+0: Spell: Holy Word: Chastise[id:88625]
+    if talent 'Holy Word: Chastise[id:88625]' is taken
+    if player has resources to cast spell 'Holy Word: Chastise[id:88625]'
+    if spell 'Holy Word: Chastise[id:88625]' is off cooldown
+1: Spell: Shadow Word: Pain[id:589]
+    if talent 'Shadow Word: Pain[id:589]' is taken
+    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
+    if spell 'Shadow Word: Pain[id:589]' is off cooldown
+    if player has buff/debuff 'Burning Vehemence[id:372307]'
+2: Spell: Holy Nova[id:132157]
+    if talent 'Holy Nova[id:132157]' is taken
+    if player has resources to cast spell 'Holy Nova[id:132157]'
+    if spell 'Holy Nova[id:132157]' is off cooldown
+    if player does not have buff/debuff 'Burning Vehemence[id:372307]'
     if there are more than 5 targets within 10 yards of player
-3: Spell: Smite
-    if talent 'Smite' is taken
-    if player has resources to cast spell 'Smite'
-    if spell 'Smite' is off cooldown
-    if spell 'Smite' can be successfully cast
-4: Spell: Shadow Word: Pain
-    if talent 'Shadow Word: Pain' is taken
-    if player has resources to cast spell 'Shadow Word: Pain'
-    if spell 'Shadow Word: Pain' is off cooldown
-5: Spell: Holy Nova
-    if talent 'Holy Nova' is taken
-    if player has resources to cast spell 'Holy Nova'
-    if spell 'Holy Nova' is off cooldown
+3: Spell: Smite[id:585]
+    if talent 'Smite[id:585]' is taken
+    if player has resources to cast spell 'Smite[id:585]'
+    if spell 'Smite[id:585]' is off cooldown
+    if spell 'Smite[id:585]' can be successfully cast
+4: Spell: Shadow Word: Pain[id:589]
+    if talent 'Shadow Word: Pain[id:589]' is taken
+    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
+    if spell 'Shadow Word: Pain[id:589]' is off cooldown
+5: Spell: Holy Nova[id:132157]
+    if talent 'Holy Nova[id:132157]' is taken
+    if player has resources to cast spell 'Holy Nova[id:132157]'
+    if spell 'Holy Nova[id:132157]' is off cooldown
     if there are more than 5 targets within 10 yards of player
-6: Spell: Smite
-7: Spell: Power Word: Fortitude
-    if talent 'Power Word: Fortitude' is taken
-    if player has resources to cast spell 'Power Word: Fortitude'
-    if spell 'Power Word: Fortitude' is off cooldown
-    if player has buff/debuff 'Power Word: Fortitude Highlight'
+6: Spell: Smite[id:585]
+7: Spell: Power Word: Fortitude[id:21562]
+    if talent 'Power Word: Fortitude[id:21562]' is taken
+    if player has resources to cast spell 'Power Word: Fortitude[id:21562]'
+    if spell 'Power Word: Fortitude[id:21562]' is off cooldown
+    if player has buff/debuff 'Power Word: Fortitude Highlight[id:1271911]'

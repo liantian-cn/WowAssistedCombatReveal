@@ -1,111 +1,111 @@
 Arcane
-0: Spell: Arcane Missiles
-    if talent 'Arcane Missiles' is taken
-    if player has resources to cast spell 'Arcane Missiles'
-    if spell 'Arcane Missiles' is off cooldown
-    if player has buff/debuff 'Clearcasting'
-    if player does not have buff/debuff 'Nether Precision'
+0: Spell: Arcane Missiles[id:5143]
+    if talent 'Arcane Missiles[id:5143]' is taken
+    if player has resources to cast spell 'Arcane Missiles[id:5143]'
+    if spell 'Arcane Missiles[id:5143]' is off cooldown
+    if player has buff/debuff 'Clearcasting[id:263725]'
+    if player does not have buff/debuff 'Nether Precision[id:383783]'
     if there are less than 2 targets within 10 yards of target
-    if spell 'Arcane Missiles' can be successfully cast
-1: Spell: Arcane Barrage
-    if talent 'Arcane Barrage' is taken
-    if player has resources to cast spell 'Arcane Barrage'
-    if spell 'Arcane Barrage' is off cooldown
+    if spell 'Arcane Missiles[id:5143]' can be successfully cast
+1: Spell: Arcane Barrage[id:44425]
+    if talent 'Arcane Barrage[id:44425]' is taken
+    if player has resources to cast spell 'Arcane Barrage[id:44425]'
+    if spell 'Arcane Barrage[id:44425]' is off cooldown
     if player has less than 100 mana
-    if player does not have buff/debuff 'Arcane Surge'
-2: Spell: Arcane Explosion
-    if talent 'Arcane Explosion' is taken
-    if player has resources to cast spell 'Arcane Explosion'
-    if spell 'Arcane Explosion' is off cooldown
+    if player does not have buff/debuff 'Arcane Surge[id:365362]'
+2: Spell: Arcane Explosion[id:1449]
+    if talent 'Arcane Explosion[id:1449]' is taken
+    if player has resources to cast spell 'Arcane Explosion[id:1449]'
+    if spell 'Arcane Explosion[id:1449]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-    if player does not have buff/debuff 'Amplification'
-3: Spell: Arcane Orb
-    if talent 'Arcane Orb' is taken
-    if player has resources to cast spell 'Arcane Orb'
-    if spell 'Arcane Orb' is off cooldown
+    if player does not have buff/debuff 'Amplification[id:236628]'
+3: Spell: Arcane Orb[id:153626]
+    if talent 'Arcane Orb[id:153626]' is taken
+    if player has resources to cast spell 'Arcane Orb[id:153626]'
+    if spell 'Arcane Orb[id:153626]' is off cooldown
     if player has less than 1 arcane charges
     if there are more than 2 targets within 10 yards of target
-    if player does not have buff/debuff 'Orb Mastery'
-4: Spell: Arcane Orb
-    if talent 'Arcane Orb' is taken
-    if player has resources to cast spell 'Arcane Orb'
-    if spell 'Arcane Orb' is off cooldown
+    if player does not have buff/debuff 'Orb Mastery[id:1243435]'
+4: Spell: Arcane Orb[id:153626]
+    if talent 'Arcane Orb[id:153626]' is taken
+    if player has resources to cast spell 'Arcane Orb[id:153626]'
+    if spell 'Arcane Orb[id:153626]' is off cooldown
     if player has less than 1 arcane charges
-    if player does not have buff/debuff 'Orb Mastery'
-5: Spell: Arcane Barrage
-    if talent 'Arcane Barrage' is taken
-    if player has resources to cast spell 'Arcane Barrage'
-    if spell 'Arcane Barrage' is off cooldown
+    if player does not have buff/debuff 'Orb Mastery[id:1243435]'
+5: Spell: Arcane Barrage[id:44425]
+    if talent 'Arcane Barrage[id:44425]' is taken
+    if player has resources to cast spell 'Arcane Barrage[id:44425]'
+    if spell 'Arcane Barrage[id:44425]' is off cooldown
     if player has more than 4 arcane charges
-    if player has buff/debuff 'Spellfire Salvo'
-    if player has more than 22 stacks of buff/debuff 'Arcane Salvo'
-6: Spell: Arcane Missiles
-    if talent 'Arcane Missiles' is taken
-    if player has resources to cast spell 'Arcane Missiles'
-    if spell 'Arcane Missiles' is off cooldown
-    if player has buff/debuff 'Overpowered Missiles'
-7: Spell: Arcane Missiles
-    if talent 'Arcane Missiles' is taken
-    if player has resources to cast spell 'Arcane Missiles'
-    if spell 'Arcane Missiles' is off cooldown
-    if player has buff/debuff 'Clearcasting'
-    if player does not have buff/debuff 'Nether Precision'
-    if player has buff/debuff 'High Voltage'
-8: Spell: Arcane Barrage
-9: Spell: Touch of the Magi
-    if talent 'Touch of the Magi' is taken
-    if player has resources to cast spell 'Touch of the Magi'
-    if spell 'Touch of the Magi' is off cooldown
-    if spell 'Touch of the Magi' is off cooldown
-    if target does not have buff/debuff 'Touch of the Magi'
-10: Spell: Arcane Blast
-    if talent 'Arcane Blast' is taken
-    if player has resources to cast spell 'Arcane Blast'
-    if spell 'Arcane Blast' is off cooldown
-    if spell 'Arcane Blast' can be successfully cast
-11: Spell: Arcane Barrage
-    if talent 'Arcane Barrage' is taken
-    if player has resources to cast spell 'Arcane Barrage'
-    if spell 'Arcane Barrage' is off cooldown
+    if player has buff/debuff 'Spellfire Salvo[id:1260616]'
+    if player has more than 22 stacks of buff/debuff 'Arcane Salvo[id:1242974]'
+6: Spell: Arcane Missiles[id:5143]
+    if talent 'Arcane Missiles[id:5143]' is taken
+    if player has resources to cast spell 'Arcane Missiles[id:5143]'
+    if spell 'Arcane Missiles[id:5143]' is off cooldown
+    if player has buff/debuff 'Overpowered Missiles[id:1277009]'
+7: Spell: Arcane Missiles[id:5143]
+    if talent 'Arcane Missiles[id:5143]' is taken
+    if player has resources to cast spell 'Arcane Missiles[id:5143]'
+    if spell 'Arcane Missiles[id:5143]' is off cooldown
+    if player has buff/debuff 'Clearcasting[id:263725]'
+    if player does not have buff/debuff 'Nether Precision[id:383783]'
+    if player has buff/debuff 'High Voltage[id:461248]'
+8: Spell: Arcane Barrage[id:44425]
+9: Spell: Touch of the Magi[id:321507]
+    if talent 'Touch of the Magi[id:321507]' is taken
+    if player has resources to cast spell 'Touch of the Magi[id:321507]'
+    if spell 'Touch of the Magi[id:321507]' is off cooldown
+    if spell 'Touch of the Magi[id:321507]' is off cooldown
+    if target does not have buff/debuff 'Touch of the Magi[id:210824]'
+10: Spell: Arcane Blast[id:30451]
+    if talent 'Arcane Blast[id:30451]' is taken
+    if player has resources to cast spell 'Arcane Blast[id:30451]'
+    if spell 'Arcane Blast[id:30451]' is off cooldown
+    if spell 'Arcane Blast[id:30451]' can be successfully cast
+11: Spell: Arcane Barrage[id:44425]
+    if talent 'Arcane Barrage[id:44425]' is taken
+    if player has resources to cast spell 'Arcane Barrage[id:44425]'
+    if spell 'Arcane Barrage[id:44425]' is off cooldown
     if player has more than 4 arcane charges
-    if player does not have buff/debuff 'Spellfire Salvo'
-    if player has more than 17 stacks of buff/debuff 'Arcane Salvo'
-12: Spell: Arcane Explosion
-    if talent 'Arcane Explosion' is taken
-    if talent 'Arcane Explosion' is taken
-    if player has resources to cast spell 'Arcane Explosion'
-    if spell 'Arcane Explosion' is off cooldown
+    if player does not have buff/debuff 'Spellfire Salvo[id:1260616]'
+    if player has more than 17 stacks of buff/debuff 'Arcane Salvo[id:1242974]'
+12: Spell: Arcane Explosion[id:1449]
+    if talent 'Arcane Explosion[id:1449]' is taken
+    if talent 'Arcane Explosion[id:1449]' is taken
+    if player has resources to cast spell 'Arcane Explosion[id:1449]'
+    if spell 'Arcane Explosion[id:1449]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if spell 'Arcane Explosion' can be successfully cast
-13: Spell: Arcane Surge
-    if talent 'Arcane Surge' is taken
-    if player has resources to cast spell 'Arcane Surge'
-    if spell 'Arcane Surge' is off cooldown
+    if spell 'Arcane Explosion[id:1449]' can be successfully cast
+13: Spell: Arcane Surge[id:365350]
+    if talent 'Arcane Surge[id:365350]' is taken
+    if player has resources to cast spell 'Arcane Surge[id:365350]'
+    if spell 'Arcane Surge[id:365350]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: Evocation
-    if talent 'Evocation' is taken
-    if player has resources to cast spell 'Evocation'
-    if spell 'Evocation' is off cooldown
+14: Spell: Evocation[id:12051]
+    if talent 'Evocation[id:12051]' is taken
+    if player has resources to cast spell 'Evocation[id:12051]'
+    if spell 'Evocation[id:12051]' is off cooldown
     if player has less than 200 mana
-    if player does not have buff/debuff 'Arcane Surge'
-15: Spell: Arcane Intellect
-    if talent 'Arcane Intellect' is taken
-    if player has resources to cast spell 'Arcane Intellect'
-    if spell 'Arcane Intellect' is off cooldown
-    if player has buff/debuff 'Arcane Intellect Highlight'
-16: Spell: Arcane Barrage
-    if talent 'Arcane Barrage' is taken
-    if player has resources to cast spell 'Arcane Barrage'
-    if spell 'Arcane Barrage' is off cooldown
-    if player has buff/debuff 'Arcane Soul'
-17: Spell: Arcane Orb
-    if talent 'Arcane Orb' is taken
-    if player has resources to cast spell 'Arcane Orb'
-    if spell 'Arcane Orb' is off cooldown
-    if player has buff/debuff 'Orb Mastery'
-    if player has buff/debuff 'Clearcasting'
-18: Spell: Prismatic Bolt
-    if talent 'Prismatic Bolt' is taken
-    if player has resources to cast spell 'Prismatic Bolt'
-    if spell 'Prismatic Bolt' is off cooldown
-    if player has buff/debuff 'Prismatic Bolt!'
+    if player does not have buff/debuff 'Arcane Surge[id:365362]'
+15: Spell: Arcane Intellect[id:1459]
+    if talent 'Arcane Intellect[id:1459]' is taken
+    if player has resources to cast spell 'Arcane Intellect[id:1459]'
+    if spell 'Arcane Intellect[id:1459]' is off cooldown
+    if player has buff/debuff 'Arcane Intellect Highlight[id:1271907]'
+16: Spell: Arcane Barrage[id:44425]
+    if talent 'Arcane Barrage[id:44425]' is taken
+    if player has resources to cast spell 'Arcane Barrage[id:44425]'
+    if spell 'Arcane Barrage[id:44425]' is off cooldown
+    if player has buff/debuff 'Arcane Soul[id:451038]'
+17: Spell: Arcane Orb[id:153626]
+    if talent 'Arcane Orb[id:153626]' is taken
+    if player has resources to cast spell 'Arcane Orb[id:153626]'
+    if spell 'Arcane Orb[id:153626]' is off cooldown
+    if player has buff/debuff 'Orb Mastery[id:1243435]'
+    if player has buff/debuff 'Clearcasting[id:263725]'
+18: Spell: Prismatic Bolt[id:1295924]
+    if talent 'Prismatic Bolt[id:1295924]' is taken
+    if player has resources to cast spell 'Prismatic Bolt[id:1295924]'
+    if spell 'Prismatic Bolt[id:1295924]' is off cooldown
+    if player has buff/debuff 'Prismatic Bolt![id:1295942]'

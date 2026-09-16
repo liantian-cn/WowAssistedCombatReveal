@@ -55,33 +55,39 @@ python -m venv .venv
 
 ## 输出格式
 
-每个文件 = 首行专精显示名 + 步骤块（与旧版 `out/*.txt` 的结构一致）。
+每个文件 = 首行专精显示名 + 步骤块（行结构与旧版 `out/*.txt` 一致；本期起技能名后追加
+`[id:<spellID>]`，文本不再与旧产物逐字节相同）。
 下面片段原样复制自 `output/hunter/marksmanship.txt`（仅中间步骤用省略号跳过）：
 
 ```
 Marksmanship
-0: Spell: Multi-Shot
-    if talent 'Multi-Shot' is taken
-    if player has resources to cast spell 'Multi-Shot'
-    if spell 'Multi-Shot' is off cooldown
-    if spell 'Multi-Shot' is within allowed range
-    if player has buff/debuff 'Trick Shots' with at least 2000 ms left
+0: Spell: Multi-Shot[id:257620]
+    if talent 'Multi-Shot[id:257620]' is taken
+    if player has resources to cast spell 'Multi-Shot[id:257620]'
+    if spell 'Multi-Shot[id:257620]' is off cooldown
+    if spell 'Multi-Shot[id:257620]' is within allowed range
+    if player has buff/debuff 'Trick Shots[id:257622]' with at least 2000 ms left
     if there are more than 3 targets within 10 yards of target
-1: Spell: Multi-Shot
-    if talent 'Multi-Shot' is taken
+1: Spell: Multi-Shot[id:257620]
+    if talent 'Multi-Shot[id:257620]' is taken
     ...
 （中间步骤略）
-12: Spell: Aimed Shot
-    if talent 'Aimed Shot' is taken
-    if player has resources to cast spell 'Aimed Shot'
-    if spell 'Aimed Shot' is off cooldown
-    if spell 'Aimed Shot' is within allowed range
-    if spell 'Aimed Shot' can be successfully cast
-    if player has more than 2 charges of spell 'Aimed Shot'
+12: Spell: Aimed Shot[id:19434]
+    if talent 'Aimed Shot[id:19434]' is taken
+    if player has resources to cast spell 'Aimed Shot[id:19434]'
+    if spell 'Aimed Shot[id:19434]' is off cooldown
+    if spell 'Aimed Shot[id:19434]' is within allowed range
+    if spell 'Aimed Shot[id:19434]' can be successfully cast
+    if player has more than 2 charges of spell 'Aimed Shot[id:19434]'
 ```
 
 - 首行的专精名由输出层显式写入（旧版是 `find_rotation` 里调试 `print` 的副产物）；
 - `N` 从 0 开始，是对方案步骤的遍历序号，**与游戏内 `OrderIndex` 无关**（见下节）；
+- **由 spellID 解析出的名称一律带 `[id:<spellID>]` 后缀**：步骤标题（不加引号）、`{spell}`
+  占位符、Spell 型条件参数（技能 / 光环 / 天赋，单引号包裹）都适用，便于把文本与 DB2 的
+  技能 ID 直接对照；SpellName 表里查不到名称时输出 `Unknown Spell[id:<spellID>]`；
+- 数值型参数不受影响（层数、距离、百分比、毫秒等，如 `more than 2 charges of spell`、
+  `within 10 yards`、`50% health`），这些数字后面不会出现 `[id:`；
 - 条件行固定 4 空格缩进，模板来自 `ConditionTypeMap.csv`；
 - 文件编码 UTF-8（无 BOM）、换行 CRLF，与旧产物一致。
 
@@ -121,4 +127,5 @@ zhCN 文件留在 `csv_table/` 中，后续再接入。
 
 原始作者：**Shawn McNaughton**（[@shawngmc](https://github.com/shawngmc)）。
 本仓库是他的 `wow_assist_mapper` 思路的延续：把辅助战斗数据翻译成可读文本；
-第一期重构只调整工程结构（`main.py` + `app/`、离线技能名、可测试），输出行为与旧版保持一致。
+第一期重构只调整工程结构（`main.py` + `app/`、离线技能名、可测试），输出行为与旧版保持一致；
+第二期起由 spellID 解析出的技能名统一追加 `[id:<spellID>]` 标签，输出文本因此不再与旧版逐字节相同。

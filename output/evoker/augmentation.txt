@@ -1,75 +1,75 @@
 Augmentation
-0: Spell: Ebon Might
-    if talent 'Ebon Might' is taken
-    if player has resources to cast spell 'Ebon Might'
-    if spell 'Ebon Might' is off cooldown
-    if player does not have buff/debuff 'Ebon Might'
-1: Spell: Prescience
-    if talent 'Prescience' is taken
-    if player has resources to cast spell 'Prescience'
-    if spell 'Prescience' is off cooldown
-    if player does not have buff/debuff 'Prescience'
-2: Spell: Fire Breath
-    if talent 'Fire Breath' is taken
-    if player has resources to cast spell 'Fire Breath'
-    if spell 'Fire Breath' is off cooldown
-    if spell 'Fire Breath' can be successfully cast
-3: Spell: Upheaval
-    if talent 'Upheaval' is taken
-    if player has resources to cast spell 'Upheaval'
-    if spell 'Upheaval' is off cooldown
-    if spell 'Upheaval' can be successfully cast
-4: Spell: Disintegrate
-    if talent 'Disintegrate' is taken
-    if player has resources to cast spell 'Disintegrate'
-    if spell 'Disintegrate' is off cooldown
-5: Spell: Blistering Scales
-    if talent 'Blistering Scales' is taken
-    if player has resources to cast spell 'Blistering Scales'
-    if spell 'Blistering Scales' is off cooldown
-    if player does not have buff/debuff 'Blistering Scales'
+0: Spell: Ebon Might[id:395152]
+    if talent 'Ebon Might[id:395152]' is taken
+    if player has resources to cast spell 'Ebon Might[id:395152]'
+    if spell 'Ebon Might[id:395152]' is off cooldown
+    if player does not have buff/debuff 'Ebon Might[id:395296]'
+1: Spell: Prescience[id:409311]
+    if talent 'Prescience[id:409311]' is taken
+    if player has resources to cast spell 'Prescience[id:409311]'
+    if spell 'Prescience[id:409311]' is off cooldown
+    if player does not have buff/debuff 'Prescience[id:410089]'
+2: Spell: Fire Breath[id:357208]
+    if talent 'Fire Breath[id:357208]' is taken
+    if player has resources to cast spell 'Fire Breath[id:357208]'
+    if spell 'Fire Breath[id:357208]' is off cooldown
+    if spell 'Fire Breath[id:357208]' can be successfully cast
+3: Spell: Upheaval[id:396286]
+    if talent 'Upheaval[id:396286]' is taken
+    if player has resources to cast spell 'Upheaval[id:396286]'
+    if spell 'Upheaval[id:396286]' is off cooldown
+    if spell 'Upheaval[id:396286]' can be successfully cast
+4: Spell: Disintegrate[id:356995]
+    if talent 'Disintegrate[id:356995]' is taken
+    if player has resources to cast spell 'Disintegrate[id:356995]'
+    if spell 'Disintegrate[id:356995]' is off cooldown
+5: Spell: Blistering Scales[id:360827]
+    if talent 'Blistering Scales[id:360827]' is taken
+    if player has resources to cast spell 'Blistering Scales[id:360827]'
+    if spell 'Blistering Scales[id:360827]' is off cooldown
+    if player does not have buff/debuff 'Blistering Scales[id:1245013]'
     if target is less than 30 yards away
-6: Spell: Living Flame
-    if talent 'Living Flame' is taken
-    if player has resources to cast spell 'Living Flame'
-    if spell 'Living Flame' is off cooldown
+6: Spell: Living Flame[id:361469]
+    if talent 'Living Flame[id:361469]' is taken
+    if player has resources to cast spell 'Living Flame[id:361469]'
+    if spell 'Living Flame[id:361469]' is off cooldown
     if target is hostile
-    if spell 'Living Flame' can be successfully cast
-7: Spell: Living Flame
-8: Spell: Disintegrate
-    if talent 'Disintegrate' is taken
-    if player has resources to cast spell 'Disintegrate'
-    if spell 'Disintegrate' is off cooldown
-    if spell 'Disintegrate' can be successfully cast
+    if spell 'Living Flame[id:361469]' can be successfully cast
+7: Spell: Living Flame[id:361469]
+8: Spell: Disintegrate[id:356995]
+    if talent 'Disintegrate[id:356995]' is taken
+    if player has resources to cast spell 'Disintegrate[id:356995]'
+    if spell 'Disintegrate[id:356995]' is off cooldown
+    if spell 'Disintegrate[id:356995]' can be successfully cast
     if player has more than 2 essence
-    if player has buff/debuff 'Essence Burst'
-9: Spell: Disintegrate
-    if talent 'Disintegrate' is taken
-    if player has resources to cast spell 'Disintegrate'
-    if spell 'Disintegrate' is off cooldown
-    if spell 'Disintegrate' can be successfully cast
+    if player has buff/debuff 'Essence Burst[id:392268]'
+9: Spell: Disintegrate[id:356995]
+    if talent 'Disintegrate[id:356995]' is taken
+    if player has resources to cast spell 'Disintegrate[id:356995]'
+    if spell 'Disintegrate[id:356995]' is off cooldown
+    if spell 'Disintegrate[id:356995]' can be successfully cast
     if player has more than 4 essence
-10: Spell: Deep Breath
-    if talent 'Deep Breath' is taken
-    if player has resources to cast spell 'Deep Breath'
-    if spell 'Deep Breath' is off cooldown
-    if player does not have buff/debuff 'Recall'
+10: Spell: Deep Breath[id:357210]
+    if talent 'Deep Breath[id:357210]' is taken
+    if player has resources to cast spell 'Deep Breath[id:357210]'
+    if spell 'Deep Breath[id:357210]' is off cooldown
+    if player does not have buff/debuff 'Recall[id:371807]'
     if target is less than 40 yards away
-    if player does not have buff/debuff 'Recall'
+    if player does not have buff/debuff 'Recall[id:403760]'
     automation only (not part of the game's Assisted Combat rotation)
-11: Spell: Time Skip
-    if talent 'Time Skip' is taken
-    if player has resources to cast spell 'Time Skip'
-    if spell 'Time Skip' is off cooldown
+11: Spell: Time Skip[id:404977]
+    if talent 'Time Skip[id:404977]' is taken
+    if player has resources to cast spell 'Time Skip[id:404977]'
+    if spell 'Time Skip[id:404977]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: Tip the Scales
-    if talent 'Tip the Scales' is taken
-    if player has resources to cast spell 'Tip the Scales'
-    if spell 'Tip the Scales' is off cooldown
-    if spell 'Tip the Scales' is off cooldown
+12: Spell: Tip the Scales[id:370553]
+    if talent 'Tip the Scales[id:370553]' is taken
+    if player has resources to cast spell 'Tip the Scales[id:370553]'
+    if spell 'Tip the Scales[id:370553]' is off cooldown
+    if spell 'Tip the Scales[id:370553]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: Blessing of the Bronze
-    if talent 'Blessing of the Bronze' is taken
-    if player has resources to cast spell 'Blessing of the Bronze'
-    if spell 'Blessing of the Bronze' is off cooldown
-    if player has buff/debuff 'Blessing of the Bronze Highlight'
+13: Spell: Blessing of the Bronze[id:364342]
+    if talent 'Blessing of the Bronze[id:364342]' is taken
+    if player has resources to cast spell 'Blessing of the Bronze[id:364342]'
+    if spell 'Blessing of the Bronze[id:364342]' is off cooldown
+    if player has buff/debuff 'Blessing of the Bronze Highlight[id:1271912]'

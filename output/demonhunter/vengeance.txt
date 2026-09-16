@@ -1,67 +1,67 @@
 Vengeance
-0: Spell: Throw Glaive
-    if talent 'Throw Glaive' is taken
-    if player has resources to cast spell 'Throw Glaive'
-    if spell 'Throw Glaive' is off cooldown
-    if spell 'Throw Glaive' is within allowed range
-    if player has buff/debuff 'Reaver's Glaive'
-1: Spell: Shear
-    if talent 'Shear' is taken
-    if player has resources to cast spell 'Shear'
-    if spell 'Shear' is off cooldown
-    if spell 'Shear' is within allowed range
-    if player has buff/debuff 'Rending Strike'
-2: Spell: Soul Cleave
-    if talent 'Soul Cleave' is taken
-    if player has resources to cast spell 'Soul Cleave'
-    if spell 'Soul Cleave' is off cooldown
-    if spell 'Soul Cleave' is within allowed range
-    if player has buff/debuff 'Glaive Flurry'
-3: Spell: Soul Carver
-    if talent 'Soul Carver' is taken
-    if player has resources to cast spell 'Soul Carver'
-    if spell 'Soul Carver' is off cooldown
-    if spell 'Soul Carver' is within allowed range
-4: Spell: Sigil of Spite
-    if talent 'Sigil of Spite' is taken
-    if player has resources to cast spell 'Sigil of Spite'
-    if spell 'Sigil of Spite' is off cooldown
+0: Spell: Throw Glaive[id:204157]
+    if talent 'Throw Glaive[id:204157]' is taken
+    if player has resources to cast spell 'Throw Glaive[id:204157]'
+    if spell 'Throw Glaive[id:204157]' is off cooldown
+    if spell 'Throw Glaive[id:204157]' is within allowed range
+    if player has buff/debuff 'Reaver's Glaive[id:444764]'
+1: Spell: Shear[id:203782]
+    if talent 'Shear[id:203782]' is taken
+    if player has resources to cast spell 'Shear[id:203782]'
+    if spell 'Shear[id:203782]' is off cooldown
+    if spell 'Shear[id:203782]' is within allowed range
+    if player has buff/debuff 'Rending Strike[id:442442]'
+2: Spell: Soul Cleave[id:228477]
+    if talent 'Soul Cleave[id:228477]' is taken
+    if player has resources to cast spell 'Soul Cleave[id:228477]'
+    if spell 'Soul Cleave[id:228477]' is off cooldown
+    if spell 'Soul Cleave[id:228477]' is within allowed range
+    if player has buff/debuff 'Glaive Flurry[id:442435]'
+3: Spell: Soul Carver[id:207407]
+    if talent 'Soul Carver[id:207407]' is taken
+    if player has resources to cast spell 'Soul Carver[id:207407]'
+    if spell 'Soul Carver[id:207407]' is off cooldown
+    if spell 'Soul Carver[id:207407]' is within allowed range
+4: Spell: Sigil of Spite[id:390163]
+    if talent 'Sigil of Spite[id:390163]' is taken
+    if player has resources to cast spell 'Sigil of Spite[id:390163]'
+    if spell 'Sigil of Spite[id:390163]' is off cooldown
     if target is less than 30 yards away
-5: Spell: Sigil of Flame
-    if talent 'Sigil of Flame' is taken
-    if player has resources to cast spell 'Sigil of Flame'
-    if spell 'Sigil of Flame' is off cooldown
+5: Spell: Sigil of Flame[id:204596]
+    if talent 'Sigil of Flame[id:204596]' is taken
+    if player has resources to cast spell 'Sigil of Flame[id:204596]'
+    if spell 'Sigil of Flame[id:204596]' is off cooldown
     if target is less than 30 yards away
-    if target does not have buff/debuff 'Sigil of Flame'
-6: Spell: Immolation Aura
-    if talent 'Immolation Aura' is taken
-    if player has resources to cast spell 'Immolation Aura'
-    if spell 'Immolation Aura' is off cooldown
+    if target does not have buff/debuff 'Sigil of Flame[id:204598]'
+6: Spell: Immolation Aura[id:258920]
+    if talent 'Immolation Aura[id:258920]' is taken
+    if player has resources to cast spell 'Immolation Aura[id:258920]'
+    if spell 'Immolation Aura[id:258920]' is off cooldown
     if there are more than 1 targets within 8 yards of player
-7: Spell: Spirit Bomb
-    if talent 'Spirit Bomb' is taken
-    if player has resources to cast spell 'Spirit Bomb'
-    if spell 'Spirit Bomb' is off cooldown
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
-8: Spell: Fracture
-    if talent 'Fracture' is taken
-    if player has resources to cast spell 'Fracture'
-    if spell 'Fracture' is off cooldown
-    if spell 'Fracture' is within allowed range
-    if talent 'Fracture' is taken
-9: Spell: Soul Cleave
-    if talent 'Soul Cleave' is taken
-    if player has resources to cast spell 'Soul Cleave'
-    if spell 'Soul Cleave' is off cooldown
-    if spell 'Soul Cleave' is within allowed range
-10: Spell: Throw Glaive
-    if talent 'Throw Glaive' is taken
-    if player has resources to cast spell 'Throw Glaive'
-    if spell 'Throw Glaive' is off cooldown
-    if spell 'Throw Glaive' is within allowed range
-11: Spell: Soul Cleave
-12: Spell: Metamorphosis
-    if talent 'Metamorphosis' is taken
-    if player has resources to cast spell 'Metamorphosis'
-    if spell 'Metamorphosis' is off cooldown
+7: Spell: Spirit Bomb[id:247454]
+    if talent 'Spirit Bomb[id:247454]' is taken
+    if player has resources to cast spell 'Spirit Bomb[id:247454]'
+    if spell 'Spirit Bomb[id:247454]' is off cooldown
+    if player has more than 4 stacks of buff/debuff 'Soul Fragments[id:203981]'
+8: Spell: Fracture[id:263642]
+    if talent 'Fracture[id:263642]' is taken
+    if player has resources to cast spell 'Fracture[id:263642]'
+    if spell 'Fracture[id:263642]' is off cooldown
+    if spell 'Fracture[id:263642]' is within allowed range
+    if talent 'Fracture[id:263642]' is taken
+9: Spell: Soul Cleave[id:228477]
+    if talent 'Soul Cleave[id:228477]' is taken
+    if player has resources to cast spell 'Soul Cleave[id:228477]'
+    if spell 'Soul Cleave[id:228477]' is off cooldown
+    if spell 'Soul Cleave[id:228477]' is within allowed range
+10: Spell: Throw Glaive[id:204157]
+    if talent 'Throw Glaive[id:204157]' is taken
+    if player has resources to cast spell 'Throw Glaive[id:204157]'
+    if spell 'Throw Glaive[id:204157]' is off cooldown
+    if spell 'Throw Glaive[id:204157]' is within allowed range
+11: Spell: Soul Cleave[id:228477]
+12: Spell: Metamorphosis[id:187827]
+    if talent 'Metamorphosis[id:187827]' is taken
+    if player has resources to cast spell 'Metamorphosis[id:187827]'
+    if spell 'Metamorphosis[id:187827]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

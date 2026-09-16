@@ -1,4 +1,4 @@
-"""技能名索引：命中、缺失占位，以及"只保留所需 ID"的流式扫描行为。"""
+"""技能名索引：命中、缺失占位与 ID 标签，以及"只保留所需 ID"的流式扫描行为。"""
 
 MISSING_IDS = (194310, 389387, 470058)  # 12.1 规则引用了但 SpellName 表里没有的 ID
 
@@ -17,14 +17,22 @@ def test_known_spell_name(spell_index):
     """19434 = Aimed Shot（猎人射击专精的充能条件使用该 ID）。"""
     index, _ = spell_index
     assert index.get_name(19434) == "Aimed Shot"
+    assert index.display_name(19434) == "Aimed Shot"
+
+
+def test_labelled_appends_decimal_id(spell_index):
+    """标签格式固定为 <名称>[id:<spellID>]：原样十进制、不补零、名称与中括号之间无空格。"""
+    index, _ = spell_index
+    assert index.labelled(19434) == "Aimed Shot[id:19434]"
 
 
 def test_missing_ids_render_placeholder(spell_index):
-    """查不到名称的 ID 返回 None，显示名用 Unknown Spell (ID) 占位。"""
+    """查不到名称的 ID：裸名是 Unknown Spell，带标签时 ID 由标签统一附带。"""
     index, _ = spell_index
     for spell_id in MISSING_IDS:
         assert index.get_name(spell_id) is None
-        assert index.display_name(spell_id) == f"Unknown Spell ({spell_id})"
+        assert index.display_name(spell_id) == "Unknown Spell"
+        assert index.labelled(spell_id) == f"Unknown Spell[id:{spell_id}]"
 
 
 def test_index_only_keeps_required_ids(spell_index):

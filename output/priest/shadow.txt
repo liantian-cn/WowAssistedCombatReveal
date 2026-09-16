@@ -1,151 +1,151 @@
 Shadow
-0: Spell: Tentacle Slam
-    if talent 'Tentacle Slam' is taken
-    if player has resources to cast spell 'Tentacle Slam'
-    if spell 'Tentacle Slam' is off cooldown
+0: Spell: Tentacle Slam[id:1227280]
+    if talent 'Tentacle Slam[id:1227280]' is taken
+    if player has resources to cast spell 'Tentacle Slam[id:1227280]'
+    if spell 'Tentacle Slam[id:1227280]' is off cooldown
     if there are more than 3 targets within 8 yards of target
-1: Spell: Shadowform
-    if player does not have buff/debuff 'Shadowform'
-    if player does not have buff/debuff 'Voidform'
-    if talent 'Shadowform' is taken
-    if player has resources to cast spell 'Shadowform'
-    if spell 'Shadowform' is off cooldown
-2: Spell: Halo
-    if talent 'Halo' is taken
-    if player has resources to cast spell 'Halo'
-    if spell 'Halo' is off cooldown
-3: Spell: Shadow Word: Madness
-    if talent 'Shadow Word: Madness' is taken
-    if player has resources to cast spell 'Shadow Word: Madness'
-    if spell 'Shadow Word: Madness' is off cooldown
+1: Spell: Shadowform[id:232698]
+    if player does not have buff/debuff 'Shadowform[id:232698]'
+    if player does not have buff/debuff 'Voidform[id:194249]'
+    if talent 'Shadowform[id:232698]' is taken
+    if player has resources to cast spell 'Shadowform[id:232698]'
+    if spell 'Shadowform[id:232698]' is off cooldown
+2: Spell: Halo[id:120644]
+    if talent 'Halo[id:120644]' is taken
+    if player has resources to cast spell 'Halo[id:120644]'
+    if spell 'Halo[id:120644]' is off cooldown
+3: Spell: Shadow Word: Madness[id:335467]
+    if talent 'Shadow Word: Madness[id:335467]' is taken
+    if player has resources to cast spell 'Shadow Word: Madness[id:335467]'
+    if spell 'Shadow Word: Madness[id:335467]' is off cooldown
     if player has more than 9000 insanity
-    if player does not have buff/debuff 'Voidtouched'
-4: Spell: Shadow Word: Madness
-    if talent 'Shadow Word: Madness' is taken
-    if player has resources to cast spell 'Shadow Word: Madness'
-    if spell 'Shadow Word: Madness' is off cooldown
+    if player does not have buff/debuff 'Voidtouched[id:407430]'
+4: Spell: Shadow Word: Madness[id:335467]
+    if talent 'Shadow Word: Madness[id:335467]' is taken
+    if player has resources to cast spell 'Shadow Word: Madness[id:335467]'
+    if spell 'Shadow Word: Madness[id:335467]' is off cooldown
     if player has more than 14000 insanity
-    if player has buff/debuff 'Voidtouched'
-5: Spell: Vampiric Touch
-    if talent 'Vampiric Touch' is taken
-    if player has resources to cast spell 'Vampiric Touch'
-    if spell 'Vampiric Touch' is off cooldown
-    if target does not have buff/debuff 'Vampiric Touch'
-    if player does not have buff/debuff 'Tentacle Slam'
-6: Spell: Shadow Word: Pain
-    if talent 'Shadow Word: Pain' is taken
-    if player has resources to cast spell 'Shadow Word: Pain'
-    if spell 'Shadow Word: Pain' is off cooldown
-    if target does not have buff/debuff 'Shadow Word: Pain'
-    if player does not have buff/debuff 'Misery'
-7: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player has buff/debuff 'Void Blast'
-8: Spell: Void Torrent
-    if talent 'Void Torrent' is taken
-    if player has resources to cast spell 'Void Torrent'
-    if spell 'Void Torrent' is off cooldown
-9: Spell: Shadow Word: Madness
-    if talent 'Shadow Word: Madness' is taken
-    if player has resources to cast spell 'Shadow Word: Madness'
-    if spell 'Shadow Word: Madness' is off cooldown
-    if target does not have buff/debuff 'Shadow Word: Madness'
-10: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player does not have buff/debuff 'Void Blast'
-11: Spell: Shadow Word: Death
-    if talent 'Shadow Word: Death' is taken
-    if player has resources to cast spell 'Shadow Word: Death'
-    if spell 'Shadow Word: Death' is off cooldown
-    if player has buff/debuff 'Deathspeaker'
+    if player has buff/debuff 'Voidtouched[id:407430]'
+5: Spell: Vampiric Touch[id:34914]
+    if talent 'Vampiric Touch[id:34914]' is taken
+    if player has resources to cast spell 'Vampiric Touch[id:34914]'
+    if spell 'Vampiric Touch[id:34914]' is off cooldown
+    if target does not have buff/debuff 'Vampiric Touch[id:34914]'
+    if player does not have buff/debuff 'Tentacle Slam[id:1243723]'
+6: Spell: Shadow Word: Pain[id:589]
+    if talent 'Shadow Word: Pain[id:589]' is taken
+    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
+    if spell 'Shadow Word: Pain[id:589]' is off cooldown
+    if target does not have buff/debuff 'Shadow Word: Pain[id:589]'
+    if player does not have buff/debuff 'Misery[id:238558]'
+7: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player has buff/debuff 'Void Blast[id:450404]'
+8: Spell: Void Torrent[id:263165]
+    if talent 'Void Torrent[id:263165]' is taken
+    if player has resources to cast spell 'Void Torrent[id:263165]'
+    if spell 'Void Torrent[id:263165]' is off cooldown
+9: Spell: Shadow Word: Madness[id:335467]
+    if talent 'Shadow Word: Madness[id:335467]' is taken
+    if player has resources to cast spell 'Shadow Word: Madness[id:335467]'
+    if spell 'Shadow Word: Madness[id:335467]' is off cooldown
+    if target does not have buff/debuff 'Shadow Word: Madness[id:335467]'
+10: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player does not have buff/debuff 'Void Blast[id:450405]'
+11: Spell: Shadow Word: Death[id:32379]
+    if talent 'Shadow Word: Death[id:32379]' is taken
+    if player has resources to cast spell 'Shadow Word: Death[id:32379]'
+    if spell 'Shadow Word: Death[id:32379]' is off cooldown
+    if player has buff/debuff 'Deathspeaker[id:392507]'
     if target has less than 35% health
-12: Spell: Shadow Word: Death
-    if talent 'Shadow Word: Death' is taken
-    if player has resources to cast spell 'Shadow Word: Death'
-    if spell 'Shadow Word: Death' is off cooldown
+12: Spell: Shadow Word: Death[id:32379]
+    if talent 'Shadow Word: Death[id:32379]' is taken
+    if player has resources to cast spell 'Shadow Word: Death[id:32379]'
+    if spell 'Shadow Word: Death[id:32379]' is off cooldown
     if target has less than 20% health
-13: Spell: Mind Flay
-    if talent 'Mind Flay' is taken
-    if player has resources to cast spell 'Mind Flay'
-    if spell 'Mind Flay' is off cooldown
-    if spell 'Mind Flay' can be successfully cast
-14: Spell: Voidform
-    if player has resources to cast spell 'Voidform'
-    if spell 'Voidform' is off cooldown
-    if talent 'Voidform' is taken
-    if player has buff/debuff 'Voidform'
-15: Spell: Mind Blast
-16: Spell: Shadow Word: Madness
-    if talent 'Shadow Word: Madness' is taken
-    if player has resources to cast spell 'Shadow Word: Madness'
-    if spell 'Shadow Word: Madness' is off cooldown
-    if target has buff/debuff 'Shadow Word: Madness' with at least 1500 ms left
-17: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player has buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
-    if spell 'Mind Blast' can be successfully cast
-18: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player has buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
-    if cooldown on spell 'Void Torrent' is less than 5000 ms
-19: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player has buff/debuff 'Void Blast'
-    if cooldown on spell 'Void Torrent' is more than 5000 ms
-20: Spell: Shadow Word: Madness
-    if talent 'Shadow Word: Madness' is taken
-    if player has resources to cast spell 'Shadow Word: Madness'
-    if spell 'Shadow Word: Madness' is off cooldown
-21: Spell: Mind Blast
-    if talent 'Mind Blast' is taken
-    if player has resources to cast spell 'Mind Blast'
-    if spell 'Mind Blast' is off cooldown
-    if player does not have buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
-    if spell 'Mind Blast' can be successfully cast
-22: Spell: Tentacle Slam
-    if talent 'Tentacle Slam' is taken
-    if player has resources to cast spell 'Tentacle Slam'
-    if spell 'Tentacle Slam' is off cooldown
+13: Spell: Mind Flay[id:15407]
+    if talent 'Mind Flay[id:15407]' is taken
+    if player has resources to cast spell 'Mind Flay[id:15407]'
+    if spell 'Mind Flay[id:15407]' is off cooldown
+    if spell 'Mind Flay[id:15407]' can be successfully cast
+14: Spell: Voidform[id:228260]
+    if player has resources to cast spell 'Voidform[id:228260]'
+    if spell 'Voidform[id:228260]' is off cooldown
+    if talent 'Voidform[id:228260]' is taken
+    if player has buff/debuff 'Voidform[id:194249]'
+15: Spell: Mind Blast[id:8092]
+16: Spell: Shadow Word: Madness[id:335467]
+    if talent 'Shadow Word: Madness[id:335467]' is taken
+    if player has resources to cast spell 'Shadow Word: Madness[id:335467]'
+    if spell 'Shadow Word: Madness[id:335467]' is off cooldown
+    if target has buff/debuff 'Shadow Word: Madness[id:335467]' with at least 1500 ms left
+17: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player has buff/debuff 'Void Blast[id:450404]'
+    if player has more than 2 charges of spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' can be successfully cast
+18: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player has buff/debuff 'Void Blast[id:450405]'
+    if player has more than 2 charges of spell 'Mind Blast[id:8092]'
+    if cooldown on spell 'Void Torrent[id:263165]' is less than 5000 ms
+19: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player has buff/debuff 'Void Blast[id:450405]'
+    if cooldown on spell 'Void Torrent[id:263165]' is more than 5000 ms
+20: Spell: Shadow Word: Madness[id:335467]
+    if talent 'Shadow Word: Madness[id:335467]' is taken
+    if player has resources to cast spell 'Shadow Word: Madness[id:335467]'
+    if spell 'Shadow Word: Madness[id:335467]' is off cooldown
+21: Spell: Mind Blast[id:8092]
+    if talent 'Mind Blast[id:8092]' is taken
+    if player has resources to cast spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' is off cooldown
+    if player does not have buff/debuff 'Void Blast[id:450405]'
+    if player has more than 2 charges of spell 'Mind Blast[id:8092]'
+    if spell 'Mind Blast[id:8092]' can be successfully cast
+22: Spell: Tentacle Slam[id:1227280]
+    if talent 'Tentacle Slam[id:1227280]' is taken
+    if player has resources to cast spell 'Tentacle Slam[id:1227280]'
+    if spell 'Tentacle Slam[id:1227280]' is off cooldown
     if there are less than 2 targets within 8 yards of target
-    if target does not have buff/debuff 'Vampiric Touch'
-    if player does not have buff/debuff 'Tentacle Slam'
-23: Spell: Voidform
-    if talent 'Voidform' is taken
-    if player has resources to cast spell 'Voidform'
-    if spell 'Voidform' is off cooldown
+    if target does not have buff/debuff 'Vampiric Touch[id:34914]'
+    if player does not have buff/debuff 'Tentacle Slam[id:1243723]'
+23: Spell: Voidform[id:228260]
+    if talent 'Voidform[id:228260]' is taken
+    if player has resources to cast spell 'Voidform[id:228260]'
+    if spell 'Voidform[id:228260]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player does not have buff/debuff 'Voidform'
-24: Spell: Power Infusion
-    if talent 'Power Infusion' is taken
-    if player has resources to cast spell 'Power Infusion'
-    if spell 'Power Infusion' is off cooldown
+    if player does not have buff/debuff 'Voidform[id:194249]'
+24: Spell: Power Infusion[id:10060]
+    if talent 'Power Infusion[id:10060]' is taken
+    if player has resources to cast spell 'Power Infusion[id:10060]'
+    if spell 'Power Infusion[id:10060]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player has buff/debuff 'Voidform'
-25: Spell: Power Word: Fortitude
-    if talent 'Power Word: Fortitude' is taken
-    if player has resources to cast spell 'Power Word: Fortitude'
-    if spell 'Power Word: Fortitude' is off cooldown
-    if player has buff/debuff 'Power Word: Fortitude Highlight'
-26: Spell: Voidform
-    if player has resources to cast spell 'Voidform'
-    if spell 'Voidform' is off cooldown
-    if talent 'Voidform' is taken
-    if player has buff/debuff 'Crushing Void'
-27: Spell: Tentacle Slam
-    if player has resources to cast spell 'Tentacle Slam'
-    if talent 'Tentacle Slam' is taken
-    if spell 'Tentacle Slam' is off cooldown
-    if player has more than 2 charges of spell 'Tentacle Slam'
+    if player has buff/debuff 'Voidform[id:194249]'
+25: Spell: Power Word: Fortitude[id:21562]
+    if talent 'Power Word: Fortitude[id:21562]' is taken
+    if player has resources to cast spell 'Power Word: Fortitude[id:21562]'
+    if spell 'Power Word: Fortitude[id:21562]' is off cooldown
+    if player has buff/debuff 'Power Word: Fortitude Highlight[id:1271911]'
+26: Spell: Voidform[id:228260]
+    if player has resources to cast spell 'Voidform[id:228260]'
+    if spell 'Voidform[id:228260]' is off cooldown
+    if talent 'Voidform[id:228260]' is taken
+    if player has buff/debuff 'Crushing Void[id:1279437]'
+27: Spell: Tentacle Slam[id:1227280]
+    if player has resources to cast spell 'Tentacle Slam[id:1227280]'
+    if talent 'Tentacle Slam[id:1227280]' is taken
+    if spell 'Tentacle Slam[id:1227280]' is off cooldown
+    if player has more than 2 charges of spell 'Tentacle Slam[id:1227280]'

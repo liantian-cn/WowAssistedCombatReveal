@@ -1,19 +1,19 @@
 Preservation
-0: Spell: Fire Breath
-    if talent 'Fire Breath' is taken
-    if player has resources to cast spell 'Fire Breath'
-    if spell 'Fire Breath' is off cooldown
-    if spell 'Fire Breath' can be successfully cast
-    if target does not have buff/debuff 'Fire Breath'
-1: Spell: Living Flame
-    if talent 'Living Flame' is taken
-    if player has resources to cast spell 'Living Flame'
-    if spell 'Living Flame' is off cooldown
+0: Spell: Fire Breath[id:357208]
+    if talent 'Fire Breath[id:357208]' is taken
+    if player has resources to cast spell 'Fire Breath[id:357208]'
+    if spell 'Fire Breath[id:357208]' is off cooldown
+    if spell 'Fire Breath[id:357208]' can be successfully cast
+    if target does not have buff/debuff 'Fire Breath[id:357209]'
+1: Spell: Living Flame[id:361469]
+    if talent 'Living Flame[id:361469]' is taken
+    if player has resources to cast spell 'Living Flame[id:361469]'
+    if spell 'Living Flame[id:361469]' is off cooldown
     if target is hostile
-    if spell 'Living Flame' can be successfully cast
-2: Spell: Living Flame
-3: Spell: Blessing of the Bronze
-    if talent 'Blessing of the Bronze' is taken
-    if player has resources to cast spell 'Blessing of the Bronze'
-    if spell 'Blessing of the Bronze' is off cooldown
-    if player has buff/debuff 'Blessing of the Bronze Highlight'
+    if spell 'Living Flame[id:361469]' can be successfully cast
+2: Spell: Living Flame[id:361469]
+3: Spell: Blessing of the Bronze[id:364342]
+    if talent 'Blessing of the Bronze[id:364342]' is taken
+    if player has resources to cast spell 'Blessing of the Bronze[id:364342]'
+    if spell 'Blessing of the Bronze[id:364342]' is off cooldown
+    if player has buff/debuff 'Blessing of the Bronze Highlight[id:1271912]'
