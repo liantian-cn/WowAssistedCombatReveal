@@ -1,0 +1,16 @@
+{
+  // 项目级 OpenCode 配置：为 wow_assist_mapper 提供外部参考资料（references）
+  "$schema": "https://opencode.ai/config.json",
+  "references": {
+    "wow-ui-source": {
+      "repository": "Gethe/wow-ui-source",
+      "branch": "ptr",
+      "description": "暴雪官方 UI/Lua 源码镜像，ptr 分支对应最新 PTR 客户端（12.1.x）。查询 Enum.* 枚举定义、C_* API 文档、FrameXML/AddOns 中辅助战斗（Assisted Combat / 一键循环）相关界面逻辑时使用。"
+    },
+    "simc": {
+      "repository": "simulationcraft/simc",
+      "branch": "midnight",
+      "description": "SimulationCraft 模拟器，midnight 分支对应 12.x。查询 DB2 表与枚举的处理方式、Assisted Combat 条件（AssistedCombatRule.ConditionType）到 APL 表达式的转换、各职业循环实现时使用。"
+    }
+  }
+}
