@@ -1,0 +1,86 @@
+Devastation
+0: Spell: Fire Breath
+    if talent 'Fire Breath' is taken
+    if player has resources to cast spell 'Fire Breath'
+    if spell 'Fire Breath' is off cooldown
+    if spell 'Fire Breath' can be successfully cast
+    if player has buff/debuff 'Consume Flame'
+    if target does not have buff/debuff 'Fire Breath'
+1: Spell: Eternity Surge
+    if talent 'Eternity Surge' is taken
+    if player has resources to cast spell 'Eternity Surge'
+    if spell 'Eternity Surge' is off cooldown
+    if spell 'Eternity Surge' can be successfully cast
+2: Spell: Disintegrate
+    if talent 'Disintegrate' is taken
+    if player has resources to cast spell 'Disintegrate'
+    if spell 'Disintegrate' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player has buff/debuff 'Mass Disintegrate'
+3: Spell: Pyre
+    if talent 'Pyre' is taken
+    if player has resources to cast spell 'Pyre'
+    if spell 'Pyre' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+4: Spell: Living Flame
+    if talent 'Living Flame' is taken
+    if player has resources to cast spell 'Living Flame'
+    if spell 'Living Flame' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player has buff/debuff 'Burnout'
+    if player has buff/debuff 'Leaping Flames'
+5: Spell: Azure Strike
+    if talent 'Azure Strike' is taken
+    if player has resources to cast spell 'Azure Strike'
+    if spell 'Azure Strike' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+6: Spell: Disintegrate
+    if talent 'Disintegrate' is taken
+    if player has resources to cast spell 'Disintegrate'
+    if spell 'Disintegrate' is off cooldown
+7: Spell: Living Flame
+    if talent 'Living Flame' is taken
+    if player has resources to cast spell 'Living Flame'
+    if spell 'Living Flame' is off cooldown
+    if spell 'Living Flame' can be successfully cast
+8: Spell: Living Flame
+9: Spell: Fire Breath
+    if talent 'Fire Breath' is taken
+    if player has resources to cast spell 'Fire Breath'
+    if spell 'Fire Breath' is off cooldown
+    if spell 'Fire Breath' can be successfully cast
+    if player does not have buff/debuff 'Consume Flame'
+10: Spell: Azure Strike
+    if talent 'Azure Strike' is taken
+    if player has resources to cast spell 'Azure Strike'
+    if spell 'Azure Strike' is off cooldown
+    if player has buff/debuff 'Azure Sweep'
+11: Spell: Dragonrage
+    if talent 'Dragonrage' is taken
+    if player has resources to cast spell 'Dragonrage'
+    if spell 'Dragonrage' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+12: Spell: Deep Breath
+    if talent 'Deep Breath' is taken
+    if player has resources to cast spell 'Deep Breath'
+    if spell 'Deep Breath' is off cooldown
+    if player does not have buff/debuff 'Recall'
+    if target is less than 40 yards away
+    automation only (not part of the game's Assisted Combat rotation)
+13: Spell: Tip the Scales
+    if talent 'Tip the Scales' is taken
+    if player has resources to cast spell 'Tip the Scales'
+    if spell 'Tip the Scales' is off cooldown
+    if spell 'Tip the Scales' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+14: Spell: Blessing of the Bronze
+    if talent 'Blessing of the Bronze' is taken
+    if player has resources to cast spell 'Blessing of the Bronze'
+    if spell 'Blessing of the Bronze' is off cooldown
+    if player has buff/debuff 'Blessing of the Bronze Highlight'
+15: Spell: Dragonrage
+    if talent 'Dragonrage' is taken
+    if player has resources to cast spell 'Dragonrage'
+    if spell 'Dragonrage' is off cooldown
+    if player has buff/debuff 'Unbound Flame'
+    if player has less than 1 stacks of buff/debuff 'Essence Burst'

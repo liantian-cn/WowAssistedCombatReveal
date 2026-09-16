@@ -1,0 +1,61 @@
+Devourer
+0: Spell: Void Ray
+    if talent 'Void Ray' is taken
+    if player has resources to cast spell 'Void Ray'
+    if spell 'Void Ray' is off cooldown
+    if target is less than 30 yards away
+1: Spell: Immolation Aura
+    if talent 'Immolation Aura' is taken
+    if player has resources to cast spell 'Immolation Aura'
+    if spell 'Immolation Aura' is off cooldown
+    if player does not have buff/debuff 'Spontaneous Immolation'
+    if player does not have buff/debuff 'Soul Immolation'
+2: Spell: Void Metamorphosis
+    if talent 'Void Metamorphosis' is taken
+    if player has resources to cast spell 'Void Metamorphosis'
+    if spell 'Void Metamorphosis' is off cooldown
+    if target is less than 25 yards away
+    if player does not have buff/debuff 'Void Metamorphosis'
+    automation only (not part of the game's Assisted Combat rotation)
+3: Spell: Consume
+    if talent 'Consume' is taken
+    if player has resources to cast spell 'Consume'
+    if spell 'Consume' is off cooldown
+    if spell 'Consume' is within allowed range
+4: Spell: Consume
+5: Spell: Reap
+    if talent 'Reap' is taken
+    if player has resources to cast spell 'Reap'
+    if spell 'Reap' is off cooldown
+    if spell 'Reap' is within allowed range
+    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
+6: Spell: Void Metamorphosis
+    if talent 'Void Metamorphosis' is taken
+    if player has resources to cast spell 'Void Metamorphosis'
+    if spell 'Void Metamorphosis' is off cooldown
+    if player has buff/debuff 'Collapsing Star'
+    if target is less than 30 yards away
+7: Spell: The Hunt
+    if talent 'The Hunt' is taken
+    if player has resources to cast spell 'The Hunt'
+    if spell 'The Hunt' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+    if spell 'The Hunt' is within allowed range
+8: Spell: Voidblade
+    if talent 'Voidblade' is taken
+    if player has resources to cast spell 'Voidblade'
+    if spell 'Voidblade' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+    if spell 'Voidblade' is within allowed range
+9: Spell: Reap
+    if talent 'Reap' is taken
+    if player has resources to cast spell 'Reap'
+    if spell 'Reap' is off cooldown
+    if player has buff/debuff 'Moment of Craving'
+    if spell 'Reap' is within allowed range
+10: Spell: Void Ray
+    if talent 'Void Ray' is taken
+    if player has resources to cast spell 'Void Ray'
+    if spell 'Void Ray' is off cooldown
+    if target is less than 25 yards away
+    if player has buff/debuff 'Void Metamorphosis'

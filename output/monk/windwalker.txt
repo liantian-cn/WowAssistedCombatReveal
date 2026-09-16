@@ -1,0 +1,126 @@
+Windwalker
+0: Spell: Strike of the Windlord
+    if spell 'Strike of the Windlord' is within allowed range
+    if spell 'Strike of the Windlord' is off cooldown
+    if player has resources to cast spell 'Strike of the Windlord'
+    if talent 'Strike of the Windlord' is taken
+    if player does not have buff/debuff 'Heart of the Jade Serpent'
+    if player does not have buff/debuff 'Heart of the Jade Serpent'
+    if player does not have buff/debuff 'Combo Strikes: Strike of the Windlord'
+1: Spell: Spinning Crane Kick
+    if player has more than 2 stacks of buff/debuff 'Dance of Chi-Ji'
+    if spell 'Spinning Crane Kick' is off cooldown
+    if player has resources to cast spell 'Spinning Crane Kick'
+    if talent 'Spinning Crane Kick' is taken
+    if spell 'Spinning Crane Kick' can be successfully cast
+    if player does not have buff/debuff 'Combo Strikes: Spinning Crane Kick'
+2: Spell: Crackling Jade Lightning
+    if spell 'Crackling Jade Lightning' is within allowed range
+    if spell 'Crackling Jade Lightning' is off cooldown
+    if player has resources to cast spell 'Crackling Jade Lightning'
+    if talent 'Crackling Jade Lightning' is taken
+    if player has more than 20 stacks of buff/debuff 'The Emperor's Capacitor'
+    if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning'
+3: Spell: Fists of Fury
+    if spell 'Fists of Fury' is off cooldown
+    if player has resources to cast spell 'Fists of Fury'
+    if talent 'Fists of Fury' is taken
+    if target is less than 8 yards away
+    if player does not have buff/debuff 'Combo Strikes: Fists of Fury'
+4: Spell: Rising Sun Kick
+    if spell 'Rising Sun Kick' is within allowed range
+    if spell 'Rising Sun Kick' is off cooldown
+    if player has resources to cast spell 'Rising Sun Kick'
+    if talent 'Rising Sun Kick' is taken
+    if player does not have buff/debuff 'Combo Strikes: Rising Sun Kick'
+5: Spell: Whirling Dragon Punch
+    if target is less than 5 yards away
+    if spell 'Whirling Dragon Punch' is off cooldown
+    if player has resources to cast spell 'Whirling Dragon Punch'
+    if player does not have buff/debuff 'Heart of the Jade Serpent'
+    if talent 'Whirling Dragon Punch' is taken
+    if player does not have buff/debuff 'Combo Strikes: Whirling Dragon Punch'
+6: Spell: Blackout Kick
+    if spell 'Blackout Kick' is within allowed range
+    if spell 'Blackout Kick' is off cooldown
+    if player has resources to cast spell 'Blackout Kick'
+    if talent 'Blackout Kick' is taken
+    if player has buff/debuff 'Blackout Kick!'
+    if player does not have buff/debuff 'Combo Strikes: Blackout Kick'
+7: Spell: Spinning Crane Kick
+    if spell 'Spinning Crane Kick' is off cooldown
+    if player has resources to cast spell 'Spinning Crane Kick'
+    if there are more than 3 targets within 9 yards of player
+    if talent 'Spinning Crane Kick' is taken
+    if spell 'Spinning Crane Kick' can be successfully cast
+    if player does not have buff/debuff 'Combo Strikes: Spinning Crane Kick'
+8: Spell: Chi Burst
+    if spell 'Chi Burst' is off cooldown
+    if player has resources to cast spell 'Chi Burst'
+    if talent 'Chi Burst' is taken
+9: Spell: Blackout Kick
+    if spell 'Blackout Kick' is within allowed range
+    if spell 'Blackout Kick' is off cooldown
+    if player has resources to cast spell 'Blackout Kick'
+    if talent 'Blackout Kick' is taken
+    if there are less than 2 targets within 9 yards of player
+    if player does not have buff/debuff 'Combo Strikes: Blackout Kick'
+10: Spell: Tiger Palm
+    if spell 'Tiger Palm' is off cooldown
+    if player has resources to cast spell 'Tiger Palm'
+    if talent 'Tiger Palm' is taken
+    if spell 'Tiger Palm' is within allowed range
+    if player does not have buff/debuff 'Combo Strikes: Tiger Palm'
+11: Spell: Crackling Jade Lightning
+    if spell 'Crackling Jade Lightning' is off cooldown
+    if player has resources to cast spell 'Crackling Jade Lightning'
+    if talent 'Crackling Jade Lightning' is taken
+    if player has more than 75 energy
+    if spell 'Crackling Jade Lightning' can be successfully cast
+    if target is more than 15 yards away
+    if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning'
+12: Spell: Jadefire Stomp
+    if target is less than 20 yards away
+    if spell 'Jadefire Stomp' is off cooldown
+    if player has resources to cast spell 'Jadefire Stomp'
+    if talent 'Jadefire Stomp' is taken
+13: Spell: Tiger Palm
+    if spell 'Tiger Palm' is off cooldown
+    if player has resources to cast spell 'Tiger Palm'
+    if talent 'Tiger Palm' is taken
+    if spell 'Tiger Palm' is within allowed range
+    if player has less than 4 chi
+    if player has more than 101 energy
+    if player does not have buff/debuff 'Heart of the Jade Serpent'
+    if player does not have buff/debuff 'Combo Strikes: Tiger Palm'
+14: Spell: Rising Sun Kick
+15: Spell: Touch of Death
+    if talent 'Touch of Death' is taken
+    if player has resources to cast spell 'Touch of Death'
+    if spell 'Touch of Death' is off cooldown
+    if spell 'Touch of Death' is within allowed range
+16: Spell: Tiger Palm
+    if spell 'Tiger Palm' is off cooldown
+    if player has resources to cast spell 'Tiger Palm'
+    if talent 'Tiger Palm' is taken
+    if spell 'Tiger Palm' is within allowed range
+    if player does not have buff/debuff 'Blackout Kick'
+17: Spell: Flying Serpent Kick
+    if talent 'Flying Serpent Kick' is taken
+    if spell 'Flying Serpent Kick' is off cooldown
+    if player has resources to cast spell 'Flying Serpent Kick'
+    if talent 'Flying Serpent Kick' is taken
+    automation only (not part of the game's Assisted Combat rotation)
+18: Spell: Zenith
+    if spell 'Zenith' is off cooldown
+    if player has resources to cast spell 'Zenith'
+    if player does not have buff/debuff 'Zenith'
+    if talent 'Zenith' is taken
+    automation only (not part of the game's Assisted Combat rotation)
+19: Spell: Celestial Conduit
+    if spell 'Celestial Conduit' is off cooldown
+    if player has resources to cast spell 'Celestial Conduit'
+    if talent 'Celestial Conduit' is taken
+    automation only (not part of the game's Assisted Combat rotation)
+20: Spell: Rising Sun Kick
+    if player has buff/debuff 'Rushing Wind Kick'

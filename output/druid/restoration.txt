@@ -1,0 +1,80 @@
+Restoration
+0: Spell: Rip
+    if talent 'Rip' is taken
+    if player has resources to cast spell 'Rip'
+    if spell 'Rip' is off cooldown
+    if player has buff/debuff 'Cat Form'
+    if player has more than 5 combo points
+    if target does not have buff/debuff 'Rip'
+    if spell 'Rip' is within allowed range
+1: Spell: Ferocious Bite
+    if talent 'Ferocious Bite' is taken
+    if player has resources to cast spell 'Ferocious Bite'
+    if spell 'Ferocious Bite' is off cooldown
+    if player has buff/debuff 'Cat Form'
+    if player has more than 5 combo points
+    if spell 'Ferocious Bite' is within allowed range
+2: Spell: Thrash
+    if talent 'Thrash' is taken
+    if player has resources to cast spell 'Thrash'
+    if spell 'Thrash' is off cooldown
+    if target is less than 5 yards away
+    if player has buff/debuff 'Cat Form'
+    if target does not have buff/debuff 'Thrash'
+    if there are more than 3 targets within 10 yards of player
+3: Spell: Swipe
+    if talent 'Swipe' is taken
+    if player has resources to cast spell 'Swipe'
+    if spell 'Swipe' is off cooldown
+    if target is less than 5 yards away
+    if player has buff/debuff 'Cat Form'
+    if there are more than 3 targets within 10 yards of player
+4: Spell: Shred
+    if talent 'Shred' is taken
+    if player has resources to cast spell 'Shred'
+    if spell 'Shred' is off cooldown
+    if player has buff/debuff 'Cat Form'
+    if spell 'Shred' is within allowed range
+5: Spell: Rake
+    if talent 'Rake' is taken
+    if player has resources to cast spell 'Rake'
+    if spell 'Rake' is off cooldown
+    if player has buff/debuff 'Cat Form'
+    if target does not have buff/debuff 'Rake'
+    if spell 'Rake' is within allowed range
+6: Spell: Moonfire
+    if talent 'Moonfire' is taken
+    if player has resources to cast spell 'Moonfire'
+    if spell 'Moonfire' is off cooldown
+    if target does not have buff/debuff 'Moonfire'
+    if player does not have buff/debuff 'Cat Form'
+7: Spell: Sunfire
+    if talent 'Sunfire' is taken
+    if player has resources to cast spell 'Sunfire'
+    if spell 'Sunfire' is off cooldown
+    if target does not have buff/debuff 'Sunfire'
+    if player does not have buff/debuff 'Cat Form'
+8: Spell: Starfire
+    if talent 'Starfire' is taken
+    if player has resources to cast spell 'Starfire'
+    if spell 'Starfire' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player does not have buff/debuff 'Cat Form'
+    if spell 'Starfire' can be successfully cast
+9: Spell: Starsurge
+    if talent 'Starsurge' is taken
+    if player has resources to cast spell 'Starsurge'
+    if spell 'Starsurge' is off cooldown
+    if player does not have buff/debuff 'Cat Form'
+10: Spell: Wrath
+    if talent 'Wrath' is taken
+    if player has resources to cast spell 'Wrath'
+    if spell 'Wrath' is off cooldown
+    if player does not have buff/debuff 'Cat Form'
+    if spell 'Wrath' can be successfully cast
+11: Spell: Moonfire
+12: Spell: Mark of the Wild
+    if talent 'Mark of the Wild' is taken
+    if player has resources to cast spell 'Mark of the Wild'
+    if spell 'Mark of the Wild' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight'

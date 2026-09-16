@@ -1,0 +1,62 @@
+Frost
+0: Spell: Blizzard
+    if talent 'Blizzard' is taken
+    if player has resources to cast spell 'Blizzard'
+    if spell 'Blizzard' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+1: Spell: Frozen Orb
+    if talent 'Frozen Orb' is taken
+    if player has resources to cast spell 'Frozen Orb'
+    if spell 'Frozen Orb' is off cooldown
+2: Spell: Flurry
+    if talent 'Flurry' is taken
+    if player has resources to cast spell 'Flurry'
+    if spell 'Flurry' is off cooldown
+3: Spell: Ice Lance
+    if talent 'Ice Lance' is taken
+    if player has resources to cast spell 'Ice Lance'
+    if spell 'Ice Lance' is off cooldown
+    if player has buff/debuff 'Fingers of Frost'
+    if target has buff/debuff 'Freezing'
+4: Spell: Ice Lance
+    if talent 'Ice Lance' is taken
+    if player has resources to cast spell 'Ice Lance'
+    if spell 'Ice Lance' is off cooldown
+    if target has more than 5 stacks of buff/debuff 'Freezing'
+5: Spell: Frostbolt
+    if talent 'Frostbolt' is taken
+    if player has resources to cast spell 'Frostbolt'
+    if spell 'Frostbolt' is off cooldown
+    if spell 'Frostbolt' can be successfully cast
+6: Spell: Frostbolt
+    if talent 'Frostbolt' is taken
+    if player has resources to cast spell 'Frostbolt'
+    if spell 'Frostbolt' is off cooldown
+    if player has buff/debuff 'Frostfire Empowerment'
+7: Spell: Frostbolt
+8: Spell: Ray of Frost
+    if talent 'Ray of Frost' is taken
+    if player has resources to cast spell 'Ray of Frost'
+    if spell 'Ray of Frost' is off cooldown
+    if target has less than 5 stacks of buff/debuff 'Freezing'
+9: Spell: Ray of Frost
+    if player has buff/debuff 'Comet Storm!'
+    if player has resources to cast spell 'Ray of Frost'
+    if spell 'Ray of Frost' is off cooldown
+10: Spell: Arcane Intellect
+    if talent 'Arcane Intellect' is taken
+    if player has resources to cast spell 'Arcane Intellect'
+    if spell 'Arcane Intellect' is off cooldown
+    if player has buff/debuff 'Arcane Intellect Highlight'
+11: Spell: Frostbolt
+    if player has resources to cast spell 'Frostbolt'
+    if spell 'Frostbolt' is off cooldown
+    if player has buff/debuff 'Glacial Spike!'
+    if target has less than 16 stacks of buff/debuff 'Freezing'
+    if talent 'Frostbolt' is taken
+12: Spell: Flurry
+    if spell 'Flurry' is off cooldown
+    if player has resources to cast spell 'Flurry'
+    if talent 'Flurry' is taken
+    if player has buff/debuff 'Brain Freeze'
+    if target has less than 16 stacks of buff/debuff 'Freezing'

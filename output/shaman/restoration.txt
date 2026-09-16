@@ -1,0 +1,48 @@
+Restoration
+0: Spell: Chain Lightning
+    if there are more than 3 targets within 10 yards of target
+    if talent 'Chain Lightning' is taken
+    if player has resources to cast spell 'Chain Lightning'
+    if spell 'Chain Lightning' is off cooldown
+    if spell 'Chain Lightning' can be successfully cast
+1: Spell: Flame Shock
+    if target does not have buff/debuff 'Flame Shock'
+    if talent 'Flame Shock' is taken
+    if player has resources to cast spell 'Flame Shock'
+    if spell 'Flame Shock' is off cooldown
+2: Spell: Lava Burst
+    if talent 'Lava Burst' is taken
+    if player has resources to cast spell 'Lava Burst'
+    if spell 'Lava Burst' is off cooldown
+3: Spell: Lightning Bolt
+    if talent 'Lightning Bolt' is taken
+    if player has resources to cast spell 'Lightning Bolt'
+    if spell 'Lightning Bolt' is off cooldown
+    if spell 'Lightning Bolt' can be successfully cast
+4: Spell: Lava Burst
+5: Spell: Lava Burst
+    if talent 'Lava Burst' is taken
+    if player has resources to cast spell 'Lava Burst'
+    if spell 'Lava Burst' is off cooldown
+    if player has more than 2 charges of spell 'Lava Burst'
+    if spell 'Lava Burst' can be successfully cast
+6: Spell: Water Shield
+    if talent 'Water Shield' is taken
+    if player has resources to cast spell 'Water Shield'
+    if spell 'Water Shield' is off cooldown
+    if player does not have buff/debuff 'Water Shield'
+7: Spell: Earthliving Weapon
+    if talent 'Earthliving Weapon' is taken
+    if player has resources to cast spell 'Earthliving Weapon'
+    if spell 'Earthliving Weapon' is off cooldown
+    if player does not have buff/debuff 'Earthliving Weapon'
+8: Spell: Tidecaller's Guard
+    if talent 'Tidecaller's Guard' is taken
+    if player has resources to cast spell 'Tidecaller's Guard'
+    if spell 'Tidecaller's Guard' is off cooldown
+    if player does not have buff/debuff 'Tidecaller's Guard'
+9: Spell: Skyfury
+    if talent 'Skyfury' is taken
+    if player has resources to cast spell 'Skyfury'
+    if spell 'Skyfury' is off cooldown
+    if player has buff/debuff 'Skyfury Highlight'

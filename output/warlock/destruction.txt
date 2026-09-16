@@ -1,0 +1,120 @@
+Destruction
+0: Spell: Cataclysm
+    if talent 'Cataclysm' is taken
+    if player has resources to cast spell 'Cataclysm'
+    if spell 'Cataclysm' is off cooldown
+1: Spell: Rain of Fire
+    if talent 'Rain of Fire' is taken
+    if player has resources to cast spell 'Rain of Fire'
+    if spell 'Rain of Fire' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+2: Spell: Rain of Fire
+    if talent 'Rain of Fire' is taken
+    if player has resources to cast spell 'Rain of Fire'
+    if spell 'Rain of Fire' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+3: Spell: Chaos Bolt
+    if talent 'Chaos Bolt' is taken
+    if player has resources to cast spell 'Chaos Bolt'
+    if spell 'Chaos Bolt' is off cooldown
+    if there are less than 2 targets within 10 yards of target
+    if player has more than 20 soul shards
+    if spell 'Chaos Bolt' can be successfully cast
+    if player has buff/debuff 'Ritual of Ruin'
+4: Spell: Corruption
+    if talent 'Corruption' is taken
+    if player has resources to cast spell 'Corruption'
+    if spell 'Corruption' is off cooldown
+    if target does not have buff/debuff 'Wither'
+    if player has buff/debuff 'Wither'
+5: Spell: Corruption
+    if player has resources to cast spell 'Corruption'
+    if spell 'Corruption' is off cooldown
+    if target does not have buff/debuff 'Immolate'
+    if player does not have buff/debuff 'Wither'
+    if talent 'Corruption' is taken
+6: Spell: Shadowburn
+    if talent 'Shadowburn' is taken
+    if player has resources to cast spell 'Shadowburn'
+    if spell 'Shadowburn' is off cooldown
+    if there are less than 2 targets within 10 yards of target
+7: Spell: Conflagrate
+    if talent 'Conflagrate' is taken
+    if player has resources to cast spell 'Conflagrate'
+    if spell 'Conflagrate' is off cooldown
+    if player does not have buff/debuff 'Backdraft'
+    if player has more than 15 soul shards
+    if there are less than 2 targets within 10 yards of target
+8: Spell: Conflagrate
+    if talent 'Conflagrate' is taken
+    if player has resources to cast spell 'Conflagrate'
+    if spell 'Conflagrate' is off cooldown
+    if player has more than 2 charges of spell 'Conflagrate'
+9: Spell: Shadow Bolt
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+    if spell 'Shadow Bolt' can be successfully cast
+10: Spell: Soul Fire
+    if talent 'Soul Fire' is taken
+    if player has resources to cast spell 'Soul Fire'
+    if spell 'Soul Fire' is off cooldown
+    if player has less than 40 soul shards
+11: Spell: Shadow Bolt
+12: Spell: Shadow Bolt
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+    if player has more than 2 stacks of buff/debuff 'Backdraft'
+13: Spell: Chaos Bolt
+    if talent 'Chaos Bolt' is taken
+    if player has resources to cast spell 'Chaos Bolt'
+    if spell 'Chaos Bolt' is off cooldown
+    if there are less than 2 targets within 10 yards of target
+14: Spell: Chaos Bolt
+    if talent 'Chaos Bolt' is taken
+    if player has resources to cast spell 'Chaos Bolt'
+    if spell 'Chaos Bolt' is off cooldown
+    if there are less than 2 targets within 10 yards of target
+    if player has more than 40 soul shards
+    if spell 'Chaos Bolt' can be successfully cast
+15: Spell: Malevolence
+    if talent 'Malevolence' is taken
+    if player has resources to cast spell 'Malevolence'
+    if spell 'Malevolence' is off cooldown
+16: Spell: Shadow Bolt
+    if player has buff/debuff 'Infernal Bolt' with at least 5000 ms left
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+17: Spell: Channel Demonfire
+    if talent 'Channel Demonfire' is taken
+    if player has resources to cast spell 'Channel Demonfire'
+    if spell 'Channel Demonfire' is off cooldown
+    if target is less than 40 yards away
+18: Spell: Summon Felhunter
+    if talent 'Summon Felhunter' is taken
+    if player has resources to cast spell 'Summon Felhunter'
+    if spell 'Summon Felhunter' is off cooldown
+    if player has no pet
+    if player does not have buff/debuff 'Grimoire of Sacrifice'
+    if spell 'Summon Felhunter' can be successfully cast
+    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
+19: Spell: Summon Imp
+    if talent 'Summon Imp' is taken
+    if player has resources to cast spell 'Summon Imp'
+    if spell 'Summon Imp' is off cooldown
+    if player has no pet
+    if player does not have buff/debuff 'Grimoire of Sacrifice'
+    if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
+20: Spell: Grimoire of Sacrifice
+    if talent 'Grimoire of Sacrifice' is taken
+    if player has resources to cast spell 'Grimoire of Sacrifice'
+    if spell 'Grimoire of Sacrifice' is off cooldown
+    if player has pet
+    if player does not have buff/debuff 'Grimoire of Sacrifice'
+21: Spell: Summon Infernal
+    if talent 'Summon Infernal' is taken
+    if player has resources to cast spell 'Summon Infernal'
+    if spell 'Summon Infernal' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)

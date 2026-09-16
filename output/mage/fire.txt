@@ -1,0 +1,98 @@
+Fire
+0: Spell: Fire Blast
+    if talent 'Fire Blast' is taken
+    if player has resources to cast spell 'Fire Blast'
+    if spell 'Fire Blast' is off cooldown
+    if player has buff/debuff 'Heating Up'
+    if player does not have buff/debuff 'Hyperthermia'
+1: Spell: Flamestrike
+    if talent 'Flamestrike' is taken
+    if player has resources to cast spell 'Flamestrike'
+    if spell 'Flamestrike' is off cooldown
+    if player has buff/debuff 'Hot Streak!'
+    if there are more than 3 targets within 10 yards of target
+2: Spell: Pyroblast
+    if talent 'Pyroblast' is taken
+    if player has resources to cast spell 'Pyroblast'
+    if spell 'Pyroblast' is off cooldown
+    if player has buff/debuff 'Hot Streak!'
+3: Spell: Meteor
+    if talent 'Meteor' is taken
+    if player has resources to cast spell 'Meteor'
+    if spell 'Meteor' is off cooldown
+4: Spell: Fireball
+    if talent 'Fireball' is taken
+    if player has resources to cast spell 'Fireball'
+    if spell 'Fireball' is off cooldown
+    if spell 'Fireball' can be successfully cast
+5: Spell: Fireball
+6: Spell: Frostfire Bolt
+    if talent 'Frostfire Bolt' is taken
+    if player has resources to cast spell 'Frostfire Bolt'
+    if spell 'Frostfire Bolt' is off cooldown
+    if spell 'Frostfire Bolt' can be successfully cast
+7: Spell: Combustion
+    if talent 'Combustion' is taken
+    if player has resources to cast spell 'Combustion'
+    if spell 'Combustion' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+8: Spell: Pyroblast
+    if talent 'Pyroblast' is taken
+    if player has resources to cast spell 'Pyroblast'
+    if spell 'Pyroblast' is off cooldown
+    if player has buff/debuff 'Hyperthermia'
+9: Spell: Flamestrike
+    if talent 'Flamestrike' is taken
+    if player has resources to cast spell 'Flamestrike'
+    if spell 'Flamestrike' is off cooldown
+    if player has buff/debuff 'Hyperthermia'
+    if there are more than 3 targets within 10 yards of target
+10: Spell: Arcane Intellect
+    if talent 'Arcane Intellect' is taken
+    if player has resources to cast spell 'Arcane Intellect'
+    if spell 'Arcane Intellect' is off cooldown
+    if player has buff/debuff 'Arcane Intellect Highlight'
+11: Spell: Flamestrike
+    if talent 'Flamestrike' is taken
+    if player has resources to cast spell 'Flamestrike'
+    if spell 'Flamestrike' is off cooldown
+    if player has buff/debuff 'Hyperthermia'
+    if there are more than 3 targets within 10 yards of target
+12: Spell: Flamestrike
+    if talent 'Flamestrike' is taken
+    if player has resources to cast spell 'Flamestrike'
+    if spell 'Flamestrike' is off cooldown
+    if player has buff/debuff 'Hot Streak!'
+    if there are more than 3 targets within 10 yards of target
+13: Spell: Scorch
+    if spell 'Scorch' can be successfully cast
+    if spell 'Scorch' is off cooldown
+    if player has resources to cast spell 'Scorch'
+    if talent 'Scorch' is taken
+    if target has less than 30% health
+14: Spell: Scorch
+    if talent 'Scorch' is taken
+    if player has resources to cast spell 'Scorch'
+    if spell 'Scorch' is off cooldown
+    if spell 'Scorch' can be successfully cast
+    if player has buff/debuff 'Heat Shimmer'
+15: Spell: Flamestrike
+    if talent 'Flamestrike' is taken
+    if player has resources to cast spell 'Flamestrike'
+    if spell 'Flamestrike' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player has buff/debuff 'Pyroclasm'
+    if spell 'Flamestrike' can be successfully cast
+16: Spell: Flamestrike
+    if player has buff/debuff 'Pyroclasm'
+    if there are more than 3 targets within 10 yards of target
+    if spell 'Flamestrike' is off cooldown
+    if player has resources to cast spell 'Flamestrike'
+    if talent 'Flamestrike' is taken
+    if spell 'Flamestrike' can be successfully cast
+17: Spell: Pyroblast
+    if spell 'Pyroblast' is off cooldown
+    if player has resources to cast spell 'Pyroblast'
+    if talent 'Pyroblast' is taken
+    if player has buff/debuff 'Pyroclasm'
+    if spell 'Pyroblast' can be successfully cast

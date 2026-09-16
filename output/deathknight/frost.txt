@@ -1,0 +1,120 @@
+Frost
+0: Spell: Reaper's Mark
+    if spell 'Reaper's Mark' is within allowed range
+    if talent 'Reaper's Mark' is taken
+    if player has resources to cast spell 'Reaper's Mark'
+    if spell 'Reaper's Mark' is off cooldown
+1: Spell: Frostscythe
+    if talent 'Frostscythe' is taken
+    if player has resources to cast spell 'Frostscythe'
+    if spell 'Frostscythe' is off cooldown
+    if target is less than 8 yards away
+    if there are more than 3 targets within 10 yards of player
+    if player has buff/debuff 'Killing Machine'
+2: Spell: Obliterate
+    if player has buff/debuff 'Killing Machine'
+    if talent 'Obliterate' is taken
+    if player has resources to cast spell 'Obliterate'
+    if spell 'Obliterate' is off cooldown
+    if spell 'Obliterate' is within allowed range
+3: Spell: Remorseless Winter
+    if target is less than 10 yards away
+    if talent 'Remorseless Winter' is taken
+    if player has resources to cast spell 'Remorseless Winter'
+    if spell 'Remorseless Winter' is off cooldown
+    if player does not have buff/debuff 'Frozen Dominion'
+4: Spell: Howling Blast
+    if player has buff/debuff 'Rime'
+    if talent 'Howling Blast' is taken
+    if player has resources to cast spell 'Howling Blast'
+    if spell 'Howling Blast' is off cooldown
+5: Spell: Glacial Advance
+    if target is less than 10 yards away
+    if there are more than 3 targets within 10 yards of player
+    if talent 'Glacial Advance' is taken
+    if player has resources to cast spell 'Glacial Advance'
+    if spell 'Glacial Advance' is off cooldown
+    if player has more than 80 runic power
+6: Spell: Soul Reaper
+    if talent 'Soul Reaper' is taken
+    if player has resources to cast spell 'Soul Reaper'
+    if spell 'Soul Reaper' is off cooldown
+    if target has less than 35% health
+    if spell 'Soul Reaper' is within allowed range
+    if there are less than 2 targets within 10 yards of target
+7: Spell: Frost Strike
+    if player has more than 80 runic power
+    if talent 'Frost Strike' is taken
+    if player has resources to cast spell 'Frost Strike'
+    if spell 'Frost Strike' is off cooldown
+    if spell 'Frost Strike' is within allowed range
+8: Spell: Obliterate
+    if talent 'Obliterate' is taken
+    if player has resources to cast spell 'Obliterate'
+    if spell 'Obliterate' is off cooldown
+    if spell 'Obliterate' is within allowed range
+9: Spell: Frost Strike
+    if talent 'Frost Strike' is taken
+    if player has resources to cast spell 'Frost Strike'
+    if spell 'Frost Strike' is off cooldown
+    if spell 'Frost Strike' is within allowed range
+10: Spell: Howling Blast
+    if talent 'Howling Blast' is taken
+    if spell 'Howling Blast' is off cooldown
+    if spell 'Howling Blast' is within allowed range
+    if target is more than 15 yards away
+11: Spell: Pillar of Frost
+    if talent 'Pillar of Frost' is taken
+    if player has resources to cast spell 'Pillar of Frost'
+    if spell 'Pillar of Frost' is off cooldown
+    if spell 'Pillar of Frost' is off cooldown
+    if target is less than 8 yards away
+12: Spell: Frostscythe
+    if talent 'Frostscythe' is taken
+    if player has resources to cast spell 'Frostscythe'
+    if spell 'Frostscythe' is off cooldown
+    if target is less than 8 yards away
+    if there are more than 3 targets within 10 yards of player
+13: Spell: Glacial Advance
+    if target is less than 10 yards away
+    if there are more than 3 targets within 10 yards of player
+    if talent 'Glacial Advance' is taken
+    if player has resources to cast spell 'Glacial Advance'
+    if spell 'Glacial Advance' is off cooldown
+14: Spell: Frost Strike
+    if talent 'Frost Strike' is taken
+    if player has resources to cast spell 'Frost Strike'
+    if spell 'Frost Strike' is off cooldown
+    if target is less than 8 yards away
+    if player has buff/debuff 'Frostbane'
+15: Spell: Empower Rune Weapon
+    if talent 'Empower Rune Weapon' is taken
+    if player has resources to cast spell 'Empower Rune Weapon'
+    if spell 'Empower Rune Weapon' is off cooldown
+    if spell 'Empower Rune Weapon' is within allowed range
+    if player has less than 800 runic power
+    if player has less than 1 stacks of buff/debuff 'Killing Machine'
+16: Spell: Empower Rune Weapon
+    if talent 'Empower Rune Weapon' is taken
+    if player has resources to cast spell 'Empower Rune Weapon'
+    if spell 'Empower Rune Weapon' is off cooldown
+    if spell 'Empower Rune Weapon' is within allowed range
+    if player has less than 80 runic power
+    if player does not have buff/debuff 'Killing Machine'
+17: Spell: Rune Strike
+18: Spell: Frostwyrm's Fury
+    if talent 'Frostwyrm's Fury' is taken
+    if player has resources to cast spell 'Frostwyrm's Fury'
+    if spell 'Frostwyrm's Fury' is off cooldown
+    if target is less than 30 yards away
+    if player has buff/debuff 'Pillar of Frost'
+19: Spell: Frostwyrm's Fury
+    if talent 'Frostwyrm's Fury' is taken
+    if player has resources to cast spell 'Frostwyrm's Fury'
+    if spell 'Frostwyrm's Fury' is off cooldown
+    if target is less than 30 yards away
+20: Spell: Breath of Sindragosa
+    if talent 'Breath of Sindragosa' is taken
+    if player has resources to cast spell 'Breath of Sindragosa'
+    if spell 'Breath of Sindragosa' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)

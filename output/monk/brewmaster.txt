@@ -1,0 +1,63 @@
+Brewmaster
+0: Spell: Touch of Death
+    if talent 'Touch of Death' is taken
+    if player has resources to cast spell 'Touch of Death'
+    if spell 'Touch of Death' is off cooldown
+    if spell 'Touch of Death' is within allowed range
+1: Spell: Blackout Kick
+    if talent 'Blackout Kick' is taken
+    if player has resources to cast spell 'Blackout Kick'
+    if spell 'Blackout Kick' is off cooldown
+    if spell 'Blackout Kick' is within allowed range
+    if player does not have buff/debuff 'Blackout Combo'
+2: Spell: Chi Burst
+    if talent 'Chi Burst' is taken
+    if player has resources to cast spell 'Chi Burst'
+    if spell 'Chi Burst' is off cooldown
+    if target is less than 30 yards away
+3: Spell: Keg Smash
+    if talent 'Keg Smash' is taken
+    if player has resources to cast spell 'Keg Smash'
+    if spell 'Keg Smash' is off cooldown
+    if spell 'Keg Smash' is within allowed range
+    if player has more than 2 charges of spell 'Keg Smash'
+4: Spell: Breath of Fire
+    if talent 'Breath of Fire' is taken
+    if player has resources to cast spell 'Breath of Fire'
+    if spell 'Breath of Fire' is off cooldown
+    if target is less than 12 yards away
+5: Spell: Exploding Keg
+    if talent 'Exploding Keg' is taken
+    if player has resources to cast spell 'Exploding Keg'
+    if spell 'Exploding Keg' is off cooldown
+    if target is less than 40 yards away
+6: Spell: Rushing Jade Wind
+    if talent 'Rushing Jade Wind' is taken
+    if player has resources to cast spell 'Rushing Jade Wind'
+    if spell 'Rushing Jade Wind' is off cooldown
+7: Spell: Spinning Crane Kick
+    if talent 'Spinning Crane Kick' is taken
+    if player has resources to cast spell 'Spinning Crane Kick'
+    if spell 'Spinning Crane Kick' is off cooldown
+    if there are more than 3 targets within 8 yards of player
+    if spell 'Spinning Crane Kick' can be successfully cast
+8: Spell: Tiger Palm
+    if talent 'Tiger Palm' is taken
+    if player has resources to cast spell 'Tiger Palm'
+    if spell 'Tiger Palm' is off cooldown
+    if spell 'Tiger Palm' is within allowed range
+    if player does not have buff/debuff 'Press the Advantage'
+9: Spell: Tiger Palm
+    if talent 'Tiger Palm' is taken
+    if player has resources to cast spell 'Tiger Palm'
+    if spell 'Tiger Palm' is off cooldown
+    if spell 'Tiger Palm' is within allowed range
+    if player does not have buff/debuff 'Press the Advantage'
+    if player has buff/debuff 'Blackout Combo'
+    if there are less than 2 targets within 10 yards of player
+10: Spell: Keg Smash
+    if talent 'Keg Smash' is taken
+    if player has resources to cast spell 'Keg Smash'
+    if spell 'Keg Smash' is off cooldown
+    if spell 'Keg Smash' is within allowed range
+11: Spell: Keg Smash

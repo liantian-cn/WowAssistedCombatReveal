@@ -1,59 +1,37 @@
-# Temporary and binary files
+# 临时与二进制文件
 *~
 *.py[cod]
 *.so
-*.cfg
-!.isort.cfg
-!setup.cfg
 *.orig
 *.log
 *.pot
-__pycache__/*
-.cache/*
-.*.swp
-*/.ipynb_checkpoints/*
+__pycache__/
+*.egg-info
 .DS_Store
 
-# Project files
-.ropeproject
-.project
-.pydevproject
-.settings
-.idea
-.vscode
-tags
-
-# Package files
-*.egg
-*.eggs/
-.installed.cfg
-*.egg-info
-
-# Unittest and coverage
-htmlcov/*
-.coverage
-.coverage.*
-.tox
-junit*.xml
-coverage.xml
-.pytest_cache/
-
-# Build and docs folder/files
-build/*
-dist/*
-sdist/*
-docs/api/*
-docs/_rst/*
-docs/_build/*
-cover/*
-MANIFEST
-
-# Per-project virtualenvs
+# 虚拟环境（.venv 由项目自行创建，不入库）
 .venv*/
 .conda*/
 .python-version
 
+# 测试与覆盖率
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+.tox
+coverage.xml
 
-data/wowhead/spells/*.json
-data/wowhead/icons/*.jpg
-data/casc_filelist
+# 编辑器/IDE
+.idea/
+.vscode/
+*.swp
+tags
+
+# 调查与比对脚本的暂存目录（内容为一次性分析脚本与输出，不入库）
+.script/
+
+# 本地敏感备忘（数据导出地址），仅保留在本地工作区，不入库
+Note.txt
+
+# 注意：output/ 与 csv_table/ 按项目约定入库，不要在这里忽略

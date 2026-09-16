@@ -1,0 +1,46 @@
+Holy
+0: Spell: Consecration
+    if talent 'Consecration' is taken
+    if player has resources to cast spell 'Consecration'
+    if spell 'Consecration' is off cooldown
+    if there are more than 8 targets within 10 yards of player
+1: Spell: Judgment
+    if talent 'Judgment' is taken
+    if player has resources to cast spell 'Judgment'
+    if spell 'Judgment' is off cooldown
+2: Spell: Hammer of Wrath
+    if player has buff/debuff 'Veneration'
+    if talent 'Hammer of Wrath' is taken
+    if player has resources to cast spell 'Hammer of Wrath'
+    if spell 'Hammer of Wrath' is off cooldown
+3: Spell: Hammer of Wrath
+    if talent 'Hammer of Wrath' is taken
+    if player has resources to cast spell 'Hammer of Wrath'
+    if spell 'Hammer of Wrath' is off cooldown
+    if player has buff/debuff 'Avenging Wrath'
+4: Spell: Hammer of Wrath
+    if talent 'Hammer of Wrath' is taken
+    if player has resources to cast spell 'Hammer of Wrath'
+    if spell 'Hammer of Wrath' is off cooldown
+    if player has buff/debuff 'Avenging Crusader'
+5: Spell: Avenging Crusader
+    if player has buff/debuff 'Avenging Crusader'
+    if player has resources to cast spell 'Avenging Crusader'
+    if spell 'Avenging Crusader' is off cooldown
+    if spell 'Avenging Crusader' is within allowed range
+6: Spell: Hammer of Wrath
+    if talent 'Hammer of Wrath' is taken
+    if player has resources to cast spell 'Hammer of Wrath'
+    if spell 'Hammer of Wrath' is off cooldown
+    if target has less than 20% health
+7: Spell: Consecration
+    if talent 'Consecration' is taken
+    if player has resources to cast spell 'Consecration'
+    if spell 'Consecration' is off cooldown
+    if target is less than 8 yards away
+    if player does not have buff/debuff 'Righteous Judgment'
+8: Spell: Judgment
+9: Spell: Holy Shock
+    if talent 'Holy Shock' is taken
+    if player has resources to cast spell 'Holy Shock'
+    if spell 'Holy Shock' is off cooldown

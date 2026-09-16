@@ -1,0 +1,86 @@
+Blood
+0: Spell: Reaper's Mark
+    if talent 'Reaper's Mark' is taken
+    if player has resources to cast spell 'Reaper's Mark'
+    if spell 'Reaper's Mark' is off cooldown
+    if target does not have buff/debuff 'Reaper's Mark'
+    if spell 'Reaper's Mark' is within allowed range
+1: Spell: Marrowrend
+    if talent 'Marrowrend' is taken
+    if player has resources to cast spell 'Marrowrend'
+    if spell 'Marrowrend' is off cooldown
+    if player has buff/debuff 'Exterminate'
+    if spell 'Marrowrend' is within allowed range
+2: Spell: Consumption
+    if talent 'Consumption' is taken
+    if player has resources to cast spell 'Consumption'
+    if spell 'Consumption' is off cooldown
+    if target is less than 5 yards away
+3: Spell: Death and Decay
+    if target is less than 6 yards away
+    if player does not have buff/debuff 'Death and Decay'
+    if talent 'Death and Decay' is taken
+    if player has resources to cast spell 'Death and Decay'
+    if spell 'Death and Decay' is off cooldown
+4: Spell: Blood Boil
+    if target is less than 10 yards away
+    if talent 'Blood Boil' is taken
+    if player has resources to cast spell 'Blood Boil'
+    if spell 'Blood Boil' is off cooldown
+    if there are less than 0 targets within 50 yards of player with buff/debuff 'Blood Plague'
+    if player has more than 2 charges of spell 'Blood Boil'
+5: Spell: Death Strike
+    if talent 'Death Strike' is taken
+    if player has resources to cast spell 'Death Strike'
+    if spell 'Death Strike' is off cooldown
+    if player has more than 800 runic power
+    if spell 'Death Strike' is within allowed range
+6: Spell: Rune Strike
+    if talent 'Rune Strike' is taken
+    if player has resources to cast spell 'Rune Strike'
+    if spell 'Rune Strike' is within allowed range
+7: Spell: Rune Strike
+    if talent 'Rune Strike' is taken
+    if player has resources to cast spell 'Rune Strike'
+    if spell 'Rune Strike' is off cooldown
+    if player has buff/debuff 'Vampiric Strike'
+    if spell 'Rune Strike' is within allowed range
+    if target is less than 8 yards away
+8: Spell: Rune Strike
+    if talent 'Rune Strike' is taken
+    if player has resources to cast spell 'Rune Strike'
+    if spell 'Rune Strike' is off cooldown
+    if player has buff/debuff 'Gift of the San'layn'
+    if spell 'Rune Strike' is within allowed range
+    if target is less than 8 yards away
+9: Spell: Rune Strike
+    if target is less than 12 yards away
+10: Spell: Dancing Rune Weapon
+    if talent 'Dancing Rune Weapon' is taken
+    if player has resources to cast spell 'Dancing Rune Weapon'
+    if spell 'Dancing Rune Weapon' is off cooldown
+    if target is less than 20 yards away
+11: Spell: Marrowrend
+    if talent 'Marrowrend' is taken
+    if player has resources to cast spell 'Marrowrend'
+    if spell 'Marrowrend' is off cooldown
+    if spell 'Marrowrend' is within allowed range
+    if player has less than 6 stacks of buff/debuff 'Bone Shield'
+12: Spell: Marrowrend
+    if talent 'Marrowrend' is taken
+    if player has resources to cast spell 'Marrowrend'
+    if spell 'Marrowrend' is off cooldown
+    if spell 'Marrowrend' is within allowed range
+    if player does not have buff/debuff 'Bone Shield'
+13: Spell: Death's Caress
+    if talent 'Death's Caress' is taken
+    if player has resources to cast spell 'Death's Caress'
+    if spell 'Death's Caress' is off cooldown
+    if spell 'Death's Caress' is within allowed range
+14: Spell: Death and Decay
+15: Spell: Death Strike
+    if talent 'Death Strike' is taken
+    if player has resources to cast spell 'Death Strike'
+    if spell 'Death Strike' is off cooldown
+    if spell 'Death Strike' is within allowed range
+    if player has less than 50% health

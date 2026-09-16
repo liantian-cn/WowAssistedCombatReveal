@@ -1,0 +1,55 @@
+Beast Mastery
+0: Spell: Bestial Wrath
+    if talent 'Bestial Wrath' is taken
+    if player has resources to cast spell 'Bestial Wrath'
+    if spell 'Bestial Wrath' is off cooldown
+1: Spell: Wild Thrash
+    if talent 'Wild Thrash' is taken
+    if player has resources to cast spell 'Wild Thrash'
+    if spell 'Wild Thrash' is off cooldown
+    if spell 'Wild Thrash' is within allowed range
+    if player has buff/debuff 'Beast Cleave' with at least 2000 ms left
+    if there are more than 3 targets within 10 yards of target
+2: Spell: Kill Command
+    if talent 'Kill Command' is taken
+    if player has resources to cast spell 'Kill Command'
+    if spell 'Kill Command' is off cooldown
+    if spell 'Kill Command' is within allowed range
+3: Spell: Barbed Shot
+    if talent 'Barbed Shot' is taken
+    if player has resources to cast spell 'Barbed Shot'
+    if spell 'Barbed Shot' is off cooldown
+    if spell 'Barbed Shot' is within allowed range
+4: Spell: Arcane Shot
+    if talent 'Arcane Shot' is taken
+    if player has resources to cast spell 'Arcane Shot'
+    if spell 'Arcane Shot' is off cooldown
+5: Spell: Black Arrow
+    if talent 'Black Arrow' is taken
+    if player has resources to cast spell 'Black Arrow'
+    if spell 'Black Arrow' is off cooldown
+    if spell 'Black Arrow' is within allowed range
+6: Spell: Wild Thrash
+    if talent 'Wild Thrash' is taken
+    if player has resources to cast spell 'Wild Thrash'
+    if spell 'Wild Thrash' is off cooldown
+    if spell 'Wild Thrash' is within allowed range
+    if there are more than 3 targets within 10 yards of target
+    if player does not have buff/debuff 'Beast Cleave'
+7: Spell: Call Pet 1
+    if player has no pet
+    if talent 'Call Pet 1' is taken
+    if player has resources to cast spell 'Call Pet 1'
+    if spell 'Call Pet 1' is off cooldown
+8: Spell: Steady Shot
+    if talent 'Steady Shot' is taken
+    if player has resources to cast spell 'Steady Shot'
+    if spell 'Steady Shot' is off cooldown
+    if player does not have buff/debuff 'Pack Tactics'
+    if spell 'Steady Shot' can be successfully cast
+9: Spell: Arcane Shot
+10: Spell: Revive Pet
+    if talent 'Revive Pet' is taken
+    if player has resources to cast spell 'Revive Pet'
+    if spell 'Revive Pet' is off cooldown
+    if player has buff/debuff 'Track Pets'

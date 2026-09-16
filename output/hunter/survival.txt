@@ -1,0 +1,67 @@
+Survival
+0: Spell: Wildfire Bomb
+    if talent 'Wildfire Bomb' is taken
+    if player has resources to cast spell 'Wildfire Bomb'
+    if spell 'Wildfire Bomb' is off cooldown
+    if spell 'Wildfire Bomb' is within allowed range
+1: Spell: Boomstick
+    if talent 'Boomstick' is taken
+    if player has resources to cast spell 'Boomstick'
+    if spell 'Boomstick' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if target is less than 15 yards away
+2: Spell: Kill Command
+    if talent 'Kill Command' is taken
+    if player has resources to cast spell 'Kill Command'
+    if spell 'Kill Command' is off cooldown
+    if spell 'Kill Command' is within allowed range
+    if player has less than 40 focus
+3: Spell: Boomstick
+    if talent 'Boomstick' is taken
+    if player has resources to cast spell 'Boomstick'
+    if spell 'Boomstick' is off cooldown
+    if target is less than 15 yards away
+4: Spell: Raptor Strike
+    if talent 'Raptor Strike' is taken
+    if player has resources to cast spell 'Raptor Strike'
+    if spell 'Raptor Strike' is off cooldown
+    if target is less than 5 yards away
+5: Spell: Call Pet 1
+    if talent 'Call Pet 1' is taken
+    if player has resources to cast spell 'Call Pet 1'
+    if spell 'Call Pet 1' is off cooldown
+    if player has no pet
+6: Spell: Raptor Strike
+    if talent 'Raptor Strike' is taken
+7: Spell: Arcane Shot
+    if talent 'Arcane Shot' is taken
+    if player has resources to cast spell 'Arcane Shot'
+    if spell 'Arcane Shot' is off cooldown
+8: Spell: Steady Shot
+9: Spell: Revive Pet
+    if talent 'Revive Pet' is taken
+    if player has resources to cast spell 'Revive Pet'
+    if spell 'Revive Pet' is off cooldown
+    if player has buff/debuff 'Track Pets'
+10: Spell: Takedown
+    if talent 'Takedown' is taken
+    if player has resources to cast spell 'Takedown'
+    if spell 'Takedown' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+11: Spell: Kill Command
+    if player does not have buff/debuff 'Tip of the Spear'
+    if talent 'Kill Command' is taken
+    if player has resources to cast spell 'Kill Command'
+    if spell 'Kill Command' is off cooldown
+    if spell 'Kill Command' is within allowed range
+12: Spell: Flamefang Pitch
+    if talent 'Flamefang Pitch' is taken
+    if player has resources to cast spell 'Flamefang Pitch'
+    if spell 'Flamefang Pitch' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if target is less than 40 yards away
+13: Spell: Flamefang Pitch
+    if talent 'Flamefang Pitch' is taken
+    if player has resources to cast spell 'Flamefang Pitch'
+    if spell 'Flamefang Pitch' is off cooldown
+    if target is less than 40 yards away

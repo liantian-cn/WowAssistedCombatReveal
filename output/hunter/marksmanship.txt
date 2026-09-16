@@ -1,0 +1,92 @@
+Marksmanship
+0: Spell: Multi-Shot
+    if talent 'Multi-Shot' is taken
+    if player has resources to cast spell 'Multi-Shot'
+    if spell 'Multi-Shot' is off cooldown
+    if spell 'Multi-Shot' is within allowed range
+    if player has buff/debuff 'Trick Shots' with at least 2000 ms left
+    if there are more than 3 targets within 10 yards of target
+1: Spell: Multi-Shot
+    if talent 'Multi-Shot' is taken
+    if player has resources to cast spell 'Multi-Shot'
+    if spell 'Multi-Shot' is off cooldown
+    if spell 'Multi-Shot' is within allowed range
+    if player has buff/debuff 'Precise Shots'
+    if there are more than 3 targets within 10 yards of target
+2: Spell: Rapid Fire
+    if talent 'Rapid Fire' is taken
+    if player has resources to cast spell 'Rapid Fire'
+    if spell 'Rapid Fire' is off cooldown
+    if spell 'Rapid Fire' is within allowed range
+3: Spell: Volley
+    if talent 'Volley' is taken
+    if player has resources to cast spell 'Volley'
+    if spell 'Volley' is off cooldown
+    if target is less than 50 yards away
+4: Spell: Aimed Shot
+    if talent 'Aimed Shot' is taken
+    if player has resources to cast spell 'Aimed Shot'
+    if spell 'Aimed Shot' is off cooldown
+    if spell 'Aimed Shot' is within allowed range
+5: Spell: Kill Shot
+    if talent 'Kill Shot' is taken
+    if player has resources to cast spell 'Kill Shot'
+    if spell 'Kill Shot' is off cooldown
+    if spell 'Kill Shot' is within allowed range
+6: Spell: Steady Shot
+    if talent 'Steady Shot' is taken
+    if player has resources to cast spell 'Steady Shot'
+    if spell 'Steady Shot' is off cooldown
+    if spell 'Steady Shot' is within allowed range
+    if spell 'Steady Shot' can be successfully cast
+7: Spell: Multi-Shot
+    if talent 'Multi-Shot' is taken
+    if player has resources to cast spell 'Multi-Shot'
+    if spell 'Multi-Shot' is off cooldown
+    if spell 'Multi-Shot' is within allowed range
+    if there are more than 3 targets within 10 yards of target
+    if player has more than 90 focus
+8: Spell: Kill Shot
+    if talent 'Kill Shot' is taken
+    if player has resources to cast spell 'Kill Shot'
+    if spell 'Kill Shot' is off cooldown
+    if spell 'Kill Shot' is within allowed range
+    if player has buff/debuff 'Black Arrow'
+9: Spell: Arcane Shot
+    if talent 'Arcane Shot' is taken
+    if player has resources to cast spell 'Arcane Shot'
+    if spell 'Arcane Shot' is off cooldown
+    if spell 'Arcane Shot' is within allowed range
+    if player has buff/debuff 'Precise Shots'
+10: Spell: Multi-Shot
+    if talent 'Multi-Shot' is taken
+    if player has resources to cast spell 'Multi-Shot'
+    if spell 'Multi-Shot' is off cooldown
+    if spell 'Multi-Shot' is within allowed range
+    if player does not have buff/debuff 'Trick Shots'
+    if there are more than 3 targets within 10 yards of target
+11: Spell: Aimed Shot
+    if talent 'Aimed Shot' is taken
+12: Spell: Aimed Shot
+    if talent 'Aimed Shot' is taken
+    if player has resources to cast spell 'Aimed Shot'
+    if spell 'Aimed Shot' is off cooldown
+    if spell 'Aimed Shot' is within allowed range
+    if spell 'Aimed Shot' can be successfully cast
+    if player has more than 2 charges of spell 'Aimed Shot'
+13: Spell: Steady Shot
+14: Spell: Arcane Shot
+    if talent 'Arcane Shot' is taken
+    if player has resources to cast spell 'Arcane Shot'
+    if spell 'Arcane Shot' is off cooldown
+    if player does not have buff/debuff 'Precise Shots'
+15: Spell: Trueshot
+    if talent 'Trueshot' is taken
+    if player has resources to cast spell 'Trueshot'
+    if spell 'Trueshot' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+16: Spell: Explosive Shot
+    if talent 'Explosive Shot' is taken
+    if player has resources to cast spell 'Explosive Shot'
+    if spell 'Explosive Shot' is off cooldown
+    if spell 'Explosive Shot' is within allowed range

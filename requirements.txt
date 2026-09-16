@@ -1,0 +1,6 @@
+# 运行依赖（脚本型项目，直接在仓库根目录用 .venv 运行）
+# 安装：.venv\Scripts\python.exe -m pip install -r requirements.txt
+pandas>=2.3.1
+
+# 测试依赖（重新搭建环境时另行安装）：
+# pytest>=8.0

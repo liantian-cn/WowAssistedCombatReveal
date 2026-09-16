@@ -1,0 +1,64 @@
+Protection
+0: Spell: Divine Toll
+    if talent 'Divine Toll' is taken
+    if player has resources to cast spell 'Divine Toll'
+    if spell 'Divine Toll' is off cooldown
+    if spell 'Divine Toll' is within allowed range
+1: Spell: Avenger's Shield
+    if talent 'Avenger's Shield' is taken
+    if player has resources to cast spell 'Avenger's Shield'
+    if spell 'Avenger's Shield' is off cooldown
+    if spell 'Avenger's Shield' is within allowed range
+2: Spell: Hammer of Wrath
+    if talent 'Hammer of Wrath' is taken
+    if player has resources to cast spell 'Hammer of Wrath'
+    if spell 'Hammer of Wrath' is off cooldown
+    if spell 'Hammer of Wrath' is within allowed range
+3: Spell: Judgment
+    if talent 'Judgment' is taken
+    if player has resources to cast spell 'Judgment'
+    if spell 'Judgment' is off cooldown
+    if spell 'Judgment' is within allowed range
+4: Spell: Divine Toll
+    if talent 'Divine Toll' is taken
+    if player has resources to cast spell 'Divine Toll'
+    if spell 'Divine Toll' is off cooldown
+    if there are more than 3 targets within 30 yards of player
+    if player has less than 2 holy power
+5: Spell: Divine Toll
+    if talent 'Divine Toll' is taken
+    if player has resources to cast spell 'Divine Toll'
+    if spell 'Divine Toll' is off cooldown
+    if there are less than 2 targets within 30 yards of player
+    if player has less than 3 holy power
+6: Spell: Crusader Strike
+    if talent 'Crusader Strike' is taken
+    if player has resources to cast spell 'Crusader Strike'
+    if spell 'Crusader Strike' is off cooldown
+    if target is less than 5 yards away
+7: Spell: Consecration
+    if talent 'Consecration' is taken
+    if player has resources to cast spell 'Consecration'
+    if spell 'Consecration' is off cooldown
+    if player does not have buff/debuff 'Consecration'
+8: Spell: Judgment
+9: Spell: Shield of the Righteous
+    if talent 'Shield of the Righteous' is taken
+    if player has resources to cast spell 'Shield of the Righteous'
+    if spell 'Shield of the Righteous' is off cooldown
+    if player does not have buff/debuff 'Shield of the Righteous'
+10: Spell: Shield of the Righteous
+    if talent 'Shield of the Righteous' is taken
+    if player has resources to cast spell 'Shield of the Righteous'
+    if spell 'Shield of the Righteous' is off cooldown
+    if player has more than 40% health
+11: Spell: Avenging Wrath
+    if talent 'Avenging Wrath' is taken
+    if player has resources to cast spell 'Avenging Wrath'
+    if spell 'Avenging Wrath' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+12: Spell: Sentinel
+    if talent 'Sentinel' is taken
+    if player has resources to cast spell 'Sentinel'
+    if spell 'Sentinel' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)

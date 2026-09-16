@@ -1,0 +1,67 @@
+Vengeance
+0: Spell: Throw Glaive
+    if talent 'Throw Glaive' is taken
+    if player has resources to cast spell 'Throw Glaive'
+    if spell 'Throw Glaive' is off cooldown
+    if spell 'Throw Glaive' is within allowed range
+    if player has buff/debuff 'Reaver's Glaive'
+1: Spell: Shear
+    if talent 'Shear' is taken
+    if player has resources to cast spell 'Shear'
+    if spell 'Shear' is off cooldown
+    if spell 'Shear' is within allowed range
+    if player has buff/debuff 'Rending Strike'
+2: Spell: Soul Cleave
+    if talent 'Soul Cleave' is taken
+    if player has resources to cast spell 'Soul Cleave'
+    if spell 'Soul Cleave' is off cooldown
+    if spell 'Soul Cleave' is within allowed range
+    if player has buff/debuff 'Glaive Flurry'
+3: Spell: Soul Carver
+    if talent 'Soul Carver' is taken
+    if player has resources to cast spell 'Soul Carver'
+    if spell 'Soul Carver' is off cooldown
+    if spell 'Soul Carver' is within allowed range
+4: Spell: Sigil of Spite
+    if talent 'Sigil of Spite' is taken
+    if player has resources to cast spell 'Sigil of Spite'
+    if spell 'Sigil of Spite' is off cooldown
+    if target is less than 30 yards away
+5: Spell: Sigil of Flame
+    if talent 'Sigil of Flame' is taken
+    if player has resources to cast spell 'Sigil of Flame'
+    if spell 'Sigil of Flame' is off cooldown
+    if target is less than 30 yards away
+    if target does not have buff/debuff 'Sigil of Flame'
+6: Spell: Immolation Aura
+    if talent 'Immolation Aura' is taken
+    if player has resources to cast spell 'Immolation Aura'
+    if spell 'Immolation Aura' is off cooldown
+    if there are more than 1 targets within 8 yards of player
+7: Spell: Spirit Bomb
+    if talent 'Spirit Bomb' is taken
+    if player has resources to cast spell 'Spirit Bomb'
+    if spell 'Spirit Bomb' is off cooldown
+    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
+8: Spell: Fracture
+    if talent 'Fracture' is taken
+    if player has resources to cast spell 'Fracture'
+    if spell 'Fracture' is off cooldown
+    if spell 'Fracture' is within allowed range
+    if talent 'Fracture' is taken
+9: Spell: Soul Cleave
+    if talent 'Soul Cleave' is taken
+    if player has resources to cast spell 'Soul Cleave'
+    if spell 'Soul Cleave' is off cooldown
+    if spell 'Soul Cleave' is within allowed range
+10: Spell: Throw Glaive
+    if talent 'Throw Glaive' is taken
+    if player has resources to cast spell 'Throw Glaive'
+    if spell 'Throw Glaive' is off cooldown
+    if spell 'Throw Glaive' is within allowed range
+11: Spell: Soul Cleave
+12: Spell: Metamorphosis
+    if talent 'Metamorphosis' is taken
+    if player has resources to cast spell 'Metamorphosis'
+    if spell 'Metamorphosis' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)

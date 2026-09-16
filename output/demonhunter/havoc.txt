@@ -1,0 +1,104 @@
+Havoc
+0: Spell: Blade Dance
+    if talent 'Blade Dance' is taken
+    if player has resources to cast spell 'Blade Dance'
+    if spell 'Blade Dance' is off cooldown
+    if player has buff/debuff 'Metamorphosis'
+    if target has buff/debuff 'Essence Break'
+    if target is less than 5 yards away
+1: Spell: Chaos Strike
+    if talent 'Chaos Strike' is taken
+    if player has resources to cast spell 'Chaos Strike'
+    if spell 'Chaos Strike' is off cooldown
+    if spell 'Chaos Strike' is within allowed range
+    if player has buff/debuff 'Metamorphosis'
+    if target has buff/debuff 'Essence Break'
+2: Spell: Throw Glaive
+    if talent 'Throw Glaive' is taken
+    if player has resources to cast spell 'Throw Glaive'
+    if spell 'Throw Glaive' is off cooldown
+    if spell 'Throw Glaive' is within allowed range
+    if player has buff/debuff 'Reaver's Glaive'
+3: Spell: Immolation Aura
+    if talent 'Immolation Aura' is taken
+    if player has resources to cast spell 'Immolation Aura'
+    if spell 'Immolation Aura' is off cooldown
+    if there are more than 3 targets within 8 yards of player
+4: Spell: Essence Break
+    if talent 'Essence Break' is taken
+    if player has resources to cast spell 'Essence Break'
+    if spell 'Essence Break' is off cooldown
+    if target is less than 8 yards away
+    if player has buff/debuff 'Metamorphosis'
+    if spell 'Essence Break' is off cooldown
+5: Spell: Blade Dance
+    if talent 'Blade Dance' is taken
+    if player has resources to cast spell 'Blade Dance'
+    if spell 'Blade Dance' is off cooldown
+    if player has buff/debuff 'Metamorphosis'
+    if target is less than 5 yards away
+6: Spell: Eye Beam
+    if talent 'Eye Beam' is taken
+    if player has resources to cast spell 'Eye Beam'
+    if spell 'Eye Beam' is off cooldown
+    if target is less than 8 yards away
+7: Spell: Blade Dance
+    if talent 'Blade Dance' is taken
+    if player has resources to cast spell 'Blade Dance'
+    if spell 'Blade Dance' is off cooldown
+    if target is less than 5 yards away
+8: Spell: Chaos Strike
+    if talent 'Chaos Strike' is taken
+    if player has resources to cast spell 'Chaos Strike'
+    if spell 'Chaos Strike' is off cooldown
+    if spell 'Chaos Strike' is within allowed range
+    if player has buff/debuff 'Metamorphosis'
+9: Spell: Chaos Strike
+    if talent 'Chaos Strike' is taken
+    if player has resources to cast spell 'Chaos Strike'
+    if spell 'Chaos Strike' is off cooldown
+    if spell 'Chaos Strike' is within allowed range
+10: Spell: Throw Glaive
+    if talent 'Throw Glaive' is taken
+    if player has resources to cast spell 'Throw Glaive'
+    if spell 'Throw Glaive' is off cooldown
+    if spell 'Throw Glaive' is within allowed range
+11: Spell: Chaos Strike
+12: Spell: Immolation Aura
+    if talent 'Immolation Aura' is taken
+    if player has resources to cast spell 'Immolation Aura'
+    if spell 'Immolation Aura' is off cooldown
+    if there are more than 1 targets within 8 yards of player
+13: Spell: Metamorphosis
+    if talent 'Metamorphosis' is taken
+    if player has resources to cast spell 'Metamorphosis'
+    if spell 'Metamorphosis' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+14: Spell: Fel Rush
+    if talent 'Fel Rush' is taken
+    if player has resources to cast spell 'Fel Rush'
+    if spell 'Fel Rush' is off cooldown
+    if player has buff/debuff 'Inertia'
+    automation only (not part of the game's Assisted Combat rotation)
+15: Spell: Felblade
+    if talent 'Felblade' is taken
+    if player has resources to cast spell 'Felblade'
+    if spell 'Felblade' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+16: Spell: Vengeful Retreat
+    if talent 'Vengeful Retreat' is taken
+    if player has resources to cast spell 'Vengeful Retreat'
+    if spell 'Vengeful Retreat' is off cooldown
+    if player has buff/debuff 'Inertia'
+    automation only (not part of the game's Assisted Combat rotation)
+17: Spell: The Hunt
+    if talent 'The Hunt' is taken
+    if player has resources to cast spell 'The Hunt'
+    if spell 'The Hunt' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+18: Spell: Vengeful Retreat
+    if talent 'Vengeful Retreat' is taken
+    if player has resources to cast spell 'Vengeful Retreat'
+    if spell 'Vengeful Retreat' is off cooldown
+    if player has buff/debuff 'Exergy'
+    automation only (not part of the game's Assisted Combat rotation)

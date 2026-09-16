@@ -1,0 +1,41 @@
+Discipline
+0: Spell: Shadow Word: Pain
+    if talent 'Shadow Word: Pain' is taken
+    if player has resources to cast spell 'Shadow Word: Pain'
+    if spell 'Shadow Word: Pain' is off cooldown
+    if target does not have buff/debuff 'Shadow Word: Pain'
+1: Spell: Holy Nova
+    if talent 'Holy Nova' is taken
+    if player has resources to cast spell 'Holy Nova'
+    if spell 'Holy Nova' is off cooldown
+    if there are more than 12 targets within 0 yards of player
+2: Spell: Penance
+    if talent 'Penance' is taken
+    if player has resources to cast spell 'Penance'
+    if spell 'Penance' is off cooldown
+3: Spell: Mind Blast
+    if talent 'Mind Blast' is taken
+    if player has resources to cast spell 'Mind Blast'
+    if spell 'Mind Blast' is off cooldown
+4: Spell: Shadow Word: Death
+    if talent 'Shadow Word: Death' is taken
+    if player has resources to cast spell 'Shadow Word: Death'
+    if spell 'Shadow Word: Death' is off cooldown
+    if target has less than 20% health
+5: Spell: Smite
+    if talent 'Smite' is taken
+    if player has resources to cast spell 'Smite'
+    if spell 'Smite' is off cooldown
+    if spell 'Smite' can be successfully cast
+6: Spell: Smite
+    if talent 'Smite' is taken
+    if player has resources to cast spell 'Smite'
+    if spell 'Smite' is off cooldown
+    if player has buff/debuff 'Void Blast'
+    if spell 'Smite' can be successfully cast
+7: Spell: Penance
+8: Spell: Power Word: Fortitude
+    if talent 'Power Word: Fortitude' is taken
+    if player has resources to cast spell 'Power Word: Fortitude'
+    if spell 'Power Word: Fortitude' is off cooldown
+    if player has buff/debuff 'Power Word: Fortitude Highlight'

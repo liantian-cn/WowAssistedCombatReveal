@@ -1,0 +1,19 @@
+Preservation
+0: Spell: Fire Breath
+    if talent 'Fire Breath' is taken
+    if player has resources to cast spell 'Fire Breath'
+    if spell 'Fire Breath' is off cooldown
+    if spell 'Fire Breath' can be successfully cast
+    if target does not have buff/debuff 'Fire Breath'
+1: Spell: Living Flame
+    if talent 'Living Flame' is taken
+    if player has resources to cast spell 'Living Flame'
+    if spell 'Living Flame' is off cooldown
+    if target is hostile
+    if spell 'Living Flame' can be successfully cast
+2: Spell: Living Flame
+3: Spell: Blessing of the Bronze
+    if talent 'Blessing of the Bronze' is taken
+    if player has resources to cast spell 'Blessing of the Bronze'
+    if spell 'Blessing of the Bronze' is off cooldown
+    if player has buff/debuff 'Blessing of the Bronze Highlight'

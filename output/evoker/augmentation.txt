@@ -1,0 +1,75 @@
+Augmentation
+0: Spell: Ebon Might
+    if talent 'Ebon Might' is taken
+    if player has resources to cast spell 'Ebon Might'
+    if spell 'Ebon Might' is off cooldown
+    if player does not have buff/debuff 'Ebon Might'
+1: Spell: Prescience
+    if talent 'Prescience' is taken
+    if player has resources to cast spell 'Prescience'
+    if spell 'Prescience' is off cooldown
+    if player does not have buff/debuff 'Prescience'
+2: Spell: Fire Breath
+    if talent 'Fire Breath' is taken
+    if player has resources to cast spell 'Fire Breath'
+    if spell 'Fire Breath' is off cooldown
+    if spell 'Fire Breath' can be successfully cast
+3: Spell: Upheaval
+    if talent 'Upheaval' is taken
+    if player has resources to cast spell 'Upheaval'
+    if spell 'Upheaval' is off cooldown
+    if spell 'Upheaval' can be successfully cast
+4: Spell: Disintegrate
+    if talent 'Disintegrate' is taken
+    if player has resources to cast spell 'Disintegrate'
+    if spell 'Disintegrate' is off cooldown
+5: Spell: Blistering Scales
+    if talent 'Blistering Scales' is taken
+    if player has resources to cast spell 'Blistering Scales'
+    if spell 'Blistering Scales' is off cooldown
+    if player does not have buff/debuff 'Blistering Scales'
+    if target is less than 30 yards away
+6: Spell: Living Flame
+    if talent 'Living Flame' is taken
+    if player has resources to cast spell 'Living Flame'
+    if spell 'Living Flame' is off cooldown
+    if target is hostile
+    if spell 'Living Flame' can be successfully cast
+7: Spell: Living Flame
+8: Spell: Disintegrate
+    if talent 'Disintegrate' is taken
+    if player has resources to cast spell 'Disintegrate'
+    if spell 'Disintegrate' is off cooldown
+    if spell 'Disintegrate' can be successfully cast
+    if player has more than 2 essence
+    if player has buff/debuff 'Essence Burst'
+9: Spell: Disintegrate
+    if talent 'Disintegrate' is taken
+    if player has resources to cast spell 'Disintegrate'
+    if spell 'Disintegrate' is off cooldown
+    if spell 'Disintegrate' can be successfully cast
+    if player has more than 4 essence
+10: Spell: Deep Breath
+    if talent 'Deep Breath' is taken
+    if player has resources to cast spell 'Deep Breath'
+    if spell 'Deep Breath' is off cooldown
+    if player does not have buff/debuff 'Recall'
+    if target is less than 40 yards away
+    if player does not have buff/debuff 'Recall'
+    automation only (not part of the game's Assisted Combat rotation)
+11: Spell: Time Skip
+    if talent 'Time Skip' is taken
+    if player has resources to cast spell 'Time Skip'
+    if spell 'Time Skip' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+12: Spell: Tip the Scales
+    if talent 'Tip the Scales' is taken
+    if player has resources to cast spell 'Tip the Scales'
+    if spell 'Tip the Scales' is off cooldown
+    if spell 'Tip the Scales' is off cooldown
+    automation only (not part of the game's Assisted Combat rotation)
+13: Spell: Blessing of the Bronze
+    if talent 'Blessing of the Bronze' is taken
+    if player has resources to cast spell 'Blessing of the Bronze'
+    if spell 'Blessing of the Bronze' is off cooldown
+    if player has buff/debuff 'Blessing of the Bronze Highlight'
