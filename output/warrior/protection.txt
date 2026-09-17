@@ -1,47 +1,47 @@
 Protection
-0: Spell: 破坏者[id:228920]
-    if talent '破坏者[id:228920]' is taken
-    if player has resources to cast spell '破坏者[id:228920]'
-    if spell '破坏者[id:228920]' is off cooldown
-    if spell '破坏者[id:228920]' is within allowed range
-1: Spell: 崩摧[id:436358]
-    if talent '崩摧[id:436358]' is taken
-    if player has resources to cast spell '崩摧[id:436358]'
-    if spell '崩摧[id:436358]' is off cooldown
-    if spell '崩摧[id:436358]' is within allowed range
-2: Spell: 雷霆轰击[id:435222]
+0: Spell: 破坏者[id:228920,cd:8]
+    if talent '破坏者[id:228920,cd:8]' is taken
+    if player has resources to cast spell '破坏者[id:228920,cd:8]'
+    if spell '破坏者[id:228920,cd:8]' is off cooldown
+    if spell '破坏者[id:228920,cd:8]' is within allowed range
+1: Spell: 崩摧[id:436358,cd:30]
+    if talent '崩摧[id:436358,cd:30]' is taken
+    if player has resources to cast spell '崩摧[id:436358,cd:30]'
+    if spell '崩摧[id:436358,cd:30]' is off cooldown
+    if spell '崩摧[id:436358,cd:30]' is within allowed range
+2: Spell: 雷霆轰击[id:435222,cd:6]
     if player has buff/debuff '雷霆轰击[id:435615]'
     if target is less than 8 yards away
-    if talent '雷霆轰击[id:435222]' is taken
-    if player has resources to cast spell '雷霆轰击[id:435222]'
-    if spell '雷霆轰击[id:435222]' is off cooldown
-3: Spell: 盾牌猛击[id:23922]
-    if talent '盾牌猛击[id:23922]' is taken
-    if player has resources to cast spell '盾牌猛击[id:23922]'
-    if spell '盾牌猛击[id:23922]' is off cooldown
-    if spell '盾牌猛击[id:23922]' is within allowed range
-4: Spell: 英勇投掷[id:57755]
-    if talent '英勇投掷[id:57755]' is taken
-    if player has resources to cast spell '英勇投掷[id:57755]'
-    if spell '英勇投掷[id:57755]' is off cooldown
-    if spell '英勇投掷[id:57755]' is within allowed range
+    if talent '雷霆轰击[id:435222,cd:6]' is taken
+    if player has resources to cast spell '雷霆轰击[id:435222,cd:6]'
+    if spell '雷霆轰击[id:435222,cd:6]' is off cooldown
+3: Spell: 盾牌猛击[id:23922,cd:9]
+    if talent '盾牌猛击[id:23922,cd:9]' is taken
+    if player has resources to cast spell '盾牌猛击[id:23922,cd:9]'
+    if spell '盾牌猛击[id:23922,cd:9]' is off cooldown
+    if spell '盾牌猛击[id:23922,cd:9]' is within allowed range
+4: Spell: 英勇投掷[id:57755,cd:6]
+    if talent '英勇投掷[id:57755,cd:6]' is taken
+    if player has resources to cast spell '英勇投掷[id:57755,cd:6]'
+    if spell '英勇投掷[id:57755,cd:6]' is off cooldown
+    if spell '英勇投掷[id:57755,cd:6]' is within allowed range
     if target is more than 15 yards away
-5: Spell: 雷霆一击[id:6343]
+5: Spell: 雷霆一击[id:6343,cd:6]
     if target is less than 8 yards away
-    if talent '雷霆一击[id:6343]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
+    if talent '雷霆一击[id:6343,cd:6]' is taken
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
 6: Spell: 复仇[id:6572]
     if target is less than 5 yards away
     if there are more than 3 targets within 10 yards of player
     if talent '复仇[id:6572]' is taken
     if player has resources to cast spell '复仇[id:6572]'
     if spell '复仇[id:6572]' is off cooldown
-7: Spell: 斩杀[id:163201]
-    if talent '斩杀[id:163201]' is taken
-    if player has resources to cast spell '斩杀[id:163201]'
-    if spell '斩杀[id:163201]' is off cooldown
-    if spell '斩杀[id:163201]' is within allowed range
+7: Spell: 斩杀[id:163201,cd:6]
+    if talent '斩杀[id:163201,cd:6]' is taken
+    if player has resources to cast spell '斩杀[id:163201,cd:6]'
+    if spell '斩杀[id:163201,cd:6]' is off cooldown
+    if spell '斩杀[id:163201,cd:6]' is within allowed range
 8: Spell: 毁灭打击[id:20243]
     if player does not have buff/debuff '灭绝者[id:236279]'
     if talent '毁灭打击[id:20243]' is taken
@@ -53,18 +53,18 @@ Protection
     if talent '复仇[id:6572]' is taken
     if player has resources to cast spell '复仇[id:6572]'
     if spell '复仇[id:6572]' is off cooldown
-10: Spell: 盾牌猛击[id:23922]
-11: Spell: 盾牌冲锋[id:385952]
-    if talent '盾牌冲锋[id:385952]' is taken
-    if player has resources to cast spell '盾牌冲锋[id:385952]'
-    if spell '盾牌冲锋[id:385952]' is off cooldown
-    if spell '盾牌冲锋[id:385952]' is within allowed range
+10: Spell: 盾牌猛击[id:23922,cd:9]
+11: Spell: 盾牌冲锋[id:385952,cd:45]
+    if talent '盾牌冲锋[id:385952,cd:45]' is taken
+    if player has resources to cast spell '盾牌冲锋[id:385952,cd:45]'
+    if spell '盾牌冲锋[id:385952,cd:45]' is off cooldown
+    if spell '盾牌冲锋[id:385952,cd:45]' is within allowed range
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: 天神下凡[id:107574]
-    if talent '天神下凡[id:107574]' is taken
-    if player has resources to cast spell '天神下凡[id:107574]'
-    if spell '天神下凡[id:107574]' is off cooldown
-    if spell '天神下凡[id:107574]' is off cooldown
+12: Spell: 天神下凡[id:107574,cd:90]
+    if talent '天神下凡[id:107574,cd:90]' is taken
+    if player has resources to cast spell '天神下凡[id:107574,cd:90]'
+    if spell '天神下凡[id:107574,cd:90]' is off cooldown
+    if spell '天神下凡[id:107574,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 13: Spell: 战斗怒吼[id:6673]
     if talent '战斗怒吼[id:6673]' is taken

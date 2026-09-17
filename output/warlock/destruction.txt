@@ -1,8 +1,8 @@
 Destruction
-0: Spell: 大灾变[id:152108]
-    if talent '大灾变[id:152108]' is taken
-    if player has resources to cast spell '大灾变[id:152108]'
-    if spell '大灾变[id:152108]' is off cooldown
+0: Spell: 大灾变[id:152108,cd:30]
+    if talent '大灾变[id:152108,cd:30]' is taken
+    if player has resources to cast spell '大灾变[id:152108,cd:30]'
+    if spell '大灾变[id:152108,cd:30]' is off cooldown
 1: Spell: 火焰之雨[id:5740]
     if talent '火焰之雨[id:5740]' is taken
     if player has resources to cast spell '火焰之雨[id:5740]'
@@ -55,10 +55,10 @@ Destruction
     if player has resources to cast spell '暗影箭[id:686]'
     if spell '暗影箭[id:686]' is off cooldown
     if spell '暗影箭[id:686]' can be successfully cast
-10: Spell: 灵魂之火[id:6353]
-    if talent '灵魂之火[id:6353]' is taken
-    if player has resources to cast spell '灵魂之火[id:6353]'
-    if spell '灵魂之火[id:6353]' is off cooldown
+10: Spell: 灵魂之火[id:6353,cd:45]
+    if talent '灵魂之火[id:6353,cd:45]' is taken
+    if player has resources to cast spell '灵魂之火[id:6353,cd:45]'
+    if spell '灵魂之火[id:6353,cd:45]' is off cooldown
     if player has less than 40 soul shards
 11: Spell: 暗影箭[id:686]
 12: Spell: 暗影箭[id:686]
@@ -78,19 +78,19 @@ Destruction
     if there are less than 2 targets within 10 yards of target
     if player has more than 40 soul shards
     if spell '混乱之箭[id:116858]' can be successfully cast
-15: Spell: 怨毒[id:442726]
-    if talent '怨毒[id:442726]' is taken
-    if player has resources to cast spell '怨毒[id:442726]'
-    if spell '怨毒[id:442726]' is off cooldown
+15: Spell: 怨毒[id:442726,cd:60]
+    if talent '怨毒[id:442726,cd:60]' is taken
+    if player has resources to cast spell '怨毒[id:442726,cd:60]'
+    if spell '怨毒[id:442726,cd:60]' is off cooldown
 16: Spell: 暗影箭[id:686]
     if player has buff/debuff '狱火箭[id:433891]' with at least 5000 ms left
     if talent '暗影箭[id:686]' is taken
     if player has resources to cast spell '暗影箭[id:686]'
     if spell '暗影箭[id:686]' is off cooldown
-17: Spell: 引导恶魔之火[id:196447]
-    if talent '引导恶魔之火[id:196447]' is taken
-    if player has resources to cast spell '引导恶魔之火[id:196447]'
-    if spell '引导恶魔之火[id:196447]' is off cooldown
+17: Spell: 引导恶魔之火[id:196447,cd:25]
+    if talent '引导恶魔之火[id:196447,cd:25]' is taken
+    if player has resources to cast spell '引导恶魔之火[id:196447,cd:25]'
+    if spell '引导恶魔之火[id:196447,cd:25]' is off cooldown
     if target is less than 40 yards away
 18: Spell: 召唤地狱猎犬[id:691]
     if talent '召唤地狱猎犬[id:691]' is taken
@@ -107,14 +107,14 @@ Destruction
     if player has no pet
     if player does not have buff/debuff '牺牲魔典[id:196099]'
     if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT][id:1288970]'
-20: Spell: 牺牲魔典[id:108503]
-    if talent '牺牲魔典[id:108503]' is taken
-    if player has resources to cast spell '牺牲魔典[id:108503]'
-    if spell '牺牲魔典[id:108503]' is off cooldown
+20: Spell: 牺牲魔典[id:108503,cd:30]
+    if talent '牺牲魔典[id:108503,cd:30]' is taken
+    if player has resources to cast spell '牺牲魔典[id:108503,cd:30]'
+    if spell '牺牲魔典[id:108503,cd:30]' is off cooldown
     if player has pet
     if player does not have buff/debuff '牺牲魔典[id:196099]'
-21: Spell: 召唤地狱火[id:1122]
-    if talent '召唤地狱火[id:1122]' is taken
-    if player has resources to cast spell '召唤地狱火[id:1122]'
-    if spell '召唤地狱火[id:1122]' is off cooldown
+21: Spell: 召唤地狱火[id:1122,cd:120]
+    if talent '召唤地狱火[id:1122,cd:120]' is taken
+    if player has resources to cast spell '召唤地狱火[id:1122,cd:120]'
+    if spell '召唤地狱火[id:1122,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

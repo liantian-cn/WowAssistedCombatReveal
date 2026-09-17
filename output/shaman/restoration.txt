@@ -5,11 +5,11 @@ Restoration
     if player has resources to cast spell '闪电链[id:188443]'
     if spell '闪电链[id:188443]' is off cooldown
     if spell '闪电链[id:188443]' can be successfully cast
-1: Spell: 烈焰震击[id:470411]
+1: Spell: 烈焰震击[id:470411,cd:6]
     if target does not have buff/debuff '烈焰震击[id:188389]'
-    if talent '烈焰震击[id:470411]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411]'
-    if spell '烈焰震击[id:470411]' is off cooldown
+    if talent '烈焰震击[id:470411,cd:6]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
+    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
 2: Spell: 熔岩爆裂[id:51505]
     if talent '熔岩爆裂[id:51505]' is taken
     if player has resources to cast spell '熔岩爆裂[id:51505]'

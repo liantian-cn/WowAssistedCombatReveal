@@ -16,10 +16,10 @@ Fire
     if player has resources to cast spell '炎爆术[id:11366]'
     if spell '炎爆术[id:11366]' is off cooldown
     if player has buff/debuff '炽热连击！[id:48108]'
-3: Spell: 流星[id:153561]
-    if talent '流星[id:153561]' is taken
-    if player has resources to cast spell '流星[id:153561]'
-    if spell '流星[id:153561]' is off cooldown
+3: Spell: 流星[id:153561,cd:45]
+    if talent '流星[id:153561,cd:45]' is taken
+    if player has resources to cast spell '流星[id:153561,cd:45]'
+    if spell '流星[id:153561,cd:45]' is off cooldown
 4: Spell: 火球术[id:133]
     if talent '火球术[id:133]' is taken
     if player has resources to cast spell '火球术[id:133]'
@@ -31,10 +31,10 @@ Fire
     if player has resources to cast spell '霜火之箭[id:431044]'
     if spell '霜火之箭[id:431044]' is off cooldown
     if spell '霜火之箭[id:431044]' can be successfully cast
-7: Spell: 燃烧[id:190319]
-    if talent '燃烧[id:190319]' is taken
-    if player has resources to cast spell '燃烧[id:190319]'
-    if spell '燃烧[id:190319]' is off cooldown
+7: Spell: 燃烧[id:190319,cd:120]
+    if talent '燃烧[id:190319,cd:120]' is taken
+    if player has resources to cast spell '燃烧[id:190319,cd:120]'
+    if spell '燃烧[id:190319,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 8: Spell: 炎爆术[id:11366]
     if talent '炎爆术[id:11366]' is taken

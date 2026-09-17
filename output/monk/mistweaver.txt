@@ -18,12 +18,12 @@ Mistweaver
     if there are more than 4 targets within 10 yards of player
     if target is less than 10 yards away
     if spell '神鹤引项踢[id:101546]' can be successfully cast
-3: Spell: 幻灭踢[id:100784]
-    if talent '幻灭踢[id:100784]' is taken
-    if player has resources to cast spell '幻灭踢[id:100784]'
-    if spell '幻灭踢[id:100784]' is off cooldown
+3: Spell: 幻灭踢[id:100784,cd:3]
+    if talent '幻灭踢[id:100784,cd:3]' is taken
+    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
+    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
     if player has more than 4 stacks of buff/debuff '禅院教诲[id:202090]'
-    if spell '幻灭踢[id:100784]' is within allowed range
+    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
 4: Spell: 猛虎掌[id:100780]
     if talent '猛虎掌[id:100780]' is taken
     if player has resources to cast spell '猛虎掌[id:100780]'
@@ -61,8 +61,8 @@ Mistweaver
     if target is less than 20 yards away
     if talent '旭日东升踢[id:107428]' is taken
 10: Spell: 旭日东升踢[id:107428]
-11: Spell: 轮回之触[id:322109]
-    if talent '轮回之触[id:322109]' is taken
-    if player has resources to cast spell '轮回之触[id:322109]'
-    if spell '轮回之触[id:322109]' is off cooldown
-    if spell '轮回之触[id:322109]' is within allowed range
+11: Spell: 轮回之触[id:322109,cd:180]
+    if talent '轮回之触[id:322109,cd:180]' is taken
+    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
+    if spell '轮回之触[id:322109,cd:180]' is off cooldown
+    if spell '轮回之触[id:322109,cd:180]' is within allowed range

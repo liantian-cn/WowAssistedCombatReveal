@@ -19,11 +19,11 @@ Elemental
     if talent '大地震击[id:8042]' is taken
     if player has resources to cast spell '大地震击[id:8042]'
     if spell '大地震击[id:8042]' is off cooldown
-4: Spell: 风暴守护者[id:191634]
-    if talent '风暴守护者[id:191634]' is taken
-    if player has resources to cast spell '风暴守护者[id:191634]'
-    if spell '风暴守护者[id:191634]' is off cooldown
-    if player does not have buff/debuff '风暴守护者[id:191634]'
+4: Spell: 风暴守护者[id:191634,cd:60]
+    if talent '风暴守护者[id:191634,cd:60]' is taken
+    if player has resources to cast spell '风暴守护者[id:191634,cd:60]'
+    if spell '风暴守护者[id:191634,cd:60]' is off cooldown
+    if player does not have buff/debuff '风暴守护者[id:191634,cd:60]'
 5: Spell: 闪电箭[id:188196]
     if talent '闪电箭[id:188196]' is taken
     if player has resources to cast spell '闪电箭[id:188196]'
@@ -33,17 +33,17 @@ Elemental
     if talent '闪电链[id:188443]' is taken
     if player has resources to cast spell '闪电链[id:188443]'
     if spell '闪电链[id:188443]' is off cooldown
-    if player has buff/debuff '风暴守护者[id:191634]'
+    if player has buff/debuff '风暴守护者[id:191634,cd:60]'
     if there are more than 3 targets within 10 yards of target
 7: Spell: 闪电箭[id:188196]
     if talent '闪电箭[id:188196]' is taken
     if player has resources to cast spell '闪电箭[id:188196]'
     if spell '闪电箭[id:188196]' is off cooldown
-    if player has buff/debuff '风暴守护者[id:191634]'
-8: Spell: 烈焰震击[id:470411]
-    if talent '烈焰震击[id:470411]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411]'
-    if spell '烈焰震击[id:470411]' is off cooldown
+    if player has buff/debuff '风暴守护者[id:191634,cd:60]'
+8: Spell: 烈焰震击[id:470411,cd:6]
+    if talent '烈焰震击[id:470411,cd:6]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
+    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
     if target does not have buff/debuff '烈焰震击[id:188389]'
     if there are less than 2 targets within 10 yards of target
 9: Spell: 熔岩爆裂[id:51505]
@@ -63,23 +63,23 @@ Elemental
     if player has resources to cast spell '闪电箭[id:188196]'
     if spell '闪电箭[id:188196]' is off cooldown
     if spell '闪电箭[id:188196]' can be successfully cast
-12: Spell: 先祖迅捷[id:443454]
-    if talent '先祖迅捷[id:443454]' is taken
-    if player has resources to cast spell '先祖迅捷[id:443454]'
-    if spell '先祖迅捷[id:443454]' is off cooldown
-    if player has resources to cast spell '先祖迅捷[id:443454]'
-    if spell '先祖迅捷[id:443454]' is off cooldown
-13: Spell: 先祖迅捷[id:443454]
-    if talent '先祖迅捷[id:443454]' is taken
-    if player has resources to cast spell '先祖迅捷[id:443454]'
-    if spell '先祖迅捷[id:443454]' is off cooldown
+12: Spell: 先祖迅捷[id:443454,cd:30]
+    if talent '先祖迅捷[id:443454,cd:30]' is taken
+    if player has resources to cast spell '先祖迅捷[id:443454,cd:30]'
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
+    if player has resources to cast spell '先祖迅捷[id:443454,cd:30]'
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
+13: Spell: 先祖迅捷[id:443454,cd:30]
+    if talent '先祖迅捷[id:443454,cd:30]' is taken
+    if player has resources to cast spell '先祖迅捷[id:443454,cd:30]'
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if spell '先祖迅捷[id:443454]' is off cooldown
-14: Spell: 先祖迅捷[id:443454]
-    if talent '先祖迅捷[id:443454]' is taken
-    if player has resources to cast spell '先祖迅捷[id:443454]'
-    if spell '先祖迅捷[id:443454]' is off cooldown
-    if spell '先祖迅捷[id:443454]' is off cooldown
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
+14: Spell: 先祖迅捷[id:443454,cd:30]
+    if talent '先祖迅捷[id:443454,cd:30]' is taken
+    if player has resources to cast spell '先祖迅捷[id:443454,cd:30]'
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
+    if spell '先祖迅捷[id:443454,cd:30]' is off cooldown
 15: Spell: 熔岩爆裂[id:51505]
 16: Spell: 熔岩爆裂[id:51505]
     if talent '熔岩爆裂[id:51505]' is taken
@@ -105,12 +105,12 @@ Elemental
     if player has resources to cast spell '闪电链[id:188443]'
     if spell '闪电链[id:188443]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff '风暴守护者[id:191634]' with at least 3000 ms left
+    if player has buff/debuff '风暴守护者[id:191634,cd:60]' with at least 3000 ms left
 20: Spell: 闪电箭[id:188196]
     if talent '闪电箭[id:188196]' is taken
     if player has resources to cast spell '闪电箭[id:188196]'
     if spell '闪电箭[id:188196]' is off cooldown
-    if player has buff/debuff '风暴守护者[id:191634]' with at least 3000 ms left
+    if player has buff/debuff '风暴守护者[id:191634,cd:60]' with at least 3000 ms left
 21: Spell: 火舌武器[id:318038]
     if talent '火舌武器[id:318038]' is taken
     if player has resources to cast spell '火舌武器[id:318038]'
@@ -121,10 +121,10 @@ Elemental
     if player has resources to cast spell '雷霆打击结界[id:462757]'
     if spell '雷霆打击结界[id:462757]' is off cooldown
     if player does not have buff/debuff '雷霆打击结界[id:462742]'
-23: Spell: 烈焰震击[id:470411]
-    if talent '烈焰震击[id:470411]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411]'
-    if spell '烈焰震击[id:470411]' is off cooldown
+23: Spell: 烈焰震击[id:470411,cd:6]
+    if talent '烈焰震击[id:470411,cd:6]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
+    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
     if there are more than 2 targets within 10 yards of target
     if player does not have buff/debuff '净化烈焰[id:1259471]'
     if target does not have buff/debuff '烈焰震击[id:188389]'
@@ -134,17 +134,17 @@ Elemental
     if spell '熔岩爆裂[id:51505]' is off cooldown
     if there are more than 2 targets within 10 yards of target
     if player has buff/debuff '净化烈焰[id:1259491]'
-25: Spell: 烈焰震击[id:470411]
-    if talent '烈焰震击[id:470411]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411]'
-    if spell '烈焰震击[id:470411]' is off cooldown
+25: Spell: 烈焰震击[id:470411,cd:6]
+    if talent '烈焰震击[id:470411,cd:6]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
+    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
     if there are more than 2 targets within 10 yards of target
     if player has buff/debuff '净化烈焰[id:1259471]'
     if player does not have buff/debuff '净化烈焰[id:1259491]'
-26: Spell: 升腾[id:114050]
-    if talent '升腾[id:114050]' is taken
-    if player has resources to cast spell '升腾[id:114050]'
-    if spell '升腾[id:114050]' is off cooldown
+26: Spell: 升腾[id:114050,cd:180]
+    if talent '升腾[id:114050,cd:180]' is taken
+    if player has resources to cast spell '升腾[id:114050,cd:180]'
+    if spell '升腾[id:114050,cd:180]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 27: Spell: 闪电之盾[id:192106]
     if talent '闪电之盾[id:192106]' is taken

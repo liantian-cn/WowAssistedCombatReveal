@@ -1,4 +1,4 @@
-"""技能名索引：命中、缺失占位与 ID 标签，以及"只保留所需 ID"的流式扫描行为。"""
+"""技能名索引：命中、缺失占位、ID 标签与可选的 cd 后缀，以及"只保留所需 ID"的流式扫描行为。"""
 
 MISSING_IDS = (194310, 389387, 470058)  # 12.1 规则引用了但 SpellName 表里没有的 ID
 
@@ -14,16 +14,32 @@ def test_required_ids_and_hits(spell_index):
 
 
 def test_known_spell_name(spell_index):
-    """19434 = Aimed Shot（猎人射击专精的充能条件使用该 ID）。"""
+    """19434 = 瞄准射击（猎人射击专精的充能条件使用该 ID）。"""
     index, _ = spell_index
-    assert index.get_name(19434) == "Aimed Shot"
-    assert index.display_name(19434) == "Aimed Shot"
+    assert index.get_name(19434) == "瞄准射击"
+    assert index.display_name(19434) == "瞄准射击"
 
 
 def test_labelled_appends_decimal_id(spell_index):
-    """标签格式固定为 <名称>[id:<spellID>]：原样十进制、不补零、名称与中括号之间无空格。"""
+    """标签格式固定为 <名称>[id:<spellID>]：原样十进制、不补零、名称与中括号之间无空格。
+
+    瞄准射击的冷却两列都是 0，因此不加 cd 后缀。
+    """
     index, _ = spell_index
-    assert index.labelled(19434) == "Aimed Shot[id:19434]"
+    assert index.labelled(19434) == "瞄准射击[id:19434]"
+
+
+def test_labelled_appends_cooldown_over_one_second(spell_index):
+    """冷却大于 1 秒时追加 ,cd:<整数秒>：死神印记 45000ms → 45。"""
+    index, _ = spell_index
+    assert index.labelled(439843) == "死神印记[id:439843,cd:45]"
+
+
+def test_labelled_omits_cooldown_at_or_below_threshold(spell_index):
+    """阈值是"严格大于 1000ms"：正好 1000ms（正义盾击）与表里没有的 ID（减速药膏）都不加 cd。"""
+    index, _ = spell_index
+    assert index.labelled(53600) == "正义盾击[id:53600]"
+    assert index.labelled(3408) == "减速药膏[id:3408]"
 
 
 def test_missing_ids_render_placeholder(spell_index):

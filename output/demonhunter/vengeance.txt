@@ -17,11 +17,11 @@ Vengeance
     if spell '灵魂裂劈[id:228477]' is off cooldown
     if spell '灵魂裂劈[id:228477]' is within allowed range
     if player has buff/debuff '战刃乱舞[id:442435]'
-3: Spell: 灵魂切削[id:207407]
-    if talent '灵魂切削[id:207407]' is taken
-    if player has resources to cast spell '灵魂切削[id:207407]'
-    if spell '灵魂切削[id:207407]' is off cooldown
-    if spell '灵魂切削[id:207407]' is within allowed range
+3: Spell: 灵魂切削[id:207407,cd:60]
+    if talent '灵魂切削[id:207407,cd:60]' is taken
+    if player has resources to cast spell '灵魂切削[id:207407,cd:60]'
+    if spell '灵魂切削[id:207407,cd:60]' is off cooldown
+    if spell '灵魂切削[id:207407,cd:60]' is within allowed range
 4: Spell: 怨念咒符[id:390163]
     if talent '怨念咒符[id:390163]' is taken
     if player has resources to cast spell '怨念咒符[id:390163]'
@@ -33,15 +33,15 @@ Vengeance
     if spell '烈焰咒符[id:204596]' is off cooldown
     if target is less than 30 yards away
     if target does not have buff/debuff '烈焰咒符[id:204598]'
-6: Spell: 献祭光环[id:258920]
-    if talent '献祭光环[id:258920]' is taken
-    if player has resources to cast spell '献祭光环[id:258920]'
-    if spell '献祭光环[id:258920]' is off cooldown
+6: Spell: 献祭光环[id:258920,cd:2]
+    if talent '献祭光环[id:258920,cd:2]' is taken
+    if player has resources to cast spell '献祭光环[id:258920,cd:2]'
+    if spell '献祭光环[id:258920,cd:2]' is off cooldown
     if there are more than 1 targets within 8 yards of player
-7: Spell: 幽魂炸弹[id:247454]
-    if talent '幽魂炸弹[id:247454]' is taken
-    if player has resources to cast spell '幽魂炸弹[id:247454]'
-    if spell '幽魂炸弹[id:247454]' is off cooldown
+7: Spell: 幽魂炸弹[id:247454,cd:25]
+    if talent '幽魂炸弹[id:247454,cd:25]' is taken
+    if player has resources to cast spell '幽魂炸弹[id:247454,cd:25]'
+    if spell '幽魂炸弹[id:247454,cd:25]' is off cooldown
     if player has more than 4 stacks of buff/debuff '灵魂残片[id:203981]'
 8: Spell: 破裂[id:263642]
     if talent '破裂[id:263642]' is taken

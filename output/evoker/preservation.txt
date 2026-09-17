@@ -12,8 +12,8 @@ Preservation
     if target is hostile
     if spell '活化烈焰[id:361469]' can be successfully cast
 2: Spell: 活化烈焰[id:361469]
-3: Spell: 青铜龙的祝福[id:364342]
-    if talent '青铜龙的祝福[id:364342]' is taken
-    if player has resources to cast spell '青铜龙的祝福[id:364342]'
-    if spell '青铜龙的祝福[id:364342]' is off cooldown
+3: Spell: 青铜龙的祝福[id:364342,cd:15]
+    if talent '青铜龙的祝福[id:364342,cd:15]' is taken
+    if player has resources to cast spell '青铜龙的祝福[id:364342,cd:15]'
+    if spell '青铜龙的祝福[id:364342,cd:15]' is off cooldown
     if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'

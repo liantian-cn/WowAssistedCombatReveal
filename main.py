@@ -6,17 +6,18 @@
 
 流程：加载条件类型映射表 → 读取 ``csv_table/`` 下 5 张 DB2 导出表并构建
 classes → specs → assist_plan → steps → rules 嵌套结构 → 收集本次需要的技能 ID →
-单次流式扫描 SpellName 表建立技能名索引 → 逐专精渲染并写文件 → 打印进度与汇总。
-技能名全部来自本地 CSV，运行过程不访问网络。
+单次流式扫描 SpellName 表建立技能名索引，同时扫描 SpellCooldowns 表补充技能冷却 →
+逐专精渲染并写文件 → 打印进度与汇总。
+技能名与冷却全部来自本地 CSV，运行过程不访问网络。
 """
 
 import logging
 import sys
 
-from app import db2, output, render, spells
+from app import cooldowns, db2, output, render, spells
 
 # ---- 全局配置（换游戏版本时只改这里） ----
-VERSION = "12.1.0.69814"                      # 游戏客户端版本，决定 5 张表与 SpellName 的文件名
+VERSION = "12.1.0.69814"                      # 游戏客户端版本，决定 5 张业务表与 SpellName / SpellCooldowns 的文件名
 CSV_DIR = "csv_table"                         # DB2 导出表目录（相对仓库根目录）
 OUTPUT_DIR = "output"                         # 生成结果目录
 CONDITION_MAP_FILE = "ConditionTypeMap.csv"   # 条件类型 → 文本模板映射表
@@ -36,15 +37,23 @@ def setup_logging(loglevel):
 
 
 def build_spell_index(csv_dir, version, classes, condition_map):
-    """收集本次需要的技能 ID 并单次扫描 SpellName 表，返回 ``(索引, 需求 ID 集合)``。"""
+    """收集本次需要的技能 ID，单次扫描 SpellName / SpellCooldowns 两张表。
+
+    返回 ``(技能名索引, 需求 ID 集合)``；冷却索引直接放进技能名索引，
+    渲染时由 :meth:`app.spells.SpellIndex.labelled` 统一追加 cd 标签。
+    """
     steps = list(db2.iter_plan_steps(classes))
     required_ids = spells.collect_required_spell_ids(steps, condition_map)
     spell_table = f"{csv_dir}/{db2.table_filename('SpellName', version)}"
-    spell_index = spells.read_spell_index(spell_table, required_ids)
+    cooldown_table = f"{csv_dir}/{db2.table_filename('SpellCooldowns', version)}"
+    cooldown_index = cooldowns.read_cooldown_index(cooldown_table, required_ids)
+    spell_index = spells.read_spell_index(spell_table, required_ids, cooldown_index)
     _logger.info(
         f"技能 ID：需要 {len(required_ids)} 个，SpellName 命中 {len(spell_index)} 个，"
         f"缺失 {len(required_ids) - len(spell_index)} 个"
     )
+    cooled = sum(1 for spell_id in required_ids if cooldown_index.seconds(spell_id) is not None)
+    _logger.info(f"技能冷却：SpellCooldowns 命中 {len(cooldown_index)} 个，冷却 > 1 秒 {cooled} 个")
     return spell_index, required_ids
 
 

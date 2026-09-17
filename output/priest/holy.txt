@@ -1,8 +1,8 @@
 Holy
-0: Spell: 圣言术：罚[id:88625]
-    if talent '圣言术：罚[id:88625]' is taken
-    if player has resources to cast spell '圣言术：罚[id:88625]'
-    if spell '圣言术：罚[id:88625]' is off cooldown
+0: Spell: 圣言术：罚[id:88625,cd:60]
+    if talent '圣言术：罚[id:88625,cd:60]' is taken
+    if player has resources to cast spell '圣言术：罚[id:88625,cd:60]'
+    if spell '圣言术：罚[id:88625,cd:60]' is off cooldown
 1: Spell: 暗言术：痛[id:589]
     if talent '暗言术：痛[id:589]' is taken
     if player has resources to cast spell '暗言术：痛[id:589]'

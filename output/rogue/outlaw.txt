@@ -1,29 +1,29 @@
 Outlaw
-0: Spell: 命运骨骰[id:1214909]
-    if talent '命运骨骰[id:1214909]' is taken
-    if player has resources to cast spell '命运骨骰[id:1214909]'
-    if spell '命运骨骰[id:1214909]' is off cooldown
+0: Spell: 命运骨骰[id:1214909,cd:45]
+    if talent '命运骨骰[id:1214909,cd:45]' is taken
+    if player has resources to cast spell '命运骨骰[id:1214909,cd:45]'
+    if spell '命运骨骰[id:1214909,cd:45]' is off cooldown
     if player does not have buff/debuff '独一无二[id:1214933]'
     if player does not have buff/debuff '双重麻烦[id:1214934]'
     if player does not have buff/debuff '三重威胁[id:1214935]'
     if player does not have buff/debuff '头奖[id:1214937]'
-1: Spell: 剑刃乱舞[id:13877]
-    if talent '剑刃乱舞[id:13877]' is taken
-    if player has resources to cast spell '剑刃乱舞[id:13877]'
-    if spell '剑刃乱舞[id:13877]' is off cooldown
+1: Spell: 剑刃乱舞[id:13877,cd:30]
+    if talent '剑刃乱舞[id:13877,cd:30]' is taken
+    if player has resources to cast spell '剑刃乱舞[id:13877,cd:30]'
+    if spell '剑刃乱舞[id:13877,cd:30]' is off cooldown
     if there are more than 2 targets within 10 yards of player
-    if player does not have buff/debuff '剑刃乱舞[id:13877]'
-2: Spell: 影舞步[id:51690]
-    if talent '影舞步[id:51690]' is taken
-    if player has resources to cast spell '影舞步[id:51690]'
-    if spell '影舞步[id:51690]' is off cooldown
+    if player does not have buff/debuff '剑刃乱舞[id:13877,cd:30]'
+2: Spell: 影舞步[id:51690,cd:180]
+    if talent '影舞步[id:51690,cd:180]' is taken
+    if player has resources to cast spell '影舞步[id:51690,cd:180]'
+    if spell '影舞步[id:51690,cd:180]' is off cooldown
     if player has more than 5 combo points
     if there are more than 1 targets within 8 yards of player
-3: Spell: 正中眉心[id:315341]
-    if talent '正中眉心[id:315341]' is taken
-    if player has resources to cast spell '正中眉心[id:315341]'
-    if spell '正中眉心[id:315341]' is off cooldown
-    if spell '正中眉心[id:315341]' is within allowed range
+3: Spell: 正中眉心[id:315341,cd:45]
+    if talent '正中眉心[id:315341,cd:45]' is taken
+    if player has resources to cast spell '正中眉心[id:315341,cd:45]'
+    if spell '正中眉心[id:315341,cd:45]' is off cooldown
+    if spell '正中眉心[id:315341,cd:45]' is within allowed range
     if player has more than 5 combo points
 4: Spell: 刺骨[id:196819]
     if talent '刺骨[id:196819]' is taken
@@ -54,11 +54,11 @@ Outlaw
     if spell '手枪射击[id:185763]' is off cooldown
     if player has more than 99 energy
     if target is more than 15 yards away
-9: Spell: 刀锋冲刺[id:271877]
-    if talent '刀锋冲刺[id:271877]' is taken
-    if player has resources to cast spell '刀锋冲刺[id:271877]'
-    if spell '刀锋冲刺[id:271877]' is off cooldown
-    if spell '刀锋冲刺[id:271877]' is within allowed range
+9: Spell: 刀锋冲刺[id:271877,cd:60]
+    if talent '刀锋冲刺[id:271877,cd:60]' is taken
+    if player has resources to cast spell '刀锋冲刺[id:271877,cd:60]'
+    if spell '刀锋冲刺[id:271877,cd:60]' is off cooldown
+    if spell '刀锋冲刺[id:271877,cd:60]' is within allowed range
     if player has buff/debuff '精力[id:14983]'
     if player has less than 174 energy
 10: Spell: 影袭[id:193315]
@@ -66,7 +66,7 @@ Outlaw
     if talent '伏击[id:8676]' is taken
     if player has resources to cast spell '伏击[id:8676]'
     if spell '伏击[id:8676]' is off cooldown
-    if player has buff/debuff '潜行[id:115191]'
+    if player has buff/debuff '潜行[id:115191,cd:2]'
     if target is less than 40 yards away
     if player has less than 4 combo points
 12: Spell: 伏击[id:8676]
@@ -80,7 +80,7 @@ Outlaw
     if talent '伏击[id:8676]' is taken
     if player has resources to cast spell '伏击[id:8676]'
     if spell '伏击[id:8676]' is off cooldown
-    if player has buff/debuff '潜行[id:1784]'
+    if player has buff/debuff '潜行[id:1784,cd:2]'
     if target is less than 40 yards away
     if player has less than 4 combo points
 14: Spell: 致伤药膏[id:8679]
@@ -112,38 +112,38 @@ Outlaw
     if player has resources to cast spell '迟钝药膏[id:5761]'
     if spell '迟钝药膏[id:5761]' is off cooldown
     if player does not have buff/debuff '迟钝药膏[id:5761]'
-19: Spell: 冲动[id:13750]
-    if talent '冲动[id:13750]' is taken
-    if player has resources to cast spell '冲动[id:13750]'
-    if spell '冲动[id:13750]' is off cooldown
+19: Spell: 冲动[id:13750,cd:180]
+    if talent '冲动[id:13750,cd:180]' is taken
+    if player has resources to cast spell '冲动[id:13750,cd:180]'
+    if spell '冲动[id:13750,cd:180]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
     if player has buff/debuff '强化冲动[id:395422]'
     if player has less than 2 combo points
-20: Spell: 剑刃乱舞[id:13877]
-    if talent '剑刃乱舞[id:13877]' is taken
-    if player has resources to cast spell '剑刃乱舞[id:13877]'
-    if spell '剑刃乱舞[id:13877]' is off cooldown
+20: Spell: 剑刃乱舞[id:13877,cd:30]
+    if talent '剑刃乱舞[id:13877,cd:30]' is taken
+    if player has resources to cast spell '剑刃乱舞[id:13877,cd:30]'
+    if spell '剑刃乱舞[id:13877,cd:30]' is off cooldown
     if there are more than 4 targets within 10 yards of player
     if player has less than 4 combo points
     if player has buff/debuff '矫捷灵动[id:381878]'
-21: Spell: 刀锋冲刺[id:271877]
-    if talent '刀锋冲刺[id:271877]' is taken
-    if player has resources to cast spell '刀锋冲刺[id:271877]'
-    if spell '刀锋冲刺[id:271877]' is off cooldown
-    if spell '刀锋冲刺[id:271877]' is within allowed range
+21: Spell: 刀锋冲刺[id:271877,cd:60]
+    if talent '刀锋冲刺[id:271877,cd:60]' is taken
+    if player has resources to cast spell '刀锋冲刺[id:271877,cd:60]'
+    if spell '刀锋冲刺[id:271877,cd:60]' is off cooldown
+    if spell '刀锋冲刺[id:271877,cd:60]' is within allowed range
     if player does not have buff/debuff '精力[id:14983]'
     if player has less than 74 energy
-22: Spell: 伺机待发[id:1277933]
-    if talent '伺机待发[id:1277933]' is taken
-    if player has resources to cast spell '伺机待发[id:1277933]'
-    if spell '伺机待发[id:1277933]' is off cooldown
-    if spell '冲动[id:13750]' is on cooldown
-    if spell '正中眉心[id:315341]' is on cooldown
-    if spell '刀锋冲刺[id:271877]' is on cooldown
-23: Spell: 冲动[id:13750]
-    if talent '冲动[id:13750]' is taken
-    if player has resources to cast spell '冲动[id:13750]'
-    if spell '冲动[id:13750]' is off cooldown
+22: Spell: 伺机待发[id:1277933,cd:240]
+    if talent '伺机待发[id:1277933,cd:240]' is taken
+    if player has resources to cast spell '伺机待发[id:1277933,cd:240]'
+    if spell '伺机待发[id:1277933,cd:240]' is off cooldown
+    if spell '冲动[id:13750,cd:180]' is on cooldown
+    if spell '正中眉心[id:315341,cd:45]' is on cooldown
+    if spell '刀锋冲刺[id:271877,cd:60]' is on cooldown
+23: Spell: 冲动[id:13750,cd:180]
+    if talent '冲动[id:13750,cd:180]' is taken
+    if player has resources to cast spell '冲动[id:13750,cd:180]'
+    if spell '冲动[id:13750,cd:180]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
     if player does not have buff/debuff '强化冲动[id:395422]'
 24: Spell: 刺骨[id:196819]

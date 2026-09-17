@@ -4,10 +4,10 @@ Unholy
     if player has resources to cast spell '爆发[id:77575]'
     if spell '爆发[id:77575]' is off cooldown
     if target does not have buff/debuff '恶性病变[id:191587]'
-1: Spell: 黑暗突变[id:1233448]
-    if talent '黑暗突变[id:1233448]' is taken
-    if player has resources to cast spell '黑暗突变[id:1233448]'
-    if spell '黑暗突变[id:1233448]' is off cooldown
+1: Spell: 黑暗突变[id:1233448,cd:45]
+    if talent '黑暗突变[id:1233448,cd:45]' is taken
+    if player has resources to cast spell '黑暗突变[id:1233448,cd:45]'
+    if spell '黑暗突变[id:1233448,cd:45]' is off cooldown
     if player has pet
 2: Spell: 天灾打击[id:55090]
     if talent '天灾打击[id:55090]' is taken
@@ -37,12 +37,12 @@ Unholy
     if player has resources to cast spell '符文打击[id:316239]'
     if spell '符文打击[id:316239]' is off cooldown
     if spell '符文打击[id:316239]' is within allowed range
-7: Spell: 灵魂收割[id:343294]
-    if talent '灵魂收割[id:343294]' is taken
-    if player has resources to cast spell '灵魂收割[id:343294]'
-    if spell '灵魂收割[id:343294]' is off cooldown
+7: Spell: 灵魂收割[id:343294,cd:15]
+    if talent '灵魂收割[id:343294,cd:15]' is taken
+    if player has resources to cast spell '灵魂收割[id:343294,cd:15]'
+    if spell '灵魂收割[id:343294,cd:15]' is off cooldown
     if target has less than 35% health
-    if spell '灵魂收割[id:343294]' is within allowed range
+    if spell '灵魂收割[id:343294,cd:15]' is within allowed range
 8: Spell: 天灾打击[id:55090]
     if talent '天灾打击[id:55090]' is taken
     if player has resources to cast spell '天灾打击[id:55090]'
@@ -55,10 +55,10 @@ Unholy
     if spell '腐化[id:1247378]' is off cooldown
     if player has buff/debuff '次级食尸鬼[id:1242998]'
     if spell '腐化[id:1247378]' is within allowed range
-10: Spell: 亡者复生[id:46585]
-    if talent '亡者复生[id:46585]' is taken
-    if player has resources to cast spell '亡者复生[id:46585]'
-    if spell '亡者复生[id:46585]' is off cooldown
+10: Spell: 亡者复生[id:46585,cd:120]
+    if talent '亡者复生[id:46585,cd:120]' is taken
+    if player has resources to cast spell '亡者复生[id:46585,cd:120]'
+    if spell '亡者复生[id:46585,cd:120]' is off cooldown
     if player has no pet
 11: Spell: 符文打击[id:316239]
 12: Spell: 脓疮打击[id:85948]
@@ -76,10 +76,10 @@ Unholy
     if player has resources to cast spell '爆发[id:77575]'
     if spell '爆发[id:77575]' is off cooldown
     if player has buff/debuff '瘟疫降临[id:1271975]'
-15: Spell: 亡者大军[id:42650]
-    if talent '亡者大军[id:42650]' is taken
-    if player has resources to cast spell '亡者大军[id:42650]'
-    if spell '亡者大军[id:42650]' is off cooldown
+15: Spell: 亡者大军[id:42650,cd:90]
+    if talent '亡者大军[id:42650,cd:90]' is taken
+    if player has resources to cast spell '亡者大军[id:42650,cd:90]'
+    if spell '亡者大军[id:42650,cd:90]' is off cooldown
 16: Spell: 凋零缠绕[id:47541]
     if player has more than 500 runic power
     if there are less than 3 targets within 10 yards of target
@@ -96,9 +96,9 @@ Unholy
     if spell '天灾打击[id:55090]' is off cooldown
     if player has resources to cast spell '天灾打击[id:55090]'
     if talent '天灾打击[id:55090]' is taken
-19: Spell: 灵魂收割[id:343294]
-    if talent '灵魂收割[id:343294]' is taken
-    if player has resources to cast spell '灵魂收割[id:343294]'
-    if spell '灵魂收割[id:343294]' is off cooldown
-    if spell '灵魂收割[id:343294]' is within allowed range
+19: Spell: 灵魂收割[id:343294,cd:15]
+    if talent '灵魂收割[id:343294,cd:15]' is taken
+    if player has resources to cast spell '灵魂收割[id:343294,cd:15]'
+    if spell '灵魂收割[id:343294,cd:15]' is off cooldown
+    if spell '灵魂收割[id:343294,cd:15]' is within allowed range
     if player has buff/debuff '割魂索命[id:1242654]'

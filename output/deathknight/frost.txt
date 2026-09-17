@@ -1,9 +1,9 @@
 Frost
-0: Spell: 死神印记[id:439843]
-    if spell '死神印记[id:439843]' is within allowed range
-    if talent '死神印记[id:439843]' is taken
-    if player has resources to cast spell '死神印记[id:439843]'
-    if spell '死神印记[id:439843]' is off cooldown
+0: Spell: 死神印记[id:439843,cd:45]
+    if spell '死神印记[id:439843,cd:45]' is within allowed range
+    if talent '死神印记[id:439843,cd:45]' is taken
+    if player has resources to cast spell '死神印记[id:439843,cd:45]'
+    if spell '死神印记[id:439843,cd:45]' is off cooldown
 1: Spell: 冰霜之镰[id:207230]
     if talent '冰霜之镰[id:207230]' is taken
     if player has resources to cast spell '冰霜之镰[id:207230]'
@@ -17,11 +17,11 @@ Frost
     if player has resources to cast spell '湮灭[id:49020]'
     if spell '湮灭[id:49020]' is off cooldown
     if spell '湮灭[id:49020]' is within allowed range
-3: Spell: 冷酷严冬[id:196770]
+3: Spell: 冷酷严冬[id:196770,cd:20]
     if target is less than 10 yards away
-    if talent '冷酷严冬[id:196770]' is taken
-    if player has resources to cast spell '冷酷严冬[id:196770]'
-    if spell '冷酷严冬[id:196770]' is off cooldown
+    if talent '冷酷严冬[id:196770,cd:20]' is taken
+    if player has resources to cast spell '冷酷严冬[id:196770,cd:20]'
+    if spell '冷酷严冬[id:196770,cd:20]' is off cooldown
     if player does not have buff/debuff '冰霜统御[id:377226]'
 4: Spell: 凛风冲击[id:49184]
     if player has buff/debuff '白霜[id:59052]'
@@ -35,12 +35,12 @@ Frost
     if player has resources to cast spell '冰川突进[id:194913]'
     if spell '冰川突进[id:194913]' is off cooldown
     if player has more than 80 runic power
-6: Spell: 灵魂收割[id:343294]
-    if talent '灵魂收割[id:343294]' is taken
-    if player has resources to cast spell '灵魂收割[id:343294]'
-    if spell '灵魂收割[id:343294]' is off cooldown
+6: Spell: 灵魂收割[id:343294,cd:15]
+    if talent '灵魂收割[id:343294,cd:15]' is taken
+    if player has resources to cast spell '灵魂收割[id:343294,cd:15]'
+    if spell '灵魂收割[id:343294,cd:15]' is off cooldown
     if target has less than 35% health
-    if spell '灵魂收割[id:343294]' is within allowed range
+    if spell '灵魂收割[id:343294,cd:15]' is within allowed range
     if there are less than 2 targets within 10 yards of target
 7: Spell: 冰霜打击[id:49143]
     if player has more than 80 runic power
@@ -63,11 +63,11 @@ Frost
     if spell '凛风冲击[id:49184]' is off cooldown
     if spell '凛风冲击[id:49184]' is within allowed range
     if target is more than 15 yards away
-11: Spell: 冰霜之柱[id:51271]
-    if talent '冰霜之柱[id:51271]' is taken
-    if player has resources to cast spell '冰霜之柱[id:51271]'
-    if spell '冰霜之柱[id:51271]' is off cooldown
-    if spell '冰霜之柱[id:51271]' is off cooldown
+11: Spell: 冰霜之柱[id:51271,cd:45]
+    if talent '冰霜之柱[id:51271,cd:45]' is taken
+    if player has resources to cast spell '冰霜之柱[id:51271,cd:45]'
+    if spell '冰霜之柱[id:51271,cd:45]' is off cooldown
+    if spell '冰霜之柱[id:51271,cd:45]' is off cooldown
     if target is less than 8 yards away
 12: Spell: 冰霜之镰[id:207230]
     if talent '冰霜之镰[id:207230]' is taken
@@ -102,19 +102,19 @@ Frost
     if player has less than 80 runic power
     if player does not have buff/debuff '杀戮机器[id:51124]'
 17: Spell: 符文打击[id:316239]
-18: Spell: 冰霜巨龙之怒[id:279302]
-    if talent '冰霜巨龙之怒[id:279302]' is taken
-    if player has resources to cast spell '冰霜巨龙之怒[id:279302]'
-    if spell '冰霜巨龙之怒[id:279302]' is off cooldown
+18: Spell: 冰霜巨龙之怒[id:279302,cd:90]
+    if talent '冰霜巨龙之怒[id:279302,cd:90]' is taken
+    if player has resources to cast spell '冰霜巨龙之怒[id:279302,cd:90]'
+    if spell '冰霜巨龙之怒[id:279302,cd:90]' is off cooldown
     if target is less than 30 yards away
-    if player has buff/debuff '冰霜之柱[id:51271]'
-19: Spell: 冰霜巨龙之怒[id:279302]
-    if talent '冰霜巨龙之怒[id:279302]' is taken
-    if player has resources to cast spell '冰霜巨龙之怒[id:279302]'
-    if spell '冰霜巨龙之怒[id:279302]' is off cooldown
+    if player has buff/debuff '冰霜之柱[id:51271,cd:45]'
+19: Spell: 冰霜巨龙之怒[id:279302,cd:90]
+    if talent '冰霜巨龙之怒[id:279302,cd:90]' is taken
+    if player has resources to cast spell '冰霜巨龙之怒[id:279302,cd:90]'
+    if spell '冰霜巨龙之怒[id:279302,cd:90]' is off cooldown
     if target is less than 30 yards away
-20: Spell: 冰龙吐息[id:1249658]
-    if talent '冰龙吐息[id:1249658]' is taken
-    if player has resources to cast spell '冰龙吐息[id:1249658]'
-    if spell '冰龙吐息[id:1249658]' is off cooldown
+20: Spell: 冰龙吐息[id:1249658,cd:90]
+    if talent '冰龙吐息[id:1249658,cd:90]' is taken
+    if player has resources to cast spell '冰龙吐息[id:1249658,cd:90]'
+    if spell '冰龙吐息[id:1249658,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

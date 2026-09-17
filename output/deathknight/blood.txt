@@ -1,20 +1,20 @@
 Blood
-0: Spell: 死神印记[id:439843]
-    if talent '死神印记[id:439843]' is taken
-    if player has resources to cast spell '死神印记[id:439843]'
-    if spell '死神印记[id:439843]' is off cooldown
+0: Spell: 死神印记[id:439843,cd:45]
+    if talent '死神印记[id:439843,cd:45]' is taken
+    if player has resources to cast spell '死神印记[id:439843,cd:45]'
+    if spell '死神印记[id:439843,cd:45]' is off cooldown
     if target does not have buff/debuff '死神印记[id:434765]'
-    if spell '死神印记[id:439843]' is within allowed range
+    if spell '死神印记[id:439843,cd:45]' is within allowed range
 1: Spell: 精髓分裂[id:195182]
     if talent '精髓分裂[id:195182]' is taken
     if player has resources to cast spell '精髓分裂[id:195182]'
     if spell '精髓分裂[id:195182]' is off cooldown
     if player has buff/debuff '破灭[id:441416]'
     if spell '精髓分裂[id:195182]' is within allowed range
-2: Spell: 吞噬[id:1263824]
-    if talent '吞噬[id:1263824]' is taken
-    if player has resources to cast spell '吞噬[id:1263824]'
-    if spell '吞噬[id:1263824]' is off cooldown
+2: Spell: 吞噬[id:1263824,cd:45]
+    if talent '吞噬[id:1263824,cd:45]' is taken
+    if player has resources to cast spell '吞噬[id:1263824,cd:45]'
+    if spell '吞噬[id:1263824,cd:45]' is off cooldown
     if target is less than 5 yards away
 3: Spell: 枯萎凋零[id:43265]
     if target is less than 6 yards away
@@ -55,10 +55,10 @@ Blood
     if target is less than 8 yards away
 9: Spell: 符文打击[id:316239]
     if target is less than 12 yards away
-10: Spell: 符文刃舞[id:49028]
-    if talent '符文刃舞[id:49028]' is taken
-    if player has resources to cast spell '符文刃舞[id:49028]'
-    if spell '符文刃舞[id:49028]' is off cooldown
+10: Spell: 符文刃舞[id:49028,cd:120]
+    if talent '符文刃舞[id:49028,cd:120]' is taken
+    if player has resources to cast spell '符文刃舞[id:49028,cd:120]'
+    if spell '符文刃舞[id:49028,cd:120]' is off cooldown
     if target is less than 20 yards away
 11: Spell: 精髓分裂[id:195182]
     if talent '精髓分裂[id:195182]' is taken
@@ -72,11 +72,11 @@ Blood
     if spell '精髓分裂[id:195182]' is off cooldown
     if spell '精髓分裂[id:195182]' is within allowed range
     if player does not have buff/debuff '白骨之盾[id:195181]'
-13: Spell: 死神的抚摩[id:195292]
-    if talent '死神的抚摩[id:195292]' is taken
-    if player has resources to cast spell '死神的抚摩[id:195292]'
-    if spell '死神的抚摩[id:195292]' is off cooldown
-    if spell '死神的抚摩[id:195292]' is within allowed range
+13: Spell: 死神的抚摩[id:195292,cd:6]
+    if talent '死神的抚摩[id:195292,cd:6]' is taken
+    if player has resources to cast spell '死神的抚摩[id:195292,cd:6]'
+    if spell '死神的抚摩[id:195292,cd:6]' is off cooldown
+    if spell '死神的抚摩[id:195292,cd:6]' is within allowed range
 14: Spell: 枯萎凋零[id:43265]
 15: Spell: 灵界打击[id:49998]
     if talent '灵界打击[id:49998]' is taken

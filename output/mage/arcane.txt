@@ -77,10 +77,10 @@ Arcane
     if spell '魔爆术[id:1449]' is off cooldown
     if there are more than 3 targets within 10 yards of target
     if spell '魔爆术[id:1449]' can be successfully cast
-13: Spell: 奥术涌动[id:365350]
-    if talent '奥术涌动[id:365350]' is taken
-    if player has resources to cast spell '奥术涌动[id:365350]'
-    if spell '奥术涌动[id:365350]' is off cooldown
+13: Spell: 奥术涌动[id:365350,cd:90]
+    if talent '奥术涌动[id:365350,cd:90]' is taken
+    if player has resources to cast spell '奥术涌动[id:365350,cd:90]'
+    if spell '奥术涌动[id:365350,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 14: Spell: 唤醒[id:12051]
     if talent '唤醒[id:12051]' is taken

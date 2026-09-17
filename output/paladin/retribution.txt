@@ -1,9 +1,9 @@
 Retribution
-0: Spell: 处决宣判[id:343527]
-    if talent '处决宣判[id:343527]' is taken
-    if player has resources to cast spell '处决宣判[id:343527]'
-    if spell '处决宣判[id:343527]' is off cooldown
-    if spell '处决宣判[id:343527]' is within allowed range
+0: Spell: 处决宣判[id:343527,cd:60]
+    if talent '处决宣判[id:343527,cd:60]' is taken
+    if player has resources to cast spell '处决宣判[id:343527,cd:60]'
+    if spell '处决宣判[id:343527,cd:60]' is off cooldown
+    if spell '处决宣判[id:343527,cd:60]' is within allowed range
 1: Spell: 灰烬觉醒[id:255937]
     if talent '灰烬觉醒[id:255937]' is taken
     if player has resources to cast spell '灰烬觉醒[id:255937]'
@@ -43,11 +43,11 @@ Retribution
     if player has more than 5 holy power
     if player does not have buff/debuff '圣光之锤[id:427441]'
     if spell '圣殿骑士的裁决[id:85256]' is within allowed range
-7: Spell: 圣洁鸣钟[id:375576]
+7: Spell: 圣洁鸣钟[id:375576,cd:60]
     if target is less than 30 yards away
-    if talent '圣洁鸣钟[id:375576]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576]'
-    if spell '圣洁鸣钟[id:375576]' is off cooldown
+    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
+    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
     if there are more than 3 targets within 10 yards of player
     if player has less than 1 holy power
 8: Spell: 神圣风暴[id:53385]
@@ -56,11 +56,11 @@ Retribution
     if spell '神圣风暴[id:53385]' is off cooldown
     if player has buff/debuff '苍穹之力[id:326733]'
     if player does not have buff/debuff '圣光之锤[id:427441]'
-9: Spell: 圣洁鸣钟[id:375576]
+9: Spell: 圣洁鸣钟[id:375576,cd:60]
     if target is less than 30 yards away
-    if talent '圣洁鸣钟[id:375576]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576]'
-    if spell '圣洁鸣钟[id:375576]' is off cooldown
+    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
+    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
     if player has less than 3 holy power
     if there are less than 2 targets within 10 yards of player
 10: Spell: 公正之剑[id:184575]
@@ -94,14 +94,14 @@ Retribution
     if spell '十字军打击[id:35395]' is within allowed range
 15: Spell: 审判[id:20271]
 16: Spell: 审判[id:20271]
-    if player has buff/debuff '复仇之怒[id:31884]'
+    if player has buff/debuff '复仇之怒[id:31884,cd:120]'
     if talent '审判[id:20271]' is taken
     if player has resources to cast spell '审判[id:20271]'
     if spell '审判[id:20271]' is off cooldown
     if player has less than 3 holy power
     if spell '审判[id:20271]' is within allowed range
-17: Spell: 复仇之怒[id:31884]
-    if talent '复仇之怒[id:31884]' is taken
-    if player has resources to cast spell '复仇之怒[id:31884]'
-    if spell '复仇之怒[id:31884]' is off cooldown
+17: Spell: 复仇之怒[id:31884,cd:120]
+    if talent '复仇之怒[id:31884,cd:120]' is taken
+    if player has resources to cast spell '复仇之怒[id:31884,cd:120]'
+    if spell '复仇之怒[id:31884,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

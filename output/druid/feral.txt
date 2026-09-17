@@ -23,13 +23,13 @@ Feral
     if player has resources to cast spell '猎豹形态[id:768]'
     if spell '猎豹形态[id:768]' is off cooldown
     if player does not have buff/debuff '猎豹形态[id:768]'
-4: Spell: 野性狂乱[id:274837]
-    if talent '野性狂乱[id:274837]' is taken
-    if player has resources to cast spell '野性狂乱[id:274837]'
-    if spell '野性狂乱[id:274837]' is off cooldown
+4: Spell: 野性狂乱[id:274837,cd:45]
+    if talent '野性狂乱[id:274837,cd:45]' is taken
+    if player has resources to cast spell '野性狂乱[id:274837,cd:45]'
+    if spell '野性狂乱[id:274837,cd:45]' is off cooldown
     if player has less than 1 combo points
-    if spell '野性狂乱[id:274837]' is within allowed range
-    if player has buff/debuff '猛虎之怒[id:5217]'
+    if spell '野性狂乱[id:274837,cd:45]' is within allowed range
+    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
 5: Spell: 斜掠[id:1822]
     if talent '斜掠[id:1822]' is taken
     if player has resources to cast spell '斜掠[id:1822]'
@@ -60,58 +60,58 @@ Feral
     if target does not have buff/debuff '割裂[id:1079]'
     if player has more than 5 combo points
     if spell '割裂[id:1079]' is within allowed range
-10: Spell: 猛虎之怒[id:5217]
-    if talent '猛虎之怒[id:5217]' is taken
-    if player has resources to cast spell '猛虎之怒[id:5217]'
-    if spell '猛虎之怒[id:5217]' is off cooldown
+10: Spell: 猛虎之怒[id:5217,cd:30]
+    if talent '猛虎之怒[id:5217,cd:30]' is taken
+    if player has resources to cast spell '猛虎之怒[id:5217,cd:30]'
+    if spell '猛虎之怒[id:5217,cd:30]' is off cooldown
     if player has more than 5 combo points
     if target is less than 8 yards away
 11: Spell: 斜掠[id:1822]
-12: Spell: 万灵之召[id:391528]
-    if talent '万灵之召[id:391528]' is taken
-    if player has resources to cast spell '万灵之召[id:391528]'
-    if spell '万灵之召[id:391528]' is off cooldown
+12: Spell: 万灵之召[id:391528,cd:120]
+    if talent '万灵之召[id:391528,cd:120]' is taken
+    if player has resources to cast spell '万灵之召[id:391528,cd:120]'
+    if spell '万灵之召[id:391528,cd:120]' is off cooldown
     if target is less than 5 yards away
     if player has less than 3 combo points
-    if player has buff/debuff '猛虎之怒[id:5217]'
+    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
 13: Spell: 斜掠[id:1822]
     if talent '斜掠[id:1822]' is taken
     if player has resources to cast spell '斜掠[id:1822]'
     if spell '斜掠[id:1822]' is off cooldown
-    if player has buff/debuff '潜行[id:5215]'
+    if player has buff/debuff '潜行[id:5215,cd:6]'
 14: Spell: 月火术[id:8921]
     if talent '月火术[id:8921]' is taken
     if player has resources to cast spell '月火术[id:8921]'
     if spell '月火术[id:8921]' is off cooldown
     if player has buff/debuff '月之灵[id:155580]'
     if target is more than 15 yards away
-15: Spell: 怒意狂乱[id:1243807]
+15: Spell: 怒意狂乱[id:1243807,cd:45]
     if target is less than 8 yards away
-    if talent '怒意狂乱[id:1243807]' is taken
-    if player has resources to cast spell '怒意狂乱[id:1243807]'
-    if spell '怒意狂乱[id:1243807]' is off cooldown
+    if talent '怒意狂乱[id:1243807,cd:45]' is taken
+    if player has resources to cast spell '怒意狂乱[id:1243807,cd:45]'
+    if spell '怒意狂乱[id:1243807,cd:45]' is off cooldown
     if player has less than 1 combo points
-    if player has buff/debuff '猛虎之怒[id:5217]'
-16: Spell: 啃噬[id:1244258]
-    if talent '啃噬[id:1244258]' is taken
-    if player has resources to cast spell '啃噬[id:1244258]'
-    if spell '啃噬[id:1244258]' is off cooldown
-    if spell '啃噬[id:1244258]' is within allowed range
+    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
+16: Spell: 啃噬[id:1244258,cd:20]
+    if talent '啃噬[id:1244258,cd:20]' is taken
+    if player has resources to cast spell '啃噬[id:1244258,cd:20]'
+    if spell '啃噬[id:1244258,cd:20]' is off cooldown
+    if spell '啃噬[id:1244258,cd:20]' is within allowed range
     if player has buff/debuff '啃噬启用器[id:1244393]'
-17: Spell: 野性狂乱[id:274837]
-    if talent '野性狂乱[id:274837]' is taken
-    if player has resources to cast spell '野性狂乱[id:274837]'
-    if spell '野性狂乱[id:274837]' is off cooldown
+17: Spell: 野性狂乱[id:274837,cd:45]
+    if talent '野性狂乱[id:274837,cd:45]' is taken
+    if player has resources to cast spell '野性狂乱[id:274837,cd:45]'
+    if spell '野性狂乱[id:274837,cd:45]' is off cooldown
     if player has less than 1 combo points
-    if spell '野性狂乱[id:274837]' is within allowed range
-    if spell '猛虎之怒[id:5217]' is on cooldown
-18: Spell: 怒意狂乱[id:1243807]
-    if talent '怒意狂乱[id:1243807]' is taken
-    if player has resources to cast spell '怒意狂乱[id:1243807]'
-    if spell '怒意狂乱[id:1243807]' is off cooldown
+    if spell '野性狂乱[id:274837,cd:45]' is within allowed range
+    if spell '猛虎之怒[id:5217,cd:30]' is on cooldown
+18: Spell: 怒意狂乱[id:1243807,cd:45]
+    if talent '怒意狂乱[id:1243807,cd:45]' is taken
+    if player has resources to cast spell '怒意狂乱[id:1243807,cd:45]'
+    if spell '怒意狂乱[id:1243807,cd:45]' is off cooldown
     if player has less than 1 combo points
     if target is less than 8 yards away
-    if spell '猛虎之怒[id:5217]' is on cooldown
+    if spell '猛虎之怒[id:5217,cd:30]' is on cooldown
 19: Spell: 等待能量[id:1249752]
     if talent '等待能量[id:1249752]' is taken
     if player has resources to cast spell '等待能量[id:1249752]'
@@ -119,7 +119,7 @@ Feral
     if player has more than 5 combo points
     if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
     if player has less than 49 energy
-    if player does not have buff/debuff '化身：阿莎曼之灵[id:102543]'
+    if player does not have buff/debuff '化身：阿莎曼之灵[id:102543,cd:180]'
 20: Spell: 等待能量[id:1249752]
     if talent '等待能量[id:1249752]' is taken
     if player has resources to cast spell '等待能量[id:1249752]'
@@ -127,11 +127,11 @@ Feral
     if player has more than 5 combo points
     if player has less than 37 energy
     if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
-    if player has buff/debuff '化身：阿莎曼之灵[id:102543]'
-21: Spell: 狂暴[id:106951]
-    if talent '狂暴[id:106951]' is taken
-    if player has resources to cast spell '狂暴[id:106951]'
-    if spell '狂暴[id:106951]' is off cooldown
+    if player has buff/debuff '化身：阿莎曼之灵[id:102543,cd:180]'
+21: Spell: 狂暴[id:106951,cd:180]
+    if talent '狂暴[id:106951,cd:180]' is taken
+    if player has resources to cast spell '狂暴[id:106951,cd:180]'
+    if spell '狂暴[id:106951,cd:180]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 22: Spell: 野性印记[id:1126]
     if talent '野性印记[id:1126]' is taken

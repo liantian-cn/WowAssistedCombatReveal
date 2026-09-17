@@ -2,7 +2,7 @@
 
 本仓库是脚本型项目（没有安装成包），因此先把仓库根目录加入 ``sys.path``；
 所有数据路径都用 ``ROOT`` 拼成**绝对路径**，这样无论从哪个目录启动 pytest 都能跑。
-夹具为会话级，避免每个测试重复扫描 11MB 的 SpellName 表。
+夹具为会话级，避免每个测试重复扫描 11MB 的 SpellName 表与 1MB 的 SpellCooldowns 表。
 """
 
 import sys
@@ -15,7 +15,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 import main  # noqa: E402  根目录入口脚本，测试直接复用其全局配置
-from app import db2, render, spells  # noqa: E402
+from app import cooldowns, db2, render, spells  # noqa: E402
 
 
 @pytest.fixture(scope="session")
@@ -55,12 +55,24 @@ def plan_steps(classes):
 
 
 @pytest.fixture(scope="session")
-def spell_index(plan_steps, condition_map, csv_dir):
-    """``(技能名索引, 需求 ID 集合)``，整个测试会话只扫描一次 SpellName 表。"""
-    required_ids = spells.collect_required_spell_ids(plan_steps, condition_map)
+def required_spell_ids(plan_steps, condition_map):
+    """本次渲染需要的技能 ID（步骤技能 + Spell 型规则参数，去 0）。"""
+    return spells.collect_required_spell_ids(plan_steps, condition_map)
+
+
+@pytest.fixture(scope="session")
+def cooldown_index(csv_dir, required_spell_ids):
+    """技能冷却索引（只含所需 ID），整个测试会话只扫描一次 SpellCooldowns 表。"""
+    cooldown_table = Path(csv_dir) / db2.table_filename("SpellCooldowns", main.VERSION)
+    return cooldowns.read_cooldown_index(cooldown_table, required_spell_ids)
+
+
+@pytest.fixture(scope="session")
+def spell_index(csv_dir, required_spell_ids, cooldown_index):
+    """``(技能名索引, 需求 ID 集合)``，整个测试会话只扫描一次 SpellName 表；索引带冷却信息。"""
     spell_table = Path(csv_dir) / db2.table_filename("SpellName", main.VERSION)
-    index = spells.read_spell_index(spell_table, required_ids)
-    return index, required_ids
+    index = spells.read_spell_index(spell_table, required_spell_ids, cooldown_index)
+    return index, required_spell_ids
 
 
 @pytest.fixture(scope="session")

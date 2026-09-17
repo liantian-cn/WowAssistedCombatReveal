@@ -5,12 +5,12 @@ Subtlety
     if spell '速效药膏[id:315584]' is off cooldown
     if player does not have buff/debuff '速效药膏[id:315584]'
     if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-1: Spell: 暗影之舞[id:185313]
-    if player has resources to cast spell '暗影之舞[id:185313]'
-    if spell '暗影之舞[id:185313]' is off cooldown
-    if talent '暗影之舞[id:185313]' is taken
+1: Spell: 暗影之舞[id:185313,cd:6]
+    if player has resources to cast spell '暗影之舞[id:185313,cd:6]'
+    if spell '暗影之舞[id:185313,cd:6]' is off cooldown
+    if talent '暗影之舞[id:185313,cd:6]' is taken
     if there are more than 1 targets within 10 yards of player
-    if spell '暗影之舞[id:185313]' is off cooldown
+    if spell '暗影之舞[id:185313,cd:6]' is off cooldown
 2: Spell: 影分身[id:280719]
     if player has resources to cast spell '影分身[id:280719]'
     if spell '影分身[id:280719]' is off cooldown
@@ -26,12 +26,12 @@ Subtlety
     if player has more than 5 combo points
     if player has buff/debuff '致命一击[id:462128]'
     if spell '刺骨[id:196819]' is within allowed range
-4: Spell: 赤喉之咬[id:426591]
-    if talent '赤喉之咬[id:426591]' is taken
-    if player has resources to cast spell '赤喉之咬[id:426591]'
-    if spell '赤喉之咬[id:426591]' is off cooldown
+4: Spell: 赤喉之咬[id:426591,cd:45]
+    if talent '赤喉之咬[id:426591,cd:45]' is taken
+    if player has resources to cast spell '赤喉之咬[id:426591,cd:45]'
+    if spell '赤喉之咬[id:426591,cd:45]' is off cooldown
     if player has less than 2 combo points
-    if spell '赤喉之咬[id:426591]' is within allowed range
+    if spell '赤喉之咬[id:426591,cd:45]' is within allowed range
 5: Spell: 黑火药[id:319175]
     if player has resources to cast spell '黑火药[id:319175]'
     if spell '黑火药[id:319175]' is off cooldown
@@ -60,10 +60,10 @@ Subtlety
     if spell '飞镖投掷[id:114014]' is off cooldown
     if talent '飞镖投掷[id:114014]' is taken
     if spell '飞镖投掷[id:114014]' is within allowed range
-    if player does not have buff/debuff '潜行[id:1784]'
+    if player does not have buff/debuff '潜行[id:1784,cd:2]'
     if player does not have buff/debuff '消失[id:11327]'
     if target is more than 15 yards away
-    if player does not have buff/debuff '潜行[id:115191]'
+    if player does not have buff/debuff '潜行[id:115191,cd:2]'
 10: Spell: 刺骨[id:196819]
     if player has resources to cast spell '刺骨[id:196819]'
     if spell '刺骨[id:196819]' is off cooldown
@@ -129,8 +129,8 @@ Subtlety
     if player does not have buff/debuff '迟钝药膏[id:5761]'
     if player does not have buff/debuff '萎缩药膏[id:381637]'
     if player does not have buff/debuff '减速药膏[id:3408]'
-20: Spell: 暗影之刃[id:121471]
-    if talent '暗影之刃[id:121471]' is taken
-    if player has resources to cast spell '暗影之刃[id:121471]'
-    if spell '暗影之刃[id:121471]' is off cooldown
+20: Spell: 暗影之刃[id:121471,cd:90]
+    if talent '暗影之刃[id:121471,cd:90]' is taken
+    if player has resources to cast spell '暗影之刃[id:121471,cd:90]'
+    if spell '暗影之刃[id:121471,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

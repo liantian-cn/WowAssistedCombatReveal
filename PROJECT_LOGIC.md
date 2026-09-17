@@ -46,8 +46,9 @@ python -m venv .venv
 .venv\Scripts\python.exe -m pytest tests -q
 ```
 
-`tests/` 覆盖：表规模、专精查找的同职业限定、技能名命中/缺失占位、充能层数与
-automation-only 渲染、未知条件类型报错、整库生成到临时目录后的结构与计数。
+`tests/` 覆盖：表规模、专精查找的同职业限定、技能名命中/缺失占位、冷却两列取大与 cd 标签
+（含独立重算校验）、充能层数与 automation-only 渲染、未知条件类型报错、整库生成到临时目录后
+的结构与计数。
 
 ---
 
@@ -58,11 +59,11 @@ main.py                  # 唯一入口：全局配置 + 全量生成编排
 app/
   __init__.py            # 包说明
   db2.py                 # 5 张 CSV → classes/specs/assist_plan/steps/rules 嵌套结构
-  spells.py              # SpellName 表单次流式扫描，建立"本次需要"的技能名索引
+  spells.py              # SpellName 表单次流式扫描，建立"本次需要"的技能名索引（负责 cd 标签）
+  cooldowns.py           # SpellCooldowns 表单次流式扫描，两列取大得到技能冷却毫秒
   render.py              # 条件映射表加载 + 模板渲染（4 空格缩进条件行）
   output.py              # 命名规则与写文件
-csv_table/               # DB2 导出 CSV：必需的 5 张表 + enUS/zhCN 两份 SpellName，
-                         # 另含本期未使用、供后续阶段使用的 SpellCooldowns.12.1.0.69814.csv
+csv_table/               # DB2 导出 CSV：必需的 5 张业务表 + SpellName + SpellCooldowns
 output/                  # 生成结果（40 个专精文本，按项目约定入库）
 tests/                   # pytest 测试（conftest 提供会话级夹具）
 ConditionTypeMap.csv     # 条件类型 → 文本模板（人工维护）
@@ -83,9 +84,13 @@ README.md / LICENSE.txt  # 说明与 MIT 许可
 
 ### 4.1 五张 DB2 导出表（`csv_table/`）
 
-> `csv_table/` 中还有一张本期未使用、由用户预置的表 `SpellCooldowns.12.1.0.69814.csv`
-> （36,334 行，列为 `ID,DifficultyID,CategoryRecoveryTime,RecoveryTime,StartRecoveryTime,AuraSpellID,SpellID`），
-> 供后续阶段使用；当前管线不读取它。
+> 除下面 5 张业务表外，`SpellCooldowns.12.1.0.69814.csv`（36,334 行）也是运行必需的输入表：
+> 列为 `ID,DifficultyID,CategoryRecoveryTime,RecoveryTime,StartRecoveryTime,AuraSpellID,SpellID`，
+> 冷却值取第 3 列 `CategoryRecoveryTime` 与第 4 列 `RecoveryTime` 的较大值（同一 SpellID
+> 多行再取最大），第 5 列 `StartRecoveryTime` 是 GCD 类字段、不参与计算。`app/cooldowns.py`
+> 同样是单次流式扫描、内存只保留所需 ID，但为了让同一 SpellID 取到全部行的最大值，冷却表
+> 必须整表读完（SpellName 表则在所需 ID 全部命中后即可停止）；本次 551 个需求 ID 命中 334 个，
+> 其中冷却大于 1 秒的 141 个会在输出里带 `,cd:<整数秒>` 标签（见 4.4 / 第 8 节）。
 
 | 文件 | 主键 | 用到/相关的列 | 作用 |
 | --- | --- | --- | --- |
@@ -107,8 +112,8 @@ ChrClasses 1 ── n ChrSpecialization 1 ── 1 AssistedCombat 1 ── n Ass
 
 ### 4.2 `SpellName.<版本>.csv`
 
-技能 ID → 名称（`ID,Name_lang`，字段带引号、值里可能有逗号）。enUS 文件约 11MB / 41.4 万行，
-**按 UTF-8 读取**；zhCN 文件是 GBK 编码，本期未使用。
+技能 ID → 名称（`ID,Name_lang`，字段带引号、值里可能有逗号）。文件约 11MB / 41.4 万行，
+**按 UTF-8 读取**，其中技能名以 zhCN 为主（少数旧条目仍是英文原名），输出文本里的技能名即取自这里。
 `app/spells.py` 用标准库 `csv` **单次顺序扫描**，只把"本次需要"的 ID（步骤技能 + Spell 型规则参数，
 本期 551 个）放进内存，所需 ID 全部命中后立即停止读取。
 
@@ -133,12 +138,12 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 ### 4.4 关键约定
 
 - 距离单位是**码（yards）**，时间单位是**毫秒**，`*_PCT_*` 是百分比整数。
-- 涉及「光环/增益」的条件，值填的是**技能 ID**（例如条件类型 15 + 值 `703` = 目标身上没有 Garrote）。
+- 涉及「光环/增益」的条件，值填的是**技能 ID**（例如条件类型 15 + 值 `703` = 目标身上没有锁喉）。
 - `AssistedCombatStep.OrderIndex` 与 `AssistedCombatRule.OrderIndex` 是游戏内的排序字段，
   但本管线**不按它排序**（见第 9 节）。
 - **由 spellID 解析出的名称一律带 `[id:<spellID>]` 后缀**（步骤标题、`{spell}` 占位符、
-  Spell 型条件参数），把输出文本与 DB2 的技能 ID 对应起来；数值型参数（层数、距离、
-  百分比、毫秒）不带标签。
+  Spell 型条件参数），把输出文本与 DB2 的技能 ID 对应起来；冷却大于 1 秒时再追加
+  `,cd:<整数秒>`（阈值与取整规则见第 8 节）；数值型参数（层数、距离、百分比、毫秒）不带标签。
 - 技能名缺失（本期 3 个 ID）渲染为 `'Unknown Spell[id:<id>]'` 占位，不中断运行。
 
 ---
@@ -152,7 +157,8 @@ flowchart TD
     C --> D["classes 嵌套字典<br/>classes → specs → assist_plan → steps → rules"]
     D --> E["spells.collect_required_spell_ids()<br/>步骤技能 + Spell 型规则参数（0 除外）"]
     B --> E
-    E --> F["spells.read_spell_index()<br/>SpellName 单次流式扫描（只留所需 ID）"]
+    E --> F0["cooldowns.read_cooldown_index()<br/>SpellCooldowns 单次流式扫描（只留所需 ID）"]
+    F0 --> F["spells.read_spell_index()<br/>SpellName 单次流式扫描（只留所需 ID）"]
     D --> G["逐专精：db2.spec_rotation()"]
     F --> H["render.render_rotation()<br/>模板 + 缩进条件行"]
     B --> H
@@ -167,7 +173,8 @@ main.run()
   ├─ render.load_condition_map(CONDITION_MAP_FILE)
   ├─ db2.parse_and_build_db_dumps(CSV_DIR, VERSION)
   ├─ db2.iter_plan_steps() → spells.collect_required_spell_ids()
-  ├─ spells.read_spell_index(SpellName 表)
+  ├─ cooldowns.read_cooldown_index(SpellCooldowns 表)
+  ├─ spells.read_spell_index(SpellName 表, 冷却索引)
   └─ for (职业, 专精) in db2.iter_specs_with_plan():
          render.render_rotation() → output.write_rotation()
 ```
@@ -235,9 +242,10 @@ classes = {
 | --- | --- |
 | `VERSION` / `CSV_DIR` / `OUTPUT_DIR` / `CONDITION_MAP_FILE` / `LOG_LEVEL` | 全局配置，版本切换只改这里 |
 | `run(csv_dir, output_dir, condition_map_file, version)` | 编排全流程，返回写出的文件数；参数默认值即全局配置（测试可传临时目录） |
-| `build_spell_index(...)` | 收集所需 ID 并扫描 SpellName 表，返回 `(SpellIndex, 需求 ID 集合)` |
+| `build_spell_index(...)` | 收集所需 ID，扫描 SpellName 与 SpellCooldowns 两张表，返回 `(SpellIndex, 需求 ID 集合)` |
 
-进度与汇总用 `print` 输出（每个专精一行 + 末尾合计）；`LOG_LEVEL=WARNING` 时只打印数据异常告警。
+进度与汇总用 `print` 输出（每个专精一行 + 末尾合计）；`LOG_LEVEL=WARNING` 时只打印数据异常告警，
+`LOG_LEVEL=INFO` 时还会打印技能 ID 与冷却命中数（`SpellCooldowns 命中 334 个，冷却 > 1 秒 141 个`）。
 
 ### 7.2 `app/db2.py`
 
@@ -260,9 +268,9 @@ classes = {
 | --- | --- |
 | `SpellIndex.get_name(id)` | 返回技能名；未收录返回 `None` |
 | `SpellIndex.display_name(id)` | 返回**不带标签**的显示名；未收录返回 `Unknown Spell` |
-| `SpellIndex.labelled(id)` | 返回 `<名称>[id:<spellID>]`；未收录返回 `Unknown Spell[id:<spellID>]`（渲染统一入口） |
+| `SpellIndex.labelled(id)` | 返回 `<名称>[id:<spellID>]`，冷却 > 1 秒时追加 `,cd:<整数秒>`；未收录返回 `Unknown Spell[id:<spellID>]`（渲染统一入口） |
 | `collect_required_spell_ids(steps, condition_map)` | 步骤技能 + ValueN 以 spell 开头的规则的参数，丢弃 0 |
-| `read_spell_index(path, required_ids)` | 单次流式扫描，只保留所需 ID（命中完即停） |
+| `read_spell_index(path, required_ids, cooldowns=None)` | 单次流式扫描，只保留所需 ID（命中完即停）；可选传入冷却索引供 cd 标签使用 |
 
 旧版这里是 `check_spell_data()`：对每个 ID 访问 `https://www.wowhead.com/spell=<ID>`，
 把结果缓存成 `data/wowhead/spells/spell_<ID>.json`（每个 ID 至少 2 秒，且无 timeout）。
@@ -287,9 +295,9 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 - `Description` 里不能出现双引号 `"`（会截断 `eval` 里的 f-string 字面量）；
 - 不能出现反斜杠 `\`（会被当成转义字符）；
 - `{` `}` 只允许是设计好的占位符 `{spell}` / `{arg1}` / `{arg2}` / `{arg3}`，不能有其它花括号；
-- 技能名与条件值是作为**变量值**插入渲染结果的，不受上述限制：含撇号等任意字符都安全
-  （实例：`output/monk/windwalker.txt` 里的 `'The Emperor's Capacitor[id:393039]'`，以及旧产物里
-  `'Word of Mass Recall (OLD)'` 这类带括号的名字）。
+- 技能名与条件值是作为**变量值**插入渲染结果的，不受上述限制：含括号等任意字符都安全
+  （渲染不做二次解析；当前输出实例：`'PvP Rules Enabled (HARDCODED)[id:134735]'`，
+  旧产物里还有 `'Word of Mass Recall (OLD)'` 这类带括号的名字）。
 
 维护映射表后可以这样自检（仓库根目录执行，`chr(34)`/`chr(92)` 避免引号嵌套）：
 
@@ -311,18 +319,36 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 写文件用 UTF-8（无 BOM）+ `newline="\r\n"`：旧产物由 PowerShell 重定向生成，
 是 CRLF + 末尾换行，这里显式保持一致的字节形态。
 
+### 7.6 `app/cooldowns.py`
+
+| 名称 | 说明 |
+| --- | --- |
+| `CooldownIndex.milliseconds(id)` | 返回技能冷却毫秒（同一 ID 多行取最大）；表中没有该 ID 返回 `None` |
+| `CooldownIndex.seconds(id)` | 返回显示用整数秒 `(ms + 500) // 1000`；不存在或 ≤ 1000ms 返回 `None` |
+| `read_cooldown_index(path, required_ids)` | 单次流式扫描 SpellCooldowns 表，内存只保留所需 ID；整表读完（同一 ID 需取全部行的最大值） |
+
+冷却取第 3 列 `CategoryRecoveryTime` 与第 4 列 `RecoveryTime` 的较大值：只取第 4 列会漏掉
+17 个"冷却只写在第 3 列"的技能（眼棱 198013、恶魔变形 191427、复仇之怒 31884 等）。
+第 5 列 `StartRecoveryTime` 是 GCD 类字段，不参与计算；表里查不到冷却的技能不加 cd 标签。
+秒数一律走 `seconds()`（半进；不用 Python 内置 `round()`，否则 4500ms 会因银行家舍入变成 4 秒），
+`SpellIndex.labelled()` 只负责把它拼进标签，保证全项目只有一处取整逻辑。
+
 ---
 
 ## 8. 输出格式细节
 
-固定结构（行结构与旧版 `out/*.txt` 一致；本期起技能名带 `[id:<spellID>]` 标签，文本不再与旧产物逐字节一致）：
+固定结构（行结构与旧版 `out/*.txt` 一致；技能名带 `[id:<spellID>]` 标签、冷却 > 1 秒时再带
+`,cd:<秒>`，文本不再与旧产物逐字节一致）：
 
 ```
-<专精名>                              ← 首行：输出层显式写入
-<N>: Spell: <技能名>[id:<spellID>]     ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
-    <条件1>                            ← 4 空格缩进，模板渲染结果
+<专精名>                                       ← 首行：输出层显式写入
+<N>: Spell: <技能名>[id:<spellID>]              ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
+    <条件1>                                     ← 4 空格缩进，模板渲染结果
     <条件2>
 ```
+
+冷却大于 1 秒的技能，标签写作 `<技能名>[id:<spellID>,cd:<整数秒>]`（如
+`死神印记[id:439843,cd:45]`、`眼棱[id:198013,cd:30]`）。
 
 条件模板的渲染规则：
 
@@ -331,10 +357,15 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 | `{spell}` | 当前步骤的技能名 | 用于「天赋已点 / 技能不可用 / 射程内 / 剩余充能」等以本技能为主语的条件；带步骤 `SpellID` 的标签 |
 | `{arg1}` `{arg2}` `{arg3}` | `ConditionValue1..3` | 映射表对应 `ValueN` 以 `spell` 开头时，解析成带单引号、带自身 ID 标签的技能名 |
 
-标签由 `SpellIndex.labelled()` 统一生成：格式固定为 `<名称>[id:<十进制 spellID>]`（无空格、不补零），
-步骤标题行不加引号，条件行仍用单引号包裹。SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
+标签由 `SpellIndex.labelled()` 统一生成：格式为 `<名称>[id:<十进制 spellID>]`（无空格、不补零），
+冷却大于 1 秒时追加 `,cd:<整数秒>`（秒数 = `(毫秒 + 500) // 1000`，按"0.5 向上"取整，
+1500ms → `cd:2`、4500ms → `cd:5`；阈值按原始毫秒严格大于 1000 判断）。表中查不到该 ID
+或冷却 ≤ 1000ms 时保持 `<名称>[id:<spellID>]`（如 0ms 的 `瞄准射击[id:19434]`、
+正好 1000ms 的 `正义盾击[id:53600]`）。步骤标题行不加引号，条件行仍用单引号包裹；
+SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
 只有由 spellID 解析出的名称会带标签，数值型参数（层数 / 距离 / 百分比 / 毫秒）保持纯数字。
-本期数据共 3431 处标签：693 个步骤标题 + 2738 条条件行。
+本期数据共 3431 处标签：693 个步骤标题 + 2738 条条件行；其中 935 处带 cd
+（208 个步骤标题 + 727 条条件行），涉及 141 个不同技能 ID。
 
 ### 8.1 数据规模与覆盖（12.1.0.69814 实测）
 
@@ -346,13 +377,15 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 | 规则中出现的条件类型 | 55 种（映射表 0–70 共 71 行；未使用的 16 种，其中 15 种标 `Active=N`） |
 | 需要解析名字的技能 ID | 551 个（步骤技能 + Spell 型规则参数去重、去 0） |
 | SpellName 命中 / 缺失 | 548 / 3（缺失：194310、389387、470058） |
+| SpellCooldowns 命中 / 冷却 > 1 秒 | 334 / 141（其余 217 个需求 ID 在冷却表里没有记录） |
 | 输出里的 `[id:` 标签 | 3431 处（693 个步骤标题 + 2738 条条件行；其中 3 处为 `Unknown Spell[id:…]`） |
+| 输出里带 `,cd:` 的标签 | 935 处（208 个步骤标题 + 727 条条件行，141 个不同技能 ID） |
 | 输出文件 | 40 个 / 13 个职业目录 |
 
 ### 8.2 与旧版 11.2 产物的比对结论（第一期验证）
 
-> 本期（第二期）起技能名追加 `[id:<spellID>]` 标签，产物不再与旧版逐字节一致；
-> 下列结论只针对行结构，仍然成立。
+> 第二期起技能名追加 `[id:<spellID>]` 标签、本期起冷却 > 1 秒的技能再追加 `,cd:<整数秒>`，
+> 产物不再与旧版逐字节一致；下列结论只针对行结构，仍然成立。
 
 - 文件集合：旧 39 个 → 新 40 个（新增 Demon Hunter / Devourer）；
 - 结构：两者的首行形态、`N: Spell:` 编号连续性、条件行 4 空格缩进都一致，无异常；
@@ -376,6 +409,9 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
    渲染为 `'Unknown Spell[id:<id>]'`（ID 由统一标签承载），不再中途失败。
 4. **未知条件类型报错**：映射表缺行时不再让 `iloc[0]` 抛 `IndexError`，
    而是抛 `ValueError`（带 `ConditionType` 与规则 ID），便于定位要补的映射行。
+5. **技能冷却标签（本期新增）**：`SpellCooldowns.<版本>.csv` 从"预置未用"变为运行必需；
+   冷却取第 3/4 列较大值（同一 SpellID 多行再取大），原始毫秒 > 1000 时在标签后追加
+   `,cd:<整数秒>`（半进，见 7.6 / 第 8 节）。本期输出 935 处标签带 cd，涉及 141 个技能 ID。
 
 ---
 
@@ -402,7 +438,7 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 
 ### 10.4 部分条件类型的参数语义与实际数据不符（未修正）
 
-- 类型 13（`AURA_COUNT_NEAR_PLAYER_GREATER`）的 `Value3` 是技能 ID（6 条规则全为 703 Garrote / 1943 Rupture），
+- 类型 13（`AURA_COUNT_NEAR_PLAYER_GREATER`）的 `Value3` 是技能 ID（6 条规则全为 703 锁喉 / 1943 割裂），
   但映射表标 `UNUSED`，因此输出里是数字而不是技能名（对照类型 51 的 `Spell:Buff`）。
 - 类型 9（`AURA_ON_PLAYER`）有 3 条规则的 `ConditionValue2` 非 0、1 条规则的 `ConditionValue3` 非 0，
   看起来也是技能 ID，但映射表标 `UNUSED`，这些值被忽略。
@@ -416,7 +452,8 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 - 宠物天赋专精（Ferocity / Cunning / Tenacity）的 `ClassID=0`，不挂到任何职业下；
   它们本来也没有辅助方案，因此不影响输出，但会让"CSV 专精行数"与"结构里的专精数"不一致。
 - `Adventurer` / `Traveler` 两个新职业没有方案，属于客户端角色创建相关条目。
-- zhCN 的 SpellName 与输出尚未接入（`csv_table/` 中已备好 GBK 编码的 zhCN 文件）。
+- 技能名语言：`SpellName.12.1.0.69814.csv` 提供 zhCN 名称（UTF-8，少数旧条目仍是英文原名），
+  输出文本因此是中文技能名（见 4.2）；仓库里没有单独的 enUS 文件。
 - `data/reference/*.txt`（旧的人工研究笔记）随 `data/` 删除；条件类型的结论已并入本文档。
 - 环境说明：本期在 Python 3.13 + pandas 3.0.5 上跑通（`requirements.txt` 只要求 `pandas>=2.3.1`）。
 - 待办：HTML 可视化版本；弄清部分规则为何互相矛盾（疑似隐含 OR）；
@@ -426,6 +463,6 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 
 ## 11. 一句话总结
 
-`wow_assist_mapper` 是一条**单向离线数据管线**：`5 张 DB2 CSV + SpellName + 人工条件模板`
+`wow_assist_mapper` 是一条**单向离线数据管线**：`5 张 DB2 CSV + SpellName + SpellCooldowns + 人工条件模板`
 → `classes/specs/plan/steps/rules 嵌套字典` → `output/` 下每个专精一份可读文本。
 核心复杂度在条件模板映射；顺序语义、`eval` 渲染、部分参数语义是当前最薄弱的三处。

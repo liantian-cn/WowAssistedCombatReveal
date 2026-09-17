@@ -1,13 +1,13 @@
 Frost
-0: Spell: 暴风雪[id:190356]
-    if talent '暴风雪[id:190356]' is taken
-    if player has resources to cast spell '暴风雪[id:190356]'
-    if spell '暴风雪[id:190356]' is off cooldown
+0: Spell: 暴风雪[id:190356,cd:12]
+    if talent '暴风雪[id:190356,cd:12]' is taken
+    if player has resources to cast spell '暴风雪[id:190356,cd:12]'
+    if spell '暴风雪[id:190356,cd:12]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-1: Spell: 寒冰宝珠[id:84714]
-    if talent '寒冰宝珠[id:84714]' is taken
-    if player has resources to cast spell '寒冰宝珠[id:84714]'
-    if spell '寒冰宝珠[id:84714]' is off cooldown
+1: Spell: 寒冰宝珠[id:84714,cd:60]
+    if talent '寒冰宝珠[id:84714,cd:60]' is taken
+    if player has resources to cast spell '寒冰宝珠[id:84714,cd:60]'
+    if spell '寒冰宝珠[id:84714,cd:60]' is off cooldown
 2: Spell: 冰风暴[id:44614]
     if talent '冰风暴[id:44614]' is taken
     if player has resources to cast spell '冰风暴[id:44614]'

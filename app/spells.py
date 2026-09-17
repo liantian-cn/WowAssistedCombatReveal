@@ -6,8 +6,10 @@ SpellName 表约 11MB / 41 万行，因此只做一次顺序扫描，并且只�
 不整体载入 DataFrame，也不整表缓存。
 
 输出里的技能名必须可追溯回 spellID，因此统一走 :meth:`SpellIndex.labelled`：
-命中时返回 ``<名称>[id:<spellID>]``；表中查不到名称的 ID（本期数据有 3 个：
-194310 / 389387 / 470058）返回 ``Unknown Spell[id:<spellID>]`` 占位，不报错也不中断渲染。
+命中时返回 ``<名称>[id:<spellID>]``，技能冷却大于 1 秒时再追加 ``,cd:<整数秒>``
+（如 ``死神印记[id:439843,cd:45]``，冷却来自 :mod:`app.cooldowns`）；
+表中查不到名称的 ID（本期数据有 3 个：194310 / 389387 / 470058）返回
+``Unknown Spell[id:<spellID>]`` 占位，不报错也不中断渲染。
 """
 
 import csv
@@ -20,29 +22,40 @@ UNKNOWN_SPELL_NAME = "Unknown Spell"
 
 
 class SpellIndex:
-    """技能 ID → 名称的只读映射，只保存本次需要的 ID。"""
+    """技能 ID → 名称的只读映射，只保存本次需要的 ID；可选携带冷却索引。"""
 
-    def __init__(self, names=None):
+    def __init__(self, names=None, cooldowns=None):
         self._names = dict(names or {})
+        # None 表示不显示任何 cd（只查名字的场景，如单元测试）；否则用 CooldownIndex 取秒数
+        self._cooldowns = cooldowns
 
     def get_name(self, spell_id):
         """返回技能名；未收录（表里没有该 ID）时返回 None。"""
         return self._names.get(int(spell_id))
 
     def display_name(self, spell_id):
-        """返回不带 ID 标签的显示名；未收录时返回 ``Unknown Spell`` 占位文本。"""
+        """返回不带 ID 标签的显示名；未收录时返回 ``Unknown Spell`` 占位文本。
+
+        名称本身不带冷却信息，cd 只加在 :meth:`labelled` 生成的标签里。
+        """
         name = self.get_name(spell_id)
         if name is None:
             return UNKNOWN_SPELL_NAME
         return name
 
     def labelled(self, spell_id):
-        """返回"名称 + ID 标签"：``<名称>[id:<spellID>]``，ID 为十进制原值（不补零）。
+        """返回"名称 + ID 标签"：``<名称>[id:<spellID>]``；冷却 > 1 秒时追加 ``,cd:<整数秒>``。
 
         渲染输出里的技能名一律经过这里，文本才能直接对照 DB2 中的 spellID；
         未收录的 ID 输出 ``Unknown Spell[id:<spellID>]``。
         """
-        return f"{self.display_name(spell_id)}[id:{int(spell_id)}]"
+        spell_id = int(spell_id)
+        suffix = ""
+        if self._cooldowns is not None:
+            seconds = self._cooldowns.seconds(spell_id)
+            if seconds is not None:
+                suffix = f",cd:{seconds}"
+        return f"{self.display_name(spell_id)}[id:{spell_id}{suffix}]"
 
     def __len__(self):
         return len(self._names)
@@ -78,10 +91,11 @@ def collect_required_spell_ids(steps, condition_map):
     return required
 
 
-def read_spell_index(path, required_ids):
+def read_spell_index(path, required_ids, cooldowns=None):
     """单次流式扫描 SpellName 表，返回只包含 required_ids 的 :class:`SpellIndex`。
 
     逐行读取，命中才解析名称；所需 ID 全部找到后立即停止读取。
+    ``cooldowns`` 是可选冷却索引，透传给 :class:`SpellIndex` 供 cd 标签使用。
     """
     missing = {int(spell_id) for spell_id in required_ids}
     names = {}
@@ -102,4 +116,4 @@ def read_spell_index(path, required_ids):
                     break
     if missing:
         _logger.warning(f"SpellName 表中缺少 {len(missing)} 个技能 ID：{sorted(missing)}")
-    return SpellIndex(names)
+    return SpellIndex(names, cooldowns)

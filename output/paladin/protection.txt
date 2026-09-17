@@ -1,14 +1,14 @@
 Protection
-0: Spell: 圣洁鸣钟[id:375576]
-    if talent '圣洁鸣钟[id:375576]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576]'
-    if spell '圣洁鸣钟[id:375576]' is off cooldown
-    if spell '圣洁鸣钟[id:375576]' is within allowed range
-1: Spell: 复仇者之盾[id:31935]
-    if talent '复仇者之盾[id:31935]' is taken
-    if player has resources to cast spell '复仇者之盾[id:31935]'
-    if spell '复仇者之盾[id:31935]' is off cooldown
-    if spell '复仇者之盾[id:31935]' is within allowed range
+0: Spell: 圣洁鸣钟[id:375576,cd:60]
+    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
+    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
+    if spell '圣洁鸣钟[id:375576,cd:60]' is within allowed range
+1: Spell: 复仇者之盾[id:31935,cd:15]
+    if talent '复仇者之盾[id:31935,cd:15]' is taken
+    if player has resources to cast spell '复仇者之盾[id:31935,cd:15]'
+    if spell '复仇者之盾[id:31935,cd:15]' is off cooldown
+    if spell '复仇者之盾[id:31935,cd:15]' is within allowed range
 2: Spell: 愤怒之锤[id:24275]
     if talent '愤怒之锤[id:24275]' is taken
     if player has resources to cast spell '愤怒之锤[id:24275]'
@@ -19,16 +19,16 @@ Protection
     if player has resources to cast spell '审判[id:275779]'
     if spell '审判[id:275779]' is off cooldown
     if spell '审判[id:275779]' is within allowed range
-4: Spell: 圣洁鸣钟[id:375576]
-    if talent '圣洁鸣钟[id:375576]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576]'
-    if spell '圣洁鸣钟[id:375576]' is off cooldown
+4: Spell: 圣洁鸣钟[id:375576,cd:60]
+    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
+    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
     if there are more than 3 targets within 30 yards of player
     if player has less than 2 holy power
-5: Spell: 圣洁鸣钟[id:375576]
-    if talent '圣洁鸣钟[id:375576]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576]'
-    if spell '圣洁鸣钟[id:375576]' is off cooldown
+5: Spell: 圣洁鸣钟[id:375576,cd:60]
+    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
+    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
     if there are less than 2 targets within 30 yards of player
     if player has less than 3 holy power
 6: Spell: 十字军打击[id:35395]
@@ -36,10 +36,10 @@ Protection
     if player has resources to cast spell '十字军打击[id:35395]'
     if spell '十字军打击[id:35395]' is off cooldown
     if target is less than 5 yards away
-7: Spell: 奉献[id:26573]
-    if talent '奉献[id:26573]' is taken
-    if player has resources to cast spell '奉献[id:26573]'
-    if spell '奉献[id:26573]' is off cooldown
+7: Spell: 奉献[id:26573,cd:9]
+    if talent '奉献[id:26573,cd:9]' is taken
+    if player has resources to cast spell '奉献[id:26573,cd:9]'
+    if spell '奉献[id:26573,cd:9]' is off cooldown
     if player does not have buff/debuff '奉献[id:188370]'
 8: Spell: 审判[id:275779]
 9: Spell: 正义盾击[id:53600]
@@ -52,13 +52,13 @@ Protection
     if player has resources to cast spell '正义盾击[id:53600]'
     if spell '正义盾击[id:53600]' is off cooldown
     if player has more than 40% health
-11: Spell: 复仇之怒[id:31884]
-    if talent '复仇之怒[id:31884]' is taken
-    if player has resources to cast spell '复仇之怒[id:31884]'
-    if spell '复仇之怒[id:31884]' is off cooldown
+11: Spell: 复仇之怒[id:31884,cd:120]
+    if talent '复仇之怒[id:31884,cd:120]' is taken
+    if player has resources to cast spell '复仇之怒[id:31884,cd:120]'
+    if spell '复仇之怒[id:31884,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: 戒卫[id:389539]
-    if talent '戒卫[id:389539]' is taken
-    if player has resources to cast spell '戒卫[id:389539]'
-    if spell '戒卫[id:389539]' is off cooldown
+12: Spell: 戒卫[id:389539,cd:120]
+    if talent '戒卫[id:389539,cd:120]' is taken
+    if player has resources to cast spell '戒卫[id:389539,cd:120]'
+    if spell '戒卫[id:389539,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

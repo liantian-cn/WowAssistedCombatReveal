@@ -5,26 +5,26 @@ Fury
     if player has resources to cast spell '暴怒[id:184367]'
     if spell '暴怒[id:184367]' is off cooldown
     if spell '暴怒[id:184367]' is within allowed range
-1: Spell: 雷霆一击[id:6343]
+1: Spell: 雷霆一击[id:6343,cd:6]
     if player has buff/debuff '雷霆轰击[id:435615]'
     if target is less than 5 yards away
     if player has buff/debuff '激怒[id:184362]'
-    if talent '雷霆一击[id:6343]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
-2: Spell: 奥丁之怒[id:385059]
+    if talent '雷霆一击[id:6343,cd:6]' is taken
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+2: Spell: 奥丁之怒[id:385059,cd:45]
     if target is less than 12 yards away
-    if talent '奥丁之怒[id:385059]' is taken
-    if player has resources to cast spell '奥丁之怒[id:385059]'
-    if spell '奥丁之怒[id:385059]' is off cooldown
-3: Spell: 雷霆一击[id:6343]
+    if talent '奥丁之怒[id:385059,cd:45]' is taken
+    if player has resources to cast spell '奥丁之怒[id:385059,cd:45]'
+    if spell '奥丁之怒[id:385059,cd:45]' is off cooldown
+3: Spell: 雷霆一击[id:6343,cd:6]
     if target is less than 5 yards away
     if player has buff/debuff '崩解闪电[id:436707]'
-    if talent '雷霆一击[id:6343]' is taken
+    if talent '雷霆一击[id:6343,cd:6]' is taken
     if player does not have buff/debuff '旋风斩[id:85739]'
-    if talent '雷霆一击[id:6343]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
+    if talent '雷霆一击[id:6343,cd:6]' is taken
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
 4: Spell: 旋风斩[id:190411]
     if target is less than 10 yards away
     if player does not have buff/debuff '崩解闪电[id:436707]'
@@ -34,71 +34,71 @@ Fury
     if talent '旋风斩[id:190411]' is taken
     if player has resources to cast spell '旋风斩[id:190411]'
     if spell '旋风斩[id:190411]' is off cooldown
-5: Spell: 剑刃风暴[id:227847]
+5: Spell: 剑刃风暴[id:227847,cd:90]
     if target is less than 10 yards away
     if player has buff/debuff '激怒[id:184362]'
-    if talent '剑刃风暴[id:227847]' is taken
-    if player has resources to cast spell '剑刃风暴[id:227847]'
-    if spell '剑刃风暴[id:227847]' is off cooldown
+    if talent '剑刃风暴[id:227847,cd:90]' is taken
+    if player has resources to cast spell '剑刃风暴[id:227847,cd:90]'
+    if spell '剑刃风暴[id:227847,cd:90]' is off cooldown
 6: Spell: 暴怒[id:184367]
     if talent '暴怒[id:184367]' is taken
     if player has resources to cast spell '暴怒[id:184367]'
     if spell '暴怒[id:184367]' is off cooldown
     if spell '暴怒[id:184367]' is within allowed range
-7: Spell: 斩杀[id:5308]
-    if talent '斩杀[id:5308]' is taken
-    if player has resources to cast spell '斩杀[id:5308]'
-    if spell '斩杀[id:5308]' is off cooldown
-    if spell '斩杀[id:5308]' is within allowed range
-8: Spell: 雷霆一击[id:6343]
+7: Spell: 斩杀[id:5308,cd:6]
+    if talent '斩杀[id:5308,cd:6]' is taken
+    if player has resources to cast spell '斩杀[id:5308,cd:6]'
+    if spell '斩杀[id:5308,cd:6]' is off cooldown
+    if spell '斩杀[id:5308,cd:6]' is within allowed range
+8: Spell: 雷霆一击[id:6343,cd:6]
     if target is less than 5 yards away
     if player has buff/debuff '崩解闪电[id:436707]'
     if there are more than 3 targets within 0 yards of player
-    if talent '雷霆一击[id:6343]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
+    if talent '雷霆一击[id:6343,cd:6]' is taken
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
 9: Spell: 怒击[id:85288]
     if talent '怒击[id:85288]' is taken
     if player has resources to cast spell '怒击[id:85288]'
     if spell '怒击[id:85288]' is off cooldown
     if spell '怒击[id:85288]' is within allowed range
-10: Spell: 嗜血[id:23881]
-    if talent '嗜血[id:23881]' is taken
-    if player has resources to cast spell '嗜血[id:23881]'
-    if spell '嗜血[id:23881]' is off cooldown
-    if spell '嗜血[id:23881]' is within allowed range
-11: Spell: 雷霆一击[id:6343]
+10: Spell: 嗜血[id:23881,cd:5]
+    if talent '嗜血[id:23881,cd:5]' is taken
+    if player has resources to cast spell '嗜血[id:23881,cd:5]'
+    if spell '嗜血[id:23881,cd:5]' is off cooldown
+    if spell '嗜血[id:23881,cd:5]' is within allowed range
+11: Spell: 雷霆一击[id:6343,cd:6]
     if target is less than 5 yards away
     if player has buff/debuff '崩解闪电[id:436707]'
-    if talent '雷霆一击[id:6343]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
-12: Spell: 英勇投掷[id:57755]
-    if talent '英勇投掷[id:57755]' is taken
-    if player has resources to cast spell '英勇投掷[id:57755]'
-    if spell '英勇投掷[id:57755]' is off cooldown
-    if spell '英勇投掷[id:57755]' is within allowed range
+    if talent '雷霆一击[id:6343,cd:6]' is taken
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+12: Spell: 英勇投掷[id:57755,cd:6]
+    if talent '英勇投掷[id:57755,cd:6]' is taken
+    if player has resources to cast spell '英勇投掷[id:57755,cd:6]'
+    if spell '英勇投掷[id:57755,cd:6]' is off cooldown
+    if spell '英勇投掷[id:57755,cd:6]' is within allowed range
     if target is more than 15 yards away
 13: Spell: 猛击[id:1464]
     if player does not have buff/debuff '暴怒！[id:209694]'
-14: Spell: 鲁莽[id:1719]
-    if talent '鲁莽[id:1719]' is taken
-    if player has resources to cast spell '鲁莽[id:1719]'
-    if spell '鲁莽[id:1719]' is off cooldown
-    if spell '鲁莽[id:1719]' is off cooldown
+14: Spell: 鲁莽[id:1719,cd:90]
+    if talent '鲁莽[id:1719,cd:90]' is taken
+    if player has resources to cast spell '鲁莽[id:1719,cd:90]'
+    if spell '鲁莽[id:1719,cd:90]' is off cooldown
+    if spell '鲁莽[id:1719,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-15: Spell: 天神下凡[id:107574]
-    if talent '天神下凡[id:107574]' is taken
-    if player has resources to cast spell '天神下凡[id:107574]'
-    if spell '天神下凡[id:107574]' is off cooldown
-    if spell '天神下凡[id:107574]' is off cooldown
+15: Spell: 天神下凡[id:107574,cd:90]
+    if talent '天神下凡[id:107574,cd:90]' is taken
+    if player has resources to cast spell '天神下凡[id:107574,cd:90]'
+    if spell '天神下凡[id:107574,cd:90]' is off cooldown
+    if spell '天神下凡[id:107574,cd:90]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-16: Spell: 雷霆一击[id:6343]
+16: Spell: 雷霆一击[id:6343,cd:6]
     if target does not have buff/debuff '撕裂[id:388539]'
-    if player has resources to cast spell '雷霆一击[id:6343]'
-    if spell '雷霆一击[id:6343]' is off cooldown
+    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
+    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
     if player has buff/debuff '血怒风暴[id:1299025]'
-    if talent '雷霆一击[id:6343]' is taken
+    if talent '雷霆一击[id:6343,cd:6]' is taken
     if player has buff/debuff '崩解闪电[id:436707]'
 17: Spell: 旋风斩[id:190411]
     if spell '旋风斩[id:190411]' is off cooldown

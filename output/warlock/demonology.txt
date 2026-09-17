@@ -5,14 +5,14 @@ Demonology
     if spell '召唤恶魔卫士[id:30146]' is off cooldown
     if player has no pet
     if spell '召唤恶魔卫士[id:30146]' can be successfully cast
-1: Spell: 召唤邪犬[id:264119]
-    if talent '召唤邪犬[id:264119]' is taken
-    if player has resources to cast spell '召唤邪犬[id:264119]'
-    if spell '召唤邪犬[id:264119]' is off cooldown
-2: Spell: 召唤恐惧猎犬[id:104316]
-    if talent '召唤恐惧猎犬[id:104316]' is taken
-    if player has resources to cast spell '召唤恐惧猎犬[id:104316]'
-    if spell '召唤恐惧猎犬[id:104316]' is off cooldown
+1: Spell: 召唤邪犬[id:264119,cd:25]
+    if talent '召唤邪犬[id:264119,cd:25]' is taken
+    if player has resources to cast spell '召唤邪犬[id:264119,cd:25]'
+    if spell '召唤邪犬[id:264119,cd:25]' is off cooldown
+2: Spell: 召唤恐惧猎犬[id:104316,cd:20]
+    if talent '召唤恐惧猎犬[id:104316,cd:20]' is taken
+    if player has resources to cast spell '召唤恐惧猎犬[id:104316,cd:20]'
+    if spell '召唤恐惧猎犬[id:104316,cd:20]' is off cooldown
 3: Spell: 古尔丹之手[id:105174]
     if talent '古尔丹之手[id:105174]' is taken
     if player has resources to cast spell '古尔丹之手[id:105174]'
@@ -22,10 +22,10 @@ Demonology
     if player has resources to cast spell '恶魔之箭[id:264178]'
     if spell '恶魔之箭[id:264178]' is off cooldown
     if player has buff/debuff '恶魔之核[id:264173]'
-5: Spell: 能量虹吸[id:264130]
-    if talent '能量虹吸[id:264130]' is taken
-    if player has resources to cast spell '能量虹吸[id:264130]'
-    if spell '能量虹吸[id:264130]' is off cooldown
+5: Spell: 能量虹吸[id:264130,cd:30]
+    if talent '能量虹吸[id:264130,cd:30]' is taken
+    if player has resources to cast spell '能量虹吸[id:264130,cd:30]'
+    if spell '能量虹吸[id:264130,cd:30]' is off cooldown
 6: Spell: 暗影箭[id:686]
     if talent '暗影箭[id:686]' is taken
     if player has resources to cast spell '暗影箭[id:686]'
@@ -36,17 +36,17 @@ Demonology
     if player has resources to cast spell '暗影箭[id:686]'
     if spell '暗影箭[id:686]' is off cooldown
     if player has buff/debuff '狱火箭[id:433891]'
-8: Spell: 召唤恐惧猎犬[id:104316]
+8: Spell: 召唤恐惧猎犬[id:104316,cd:20]
 9: Spell: 召唤恶魔卫士[id:30146]
     if talent '召唤恶魔卫士[id:30146]' is taken
     if player has resources to cast spell '召唤恶魔卫士[id:30146]'
     if spell '召唤恶魔卫士[id:30146]' is off cooldown
     if player has buff/debuff 'Track Pets[id:1245326]'
     if spell '召唤恶魔卫士[id:30146]' can be successfully cast
-10: Spell: 召唤恶魔暴君[id:265187]
-    if talent '召唤恶魔暴君[id:265187]' is taken
-    if player has resources to cast spell '召唤恶魔暴君[id:265187]'
-    if spell '召唤恶魔暴君[id:265187]' is off cooldown
+10: Spell: 召唤恶魔暴君[id:265187,cd:60]
+    if talent '召唤恶魔暴君[id:265187,cd:60]' is taken
+    if player has resources to cast spell '召唤恶魔暴君[id:265187,cd:60]'
+    if spell '召唤恶魔暴君[id:265187,cd:60]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 11: Spell: 召唤小鬼[id:688]
     if talent '召唤小鬼[id:688]' is taken

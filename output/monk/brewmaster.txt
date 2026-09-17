@@ -1,19 +1,19 @@
 Brewmaster
-0: Spell: 轮回之触[id:322109]
-    if talent '轮回之触[id:322109]' is taken
-    if player has resources to cast spell '轮回之触[id:322109]'
-    if spell '轮回之触[id:322109]' is off cooldown
-    if spell '轮回之触[id:322109]' is within allowed range
+0: Spell: 轮回之触[id:322109,cd:180]
+    if talent '轮回之触[id:322109,cd:180]' is taken
+    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
+    if spell '轮回之触[id:322109,cd:180]' is off cooldown
+    if spell '轮回之触[id:322109,cd:180]' is within allowed range
 1: Spell: 幻灭踢[id:205523]
     if talent '幻灭踢[id:205523]' is taken
     if player has resources to cast spell '幻灭踢[id:205523]'
     if spell '幻灭踢[id:205523]' is off cooldown
     if spell '幻灭踢[id:205523]' is within allowed range
     if player does not have buff/debuff '幻灭连击[id:228563]'
-2: Spell: 真气爆裂[id:123986]
-    if talent '真气爆裂[id:123986]' is taken
-    if player has resources to cast spell '真气爆裂[id:123986]'
-    if spell '真气爆裂[id:123986]' is off cooldown
+2: Spell: 真气爆裂[id:123986,cd:30]
+    if talent '真气爆裂[id:123986,cd:30]' is taken
+    if player has resources to cast spell '真气爆裂[id:123986,cd:30]'
+    if spell '真气爆裂[id:123986,cd:30]' is off cooldown
     if target is less than 30 yards away
 3: Spell: 醉酿投[id:121253]
     if talent '醉酿投[id:121253]' is taken
@@ -21,20 +21,20 @@ Brewmaster
     if spell '醉酿投[id:121253]' is off cooldown
     if spell '醉酿投[id:121253]' is within allowed range
     if player has more than 2 charges of spell '醉酿投[id:121253]'
-4: Spell: 火焰之息[id:115181]
-    if talent '火焰之息[id:115181]' is taken
-    if player has resources to cast spell '火焰之息[id:115181]'
-    if spell '火焰之息[id:115181]' is off cooldown
+4: Spell: 火焰之息[id:115181,cd:15]
+    if talent '火焰之息[id:115181,cd:15]' is taken
+    if player has resources to cast spell '火焰之息[id:115181,cd:15]'
+    if spell '火焰之息[id:115181,cd:15]' is off cooldown
     if target is less than 12 yards away
-5: Spell: 爆炸酒桶[id:325153]
-    if talent '爆炸酒桶[id:325153]' is taken
-    if player has resources to cast spell '爆炸酒桶[id:325153]'
-    if spell '爆炸酒桶[id:325153]' is off cooldown
+5: Spell: 爆炸酒桶[id:325153,cd:60]
+    if talent '爆炸酒桶[id:325153,cd:60]' is taken
+    if player has resources to cast spell '爆炸酒桶[id:325153,cd:60]'
+    if spell '爆炸酒桶[id:325153,cd:60]' is off cooldown
     if target is less than 40 yards away
-6: Spell: 碧玉疾风[id:116847]
-    if talent '碧玉疾风[id:116847]' is taken
-    if player has resources to cast spell '碧玉疾风[id:116847]'
-    if spell '碧玉疾风[id:116847]' is off cooldown
+6: Spell: 碧玉疾风[id:116847,cd:6]
+    if talent '碧玉疾风[id:116847,cd:6]' is taken
+    if player has resources to cast spell '碧玉疾风[id:116847,cd:6]'
+    if spell '碧玉疾风[id:116847,cd:6]' is off cooldown
 7: Spell: 神鹤引项踢[id:322729]
     if talent '神鹤引项踢[id:322729]' is taken
     if player has resources to cast spell '神鹤引项踢[id:322729]'

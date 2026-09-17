@@ -14,10 +14,10 @@ Restoration
     if player has buff/debuff '猎豹形态[id:768]'
     if player has more than 5 combo points
     if spell '凶猛撕咬[id:22568]' is within allowed range
-2: Spell: 痛击[id:106830]
-    if talent '痛击[id:106830]' is taken
-    if player has resources to cast spell '痛击[id:106830]'
-    if spell '痛击[id:106830]' is off cooldown
+2: Spell: 痛击[id:106830,cd:6]
+    if talent '痛击[id:106830,cd:6]' is taken
+    if player has resources to cast spell '痛击[id:106830,cd:6]'
+    if spell '痛击[id:106830,cd:6]' is off cooldown
     if target is less than 5 yards away
     if player has buff/debuff '猎豹形态[id:768]'
     if target does not have buff/debuff '痛击[id:405233]'
@@ -61,10 +61,10 @@ Restoration
     if there are more than 3 targets within 10 yards of target
     if player does not have buff/debuff '猎豹形态[id:768]'
     if spell '星火术[id:197628]' can be successfully cast
-9: Spell: 星涌术[id:197626]
-    if talent '星涌术[id:197626]' is taken
-    if player has resources to cast spell '星涌术[id:197626]'
-    if spell '星涌术[id:197626]' is off cooldown
+9: Spell: 星涌术[id:197626,cd:10]
+    if talent '星涌术[id:197626,cd:10]' is taken
+    if player has resources to cast spell '星涌术[id:197626,cd:10]'
+    if spell '星涌术[id:197626,cd:10]' is off cooldown
     if player does not have buff/debuff '猎豹形态[id:768]'
 10: Spell: 愤怒[id:5176]
     if talent '愤怒[id:5176]' is taken

@@ -1,9 +1,9 @@
 Windwalker
-0: Spell: 风领主之击[id:392983]
-    if spell '风领主之击[id:392983]' is within allowed range
-    if spell '风领主之击[id:392983]' is off cooldown
-    if player has resources to cast spell '风领主之击[id:392983]'
-    if talent '风领主之击[id:392983]' is taken
+0: Spell: 风领主之击[id:392983,cd:35]
+    if spell '风领主之击[id:392983,cd:35]' is within allowed range
+    if spell '风领主之击[id:392983,cd:35]' is off cooldown
+    if player has resources to cast spell '风领主之击[id:392983,cd:35]'
+    if talent '风领主之击[id:392983,cd:35]' is taken
     if player does not have buff/debuff '青龙之心[id:443421]'
     if player does not have buff/debuff '青龙之心[id:443616]'
     if player does not have buff/debuff '组合拳：风领主之击[id:1249766]'
@@ -21,10 +21,10 @@ Windwalker
     if talent '碎玉闪电[id:117952]' is taken
     if player has more than 20 stacks of buff/debuff '皇帝的容电器[id:393039]'
     if player does not have buff/debuff '组合拳：碎玉闪电[id:1249764]'
-3: Spell: 怒雷破[id:113656]
-    if spell '怒雷破[id:113656]' is off cooldown
-    if player has resources to cast spell '怒雷破[id:113656]'
-    if talent '怒雷破[id:113656]' is taken
+3: Spell: 怒雷破[id:113656,cd:24]
+    if spell '怒雷破[id:113656,cd:24]' is off cooldown
+    if player has resources to cast spell '怒雷破[id:113656,cd:24]'
+    if talent '怒雷破[id:113656,cd:24]' is taken
     if target is less than 8 yards away
     if player does not have buff/debuff '组合拳：怒雷破[id:1249758]'
 4: Spell: 旭日东升踢[id:107428]
@@ -33,18 +33,18 @@ Windwalker
     if player has resources to cast spell '旭日东升踢[id:107428]'
     if talent '旭日东升踢[id:107428]' is taken
     if player does not have buff/debuff '组合拳：旭日东升踢[id:1249753]'
-5: Spell: 升龙霸[id:152175]
+5: Spell: 升龙霸[id:152175,cd:35]
     if target is less than 5 yards away
-    if spell '升龙霸[id:152175]' is off cooldown
-    if player has resources to cast spell '升龙霸[id:152175]'
+    if spell '升龙霸[id:152175,cd:35]' is off cooldown
+    if player has resources to cast spell '升龙霸[id:152175,cd:35]'
     if player does not have buff/debuff '青龙之心[id:443421]'
-    if talent '升龙霸[id:152175]' is taken
+    if talent '升龙霸[id:152175,cd:35]' is taken
     if player does not have buff/debuff '组合拳：升龙霸[id:1249765]'
-6: Spell: 幻灭踢[id:100784]
-    if spell '幻灭踢[id:100784]' is within allowed range
-    if spell '幻灭踢[id:100784]' is off cooldown
-    if player has resources to cast spell '幻灭踢[id:100784]'
-    if talent '幻灭踢[id:100784]' is taken
+6: Spell: 幻灭踢[id:100784,cd:3]
+    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
+    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
+    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
+    if talent '幻灭踢[id:100784,cd:3]' is taken
     if player has buff/debuff '幻灭踢！[id:116768]'
     if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
 7: Spell: 神鹤引项踢[id:101546]
@@ -58,11 +58,11 @@ Windwalker
     if spell '真气爆裂[id:461404]' is off cooldown
     if player has resources to cast spell '真气爆裂[id:461404]'
     if talent '真气爆裂[id:461404]' is taken
-9: Spell: 幻灭踢[id:100784]
-    if spell '幻灭踢[id:100784]' is within allowed range
-    if spell '幻灭踢[id:100784]' is off cooldown
-    if player has resources to cast spell '幻灭踢[id:100784]'
-    if talent '幻灭踢[id:100784]' is taken
+9: Spell: 幻灭踢[id:100784,cd:3]
+    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
+    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
+    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
+    if talent '幻灭踢[id:100784,cd:3]' is taken
     if there are less than 2 targets within 9 yards of player
     if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
 10: Spell: 猛虎掌[id:100780]
@@ -94,33 +94,33 @@ Windwalker
     if player does not have buff/debuff '青龙之心[id:443421]'
     if player does not have buff/debuff '组合拳：猛虎掌[id:1249756]'
 14: Spell: 旭日东升踢[id:107428]
-15: Spell: 轮回之触[id:322109]
-    if talent '轮回之触[id:322109]' is taken
-    if player has resources to cast spell '轮回之触[id:322109]'
-    if spell '轮回之触[id:322109]' is off cooldown
-    if spell '轮回之触[id:322109]' is within allowed range
+15: Spell: 轮回之触[id:322109,cd:180]
+    if talent '轮回之触[id:322109,cd:180]' is taken
+    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
+    if spell '轮回之触[id:322109,cd:180]' is off cooldown
+    if spell '轮回之触[id:322109,cd:180]' is within allowed range
 16: Spell: 猛虎掌[id:100780]
     if spell '猛虎掌[id:100780]' is off cooldown
     if player has resources to cast spell '猛虎掌[id:100780]'
     if talent '猛虎掌[id:100780]' is taken
     if spell '猛虎掌[id:100780]' is within allowed range
     if player does not have buff/debuff '幻灭踢[id:261916]'
-17: Spell: 翔龙在天[id:101545]
-    if talent '翔龙在天[id:101545]' is taken
-    if spell '翔龙在天[id:101545]' is off cooldown
-    if player has resources to cast spell '翔龙在天[id:101545]'
-    if talent '翔龙在天[id:101545]' is taken
+17: Spell: 翔龙在天[id:101545,cd:30]
+    if talent '翔龙在天[id:101545,cd:30]' is taken
+    if spell '翔龙在天[id:101545,cd:30]' is off cooldown
+    if player has resources to cast spell '翔龙在天[id:101545,cd:30]'
+    if talent '翔龙在天[id:101545,cd:30]' is taken
     automation only (not part of the game's Assisted Combat rotation)
-18: Spell: 乾元之巅[id:1249625]
-    if spell '乾元之巅[id:1249625]' is off cooldown
-    if player has resources to cast spell '乾元之巅[id:1249625]'
-    if player does not have buff/debuff '乾元之巅[id:1249625]'
-    if talent '乾元之巅[id:1249625]' is taken
+18: Spell: 乾元之巅[id:1249625,cd:16]
+    if spell '乾元之巅[id:1249625,cd:16]' is off cooldown
+    if player has resources to cast spell '乾元之巅[id:1249625,cd:16]'
+    if player does not have buff/debuff '乾元之巅[id:1249625,cd:16]'
+    if talent '乾元之巅[id:1249625,cd:16]' is taken
     automation only (not part of the game's Assisted Combat rotation)
-19: Spell: 天神御身[id:443028]
-    if spell '天神御身[id:443028]' is off cooldown
-    if player has resources to cast spell '天神御身[id:443028]'
-    if talent '天神御身[id:443028]' is taken
+19: Spell: 天神御身[id:443028,cd:90]
+    if spell '天神御身[id:443028,cd:90]' is off cooldown
+    if player has resources to cast spell '天神御身[id:443028,cd:90]'
+    if talent '天神御身[id:443028,cd:90]' is taken
     automation only (not part of the game's Assisted Combat rotation)
 20: Spell: 旭日东升踢[id:107428]
     if player has buff/debuff '疾风呼啸踢[id:1250554]'

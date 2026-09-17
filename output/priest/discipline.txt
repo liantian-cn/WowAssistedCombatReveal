@@ -9,10 +9,10 @@ Discipline
     if player has resources to cast spell '神圣新星[id:132157]'
     if spell '神圣新星[id:132157]' is off cooldown
     if there are more than 12 targets within 0 yards of player
-2: Spell: 苦修[id:47540]
-    if talent '苦修[id:47540]' is taken
-    if player has resources to cast spell '苦修[id:47540]'
-    if spell '苦修[id:47540]' is off cooldown
+2: Spell: 苦修[id:47540,cd:2]
+    if talent '苦修[id:47540,cd:2]' is taken
+    if player has resources to cast spell '苦修[id:47540,cd:2]'
+    if spell '苦修[id:47540,cd:2]' is off cooldown
 3: Spell: 心灵震爆[id:8092]
     if talent '心灵震爆[id:8092]' is taken
     if player has resources to cast spell '心灵震爆[id:8092]'
@@ -33,7 +33,7 @@ Discipline
     if spell '惩击[id:585]' is off cooldown
     if player has buff/debuff '虚空冲击[id:450404]'
     if spell '惩击[id:585]' can be successfully cast
-7: Spell: 苦修[id:47540]
+7: Spell: 苦修[id:47540,cd:2]
 8: Spell: 真言术：韧[id:21562]
     if talent '真言术：韧[id:21562]' is taken
     if player has resources to cast spell '真言术：韧[id:21562]'

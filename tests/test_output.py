@@ -47,7 +47,7 @@ def test_output_file_structure(generated):
         numbers = []
         for line in lines[1:]:
             if ": Spell: " in line:
-                assert re.match(r"^\d+: Spell: .+\[id:\d+\]$", line), f"{path}: 步骤行格式错误 {line!r}"
+                assert re.match(r"^\d+: Spell: .+\[id:\d+(,cd:\d+)?\]$", line), f"{path}: 步骤行格式错误 {line!r}"
                 numbers.append(int(line.split(":", 1)[0]))
             else:
                 assert line.startswith("    ") and len(line) > 4, f"{path}: 条件行格式错误 {line!r}"
@@ -75,8 +75,8 @@ def test_all_resolved_names_carry_id_labels(generated, plan_steps, condition_map
     _output_dir, files = outputs(generated)
     text = "\n".join(path.read_text(encoding="utf-8") for path in files)
     assert text.count("[id:") == expected
-    # 标签里的 ID 必须都来自本次需求集合（不可能是凭空写死的数字）
-    assert {int(match) for match in re.findall(r"\[id:(\d+)\]", text)} <= required_ids
+    # 标签里的 ID 必须都来自本次需求集合（不可能是凭空写死的数字）；cd 后缀可有可无
+    assert {int(match) for match in re.findall(r"\[id:(\d+)(?:,cd:\d+)?\]", text)} <= required_ids
     # 没有任何一处仍使用旧占位写法
     assert "Unknown Spell (" not in text
     assert text.count("Unknown Spell") == 3
@@ -89,8 +89,8 @@ def test_charge_lines_use_numbers(generated):
     assert "'Spells' charges" not in text
     assert "'Charge Count'" not in text
     assert len(re.findall(r"more than \d+ charges of spell '", text)) == 10
-    # 层数不带标签，紧跟其后的技能名带标签
-    assert len(re.findall(r"more than \d+ charges of spell '.+\[id:\d+\]'", text)) == 10
+    # 层数不带标签，紧跟其后的技能名带标签（冷却 > 1 秒时还有 cd）
+    assert len(re.findall(r"more than \d+ charges of spell '.+\[id:\d+(,cd:\d+)?\]'", text)) == 10
 
 
 def test_automation_only_lines(generated):
@@ -111,18 +111,37 @@ def test_unknown_spell_placeholders(generated):
     assert "Unknown Spell (" not in text
 
 
-def test_run_is_offline_and_scans_spell_table_once(monkeypatch, tmp_path, csv_dir, condition_map_file):
-    """整库运行：不建立任何网络连接，且 SpellName 表只打开扫描一次。"""
+def test_cooldown_labels_in_generated_output(generated):
+    """整库产物抽查：冷却 > 1 秒的标签带 cd（值为半进秒），无冷却的保持原样。
+
+    期望值取自 12.1.0.69814 的 SpellCooldowns CSV：死神印记 45000ms、眼棱 30000ms、
+    献祭光环 1500ms、嗜血 4500ms；瞄准射击 / 多重射击两列为 0。
+    """
+    _output_dir, files = outputs(generated)
+    text = "\n".join(path.read_text(encoding="utf-8") for path in files)
+    blood = (_output_dir / "deathknight" / "blood.txt").read_text(encoding="utf-8")
+    assert "死神印记[id:439843,cd:45]" in blood
+    assert "眼棱[id:198013,cd:30]" in text
+    assert "献祭光环[id:258920,cd:2]" in text
+    assert "嗜血[id:23881,cd:5]" in text
+    assert "瞄准射击[id:19434]" in text and "瞄准射击[id:19434,cd" not in text
+    assert "多重射击[id:257620]" in text and "多重射击[id:257620,cd" not in text
+
+
+def test_run_is_offline_and_scans_data_tables_once(monkeypatch, tmp_path, csv_dir, condition_map_file):
+    """整库运行：不建立任何网络连接，且 SpellName / SpellCooldowns 两张表都只打开扫描一次。"""
     import builtins
     import socket
 
-    opened = []
+    opened = {"SpellName": [], "SpellCooldowns": []}
     real_open = builtins.open
 
     def counting_open(file, *args, **kwargs):
-        # 只统计 SpellName 表的打开次数（写输出文件也会走 open）
-        if Path(str(file)).name.startswith("SpellName."):
-            opened.append(str(file))
+        # 只统计两张数据表的打开次数（写输出文件也会走 open）
+        name = Path(str(file)).name
+        for table in opened:
+            if name.startswith(f"{table}."):
+                opened[table].append(str(file))
         return real_open(file, *args, **kwargs)
 
     def forbidden(*_args, **_kwargs):
@@ -134,4 +153,5 @@ def test_run_is_offline_and_scans_spell_table_once(monkeypatch, tmp_path, csv_di
 
     count = main.run(csv_dir=csv_dir, output_dir=str(tmp_path), condition_map_file=condition_map_file)
     assert count == 40
-    assert len(opened) == 1, f"SpellName 表被打开了 {len(opened)} 次：{opened}"
+    for table, paths in opened.items():
+        assert len(paths) == 1, f"{table} 表被打开了 {len(paths)} 次：{paths}"

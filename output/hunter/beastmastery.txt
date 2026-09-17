@@ -1,13 +1,13 @@
 Beast Mastery
-0: Spell: 狂野怒火[id:19574]
-    if talent '狂野怒火[id:19574]' is taken
-    if player has resources to cast spell '狂野怒火[id:19574]'
-    if spell '狂野怒火[id:19574]' is off cooldown
-1: Spell: 狂野鞭笞[id:1264359]
-    if talent '狂野鞭笞[id:1264359]' is taken
-    if player has resources to cast spell '狂野鞭笞[id:1264359]'
-    if spell '狂野鞭笞[id:1264359]' is off cooldown
-    if spell '狂野鞭笞[id:1264359]' is within allowed range
+0: Spell: 狂野怒火[id:19574,cd:90]
+    if talent '狂野怒火[id:19574,cd:90]' is taken
+    if player has resources to cast spell '狂野怒火[id:19574,cd:90]'
+    if spell '狂野怒火[id:19574,cd:90]' is off cooldown
+1: Spell: 狂野鞭笞[id:1264359,cd:8]
+    if talent '狂野鞭笞[id:1264359,cd:8]' is taken
+    if player has resources to cast spell '狂野鞭笞[id:1264359,cd:8]'
+    if spell '狂野鞭笞[id:1264359,cd:8]' is off cooldown
+    if spell '狂野鞭笞[id:1264359,cd:8]' is within allowed range
     if player has buff/debuff '野兽顺劈[id:268877]' with at least 2000 ms left
     if there are more than 3 targets within 10 yards of target
 2: Spell: 杀戮命令[id:34026]
@@ -29,11 +29,11 @@ Beast Mastery
     if player has resources to cast spell '黑蚀箭[id:466930]'
     if spell '黑蚀箭[id:466930]' is off cooldown
     if spell '黑蚀箭[id:466930]' is within allowed range
-6: Spell: 狂野鞭笞[id:1264359]
-    if talent '狂野鞭笞[id:1264359]' is taken
-    if player has resources to cast spell '狂野鞭笞[id:1264359]'
-    if spell '狂野鞭笞[id:1264359]' is off cooldown
-    if spell '狂野鞭笞[id:1264359]' is within allowed range
+6: Spell: 狂野鞭笞[id:1264359,cd:8]
+    if talent '狂野鞭笞[id:1264359,cd:8]' is taken
+    if player has resources to cast spell '狂野鞭笞[id:1264359,cd:8]'
+    if spell '狂野鞭笞[id:1264359,cd:8]' is off cooldown
+    if spell '狂野鞭笞[id:1264359,cd:8]' is within allowed range
     if there are more than 3 targets within 10 yards of target
     if player does not have buff/debuff '野兽顺劈[id:268877]'
 7: Spell: 召唤宠物 1[id:883]

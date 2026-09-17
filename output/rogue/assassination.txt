@@ -1,10 +1,10 @@
 Assassination
-0: Spell: 锁喉[id:703]
-    if target does not have buff/debuff '锁喉[id:703]'
-    if talent '锁喉[id:703]' is taken
-    if player has resources to cast spell '锁喉[id:703]'
-    if spell '锁喉[id:703]' is off cooldown
-    if spell '锁喉[id:703]' is within allowed range
+0: Spell: 锁喉[id:703,cd:6]
+    if target does not have buff/debuff '锁喉[id:703,cd:6]'
+    if talent '锁喉[id:703,cd:6]' is taken
+    if player has resources to cast spell '锁喉[id:703,cd:6]'
+    if spell '锁喉[id:703,cd:6]' is off cooldown
+    if spell '锁喉[id:703,cd:6]' is within allowed range
 1: Spell: 割裂[id:1943]
     if target does not have buff/debuff '割裂[id:1943]'
     if player has more than 5 combo points
@@ -13,12 +13,12 @@ Assassination
     if spell '割裂[id:1943]' is off cooldown
     if spell '割裂[id:1943]' is within allowed range
     if player does not have buff/debuff '至黑之夜[id:457280]'
-2: Spell: 君王之灾[id:385627]
-    if talent '君王之灾[id:385627]' is taken
-    if player has resources to cast spell '君王之灾[id:385627]'
-    if spell '君王之灾[id:385627]' is off cooldown
-    if spell '君王之灾[id:385627]' is within allowed range
-    if target has buff/debuff '锁喉[id:703]'
+2: Spell: 君王之灾[id:385627,cd:60]
+    if talent '君王之灾[id:385627,cd:60]' is taken
+    if player has resources to cast spell '君王之灾[id:385627,cd:60]'
+    if spell '君王之灾[id:385627,cd:60]' is off cooldown
+    if spell '君王之灾[id:385627,cd:60]' is within allowed range
+    if target has buff/debuff '锁喉[id:703,cd:6]'
     if target has buff/debuff '割裂[id:1943]'
     if player has buff/debuff '无赦[id:1265387]'
     if player has less than 1 combo points
@@ -50,7 +50,7 @@ Assassination
     if player has resources to cast spell '剧毒之刃[id:185565]'
     if spell '剧毒之刃[id:185565]' is off cooldown
     if spell '剧毒之刃[id:185565]' is within allowed range
-    if player does not have buff/debuff '潜行[id:1784]'
+    if player does not have buff/debuff '潜行[id:1784,cd:2]'
     if player does not have buff/debuff '消失[id:11327]'
     if player has more than 70 energy
     if target is more than 15 yards away
@@ -110,14 +110,14 @@ Assassination
     if player has resources to cast spell '伏击[id:8676]'
     if spell '伏击[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:1784]'
+    if player has buff/debuff '潜行[id:1784,cd:2]'
     if player does not have buff/debuff '强化锁喉[id:381632]'
 16: Spell: 伏击[id:8676]
     if talent '伏击[id:8676]' is taken
     if player has resources to cast spell '伏击[id:8676]'
     if spell '伏击[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:115191]'
+    if player has buff/debuff '潜行[id:115191,cd:2]'
     if player does not have buff/debuff '强化锁喉[id:381632]'
 17: Spell: 伏击[id:8676]
     if talent '伏击[id:8676]' is taken
@@ -126,22 +126,22 @@ Assassination
     if target is less than 40 yards away
     if player has buff/debuff '消失[id:11327]'
     if player does not have buff/debuff '强化锁喉[id:381632]'
-18: Spell: 锁喉[id:703]
-    if talent '锁喉[id:703]' is taken
-    if player has resources to cast spell '锁喉[id:703]'
-    if spell '锁喉[id:703]' is off cooldown
+18: Spell: 锁喉[id:703,cd:6]
+    if talent '锁喉[id:703,cd:6]' is taken
+    if player has resources to cast spell '锁喉[id:703,cd:6]'
+    if spell '锁喉[id:703,cd:6]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:1784]'
-19: Spell: 锁喉[id:703]
-    if talent '锁喉[id:703]' is taken
-    if player has resources to cast spell '锁喉[id:703]'
-    if spell '锁喉[id:703]' is off cooldown
+    if player has buff/debuff '潜行[id:1784,cd:2]'
+19: Spell: 锁喉[id:703,cd:6]
+    if talent '锁喉[id:703,cd:6]' is taken
+    if player has resources to cast spell '锁喉[id:703,cd:6]'
+    if spell '锁喉[id:703,cd:6]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:115191]'
-20: Spell: 锁喉[id:703]
-    if talent '锁喉[id:703]' is taken
-    if player has resources to cast spell '锁喉[id:703]'
-    if spell '锁喉[id:703]' is off cooldown
+    if player has buff/debuff '潜行[id:115191,cd:2]'
+20: Spell: 锁喉[id:703,cd:6]
+    if talent '锁喉[id:703,cd:6]' is taken
+    if player has resources to cast spell '锁喉[id:703,cd:6]'
+    if spell '锁喉[id:703,cd:6]' is off cooldown
     if target is less than 40 yards away
     if player has buff/debuff '消失[id:11327]'
 21: Spell: 萎缩药膏[id:381637]
@@ -205,28 +205,28 @@ Assassination
     if spell '减速药膏[id:3408]' is off cooldown
     if player has buff/debuff '龙淬之锋[id:381801]'
     if player does not have buff/debuff '减速药膏[id:3408]'
-30: Spell: 死亡印记[id:360194]
-    if talent '死亡印记[id:360194]' is taken
-    if player has resources to cast spell '死亡印记[id:360194]'
-    if spell '死亡印记[id:360194]' is off cooldown
-    if target has buff/debuff '锁喉[id:703]'
+30: Spell: 死亡印记[id:360194,cd:120]
+    if talent '死亡印记[id:360194,cd:120]' is taken
+    if player has resources to cast spell '死亡印记[id:360194,cd:120]'
+    if spell '死亡印记[id:360194,cd:120]' is off cooldown
+    if target has buff/debuff '锁喉[id:703,cd:6]'
     if target has buff/debuff '割裂[id:1943]'
     automation only (not part of the game's Assisted Combat rotation)
-    if spell '死亡印记[id:360194]' is within allowed range
-31: Spell: 君王之灾[id:385627]
+    if spell '死亡印记[id:360194,cd:120]' is within allowed range
+31: Spell: 君王之灾[id:385627,cd:60]
     if target has buff/debuff '割裂[id:1943]'
-    if target has buff/debuff '锁喉[id:703]'
-    if spell '君王之灾[id:385627]' is within allowed range
-    if spell '君王之灾[id:385627]' is off cooldown
-    if player has resources to cast spell '君王之灾[id:385627]'
-    if talent '君王之灾[id:385627]' is taken
+    if target has buff/debuff '锁喉[id:703,cd:6]'
+    if spell '君王之灾[id:385627,cd:60]' is within allowed range
+    if spell '君王之灾[id:385627,cd:60]' is off cooldown
+    if player has resources to cast spell '君王之灾[id:385627,cd:60]'
+    if talent '君王之灾[id:385627,cd:60]' is taken
     if player does not have buff/debuff '无赦[id:1265387]'
 32: Spell: 猩红风暴[id:1247227]
     if spell '猩红风暴[id:1247227]' is off cooldown
     if player has resources to cast spell '猩红风暴[id:1247227]'
     if talent '猩红风暴[id:1247227]' is taken
     if there are more than 7 targets within 10 yards of player
-    if there are less than 5 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
+    if there are less than 5 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
 33: Spell: 猩红风暴[id:1247227]
@@ -234,7 +234,7 @@ Assassination
     if player has resources to cast spell '猩红风暴[id:1247227]'
     if talent '猩红风暴[id:1247227]' is taken
     if there are more than 5 targets within 10 yards of player
-    if there are less than 3 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
+    if there are less than 3 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
 34: Spell: 猩红风暴[id:1247227]
@@ -242,6 +242,6 @@ Assassination
     if player has resources to cast spell '猩红风暴[id:1247227]'
     if talent '猩红风暴[id:1247227]' is taken
     if there are more than 3 targets within 10 yards of player
-    if there are less than 1 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
+    if there are less than 1 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703

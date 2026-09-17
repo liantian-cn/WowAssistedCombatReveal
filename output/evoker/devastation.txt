@@ -6,11 +6,11 @@ Devastation
     if spell '火焰吐息[id:357208]' can be successfully cast
     if player has buff/debuff '吞噬烈焰[id:444088]'
     if target does not have buff/debuff '火焰吐息[id:357209]'
-1: Spell: 永恒之涌[id:359073]
-    if talent '永恒之涌[id:359073]' is taken
-    if player has resources to cast spell '永恒之涌[id:359073]'
-    if spell '永恒之涌[id:359073]' is off cooldown
-    if spell '永恒之涌[id:359073]' can be successfully cast
+1: Spell: 永恒之涌[id:359073,cd:30]
+    if talent '永恒之涌[id:359073,cd:30]' is taken
+    if player has resources to cast spell '永恒之涌[id:359073,cd:30]'
+    if spell '永恒之涌[id:359073,cd:30]' is off cooldown
+    if spell '永恒之涌[id:359073,cd:30]' can be successfully cast
 2: Spell: 裂解[id:356995]
     if talent '裂解[id:356995]' is taken
     if player has resources to cast spell '裂解[id:356995]'
@@ -55,10 +55,10 @@ Devastation
     if player has resources to cast spell '碧蓝打击[id:362969]'
     if spell '碧蓝打击[id:362969]' is off cooldown
     if player has buff/debuff '碧蓝横扫[id:1265871]'
-11: Spell: 狂龙之怒[id:375087]
-    if talent '狂龙之怒[id:375087]' is taken
-    if player has resources to cast spell '狂龙之怒[id:375087]'
-    if spell '狂龙之怒[id:375087]' is off cooldown
+11: Spell: 狂龙之怒[id:375087,cd:120]
+    if talent '狂龙之怒[id:375087,cd:120]' is taken
+    if player has resources to cast spell '狂龙之怒[id:375087,cd:120]'
+    if spell '狂龙之怒[id:375087,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
 12: Spell: 深呼吸[id:357210]
     if talent '深呼吸[id:357210]' is taken
@@ -67,20 +67,20 @@ Devastation
     if player does not have buff/debuff '回归[id:371807]'
     if target is less than 40 yards away
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: 扭转天平[id:370553]
-    if talent '扭转天平[id:370553]' is taken
-    if player has resources to cast spell '扭转天平[id:370553]'
-    if spell '扭转天平[id:370553]' is off cooldown
-    if spell '扭转天平[id:370553]' is off cooldown
+13: Spell: 扭转天平[id:370553,cd:120]
+    if talent '扭转天平[id:370553,cd:120]' is taken
+    if player has resources to cast spell '扭转天平[id:370553,cd:120]'
+    if spell '扭转天平[id:370553,cd:120]' is off cooldown
+    if spell '扭转天平[id:370553,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: 青铜龙的祝福[id:364342]
-    if talent '青铜龙的祝福[id:364342]' is taken
-    if player has resources to cast spell '青铜龙的祝福[id:364342]'
-    if spell '青铜龙的祝福[id:364342]' is off cooldown
+14: Spell: 青铜龙的祝福[id:364342,cd:15]
+    if talent '青铜龙的祝福[id:364342,cd:15]' is taken
+    if player has resources to cast spell '青铜龙的祝福[id:364342,cd:15]'
+    if spell '青铜龙的祝福[id:364342,cd:15]' is off cooldown
     if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'
-15: Spell: 狂龙之怒[id:375087]
-    if talent '狂龙之怒[id:375087]' is taken
-    if player has resources to cast spell '狂龙之怒[id:375087]'
-    if spell '狂龙之怒[id:375087]' is off cooldown
+15: Spell: 狂龙之怒[id:375087,cd:120]
+    if talent '狂龙之怒[id:375087,cd:120]' is taken
+    if player has resources to cast spell '狂龙之怒[id:375087,cd:120]'
+    if spell '狂龙之怒[id:375087,cd:120]' is off cooldown
     if player has buff/debuff '释缚烈焰[id:1292323]'
     if player has less than 1 stacks of buff/debuff '精华迸发[id:359618]'

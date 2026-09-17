@@ -6,14 +6,14 @@ Shadow
     if there are more than 3 targets within 8 yards of target
 1: Spell: 暗影形态[id:232698]
     if player does not have buff/debuff '暗影形态[id:232698]'
-    if player does not have buff/debuff '虚空形态[id:194249]'
+    if player does not have buff/debuff '虚空形态[id:194249,cd:120]'
     if talent '暗影形态[id:232698]' is taken
     if player has resources to cast spell '暗影形态[id:232698]'
     if spell '暗影形态[id:232698]' is off cooldown
-2: Spell: 光晕[id:120644]
-    if talent '光晕[id:120644]' is taken
-    if player has resources to cast spell '光晕[id:120644]'
-    if spell '光晕[id:120644]' is off cooldown
+2: Spell: 光晕[id:120644,cd:60]
+    if talent '光晕[id:120644,cd:60]' is taken
+    if player has resources to cast spell '光晕[id:120644,cd:60]'
+    if spell '光晕[id:120644,cd:60]' is off cooldown
 3: Spell: 暗言术：癫[id:335467]
     if talent '暗言术：癫[id:335467]' is taken
     if player has resources to cast spell '暗言术：癫[id:335467]'
@@ -43,10 +43,10 @@ Shadow
     if player has resources to cast spell '心灵震爆[id:8092]'
     if spell '心灵震爆[id:8092]' is off cooldown
     if player has buff/debuff '虚空冲击[id:450404]'
-8: Spell: 虚空洪流[id:263165]
-    if talent '虚空洪流[id:263165]' is taken
-    if player has resources to cast spell '虚空洪流[id:263165]'
-    if spell '虚空洪流[id:263165]' is off cooldown
+8: Spell: 虚空洪流[id:263165,cd:30]
+    if talent '虚空洪流[id:263165,cd:30]' is taken
+    if player has resources to cast spell '虚空洪流[id:263165,cd:30]'
+    if spell '虚空洪流[id:263165,cd:30]' is off cooldown
 9: Spell: 暗言术：癫[id:335467]
     if talent '暗言术：癫[id:335467]' is taken
     if player has resources to cast spell '暗言术：癫[id:335467]'
@@ -73,11 +73,11 @@ Shadow
     if player has resources to cast spell '精神鞭笞[id:15407]'
     if spell '精神鞭笞[id:15407]' is off cooldown
     if spell '精神鞭笞[id:15407]' can be successfully cast
-14: Spell: 虚空形态[id:228260]
-    if player has resources to cast spell '虚空形态[id:228260]'
-    if spell '虚空形态[id:228260]' is off cooldown
-    if talent '虚空形态[id:228260]' is taken
-    if player has buff/debuff '虚空形态[id:194249]'
+14: Spell: 虚空形态[id:228260,cd:120]
+    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
+    if spell '虚空形态[id:228260,cd:120]' is off cooldown
+    if talent '虚空形态[id:228260,cd:120]' is taken
+    if player has buff/debuff '虚空形态[id:194249,cd:120]'
 15: Spell: 心灵震爆[id:8092]
 16: Spell: 暗言术：癫[id:335467]
     if talent '暗言术：癫[id:335467]' is taken
@@ -97,13 +97,13 @@ Shadow
     if spell '心灵震爆[id:8092]' is off cooldown
     if player has buff/debuff '虚空冲击[id:450405]'
     if player has more than 2 charges of spell '心灵震爆[id:8092]'
-    if cooldown on spell '虚空洪流[id:263165]' is less than 5000 ms
+    if cooldown on spell '虚空洪流[id:263165,cd:30]' is less than 5000 ms
 19: Spell: 心灵震爆[id:8092]
     if talent '心灵震爆[id:8092]' is taken
     if player has resources to cast spell '心灵震爆[id:8092]'
     if spell '心灵震爆[id:8092]' is off cooldown
     if player has buff/debuff '虚空冲击[id:450405]'
-    if cooldown on spell '虚空洪流[id:263165]' is more than 5000 ms
+    if cooldown on spell '虚空洪流[id:263165,cd:30]' is more than 5000 ms
 20: Spell: 暗言术：癫[id:335467]
     if talent '暗言术：癫[id:335467]' is taken
     if player has resources to cast spell '暗言术：癫[id:335467]'
@@ -122,27 +122,27 @@ Shadow
     if there are less than 2 targets within 8 yards of target
     if target does not have buff/debuff '吸血鬼之触[id:34914]'
     if player does not have buff/debuff '触须猛击[id:1243723]'
-23: Spell: 虚空形态[id:228260]
-    if talent '虚空形态[id:228260]' is taken
-    if player has resources to cast spell '虚空形态[id:228260]'
-    if spell '虚空形态[id:228260]' is off cooldown
+23: Spell: 虚空形态[id:228260,cd:120]
+    if talent '虚空形态[id:228260,cd:120]' is taken
+    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
+    if spell '虚空形态[id:228260,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player does not have buff/debuff '虚空形态[id:194249]'
-24: Spell: 能量灌注[id:10060]
-    if talent '能量灌注[id:10060]' is taken
-    if player has resources to cast spell '能量灌注[id:10060]'
-    if spell '能量灌注[id:10060]' is off cooldown
+    if player does not have buff/debuff '虚空形态[id:194249,cd:120]'
+24: Spell: 能量灌注[id:10060,cd:120]
+    if talent '能量灌注[id:10060,cd:120]' is taken
+    if player has resources to cast spell '能量灌注[id:10060,cd:120]'
+    if spell '能量灌注[id:10060,cd:120]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if player has buff/debuff '虚空形态[id:194249]'
+    if player has buff/debuff '虚空形态[id:194249,cd:120]'
 25: Spell: 真言术：韧[id:21562]
     if talent '真言术：韧[id:21562]' is taken
     if player has resources to cast spell '真言术：韧[id:21562]'
     if spell '真言术：韧[id:21562]' is off cooldown
     if player has buff/debuff '真言术：韧高亮[id:1271911]'
-26: Spell: 虚空形态[id:228260]
-    if player has resources to cast spell '虚空形态[id:228260]'
-    if spell '虚空形态[id:228260]' is off cooldown
-    if talent '虚空形态[id:228260]' is taken
+26: Spell: 虚空形态[id:228260,cd:120]
+    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
+    if spell '虚空形态[id:228260,cd:120]' is off cooldown
+    if talent '虚空形态[id:228260,cd:120]' is taken
     if player has buff/debuff '碾压虚空[id:1279437]'
 27: Spell: 触须猛击[id:1227280]
     if player has resources to cast spell '触须猛击[id:1227280]'

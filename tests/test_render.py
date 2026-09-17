@@ -61,11 +61,14 @@ def test_missing_spell_argument_uses_placeholder(condition_map, plan_steps, spel
 
 
 def test_spell_argument_resolved_to_name(condition_map, plan_steps, spell_index):
-    """Spell 型参数解析为带单引号、带 ID 标签的技能名（规则 32，类型 15 的参数 703 = Garrote）。"""
+    """Spell 型参数解析为带单引号、带 ID 标签的技能名（规则 32，类型 15 的参数 703 = 锁喉）。
+
+    锁喉冷却 6000ms，因此标签里还有 cd:6。
+    """
     index, _ = spell_index
     step, rule = find_rule(plan_steps, rule_id=32)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert line == "    if target does not have buff/debuff 'Garrote[id:703]'"
+    assert line == "    if target does not have buff/debuff '锁喉[id:703,cd:6]'"
 
 
 def test_unknown_condition_type_raises(condition_map, spell_index):
@@ -83,7 +86,7 @@ def test_unknown_condition_type_raises(condition_map, spell_index):
 
 
 def test_rotation_numbering_starts_at_zero(condition_map, plan_steps, spell_index):
-    """步骤编号从 0 连续，标题行带 ID 标签，条件行 4 空格缩进。"""
+    """步骤编号从 0 连续，标题行带 ID 标签（冷却 > 1 秒时还有 cd），条件行 4 空格缩进。"""
     index, _ = spell_index
     body = render.render_rotation(condition_map, plan_steps[:3], index)
     lines = body.splitlines()
@@ -91,7 +94,7 @@ def test_rotation_numbering_starts_at_zero(condition_map, plan_steps, spell_inde
     assert numbers == [0, 1, 2]
     for line in lines:
         if ": Spell: " in line:
-            assert re.match(r"^\d+: Spell: .+\[id:\d+\]$", line), line
+            assert re.match(r"^\d+: Spell: .+\[id:\d+(,cd:\d+)?\]$", line), line
         else:
             assert line.startswith("    ") and len(line) > 4
 
@@ -99,7 +102,7 @@ def test_rotation_numbering_starts_at_zero(condition_map, plan_steps, spell_inde
 def test_title_and_condition_share_same_label(condition_map, spell_index):
     """同一步骤的标题行与 {spell} 条件行取自同一个 ID：名称与标签完全一致。
 
-    标题行不加引号、条件行带单引号（引号规则未变）。
+    标题行不加引号、条件行带单引号（引号规则未变）；瞄准射击无冷却，因此都不带 cd。
     """
     index, _ = spell_index
     step = {
@@ -113,4 +116,4 @@ def test_title_and_condition_share_same_label(condition_map, spell_index):
         },
     }
     body = render.render_rotation(condition_map, [step], index)
-    assert body == "0: Spell: Aimed Shot[id:19434]\n    if talent 'Aimed Shot[id:19434]' is taken"
+    assert body == "0: Spell: 瞄准射击[id:19434]\n    if talent '瞄准射击[id:19434]' is taken"

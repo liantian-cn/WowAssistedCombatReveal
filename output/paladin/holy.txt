@@ -1,8 +1,8 @@
 Holy
-0: Spell: 奉献[id:26573]
-    if talent '奉献[id:26573]' is taken
-    if player has resources to cast spell '奉献[id:26573]'
-    if spell '奉献[id:26573]' is off cooldown
+0: Spell: 奉献[id:26573,cd:9]
+    if talent '奉献[id:26573,cd:9]' is taken
+    if player has resources to cast spell '奉献[id:26573,cd:9]'
+    if spell '奉献[id:26573,cd:9]' is off cooldown
     if there are more than 8 targets within 10 yards of player
 1: Spell: 审判[id:275773]
     if talent '审判[id:275773]' is taken
@@ -17,26 +17,26 @@ Holy
     if talent '愤怒之锤[id:24275]' is taken
     if player has resources to cast spell '愤怒之锤[id:24275]'
     if spell '愤怒之锤[id:24275]' is off cooldown
-    if player has buff/debuff '复仇之怒[id:31884]'
+    if player has buff/debuff '复仇之怒[id:31884,cd:120]'
 4: Spell: 愤怒之锤[id:24275]
     if talent '愤怒之锤[id:24275]' is taken
     if player has resources to cast spell '愤怒之锤[id:24275]'
     if spell '愤怒之锤[id:24275]' is off cooldown
-    if player has buff/debuff '复仇十字军[id:216331]'
-5: Spell: 复仇十字军[id:216331]
-    if player has buff/debuff '复仇十字军[id:216331]'
-    if player has resources to cast spell '复仇十字军[id:216331]'
-    if spell '复仇十字军[id:216331]' is off cooldown
-    if spell '复仇十字军[id:216331]' is within allowed range
+    if player has buff/debuff '复仇十字军[id:216331,cd:60]'
+5: Spell: 复仇十字军[id:216331,cd:60]
+    if player has buff/debuff '复仇十字军[id:216331,cd:60]'
+    if player has resources to cast spell '复仇十字军[id:216331,cd:60]'
+    if spell '复仇十字军[id:216331,cd:60]' is off cooldown
+    if spell '复仇十字军[id:216331,cd:60]' is within allowed range
 6: Spell: 愤怒之锤[id:24275]
     if talent '愤怒之锤[id:24275]' is taken
     if player has resources to cast spell '愤怒之锤[id:24275]'
     if spell '愤怒之锤[id:24275]' is off cooldown
     if target has less than 20% health
-7: Spell: 奉献[id:26573]
-    if talent '奉献[id:26573]' is taken
-    if player has resources to cast spell '奉献[id:26573]'
-    if spell '奉献[id:26573]' is off cooldown
+7: Spell: 奉献[id:26573,cd:9]
+    if talent '奉献[id:26573,cd:9]' is taken
+    if player has resources to cast spell '奉献[id:26573,cd:9]'
+    if spell '奉献[id:26573,cd:9]' is off cooldown
     if target is less than 8 yards away
     if player does not have buff/debuff '公正审判[id:414113]'
 8: Spell: 审判[id:275773]
