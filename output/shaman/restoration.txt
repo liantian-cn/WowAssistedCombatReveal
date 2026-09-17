@@ -1,48 +1,48 @@
 Restoration
 0: Spell: 闪电链[id:188443]
-    if there are more than 3 targets within 10 yards of target
-    if talent '闪电链[id:188443]' is taken
-    if player has resources to cast spell '闪电链[id:188443]'
-    if spell '闪电链[id:188443]' is off cooldown
-    if spell '闪电链[id:188443]' can be successfully cast
+    若目标周围 10 码内的目标数量超过 3 个
+    若已点出天赋 '闪电链[id:188443]'
+    若玩家有足够资源施放技能 '闪电链[id:188443]'
+    若技能 '闪电链[id:188443]' 不在冷却中
+    若技能 '闪电链[id:188443]' 可以成功施放
 1: Spell: 烈焰震击[id:470411,cd:6]
-    if target does not have buff/debuff '烈焰震击[id:188389]'
-    if talent '烈焰震击[id:470411,cd:6]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
-    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
+    若目标没有增益/减益 '烈焰震击[id:188389]'
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
 2: Spell: 熔岩爆裂[id:51505]
-    if talent '熔岩爆裂[id:51505]' is taken
-    if player has resources to cast spell '熔岩爆裂[id:51505]'
-    if spell '熔岩爆裂[id:51505]' is off cooldown
+    若已点出天赋 '熔岩爆裂[id:51505]'
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中
 3: Spell: 闪电箭[id:188196]
-    if talent '闪电箭[id:188196]' is taken
-    if player has resources to cast spell '闪电箭[id:188196]'
-    if spell '闪电箭[id:188196]' is off cooldown
-    if spell '闪电箭[id:188196]' can be successfully cast
+    若已点出天赋 '闪电箭[id:188196]'
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'
+    若技能 '闪电箭[id:188196]' 不在冷却中
+    若技能 '闪电箭[id:188196]' 可以成功施放
 4: Spell: 熔岩爆裂[id:51505]
 5: Spell: 熔岩爆裂[id:51505]
-    if talent '熔岩爆裂[id:51505]' is taken
-    if player has resources to cast spell '熔岩爆裂[id:51505]'
-    if spell '熔岩爆裂[id:51505]' is off cooldown
-    if player has more than 2 charges of spell '熔岩爆裂[id:51505]'
-    if spell '熔岩爆裂[id:51505]' can be successfully cast
+    若已点出天赋 '熔岩爆裂[id:51505]'
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中
+    若技能 '熔岩爆裂[id:51505]' 的充能层数超过 2
+    若技能 '熔岩爆裂[id:51505]' 可以成功施放
 6: Spell: 水之护盾[id:52127]
-    if talent '水之护盾[id:52127]' is taken
-    if player has resources to cast spell '水之护盾[id:52127]'
-    if spell '水之护盾[id:52127]' is off cooldown
-    if player does not have buff/debuff '水之护盾[id:52127]'
+    若已点出天赋 '水之护盾[id:52127]'
+    若玩家有足够资源施放技能 '水之护盾[id:52127]'
+    若技能 '水之护盾[id:52127]' 不在冷却中
+    若玩家没有增益/减益 '水之护盾[id:52127]'
 7: Spell: 大地生命武器[id:382021]
-    if talent '大地生命武器[id:382021]' is taken
-    if player has resources to cast spell '大地生命武器[id:382021]'
-    if spell '大地生命武器[id:382021]' is off cooldown
-    if player does not have buff/debuff '大地生命武器[id:382022]'
+    若已点出天赋 '大地生命武器[id:382021]'
+    若玩家有足够资源施放技能 '大地生命武器[id:382021]'
+    若技能 '大地生命武器[id:382021]' 不在冷却中
+    若玩家没有增益/减益 '大地生命武器[id:382022]'
 8: Spell: 唤潮者的护卫[id:457481]
-    if talent '唤潮者的护卫[id:457481]' is taken
-    if player has resources to cast spell '唤潮者的护卫[id:457481]'
-    if spell '唤潮者的护卫[id:457481]' is off cooldown
-    if player does not have buff/debuff '唤潮者的护卫[id:457496]'
+    若已点出天赋 '唤潮者的护卫[id:457481]'
+    若玩家有足够资源施放技能 '唤潮者的护卫[id:457481]'
+    若技能 '唤潮者的护卫[id:457481]' 不在冷却中
+    若玩家没有增益/减益 '唤潮者的护卫[id:457496]'
 9: Spell: 天怒[id:462854]
-    if talent '天怒[id:462854]' is taken
-    if player has resources to cast spell '天怒[id:462854]'
-    if spell '天怒[id:462854]' is off cooldown
-    if player has buff/debuff '天怒高亮[id:1271904]'
+    若已点出天赋 '天怒[id:462854]'
+    若玩家有足够资源施放技能 '天怒[id:462854]'
+    若技能 '天怒[id:462854]' 不在冷却中
+    若玩家拥有增益/减益 '天怒高亮[id:1271904]'

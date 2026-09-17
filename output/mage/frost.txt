@@ -1,62 +1,62 @@
 Frost
 0: Spell: 暴风雪[id:190356,cd:12]
-    if talent '暴风雪[id:190356,cd:12]' is taken
-    if player has resources to cast spell '暴风雪[id:190356,cd:12]'
-    if spell '暴风雪[id:190356,cd:12]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '暴风雪[id:190356,cd:12]'
+    若玩家有足够资源施放技能 '暴风雪[id:190356,cd:12]'
+    若技能 '暴风雪[id:190356,cd:12]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
 1: Spell: 寒冰宝珠[id:84714,cd:60]
-    if talent '寒冰宝珠[id:84714,cd:60]' is taken
-    if player has resources to cast spell '寒冰宝珠[id:84714,cd:60]'
-    if spell '寒冰宝珠[id:84714,cd:60]' is off cooldown
+    若已点出天赋 '寒冰宝珠[id:84714,cd:60]'
+    若玩家有足够资源施放技能 '寒冰宝珠[id:84714,cd:60]'
+    若技能 '寒冰宝珠[id:84714,cd:60]' 不在冷却中
 2: Spell: 冰风暴[id:44614]
-    if talent '冰风暴[id:44614]' is taken
-    if player has resources to cast spell '冰风暴[id:44614]'
-    if spell '冰风暴[id:44614]' is off cooldown
+    若已点出天赋 '冰风暴[id:44614]'
+    若玩家有足够资源施放技能 '冰风暴[id:44614]'
+    若技能 '冰风暴[id:44614]' 不在冷却中
 3: Spell: 冰枪术[id:30455]
-    if talent '冰枪术[id:30455]' is taken
-    if player has resources to cast spell '冰枪术[id:30455]'
-    if spell '冰枪术[id:30455]' is off cooldown
-    if player has buff/debuff '寒冰指[id:44544]'
-    if target has buff/debuff '冻结[id:1221389]'
+    若已点出天赋 '冰枪术[id:30455]'
+    若玩家有足够资源施放技能 '冰枪术[id:30455]'
+    若技能 '冰枪术[id:30455]' 不在冷却中
+    若玩家拥有增益/减益 '寒冰指[id:44544]'
+    若目标拥有增益/减益 '冻结[id:1221389]'
 4: Spell: 冰枪术[id:30455]
-    if talent '冰枪术[id:30455]' is taken
-    if player has resources to cast spell '冰枪术[id:30455]'
-    if spell '冰枪术[id:30455]' is off cooldown
-    if target has more than 5 stacks of buff/debuff '冻结[id:1221389]'
+    若已点出天赋 '冰枪术[id:30455]'
+    若玩家有足够资源施放技能 '冰枪术[id:30455]'
+    若技能 '冰枪术[id:30455]' 不在冷却中
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数超过 5
 5: Spell: 寒冰箭[id:116]
-    if talent '寒冰箭[id:116]' is taken
-    if player has resources to cast spell '寒冰箭[id:116]'
-    if spell '寒冰箭[id:116]' is off cooldown
-    if spell '寒冰箭[id:116]' can be successfully cast
+    若已点出天赋 '寒冰箭[id:116]'
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'
+    若技能 '寒冰箭[id:116]' 不在冷却中
+    若技能 '寒冰箭[id:116]' 可以成功施放
 6: Spell: 寒冰箭[id:116]
-    if talent '寒冰箭[id:116]' is taken
-    if player has resources to cast spell '寒冰箭[id:116]'
-    if spell '寒冰箭[id:116]' is off cooldown
-    if player has buff/debuff '霜火增效[id:431177]'
+    若已点出天赋 '寒冰箭[id:116]'
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'
+    若技能 '寒冰箭[id:116]' 不在冷却中
+    若玩家拥有增益/减益 '霜火增效[id:431177]'
 7: Spell: 寒冰箭[id:116]
 8: Spell: 冰霜射线[id:205021]
-    if talent '冰霜射线[id:205021]' is taken
-    if player has resources to cast spell '冰霜射线[id:205021]'
-    if spell '冰霜射线[id:205021]' is off cooldown
-    if target has less than 5 stacks of buff/debuff '冻结[id:1221389]'
+    若已点出天赋 '冰霜射线[id:205021]'
+    若玩家有足够资源施放技能 '冰霜射线[id:205021]'
+    若技能 '冰霜射线[id:205021]' 不在冷却中
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数少于 5
 9: Spell: 冰霜射线[id:205021]
-    if player has buff/debuff '彗星风暴！[id:1247778]'
-    if player has resources to cast spell '冰霜射线[id:205021]'
-    if spell '冰霜射线[id:205021]' is off cooldown
+    若玩家拥有增益/减益 '彗星风暴！[id:1247778]'
+    若玩家有足够资源施放技能 '冰霜射线[id:205021]'
+    若技能 '冰霜射线[id:205021]' 不在冷却中
 10: Spell: 奥术智慧[id:1459]
-    if talent '奥术智慧[id:1459]' is taken
-    if player has resources to cast spell '奥术智慧[id:1459]'
-    if spell '奥术智慧[id:1459]' is off cooldown
-    if player has buff/debuff '奥术智慧高亮[id:1271907]'
+    若已点出天赋 '奥术智慧[id:1459]'
+    若玩家有足够资源施放技能 '奥术智慧[id:1459]'
+    若技能 '奥术智慧[id:1459]' 不在冷却中
+    若玩家拥有增益/减益 '奥术智慧高亮[id:1271907]'
 11: Spell: 寒冰箭[id:116]
-    if player has resources to cast spell '寒冰箭[id:116]'
-    if spell '寒冰箭[id:116]' is off cooldown
-    if player has buff/debuff '冰川尖刺！[id:1222865]'
-    if target has less than 16 stacks of buff/debuff '冻结[id:1221389]'
-    if talent '寒冰箭[id:116]' is taken
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'
+    若技能 '寒冰箭[id:116]' 不在冷却中
+    若玩家拥有增益/减益 '冰川尖刺！[id:1222865]'
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数少于 16
+    若已点出天赋 '寒冰箭[id:116]'
 12: Spell: 冰风暴[id:44614]
-    if spell '冰风暴[id:44614]' is off cooldown
-    if player has resources to cast spell '冰风暴[id:44614]'
-    if talent '冰风暴[id:44614]' is taken
-    if player has buff/debuff '冰冷智慧[id:190446]'
-    if target has less than 16 stacks of buff/debuff '冻结[id:1221389]'
+    若技能 '冰风暴[id:44614]' 不在冷却中
+    若玩家有足够资源施放技能 '冰风暴[id:44614]'
+    若已点出天赋 '冰风暴[id:44614]'
+    若玩家拥有增益/减益 '冰冷智慧[id:190446]'
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数少于 16

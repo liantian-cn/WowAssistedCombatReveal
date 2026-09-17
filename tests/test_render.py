@@ -6,7 +6,7 @@ import pytest
 
 from app import render
 
-AUTOMATION_ONLY_LINE = "    automation only (not part of the game's Assisted Combat rotation)"
+AUTOMATION_ONLY_LINE = "    仅自动化施放（不属于游戏的辅助战斗循环）"
 
 
 def find_rule(plan_steps, condition_type=None, rule_id=None):
@@ -26,12 +26,11 @@ def test_charge_rule_renders_number(condition_map, plan_steps, spell_index):
     index, _ = spell_index
     step, rule = find_rule(plan_steps, condition_type=63)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert line.startswith("    if player has more than 2 charges of spell '")
+    assert line == f"    若技能 '{index.labelled(step['SpellID'])}' 的充能层数超过 2"
     assert "'Spells'" not in line
     assert "Charge Count" not in line
     # 层数是数值参数，不带标签；技能名照常带
     assert "[id:2]" not in line
-    assert line.endswith(f"spell '{index.labelled(step['SpellID'])}'")
 
 
 def test_numeric_arguments_have_no_id_label(condition_map, plan_steps, spell_index):
@@ -39,7 +38,7 @@ def test_numeric_arguments_have_no_id_label(condition_map, plan_steps, spell_ind
     index, _ = spell_index
     step, rule = find_rule(plan_steps, condition_type=12)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert re.fullmatch(r"    if there are more than \d+ targets within \d+ yards of player", line)
+    assert re.fullmatch(r"    若玩家周围 \d+ 码内的目标数量超过 \d+ 个", line)
 
 
 def test_automation_only_rule_line(condition_map, plan_steps, spell_index):
@@ -56,7 +55,7 @@ def test_missing_spell_argument_uses_placeholder(condition_map, plan_steps, spel
     index, _ = spell_index
     step, rule = find_rule(plan_steps, rule_id=4828)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert line == "    if target has buff/debuff 'Unknown Spell[id:194310]'"
+    assert line == "    若目标拥有增益/减益 'Unknown Spell[id:194310]'"
     assert "Unknown Spell (" not in line
 
 
@@ -68,7 +67,7 @@ def test_spell_argument_resolved_to_name(condition_map, plan_steps, spell_index)
     index, _ = spell_index
     step, rule = find_rule(plan_steps, rule_id=32)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert line == "    if target does not have buff/debuff '锁喉[id:703,cd:6]'"
+    assert line == "    若目标没有增益/减益 '锁喉[id:703,cd:6]'"
 
 
 def test_unknown_condition_type_raises(condition_map, spell_index):
@@ -116,4 +115,4 @@ def test_title_and_condition_share_same_label(condition_map, spell_index):
         },
     }
     body = render.render_rotation(condition_map, [step], index)
-    assert body == "0: Spell: 瞄准射击[id:19434]\n    if talent '瞄准射击[id:19434]' is taken"
+    assert body == "0: Spell: 瞄准射击[id:19434]\n    若已点出天赋 '瞄准射击[id:19434]'"

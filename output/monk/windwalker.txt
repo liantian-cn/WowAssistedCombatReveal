@@ -1,126 +1,126 @@
 Windwalker
 0: Spell: 风领主之击[id:392983,cd:35]
-    if spell '风领主之击[id:392983,cd:35]' is within allowed range
-    if spell '风领主之击[id:392983,cd:35]' is off cooldown
-    if player has resources to cast spell '风领主之击[id:392983,cd:35]'
-    if talent '风领主之击[id:392983,cd:35]' is taken
-    if player does not have buff/debuff '青龙之心[id:443421]'
-    if player does not have buff/debuff '青龙之心[id:443616]'
-    if player does not have buff/debuff '组合拳：风领主之击[id:1249766]'
+    若技能 '风领主之击[id:392983,cd:35]' 在射程内
+    若技能 '风领主之击[id:392983,cd:35]' 不在冷却中
+    若玩家有足够资源施放技能 '风领主之击[id:392983,cd:35]'
+    若已点出天赋 '风领主之击[id:392983,cd:35]'
+    若玩家没有增益/减益 '青龙之心[id:443421]'
+    若玩家没有增益/减益 '青龙之心[id:443616]'
+    若玩家没有增益/减益 '组合拳：风领主之击[id:1249766]'
 1: Spell: 神鹤引项踢[id:101546]
-    if player has more than 2 stacks of buff/debuff '赤精之舞[id:325202]'
-    if spell '神鹤引项踢[id:101546]' is off cooldown
-    if player has resources to cast spell '神鹤引项踢[id:101546]'
-    if talent '神鹤引项踢[id:101546]' is taken
-    if spell '神鹤引项踢[id:101546]' can be successfully cast
-    if player does not have buff/debuff '组合拳：神鹤引项踢[id:1249754]'
+    若玩家身上增益/减益 '赤精之舞[id:325202]' 的层数超过 2
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
+    若已点出天赋 '神鹤引项踢[id:101546]'
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放
+    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'
 2: Spell: 碎玉闪电[id:117952]
-    if spell '碎玉闪电[id:117952]' is within allowed range
-    if spell '碎玉闪电[id:117952]' is off cooldown
-    if player has resources to cast spell '碎玉闪电[id:117952]'
-    if talent '碎玉闪电[id:117952]' is taken
-    if player has more than 20 stacks of buff/debuff '皇帝的容电器[id:393039]'
-    if player does not have buff/debuff '组合拳：碎玉闪电[id:1249764]'
+    若技能 '碎玉闪电[id:117952]' 在射程内
+    若技能 '碎玉闪电[id:117952]' 不在冷却中
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
+    若已点出天赋 '碎玉闪电[id:117952]'
+    若玩家身上增益/减益 '皇帝的容电器[id:393039]' 的层数超过 20
+    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'
 3: Spell: 怒雷破[id:113656,cd:24]
-    if spell '怒雷破[id:113656,cd:24]' is off cooldown
-    if player has resources to cast spell '怒雷破[id:113656,cd:24]'
-    if talent '怒雷破[id:113656,cd:24]' is taken
-    if target is less than 8 yards away
-    if player does not have buff/debuff '组合拳：怒雷破[id:1249758]'
+    若技能 '怒雷破[id:113656,cd:24]' 不在冷却中
+    若玩家有足够资源施放技能 '怒雷破[id:113656,cd:24]'
+    若已点出天赋 '怒雷破[id:113656,cd:24]'
+    若目标距离小于 8 码
+    若玩家没有增益/减益 '组合拳：怒雷破[id:1249758]'
 4: Spell: 旭日东升踢[id:107428]
-    if spell '旭日东升踢[id:107428]' is within allowed range
-    if spell '旭日东升踢[id:107428]' is off cooldown
-    if player has resources to cast spell '旭日东升踢[id:107428]'
-    if talent '旭日东升踢[id:107428]' is taken
-    if player does not have buff/debuff '组合拳：旭日东升踢[id:1249753]'
+    若技能 '旭日东升踢[id:107428]' 在射程内
+    若技能 '旭日东升踢[id:107428]' 不在冷却中
+    若玩家有足够资源施放技能 '旭日东升踢[id:107428]'
+    若已点出天赋 '旭日东升踢[id:107428]'
+    若玩家没有增益/减益 '组合拳：旭日东升踢[id:1249753]'
 5: Spell: 升龙霸[id:152175,cd:35]
-    if target is less than 5 yards away
-    if spell '升龙霸[id:152175,cd:35]' is off cooldown
-    if player has resources to cast spell '升龙霸[id:152175,cd:35]'
-    if player does not have buff/debuff '青龙之心[id:443421]'
-    if talent '升龙霸[id:152175,cd:35]' is taken
-    if player does not have buff/debuff '组合拳：升龙霸[id:1249765]'
+    若目标距离小于 5 码
+    若技能 '升龙霸[id:152175,cd:35]' 不在冷却中
+    若玩家有足够资源施放技能 '升龙霸[id:152175,cd:35]'
+    若玩家没有增益/减益 '青龙之心[id:443421]'
+    若已点出天赋 '升龙霸[id:152175,cd:35]'
+    若玩家没有增益/减益 '组合拳：升龙霸[id:1249765]'
 6: Spell: 幻灭踢[id:100784,cd:3]
-    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
-    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
-    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
-    if talent '幻灭踢[id:100784,cd:3]' is taken
-    if player has buff/debuff '幻灭踢！[id:116768]'
-    if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
+    若技能 '幻灭踢[id:100784,cd:3]' 在射程内
+    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中
+    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'
+    若已点出天赋 '幻灭踢[id:100784,cd:3]'
+    若玩家拥有增益/减益 '幻灭踢！[id:116768]'
+    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'
 7: Spell: 神鹤引项踢[id:101546]
-    if spell '神鹤引项踢[id:101546]' is off cooldown
-    if player has resources to cast spell '神鹤引项踢[id:101546]'
-    if there are more than 3 targets within 9 yards of player
-    if talent '神鹤引项踢[id:101546]' is taken
-    if spell '神鹤引项踢[id:101546]' can be successfully cast
-    if player does not have buff/debuff '组合拳：神鹤引项踢[id:1249754]'
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
+    若玩家周围 9 码内的目标数量超过 3 个
+    若已点出天赋 '神鹤引项踢[id:101546]'
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放
+    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'
 8: Spell: 真气爆裂[id:461404]
-    if spell '真气爆裂[id:461404]' is off cooldown
-    if player has resources to cast spell '真气爆裂[id:461404]'
-    if talent '真气爆裂[id:461404]' is taken
+    若技能 '真气爆裂[id:461404]' 不在冷却中
+    若玩家有足够资源施放技能 '真气爆裂[id:461404]'
+    若已点出天赋 '真气爆裂[id:461404]'
 9: Spell: 幻灭踢[id:100784,cd:3]
-    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
-    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
-    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
-    if talent '幻灭踢[id:100784,cd:3]' is taken
-    if there are less than 2 targets within 9 yards of player
-    if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
+    若技能 '幻灭踢[id:100784,cd:3]' 在射程内
+    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中
+    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'
+    若已点出天赋 '幻灭踢[id:100784,cd:3]'
+    若玩家周围 9 码内的目标数量少于 2 个
+    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'
 10: Spell: 猛虎掌[id:100780]
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if talent '猛虎掌[id:100780]' is taken
-    if spell '猛虎掌[id:100780]' is within allowed range
-    if player does not have buff/debuff '组合拳：猛虎掌[id:1249756]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若已点出天赋 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 在射程内
+    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'
 11: Spell: 碎玉闪电[id:117952]
-    if spell '碎玉闪电[id:117952]' is off cooldown
-    if player has resources to cast spell '碎玉闪电[id:117952]'
-    if talent '碎玉闪电[id:117952]' is taken
-    if player has more than 75 energy
-    if spell '碎玉闪电[id:117952]' can be successfully cast
-    if target is more than 15 yards away
-    if player does not have buff/debuff '组合拳：碎玉闪电[id:1249764]'
+    若技能 '碎玉闪电[id:117952]' 不在冷却中
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
+    若已点出天赋 '碎玉闪电[id:117952]'
+    若玩家能量高于 75
+    若技能 '碎玉闪电[id:117952]' 可以成功施放
+    若目标距离大于 15 码
+    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'
 12: Spell: 碧火踏[id:388193]
-    if target is less than 20 yards away
-    if spell '碧火踏[id:388193]' is off cooldown
-    if player has resources to cast spell '碧火踏[id:388193]'
-    if talent '碧火踏[id:388193]' is taken
+    若目标距离小于 20 码
+    若技能 '碧火踏[id:388193]' 不在冷却中
+    若玩家有足够资源施放技能 '碧火踏[id:388193]'
+    若已点出天赋 '碧火踏[id:388193]'
 13: Spell: 猛虎掌[id:100780]
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if talent '猛虎掌[id:100780]' is taken
-    if spell '猛虎掌[id:100780]' is within allowed range
-    if player has less than 4 chi
-    if player has more than 101 energy
-    if player does not have buff/debuff '青龙之心[id:443421]'
-    if player does not have buff/debuff '组合拳：猛虎掌[id:1249756]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若已点出天赋 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 在射程内
+    若玩家真气低于 4
+    若玩家能量高于 101
+    若玩家没有增益/减益 '青龙之心[id:443421]'
+    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'
 14: Spell: 旭日东升踢[id:107428]
 15: Spell: 轮回之触[id:322109,cd:180]
-    if talent '轮回之触[id:322109,cd:180]' is taken
-    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
-    if spell '轮回之触[id:322109,cd:180]' is off cooldown
-    if spell '轮回之触[id:322109,cd:180]' is within allowed range
+    若已点出天赋 '轮回之触[id:322109,cd:180]'
+    若玩家有足够资源施放技能 '轮回之触[id:322109,cd:180]'
+    若技能 '轮回之触[id:322109,cd:180]' 不在冷却中
+    若技能 '轮回之触[id:322109,cd:180]' 在射程内
 16: Spell: 猛虎掌[id:100780]
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if talent '猛虎掌[id:100780]' is taken
-    if spell '猛虎掌[id:100780]' is within allowed range
-    if player does not have buff/debuff '幻灭踢[id:261916]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若已点出天赋 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 在射程内
+    若玩家没有增益/减益 '幻灭踢[id:261916]'
 17: Spell: 翔龙在天[id:101545,cd:30]
-    if talent '翔龙在天[id:101545,cd:30]' is taken
-    if spell '翔龙在天[id:101545,cd:30]' is off cooldown
-    if player has resources to cast spell '翔龙在天[id:101545,cd:30]'
-    if talent '翔龙在天[id:101545,cd:30]' is taken
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '翔龙在天[id:101545,cd:30]'
+    若技能 '翔龙在天[id:101545,cd:30]' 不在冷却中
+    若玩家有足够资源施放技能 '翔龙在天[id:101545,cd:30]'
+    若已点出天赋 '翔龙在天[id:101545,cd:30]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 18: Spell: 乾元之巅[id:1249625,cd:16]
-    if spell '乾元之巅[id:1249625,cd:16]' is off cooldown
-    if player has resources to cast spell '乾元之巅[id:1249625,cd:16]'
-    if player does not have buff/debuff '乾元之巅[id:1249625,cd:16]'
-    if talent '乾元之巅[id:1249625,cd:16]' is taken
-    automation only (not part of the game's Assisted Combat rotation)
+    若技能 '乾元之巅[id:1249625,cd:16]' 不在冷却中
+    若玩家有足够资源施放技能 '乾元之巅[id:1249625,cd:16]'
+    若玩家没有增益/减益 '乾元之巅[id:1249625,cd:16]'
+    若已点出天赋 '乾元之巅[id:1249625,cd:16]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 19: Spell: 天神御身[id:443028,cd:90]
-    if spell '天神御身[id:443028,cd:90]' is off cooldown
-    if player has resources to cast spell '天神御身[id:443028,cd:90]'
-    if talent '天神御身[id:443028,cd:90]' is taken
-    automation only (not part of the game's Assisted Combat rotation)
+    若技能 '天神御身[id:443028,cd:90]' 不在冷却中
+    若玩家有足够资源施放技能 '天神御身[id:443028,cd:90]'
+    若已点出天赋 '天神御身[id:443028,cd:90]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 20: Spell: 旭日东升踢[id:107428]
-    if player has buff/debuff '疾风呼啸踢[id:1250554]'
+    若玩家拥有增益/减益 '疾风呼啸踢[id:1250554]'

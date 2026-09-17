@@ -1,247 +1,247 @@
 Assassination
 0: Spell: 锁喉[id:703,cd:6]
-    if target does not have buff/debuff '锁喉[id:703,cd:6]'
-    if talent '锁喉[id:703,cd:6]' is taken
-    if player has resources to cast spell '锁喉[id:703,cd:6]'
-    if spell '锁喉[id:703,cd:6]' is off cooldown
-    if spell '锁喉[id:703,cd:6]' is within allowed range
+    若目标没有增益/减益 '锁喉[id:703,cd:6]'
+    若已点出天赋 '锁喉[id:703,cd:6]'
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中
+    若技能 '锁喉[id:703,cd:6]' 在射程内
 1: Spell: 割裂[id:1943]
-    if target does not have buff/debuff '割裂[id:1943]'
-    if player has more than 5 combo points
-    if talent '割裂[id:1943]' is taken
-    if player has resources to cast spell '割裂[id:1943]'
-    if spell '割裂[id:1943]' is off cooldown
-    if spell '割裂[id:1943]' is within allowed range
-    if player does not have buff/debuff '至黑之夜[id:457280]'
+    若目标没有增益/减益 '割裂[id:1943]'
+    若玩家连击点高于 5
+    若已点出天赋 '割裂[id:1943]'
+    若玩家有足够资源施放技能 '割裂[id:1943]'
+    若技能 '割裂[id:1943]' 不在冷却中
+    若技能 '割裂[id:1943]' 在射程内
+    若玩家没有增益/减益 '至黑之夜[id:457280]'
 2: Spell: 君王之灾[id:385627,cd:60]
-    if talent '君王之灾[id:385627,cd:60]' is taken
-    if player has resources to cast spell '君王之灾[id:385627,cd:60]'
-    if spell '君王之灾[id:385627,cd:60]' is off cooldown
-    if spell '君王之灾[id:385627,cd:60]' is within allowed range
-    if target has buff/debuff '锁喉[id:703,cd:6]'
-    if target has buff/debuff '割裂[id:1943]'
-    if player has buff/debuff '无赦[id:1265387]'
-    if player has less than 1 combo points
+    若已点出天赋 '君王之灾[id:385627,cd:60]'
+    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'
+    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中
+    若技能 '君王之灾[id:385627,cd:60]' 在射程内
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
+    若目标拥有增益/减益 '割裂[id:1943]'
+    若玩家拥有增益/减益 '无赦[id:1265387]'
+    若玩家连击点低于 1
 3: Spell: 刺骨[id:196819]
-    if player has more than 5 combo points
-    if talent '刺骨[id:196819]' is taken
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if spell '刺骨[id:196819]' is within allowed range
-    if player does not have buff/debuff '至黑之夜[id:457280]'
+    若玩家连击点高于 5
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家没有增益/减益 '至黑之夜[id:457280]'
 4: Spell: 影袭[id:1752]
-    if talent '影袭[id:1752]' is taken
-    if player has resources to cast spell '影袭[id:1752]'
-    if spell '影袭[id:1752]' is off cooldown
-    if spell '影袭[id:1752]' is within allowed range
+    若已点出天赋 '影袭[id:1752]'
+    若玩家有足够资源施放技能 '影袭[id:1752]'
+    若技能 '影袭[id:1752]' 不在冷却中
+    若技能 '影袭[id:1752]' 在射程内
 5: Spell: 伏击[id:8676]
-    if player has buff/debuff '侧袭[id:121153]'
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if spell '伏击[id:8676]' is within allowed range
+    若玩家拥有增益/减益 '侧袭[id:121153]'
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若技能 '伏击[id:8676]' 在射程内
 6: Spell: 刀扇[id:51723]
-    if there are more than 3 targets within 10 yards of player
-    if talent '刀扇[id:51723]' is taken
-    if player has resources to cast spell '刀扇[id:51723]'
-    if spell '刀扇[id:51723]' is off cooldown
+    若玩家周围 10 码内的目标数量超过 3 个
+    若已点出天赋 '刀扇[id:51723]'
+    若玩家有足够资源施放技能 '刀扇[id:51723]'
+    若技能 '刀扇[id:51723]' 不在冷却中
 7: Spell: 剧毒之刃[id:185565]
-    if talent '剧毒之刃[id:185565]' is taken
-    if player has resources to cast spell '剧毒之刃[id:185565]'
-    if spell '剧毒之刃[id:185565]' is off cooldown
-    if spell '剧毒之刃[id:185565]' is within allowed range
-    if player does not have buff/debuff '潜行[id:1784,cd:2]'
-    if player does not have buff/debuff '消失[id:11327]'
-    if player has more than 70 energy
-    if target is more than 15 yards away
+    若已点出天赋 '剧毒之刃[id:185565]'
+    若玩家有足够资源施放技能 '剧毒之刃[id:185565]'
+    若技能 '剧毒之刃[id:185565]' 不在冷却中
+    若技能 '剧毒之刃[id:185565]' 在射程内
+    若玩家没有增益/减益 '潜行[id:1784,cd:2]'
+    若玩家没有增益/减益 '消失[id:11327]'
+    若玩家能量高于 70
+    若目标距离大于 15 码
 8: Spell: 夺命药膏[id:2823]
-    if talent '夺命药膏[id:2823]' is taken
-    if player has resources to cast spell '夺命药膏[id:2823]'
-    if spell '夺命药膏[id:2823]' is off cooldown
-    if player does not have buff/debuff '夺命药膏[id:2823]'
-    if player does not have buff/debuff '致伤药膏[id:8679]'
-    if player does not have buff/debuff '龙淬之锋[id:381801]'
+    若已点出天赋 '夺命药膏[id:2823]'
+    若玩家有足够资源施放技能 '夺命药膏[id:2823]'
+    若技能 '夺命药膏[id:2823]' 不在冷却中
+    若玩家没有增益/减益 '夺命药膏[id:2823]'
+    若玩家没有增益/减益 '致伤药膏[id:8679]'
+    若玩家没有增益/减益 '龙淬之锋[id:381801]'
 9: Spell: 影袭[id:1752]
 10: Spell: 刺骨[id:196819]
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if talent '刺骨[id:196819]' is taken
-    if player has more than 5 combo points
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has buff/debuff '至黑之夜[id:457280]'
-    if player does not have buff/debuff '深邃诡计[id:193531]'
-    if player does not have buff/debuff '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家连击点高于 5
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'
+    若玩家没有增益/减益 '深邃诡计[id:193531]'
+    若玩家没有增益/减益 '血色谋策[id:457512]'
 11: Spell: 刺骨[id:196819]
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if talent '刺骨[id:196819]' is taken
-    if player has more than 6 combo points
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has buff/debuff '至黑之夜[id:457280]'
-    if player does not have buff/debuff '血色谋策[id:457512]'
-    if player has buff/debuff '深邃诡计[id:193531]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家连击点高于 6
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'
+    若玩家没有增益/减益 '血色谋策[id:457512]'
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'
 12: Spell: 刺骨[id:196819]
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if talent '刺骨[id:196819]' is taken
-    if player has more than 6 combo points
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has buff/debuff '至黑之夜[id:457280]'
-    if player does not have buff/debuff '深邃诡计[id:193531]'
-    if player has buff/debuff '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家连击点高于 6
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'
+    若玩家没有增益/减益 '深邃诡计[id:193531]'
+    若玩家拥有增益/减益 '血色谋策[id:457512]'
 13: Spell: 刺骨[id:196819]
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if talent '刺骨[id:196819]' is taken
-    if player has more than 7 combo points
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has buff/debuff '至黑之夜[id:457280]'
-    if player has buff/debuff '深邃诡计[id:193531]'
-    if player has buff/debuff '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家连击点高于 7
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'
+    若玩家拥有增益/减益 '血色谋策[id:457512]'
 14: Spell: 切割[id:315496]
-    if player does not have buff/debuff '切割[id:315496]'
-    if player has more than 5 combo points
-    if talent '切割[id:315496]' is taken
-    if player has resources to cast spell '切割[id:315496]'
-    if spell '切割[id:315496]' is off cooldown
-    if player does not have buff/debuff '穷追猛砍[id:51667]'
+    若玩家没有增益/减益 '切割[id:315496]'
+    若玩家连击点高于 5
+    若已点出天赋 '切割[id:315496]'
+    若玩家有足够资源施放技能 '切割[id:315496]'
+    若技能 '切割[id:315496]' 不在冷却中
+    若玩家没有增益/减益 '穷追猛砍[id:51667]'
 15: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:1784,cd:2]'
-    if player does not have buff/debuff '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'
+    若玩家没有增益/减益 '强化锁喉[id:381632]'
 16: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:115191,cd:2]'
-    if player does not have buff/debuff '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'
+    若玩家没有增益/减益 '强化锁喉[id:381632]'
 17: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '消失[id:11327]'
-    if player does not have buff/debuff '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '消失[id:11327]'
+    若玩家没有增益/减益 '强化锁喉[id:381632]'
 18: Spell: 锁喉[id:703,cd:6]
-    if talent '锁喉[id:703,cd:6]' is taken
-    if player has resources to cast spell '锁喉[id:703,cd:6]'
-    if spell '锁喉[id:703,cd:6]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:1784,cd:2]'
+    若已点出天赋 '锁喉[id:703,cd:6]'
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'
 19: Spell: 锁喉[id:703,cd:6]
-    if talent '锁喉[id:703,cd:6]' is taken
-    if player has resources to cast spell '锁喉[id:703,cd:6]'
-    if spell '锁喉[id:703,cd:6]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '潜行[id:115191,cd:2]'
+    若已点出天赋 '锁喉[id:703,cd:6]'
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'
 20: Spell: 锁喉[id:703,cd:6]
-    if talent '锁喉[id:703,cd:6]' is taken
-    if player has resources to cast spell '锁喉[id:703,cd:6]'
-    if spell '锁喉[id:703,cd:6]' is off cooldown
-    if target is less than 40 yards away
-    if player has buff/debuff '消失[id:11327]'
+    若已点出天赋 '锁喉[id:703,cd:6]'
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中
+    若目标距离小于 40 码
+    若玩家拥有增益/减益 '消失[id:11327]'
 21: Spell: 萎缩药膏[id:381637]
-    if talent '萎缩药膏[id:381637]' is taken
-    if player has resources to cast spell '萎缩药膏[id:381637]'
-    if spell '萎缩药膏[id:381637]' is off cooldown
-    if player does not have buff/debuff '萎缩药膏[id:381637]'
+    若已点出天赋 '萎缩药膏[id:381637]'
+    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'
+    若技能 '萎缩药膏[id:381637]' 不在冷却中
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'
 22: Spell: 夺命药膏[id:2823]
-    if talent '夺命药膏[id:2823]' is taken
-    if player has resources to cast spell '夺命药膏[id:2823]'
-    if spell '夺命药膏[id:2823]' is off cooldown
-    if player does not have buff/debuff '夺命药膏[id:2823]'
-    if player has buff/debuff '龙淬之锋[id:381801]'
+    若已点出天赋 '夺命药膏[id:2823]'
+    若玩家有足够资源施放技能 '夺命药膏[id:2823]'
+    若技能 '夺命药膏[id:2823]' 不在冷却中
+    若玩家没有增益/减益 '夺命药膏[id:2823]'
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
 23: Spell: 增效药膏[id:381664]
-    if talent '增效药膏[id:381664]' is taken
-    if player has resources to cast spell '增效药膏[id:381664]'
-    if spell '增效药膏[id:381664]' is off cooldown
-    if player does not have buff/debuff '增效药膏[id:381664]'
-    if player has buff/debuff '龙淬之锋[id:381801]'
-    if player does not have buff/debuff '致伤药膏[id:8679]'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '增效药膏[id:381664]'
+    若玩家有足够资源施放技能 '增效药膏[id:381664]'
+    若技能 '增效药膏[id:381664]' 不在冷却中
+    若玩家没有增益/减益 '增效药膏[id:381664]'
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若玩家没有增益/减益 '致伤药膏[id:8679]'
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
 24: Spell: 致伤药膏[id:8679]
-    if talent '致伤药膏[id:8679]' is taken
-    if player has resources to cast spell '致伤药膏[id:8679]'
-    if spell '致伤药膏[id:8679]' is off cooldown
-    if player does not have buff/debuff '致伤药膏[id:8679]'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-    if player does not have buff/debuff '增效药膏[id:381664]'
-    if player has buff/debuff '龙淬之锋[id:381801]'
+    若已点出天赋 '致伤药膏[id:8679]'
+    若玩家有足够资源施放技能 '致伤药膏[id:8679]'
+    若技能 '致伤药膏[id:8679]' 不在冷却中
+    若玩家没有增益/减益 '致伤药膏[id:8679]'
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若玩家没有增益/减益 '增效药膏[id:381664]'
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
 25: Spell: 速效药膏[id:315584]
-    if talent '速效药膏[id:315584]' is taken
-    if player has resources to cast spell '速效药膏[id:315584]'
-    if spell '速效药膏[id:315584]' is off cooldown
-    if player does not have buff/debuff '增效药膏[id:381664]'
-    if player has buff/debuff '龙淬之锋[id:381801]'
-    if player does not have buff/debuff '致伤药膏[id:8679]'
-    if player does not have buff/debuff '速效药膏[id:315584]'
+    若已点出天赋 '速效药膏[id:315584]'
+    若玩家有足够资源施放技能 '速效药膏[id:315584]'
+    若技能 '速效药膏[id:315584]' 不在冷却中
+    若玩家没有增益/减益 '增效药膏[id:381664]'
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若玩家没有增益/减益 '致伤药膏[id:8679]'
+    若玩家没有增益/减益 '速效药膏[id:315584]'
 26: Spell: 迟钝药膏[id:5761]
-    if talent '迟钝药膏[id:5761]' is taken
-    if player has resources to cast spell '迟钝药膏[id:5761]'
-    if spell '迟钝药膏[id:5761]' is off cooldown
-    if player does not have buff/debuff '迟钝药膏[id:5761]'
+    若已点出天赋 '迟钝药膏[id:5761]'
+    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'
+    若技能 '迟钝药膏[id:5761]' 不在冷却中
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'
 27: Spell: 减速药膏[id:3408]
-    if talent '减速药膏[id:3408]' is taken
-    if player has resources to cast spell '减速药膏[id:3408]'
-    if spell '减速药膏[id:3408]' is off cooldown
-    if player does not have buff/debuff '迟钝药膏[id:5761]'
-    if player does not have buff/debuff '萎缩药膏[id:381637]'
-    if player does not have buff/debuff '减速药膏[id:3408]'
-    if player does not have buff/debuff '龙淬之锋[id:381801]'
+    若已点出天赋 '减速药膏[id:3408]'
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'
+    若技能 '减速药膏[id:3408]' 不在冷却中
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'
+    若玩家没有增益/减益 '减速药膏[id:3408]'
+    若玩家没有增益/减益 '龙淬之锋[id:381801]'
 28: Spell: 增效药膏[id:381664]
-    if talent '增效药膏[id:381664]' is taken
-    if player has resources to cast spell '增效药膏[id:381664]'
-    if spell '增效药膏[id:381664]' is off cooldown
-    if player does not have buff/debuff '增效药膏[id:381664]'
-    if player has buff/debuff '龙淬之锋[id:381801]'
-    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '增效药膏[id:381664]'
+    若玩家有足够资源施放技能 '增效药膏[id:381664]'
+    若技能 '增效药膏[id:381664]' 不在冷却中
+    若玩家没有增益/减益 '增效药膏[id:381664]'
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
 29: Spell: 减速药膏[id:3408]
-    if talent '减速药膏[id:3408]' is taken
-    if player has resources to cast spell '减速药膏[id:3408]'
-    if spell '减速药膏[id:3408]' is off cooldown
-    if player has buff/debuff '龙淬之锋[id:381801]'
-    if player does not have buff/debuff '减速药膏[id:3408]'
+    若已点出天赋 '减速药膏[id:3408]'
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'
+    若技能 '减速药膏[id:3408]' 不在冷却中
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若玩家没有增益/减益 '减速药膏[id:3408]'
 30: Spell: 死亡印记[id:360194,cd:120]
-    if talent '死亡印记[id:360194,cd:120]' is taken
-    if player has resources to cast spell '死亡印记[id:360194,cd:120]'
-    if spell '死亡印记[id:360194,cd:120]' is off cooldown
-    if target has buff/debuff '锁喉[id:703,cd:6]'
-    if target has buff/debuff '割裂[id:1943]'
-    automation only (not part of the game's Assisted Combat rotation)
-    if spell '死亡印记[id:360194,cd:120]' is within allowed range
+    若已点出天赋 '死亡印记[id:360194,cd:120]'
+    若玩家有足够资源施放技能 '死亡印记[id:360194,cd:120]'
+    若技能 '死亡印记[id:360194,cd:120]' 不在冷却中
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
+    若目标拥有增益/减益 '割裂[id:1943]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
+    若技能 '死亡印记[id:360194,cd:120]' 在射程内
 31: Spell: 君王之灾[id:385627,cd:60]
-    if target has buff/debuff '割裂[id:1943]'
-    if target has buff/debuff '锁喉[id:703,cd:6]'
-    if spell '君王之灾[id:385627,cd:60]' is within allowed range
-    if spell '君王之灾[id:385627,cd:60]' is off cooldown
-    if player has resources to cast spell '君王之灾[id:385627,cd:60]'
-    if talent '君王之灾[id:385627,cd:60]' is taken
-    if player does not have buff/debuff '无赦[id:1265387]'
+    若目标拥有增益/减益 '割裂[id:1943]'
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
+    若技能 '君王之灾[id:385627,cd:60]' 在射程内
+    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中
+    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'
+    若已点出天赋 '君王之灾[id:385627,cd:60]'
+    若玩家没有增益/减益 '无赦[id:1265387]'
 32: Spell: 猩红风暴[id:1247227]
-    if spell '猩红风暴[id:1247227]' is off cooldown
-    if player has resources to cast spell '猩红风暴[id:1247227]'
-    if talent '猩红风暴[id:1247227]' is taken
-    if there are more than 7 targets within 10 yards of player
-    if there are less than 5 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 1943
-    if there are more than 1 targets within 10 yards of player with buff/debuff 703
+    若技能 '猩红风暴[id:1247227]' 不在冷却中
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
+    若已点出天赋 '猩红风暴[id:1247227]'
+    若玩家周围 10 码内的目标数量超过 7 个
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量少于 5 个
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量超过 1 个
+    若玩家周围 10 码内带有增益/减益 703 的目标数量超过 1 个
 33: Spell: 猩红风暴[id:1247227]
-    if spell '猩红风暴[id:1247227]' is off cooldown
-    if player has resources to cast spell '猩红风暴[id:1247227]'
-    if talent '猩红风暴[id:1247227]' is taken
-    if there are more than 5 targets within 10 yards of player
-    if there are less than 3 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 1943
-    if there are more than 1 targets within 10 yards of player with buff/debuff 703
+    若技能 '猩红风暴[id:1247227]' 不在冷却中
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
+    若已点出天赋 '猩红风暴[id:1247227]'
+    若玩家周围 10 码内的目标数量超过 5 个
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量少于 3 个
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量超过 1 个
+    若玩家周围 10 码内带有增益/减益 703 的目标数量超过 1 个
 34: Spell: 猩红风暴[id:1247227]
-    if spell '猩红风暴[id:1247227]' is off cooldown
-    if player has resources to cast spell '猩红风暴[id:1247227]'
-    if talent '猩红风暴[id:1247227]' is taken
-    if there are more than 3 targets within 10 yards of player
-    if there are less than 1 targets within 10 yards of player with buff/debuff '锁喉[id:703,cd:6]'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 1943
-    if there are more than 1 targets within 10 yards of player with buff/debuff 703
+    若技能 '猩红风暴[id:1247227]' 不在冷却中
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
+    若已点出天赋 '猩红风暴[id:1247227]'
+    若玩家周围 10 码内的目标数量超过 3 个
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量少于 1 个
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量超过 1 个
+    若玩家周围 10 码内带有增益/减益 703 的目标数量超过 1 个

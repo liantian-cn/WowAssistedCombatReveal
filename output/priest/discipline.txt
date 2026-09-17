@@ -1,41 +1,41 @@
 Discipline
 0: Spell: 暗言术：痛[id:589]
-    if talent '暗言术：痛[id:589]' is taken
-    if player has resources to cast spell '暗言术：痛[id:589]'
-    if spell '暗言术：痛[id:589]' is off cooldown
-    if target does not have buff/debuff '暗言术：痛[id:589]'
+    若已点出天赋 '暗言术：痛[id:589]'
+    若玩家有足够资源施放技能 '暗言术：痛[id:589]'
+    若技能 '暗言术：痛[id:589]' 不在冷却中
+    若目标没有增益/减益 '暗言术：痛[id:589]'
 1: Spell: 神圣新星[id:132157]
-    if talent '神圣新星[id:132157]' is taken
-    if player has resources to cast spell '神圣新星[id:132157]'
-    if spell '神圣新星[id:132157]' is off cooldown
-    if there are more than 12 targets within 0 yards of player
+    若已点出天赋 '神圣新星[id:132157]'
+    若玩家有足够资源施放技能 '神圣新星[id:132157]'
+    若技能 '神圣新星[id:132157]' 不在冷却中
+    若玩家周围 0 码内的目标数量超过 12 个
 2: Spell: 苦修[id:47540,cd:2]
-    if talent '苦修[id:47540,cd:2]' is taken
-    if player has resources to cast spell '苦修[id:47540,cd:2]'
-    if spell '苦修[id:47540,cd:2]' is off cooldown
+    若已点出天赋 '苦修[id:47540,cd:2]'
+    若玩家有足够资源施放技能 '苦修[id:47540,cd:2]'
+    若技能 '苦修[id:47540,cd:2]' 不在冷却中
 3: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
 4: Spell: 暗言术：灭[id:32379]
-    if talent '暗言术：灭[id:32379]' is taken
-    if player has resources to cast spell '暗言术：灭[id:32379]'
-    if spell '暗言术：灭[id:32379]' is off cooldown
-    if target has less than 20% health
+    若已点出天赋 '暗言术：灭[id:32379]'
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
+    若技能 '暗言术：灭[id:32379]' 不在冷却中
+    若目标生命值低于 20%
 5: Spell: 惩击[id:585]
-    if talent '惩击[id:585]' is taken
-    if player has resources to cast spell '惩击[id:585]'
-    if spell '惩击[id:585]' is off cooldown
-    if spell '惩击[id:585]' can be successfully cast
+    若已点出天赋 '惩击[id:585]'
+    若玩家有足够资源施放技能 '惩击[id:585]'
+    若技能 '惩击[id:585]' 不在冷却中
+    若技能 '惩击[id:585]' 可以成功施放
 6: Spell: 惩击[id:585]
-    if talent '惩击[id:585]' is taken
-    if player has resources to cast spell '惩击[id:585]'
-    if spell '惩击[id:585]' is off cooldown
-    if player has buff/debuff '虚空冲击[id:450404]'
-    if spell '惩击[id:585]' can be successfully cast
+    若已点出天赋 '惩击[id:585]'
+    若玩家有足够资源施放技能 '惩击[id:585]'
+    若技能 '惩击[id:585]' 不在冷却中
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'
+    若技能 '惩击[id:585]' 可以成功施放
 7: Spell: 苦修[id:47540,cd:2]
 8: Spell: 真言术：韧[id:21562]
-    if talent '真言术：韧[id:21562]' is taken
-    if player has resources to cast spell '真言术：韧[id:21562]'
-    if spell '真言术：韧[id:21562]' is off cooldown
-    if player has buff/debuff '真言术：韧高亮[id:1271911]'
+    若已点出天赋 '真言术：韧[id:21562]'
+    若玩家有足够资源施放技能 '真言术：韧[id:21562]'
+    若技能 '真言术：韧[id:21562]' 不在冷却中
+    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'

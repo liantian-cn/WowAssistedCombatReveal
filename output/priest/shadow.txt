@@ -1,151 +1,151 @@
 Shadow
 0: Spell: 触须猛击[id:1227280]
-    if talent '触须猛击[id:1227280]' is taken
-    if player has resources to cast spell '触须猛击[id:1227280]'
-    if spell '触须猛击[id:1227280]' is off cooldown
-    if there are more than 3 targets within 8 yards of target
+    若已点出天赋 '触须猛击[id:1227280]'
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
+    若技能 '触须猛击[id:1227280]' 不在冷却中
+    若目标周围 8 码内的目标数量超过 3 个
 1: Spell: 暗影形态[id:232698]
-    if player does not have buff/debuff '暗影形态[id:232698]'
-    if player does not have buff/debuff '虚空形态[id:194249,cd:120]'
-    if talent '暗影形态[id:232698]' is taken
-    if player has resources to cast spell '暗影形态[id:232698]'
-    if spell '暗影形态[id:232698]' is off cooldown
+    若玩家没有增益/减益 '暗影形态[id:232698]'
+    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'
+    若已点出天赋 '暗影形态[id:232698]'
+    若玩家有足够资源施放技能 '暗影形态[id:232698]'
+    若技能 '暗影形态[id:232698]' 不在冷却中
 2: Spell: 光晕[id:120644,cd:60]
-    if talent '光晕[id:120644,cd:60]' is taken
-    if player has resources to cast spell '光晕[id:120644,cd:60]'
-    if spell '光晕[id:120644,cd:60]' is off cooldown
+    若已点出天赋 '光晕[id:120644,cd:60]'
+    若玩家有足够资源施放技能 '光晕[id:120644,cd:60]'
+    若技能 '光晕[id:120644,cd:60]' 不在冷却中
 3: Spell: 暗言术：癫[id:335467]
-    if talent '暗言术：癫[id:335467]' is taken
-    if player has resources to cast spell '暗言术：癫[id:335467]'
-    if spell '暗言术：癫[id:335467]' is off cooldown
-    if player has more than 9000 insanity
-    if player does not have buff/debuff '灵媒[id:407430]'
+    若已点出天赋 '暗言术：癫[id:335467]'
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
+    若技能 '暗言术：癫[id:335467]' 不在冷却中
+    若玩家狂乱值高于 9000
+    若玩家没有增益/减益 '灵媒[id:407430]'
 4: Spell: 暗言术：癫[id:335467]
-    if talent '暗言术：癫[id:335467]' is taken
-    if player has resources to cast spell '暗言术：癫[id:335467]'
-    if spell '暗言术：癫[id:335467]' is off cooldown
-    if player has more than 14000 insanity
-    if player has buff/debuff '灵媒[id:407430]'
+    若已点出天赋 '暗言术：癫[id:335467]'
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
+    若技能 '暗言术：癫[id:335467]' 不在冷却中
+    若玩家狂乱值高于 14000
+    若玩家拥有增益/减益 '灵媒[id:407430]'
 5: Spell: 吸血鬼之触[id:34914]
-    if talent '吸血鬼之触[id:34914]' is taken
-    if player has resources to cast spell '吸血鬼之触[id:34914]'
-    if spell '吸血鬼之触[id:34914]' is off cooldown
-    if target does not have buff/debuff '吸血鬼之触[id:34914]'
-    if player does not have buff/debuff '触须猛击[id:1243723]'
+    若已点出天赋 '吸血鬼之触[id:34914]'
+    若玩家有足够资源施放技能 '吸血鬼之触[id:34914]'
+    若技能 '吸血鬼之触[id:34914]' 不在冷却中
+    若目标没有增益/减益 '吸血鬼之触[id:34914]'
+    若玩家没有增益/减益 '触须猛击[id:1243723]'
 6: Spell: 暗言术：痛[id:589]
-    if talent '暗言术：痛[id:589]' is taken
-    if player has resources to cast spell '暗言术：痛[id:589]'
-    if spell '暗言术：痛[id:589]' is off cooldown
-    if target does not have buff/debuff '暗言术：痛[id:589]'
-    if player does not have buff/debuff '哀难[id:238558]'
+    若已点出天赋 '暗言术：痛[id:589]'
+    若玩家有足够资源施放技能 '暗言术：痛[id:589]'
+    若技能 '暗言术：痛[id:589]' 不在冷却中
+    若目标没有增益/减益 '暗言术：痛[id:589]'
+    若玩家没有增益/减益 '哀难[id:238558]'
 7: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player has buff/debuff '虚空冲击[id:450404]'
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'
 8: Spell: 虚空洪流[id:263165,cd:30]
-    if talent '虚空洪流[id:263165,cd:30]' is taken
-    if player has resources to cast spell '虚空洪流[id:263165,cd:30]'
-    if spell '虚空洪流[id:263165,cd:30]' is off cooldown
+    若已点出天赋 '虚空洪流[id:263165,cd:30]'
+    若玩家有足够资源施放技能 '虚空洪流[id:263165,cd:30]'
+    若技能 '虚空洪流[id:263165,cd:30]' 不在冷却中
 9: Spell: 暗言术：癫[id:335467]
-    if talent '暗言术：癫[id:335467]' is taken
-    if player has resources to cast spell '暗言术：癫[id:335467]'
-    if spell '暗言术：癫[id:335467]' is off cooldown
-    if target does not have buff/debuff '暗言术：癫[id:335467]'
+    若已点出天赋 '暗言术：癫[id:335467]'
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
+    若技能 '暗言术：癫[id:335467]' 不在冷却中
+    若目标没有增益/减益 '暗言术：癫[id:335467]'
 10: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player does not have buff/debuff '虚空冲击[id:450405]'
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家没有增益/减益 '虚空冲击[id:450405]'
 11: Spell: 暗言术：灭[id:32379]
-    if talent '暗言术：灭[id:32379]' is taken
-    if player has resources to cast spell '暗言术：灭[id:32379]'
-    if spell '暗言术：灭[id:32379]' is off cooldown
-    if player has buff/debuff '亡语者[id:392507]'
-    if target has less than 35% health
+    若已点出天赋 '暗言术：灭[id:32379]'
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
+    若技能 '暗言术：灭[id:32379]' 不在冷却中
+    若玩家拥有增益/减益 '亡语者[id:392507]'
+    若目标生命值低于 35%
 12: Spell: 暗言术：灭[id:32379]
-    if talent '暗言术：灭[id:32379]' is taken
-    if player has resources to cast spell '暗言术：灭[id:32379]'
-    if spell '暗言术：灭[id:32379]' is off cooldown
-    if target has less than 20% health
+    若已点出天赋 '暗言术：灭[id:32379]'
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
+    若技能 '暗言术：灭[id:32379]' 不在冷却中
+    若目标生命值低于 20%
 13: Spell: 精神鞭笞[id:15407]
-    if talent '精神鞭笞[id:15407]' is taken
-    if player has resources to cast spell '精神鞭笞[id:15407]'
-    if spell '精神鞭笞[id:15407]' is off cooldown
-    if spell '精神鞭笞[id:15407]' can be successfully cast
+    若已点出天赋 '精神鞭笞[id:15407]'
+    若玩家有足够资源施放技能 '精神鞭笞[id:15407]'
+    若技能 '精神鞭笞[id:15407]' 不在冷却中
+    若技能 '精神鞭笞[id:15407]' 可以成功施放
 14: Spell: 虚空形态[id:228260,cd:120]
-    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
-    if spell '虚空形态[id:228260,cd:120]' is off cooldown
-    if talent '虚空形态[id:228260,cd:120]' is taken
-    if player has buff/debuff '虚空形态[id:194249,cd:120]'
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
+    若已点出天赋 '虚空形态[id:228260,cd:120]'
+    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'
 15: Spell: 心灵震爆[id:8092]
 16: Spell: 暗言术：癫[id:335467]
-    if talent '暗言术：癫[id:335467]' is taken
-    if player has resources to cast spell '暗言术：癫[id:335467]'
-    if spell '暗言术：癫[id:335467]' is off cooldown
-    if target has buff/debuff '暗言术：癫[id:335467]' with at least 1500 ms left
+    若已点出天赋 '暗言术：癫[id:335467]'
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
+    若技能 '暗言术：癫[id:335467]' 不在冷却中
+    若目标身上的增益/减益 '暗言术：癫[id:335467]' 至少还剩 1500 毫秒
 17: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player has buff/debuff '虚空冲击[id:450404]'
-    if player has more than 2 charges of spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' can be successfully cast
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'
+    若技能 '心灵震爆[id:8092]' 的充能层数超过 2
+    若技能 '心灵震爆[id:8092]' 可以成功施放
 18: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player has buff/debuff '虚空冲击[id:450405]'
-    if player has more than 2 charges of spell '心灵震爆[id:8092]'
-    if cooldown on spell '虚空洪流[id:263165,cd:30]' is less than 5000 ms
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家拥有增益/减益 '虚空冲击[id:450405]'
+    若技能 '心灵震爆[id:8092]' 的充能层数超过 2
+    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却少于 5000 毫秒
 19: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player has buff/debuff '虚空冲击[id:450405]'
-    if cooldown on spell '虚空洪流[id:263165,cd:30]' is more than 5000 ms
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家拥有增益/减益 '虚空冲击[id:450405]'
+    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却超过 5000 毫秒
 20: Spell: 暗言术：癫[id:335467]
-    if talent '暗言术：癫[id:335467]' is taken
-    if player has resources to cast spell '暗言术：癫[id:335467]'
-    if spell '暗言术：癫[id:335467]' is off cooldown
+    若已点出天赋 '暗言术：癫[id:335467]'
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
+    若技能 '暗言术：癫[id:335467]' 不在冷却中
 21: Spell: 心灵震爆[id:8092]
-    if talent '心灵震爆[id:8092]' is taken
-    if player has resources to cast spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' is off cooldown
-    if player does not have buff/debuff '虚空冲击[id:450405]'
-    if player has more than 2 charges of spell '心灵震爆[id:8092]'
-    if spell '心灵震爆[id:8092]' can be successfully cast
+    若已点出天赋 '心灵震爆[id:8092]'
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
+    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若玩家没有增益/减益 '虚空冲击[id:450405]'
+    若技能 '心灵震爆[id:8092]' 的充能层数超过 2
+    若技能 '心灵震爆[id:8092]' 可以成功施放
 22: Spell: 触须猛击[id:1227280]
-    if talent '触须猛击[id:1227280]' is taken
-    if player has resources to cast spell '触须猛击[id:1227280]'
-    if spell '触须猛击[id:1227280]' is off cooldown
-    if there are less than 2 targets within 8 yards of target
-    if target does not have buff/debuff '吸血鬼之触[id:34914]'
-    if player does not have buff/debuff '触须猛击[id:1243723]'
+    若已点出天赋 '触须猛击[id:1227280]'
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
+    若技能 '触须猛击[id:1227280]' 不在冷却中
+    若目标周围 8 码内的目标数量少于 2 个
+    若目标没有增益/减益 '吸血鬼之触[id:34914]'
+    若玩家没有增益/减益 '触须猛击[id:1243723]'
 23: Spell: 虚空形态[id:228260,cd:120]
-    if talent '虚空形态[id:228260,cd:120]' is taken
-    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
-    if spell '虚空形态[id:228260,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
-    if player does not have buff/debuff '虚空形态[id:194249,cd:120]'
+    若已点出天赋 '虚空形态[id:228260,cd:120]'
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
+    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'
 24: Spell: 能量灌注[id:10060,cd:120]
-    if talent '能量灌注[id:10060,cd:120]' is taken
-    if player has resources to cast spell '能量灌注[id:10060,cd:120]'
-    if spell '能量灌注[id:10060,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
-    if player has buff/debuff '虚空形态[id:194249,cd:120]'
+    若已点出天赋 '能量灌注[id:10060,cd:120]'
+    若玩家有足够资源施放技能 '能量灌注[id:10060,cd:120]'
+    若技能 '能量灌注[id:10060,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
+    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'
 25: Spell: 真言术：韧[id:21562]
-    if talent '真言术：韧[id:21562]' is taken
-    if player has resources to cast spell '真言术：韧[id:21562]'
-    if spell '真言术：韧[id:21562]' is off cooldown
-    if player has buff/debuff '真言术：韧高亮[id:1271911]'
+    若已点出天赋 '真言术：韧[id:21562]'
+    若玩家有足够资源施放技能 '真言术：韧[id:21562]'
+    若技能 '真言术：韧[id:21562]' 不在冷却中
+    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'
 26: Spell: 虚空形态[id:228260,cd:120]
-    if player has resources to cast spell '虚空形态[id:228260,cd:120]'
-    if spell '虚空形态[id:228260,cd:120]' is off cooldown
-    if talent '虚空形态[id:228260,cd:120]' is taken
-    if player has buff/debuff '碾压虚空[id:1279437]'
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
+    若已点出天赋 '虚空形态[id:228260,cd:120]'
+    若玩家拥有增益/减益 '碾压虚空[id:1279437]'
 27: Spell: 触须猛击[id:1227280]
-    if player has resources to cast spell '触须猛击[id:1227280]'
-    if talent '触须猛击[id:1227280]' is taken
-    if spell '触须猛击[id:1227280]' is off cooldown
-    if player has more than 2 charges of spell '触须猛击[id:1227280]'
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
+    若已点出天赋 '触须猛击[id:1227280]'
+    若技能 '触须猛击[id:1227280]' 不在冷却中
+    若技能 '触须猛击[id:1227280]' 的充能层数超过 2

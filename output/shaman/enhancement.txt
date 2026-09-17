@@ -1,152 +1,152 @@
 Enhancement
 0: Spell: 涌动图腾[id:444995,cd:25]
-    if talent '涌动图腾[id:444995,cd:25]' is taken
-    if player has resources to cast spell '涌动图腾[id:444995,cd:25]'
-    if spell '涌动图腾[id:444995,cd:25]' is off cooldown
-    if player does not have buff/debuff '涌动图腾[id:1221347]'
+    若已点出天赋 '涌动图腾[id:444995,cd:25]'
+    若玩家有足够资源施放技能 '涌动图腾[id:444995,cd:25]'
+    若技能 '涌动图腾[id:444995,cd:25]' 不在冷却中
+    若玩家没有增益/减益 '涌动图腾[id:1221347]'
 1: Spell: 烈焰震击[id:470411,cd:6]
-    if talent '烈焰震击[id:470411,cd:6]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
-    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
-    if target does not have buff/debuff '烈焰震击[id:188389]'
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
+    若目标没有增益/减益 '烈焰震击[id:188389]'
 2: Spell: 熔岩猛击[id:60103,cd:18]
-    if talent '熔岩猛击[id:60103,cd:18]' is taken
-    if player has resources to cast spell '熔岩猛击[id:60103,cd:18]'
-    if spell '熔岩猛击[id:60103,cd:18]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if there are less than 2 targets within 30 yards of player with buff/debuff '烈焰震击[id:188389]'
-    if spell '熔岩猛击[id:60103,cd:18]' is within allowed range
+    若已点出天赋 '熔岩猛击[id:60103,cd:18]'
+    若玩家有足够资源施放技能 '熔岩猛击[id:60103,cd:18]'
+    若技能 '熔岩猛击[id:60103,cd:18]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家周围 30 码内带有增益/减益 '烈焰震击[id:188389]' 的目标数量少于 2 个
+    若技能 '熔岩猛击[id:60103,cd:18]' 在射程内
 3: Spell: 裂地术[id:197214,cd:30]
-    if talent '裂地术[id:197214,cd:30]' is taken
-    if player has resources to cast spell '裂地术[id:197214,cd:30]'
-    if spell '裂地术[id:197214,cd:30]' is off cooldown
-    if player does not have buff/debuff '始源风暴[id:1218125]'
+    若已点出天赋 '裂地术[id:197214,cd:30]'
+    若玩家有足够资源施放技能 '裂地术[id:197214,cd:30]'
+    若技能 '裂地术[id:197214,cd:30]' 不在冷却中
+    若玩家没有增益/减益 '始源风暴[id:1218125]'
 4: Spell: 毁灭之风[id:384352,cd:60]
-    if talent '毁灭之风[id:384352,cd:60]' is taken
-    if player has resources to cast spell '毁灭之风[id:384352,cd:60]'
-    if spell '毁灭之风[id:384352,cd:60]' is off cooldown
-    if target is less than 8 yards away
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '毁灭之风[id:384352,cd:60]'
+    若玩家有足够资源施放技能 '毁灭之风[id:384352,cd:60]'
+    若技能 '毁灭之风[id:384352,cd:60]' 不在冷却中
+    若目标距离小于 8 码
+    仅自动化施放（不属于游戏的辅助战斗循环）
 5: Spell: 闪电箭[id:188196]
-    if player has buff/debuff '狂风怒号[id:454015]'
-    if talent '闪电箭[id:188196]' is taken
-    if player has resources to cast spell '闪电箭[id:188196]'
-    if spell '闪电箭[id:188196]' is off cooldown
-    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+    若玩家拥有增益/减益 '狂风怒号[id:454015]'
+    若已点出天赋 '闪电箭[id:188196]'
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'
+    若技能 '闪电箭[id:188196]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 5
+    若玩家没有增益/减益 '暴怒漩涡[id:384149]'
 6: Spell: 闪电链[id:188443]
-    if talent '闪电链[id:188443]' is taken
-    if player has resources to cast spell '闪电链[id:188443]'
-    if spell '闪电链[id:188443]' is off cooldown
-    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
-    if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+    若已点出天赋 '闪电链[id:188443]'
+    若玩家有足够资源施放技能 '闪电链[id:188443]'
+    若技能 '闪电链[id:188443]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 5
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家没有增益/减益 '暴怒漩涡[id:384149]'
 7: Spell: 闪电箭[id:188196]
-    if talent '闪电箭[id:188196]' is taken
-    if player has resources to cast spell '闪电箭[id:188196]'
-    if spell '闪电箭[id:188196]' is off cooldown
-    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+    若已点出天赋 '闪电箭[id:188196]'
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'
+    若技能 '闪电箭[id:188196]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 5
+    若玩家没有增益/减益 '暴怒漩涡[id:384149]'
 8: Spell: 毁灭闪电[id:187874]
-    if talent '毁灭闪电[id:187874]' is taken
-    if player has resources to cast spell '毁灭闪电[id:187874]'
-    if spell '毁灭闪电[id:187874]' is off cooldown
-    if target is less than 10 yards away
+    若已点出天赋 '毁灭闪电[id:187874]'
+    若玩家有足够资源施放技能 '毁灭闪电[id:187874]'
+    若技能 '毁灭闪电[id:187874]' 不在冷却中
+    若目标距离小于 10 码
 9: Spell: 熔岩猛击[id:60103,cd:18]
-    if player has buff/debuff '生机图腾[id:445034]'
-    if talent '熔岩猛击[id:60103,cd:18]' is taken
-    if player has resources to cast spell '熔岩猛击[id:60103,cd:18]'
-    if spell '熔岩猛击[id:60103,cd:18]' is off cooldown
-    if spell '熔岩猛击[id:60103,cd:18]' is within allowed range
+    若玩家拥有增益/减益 '生机图腾[id:445034]'
+    若已点出天赋 '熔岩猛击[id:60103,cd:18]'
+    若玩家有足够资源施放技能 '熔岩猛击[id:60103,cd:18]'
+    若技能 '熔岩猛击[id:60103,cd:18]' 不在冷却中
+    若技能 '熔岩猛击[id:60103,cd:18]' 在射程内
 10: Spell: 风暴打击[id:17364]
-    if talent '风暴打击[id:17364]' is taken
-    if player has resources to cast spell '风暴打击[id:17364]'
-    if spell '风暴打击[id:17364]' is off cooldown
-    if spell '风暴打击[id:17364]' is within allowed range
+    若已点出天赋 '风暴打击[id:17364]'
+    若玩家有足够资源施放技能 '风暴打击[id:17364]'
+    若技能 '风暴打击[id:17364]' 不在冷却中
+    若技能 '风暴打击[id:17364]' 在射程内
 11: Spell: 熔岩猛击[id:60103,cd:18]
-    if talent '熔岩猛击[id:60103,cd:18]' is taken
-    if player has resources to cast spell '熔岩猛击[id:60103,cd:18]'
-    if spell '熔岩猛击[id:60103,cd:18]' is off cooldown
-    if spell '熔岩猛击[id:60103,cd:18]' is within allowed range
+    若已点出天赋 '熔岩猛击[id:60103,cd:18]'
+    若玩家有足够资源施放技能 '熔岩猛击[id:60103,cd:18]'
+    若技能 '熔岩猛击[id:60103,cd:18]' 不在冷却中
+    若技能 '熔岩猛击[id:60103,cd:18]' 在射程内
 12: Spell: 烈焰震击[id:470411,cd:6]
-    if talent '烈焰震击[id:470411,cd:6]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
-    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
 13: Spell: 冰霜震击[id:196840]
-    if talent '冰霜震击[id:196840]' is taken
-    if player has resources to cast spell '冰霜震击[id:196840]'
-    if spell '冰霜震击[id:196840]' is off cooldown
+    若已点出天赋 '冰霜震击[id:196840]'
+    若玩家有足够资源施放技能 '冰霜震击[id:196840]'
+    若技能 '冰霜震击[id:196840]' 不在冷却中
 14: Spell: 风暴打击[id:17364]
 15: Spell: 闪电箭[id:188196]
-    if player has buff/debuff '狂风怒号[id:454015]'
-    if talent '闪电箭[id:188196]' is taken
-    if player has resources to cast spell '闪电箭[id:188196]'
-    if spell '闪电箭[id:188196]' is off cooldown
-    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player has buff/debuff '暴怒漩涡[id:384149]'
+    若玩家拥有增益/减益 '狂风怒号[id:454015]'
+    若已点出天赋 '闪电箭[id:188196]'
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'
+    若技能 '闪电箭[id:188196]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 10
+    若玩家拥有增益/减益 '暴怒漩涡[id:384149]'
 16: Spell: 裂地术[id:197214,cd:30]
-    if player has resources to cast spell '裂地术[id:197214,cd:30]'
-    if player has buff/debuff '始源风暴[id:1218125]'
-    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player has buff/debuff '暴怒漩涡[id:384149]'
+    若玩家有足够资源施放技能 '裂地术[id:197214,cd:30]'
+    若玩家拥有增益/减益 '始源风暴[id:1218125]'
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 10
+    若玩家拥有增益/减益 '暴怒漩涡[id:384149]'
 17: Spell: 闪电链[id:188443]
-    if talent '闪电链[id:188443]' is taken
-    if player has resources to cast spell '闪电链[id:188443]'
-    if spell '闪电链[id:188443]' is off cooldown
-    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
-    if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff '暴怒漩涡[id:384149]'
+    若已点出天赋 '闪电链[id:188443]'
+    若玩家有足够资源施放技能 '闪电链[id:188443]'
+    若技能 '闪电链[id:188443]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 10
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家拥有增益/减益 '暴怒漩涡[id:384149]'
 18: Spell: 闪电箭[id:188196]
-    if talent '闪电箭[id:188196]' is taken
-    if player has resources to cast spell '闪电箭[id:188196]'
-    if spell '闪电箭[id:188196]' is off cooldown
-    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player has buff/debuff '暴怒漩涡[id:384149]'
+    若已点出天赋 '闪电箭[id:188196]'
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'
+    若技能 '闪电箭[id:188196]' 不在冷却中
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 10
+    若玩家拥有增益/减益 '暴怒漩涡[id:384149]'
 19: Spell: 风暴打击[id:17364]
-    if talent '风暴打击[id:17364]' is taken
-    if player has resources to cast spell '风暴打击[id:17364]'
-    if spell '风暴打击[id:17364]' is off cooldown
-    if spell '风暴打击[id:17364]' is within allowed range
-    if player has buff/debuff '升腾[id:114051,cd:180]'
-    if player has buff/debuff '托里姆的祈咒[id:384444]'
+    若已点出天赋 '风暴打击[id:17364]'
+    若玩家有足够资源施放技能 '风暴打击[id:17364]'
+    若技能 '风暴打击[id:17364]' 不在冷却中
+    若技能 '风暴打击[id:17364]' 在射程内
+    若玩家拥有增益/减益 '升腾[id:114051,cd:180]'
+    若玩家拥有增益/减益 '托里姆的祈咒[id:384444]'
 20: Spell: 风怒武器[id:33757]
-    if talent '风怒武器[id:33757]' is taken
-    if player has resources to cast spell '风怒武器[id:33757]'
-    if spell '风怒武器[id:33757]' is off cooldown
-    if player does not have buff/debuff '风怒武器[id:319773]'
+    若已点出天赋 '风怒武器[id:33757]'
+    若玩家有足够资源施放技能 '风怒武器[id:33757]'
+    若技能 '风怒武器[id:33757]' 不在冷却中
+    若玩家没有增益/减益 '风怒武器[id:319773]'
 21: Spell: 火舌武器[id:318038]
-    if talent '火舌武器[id:318038]' is taken
-    if player has resources to cast spell '火舌武器[id:318038]'
-    if spell '火舌武器[id:318038]' is off cooldown
-    if player does not have buff/debuff '火舌武器[id:319778]'
+    若已点出天赋 '火舌武器[id:318038]'
+    若玩家有足够资源施放技能 '火舌武器[id:318038]'
+    若技能 '火舌武器[id:318038]' 不在冷却中
+    若玩家没有增益/减益 '火舌武器[id:319778]'
 22: Spell: 烈焰震击[id:470411,cd:6]
-    if talent '烈焰震击[id:470411,cd:6]' is taken
-    if player has resources to cast spell '烈焰震击[id:470411,cd:6]'
-    if spell '烈焰震击[id:470411,cd:6]' is off cooldown
-    if player has buff/debuff 'Unknown Spell[id:470058]'
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
+    若玩家拥有增益/减益 'Unknown Spell[id:470058]'
 23: Spell: 闪电之盾[id:192106]
-    if talent '闪电之盾[id:192106]' is taken
-    if player has resources to cast spell '闪电之盾[id:192106]'
-    if spell '闪电之盾[id:192106]' is off cooldown
-    if player does not have buff/debuff '闪电之盾[id:192106]'
+    若已点出天赋 '闪电之盾[id:192106]'
+    若玩家有足够资源施放技能 '闪电之盾[id:192106]'
+    若技能 '闪电之盾[id:192106]' 不在冷却中
+    若玩家没有增益/减益 '闪电之盾[id:192106]'
 24: Spell: 毁灭闪电[id:187874]
-    if talent '毁灭闪电[id:187874]' is taken
-    if player has resources to cast spell '毁灭闪电[id:187874]'
-    if spell '毁灭闪电[id:187874]' is off cooldown
-    if player has buff/debuff '升腾[id:114051,cd:180]'
-    if player has buff/debuff '托里姆的祈咒[id:384444]'
-    if target is less than 10 yards away
+    若已点出天赋 '毁灭闪电[id:187874]'
+    若玩家有足够资源施放技能 '毁灭闪电[id:187874]'
+    若技能 '毁灭闪电[id:187874]' 不在冷却中
+    若玩家拥有增益/减益 '升腾[id:114051,cd:180]'
+    若玩家拥有增益/减益 '托里姆的祈咒[id:384444]'
+    若目标距离小于 10 码
 25: Spell: 流电炽焰[id:470057,cd:10]
-    if talent '流电炽焰[id:470057,cd:10]' is taken
-    if player has resources to cast spell '流电炽焰[id:470057,cd:10]'
-    if spell '流电炽焰[id:470057,cd:10]' is off cooldown
+    若已点出天赋 '流电炽焰[id:470057,cd:10]'
+    若玩家有足够资源施放技能 '流电炽焰[id:470057,cd:10]'
+    若技能 '流电炽焰[id:470057,cd:10]' 不在冷却中
 26: Spell: 天怒[id:462854]
-    if talent '天怒[id:462854]' is taken
-    if player has resources to cast spell '天怒[id:462854]'
-    if spell '天怒[id:462854]' is off cooldown
-    if player has buff/debuff '天怒高亮[id:1271904]'
+    若已点出天赋 '天怒[id:462854]'
+    若玩家有足够资源施放技能 '天怒[id:462854]'
+    若技能 '天怒[id:462854]' 不在冷却中
+    若玩家拥有增益/减益 '天怒高亮[id:1271904]'
 27: Spell: 裂地术[id:197214,cd:30]
-    if player has resources to cast spell '裂地术[id:197214,cd:30]'
-    if player has buff/debuff '始源风暴[id:1218125]'
-    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
-    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+    若玩家有足够资源施放技能 '裂地术[id:197214,cd:30]'
+    若玩家拥有增益/减益 '始源风暴[id:1218125]'
+    若玩家身上增益/减益 '漩涡武器[id:344179]' 的层数超过 5
+    若玩家没有增益/减益 '暴怒漩涡[id:384149]'

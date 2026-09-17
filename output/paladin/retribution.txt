@@ -1,107 +1,107 @@
 Retribution
 0: Spell: 处决宣判[id:343527,cd:60]
-    if talent '处决宣判[id:343527,cd:60]' is taken
-    if player has resources to cast spell '处决宣判[id:343527,cd:60]'
-    if spell '处决宣判[id:343527,cd:60]' is off cooldown
-    if spell '处决宣判[id:343527,cd:60]' is within allowed range
+    若已点出天赋 '处决宣判[id:343527,cd:60]'
+    若玩家有足够资源施放技能 '处决宣判[id:343527,cd:60]'
+    若技能 '处决宣判[id:343527,cd:60]' 不在冷却中
+    若技能 '处决宣判[id:343527,cd:60]' 在射程内
 1: Spell: 灰烬觉醒[id:255937]
-    if talent '灰烬觉醒[id:255937]' is taken
-    if player has resources to cast spell '灰烬觉醒[id:255937]'
-    if player has buff/debuff '圣光之锤[id:427441]'
-    if spell '灰烬觉醒[id:255937]' is within allowed range
+    若已点出天赋 '灰烬觉醒[id:255937]'
+    若玩家有足够资源施放技能 '灰烬觉醒[id:255937]'
+    若玩家拥有增益/减益 '圣光之锤[id:427441]'
+    若技能 '灰烬觉醒[id:255937]' 在射程内
 2: Spell: 圣殿骑士的裁决[id:85256]
-    if talent '圣殿骑士的裁决[id:85256]' is taken
-    if player has resources to cast spell '圣殿骑士的裁决[id:85256]'
-    if spell '圣殿骑士的裁决[id:85256]' is off cooldown
-    if there are less than 2 targets within 10 yards of player
-    if player does not have buff/debuff '圣光之锤[id:427441]'
-    if spell '圣殿骑士的裁决[id:85256]' is within allowed range
+    若已点出天赋 '圣殿骑士的裁决[id:85256]'
+    若玩家有足够资源施放技能 '圣殿骑士的裁决[id:85256]'
+    若技能 '圣殿骑士的裁决[id:85256]' 不在冷却中
+    若玩家周围 10 码内的目标数量少于 2 个
+    若玩家没有增益/减益 '圣光之锤[id:427441]'
+    若技能 '圣殿骑士的裁决[id:85256]' 在射程内
 3: Spell: 公正之剑[id:184575]
-    if talent '公正之剑[id:184575]' is taken
-    if player has resources to cast spell '公正之剑[id:184575]'
-    if spell '公正之剑[id:184575]' is off cooldown
-    if player has buff/debuff '异端逐除[id:383344]'
-    if target does not have buff/debuff '异端逐除[id:383346]'
-    if spell '公正之剑[id:184575]' is within allowed range
+    若已点出天赋 '公正之剑[id:184575]'
+    若玩家有足够资源施放技能 '公正之剑[id:184575]'
+    若技能 '公正之剑[id:184575]' 不在冷却中
+    若玩家拥有增益/减益 '异端逐除[id:383344]'
+    若目标没有增益/减益 '异端逐除[id:383346]'
+    若技能 '公正之剑[id:184575]' 在射程内
 4: Spell: 神圣风暴[id:53385]
-    if talent '神圣风暴[id:53385]' is taken
-    if player has resources to cast spell '神圣风暴[id:53385]'
-    if spell '神圣风暴[id:53385]' is off cooldown
-    if there are more than 2 targets within 10 yards of player
-    if player has more than 3 holy power
-    if player does not have buff/debuff '圣光之锤[id:427441]'
+    若已点出天赋 '神圣风暴[id:53385]'
+    若玩家有足够资源施放技能 '神圣风暴[id:53385]'
+    若技能 '神圣风暴[id:53385]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 2 个
+    若玩家神圣能量高于 3
+    若玩家没有增益/减益 '圣光之锤[id:427441]'
 5: Spell: 灰烬觉醒[id:255937]
-    if talent '灰烬觉醒[id:255937]' is taken
-    if player has resources to cast spell '灰烬觉醒[id:255937]'
-    if spell '灰烬觉醒[id:255937]' is off cooldown
-    if target is less than 10 yards away
+    若已点出天赋 '灰烬觉醒[id:255937]'
+    若玩家有足够资源施放技能 '灰烬觉醒[id:255937]'
+    若技能 '灰烬觉醒[id:255937]' 不在冷却中
+    若目标距离小于 10 码
 6: Spell: 圣殿骑士的裁决[id:85256]
-    if talent '圣殿骑士的裁决[id:85256]' is taken
-    if player has resources to cast spell '圣殿骑士的裁决[id:85256]'
-    if spell '圣殿骑士的裁决[id:85256]' is off cooldown
-    if player has buff/debuff '苍穹之遗[id:387178]'
-    if player has more than 5 holy power
-    if player does not have buff/debuff '圣光之锤[id:427441]'
-    if spell '圣殿骑士的裁决[id:85256]' is within allowed range
+    若已点出天赋 '圣殿骑士的裁决[id:85256]'
+    若玩家有足够资源施放技能 '圣殿骑士的裁决[id:85256]'
+    若技能 '圣殿骑士的裁决[id:85256]' 不在冷却中
+    若玩家拥有增益/减益 '苍穹之遗[id:387178]'
+    若玩家神圣能量高于 5
+    若玩家没有增益/减益 '圣光之锤[id:427441]'
+    若技能 '圣殿骑士的裁决[id:85256]' 在射程内
 7: Spell: 圣洁鸣钟[id:375576,cd:60]
-    if target is less than 30 yards away
-    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
-    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
-    if there are more than 3 targets within 10 yards of player
-    if player has less than 1 holy power
+    若目标距离小于 30 码
+    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'
+    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 3 个
+    若玩家神圣能量低于 1
 8: Spell: 神圣风暴[id:53385]
-    if talent '神圣风暴[id:53385]' is taken
-    if player has resources to cast spell '神圣风暴[id:53385]'
-    if spell '神圣风暴[id:53385]' is off cooldown
-    if player has buff/debuff '苍穹之力[id:326733]'
-    if player does not have buff/debuff '圣光之锤[id:427441]'
+    若已点出天赋 '神圣风暴[id:53385]'
+    若玩家有足够资源施放技能 '神圣风暴[id:53385]'
+    若技能 '神圣风暴[id:53385]' 不在冷却中
+    若玩家拥有增益/减益 '苍穹之力[id:326733]'
+    若玩家没有增益/减益 '圣光之锤[id:427441]'
 9: Spell: 圣洁鸣钟[id:375576,cd:60]
-    if target is less than 30 yards away
-    if talent '圣洁鸣钟[id:375576,cd:60]' is taken
-    if player has resources to cast spell '圣洁鸣钟[id:375576,cd:60]'
-    if spell '圣洁鸣钟[id:375576,cd:60]' is off cooldown
-    if player has less than 3 holy power
-    if there are less than 2 targets within 10 yards of player
+    若目标距离小于 30 码
+    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'
+    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中
+    若玩家神圣能量低于 3
+    若玩家周围 10 码内的目标数量少于 2 个
 10: Spell: 公正之剑[id:184575]
-    if talent '公正之剑[id:184575]' is taken
-    if player has resources to cast spell '公正之剑[id:184575]'
-    if spell '公正之剑[id:184575]' is off cooldown
-    if player has less than 3 holy power
-    if spell '公正之剑[id:184575]' is within allowed range
+    若已点出天赋 '公正之剑[id:184575]'
+    若玩家有足够资源施放技能 '公正之剑[id:184575]'
+    若技能 '公正之剑[id:184575]' 不在冷却中
+    若玩家神圣能量低于 3
+    若技能 '公正之剑[id:184575]' 在射程内
 11: Spell: 十字军打击[id:35395]
-    if talent '十字军打击[id:35395]' is taken
-    if player has resources to cast spell '十字军打击[id:35395]'
-    if spell '十字军打击[id:35395]' is off cooldown
-    if spell '十字军打击[id:35395]' is within allowed range
+    若已点出天赋 '十字军打击[id:35395]'
+    若玩家有足够资源施放技能 '十字军打击[id:35395]'
+    若技能 '十字军打击[id:35395]' 不在冷却中
+    若技能 '十字军打击[id:35395]' 在射程内
 12: Spell: 审判[id:20271]
-    if talent '审判[id:20271]' is taken
-    if player has resources to cast spell '审判[id:20271]'
-    if spell '审判[id:20271]' is off cooldown
-    if player has less than 3 holy power
-    if spell '审判[id:20271]' is within allowed range
+    若已点出天赋 '审判[id:20271]'
+    若玩家有足够资源施放技能 '审判[id:20271]'
+    若技能 '审判[id:20271]' 不在冷却中
+    若玩家神圣能量低于 3
+    若技能 '审判[id:20271]' 在射程内
 13: Spell: 圣殿骑士的裁决[id:85256]
-    if talent '圣殿骑士的裁决[id:85256]' is taken
-    if player has resources to cast spell '圣殿骑士的裁决[id:85256]'
-    if spell '圣殿骑士的裁决[id:85256]' is off cooldown
-    if player does not have buff/debuff '圣光之锤[id:427441]'
-    if spell '圣殿骑士的裁决[id:85256]' is within allowed range
+    若已点出天赋 '圣殿骑士的裁决[id:85256]'
+    若玩家有足够资源施放技能 '圣殿骑士的裁决[id:85256]'
+    若技能 '圣殿骑士的裁决[id:85256]' 不在冷却中
+    若玩家没有增益/减益 '圣光之锤[id:427441]'
+    若技能 '圣殿骑士的裁决[id:85256]' 在射程内
 14: Spell: 十字军打击[id:35395]
-    if talent '十字军打击[id:35395]' is taken
-    if player has resources to cast spell '十字军打击[id:35395]'
-    if spell '十字军打击[id:35395]' is off cooldown
-    if player does not have buff/debuff '远征打击[id:404542]'
-    if spell '十字军打击[id:35395]' is within allowed range
+    若已点出天赋 '十字军打击[id:35395]'
+    若玩家有足够资源施放技能 '十字军打击[id:35395]'
+    若技能 '十字军打击[id:35395]' 不在冷却中
+    若玩家没有增益/减益 '远征打击[id:404542]'
+    若技能 '十字军打击[id:35395]' 在射程内
 15: Spell: 审判[id:20271]
 16: Spell: 审判[id:20271]
-    if player has buff/debuff '复仇之怒[id:31884,cd:120]'
-    if talent '审判[id:20271]' is taken
-    if player has resources to cast spell '审判[id:20271]'
-    if spell '审判[id:20271]' is off cooldown
-    if player has less than 3 holy power
-    if spell '审判[id:20271]' is within allowed range
+    若玩家拥有增益/减益 '复仇之怒[id:31884,cd:120]'
+    若已点出天赋 '审判[id:20271]'
+    若玩家有足够资源施放技能 '审判[id:20271]'
+    若技能 '审判[id:20271]' 不在冷却中
+    若玩家神圣能量低于 3
+    若技能 '审判[id:20271]' 在射程内
 17: Spell: 复仇之怒[id:31884,cd:120]
-    if talent '复仇之怒[id:31884,cd:120]' is taken
-    if player has resources to cast spell '复仇之怒[id:31884,cd:120]'
-    if spell '复仇之怒[id:31884,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '复仇之怒[id:31884,cd:120]'
+    若玩家有足够资源施放技能 '复仇之怒[id:31884,cd:120]'
+    若技能 '复仇之怒[id:31884,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）

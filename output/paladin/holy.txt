@@ -1,46 +1,46 @@
 Holy
 0: Spell: 奉献[id:26573,cd:9]
-    if talent '奉献[id:26573,cd:9]' is taken
-    if player has resources to cast spell '奉献[id:26573,cd:9]'
-    if spell '奉献[id:26573,cd:9]' is off cooldown
-    if there are more than 8 targets within 10 yards of player
+    若已点出天赋 '奉献[id:26573,cd:9]'
+    若玩家有足够资源施放技能 '奉献[id:26573,cd:9]'
+    若技能 '奉献[id:26573,cd:9]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 8 个
 1: Spell: 审判[id:275773]
-    if talent '审判[id:275773]' is taken
-    if player has resources to cast spell '审判[id:275773]'
-    if spell '审判[id:275773]' is off cooldown
+    若已点出天赋 '审判[id:275773]'
+    若玩家有足够资源施放技能 '审判[id:275773]'
+    若技能 '审判[id:275773]' 不在冷却中
 2: Spell: 愤怒之锤[id:24275]
-    if player has buff/debuff '崇圣[id:392939]'
-    if talent '愤怒之锤[id:24275]' is taken
-    if player has resources to cast spell '愤怒之锤[id:24275]'
-    if spell '愤怒之锤[id:24275]' is off cooldown
+    若玩家拥有增益/减益 '崇圣[id:392939]'
+    若已点出天赋 '愤怒之锤[id:24275]'
+    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'
+    若技能 '愤怒之锤[id:24275]' 不在冷却中
 3: Spell: 愤怒之锤[id:24275]
-    if talent '愤怒之锤[id:24275]' is taken
-    if player has resources to cast spell '愤怒之锤[id:24275]'
-    if spell '愤怒之锤[id:24275]' is off cooldown
-    if player has buff/debuff '复仇之怒[id:31884,cd:120]'
+    若已点出天赋 '愤怒之锤[id:24275]'
+    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'
+    若技能 '愤怒之锤[id:24275]' 不在冷却中
+    若玩家拥有增益/减益 '复仇之怒[id:31884,cd:120]'
 4: Spell: 愤怒之锤[id:24275]
-    if talent '愤怒之锤[id:24275]' is taken
-    if player has resources to cast spell '愤怒之锤[id:24275]'
-    if spell '愤怒之锤[id:24275]' is off cooldown
-    if player has buff/debuff '复仇十字军[id:216331,cd:60]'
+    若已点出天赋 '愤怒之锤[id:24275]'
+    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'
+    若技能 '愤怒之锤[id:24275]' 不在冷却中
+    若玩家拥有增益/减益 '复仇十字军[id:216331,cd:60]'
 5: Spell: 复仇十字军[id:216331,cd:60]
-    if player has buff/debuff '复仇十字军[id:216331,cd:60]'
-    if player has resources to cast spell '复仇十字军[id:216331,cd:60]'
-    if spell '复仇十字军[id:216331,cd:60]' is off cooldown
-    if spell '复仇十字军[id:216331,cd:60]' is within allowed range
+    若玩家拥有增益/减益 '复仇十字军[id:216331,cd:60]'
+    若玩家有足够资源施放技能 '复仇十字军[id:216331,cd:60]'
+    若技能 '复仇十字军[id:216331,cd:60]' 不在冷却中
+    若技能 '复仇十字军[id:216331,cd:60]' 在射程内
 6: Spell: 愤怒之锤[id:24275]
-    if talent '愤怒之锤[id:24275]' is taken
-    if player has resources to cast spell '愤怒之锤[id:24275]'
-    if spell '愤怒之锤[id:24275]' is off cooldown
-    if target has less than 20% health
+    若已点出天赋 '愤怒之锤[id:24275]'
+    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'
+    若技能 '愤怒之锤[id:24275]' 不在冷却中
+    若目标生命值低于 20%
 7: Spell: 奉献[id:26573,cd:9]
-    if talent '奉献[id:26573,cd:9]' is taken
-    if player has resources to cast spell '奉献[id:26573,cd:9]'
-    if spell '奉献[id:26573,cd:9]' is off cooldown
-    if target is less than 8 yards away
-    if player does not have buff/debuff '公正审判[id:414113]'
+    若已点出天赋 '奉献[id:26573,cd:9]'
+    若玩家有足够资源施放技能 '奉献[id:26573,cd:9]'
+    若技能 '奉献[id:26573,cd:9]' 不在冷却中
+    若目标距离小于 8 码
+    若玩家没有增益/减益 '公正审判[id:414113]'
 8: Spell: 审判[id:275773]
 9: Spell: 神圣震击[id:20473]
-    if talent '神圣震击[id:20473]' is taken
-    if player has resources to cast spell '神圣震击[id:20473]'
-    if spell '神圣震击[id:20473]' is off cooldown
+    若已点出天赋 '神圣震击[id:20473]'
+    若玩家有足够资源施放技能 '神圣震击[id:20473]'
+    若技能 '神圣震击[id:20473]' 不在冷却中

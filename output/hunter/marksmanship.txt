@@ -1,92 +1,92 @@
 Marksmanship
 0: Spell: 多重射击[id:257620]
-    if talent '多重射击[id:257620]' is taken
-    if player has resources to cast spell '多重射击[id:257620]'
-    if spell '多重射击[id:257620]' is off cooldown
-    if spell '多重射击[id:257620]' is within allowed range
-    if player has buff/debuff '技巧射击[id:257622]' with at least 2000 ms left
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '多重射击[id:257620]'
+    若玩家有足够资源施放技能 '多重射击[id:257620]'
+    若技能 '多重射击[id:257620]' 不在冷却中
+    若技能 '多重射击[id:257620]' 在射程内
+    若玩家身上的增益/减益 '技巧射击[id:257622]' 至少还剩 2000 毫秒
+    若目标周围 10 码内的目标数量超过 3 个
 1: Spell: 多重射击[id:257620]
-    if talent '多重射击[id:257620]' is taken
-    if player has resources to cast spell '多重射击[id:257620]'
-    if spell '多重射击[id:257620]' is off cooldown
-    if spell '多重射击[id:257620]' is within allowed range
-    if player has buff/debuff '弹无虚发[id:260242]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '多重射击[id:257620]'
+    若玩家有足够资源施放技能 '多重射击[id:257620]'
+    若技能 '多重射击[id:257620]' 不在冷却中
+    若技能 '多重射击[id:257620]' 在射程内
+    若玩家拥有增益/减益 '弹无虚发[id:260242]'
+    若目标周围 10 码内的目标数量超过 3 个
 2: Spell: 急速射击[id:257044,cd:16]
-    if talent '急速射击[id:257044,cd:16]' is taken
-    if player has resources to cast spell '急速射击[id:257044,cd:16]'
-    if spell '急速射击[id:257044,cd:16]' is off cooldown
-    if spell '急速射击[id:257044,cd:16]' is within allowed range
+    若已点出天赋 '急速射击[id:257044,cd:16]'
+    若玩家有足够资源施放技能 '急速射击[id:257044,cd:16]'
+    若技能 '急速射击[id:257044,cd:16]' 不在冷却中
+    若技能 '急速射击[id:257044,cd:16]' 在射程内
 3: Spell: 乱射[id:260243,cd:45]
-    if talent '乱射[id:260243,cd:45]' is taken
-    if player has resources to cast spell '乱射[id:260243,cd:45]'
-    if spell '乱射[id:260243,cd:45]' is off cooldown
-    if target is less than 50 yards away
+    若已点出天赋 '乱射[id:260243,cd:45]'
+    若玩家有足够资源施放技能 '乱射[id:260243,cd:45]'
+    若技能 '乱射[id:260243,cd:45]' 不在冷却中
+    若目标距离小于 50 码
 4: Spell: 瞄准射击[id:19434]
-    if talent '瞄准射击[id:19434]' is taken
-    if player has resources to cast spell '瞄准射击[id:19434]'
-    if spell '瞄准射击[id:19434]' is off cooldown
-    if spell '瞄准射击[id:19434]' is within allowed range
+    若已点出天赋 '瞄准射击[id:19434]'
+    若玩家有足够资源施放技能 '瞄准射击[id:19434]'
+    若技能 '瞄准射击[id:19434]' 不在冷却中
+    若技能 '瞄准射击[id:19434]' 在射程内
 5: Spell: 夺命射击[id:53351]
-    if talent '夺命射击[id:53351]' is taken
-    if player has resources to cast spell '夺命射击[id:53351]'
-    if spell '夺命射击[id:53351]' is off cooldown
-    if spell '夺命射击[id:53351]' is within allowed range
+    若已点出天赋 '夺命射击[id:53351]'
+    若玩家有足够资源施放技能 '夺命射击[id:53351]'
+    若技能 '夺命射击[id:53351]' 不在冷却中
+    若技能 '夺命射击[id:53351]' 在射程内
 6: Spell: 稳固射击[id:56641]
-    if talent '稳固射击[id:56641]' is taken
-    if player has resources to cast spell '稳固射击[id:56641]'
-    if spell '稳固射击[id:56641]' is off cooldown
-    if spell '稳固射击[id:56641]' is within allowed range
-    if spell '稳固射击[id:56641]' can be successfully cast
+    若已点出天赋 '稳固射击[id:56641]'
+    若玩家有足够资源施放技能 '稳固射击[id:56641]'
+    若技能 '稳固射击[id:56641]' 不在冷却中
+    若技能 '稳固射击[id:56641]' 在射程内
+    若技能 '稳固射击[id:56641]' 可以成功施放
 7: Spell: 多重射击[id:2643]
-    if talent '多重射击[id:2643]' is taken
-    if player has resources to cast spell '多重射击[id:2643]'
-    if spell '多重射击[id:2643]' is off cooldown
-    if spell '多重射击[id:2643]' is within allowed range
-    if there are more than 3 targets within 10 yards of target
-    if player has more than 90 focus
+    若已点出天赋 '多重射击[id:2643]'
+    若玩家有足够资源施放技能 '多重射击[id:2643]'
+    若技能 '多重射击[id:2643]' 不在冷却中
+    若技能 '多重射击[id:2643]' 在射程内
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家集中值高于 90
 8: Spell: 夺命射击[id:53351]
-    if talent '夺命射击[id:53351]' is taken
-    if player has resources to cast spell '夺命射击[id:53351]'
-    if spell '夺命射击[id:53351]' is off cooldown
-    if spell '夺命射击[id:53351]' is within allowed range
-    if player has buff/debuff '黑蚀箭[id:466932]'
+    若已点出天赋 '夺命射击[id:53351]'
+    若玩家有足够资源施放技能 '夺命射击[id:53351]'
+    若技能 '夺命射击[id:53351]' 不在冷却中
+    若技能 '夺命射击[id:53351]' 在射程内
+    若玩家拥有增益/减益 '黑蚀箭[id:466932]'
 9: Spell: 奥术射击[id:185358]
-    if talent '奥术射击[id:185358]' is taken
-    if player has resources to cast spell '奥术射击[id:185358]'
-    if spell '奥术射击[id:185358]' is off cooldown
-    if spell '奥术射击[id:185358]' is within allowed range
-    if player has buff/debuff '弹无虚发[id:260242]'
+    若已点出天赋 '奥术射击[id:185358]'
+    若玩家有足够资源施放技能 '奥术射击[id:185358]'
+    若技能 '奥术射击[id:185358]' 不在冷却中
+    若技能 '奥术射击[id:185358]' 在射程内
+    若玩家拥有增益/减益 '弹无虚发[id:260242]'
 10: Spell: 多重射击[id:257620]
-    if talent '多重射击[id:257620]' is taken
-    if player has resources to cast spell '多重射击[id:257620]'
-    if spell '多重射击[id:257620]' is off cooldown
-    if spell '多重射击[id:257620]' is within allowed range
-    if player does not have buff/debuff '技巧射击[id:257622]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '多重射击[id:257620]'
+    若玩家有足够资源施放技能 '多重射击[id:257620]'
+    若技能 '多重射击[id:257620]' 不在冷却中
+    若技能 '多重射击[id:257620]' 在射程内
+    若玩家没有增益/减益 '技巧射击[id:257622]'
+    若目标周围 10 码内的目标数量超过 3 个
 11: Spell: 瞄准射击[id:19434]
-    if talent '瞄准射击[id:19434]' is taken
+    若已点出天赋 '瞄准射击[id:19434]'
 12: Spell: 瞄准射击[id:19434]
-    if talent '瞄准射击[id:19434]' is taken
-    if player has resources to cast spell '瞄准射击[id:19434]'
-    if spell '瞄准射击[id:19434]' is off cooldown
-    if spell '瞄准射击[id:19434]' is within allowed range
-    if spell '瞄准射击[id:19434]' can be successfully cast
-    if player has more than 2 charges of spell '瞄准射击[id:19434]'
+    若已点出天赋 '瞄准射击[id:19434]'
+    若玩家有足够资源施放技能 '瞄准射击[id:19434]'
+    若技能 '瞄准射击[id:19434]' 不在冷却中
+    若技能 '瞄准射击[id:19434]' 在射程内
+    若技能 '瞄准射击[id:19434]' 可以成功施放
+    若技能 '瞄准射击[id:19434]' 的充能层数超过 2
 13: Spell: 稳固射击[id:56641]
 14: Spell: 奥术射击[id:185358]
-    if talent '奥术射击[id:185358]' is taken
-    if player has resources to cast spell '奥术射击[id:185358]'
-    if spell '奥术射击[id:185358]' is off cooldown
-    if player does not have buff/debuff '弹无虚发[id:260240]'
+    若已点出天赋 '奥术射击[id:185358]'
+    若玩家有足够资源施放技能 '奥术射击[id:185358]'
+    若技能 '奥术射击[id:185358]' 不在冷却中
+    若玩家没有增益/减益 '弹无虚发[id:260240]'
 15: Spell: 百发百中[id:288613,cd:120]
-    if talent '百发百中[id:288613,cd:120]' is taken
-    if player has resources to cast spell '百发百中[id:288613,cd:120]'
-    if spell '百发百中[id:288613,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '百发百中[id:288613,cd:120]'
+    若玩家有足够资源施放技能 '百发百中[id:288613,cd:120]'
+    若技能 '百发百中[id:288613,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 16: Spell: 爆炸射击[id:212431,cd:30]
-    if talent '爆炸射击[id:212431,cd:30]' is taken
-    if player has resources to cast spell '爆炸射击[id:212431,cd:30]'
-    if spell '爆炸射击[id:212431,cd:30]' is off cooldown
-    if spell '爆炸射击[id:212431,cd:30]' is within allowed range
+    若已点出天赋 '爆炸射击[id:212431,cd:30]'
+    若玩家有足够资源施放技能 '爆炸射击[id:212431,cd:30]'
+    若技能 '爆炸射击[id:212431,cd:30]' 不在冷却中
+    若技能 '爆炸射击[id:212431,cd:30]' 在射程内

@@ -1,98 +1,98 @@
 Fire
 0: Spell: 火焰冲击[id:108853]
-    if talent '火焰冲击[id:108853]' is taken
-    if player has resources to cast spell '火焰冲击[id:108853]'
-    if spell '火焰冲击[id:108853]' is off cooldown
-    if player has buff/debuff '热力迸发[id:48107]'
-    if player does not have buff/debuff '过热高温[id:383874]'
+    若已点出天赋 '火焰冲击[id:108853]'
+    若玩家有足够资源施放技能 '火焰冲击[id:108853]'
+    若技能 '火焰冲击[id:108853]' 不在冷却中
+    若玩家拥有增益/减益 '热力迸发[id:48107]'
+    若玩家没有增益/减益 '过热高温[id:383874]'
 1: Spell: 烈焰风暴[id:2120]
-    if talent '烈焰风暴[id:2120]' is taken
-    if player has resources to cast spell '烈焰风暴[id:2120]'
-    if spell '烈焰风暴[id:2120]' is off cooldown
-    if player has buff/debuff '炽热连击！[id:48108]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '烈焰风暴[id:2120]'
+    若玩家有足够资源施放技能 '烈焰风暴[id:2120]'
+    若技能 '烈焰风暴[id:2120]' 不在冷却中
+    若玩家拥有增益/减益 '炽热连击！[id:48108]'
+    若目标周围 10 码内的目标数量超过 3 个
 2: Spell: 炎爆术[id:11366]
-    if talent '炎爆术[id:11366]' is taken
-    if player has resources to cast spell '炎爆术[id:11366]'
-    if spell '炎爆术[id:11366]' is off cooldown
-    if player has buff/debuff '炽热连击！[id:48108]'
+    若已点出天赋 '炎爆术[id:11366]'
+    若玩家有足够资源施放技能 '炎爆术[id:11366]'
+    若技能 '炎爆术[id:11366]' 不在冷却中
+    若玩家拥有增益/减益 '炽热连击！[id:48108]'
 3: Spell: 流星[id:153561,cd:45]
-    if talent '流星[id:153561,cd:45]' is taken
-    if player has resources to cast spell '流星[id:153561,cd:45]'
-    if spell '流星[id:153561,cd:45]' is off cooldown
+    若已点出天赋 '流星[id:153561,cd:45]'
+    若玩家有足够资源施放技能 '流星[id:153561,cd:45]'
+    若技能 '流星[id:153561,cd:45]' 不在冷却中
 4: Spell: 火球术[id:133]
-    if talent '火球术[id:133]' is taken
-    if player has resources to cast spell '火球术[id:133]'
-    if spell '火球术[id:133]' is off cooldown
-    if spell '火球术[id:133]' can be successfully cast
+    若已点出天赋 '火球术[id:133]'
+    若玩家有足够资源施放技能 '火球术[id:133]'
+    若技能 '火球术[id:133]' 不在冷却中
+    若技能 '火球术[id:133]' 可以成功施放
 5: Spell: 火球术[id:133]
 6: Spell: 霜火之箭[id:431044]
-    if talent '霜火之箭[id:431044]' is taken
-    if player has resources to cast spell '霜火之箭[id:431044]'
-    if spell '霜火之箭[id:431044]' is off cooldown
-    if spell '霜火之箭[id:431044]' can be successfully cast
+    若已点出天赋 '霜火之箭[id:431044]'
+    若玩家有足够资源施放技能 '霜火之箭[id:431044]'
+    若技能 '霜火之箭[id:431044]' 不在冷却中
+    若技能 '霜火之箭[id:431044]' 可以成功施放
 7: Spell: 燃烧[id:190319,cd:120]
-    if talent '燃烧[id:190319,cd:120]' is taken
-    if player has resources to cast spell '燃烧[id:190319,cd:120]'
-    if spell '燃烧[id:190319,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '燃烧[id:190319,cd:120]'
+    若玩家有足够资源施放技能 '燃烧[id:190319,cd:120]'
+    若技能 '燃烧[id:190319,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 8: Spell: 炎爆术[id:11366]
-    if talent '炎爆术[id:11366]' is taken
-    if player has resources to cast spell '炎爆术[id:11366]'
-    if spell '炎爆术[id:11366]' is off cooldown
-    if player has buff/debuff '过热高温[id:383874]'
+    若已点出天赋 '炎爆术[id:11366]'
+    若玩家有足够资源施放技能 '炎爆术[id:11366]'
+    若技能 '炎爆术[id:11366]' 不在冷却中
+    若玩家拥有增益/减益 '过热高温[id:383874]'
 9: Spell: 烈焰风暴[id:2120]
-    if talent '烈焰风暴[id:2120]' is taken
-    if player has resources to cast spell '烈焰风暴[id:2120]'
-    if spell '烈焰风暴[id:2120]' is off cooldown
-    if player has buff/debuff '过热高温[id:383874]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '烈焰风暴[id:2120]'
+    若玩家有足够资源施放技能 '烈焰风暴[id:2120]'
+    若技能 '烈焰风暴[id:2120]' 不在冷却中
+    若玩家拥有增益/减益 '过热高温[id:383874]'
+    若目标周围 10 码内的目标数量超过 3 个
 10: Spell: 奥术智慧[id:1459]
-    if talent '奥术智慧[id:1459]' is taken
-    if player has resources to cast spell '奥术智慧[id:1459]'
-    if spell '奥术智慧[id:1459]' is off cooldown
-    if player has buff/debuff '奥术智慧高亮[id:1271907]'
+    若已点出天赋 '奥术智慧[id:1459]'
+    若玩家有足够资源施放技能 '奥术智慧[id:1459]'
+    若技能 '奥术智慧[id:1459]' 不在冷却中
+    若玩家拥有增益/减益 '奥术智慧高亮[id:1271907]'
 11: Spell: 烈焰风暴[id:1254851]
-    if talent '烈焰风暴[id:1254851]' is taken
-    if player has resources to cast spell '烈焰风暴[id:1254851]'
-    if spell '烈焰风暴[id:1254851]' is off cooldown
-    if player has buff/debuff '过热高温[id:383874]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '烈焰风暴[id:1254851]'
+    若玩家有足够资源施放技能 '烈焰风暴[id:1254851]'
+    若技能 '烈焰风暴[id:1254851]' 不在冷却中
+    若玩家拥有增益/减益 '过热高温[id:383874]'
+    若目标周围 10 码内的目标数量超过 3 个
 12: Spell: 烈焰风暴[id:1254851]
-    if talent '烈焰风暴[id:1254851]' is taken
-    if player has resources to cast spell '烈焰风暴[id:1254851]'
-    if spell '烈焰风暴[id:1254851]' is off cooldown
-    if player has buff/debuff '炽热连击！[id:48108]'
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '烈焰风暴[id:1254851]'
+    若玩家有足够资源施放技能 '烈焰风暴[id:1254851]'
+    若技能 '烈焰风暴[id:1254851]' 不在冷却中
+    若玩家拥有增益/减益 '炽热连击！[id:48108]'
+    若目标周围 10 码内的目标数量超过 3 个
 13: Spell: 灼烧[id:2948]
-    if spell '灼烧[id:2948]' can be successfully cast
-    if spell '灼烧[id:2948]' is off cooldown
-    if player has resources to cast spell '灼烧[id:2948]'
-    if talent '灼烧[id:2948]' is taken
-    if target has less than 30% health
+    若技能 '灼烧[id:2948]' 可以成功施放
+    若技能 '灼烧[id:2948]' 不在冷却中
+    若玩家有足够资源施放技能 '灼烧[id:2948]'
+    若已点出天赋 '灼烧[id:2948]'
+    若目标生命值低于 30%
 14: Spell: 灼烧[id:2948]
-    if talent '灼烧[id:2948]' is taken
-    if player has resources to cast spell '灼烧[id:2948]'
-    if spell '灼烧[id:2948]' is off cooldown
-    if spell '灼烧[id:2948]' can be successfully cast
-    if player has buff/debuff '热能闪光[id:458964]'
+    若已点出天赋 '灼烧[id:2948]'
+    若玩家有足够资源施放技能 '灼烧[id:2948]'
+    若技能 '灼烧[id:2948]' 不在冷却中
+    若技能 '灼烧[id:2948]' 可以成功施放
+    若玩家拥有增益/减益 '热能闪光[id:458964]'
 15: Spell: 烈焰风暴[id:2120]
-    if talent '烈焰风暴[id:2120]' is taken
-    if player has resources to cast spell '烈焰风暴[id:2120]'
-    if spell '烈焰风暴[id:2120]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff '火焰冲撞[id:269651]'
-    if spell '烈焰风暴[id:2120]' can be successfully cast
+    若已点出天赋 '烈焰风暴[id:2120]'
+    若玩家有足够资源施放技能 '烈焰风暴[id:2120]'
+    若技能 '烈焰风暴[id:2120]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家拥有增益/减益 '火焰冲撞[id:269651]'
+    若技能 '烈焰风暴[id:2120]' 可以成功施放
 16: Spell: 烈焰风暴[id:1254851]
-    if player has buff/debuff '火焰冲撞[id:269651]'
-    if there are more than 3 targets within 10 yards of target
-    if spell '烈焰风暴[id:1254851]' is off cooldown
-    if player has resources to cast spell '烈焰风暴[id:1254851]'
-    if talent '烈焰风暴[id:1254851]' is taken
-    if spell '烈焰风暴[id:1254851]' can be successfully cast
+    若玩家拥有增益/减益 '火焰冲撞[id:269651]'
+    若目标周围 10 码内的目标数量超过 3 个
+    若技能 '烈焰风暴[id:1254851]' 不在冷却中
+    若玩家有足够资源施放技能 '烈焰风暴[id:1254851]'
+    若已点出天赋 '烈焰风暴[id:1254851]'
+    若技能 '烈焰风暴[id:1254851]' 可以成功施放
 17: Spell: 炎爆术[id:11366]
-    if spell '炎爆术[id:11366]' is off cooldown
-    if player has resources to cast spell '炎爆术[id:11366]'
-    if talent '炎爆术[id:11366]' is taken
-    if player has buff/debuff '火焰冲撞[id:269651]'
-    if spell '炎爆术[id:11366]' can be successfully cast
+    若技能 '炎爆术[id:11366]' 不在冷却中
+    若玩家有足够资源施放技能 '炎爆术[id:11366]'
+    若已点出天赋 '炎爆术[id:11366]'
+    若玩家拥有增益/减益 '火焰冲撞[id:269651]'
+    若技能 '炎爆术[id:11366]' 可以成功施放

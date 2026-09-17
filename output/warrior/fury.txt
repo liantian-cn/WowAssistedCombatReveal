@@ -1,115 +1,115 @@
 Fury
 0: Spell: 暴怒[id:184367]
-    if player does not have buff/debuff '激怒[id:184362]'
-    if talent '暴怒[id:184367]' is taken
-    if player has resources to cast spell '暴怒[id:184367]'
-    if spell '暴怒[id:184367]' is off cooldown
-    if spell '暴怒[id:184367]' is within allowed range
+    若玩家没有增益/减益 '激怒[id:184362]'
+    若已点出天赋 '暴怒[id:184367]'
+    若玩家有足够资源施放技能 '暴怒[id:184367]'
+    若技能 '暴怒[id:184367]' 不在冷却中
+    若技能 '暴怒[id:184367]' 在射程内
 1: Spell: 雷霆一击[id:6343,cd:6]
-    if player has buff/debuff '雷霆轰击[id:435615]'
-    if target is less than 5 yards away
-    if player has buff/debuff '激怒[id:184362]'
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+    若玩家拥有增益/减益 '雷霆轰击[id:435615]'
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '激怒[id:184362]'
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
 2: Spell: 奥丁之怒[id:385059,cd:45]
-    if target is less than 12 yards away
-    if talent '奥丁之怒[id:385059,cd:45]' is taken
-    if player has resources to cast spell '奥丁之怒[id:385059,cd:45]'
-    if spell '奥丁之怒[id:385059,cd:45]' is off cooldown
+    若目标距离小于 12 码
+    若已点出天赋 '奥丁之怒[id:385059,cd:45]'
+    若玩家有足够资源施放技能 '奥丁之怒[id:385059,cd:45]'
+    若技能 '奥丁之怒[id:385059,cd:45]' 不在冷却中
 3: Spell: 雷霆一击[id:6343,cd:6]
-    if target is less than 5 yards away
-    if player has buff/debuff '崩解闪电[id:436707]'
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player does not have buff/debuff '旋风斩[id:85739]'
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家没有增益/减益 '旋风斩[id:85739]'
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
 4: Spell: 旋风斩[id:190411]
-    if target is less than 10 yards away
-    if player does not have buff/debuff '崩解闪电[id:436707]'
-    if talent '旋风斩[id:190411]' is taken
-    if player does not have buff/debuff '旋风斩[id:85739]'
-    if there are more than 3 targets within 0 yards of player
-    if talent '旋风斩[id:190411]' is taken
-    if player has resources to cast spell '旋风斩[id:190411]'
-    if spell '旋风斩[id:190411]' is off cooldown
+    若目标距离小于 10 码
+    若玩家没有增益/减益 '崩解闪电[id:436707]'
+    若已点出天赋 '旋风斩[id:190411]'
+    若玩家没有增益/减益 '旋风斩[id:85739]'
+    若玩家周围 0 码内的目标数量超过 3 个
+    若已点出天赋 '旋风斩[id:190411]'
+    若玩家有足够资源施放技能 '旋风斩[id:190411]'
+    若技能 '旋风斩[id:190411]' 不在冷却中
 5: Spell: 剑刃风暴[id:227847,cd:90]
-    if target is less than 10 yards away
-    if player has buff/debuff '激怒[id:184362]'
-    if talent '剑刃风暴[id:227847,cd:90]' is taken
-    if player has resources to cast spell '剑刃风暴[id:227847,cd:90]'
-    if spell '剑刃风暴[id:227847,cd:90]' is off cooldown
+    若目标距离小于 10 码
+    若玩家拥有增益/减益 '激怒[id:184362]'
+    若已点出天赋 '剑刃风暴[id:227847,cd:90]'
+    若玩家有足够资源施放技能 '剑刃风暴[id:227847,cd:90]'
+    若技能 '剑刃风暴[id:227847,cd:90]' 不在冷却中
 6: Spell: 暴怒[id:184367]
-    if talent '暴怒[id:184367]' is taken
-    if player has resources to cast spell '暴怒[id:184367]'
-    if spell '暴怒[id:184367]' is off cooldown
-    if spell '暴怒[id:184367]' is within allowed range
+    若已点出天赋 '暴怒[id:184367]'
+    若玩家有足够资源施放技能 '暴怒[id:184367]'
+    若技能 '暴怒[id:184367]' 不在冷却中
+    若技能 '暴怒[id:184367]' 在射程内
 7: Spell: 斩杀[id:5308,cd:6]
-    if talent '斩杀[id:5308,cd:6]' is taken
-    if player has resources to cast spell '斩杀[id:5308,cd:6]'
-    if spell '斩杀[id:5308,cd:6]' is off cooldown
-    if spell '斩杀[id:5308,cd:6]' is within allowed range
+    若已点出天赋 '斩杀[id:5308,cd:6]'
+    若玩家有足够资源施放技能 '斩杀[id:5308,cd:6]'
+    若技能 '斩杀[id:5308,cd:6]' 不在冷却中
+    若技能 '斩杀[id:5308,cd:6]' 在射程内
 8: Spell: 雷霆一击[id:6343,cd:6]
-    if target is less than 5 yards away
-    if player has buff/debuff '崩解闪电[id:436707]'
-    if there are more than 3 targets within 0 yards of player
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'
+    若玩家周围 0 码内的目标数量超过 3 个
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
 9: Spell: 怒击[id:85288]
-    if talent '怒击[id:85288]' is taken
-    if player has resources to cast spell '怒击[id:85288]'
-    if spell '怒击[id:85288]' is off cooldown
-    if spell '怒击[id:85288]' is within allowed range
+    若已点出天赋 '怒击[id:85288]'
+    若玩家有足够资源施放技能 '怒击[id:85288]'
+    若技能 '怒击[id:85288]' 不在冷却中
+    若技能 '怒击[id:85288]' 在射程内
 10: Spell: 嗜血[id:23881,cd:5]
-    if talent '嗜血[id:23881,cd:5]' is taken
-    if player has resources to cast spell '嗜血[id:23881,cd:5]'
-    if spell '嗜血[id:23881,cd:5]' is off cooldown
-    if spell '嗜血[id:23881,cd:5]' is within allowed range
+    若已点出天赋 '嗜血[id:23881,cd:5]'
+    若玩家有足够资源施放技能 '嗜血[id:23881,cd:5]'
+    若技能 '嗜血[id:23881,cd:5]' 不在冷却中
+    若技能 '嗜血[id:23881,cd:5]' 在射程内
 11: Spell: 雷霆一击[id:6343,cd:6]
-    if target is less than 5 yards away
-    if player has buff/debuff '崩解闪电[id:436707]'
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
 12: Spell: 英勇投掷[id:57755,cd:6]
-    if talent '英勇投掷[id:57755,cd:6]' is taken
-    if player has resources to cast spell '英勇投掷[id:57755,cd:6]'
-    if spell '英勇投掷[id:57755,cd:6]' is off cooldown
-    if spell '英勇投掷[id:57755,cd:6]' is within allowed range
-    if target is more than 15 yards away
+    若已点出天赋 '英勇投掷[id:57755,cd:6]'
+    若玩家有足够资源施放技能 '英勇投掷[id:57755,cd:6]'
+    若技能 '英勇投掷[id:57755,cd:6]' 不在冷却中
+    若技能 '英勇投掷[id:57755,cd:6]' 在射程内
+    若目标距离大于 15 码
 13: Spell: 猛击[id:1464]
-    if player does not have buff/debuff '暴怒！[id:209694]'
+    若玩家没有增益/减益 '暴怒！[id:209694]'
 14: Spell: 鲁莽[id:1719,cd:90]
-    if talent '鲁莽[id:1719,cd:90]' is taken
-    if player has resources to cast spell '鲁莽[id:1719,cd:90]'
-    if spell '鲁莽[id:1719,cd:90]' is off cooldown
-    if spell '鲁莽[id:1719,cd:90]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '鲁莽[id:1719,cd:90]'
+    若玩家有足够资源施放技能 '鲁莽[id:1719,cd:90]'
+    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中
+    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 15: Spell: 天神下凡[id:107574,cd:90]
-    if talent '天神下凡[id:107574,cd:90]' is taken
-    if player has resources to cast spell '天神下凡[id:107574,cd:90]'
-    if spell '天神下凡[id:107574,cd:90]' is off cooldown
-    if spell '天神下凡[id:107574,cd:90]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '天神下凡[id:107574,cd:90]'
+    若玩家有足够资源施放技能 '天神下凡[id:107574,cd:90]'
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 16: Spell: 雷霆一击[id:6343,cd:6]
-    if target does not have buff/debuff '撕裂[id:388539]'
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
-    if player has buff/debuff '血怒风暴[id:1299025]'
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has buff/debuff '崩解闪电[id:436707]'
+    若目标没有增益/减益 '撕裂[id:388539]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
+    若玩家拥有增益/减益 '血怒风暴[id:1299025]'
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'
 17: Spell: 旋风斩[id:190411]
-    if spell '旋风斩[id:190411]' is off cooldown
+    若技能 '旋风斩[id:190411]' 不在冷却中
 18: Spell: 战斗怒吼[id:6673]
-    if talent '战斗怒吼[id:6673]' is taken
-    if player has resources to cast spell '战斗怒吼[id:6673]'
-    if spell '战斗怒吼[id:6673]' is off cooldown
-    if player has buff/debuff '战斗怒吼高亮[id:1271909]'
+    若已点出天赋 '战斗怒吼[id:6673]'
+    若玩家有足够资源施放技能 '战斗怒吼[id:6673]'
+    若技能 '战斗怒吼[id:6673]' 不在冷却中
+    若玩家拥有增益/减益 '战斗怒吼高亮[id:1271909]'
 19: Spell: 旋风斩[id:190411]
-    if target does not have buff/debuff '撕裂[id:388539]'
-    if talent '旋风斩[id:190411]' is taken
-    if player has resources to cast spell '旋风斩[id:190411]'
-    if spell '旋风斩[id:190411]' is off cooldown
-    if player has buff/debuff '血怒风暴[id:1299025]'
+    若目标没有增益/减益 '撕裂[id:388539]'
+    若已点出天赋 '旋风斩[id:190411]'
+    若玩家有足够资源施放技能 '旋风斩[id:190411]'
+    若技能 '旋风斩[id:190411]' 不在冷却中
+    若玩家拥有增益/减益 '血怒风暴[id:1299025]'

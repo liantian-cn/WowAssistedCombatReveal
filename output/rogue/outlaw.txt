@@ -1,154 +1,154 @@
 Outlaw
 0: Spell: 命运骨骰[id:1214909,cd:45]
-    if talent '命运骨骰[id:1214909,cd:45]' is taken
-    if player has resources to cast spell '命运骨骰[id:1214909,cd:45]'
-    if spell '命运骨骰[id:1214909,cd:45]' is off cooldown
-    if player does not have buff/debuff '独一无二[id:1214933]'
-    if player does not have buff/debuff '双重麻烦[id:1214934]'
-    if player does not have buff/debuff '三重威胁[id:1214935]'
-    if player does not have buff/debuff '头奖[id:1214937]'
+    若已点出天赋 '命运骨骰[id:1214909,cd:45]'
+    若玩家有足够资源施放技能 '命运骨骰[id:1214909,cd:45]'
+    若技能 '命运骨骰[id:1214909,cd:45]' 不在冷却中
+    若玩家没有增益/减益 '独一无二[id:1214933]'
+    若玩家没有增益/减益 '双重麻烦[id:1214934]'
+    若玩家没有增益/减益 '三重威胁[id:1214935]'
+    若玩家没有增益/减益 '头奖[id:1214937]'
 1: Spell: 剑刃乱舞[id:13877,cd:30]
-    if talent '剑刃乱舞[id:13877,cd:30]' is taken
-    if player has resources to cast spell '剑刃乱舞[id:13877,cd:30]'
-    if spell '剑刃乱舞[id:13877,cd:30]' is off cooldown
-    if there are more than 2 targets within 10 yards of player
-    if player does not have buff/debuff '剑刃乱舞[id:13877,cd:30]'
+    若已点出天赋 '剑刃乱舞[id:13877,cd:30]'
+    若玩家有足够资源施放技能 '剑刃乱舞[id:13877,cd:30]'
+    若技能 '剑刃乱舞[id:13877,cd:30]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 2 个
+    若玩家没有增益/减益 '剑刃乱舞[id:13877,cd:30]'
 2: Spell: 影舞步[id:51690,cd:180]
-    if talent '影舞步[id:51690,cd:180]' is taken
-    if player has resources to cast spell '影舞步[id:51690,cd:180]'
-    if spell '影舞步[id:51690,cd:180]' is off cooldown
-    if player has more than 5 combo points
-    if there are more than 1 targets within 8 yards of player
+    若已点出天赋 '影舞步[id:51690,cd:180]'
+    若玩家有足够资源施放技能 '影舞步[id:51690,cd:180]'
+    若技能 '影舞步[id:51690,cd:180]' 不在冷却中
+    若玩家连击点高于 5
+    若玩家周围 8 码内的目标数量超过 1 个
 3: Spell: 正中眉心[id:315341,cd:45]
-    if talent '正中眉心[id:315341,cd:45]' is taken
-    if player has resources to cast spell '正中眉心[id:315341,cd:45]'
-    if spell '正中眉心[id:315341,cd:45]' is off cooldown
-    if spell '正中眉心[id:315341,cd:45]' is within allowed range
-    if player has more than 5 combo points
+    若已点出天赋 '正中眉心[id:315341,cd:45]'
+    若玩家有足够资源施放技能 '正中眉心[id:315341,cd:45]'
+    若技能 '正中眉心[id:315341,cd:45]' 不在冷却中
+    若技能 '正中眉心[id:315341,cd:45]' 在射程内
+    若玩家连击点高于 5
 4: Spell: 刺骨[id:196819]
-    if talent '刺骨[id:196819]' is taken
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has more than 5 combo points
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家连击点高于 5
 5: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if spell '伏击[id:8676]' is within allowed range
-    if player has buff/debuff '藏锋寻时[id:383281]'
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若技能 '伏击[id:8676]' 在射程内
+    若玩家拥有增益/减益 '藏锋寻时[id:383281]'
 6: Spell: 手枪射击[id:185763]
-    if talent '手枪射击[id:185763]' is taken
-    if player has resources to cast spell '手枪射击[id:185763]'
-    if spell '手枪射击[id:185763]' is off cooldown
-    if spell '手枪射击[id:185763]' is within allowed range
-    if player has buff/debuff '可乘之机[id:195627]'
+    若已点出天赋 '手枪射击[id:185763]'
+    若玩家有足够资源施放技能 '手枪射击[id:185763]'
+    若技能 '手枪射击[id:185763]' 不在冷却中
+    若技能 '手枪射击[id:185763]' 在射程内
+    若玩家拥有增益/减益 '可乘之机[id:195627]'
 7: Spell: 影袭[id:193315]
-    if talent '影袭[id:193315]' is taken
-    if player has resources to cast spell '影袭[id:193315]'
-    if spell '影袭[id:193315]' is off cooldown
-    if spell '影袭[id:193315]' is within allowed range
+    若已点出天赋 '影袭[id:193315]'
+    若玩家有足够资源施放技能 '影袭[id:193315]'
+    若技能 '影袭[id:193315]' 不在冷却中
+    若技能 '影袭[id:193315]' 在射程内
 8: Spell: 手枪射击[id:185763]
-    if talent '手枪射击[id:185763]' is taken
-    if player has resources to cast spell '手枪射击[id:185763]'
-    if spell '手枪射击[id:185763]' is off cooldown
-    if player has more than 99 energy
-    if target is more than 15 yards away
+    若已点出天赋 '手枪射击[id:185763]'
+    若玩家有足够资源施放技能 '手枪射击[id:185763]'
+    若技能 '手枪射击[id:185763]' 不在冷却中
+    若玩家能量高于 99
+    若目标距离大于 15 码
 9: Spell: 刀锋冲刺[id:271877,cd:60]
-    if talent '刀锋冲刺[id:271877,cd:60]' is taken
-    if player has resources to cast spell '刀锋冲刺[id:271877,cd:60]'
-    if spell '刀锋冲刺[id:271877,cd:60]' is off cooldown
-    if spell '刀锋冲刺[id:271877,cd:60]' is within allowed range
-    if player has buff/debuff '精力[id:14983]'
-    if player has less than 174 energy
+    若已点出天赋 '刀锋冲刺[id:271877,cd:60]'
+    若玩家有足够资源施放技能 '刀锋冲刺[id:271877,cd:60]'
+    若技能 '刀锋冲刺[id:271877,cd:60]' 不在冷却中
+    若技能 '刀锋冲刺[id:271877,cd:60]' 在射程内
+    若玩家拥有增益/减益 '精力[id:14983]'
+    若玩家能量低于 174
 10: Spell: 影袭[id:193315]
 11: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if player has buff/debuff '潜行[id:115191,cd:2]'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'
+    若目标距离小于 40 码
+    若玩家连击点低于 4
 12: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if player has buff/debuff '消失[id:11327]'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若玩家拥有增益/减益 '消失[id:11327]'
+    若目标距离小于 40 码
+    若玩家连击点低于 4
 13: Spell: 伏击[id:8676]
-    if talent '伏击[id:8676]' is taken
-    if player has resources to cast spell '伏击[id:8676]'
-    if spell '伏击[id:8676]' is off cooldown
-    if player has buff/debuff '潜行[id:1784,cd:2]'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    若已点出天赋 '伏击[id:8676]'
+    若玩家有足够资源施放技能 '伏击[id:8676]'
+    若技能 '伏击[id:8676]' 不在冷却中
+    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'
+    若目标距离小于 40 码
+    若玩家连击点低于 4
 14: Spell: 致伤药膏[id:8679]
-    if talent '致伤药膏[id:8679]' is taken
-    if player has resources to cast spell '致伤药膏[id:8679]'
-    if spell '致伤药膏[id:8679]' is off cooldown
-    if player does not have buff/debuff '致伤药膏[id:8679]'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '致伤药膏[id:8679]'
+    若玩家有足够资源施放技能 '致伤药膏[id:8679]'
+    若技能 '致伤药膏[id:8679]' 不在冷却中
+    若玩家没有增益/减益 '致伤药膏[id:8679]'
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
 15: Spell: 速效药膏[id:315584]
-    if talent '速效药膏[id:315584]' is taken
-    if player has resources to cast spell '速效药膏[id:315584]'
-    if spell '速效药膏[id:315584]' is off cooldown
-    if player does not have buff/debuff '速效药膏[id:315584]'
-    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '速效药膏[id:315584]'
+    若玩家有足够资源施放技能 '速效药膏[id:315584]'
+    若技能 '速效药膏[id:315584]' 不在冷却中
+    若玩家没有增益/减益 '速效药膏[id:315584]'
+    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
 16: Spell: 减速药膏[id:3408]
-    if talent '减速药膏[id:3408]' is taken
-    if player has resources to cast spell '减速药膏[id:3408]'
-    if spell '减速药膏[id:3408]' is off cooldown
-    if player does not have buff/debuff '迟钝药膏[id:5761]'
-    if player does not have buff/debuff '萎缩药膏[id:381637]'
-    if player does not have buff/debuff '减速药膏[id:3408]'
+    若已点出天赋 '减速药膏[id:3408]'
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'
+    若技能 '减速药膏[id:3408]' 不在冷却中
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'
+    若玩家没有增益/减益 '减速药膏[id:3408]'
 17: Spell: 萎缩药膏[id:381637]
-    if talent '萎缩药膏[id:381637]' is taken
-    if player has resources to cast spell '萎缩药膏[id:381637]'
-    if spell '萎缩药膏[id:381637]' is off cooldown
-    if player does not have buff/debuff '萎缩药膏[id:381637]'
+    若已点出天赋 '萎缩药膏[id:381637]'
+    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'
+    若技能 '萎缩药膏[id:381637]' 不在冷却中
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'
 18: Spell: 迟钝药膏[id:5761]
-    if talent '迟钝药膏[id:5761]' is taken
-    if player has resources to cast spell '迟钝药膏[id:5761]'
-    if spell '迟钝药膏[id:5761]' is off cooldown
-    if player does not have buff/debuff '迟钝药膏[id:5761]'
+    若已点出天赋 '迟钝药膏[id:5761]'
+    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'
+    若技能 '迟钝药膏[id:5761]' 不在冷却中
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'
 19: Spell: 冲动[id:13750,cd:180]
-    if talent '冲动[id:13750,cd:180]' is taken
-    if player has resources to cast spell '冲动[id:13750,cd:180]'
-    if spell '冲动[id:13750,cd:180]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
-    if player has buff/debuff '强化冲动[id:395422]'
-    if player has less than 2 combo points
+    若已点出天赋 '冲动[id:13750,cd:180]'
+    若玩家有足够资源施放技能 '冲动[id:13750,cd:180]'
+    若技能 '冲动[id:13750,cd:180]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
+    若玩家拥有增益/减益 '强化冲动[id:395422]'
+    若玩家连击点低于 2
 20: Spell: 剑刃乱舞[id:13877,cd:30]
-    if talent '剑刃乱舞[id:13877,cd:30]' is taken
-    if player has resources to cast spell '剑刃乱舞[id:13877,cd:30]'
-    if spell '剑刃乱舞[id:13877,cd:30]' is off cooldown
-    if there are more than 4 targets within 10 yards of player
-    if player has less than 4 combo points
-    if player has buff/debuff '矫捷灵动[id:381878]'
+    若已点出天赋 '剑刃乱舞[id:13877,cd:30]'
+    若玩家有足够资源施放技能 '剑刃乱舞[id:13877,cd:30]'
+    若技能 '剑刃乱舞[id:13877,cd:30]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 4 个
+    若玩家连击点低于 4
+    若玩家拥有增益/减益 '矫捷灵动[id:381878]'
 21: Spell: 刀锋冲刺[id:271877,cd:60]
-    if talent '刀锋冲刺[id:271877,cd:60]' is taken
-    if player has resources to cast spell '刀锋冲刺[id:271877,cd:60]'
-    if spell '刀锋冲刺[id:271877,cd:60]' is off cooldown
-    if spell '刀锋冲刺[id:271877,cd:60]' is within allowed range
-    if player does not have buff/debuff '精力[id:14983]'
-    if player has less than 74 energy
+    若已点出天赋 '刀锋冲刺[id:271877,cd:60]'
+    若玩家有足够资源施放技能 '刀锋冲刺[id:271877,cd:60]'
+    若技能 '刀锋冲刺[id:271877,cd:60]' 不在冷却中
+    若技能 '刀锋冲刺[id:271877,cd:60]' 在射程内
+    若玩家没有增益/减益 '精力[id:14983]'
+    若玩家能量低于 74
 22: Spell: 伺机待发[id:1277933,cd:240]
-    if talent '伺机待发[id:1277933,cd:240]' is taken
-    if player has resources to cast spell '伺机待发[id:1277933,cd:240]'
-    if spell '伺机待发[id:1277933,cd:240]' is off cooldown
-    if spell '冲动[id:13750,cd:180]' is on cooldown
-    if spell '正中眉心[id:315341,cd:45]' is on cooldown
-    if spell '刀锋冲刺[id:271877,cd:60]' is on cooldown
+    若已点出天赋 '伺机待发[id:1277933,cd:240]'
+    若玩家有足够资源施放技能 '伺机待发[id:1277933,cd:240]'
+    若技能 '伺机待发[id:1277933,cd:240]' 不在冷却中
+    若技能 '冲动[id:13750,cd:180]' 正在冷却
+    若技能 '正中眉心[id:315341,cd:45]' 正在冷却
+    若技能 '刀锋冲刺[id:271877,cd:60]' 正在冷却
 23: Spell: 冲动[id:13750,cd:180]
-    if talent '冲动[id:13750,cd:180]' is taken
-    if player has resources to cast spell '冲动[id:13750,cd:180]'
-    if spell '冲动[id:13750,cd:180]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
-    if player does not have buff/debuff '强化冲动[id:395422]'
+    若已点出天赋 '冲动[id:13750,cd:180]'
+    若玩家有足够资源施放技能 '冲动[id:13750,cd:180]'
+    若技能 '冲动[id:13750,cd:180]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
+    若玩家没有增益/减益 '强化冲动[id:395422]'
 24: Spell: 刺骨[id:196819]
-    if talent '刺骨[id:196819]' is taken
-    if player has resources to cast spell '刺骨[id:196819]'
-    if spell '刺骨[id:196819]' is off cooldown
-    if spell '刺骨[id:196819]' is within allowed range
-    if player has buff/debuff '尖牙打击[id:1301405]'
+    若已点出天赋 '刺骨[id:196819]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'
+    若技能 '刺骨[id:196819]' 不在冷却中
+    若技能 '刺骨[id:196819]' 在射程内
+    若玩家拥有增益/减益 '尖牙打击[id:1301405]'

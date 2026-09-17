@@ -1,73 +1,73 @@
 Protection
 0: Spell: 破坏者[id:228920,cd:8]
-    if talent '破坏者[id:228920,cd:8]' is taken
-    if player has resources to cast spell '破坏者[id:228920,cd:8]'
-    if spell '破坏者[id:228920,cd:8]' is off cooldown
-    if spell '破坏者[id:228920,cd:8]' is within allowed range
+    若已点出天赋 '破坏者[id:228920,cd:8]'
+    若玩家有足够资源施放技能 '破坏者[id:228920,cd:8]'
+    若技能 '破坏者[id:228920,cd:8]' 不在冷却中
+    若技能 '破坏者[id:228920,cd:8]' 在射程内
 1: Spell: 崩摧[id:436358,cd:30]
-    if talent '崩摧[id:436358,cd:30]' is taken
-    if player has resources to cast spell '崩摧[id:436358,cd:30]'
-    if spell '崩摧[id:436358,cd:30]' is off cooldown
-    if spell '崩摧[id:436358,cd:30]' is within allowed range
+    若已点出天赋 '崩摧[id:436358,cd:30]'
+    若玩家有足够资源施放技能 '崩摧[id:436358,cd:30]'
+    若技能 '崩摧[id:436358,cd:30]' 不在冷却中
+    若技能 '崩摧[id:436358,cd:30]' 在射程内
 2: Spell: 雷霆轰击[id:435222,cd:6]
-    if player has buff/debuff '雷霆轰击[id:435615]'
-    if target is less than 8 yards away
-    if talent '雷霆轰击[id:435222,cd:6]' is taken
-    if player has resources to cast spell '雷霆轰击[id:435222,cd:6]'
-    if spell '雷霆轰击[id:435222,cd:6]' is off cooldown
+    若玩家拥有增益/减益 '雷霆轰击[id:435615]'
+    若目标距离小于 8 码
+    若已点出天赋 '雷霆轰击[id:435222,cd:6]'
+    若玩家有足够资源施放技能 '雷霆轰击[id:435222,cd:6]'
+    若技能 '雷霆轰击[id:435222,cd:6]' 不在冷却中
 3: Spell: 盾牌猛击[id:23922,cd:9]
-    if talent '盾牌猛击[id:23922,cd:9]' is taken
-    if player has resources to cast spell '盾牌猛击[id:23922,cd:9]'
-    if spell '盾牌猛击[id:23922,cd:9]' is off cooldown
-    if spell '盾牌猛击[id:23922,cd:9]' is within allowed range
+    若已点出天赋 '盾牌猛击[id:23922,cd:9]'
+    若玩家有足够资源施放技能 '盾牌猛击[id:23922,cd:9]'
+    若技能 '盾牌猛击[id:23922,cd:9]' 不在冷却中
+    若技能 '盾牌猛击[id:23922,cd:9]' 在射程内
 4: Spell: 英勇投掷[id:57755,cd:6]
-    if talent '英勇投掷[id:57755,cd:6]' is taken
-    if player has resources to cast spell '英勇投掷[id:57755,cd:6]'
-    if spell '英勇投掷[id:57755,cd:6]' is off cooldown
-    if spell '英勇投掷[id:57755,cd:6]' is within allowed range
-    if target is more than 15 yards away
+    若已点出天赋 '英勇投掷[id:57755,cd:6]'
+    若玩家有足够资源施放技能 '英勇投掷[id:57755,cd:6]'
+    若技能 '英勇投掷[id:57755,cd:6]' 不在冷却中
+    若技能 '英勇投掷[id:57755,cd:6]' 在射程内
+    若目标距离大于 15 码
 5: Spell: 雷霆一击[id:6343,cd:6]
-    if target is less than 8 yards away
-    if talent '雷霆一击[id:6343,cd:6]' is taken
-    if player has resources to cast spell '雷霆一击[id:6343,cd:6]'
-    if spell '雷霆一击[id:6343,cd:6]' is off cooldown
+    若目标距离小于 8 码
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
 6: Spell: 复仇[id:6572]
-    if target is less than 5 yards away
-    if there are more than 3 targets within 10 yards of player
-    if talent '复仇[id:6572]' is taken
-    if player has resources to cast spell '复仇[id:6572]'
-    if spell '复仇[id:6572]' is off cooldown
+    若目标距离小于 5 码
+    若玩家周围 10 码内的目标数量超过 3 个
+    若已点出天赋 '复仇[id:6572]'
+    若玩家有足够资源施放技能 '复仇[id:6572]'
+    若技能 '复仇[id:6572]' 不在冷却中
 7: Spell: 斩杀[id:163201,cd:6]
-    if talent '斩杀[id:163201,cd:6]' is taken
-    if player has resources to cast spell '斩杀[id:163201,cd:6]'
-    if spell '斩杀[id:163201,cd:6]' is off cooldown
-    if spell '斩杀[id:163201,cd:6]' is within allowed range
+    若已点出天赋 '斩杀[id:163201,cd:6]'
+    若玩家有足够资源施放技能 '斩杀[id:163201,cd:6]'
+    若技能 '斩杀[id:163201,cd:6]' 不在冷却中
+    若技能 '斩杀[id:163201,cd:6]' 在射程内
 8: Spell: 毁灭打击[id:20243]
-    if player does not have buff/debuff '灭绝者[id:236279]'
-    if talent '毁灭打击[id:20243]' is taken
-    if player has resources to cast spell '毁灭打击[id:20243]'
-    if spell '毁灭打击[id:20243]' is off cooldown
-    if spell '毁灭打击[id:20243]' is within allowed range
+    若玩家没有增益/减益 '灭绝者[id:236279]'
+    若已点出天赋 '毁灭打击[id:20243]'
+    若玩家有足够资源施放技能 '毁灭打击[id:20243]'
+    若技能 '毁灭打击[id:20243]' 不在冷却中
+    若技能 '毁灭打击[id:20243]' 在射程内
 9: Spell: 复仇[id:6572]
-    if target is less than 5 yards away
-    if talent '复仇[id:6572]' is taken
-    if player has resources to cast spell '复仇[id:6572]'
-    if spell '复仇[id:6572]' is off cooldown
+    若目标距离小于 5 码
+    若已点出天赋 '复仇[id:6572]'
+    若玩家有足够资源施放技能 '复仇[id:6572]'
+    若技能 '复仇[id:6572]' 不在冷却中
 10: Spell: 盾牌猛击[id:23922,cd:9]
 11: Spell: 盾牌冲锋[id:385952,cd:45]
-    if talent '盾牌冲锋[id:385952,cd:45]' is taken
-    if player has resources to cast spell '盾牌冲锋[id:385952,cd:45]'
-    if spell '盾牌冲锋[id:385952,cd:45]' is off cooldown
-    if spell '盾牌冲锋[id:385952,cd:45]' is within allowed range
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '盾牌冲锋[id:385952,cd:45]'
+    若玩家有足够资源施放技能 '盾牌冲锋[id:385952,cd:45]'
+    若技能 '盾牌冲锋[id:385952,cd:45]' 不在冷却中
+    若技能 '盾牌冲锋[id:385952,cd:45]' 在射程内
+    仅自动化施放（不属于游戏的辅助战斗循环）
 12: Spell: 天神下凡[id:107574,cd:90]
-    if talent '天神下凡[id:107574,cd:90]' is taken
-    if player has resources to cast spell '天神下凡[id:107574,cd:90]'
-    if spell '天神下凡[id:107574,cd:90]' is off cooldown
-    if spell '天神下凡[id:107574,cd:90]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '天神下凡[id:107574,cd:90]'
+    若玩家有足够资源施放技能 '天神下凡[id:107574,cd:90]'
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 13: Spell: 战斗怒吼[id:6673]
-    if talent '战斗怒吼[id:6673]' is taken
-    if player has resources to cast spell '战斗怒吼[id:6673]'
-    if spell '战斗怒吼[id:6673]' is off cooldown
-    if player has buff/debuff '战斗怒吼高亮[id:1271909]'
+    若已点出天赋 '战斗怒吼[id:6673]'
+    若玩家有足够资源施放技能 '战斗怒吼[id:6673]'
+    若技能 '战斗怒吼[id:6673]' 不在冷却中
+    若玩家拥有增益/减益 '战斗怒吼高亮[id:1271909]'

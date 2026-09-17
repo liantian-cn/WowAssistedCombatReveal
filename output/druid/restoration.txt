@@ -1,80 +1,80 @@
 Restoration
 0: Spell: 割裂[id:1079]
-    if talent '割裂[id:1079]' is taken
-    if player has resources to cast spell '割裂[id:1079]'
-    if spell '割裂[id:1079]' is off cooldown
-    if player has buff/debuff '猎豹形态[id:768]'
-    if player has more than 5 combo points
-    if target does not have buff/debuff '割裂[id:1079]'
-    if spell '割裂[id:1079]' is within allowed range
+    若已点出天赋 '割裂[id:1079]'
+    若玩家有足够资源施放技能 '割裂[id:1079]'
+    若技能 '割裂[id:1079]' 不在冷却中
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若玩家连击点高于 5
+    若目标没有增益/减益 '割裂[id:1079]'
+    若技能 '割裂[id:1079]' 在射程内
 1: Spell: 凶猛撕咬[id:22568]
-    if talent '凶猛撕咬[id:22568]' is taken
-    if player has resources to cast spell '凶猛撕咬[id:22568]'
-    if spell '凶猛撕咬[id:22568]' is off cooldown
-    if player has buff/debuff '猎豹形态[id:768]'
-    if player has more than 5 combo points
-    if spell '凶猛撕咬[id:22568]' is within allowed range
+    若已点出天赋 '凶猛撕咬[id:22568]'
+    若玩家有足够资源施放技能 '凶猛撕咬[id:22568]'
+    若技能 '凶猛撕咬[id:22568]' 不在冷却中
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若玩家连击点高于 5
+    若技能 '凶猛撕咬[id:22568]' 在射程内
 2: Spell: 痛击[id:106830,cd:6]
-    if talent '痛击[id:106830,cd:6]' is taken
-    if player has resources to cast spell '痛击[id:106830,cd:6]'
-    if spell '痛击[id:106830,cd:6]' is off cooldown
-    if target is less than 5 yards away
-    if player has buff/debuff '猎豹形态[id:768]'
-    if target does not have buff/debuff '痛击[id:405233]'
-    if there are more than 3 targets within 10 yards of player
+    若已点出天赋 '痛击[id:106830,cd:6]'
+    若玩家有足够资源施放技能 '痛击[id:106830,cd:6]'
+    若技能 '痛击[id:106830,cd:6]' 不在冷却中
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若目标没有增益/减益 '痛击[id:405233]'
+    若玩家周围 10 码内的目标数量超过 3 个
 3: Spell: 横扫[id:106785]
-    if talent '横扫[id:106785]' is taken
-    if player has resources to cast spell '横扫[id:106785]'
-    if spell '横扫[id:106785]' is off cooldown
-    if target is less than 5 yards away
-    if player has buff/debuff '猎豹形态[id:768]'
-    if there are more than 3 targets within 10 yards of player
+    若已点出天赋 '横扫[id:106785]'
+    若玩家有足够资源施放技能 '横扫[id:106785]'
+    若技能 '横扫[id:106785]' 不在冷却中
+    若目标距离小于 5 码
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若玩家周围 10 码内的目标数量超过 3 个
 4: Spell: 撕碎[id:5221]
-    if talent '撕碎[id:5221]' is taken
-    if player has resources to cast spell '撕碎[id:5221]'
-    if spell '撕碎[id:5221]' is off cooldown
-    if player has buff/debuff '猎豹形态[id:768]'
-    if spell '撕碎[id:5221]' is within allowed range
+    若已点出天赋 '撕碎[id:5221]'
+    若玩家有足够资源施放技能 '撕碎[id:5221]'
+    若技能 '撕碎[id:5221]' 不在冷却中
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若技能 '撕碎[id:5221]' 在射程内
 5: Spell: 斜掠[id:1822]
-    if talent '斜掠[id:1822]' is taken
-    if player has resources to cast spell '斜掠[id:1822]'
-    if spell '斜掠[id:1822]' is off cooldown
-    if player has buff/debuff '猎豹形态[id:768]'
-    if target does not have buff/debuff '斜掠[id:155722]'
-    if spell '斜掠[id:1822]' is within allowed range
+    若已点出天赋 '斜掠[id:1822]'
+    若玩家有足够资源施放技能 '斜掠[id:1822]'
+    若技能 '斜掠[id:1822]' 不在冷却中
+    若玩家拥有增益/减益 '猎豹形态[id:768]'
+    若目标没有增益/减益 '斜掠[id:155722]'
+    若技能 '斜掠[id:1822]' 在射程内
 6: Spell: 月火术[id:8921]
-    if talent '月火术[id:8921]' is taken
-    if player has resources to cast spell '月火术[id:8921]'
-    if spell '月火术[id:8921]' is off cooldown
-    if target does not have buff/debuff '月火术[id:164812]'
-    if player does not have buff/debuff '猎豹形态[id:768]'
+    若已点出天赋 '月火术[id:8921]'
+    若玩家有足够资源施放技能 '月火术[id:8921]'
+    若技能 '月火术[id:8921]' 不在冷却中
+    若目标没有增益/减益 '月火术[id:164812]'
+    若玩家没有增益/减益 '猎豹形态[id:768]'
 7: Spell: 阳炎术[id:93402]
-    if talent '阳炎术[id:93402]' is taken
-    if player has resources to cast spell '阳炎术[id:93402]'
-    if spell '阳炎术[id:93402]' is off cooldown
-    if target does not have buff/debuff '阳炎术[id:164815]'
-    if player does not have buff/debuff '猎豹形态[id:768]'
+    若已点出天赋 '阳炎术[id:93402]'
+    若玩家有足够资源施放技能 '阳炎术[id:93402]'
+    若技能 '阳炎术[id:93402]' 不在冷却中
+    若目标没有增益/减益 '阳炎术[id:164815]'
+    若玩家没有增益/减益 '猎豹形态[id:768]'
 8: Spell: 星火术[id:197628]
-    if talent '星火术[id:197628]' is taken
-    if player has resources to cast spell '星火术[id:197628]'
-    if spell '星火术[id:197628]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff '猎豹形态[id:768]'
-    if spell '星火术[id:197628]' can be successfully cast
+    若已点出天赋 '星火术[id:197628]'
+    若玩家有足够资源施放技能 '星火术[id:197628]'
+    若技能 '星火术[id:197628]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家没有增益/减益 '猎豹形态[id:768]'
+    若技能 '星火术[id:197628]' 可以成功施放
 9: Spell: 星涌术[id:197626,cd:10]
-    if talent '星涌术[id:197626,cd:10]' is taken
-    if player has resources to cast spell '星涌术[id:197626,cd:10]'
-    if spell '星涌术[id:197626,cd:10]' is off cooldown
-    if player does not have buff/debuff '猎豹形态[id:768]'
+    若已点出天赋 '星涌术[id:197626,cd:10]'
+    若玩家有足够资源施放技能 '星涌术[id:197626,cd:10]'
+    若技能 '星涌术[id:197626,cd:10]' 不在冷却中
+    若玩家没有增益/减益 '猎豹形态[id:768]'
 10: Spell: 愤怒[id:5176]
-    if talent '愤怒[id:5176]' is taken
-    if player has resources to cast spell '愤怒[id:5176]'
-    if spell '愤怒[id:5176]' is off cooldown
-    if player does not have buff/debuff '猎豹形态[id:768]'
-    if spell '愤怒[id:5176]' can be successfully cast
+    若已点出天赋 '愤怒[id:5176]'
+    若玩家有足够资源施放技能 '愤怒[id:5176]'
+    若技能 '愤怒[id:5176]' 不在冷却中
+    若玩家没有增益/减益 '猎豹形态[id:768]'
+    若技能 '愤怒[id:5176]' 可以成功施放
 11: Spell: 月火术[id:8921]
 12: Spell: 野性印记[id:1126]
-    if talent '野性印记[id:1126]' is taken
-    if player has resources to cast spell '野性印记[id:1126]'
-    if spell '野性印记[id:1126]' is off cooldown
-    if player has buff/debuff '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'
+    若玩家有足够资源施放技能 '野性印记[id:1126]'
+    若技能 '野性印记[id:1126]' 不在冷却中
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'

@@ -1,104 +1,104 @@
 Havoc
 0: Spell: 刃舞[id:188499,cd:15]
-    if talent '刃舞[id:188499,cd:15]' is taken
-    if player has resources to cast spell '刃舞[id:188499,cd:15]'
-    if spell '刃舞[id:188499,cd:15]' is off cooldown
-    if player has buff/debuff '恶魔变形[id:162264]'
-    if target has buff/debuff '精华破碎[id:320338]'
-    if target is less than 5 yards away
+    若已点出天赋 '刃舞[id:188499,cd:15]'
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'
+    若目标拥有增益/减益 '精华破碎[id:320338]'
+    若目标距离小于 5 码
 1: Spell: 混乱打击[id:162794]
-    if talent '混乱打击[id:162794]' is taken
-    if player has resources to cast spell '混乱打击[id:162794]'
-    if spell '混乱打击[id:162794]' is off cooldown
-    if spell '混乱打击[id:162794]' is within allowed range
-    if player has buff/debuff '恶魔变形[id:162264]'
-    if target has buff/debuff '精华破碎[id:320338]'
+    若已点出天赋 '混乱打击[id:162794]'
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'
+    若技能 '混乱打击[id:162794]' 不在冷却中
+    若技能 '混乱打击[id:162794]' 在射程内
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'
+    若目标拥有增益/减益 '精华破碎[id:320338]'
 2: Spell: 投掷利刃[id:185123]
-    if talent '投掷利刃[id:185123]' is taken
-    if player has resources to cast spell '投掷利刃[id:185123]'
-    if spell '投掷利刃[id:185123]' is off cooldown
-    if spell '投掷利刃[id:185123]' is within allowed range
-    if player has buff/debuff '收割者战刃[id:444686]'
+    若已点出天赋 '投掷利刃[id:185123]'
+    若玩家有足够资源施放技能 '投掷利刃[id:185123]'
+    若技能 '投掷利刃[id:185123]' 不在冷却中
+    若技能 '投掷利刃[id:185123]' 在射程内
+    若玩家拥有增益/减益 '收割者战刃[id:444686]'
 3: Spell: 献祭光环[id:258920,cd:2]
-    if talent '献祭光环[id:258920,cd:2]' is taken
-    if player has resources to cast spell '献祭光环[id:258920,cd:2]'
-    if spell '献祭光环[id:258920,cd:2]' is off cooldown
-    if there are more than 3 targets within 8 yards of player
+    若已点出天赋 '献祭光环[id:258920,cd:2]'
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
+    若玩家周围 8 码内的目标数量超过 3 个
 4: Spell: 精华破碎[id:258860,cd:40]
-    if talent '精华破碎[id:258860,cd:40]' is taken
-    if player has resources to cast spell '精华破碎[id:258860,cd:40]'
-    if spell '精华破碎[id:258860,cd:40]' is off cooldown
-    if target is less than 8 yards away
-    if player has buff/debuff '恶魔变形[id:162264]'
-    if spell '精华破碎[id:258860,cd:40]' is off cooldown
+    若已点出天赋 '精华破碎[id:258860,cd:40]'
+    若玩家有足够资源施放技能 '精华破碎[id:258860,cd:40]'
+    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中
+    若目标距离小于 8 码
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'
+    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中
 5: Spell: 刃舞[id:188499,cd:15]
-    if talent '刃舞[id:188499,cd:15]' is taken
-    if player has resources to cast spell '刃舞[id:188499,cd:15]'
-    if spell '刃舞[id:188499,cd:15]' is off cooldown
-    if player has buff/debuff '恶魔变形[id:162264]'
-    if target is less than 5 yards away
+    若已点出天赋 '刃舞[id:188499,cd:15]'
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'
+    若目标距离小于 5 码
 6: Spell: 眼棱[id:198013,cd:30]
-    if talent '眼棱[id:198013,cd:30]' is taken
-    if player has resources to cast spell '眼棱[id:198013,cd:30]'
-    if spell '眼棱[id:198013,cd:30]' is off cooldown
-    if target is less than 8 yards away
+    若已点出天赋 '眼棱[id:198013,cd:30]'
+    若玩家有足够资源施放技能 '眼棱[id:198013,cd:30]'
+    若技能 '眼棱[id:198013,cd:30]' 不在冷却中
+    若目标距离小于 8 码
 7: Spell: 刃舞[id:188499,cd:15]
-    if talent '刃舞[id:188499,cd:15]' is taken
-    if player has resources to cast spell '刃舞[id:188499,cd:15]'
-    if spell '刃舞[id:188499,cd:15]' is off cooldown
-    if target is less than 5 yards away
+    若已点出天赋 '刃舞[id:188499,cd:15]'
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
+    若目标距离小于 5 码
 8: Spell: 混乱打击[id:162794]
-    if talent '混乱打击[id:162794]' is taken
-    if player has resources to cast spell '混乱打击[id:162794]'
-    if spell '混乱打击[id:162794]' is off cooldown
-    if spell '混乱打击[id:162794]' is within allowed range
-    if player has buff/debuff '恶魔变形[id:162264]'
+    若已点出天赋 '混乱打击[id:162794]'
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'
+    若技能 '混乱打击[id:162794]' 不在冷却中
+    若技能 '混乱打击[id:162794]' 在射程内
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'
 9: Spell: 混乱打击[id:162794]
-    if talent '混乱打击[id:162794]' is taken
-    if player has resources to cast spell '混乱打击[id:162794]'
-    if spell '混乱打击[id:162794]' is off cooldown
-    if spell '混乱打击[id:162794]' is within allowed range
+    若已点出天赋 '混乱打击[id:162794]'
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'
+    若技能 '混乱打击[id:162794]' 不在冷却中
+    若技能 '混乱打击[id:162794]' 在射程内
 10: Spell: 投掷利刃[id:185123]
-    if talent '投掷利刃[id:185123]' is taken
-    if player has resources to cast spell '投掷利刃[id:185123]'
-    if spell '投掷利刃[id:185123]' is off cooldown
-    if spell '投掷利刃[id:185123]' is within allowed range
+    若已点出天赋 '投掷利刃[id:185123]'
+    若玩家有足够资源施放技能 '投掷利刃[id:185123]'
+    若技能 '投掷利刃[id:185123]' 不在冷却中
+    若技能 '投掷利刃[id:185123]' 在射程内
 11: Spell: 混乱打击[id:162794]
 12: Spell: 献祭光环[id:258920,cd:2]
-    if talent '献祭光环[id:258920,cd:2]' is taken
-    if player has resources to cast spell '献祭光环[id:258920,cd:2]'
-    if spell '献祭光环[id:258920,cd:2]' is off cooldown
-    if there are more than 1 targets within 8 yards of player
+    若已点出天赋 '献祭光环[id:258920,cd:2]'
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
+    若玩家周围 8 码内的目标数量超过 1 个
 13: Spell: 恶魔变形[id:191427,cd:120]
-    if talent '恶魔变形[id:191427,cd:120]' is taken
-    if player has resources to cast spell '恶魔变形[id:191427,cd:120]'
-    if spell '恶魔变形[id:191427,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '恶魔变形[id:191427,cd:120]'
+    若玩家有足够资源施放技能 '恶魔变形[id:191427,cd:120]'
+    若技能 '恶魔变形[id:191427,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 14: Spell: 邪能冲撞[id:344865]
-    if talent '邪能冲撞[id:344865]' is taken
-    if player has resources to cast spell '邪能冲撞[id:344865]'
-    if spell '邪能冲撞[id:344865]' is off cooldown
-    if player has buff/debuff '冲撞惯性[id:1215159]'
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '邪能冲撞[id:344865]'
+    若玩家有足够资源施放技能 '邪能冲撞[id:344865]'
+    若技能 '邪能冲撞[id:344865]' 不在冷却中
+    若玩家拥有增益/减益 '冲撞惯性[id:1215159]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 15: Spell: 邪能之刃[id:232893,cd:12]
-    if talent '邪能之刃[id:232893,cd:12]' is taken
-    if player has resources to cast spell '邪能之刃[id:232893,cd:12]'
-    if spell '邪能之刃[id:232893,cd:12]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '邪能之刃[id:232893,cd:12]'
+    若玩家有足够资源施放技能 '邪能之刃[id:232893,cd:12]'
+    若技能 '邪能之刃[id:232893,cd:12]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 16: Spell: 复仇回避[id:198793]
-    if talent '复仇回避[id:198793]' is taken
-    if player has resources to cast spell '复仇回避[id:198793]'
-    if spell '复仇回避[id:198793]' is off cooldown
-    if player has buff/debuff '冲撞惯性[id:427640]'
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '复仇回避[id:198793]'
+    若玩家有足够资源施放技能 '复仇回避[id:198793]'
+    若技能 '复仇回避[id:198793]' 不在冷却中
+    若玩家拥有增益/减益 '冲撞惯性[id:427640]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 17: Spell: 恶魔追击[id:370965,cd:90]
-    if talent '恶魔追击[id:370965,cd:90]' is taken
-    if player has resources to cast spell '恶魔追击[id:370965,cd:90]'
-    if spell '恶魔追击[id:370965,cd:90]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '恶魔追击[id:370965,cd:90]'
+    若玩家有足够资源施放技能 '恶魔追击[id:370965,cd:90]'
+    若技能 '恶魔追击[id:370965,cd:90]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 18: Spell: 复仇回避[id:198793]
-    if talent '复仇回避[id:198793]' is taken
-    if player has resources to cast spell '复仇回避[id:198793]'
-    if spell '复仇回避[id:198793]' is off cooldown
-    if player has buff/debuff '能量放射[id:206476]'
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '复仇回避[id:198793]'
+    若玩家有足够资源施放技能 '复仇回避[id:198793]'
+    若技能 '复仇回避[id:198793]' 不在冷却中
+    若玩家拥有增益/减益 '能量放射[id:206476]'
+    仅自动化施放（不属于游戏的辅助战斗循环）

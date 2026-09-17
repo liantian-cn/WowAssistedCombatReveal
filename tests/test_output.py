@@ -6,7 +6,7 @@ from pathlib import Path
 import main
 from app import output, render
 
-AUTOMATION_ONLY_LINE = "    automation only (not part of the game's Assisted Combat rotation)"
+AUTOMATION_ONLY_LINE = "    仅自动化施放（不属于游戏的辅助战斗循环）"
 UNKNOWN_SPELL_IDS = (194310, 389387, 470058)
 
 
@@ -88,9 +88,9 @@ def test_charge_lines_use_numbers(generated):
     text = "\n".join(path.read_text(encoding="utf-8") for path in files)
     assert "'Spells' charges" not in text
     assert "'Charge Count'" not in text
-    assert len(re.findall(r"more than \d+ charges of spell '", text)) == 10
+    assert len(re.findall(r"的充能层数超过 \d+", text)) == 10
     # 层数不带标签，紧跟其后的技能名带标签（冷却 > 1 秒时还有 cd）
-    assert len(re.findall(r"more than \d+ charges of spell '.+\[id:\d+(,cd:\d+)?\]'", text)) == 10
+    assert len(re.findall(r"若技能 '.+\[id:\d+(,cd:\d+)?\]' 的充能层数超过 \d+", text)) == 10
 
 
 def test_automation_only_lines(generated):

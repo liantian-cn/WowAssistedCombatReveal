@@ -1,19 +1,19 @@
 Preservation
 0: Spell: 火焰吐息[id:357208]
-    if talent '火焰吐息[id:357208]' is taken
-    if player has resources to cast spell '火焰吐息[id:357208]'
-    if spell '火焰吐息[id:357208]' is off cooldown
-    if spell '火焰吐息[id:357208]' can be successfully cast
-    if target does not have buff/debuff '火焰吐息[id:357209]'
+    若已点出天赋 '火焰吐息[id:357208]'
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
+    若技能 '火焰吐息[id:357208]' 不在冷却中
+    若技能 '火焰吐息[id:357208]' 可以成功施放
+    若目标没有增益/减益 '火焰吐息[id:357209]'
 1: Spell: 活化烈焰[id:361469]
-    if talent '活化烈焰[id:361469]' is taken
-    if player has resources to cast spell '活化烈焰[id:361469]'
-    if spell '活化烈焰[id:361469]' is off cooldown
-    if target is hostile
-    if spell '活化烈焰[id:361469]' can be successfully cast
+    若已点出天赋 '活化烈焰[id:361469]'
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
+    若技能 '活化烈焰[id:361469]' 不在冷却中
+    若目标是敌对单位
+    若技能 '活化烈焰[id:361469]' 可以成功施放
 2: Spell: 活化烈焰[id:361469]
 3: Spell: 青铜龙的祝福[id:364342,cd:15]
-    if talent '青铜龙的祝福[id:364342,cd:15]' is taken
-    if player has resources to cast spell '青铜龙的祝福[id:364342,cd:15]'
-    if spell '青铜龙的祝福[id:364342,cd:15]' is off cooldown
-    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'
+    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'
+    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'
+    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中
+    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'

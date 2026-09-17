@@ -1,140 +1,140 @@
 Feral
 0: Spell: 原始之怒[id:285381]
-    if target is less than 10 yards away
-    if talent '原始之怒[id:285381]' is taken
-    if player has resources to cast spell '原始之怒[id:285381]'
-    if spell '原始之怒[id:285381]' is off cooldown
-    if there are more than 3 targets within 10 yards of player
-    if target does not have buff/debuff '割裂[id:1079]'
-    if player has more than 5 combo points
+    若目标距离小于 10 码
+    若已点出天赋 '原始之怒[id:285381]'
+    若玩家有足够资源施放技能 '原始之怒[id:285381]'
+    若技能 '原始之怒[id:285381]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 3 个
+    若目标没有增益/减益 '割裂[id:1079]'
+    若玩家连击点高于 5
 1: Spell: 凶猛撕咬[id:22568]
-    if talent '凶猛撕咬[id:22568]' is taken
-    if player has resources to cast spell '凶猛撕咬[id:22568]'
-    if spell '凶猛撕咬[id:22568]' is off cooldown
-    if player has more than 5 combo points
-    if spell '凶猛撕咬[id:22568]' is within allowed range
+    若已点出天赋 '凶猛撕咬[id:22568]'
+    若玩家有足够资源施放技能 '凶猛撕咬[id:22568]'
+    若技能 '凶猛撕咬[id:22568]' 不在冷却中
+    若玩家连击点高于 5
+    若技能 '凶猛撕咬[id:22568]' 在射程内
 2: Spell: 凶猛撕咬[id:22568]
-    if talent '凶猛撕咬[id:22568]' is taken
-    if spell '凶猛撕咬[id:22568]' is off cooldown
-    if player has buff/debuff '顶级捕食者的渴望[id:391882]'
-    if spell '凶猛撕咬[id:22568]' is within allowed range
+    若已点出天赋 '凶猛撕咬[id:22568]'
+    若技能 '凶猛撕咬[id:22568]' 不在冷却中
+    若玩家拥有增益/减益 '顶级捕食者的渴望[id:391882]'
+    若技能 '凶猛撕咬[id:22568]' 在射程内
 3: Spell: 猎豹形态[id:768]
-    if talent '猎豹形态[id:768]' is taken
-    if player has resources to cast spell '猎豹形态[id:768]'
-    if spell '猎豹形态[id:768]' is off cooldown
-    if player does not have buff/debuff '猎豹形态[id:768]'
+    若已点出天赋 '猎豹形态[id:768]'
+    若玩家有足够资源施放技能 '猎豹形态[id:768]'
+    若技能 '猎豹形态[id:768]' 不在冷却中
+    若玩家没有增益/减益 '猎豹形态[id:768]'
 4: Spell: 野性狂乱[id:274837,cd:45]
-    if talent '野性狂乱[id:274837,cd:45]' is taken
-    if player has resources to cast spell '野性狂乱[id:274837,cd:45]'
-    if spell '野性狂乱[id:274837,cd:45]' is off cooldown
-    if player has less than 1 combo points
-    if spell '野性狂乱[id:274837,cd:45]' is within allowed range
-    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
+    若已点出天赋 '野性狂乱[id:274837,cd:45]'
+    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'
+    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中
+    若玩家连击点低于 1
+    若技能 '野性狂乱[id:274837,cd:45]' 在射程内
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
 5: Spell: 斜掠[id:1822]
-    if talent '斜掠[id:1822]' is taken
-    if player has resources to cast spell '斜掠[id:1822]'
-    if spell '斜掠[id:1822]' is off cooldown
-    if target does not have buff/debuff '斜掠[id:155722]'
-    if spell '斜掠[id:1822]' is within allowed range
+    若已点出天赋 '斜掠[id:1822]'
+    若玩家有足够资源施放技能 '斜掠[id:1822]'
+    若技能 '斜掠[id:1822]' 不在冷却中
+    若目标没有增益/减益 '斜掠[id:155722]'
+    若技能 '斜掠[id:1822]' 在射程内
 6: Spell: 月火术[id:8921]
-    if talent '月火术[id:8921]' is taken
-    if player has resources to cast spell '月火术[id:8921]'
-    if spell '月火术[id:8921]' is off cooldown
-    if player has buff/debuff '月之灵[id:155580]'
-    if target does not have buff/debuff '月火术[id:155625]'
+    若已点出天赋 '月火术[id:8921]'
+    若玩家有足够资源施放技能 '月火术[id:8921]'
+    若技能 '月火术[id:8921]' 不在冷却中
+    若玩家拥有增益/减益 '月之灵[id:155580]'
+    若目标没有增益/减益 '月火术[id:155625]'
 7: Spell: 横扫[id:213764]
-    if talent '横扫[id:213764]' is taken
-    if player has resources to cast spell '横扫[id:213764]'
-    if spell '横扫[id:213764]' is off cooldown
-    if target is less than 8 yards away
-    if there are more than 3 targets within 10 yards of player
+    若已点出天赋 '横扫[id:213764]'
+    若玩家有足够资源施放技能 '横扫[id:213764]'
+    若技能 '横扫[id:213764]' 不在冷却中
+    若目标距离小于 8 码
+    若玩家周围 10 码内的目标数量超过 3 个
 8: Spell: 撕碎[id:5221]
-    if talent '撕碎[id:5221]' is taken
-    if player has resources to cast spell '撕碎[id:5221]'
-    if spell '撕碎[id:5221]' is off cooldown
-    if spell '撕碎[id:5221]' is within allowed range
+    若已点出天赋 '撕碎[id:5221]'
+    若玩家有足够资源施放技能 '撕碎[id:5221]'
+    若技能 '撕碎[id:5221]' 不在冷却中
+    若技能 '撕碎[id:5221]' 在射程内
 9: Spell: 割裂[id:1079]
-    if talent '割裂[id:1079]' is taken
-    if player has resources to cast spell '割裂[id:1079]'
-    if spell '割裂[id:1079]' is off cooldown
-    if target does not have buff/debuff '割裂[id:1079]'
-    if player has more than 5 combo points
-    if spell '割裂[id:1079]' is within allowed range
+    若已点出天赋 '割裂[id:1079]'
+    若玩家有足够资源施放技能 '割裂[id:1079]'
+    若技能 '割裂[id:1079]' 不在冷却中
+    若目标没有增益/减益 '割裂[id:1079]'
+    若玩家连击点高于 5
+    若技能 '割裂[id:1079]' 在射程内
 10: Spell: 猛虎之怒[id:5217,cd:30]
-    if talent '猛虎之怒[id:5217,cd:30]' is taken
-    if player has resources to cast spell '猛虎之怒[id:5217,cd:30]'
-    if spell '猛虎之怒[id:5217,cd:30]' is off cooldown
-    if player has more than 5 combo points
-    if target is less than 8 yards away
+    若已点出天赋 '猛虎之怒[id:5217,cd:30]'
+    若玩家有足够资源施放技能 '猛虎之怒[id:5217,cd:30]'
+    若技能 '猛虎之怒[id:5217,cd:30]' 不在冷却中
+    若玩家连击点高于 5
+    若目标距离小于 8 码
 11: Spell: 斜掠[id:1822]
 12: Spell: 万灵之召[id:391528,cd:120]
-    if talent '万灵之召[id:391528,cd:120]' is taken
-    if player has resources to cast spell '万灵之召[id:391528,cd:120]'
-    if spell '万灵之召[id:391528,cd:120]' is off cooldown
-    if target is less than 5 yards away
-    if player has less than 3 combo points
-    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
+    若目标距离小于 5 码
+    若玩家连击点低于 3
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
 13: Spell: 斜掠[id:1822]
-    if talent '斜掠[id:1822]' is taken
-    if player has resources to cast spell '斜掠[id:1822]'
-    if spell '斜掠[id:1822]' is off cooldown
-    if player has buff/debuff '潜行[id:5215,cd:6]'
+    若已点出天赋 '斜掠[id:1822]'
+    若玩家有足够资源施放技能 '斜掠[id:1822]'
+    若技能 '斜掠[id:1822]' 不在冷却中
+    若玩家拥有增益/减益 '潜行[id:5215,cd:6]'
 14: Spell: 月火术[id:8921]
-    if talent '月火术[id:8921]' is taken
-    if player has resources to cast spell '月火术[id:8921]'
-    if spell '月火术[id:8921]' is off cooldown
-    if player has buff/debuff '月之灵[id:155580]'
-    if target is more than 15 yards away
+    若已点出天赋 '月火术[id:8921]'
+    若玩家有足够资源施放技能 '月火术[id:8921]'
+    若技能 '月火术[id:8921]' 不在冷却中
+    若玩家拥有增益/减益 '月之灵[id:155580]'
+    若目标距离大于 15 码
 15: Spell: 怒意狂乱[id:1243807,cd:45]
-    if target is less than 8 yards away
-    if talent '怒意狂乱[id:1243807,cd:45]' is taken
-    if player has resources to cast spell '怒意狂乱[id:1243807,cd:45]'
-    if spell '怒意狂乱[id:1243807,cd:45]' is off cooldown
-    if player has less than 1 combo points
-    if player has buff/debuff '猛虎之怒[id:5217,cd:30]'
+    若目标距离小于 8 码
+    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'
+    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'
+    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中
+    若玩家连击点低于 1
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
 16: Spell: 啃噬[id:1244258,cd:20]
-    if talent '啃噬[id:1244258,cd:20]' is taken
-    if player has resources to cast spell '啃噬[id:1244258,cd:20]'
-    if spell '啃噬[id:1244258,cd:20]' is off cooldown
-    if spell '啃噬[id:1244258,cd:20]' is within allowed range
-    if player has buff/debuff '啃噬启用器[id:1244393]'
+    若已点出天赋 '啃噬[id:1244258,cd:20]'
+    若玩家有足够资源施放技能 '啃噬[id:1244258,cd:20]'
+    若技能 '啃噬[id:1244258,cd:20]' 不在冷却中
+    若技能 '啃噬[id:1244258,cd:20]' 在射程内
+    若玩家拥有增益/减益 '啃噬启用器[id:1244393]'
 17: Spell: 野性狂乱[id:274837,cd:45]
-    if talent '野性狂乱[id:274837,cd:45]' is taken
-    if player has resources to cast spell '野性狂乱[id:274837,cd:45]'
-    if spell '野性狂乱[id:274837,cd:45]' is off cooldown
-    if player has less than 1 combo points
-    if spell '野性狂乱[id:274837,cd:45]' is within allowed range
-    if spell '猛虎之怒[id:5217,cd:30]' is on cooldown
+    若已点出天赋 '野性狂乱[id:274837,cd:45]'
+    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'
+    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中
+    若玩家连击点低于 1
+    若技能 '野性狂乱[id:274837,cd:45]' 在射程内
+    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却
 18: Spell: 怒意狂乱[id:1243807,cd:45]
-    if talent '怒意狂乱[id:1243807,cd:45]' is taken
-    if player has resources to cast spell '怒意狂乱[id:1243807,cd:45]'
-    if spell '怒意狂乱[id:1243807,cd:45]' is off cooldown
-    if player has less than 1 combo points
-    if target is less than 8 yards away
-    if spell '猛虎之怒[id:5217,cd:30]' is on cooldown
+    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'
+    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'
+    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中
+    若玩家连击点低于 1
+    若目标距离小于 8 码
+    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却
 19: Spell: 等待能量[id:1249752]
-    if talent '等待能量[id:1249752]' is taken
-    if player has resources to cast spell '等待能量[id:1249752]'
-    if spell '等待能量[id:1249752]' is off cooldown
-    if player has more than 5 combo points
-    if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
-    if player has less than 49 energy
-    if player does not have buff/debuff '化身：阿莎曼之灵[id:102543,cd:180]'
+    若已点出天赋 '等待能量[id:1249752]'
+    若玩家有足够资源施放技能 '等待能量[id:1249752]'
+    若技能 '等待能量[id:1249752]' 不在冷却中
+    若玩家连击点高于 5
+    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'
+    若玩家能量低于 49
+    若玩家没有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'
 20: Spell: 等待能量[id:1249752]
-    if talent '等待能量[id:1249752]' is taken
-    if player has resources to cast spell '等待能量[id:1249752]'
-    if spell '等待能量[id:1249752]' is off cooldown
-    if player has more than 5 combo points
-    if player has less than 37 energy
-    if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
-    if player has buff/debuff '化身：阿莎曼之灵[id:102543,cd:180]'
+    若已点出天赋 '等待能量[id:1249752]'
+    若玩家有足够资源施放技能 '等待能量[id:1249752]'
+    若技能 '等待能量[id:1249752]' 不在冷却中
+    若玩家连击点高于 5
+    若玩家能量低于 37
+    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'
+    若玩家拥有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'
 21: Spell: 狂暴[id:106951,cd:180]
-    if talent '狂暴[id:106951,cd:180]' is taken
-    if player has resources to cast spell '狂暴[id:106951,cd:180]'
-    if spell '狂暴[id:106951,cd:180]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '狂暴[id:106951,cd:180]'
+    若玩家有足够资源施放技能 '狂暴[id:106951,cd:180]'
+    若技能 '狂暴[id:106951,cd:180]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 22: Spell: 野性印记[id:1126]
-    if talent '野性印记[id:1126]' is taken
-    if player has resources to cast spell '野性印记[id:1126]'
-    if spell '野性印记[id:1126]' is off cooldown
-    if player has buff/debuff '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'
+    若玩家有足够资源施放技能 '野性印记[id:1126]'
+    若技能 '野性印记[id:1126]' 不在冷却中
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'

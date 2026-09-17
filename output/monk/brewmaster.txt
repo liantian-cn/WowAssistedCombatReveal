@@ -1,63 +1,63 @@
 Brewmaster
 0: Spell: 轮回之触[id:322109,cd:180]
-    if talent '轮回之触[id:322109,cd:180]' is taken
-    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
-    if spell '轮回之触[id:322109,cd:180]' is off cooldown
-    if spell '轮回之触[id:322109,cd:180]' is within allowed range
+    若已点出天赋 '轮回之触[id:322109,cd:180]'
+    若玩家有足够资源施放技能 '轮回之触[id:322109,cd:180]'
+    若技能 '轮回之触[id:322109,cd:180]' 不在冷却中
+    若技能 '轮回之触[id:322109,cd:180]' 在射程内
 1: Spell: 幻灭踢[id:205523]
-    if talent '幻灭踢[id:205523]' is taken
-    if player has resources to cast spell '幻灭踢[id:205523]'
-    if spell '幻灭踢[id:205523]' is off cooldown
-    if spell '幻灭踢[id:205523]' is within allowed range
-    if player does not have buff/debuff '幻灭连击[id:228563]'
+    若已点出天赋 '幻灭踢[id:205523]'
+    若玩家有足够资源施放技能 '幻灭踢[id:205523]'
+    若技能 '幻灭踢[id:205523]' 不在冷却中
+    若技能 '幻灭踢[id:205523]' 在射程内
+    若玩家没有增益/减益 '幻灭连击[id:228563]'
 2: Spell: 真气爆裂[id:123986,cd:30]
-    if talent '真气爆裂[id:123986,cd:30]' is taken
-    if player has resources to cast spell '真气爆裂[id:123986,cd:30]'
-    if spell '真气爆裂[id:123986,cd:30]' is off cooldown
-    if target is less than 30 yards away
+    若已点出天赋 '真气爆裂[id:123986,cd:30]'
+    若玩家有足够资源施放技能 '真气爆裂[id:123986,cd:30]'
+    若技能 '真气爆裂[id:123986,cd:30]' 不在冷却中
+    若目标距离小于 30 码
 3: Spell: 醉酿投[id:121253]
-    if talent '醉酿投[id:121253]' is taken
-    if player has resources to cast spell '醉酿投[id:121253]'
-    if spell '醉酿投[id:121253]' is off cooldown
-    if spell '醉酿投[id:121253]' is within allowed range
-    if player has more than 2 charges of spell '醉酿投[id:121253]'
+    若已点出天赋 '醉酿投[id:121253]'
+    若玩家有足够资源施放技能 '醉酿投[id:121253]'
+    若技能 '醉酿投[id:121253]' 不在冷却中
+    若技能 '醉酿投[id:121253]' 在射程内
+    若技能 '醉酿投[id:121253]' 的充能层数超过 2
 4: Spell: 火焰之息[id:115181,cd:15]
-    if talent '火焰之息[id:115181,cd:15]' is taken
-    if player has resources to cast spell '火焰之息[id:115181,cd:15]'
-    if spell '火焰之息[id:115181,cd:15]' is off cooldown
-    if target is less than 12 yards away
+    若已点出天赋 '火焰之息[id:115181,cd:15]'
+    若玩家有足够资源施放技能 '火焰之息[id:115181,cd:15]'
+    若技能 '火焰之息[id:115181,cd:15]' 不在冷却中
+    若目标距离小于 12 码
 5: Spell: 爆炸酒桶[id:325153,cd:60]
-    if talent '爆炸酒桶[id:325153,cd:60]' is taken
-    if player has resources to cast spell '爆炸酒桶[id:325153,cd:60]'
-    if spell '爆炸酒桶[id:325153,cd:60]' is off cooldown
-    if target is less than 40 yards away
+    若已点出天赋 '爆炸酒桶[id:325153,cd:60]'
+    若玩家有足够资源施放技能 '爆炸酒桶[id:325153,cd:60]'
+    若技能 '爆炸酒桶[id:325153,cd:60]' 不在冷却中
+    若目标距离小于 40 码
 6: Spell: 碧玉疾风[id:116847,cd:6]
-    if talent '碧玉疾风[id:116847,cd:6]' is taken
-    if player has resources to cast spell '碧玉疾风[id:116847,cd:6]'
-    if spell '碧玉疾风[id:116847,cd:6]' is off cooldown
+    若已点出天赋 '碧玉疾风[id:116847,cd:6]'
+    若玩家有足够资源施放技能 '碧玉疾风[id:116847,cd:6]'
+    若技能 '碧玉疾风[id:116847,cd:6]' 不在冷却中
 7: Spell: 神鹤引项踢[id:322729]
-    if talent '神鹤引项踢[id:322729]' is taken
-    if player has resources to cast spell '神鹤引项踢[id:322729]'
-    if spell '神鹤引项踢[id:322729]' is off cooldown
-    if there are more than 3 targets within 8 yards of player
-    if spell '神鹤引项踢[id:322729]' can be successfully cast
+    若已点出天赋 '神鹤引项踢[id:322729]'
+    若玩家有足够资源施放技能 '神鹤引项踢[id:322729]'
+    若技能 '神鹤引项踢[id:322729]' 不在冷却中
+    若玩家周围 8 码内的目标数量超过 3 个
+    若技能 '神鹤引项踢[id:322729]' 可以成功施放
 8: Spell: 猛虎掌[id:100780]
-    if talent '猛虎掌[id:100780]' is taken
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if spell '猛虎掌[id:100780]' is within allowed range
-    if player does not have buff/debuff '顺水推舟[id:418359]'
+    若已点出天赋 '猛虎掌[id:100780]'
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若技能 '猛虎掌[id:100780]' 在射程内
+    若玩家没有增益/减益 '顺水推舟[id:418359]'
 9: Spell: 猛虎掌[id:100780]
-    if talent '猛虎掌[id:100780]' is taken
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if spell '猛虎掌[id:100780]' is within allowed range
-    if player does not have buff/debuff '顺水推舟[id:418359]'
-    if player has buff/debuff '幻灭连击[id:228563]'
-    if there are less than 2 targets within 10 yards of player
+    若已点出天赋 '猛虎掌[id:100780]'
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若技能 '猛虎掌[id:100780]' 在射程内
+    若玩家没有增益/减益 '顺水推舟[id:418359]'
+    若玩家拥有增益/减益 '幻灭连击[id:228563]'
+    若玩家周围 10 码内的目标数量少于 2 个
 10: Spell: 醉酿投[id:121253]
-    if talent '醉酿投[id:121253]' is taken
-    if player has resources to cast spell '醉酿投[id:121253]'
-    if spell '醉酿投[id:121253]' is off cooldown
-    if spell '醉酿投[id:121253]' is within allowed range
+    若已点出天赋 '醉酿投[id:121253]'
+    若玩家有足够资源施放技能 '醉酿投[id:121253]'
+    若技能 '醉酿投[id:121253]' 不在冷却中
+    若技能 '醉酿投[id:121253]' 在射程内
 11: Spell: 醉酿投[id:121253]

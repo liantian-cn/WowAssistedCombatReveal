@@ -1,67 +1,67 @@
 Vengeance
 0: Spell: 投掷利刃[id:204157]
-    if talent '投掷利刃[id:204157]' is taken
-    if player has resources to cast spell '投掷利刃[id:204157]'
-    if spell '投掷利刃[id:204157]' is off cooldown
-    if spell '投掷利刃[id:204157]' is within allowed range
-    if player has buff/debuff '收割者战刃[id:444764]'
+    若已点出天赋 '投掷利刃[id:204157]'
+    若玩家有足够资源施放技能 '投掷利刃[id:204157]'
+    若技能 '投掷利刃[id:204157]' 不在冷却中
+    若技能 '投掷利刃[id:204157]' 在射程内
+    若玩家拥有增益/减益 '收割者战刃[id:444764]'
 1: Spell: 裂魂[id:203782]
-    if talent '裂魂[id:203782]' is taken
-    if player has resources to cast spell '裂魂[id:203782]'
-    if spell '裂魂[id:203782]' is off cooldown
-    if spell '裂魂[id:203782]' is within allowed range
-    if player has buff/debuff '撕裂猛击[id:442442]'
+    若已点出天赋 '裂魂[id:203782]'
+    若玩家有足够资源施放技能 '裂魂[id:203782]'
+    若技能 '裂魂[id:203782]' 不在冷却中
+    若技能 '裂魂[id:203782]' 在射程内
+    若玩家拥有增益/减益 '撕裂猛击[id:442442]'
 2: Spell: 灵魂裂劈[id:228477]
-    if talent '灵魂裂劈[id:228477]' is taken
-    if player has resources to cast spell '灵魂裂劈[id:228477]'
-    if spell '灵魂裂劈[id:228477]' is off cooldown
-    if spell '灵魂裂劈[id:228477]' is within allowed range
-    if player has buff/debuff '战刃乱舞[id:442435]'
+    若已点出天赋 '灵魂裂劈[id:228477]'
+    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'
+    若技能 '灵魂裂劈[id:228477]' 不在冷却中
+    若技能 '灵魂裂劈[id:228477]' 在射程内
+    若玩家拥有增益/减益 '战刃乱舞[id:442435]'
 3: Spell: 灵魂切削[id:207407,cd:60]
-    if talent '灵魂切削[id:207407,cd:60]' is taken
-    if player has resources to cast spell '灵魂切削[id:207407,cd:60]'
-    if spell '灵魂切削[id:207407,cd:60]' is off cooldown
-    if spell '灵魂切削[id:207407,cd:60]' is within allowed range
+    若已点出天赋 '灵魂切削[id:207407,cd:60]'
+    若玩家有足够资源施放技能 '灵魂切削[id:207407,cd:60]'
+    若技能 '灵魂切削[id:207407,cd:60]' 不在冷却中
+    若技能 '灵魂切削[id:207407,cd:60]' 在射程内
 4: Spell: 怨念咒符[id:390163]
-    if talent '怨念咒符[id:390163]' is taken
-    if player has resources to cast spell '怨念咒符[id:390163]'
-    if spell '怨念咒符[id:390163]' is off cooldown
-    if target is less than 30 yards away
+    若已点出天赋 '怨念咒符[id:390163]'
+    若玩家有足够资源施放技能 '怨念咒符[id:390163]'
+    若技能 '怨念咒符[id:390163]' 不在冷却中
+    若目标距离小于 30 码
 5: Spell: 烈焰咒符[id:204596]
-    if talent '烈焰咒符[id:204596]' is taken
-    if player has resources to cast spell '烈焰咒符[id:204596]'
-    if spell '烈焰咒符[id:204596]' is off cooldown
-    if target is less than 30 yards away
-    if target does not have buff/debuff '烈焰咒符[id:204598]'
+    若已点出天赋 '烈焰咒符[id:204596]'
+    若玩家有足够资源施放技能 '烈焰咒符[id:204596]'
+    若技能 '烈焰咒符[id:204596]' 不在冷却中
+    若目标距离小于 30 码
+    若目标没有增益/减益 '烈焰咒符[id:204598]'
 6: Spell: 献祭光环[id:258920,cd:2]
-    if talent '献祭光环[id:258920,cd:2]' is taken
-    if player has resources to cast spell '献祭光环[id:258920,cd:2]'
-    if spell '献祭光环[id:258920,cd:2]' is off cooldown
-    if there are more than 1 targets within 8 yards of player
+    若已点出天赋 '献祭光环[id:258920,cd:2]'
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
+    若玩家周围 8 码内的目标数量超过 1 个
 7: Spell: 幽魂炸弹[id:247454,cd:25]
-    if talent '幽魂炸弹[id:247454,cd:25]' is taken
-    if player has resources to cast spell '幽魂炸弹[id:247454,cd:25]'
-    if spell '幽魂炸弹[id:247454,cd:25]' is off cooldown
-    if player has more than 4 stacks of buff/debuff '灵魂残片[id:203981]'
+    若已点出天赋 '幽魂炸弹[id:247454,cd:25]'
+    若玩家有足够资源施放技能 '幽魂炸弹[id:247454,cd:25]'
+    若技能 '幽魂炸弹[id:247454,cd:25]' 不在冷却中
+    若玩家身上增益/减益 '灵魂残片[id:203981]' 的层数超过 4
 8: Spell: 破裂[id:263642]
-    if talent '破裂[id:263642]' is taken
-    if player has resources to cast spell '破裂[id:263642]'
-    if spell '破裂[id:263642]' is off cooldown
-    if spell '破裂[id:263642]' is within allowed range
-    if talent '破裂[id:263642]' is taken
+    若已点出天赋 '破裂[id:263642]'
+    若玩家有足够资源施放技能 '破裂[id:263642]'
+    若技能 '破裂[id:263642]' 不在冷却中
+    若技能 '破裂[id:263642]' 在射程内
+    若已点出天赋 '破裂[id:263642]'
 9: Spell: 灵魂裂劈[id:228477]
-    if talent '灵魂裂劈[id:228477]' is taken
-    if player has resources to cast spell '灵魂裂劈[id:228477]'
-    if spell '灵魂裂劈[id:228477]' is off cooldown
-    if spell '灵魂裂劈[id:228477]' is within allowed range
+    若已点出天赋 '灵魂裂劈[id:228477]'
+    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'
+    若技能 '灵魂裂劈[id:228477]' 不在冷却中
+    若技能 '灵魂裂劈[id:228477]' 在射程内
 10: Spell: 投掷利刃[id:204157]
-    if talent '投掷利刃[id:204157]' is taken
-    if player has resources to cast spell '投掷利刃[id:204157]'
-    if spell '投掷利刃[id:204157]' is off cooldown
-    if spell '投掷利刃[id:204157]' is within allowed range
+    若已点出天赋 '投掷利刃[id:204157]'
+    若玩家有足够资源施放技能 '投掷利刃[id:204157]'
+    若技能 '投掷利刃[id:204157]' 不在冷却中
+    若技能 '投掷利刃[id:204157]' 在射程内
 11: Spell: 灵魂裂劈[id:228477]
 12: Spell: 恶魔变形[id:187827]
-    if talent '恶魔变形[id:187827]' is taken
-    if player has resources to cast spell '恶魔变形[id:187827]'
-    if spell '恶魔变形[id:187827]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '恶魔变形[id:187827]'
+    若玩家有足够资源施放技能 '恶魔变形[id:187827]'
+    若技能 '恶魔变形[id:187827]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）

@@ -1,86 +1,86 @@
 Devastation
 0: Spell: 火焰吐息[id:357208]
-    if talent '火焰吐息[id:357208]' is taken
-    if player has resources to cast spell '火焰吐息[id:357208]'
-    if spell '火焰吐息[id:357208]' is off cooldown
-    if spell '火焰吐息[id:357208]' can be successfully cast
-    if player has buff/debuff '吞噬烈焰[id:444088]'
-    if target does not have buff/debuff '火焰吐息[id:357209]'
+    若已点出天赋 '火焰吐息[id:357208]'
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
+    若技能 '火焰吐息[id:357208]' 不在冷却中
+    若技能 '火焰吐息[id:357208]' 可以成功施放
+    若玩家拥有增益/减益 '吞噬烈焰[id:444088]'
+    若目标没有增益/减益 '火焰吐息[id:357209]'
 1: Spell: 永恒之涌[id:359073,cd:30]
-    if talent '永恒之涌[id:359073,cd:30]' is taken
-    if player has resources to cast spell '永恒之涌[id:359073,cd:30]'
-    if spell '永恒之涌[id:359073,cd:30]' is off cooldown
-    if spell '永恒之涌[id:359073,cd:30]' can be successfully cast
+    若已点出天赋 '永恒之涌[id:359073,cd:30]'
+    若玩家有足够资源施放技能 '永恒之涌[id:359073,cd:30]'
+    若技能 '永恒之涌[id:359073,cd:30]' 不在冷却中
+    若技能 '永恒之涌[id:359073,cd:30]' 可以成功施放
 2: Spell: 裂解[id:356995]
-    if talent '裂解[id:356995]' is taken
-    if player has resources to cast spell '裂解[id:356995]'
-    if spell '裂解[id:356995]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff '群体裂解[id:436336]'
+    若已点出天赋 '裂解[id:356995]'
+    若玩家有足够资源施放技能 '裂解[id:356995]'
+    若技能 '裂解[id:356995]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家拥有增益/减益 '群体裂解[id:436336]'
 3: Spell: 葬火[id:357211]
-    if talent '葬火[id:357211]' is taken
-    if player has resources to cast spell '葬火[id:357211]'
-    if spell '葬火[id:357211]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '葬火[id:357211]'
+    若玩家有足够资源施放技能 '葬火[id:357211]'
+    若技能 '葬火[id:357211]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
 4: Spell: 活化烈焰[id:361469]
-    if talent '活化烈焰[id:361469]' is taken
-    if player has resources to cast spell '活化烈焰[id:361469]'
-    if spell '活化烈焰[id:361469]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff '燃尽[id:375802]'
-    if player has buff/debuff '飞扑烈焰[id:370901]'
+    若已点出天赋 '活化烈焰[id:361469]'
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
+    若技能 '活化烈焰[id:361469]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家拥有增益/减益 '燃尽[id:375802]'
+    若玩家拥有增益/减益 '飞扑烈焰[id:370901]'
 5: Spell: 碧蓝打击[id:362969]
-    if talent '碧蓝打击[id:362969]' is taken
-    if player has resources to cast spell '碧蓝打击[id:362969]'
-    if spell '碧蓝打击[id:362969]' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '碧蓝打击[id:362969]'
+    若玩家有足够资源施放技能 '碧蓝打击[id:362969]'
+    若技能 '碧蓝打击[id:362969]' 不在冷却中
+    若目标周围 10 码内的目标数量超过 3 个
 6: Spell: 裂解[id:356995]
-    if talent '裂解[id:356995]' is taken
-    if player has resources to cast spell '裂解[id:356995]'
-    if spell '裂解[id:356995]' is off cooldown
+    若已点出天赋 '裂解[id:356995]'
+    若玩家有足够资源施放技能 '裂解[id:356995]'
+    若技能 '裂解[id:356995]' 不在冷却中
 7: Spell: 活化烈焰[id:361469]
-    if talent '活化烈焰[id:361469]' is taken
-    if player has resources to cast spell '活化烈焰[id:361469]'
-    if spell '活化烈焰[id:361469]' is off cooldown
-    if spell '活化烈焰[id:361469]' can be successfully cast
+    若已点出天赋 '活化烈焰[id:361469]'
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
+    若技能 '活化烈焰[id:361469]' 不在冷却中
+    若技能 '活化烈焰[id:361469]' 可以成功施放
 8: Spell: 活化烈焰[id:361469]
 9: Spell: 火焰吐息[id:357208]
-    if talent '火焰吐息[id:357208]' is taken
-    if player has resources to cast spell '火焰吐息[id:357208]'
-    if spell '火焰吐息[id:357208]' is off cooldown
-    if spell '火焰吐息[id:357208]' can be successfully cast
-    if player does not have buff/debuff '吞噬烈焰[id:444088]'
+    若已点出天赋 '火焰吐息[id:357208]'
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
+    若技能 '火焰吐息[id:357208]' 不在冷却中
+    若技能 '火焰吐息[id:357208]' 可以成功施放
+    若玩家没有增益/减益 '吞噬烈焰[id:444088]'
 10: Spell: 碧蓝打击[id:362969]
-    if talent '碧蓝打击[id:362969]' is taken
-    if player has resources to cast spell '碧蓝打击[id:362969]'
-    if spell '碧蓝打击[id:362969]' is off cooldown
-    if player has buff/debuff '碧蓝横扫[id:1265871]'
+    若已点出天赋 '碧蓝打击[id:362969]'
+    若玩家有足够资源施放技能 '碧蓝打击[id:362969]'
+    若技能 '碧蓝打击[id:362969]' 不在冷却中
+    若玩家拥有增益/减益 '碧蓝横扫[id:1265871]'
 11: Spell: 狂龙之怒[id:375087,cd:120]
-    if talent '狂龙之怒[id:375087,cd:120]' is taken
-    if player has resources to cast spell '狂龙之怒[id:375087,cd:120]'
-    if spell '狂龙之怒[id:375087,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '狂龙之怒[id:375087,cd:120]'
+    若玩家有足够资源施放技能 '狂龙之怒[id:375087,cd:120]'
+    若技能 '狂龙之怒[id:375087,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 12: Spell: 深呼吸[id:357210]
-    if talent '深呼吸[id:357210]' is taken
-    if player has resources to cast spell '深呼吸[id:357210]'
-    if spell '深呼吸[id:357210]' is off cooldown
-    if player does not have buff/debuff '回归[id:371807]'
-    if target is less than 40 yards away
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '深呼吸[id:357210]'
+    若玩家有足够资源施放技能 '深呼吸[id:357210]'
+    若技能 '深呼吸[id:357210]' 不在冷却中
+    若玩家没有增益/减益 '回归[id:371807]'
+    若目标距离小于 40 码
+    仅自动化施放（不属于游戏的辅助战斗循环）
 13: Spell: 扭转天平[id:370553,cd:120]
-    if talent '扭转天平[id:370553,cd:120]' is taken
-    if player has resources to cast spell '扭转天平[id:370553,cd:120]'
-    if spell '扭转天平[id:370553,cd:120]' is off cooldown
-    if spell '扭转天平[id:370553,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '扭转天平[id:370553,cd:120]'
+    若玩家有足够资源施放技能 '扭转天平[id:370553,cd:120]'
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 14: Spell: 青铜龙的祝福[id:364342,cd:15]
-    if talent '青铜龙的祝福[id:364342,cd:15]' is taken
-    if player has resources to cast spell '青铜龙的祝福[id:364342,cd:15]'
-    if spell '青铜龙的祝福[id:364342,cd:15]' is off cooldown
-    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'
+    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'
+    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'
+    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中
+    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'
 15: Spell: 狂龙之怒[id:375087,cd:120]
-    if talent '狂龙之怒[id:375087,cd:120]' is taken
-    if player has resources to cast spell '狂龙之怒[id:375087,cd:120]'
-    if spell '狂龙之怒[id:375087,cd:120]' is off cooldown
-    if player has buff/debuff '释缚烈焰[id:1292323]'
-    if player has less than 1 stacks of buff/debuff '精华迸发[id:359618]'
+    若已点出天赋 '狂龙之怒[id:375087,cd:120]'
+    若玩家有足够资源施放技能 '狂龙之怒[id:375087,cd:120]'
+    若技能 '狂龙之怒[id:375087,cd:120]' 不在冷却中
+    若玩家拥有增益/减益 '释缚烈焰[id:1292323]'
+    若玩家身上增益/减益 '精华迸发[id:359618]' 的层数少于 1

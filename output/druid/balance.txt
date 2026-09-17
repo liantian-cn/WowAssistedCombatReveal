@@ -1,166 +1,166 @@
 Balance
 0: Spell: 阳炎术[id:93402]
-    if talent '阳炎术[id:93402]' is taken
-    if player has resources to cast spell '阳炎术[id:93402]'
-    if spell '阳炎术[id:93402]' is off cooldown
-    if target does not have buff/debuff '阳炎术[id:164815]'
+    若已点出天赋 '阳炎术[id:93402]'
+    若玩家有足够资源施放技能 '阳炎术[id:93402]'
+    若技能 '阳炎术[id:93402]' 不在冷却中
+    若目标没有增益/减益 '阳炎术[id:164815]'
 1: Spell: 月火术[id:8921]
-    if talent '月火术[id:8921]' is taken
-    if player has resources to cast spell '月火术[id:8921]'
-    if spell '月火术[id:8921]' is off cooldown
-    if target does not have buff/debuff '月火术[id:164812]'
-    if player does not have buff/debuff '林中和谐[id:428735,cd:15]'
+    若已点出天赋 '月火术[id:8921]'
+    若玩家有足够资源施放技能 '月火术[id:8921]'
+    若技能 '月火术[id:8921]' 不在冷却中
+    若目标没有增益/减益 '月火术[id:164812]'
+    若玩家没有增益/减益 '林中和谐[id:428735,cd:15]'
 2: Spell: 星辰坠落[id:191034]
-    if talent '星辰坠落[id:191034]' is taken
-    if player has resources to cast spell '星辰坠落[id:191034]'
-    if spell '星辰坠落[id:191034]' is off cooldown
-    if there are more than 3 targets within 45 yards of player
+    若已点出天赋 '星辰坠落[id:191034]'
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
+    若技能 '星辰坠落[id:191034]' 不在冷却中
+    若玩家周围 45 码内的目标数量超过 3 个
 3: Spell: 自然之力[id:205636,cd:60]
-    if talent '自然之力[id:205636,cd:60]' is taken
-    if player has resources to cast spell '自然之力[id:205636,cd:60]'
-    if spell '自然之力[id:205636,cd:60]' is off cooldown
-    if player has buff/debuff '梦境涌现[id:433831]'
+    若已点出天赋 '自然之力[id:205636,cd:60]'
+    若玩家有足够资源施放技能 '自然之力[id:205636,cd:60]'
+    若技能 '自然之力[id:205636,cd:60]' 不在冷却中
+    若玩家拥有增益/减益 '梦境涌现[id:433831]'
 4: Spell: 星涌术[id:78674]
-    if talent '星涌术[id:78674]' is taken
-    if player has resources to cast spell '星涌术[id:78674]'
-    if spell '星涌术[id:78674]' is off cooldown
-    if there are less than 2 targets within 45 yards of player
+    若已点出天赋 '星涌术[id:78674]'
+    若玩家有足够资源施放技能 '星涌术[id:78674]'
+    若技能 '星涌术[id:78674]' 不在冷却中
+    若玩家周围 45 码内的目标数量少于 2 个
 5: Spell: 艾露恩之怒[id:202770,cd:60]
-    if talent '艾露恩之怒[id:202770,cd:60]' is taken
-    if player has resources to cast spell '艾露恩之怒[id:202770,cd:60]'
-    if spell '艾露恩之怒[id:202770,cd:60]' is off cooldown
-    if spell '艾露恩之怒[id:202770,cd:60]' is within allowed range
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player has more than 550 lunar power
+    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'
+    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'
+    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中
+    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家星界能量高于 550
 6: Spell: 新月[id:274281]
-    if talent '新月[id:274281]' is taken
-    if player has resources to cast spell '新月[id:274281]'
-    if spell '新月[id:274281]' is off cooldown
+    若已点出天赋 '新月[id:274281]'
+    若玩家有足够资源施放技能 '新月[id:274281]'
+    若技能 '新月[id:274281]' 不在冷却中
 7: Spell: 野性蘑菇[id:88747]
-    if talent '野性蘑菇[id:88747]' is taken
-    if player has resources to cast spell '野性蘑菇[id:88747]'
-    if spell '野性蘑菇[id:88747]' is off cooldown
-    if target does not have buff/debuff '真菌蔓延[id:81281]'
+    若已点出天赋 '野性蘑菇[id:88747]'
+    若玩家有足够资源施放技能 '野性蘑菇[id:88747]'
+    若技能 '野性蘑菇[id:88747]' 不在冷却中
+    若目标没有增益/减益 '真菌蔓延[id:81281]'
 8: Spell: 愤怒[id:190984]
-    if talent '愤怒[id:190984]' is taken
-    if player has resources to cast spell '愤怒[id:190984]'
-    if spell '愤怒[id:190984]' is off cooldown
-    if spell '愤怒[id:190984]' can be successfully cast
-    if spell '愤怒[id:190984]' is within allowed range
+    若已点出天赋 '愤怒[id:190984]'
+    若玩家有足够资源施放技能 '愤怒[id:190984]'
+    若技能 '愤怒[id:190984]' 不在冷却中
+    若技能 '愤怒[id:190984]' 可以成功施放
+    若技能 '愤怒[id:190984]' 在射程内
 9: Spell: 星火术[id:194153]
-    if there are more than 3 targets within 10 yards of target
-    if talent '星火术[id:194153]' is taken
-    if player has resources to cast spell '星火术[id:194153]'
-    if spell '星火术[id:194153]' is off cooldown
-    if spell '星火术[id:194153]' can be successfully cast
-    if spell '星火术[id:194153]' is within allowed range
+    若目标周围 10 码内的目标数量超过 3 个
+    若已点出天赋 '星火术[id:194153]'
+    若玩家有足够资源施放技能 '星火术[id:194153]'
+    若技能 '星火术[id:194153]' 不在冷却中
+    若技能 '星火术[id:194153]' 可以成功施放
+    若技能 '星火术[id:194153]' 在射程内
 10: Spell: 星火术[id:194153]
-    if talent '星火术[id:194153]' is taken
-    if player has resources to cast spell '星火术[id:194153]'
-    if spell '星火术[id:194153]' is off cooldown
-    if player has buff/debuff '皎月呼唤[id:429523]'
-    if spell '星火术[id:194153]' can be successfully cast
-    if spell '星火术[id:194153]' is within allowed range
+    若已点出天赋 '星火术[id:194153]'
+    若玩家有足够资源施放技能 '星火术[id:194153]'
+    若技能 '星火术[id:194153]' 不在冷却中
+    若玩家拥有增益/减益 '皎月呼唤[id:429523]'
+    若技能 '星火术[id:194153]' 可以成功施放
+    若技能 '星火术[id:194153]' 在射程内
 11: Spell: 星辰坠落[id:191034]
-    if talent '星辰坠落[id:191034]' is taken
-    if player has resources to cast spell '星辰坠落[id:191034]'
-    if spell '星辰坠落[id:191034]' is off cooldown
-    if there are more than 3 targets within 45 yards of player
-    if player has more than 900 lunar power
+    若已点出天赋 '星辰坠落[id:191034]'
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
+    若技能 '星辰坠落[id:191034]' 不在冷却中
+    若玩家周围 45 码内的目标数量超过 3 个
+    若玩家星界能量高于 900
 12: Spell: 星涌术[id:78674]
-    if talent '星涌术[id:78674]' is taken
-    if player has resources to cast spell '星涌术[id:78674]'
-    if spell '星涌术[id:78674]' is off cooldown
-    if player has more than 900 lunar power
-    if there are less than 2 targets within 45 yards of player
+    若已点出天赋 '星涌术[id:78674]'
+    若玩家有足够资源施放技能 '星涌术[id:78674]'
+    若技能 '星涌术[id:78674]' 不在冷却中
+    若玩家星界能量高于 900
+    若玩家周围 45 码内的目标数量少于 2 个
 13: Spell: 枭兽形态[id:24858]
-    if talent '枭兽形态[id:24858]' is taken
-    if player has resources to cast spell '枭兽形态[id:24858]'
-    if spell '枭兽形态[id:24858]' is off cooldown
-    if player does not have buff/debuff '枭兽形态[id:24858]'
+    若已点出天赋 '枭兽形态[id:24858]'
+    若玩家有足够资源施放技能 '枭兽形态[id:24858]'
+    若技能 '枭兽形态[id:24858]' 不在冷却中
+    若玩家没有增益/减益 '枭兽形态[id:24858]'
 14: Spell: 星辰坠落[id:191034]
-    if talent '星辰坠落[id:191034]' is taken
-    if player has resources to cast spell '星辰坠落[id:191034]'
-    if spell '星辰坠落[id:191034]' is off cooldown
-    if player has buff/debuff '织星者的经纱[id:393942]'
+    若已点出天赋 '星辰坠落[id:191034]'
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
+    若技能 '星辰坠落[id:191034]' 不在冷却中
+    若玩家拥有增益/减益 '织星者的经纱[id:393942]'
 15: Spell: 星涌术[id:78674]
-    if talent '星涌术[id:78674]' is taken
-    if player has resources to cast spell '星涌术[id:78674]'
-    if spell '星涌术[id:78674]' is off cooldown
-    if player has buff/debuff '织星者的纬纱[id:393944]'
+    若已点出天赋 '星涌术[id:78674]'
+    若玩家有足够资源施放技能 '星涌术[id:78674]'
+    若技能 '星涌术[id:78674]' 不在冷却中
+    若玩家拥有增益/减益 '织星者的纬纱[id:393944]'
 16: Spell: 月火术[id:8921]
 17: Spell: 星涌术[id:78674]
-    if talent '星涌术[id:78674]' is taken
-    if player has resources to cast spell '星涌术[id:78674]'
-    if spell '星涌术[id:78674]' is off cooldown
-    if player has more than 500 lunar power
+    若已点出天赋 '星涌术[id:78674]'
+    若玩家有足够资源施放技能 '星涌术[id:78674]'
+    若技能 '星涌术[id:78674]' 不在冷却中
+    若玩家星界能量高于 500
 18: Spell: 星火术[id:194153]
-    if talent '星火术[id:194153]' is taken
-    if player has resources to cast spell '星火术[id:194153]'
-    if spell '星火术[id:194153]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player has buff/debuff '日月之蚀[id:1239669]'
-    if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff '月蚀覆盖[id:1233353]'
+    若已点出天赋 '星火术[id:194153]'
+    若玩家有足够资源施放技能 '星火术[id:194153]'
+    若技能 '星火术[id:194153]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'
 19: Spell: 愤怒[id:190984]
-    if talent '愤怒[id:190984]' is taken
-    if player has resources to cast spell '愤怒[id:190984]'
-    if spell '愤怒[id:190984]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player has buff/debuff '月蚀覆盖[id:1233353]'
-    if player has buff/debuff '日月之蚀[id:1239669]'
-    if player does not have buff/debuff '皎月呼唤[id:429523]'
-    if there are less than 2 targets within 10 yards of target
+    若已点出天赋 '愤怒[id:190984]'
+    若玩家有足够资源施放技能 '愤怒[id:190984]'
+    若技能 '愤怒[id:190984]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
+    若玩家没有增益/减益 '皎月呼唤[id:429523]'
+    若目标周围 10 码内的目标数量少于 2 个
 20: Spell: 星火术[id:194153]
-    if talent '星火术[id:194153]' is taken
-    if player has resources to cast spell '星火术[id:194153]'
-    if spell '星火术[id:194153]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player has buff/debuff '月蚀覆盖[id:1233353]'
-    if player has less than 599 lunar power
+    若已点出天赋 '星火术[id:194153]'
+    若玩家有足够资源施放技能 '星火术[id:194153]'
+    若技能 '星火术[id:194153]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'
+    若玩家星界能量低于 599
 21: Spell: 愤怒[id:190984]
-    if talent '愤怒[id:190984]' is taken
-    if player has resources to cast spell '愤怒[id:190984]'
-    if spell '愤怒[id:190984]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player does not have buff/debuff '月蚀覆盖[id:1233353]'
-    if player has less than 599 lunar power
+    若已点出天赋 '愤怒[id:190984]'
+    若玩家有足够资源施放技能 '愤怒[id:190984]'
+    若技能 '愤怒[id:190984]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'
+    若玩家星界能量低于 599
 22: Spell: 日蚀[id:1233346]
-    if player has buff/debuff '日月之蚀[id:1239669]'
-    if player has resources to cast spell '日蚀[id:1233346]'
-    if spell '日蚀[id:1233346]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    if player has more than 600 lunar power
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
+    若玩家有足够资源施放技能 '日蚀[id:1233346]'
+    若技能 '日蚀[id:1233346]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    若玩家星界能量高于 600
 23: Spell: 超凡之盟[id:194223]
-    if talent '超凡之盟[id:194223]' is taken
-    if player has resources to cast spell '超凡之盟[id:194223]'
-    if spell '超凡之盟[id:194223]' is off cooldown
-    if player does not have buff/debuff '日蚀[id:48517]'
-    if player does not have buff/debuff '月蚀[id:48518]'
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '超凡之盟[id:194223]'
+    若玩家有足够资源施放技能 '超凡之盟[id:194223]'
+    若技能 '超凡之盟[id:194223]' 不在冷却中
+    若玩家没有增益/减益 '日蚀[id:48517]'
+    若玩家没有增益/减益 '月蚀[id:48518]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 24: Spell: 万灵之召[id:391528,cd:120]
-    if talent '万灵之召[id:391528,cd:120]' is taken
-    if player has resources to cast spell '万灵之召[id:391528,cd:120]'
-    if spell '万灵之召[id:391528,cd:120]' is off cooldown
-    if player has buff/debuff '日蚀[id:48517]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
+    若玩家拥有增益/减益 '日蚀[id:48517]'
 25: Spell: 万灵之召[id:391528,cd:120]
-    if talent '万灵之召[id:391528,cd:120]' is taken
-    if player has resources to cast spell '万灵之召[id:391528,cd:120]'
-    if spell '万灵之召[id:391528,cd:120]' is off cooldown
-    if player has buff/debuff '月蚀[id:48518]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
+    若玩家拥有增益/减益 '月蚀[id:48518]'
 26: Spell: 野性印记[id:1126]
-    if talent '野性印记[id:1126]' is taken
-    if player has resources to cast spell '野性印记[id:1126]'
-    if spell '野性印记[id:1126]' is off cooldown
-    if player has buff/debuff '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'
+    若玩家有足够资源施放技能 '野性印记[id:1126]'
+    若技能 '野性印记[id:1126]' 不在冷却中
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'
 27: Spell: 艾露恩之怒[id:202770,cd:60]
-    if talent '艾露恩之怒[id:202770,cd:60]' is taken
-    if player has resources to cast spell '艾露恩之怒[id:202770,cd:60]'
-    if spell '艾露恩之怒[id:202770,cd:60]' is off cooldown
-    if spell '艾露恩之怒[id:202770,cd:60]' is within allowed range
+    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'
+    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'
+    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中
+    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内

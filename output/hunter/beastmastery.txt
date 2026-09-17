@@ -1,55 +1,55 @@
 Beast Mastery
 0: Spell: 狂野怒火[id:19574,cd:90]
-    if talent '狂野怒火[id:19574,cd:90]' is taken
-    if player has resources to cast spell '狂野怒火[id:19574,cd:90]'
-    if spell '狂野怒火[id:19574,cd:90]' is off cooldown
+    若已点出天赋 '狂野怒火[id:19574,cd:90]'
+    若玩家有足够资源施放技能 '狂野怒火[id:19574,cd:90]'
+    若技能 '狂野怒火[id:19574,cd:90]' 不在冷却中
 1: Spell: 狂野鞭笞[id:1264359,cd:8]
-    if talent '狂野鞭笞[id:1264359,cd:8]' is taken
-    if player has resources to cast spell '狂野鞭笞[id:1264359,cd:8]'
-    if spell '狂野鞭笞[id:1264359,cd:8]' is off cooldown
-    if spell '狂野鞭笞[id:1264359,cd:8]' is within allowed range
-    if player has buff/debuff '野兽顺劈[id:268877]' with at least 2000 ms left
-    if there are more than 3 targets within 10 yards of target
+    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'
+    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内
+    若玩家身上的增益/减益 '野兽顺劈[id:268877]' 至少还剩 2000 毫秒
+    若目标周围 10 码内的目标数量超过 3 个
 2: Spell: 杀戮命令[id:34026]
-    if talent '杀戮命令[id:34026]' is taken
-    if player has resources to cast spell '杀戮命令[id:34026]'
-    if spell '杀戮命令[id:34026]' is off cooldown
-    if spell '杀戮命令[id:34026]' is within allowed range
+    若已点出天赋 '杀戮命令[id:34026]'
+    若玩家有足够资源施放技能 '杀戮命令[id:34026]'
+    若技能 '杀戮命令[id:34026]' 不在冷却中
+    若技能 '杀戮命令[id:34026]' 在射程内
 3: Spell: 倒刺射击[id:217200]
-    if talent '倒刺射击[id:217200]' is taken
-    if player has resources to cast spell '倒刺射击[id:217200]'
-    if spell '倒刺射击[id:217200]' is off cooldown
-    if spell '倒刺射击[id:217200]' is within allowed range
+    若已点出天赋 '倒刺射击[id:217200]'
+    若玩家有足够资源施放技能 '倒刺射击[id:217200]'
+    若技能 '倒刺射击[id:217200]' 不在冷却中
+    若技能 '倒刺射击[id:217200]' 在射程内
 4: Spell: 奥术射击[id:185358]
-    if talent '奥术射击[id:185358]' is taken
-    if player has resources to cast spell '奥术射击[id:185358]'
-    if spell '奥术射击[id:185358]' is off cooldown
+    若已点出天赋 '奥术射击[id:185358]'
+    若玩家有足够资源施放技能 '奥术射击[id:185358]'
+    若技能 '奥术射击[id:185358]' 不在冷却中
 5: Spell: 黑蚀箭[id:466930]
-    if talent '黑蚀箭[id:466930]' is taken
-    if player has resources to cast spell '黑蚀箭[id:466930]'
-    if spell '黑蚀箭[id:466930]' is off cooldown
-    if spell '黑蚀箭[id:466930]' is within allowed range
+    若已点出天赋 '黑蚀箭[id:466930]'
+    若玩家有足够资源施放技能 '黑蚀箭[id:466930]'
+    若技能 '黑蚀箭[id:466930]' 不在冷却中
+    若技能 '黑蚀箭[id:466930]' 在射程内
 6: Spell: 狂野鞭笞[id:1264359,cd:8]
-    if talent '狂野鞭笞[id:1264359,cd:8]' is taken
-    if player has resources to cast spell '狂野鞭笞[id:1264359,cd:8]'
-    if spell '狂野鞭笞[id:1264359,cd:8]' is off cooldown
-    if spell '狂野鞭笞[id:1264359,cd:8]' is within allowed range
-    if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff '野兽顺劈[id:268877]'
+    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'
+    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内
+    若目标周围 10 码内的目标数量超过 3 个
+    若玩家没有增益/减益 '野兽顺劈[id:268877]'
 7: Spell: 召唤宠物 1[id:883]
-    if player has no pet
-    if talent '召唤宠物 1[id:883]' is taken
-    if player has resources to cast spell '召唤宠物 1[id:883]'
-    if spell '召唤宠物 1[id:883]' is off cooldown
+    若玩家没有宠物
+    若已点出天赋 '召唤宠物 1[id:883]'
+    若玩家有足够资源施放技能 '召唤宠物 1[id:883]'
+    若技能 '召唤宠物 1[id:883]' 不在冷却中
 8: Spell: 稳固射击[id:56641]
-    if talent '稳固射击[id:56641]' is taken
-    if player has resources to cast spell '稳固射击[id:56641]'
-    if spell '稳固射击[id:56641]' is off cooldown
-    if player does not have buff/debuff '兽群战术[id:321014]'
-    if spell '稳固射击[id:56641]' can be successfully cast
+    若已点出天赋 '稳固射击[id:56641]'
+    若玩家有足够资源施放技能 '稳固射击[id:56641]'
+    若技能 '稳固射击[id:56641]' 不在冷却中
+    若玩家没有增益/减益 '兽群战术[id:321014]'
+    若技能 '稳固射击[id:56641]' 可以成功施放
 9: Spell: 奥术射击[id:185358]
 10: Spell: 复活宠物[id:982]
-    if talent '复活宠物[id:982]' is taken
-    if player has resources to cast spell '复活宠物[id:982]'
-    if spell '复活宠物[id:982]' is off cooldown
-    if player has buff/debuff '追踪宠物[id:1244922]'
+    若已点出天赋 '复活宠物[id:982]'
+    若玩家有足够资源施放技能 '复活宠物[id:982]'
+    若技能 '复活宠物[id:982]' 不在冷却中
+    若玩家拥有增益/减益 '追踪宠物[id:1244922]'

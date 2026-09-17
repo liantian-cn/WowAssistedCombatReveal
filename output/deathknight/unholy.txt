@@ -1,104 +1,104 @@
 Unholy
 0: Spell: 爆发[id:77575]
-    if talent '爆发[id:77575]' is taken
-    if player has resources to cast spell '爆发[id:77575]'
-    if spell '爆发[id:77575]' is off cooldown
-    if target does not have buff/debuff '恶性病变[id:191587]'
+    若已点出天赋 '爆发[id:77575]'
+    若玩家有足够资源施放技能 '爆发[id:77575]'
+    若技能 '爆发[id:77575]' 不在冷却中
+    若目标没有增益/减益 '恶性病变[id:191587]'
 1: Spell: 黑暗突变[id:1233448,cd:45]
-    if talent '黑暗突变[id:1233448,cd:45]' is taken
-    if player has resources to cast spell '黑暗突变[id:1233448,cd:45]'
-    if spell '黑暗突变[id:1233448,cd:45]' is off cooldown
-    if player has pet
+    若已点出天赋 '黑暗突变[id:1233448,cd:45]'
+    若玩家有足够资源施放技能 '黑暗突变[id:1233448,cd:45]'
+    若技能 '黑暗突变[id:1233448,cd:45]' 不在冷却中
+    若玩家有宠物
 2: Spell: 天灾打击[id:55090]
-    if talent '天灾打击[id:55090]' is taken
-    if player has resources to cast spell '天灾打击[id:55090]'
-    if spell '天灾打击[id:55090]' is off cooldown
-    if spell '天灾打击[id:55090]' is within allowed range
-    if player has less than 1 stacks of buff/debuff '次级食尸鬼[id:1254252]'
+    若已点出天赋 '天灾打击[id:55090]'
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'
+    若技能 '天灾打击[id:55090]' 不在冷却中
+    若技能 '天灾打击[id:55090]' 在射程内
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数少于 1
 3: Spell: 凋零缠绕[id:47541]
-    if talent '凋零缠绕[id:47541]' is taken
-    if player has resources to cast spell '凋零缠绕[id:47541]'
-    if spell '凋零缠绕[id:47541]' is off cooldown
-    if player has buff/debuff '末日突降[id:81340]'
-    if there are less than 3 targets within 10 yards of target
+    若已点出天赋 '凋零缠绕[id:47541]'
+    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'
+    若技能 '凋零缠绕[id:47541]' 不在冷却中
+    若玩家拥有增益/减益 '末日突降[id:81340]'
+    若目标周围 10 码内的目标数量少于 3 个
 4: Spell: 扩散[id:207317]
-    if talent '扩散[id:207317]' is taken
-    if player has resources to cast spell '扩散[id:207317]'
-    if spell '扩散[id:207317]' is off cooldown
-    if target has buff/debuff '恶性病变[id:191587]'
-    if there are more than 4 targets within 10 yards of target
-    if player has buff/debuff '末日突降[id:81340]'
+    若已点出天赋 '扩散[id:207317]'
+    若玩家有足够资源施放技能 '扩散[id:207317]'
+    若技能 '扩散[id:207317]' 不在冷却中
+    若目标拥有增益/减益 '恶性病变[id:191587]'
+    若目标周围 10 码内的目标数量超过 4 个
+    若玩家拥有增益/减益 '末日突降[id:81340]'
 5: Spell: 凋零缠绕[id:47541]
-    if talent '凋零缠绕[id:47541]' is taken
-    if player has resources to cast spell '凋零缠绕[id:47541]'
-    if spell '凋零缠绕[id:47541]' is off cooldown
+    若已点出天赋 '凋零缠绕[id:47541]'
+    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'
+    若技能 '凋零缠绕[id:47541]' 不在冷却中
 6: Spell: 符文打击[id:316239]
-    if talent '符文打击[id:316239]' is taken
-    if player has resources to cast spell '符文打击[id:316239]'
-    if spell '符文打击[id:316239]' is off cooldown
-    if spell '符文打击[id:316239]' is within allowed range
+    若已点出天赋 '符文打击[id:316239]'
+    若玩家有足够资源施放技能 '符文打击[id:316239]'
+    若技能 '符文打击[id:316239]' 不在冷却中
+    若技能 '符文打击[id:316239]' 在射程内
 7: Spell: 灵魂收割[id:343294,cd:15]
-    if talent '灵魂收割[id:343294,cd:15]' is taken
-    if player has resources to cast spell '灵魂收割[id:343294,cd:15]'
-    if spell '灵魂收割[id:343294,cd:15]' is off cooldown
-    if target has less than 35% health
-    if spell '灵魂收割[id:343294,cd:15]' is within allowed range
+    若已点出天赋 '灵魂收割[id:343294,cd:15]'
+    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'
+    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中
+    若目标生命值低于 35%
+    若技能 '灵魂收割[id:343294,cd:15]' 在射程内
 8: Spell: 天灾打击[id:55090]
-    if talent '天灾打击[id:55090]' is taken
-    if player has resources to cast spell '天灾打击[id:55090]'
-    if spell '天灾打击[id:55090]' is off cooldown
-    if target has buff/debuff 'Unknown Spell[id:194310]'
-    if spell '天灾打击[id:55090]' is within allowed range
+    若已点出天赋 '天灾打击[id:55090]'
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'
+    若技能 '天灾打击[id:55090]' 不在冷却中
+    若目标拥有增益/减益 'Unknown Spell[id:194310]'
+    若技能 '天灾打击[id:55090]' 在射程内
 9: Spell: 腐化[id:1247378]
-    if talent '腐化[id:1247378]' is taken
-    if player has resources to cast spell '腐化[id:1247378]'
-    if spell '腐化[id:1247378]' is off cooldown
-    if player has buff/debuff '次级食尸鬼[id:1242998]'
-    if spell '腐化[id:1247378]' is within allowed range
+    若已点出天赋 '腐化[id:1247378]'
+    若玩家有足够资源施放技能 '腐化[id:1247378]'
+    若技能 '腐化[id:1247378]' 不在冷却中
+    若玩家拥有增益/减益 '次级食尸鬼[id:1242998]'
+    若技能 '腐化[id:1247378]' 在射程内
 10: Spell: 亡者复生[id:46585,cd:120]
-    if talent '亡者复生[id:46585,cd:120]' is taken
-    if player has resources to cast spell '亡者复生[id:46585,cd:120]'
-    if spell '亡者复生[id:46585,cd:120]' is off cooldown
-    if player has no pet
+    若已点出天赋 '亡者复生[id:46585,cd:120]'
+    若玩家有足够资源施放技能 '亡者复生[id:46585,cd:120]'
+    若技能 '亡者复生[id:46585,cd:120]' 不在冷却中
+    若玩家没有宠物
 11: Spell: 符文打击[id:316239]
 12: Spell: 脓疮打击[id:85948]
-    if player has buff/debuff '脓疮毒镰[id:458123]'
-    if player has resources to cast spell '脓疮打击[id:85948]'
-    if target does not have buff/debuff '脓疮毒镰[id:1241077]'
+    若玩家拥有增益/减益 '脓疮毒镰[id:458123]'
+    若玩家有足够资源施放技能 '脓疮打击[id:85948]'
+    若目标没有增益/减益 '脓疮毒镰[id:1241077]'
 13: Spell: 符文打击[id:316239]
-    if spell '符文打击[id:316239]' is within allowed range
-    if player has less than 2 stacks of buff/debuff '次级食尸鬼[id:1254252]'
-    if spell '符文打击[id:316239]' is off cooldown
-    if player has resources to cast spell '符文打击[id:316239]'
-    if talent '符文打击[id:316239]' is taken
+    若技能 '符文打击[id:316239]' 在射程内
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数少于 2
+    若技能 '符文打击[id:316239]' 不在冷却中
+    若玩家有足够资源施放技能 '符文打击[id:316239]'
+    若已点出天赋 '符文打击[id:316239]'
 14: Spell: 爆发[id:77575]
-    if talent '爆发[id:77575]' is taken
-    if player has resources to cast spell '爆发[id:77575]'
-    if spell '爆发[id:77575]' is off cooldown
-    if player has buff/debuff '瘟疫降临[id:1271975]'
+    若已点出天赋 '爆发[id:77575]'
+    若玩家有足够资源施放技能 '爆发[id:77575]'
+    若技能 '爆发[id:77575]' 不在冷却中
+    若玩家拥有增益/减益 '瘟疫降临[id:1271975]'
 15: Spell: 亡者大军[id:42650,cd:90]
-    if talent '亡者大军[id:42650,cd:90]' is taken
-    if player has resources to cast spell '亡者大军[id:42650,cd:90]'
-    if spell '亡者大军[id:42650,cd:90]' is off cooldown
+    若已点出天赋 '亡者大军[id:42650,cd:90]'
+    若玩家有足够资源施放技能 '亡者大军[id:42650,cd:90]'
+    若技能 '亡者大军[id:42650,cd:90]' 不在冷却中
 16: Spell: 凋零缠绕[id:47541]
-    if player has more than 500 runic power
-    if there are less than 3 targets within 10 yards of target
-    if spell '凋零缠绕[id:47541]' is off cooldown
-    if player has buff/debuff '禁断知识[id:1242223]'
+    若玩家符文能量高于 500
+    若目标周围 10 码内的目标数量少于 3 个
+    若技能 '凋零缠绕[id:47541]' 不在冷却中
+    若玩家拥有增益/减益 '禁断知识[id:1242223]'
 17: Spell: 扩散[id:207317]
-    if player has more than 500 runic power
-    if there are more than 4 targets within 10 yards of target
-    if target has buff/debuff '恶性病变[id:191587]'
-    if player has buff/debuff '禁断知识[id:1242223]'
+    若玩家符文能量高于 500
+    若目标周围 10 码内的目标数量超过 4 个
+    若目标拥有增益/减益 '恶性病变[id:191587]'
+    若玩家拥有增益/减益 '禁断知识[id:1242223]'
 18: Spell: 天灾打击[id:55090]
-    if player has more than 3 stacks of buff/debuff '次级食尸鬼[id:1254252]'
-    if spell '天灾打击[id:55090]' is within allowed range
-    if spell '天灾打击[id:55090]' is off cooldown
-    if player has resources to cast spell '天灾打击[id:55090]'
-    if talent '天灾打击[id:55090]' is taken
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数超过 3
+    若技能 '天灾打击[id:55090]' 在射程内
+    若技能 '天灾打击[id:55090]' 不在冷却中
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'
+    若已点出天赋 '天灾打击[id:55090]'
 19: Spell: 灵魂收割[id:343294,cd:15]
-    if talent '灵魂收割[id:343294,cd:15]' is taken
-    if player has resources to cast spell '灵魂收割[id:343294,cd:15]'
-    if spell '灵魂收割[id:343294,cd:15]' is off cooldown
-    if spell '灵魂收割[id:343294,cd:15]' is within allowed range
-    if player has buff/debuff '割魂索命[id:1242654]'
+    若已点出天赋 '灵魂收割[id:343294,cd:15]'
+    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'
+    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中
+    若技能 '灵魂收割[id:343294,cd:15]' 在射程内
+    若玩家拥有增益/减益 '割魂索命[id:1242654]'

@@ -1,68 +1,68 @@
 Mistweaver
 0: Spell: 碧火踏[id:388193]
-    if talent '碧火踏[id:388193]' is taken
-    if player has resources to cast spell '碧火踏[id:388193]'
-    if spell '碧火踏[id:388193]' is off cooldown
-    if target is less than 10 yards away
-    if player does not have buff/debuff '碧火之训[id:388026]'
-    if player has buff/debuff '碧火之训[id:467293]'
+    若已点出天赋 '碧火踏[id:388193]'
+    若玩家有足够资源施放技能 '碧火踏[id:388193]'
+    若技能 '碧火踏[id:388193]' 不在冷却中
+    若目标距离小于 10 码
+    若玩家没有增益/减益 '碧火之训[id:388026]'
+    若玩家拥有增益/减益 '碧火之训[id:467293]'
 1: Spell: 旭日东升踢[id:107428]
-    if talent '旭日东升踢[id:107428]' is taken
-    if player has resources to cast spell '旭日东升踢[id:107428]'
-    if spell '旭日东升踢[id:107428]' is off cooldown
-    if spell '旭日东升踢[id:107428]' is within allowed range
+    若已点出天赋 '旭日东升踢[id:107428]'
+    若玩家有足够资源施放技能 '旭日东升踢[id:107428]'
+    若技能 '旭日东升踢[id:107428]' 不在冷却中
+    若技能 '旭日东升踢[id:107428]' 在射程内
 2: Spell: 神鹤引项踢[id:101546]
-    if talent '神鹤引项踢[id:101546]' is taken
-    if player has resources to cast spell '神鹤引项踢[id:101546]'
-    if spell '神鹤引项踢[id:101546]' is off cooldown
-    if there are more than 4 targets within 10 yards of player
-    if target is less than 10 yards away
-    if spell '神鹤引项踢[id:101546]' can be successfully cast
+    若已点出天赋 '神鹤引项踢[id:101546]'
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中
+    若玩家周围 10 码内的目标数量超过 4 个
+    若目标距离小于 10 码
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放
 3: Spell: 幻灭踢[id:100784,cd:3]
-    if talent '幻灭踢[id:100784,cd:3]' is taken
-    if player has resources to cast spell '幻灭踢[id:100784,cd:3]'
-    if spell '幻灭踢[id:100784,cd:3]' is off cooldown
-    if player has more than 4 stacks of buff/debuff '禅院教诲[id:202090]'
-    if spell '幻灭踢[id:100784,cd:3]' is within allowed range
+    若已点出天赋 '幻灭踢[id:100784,cd:3]'
+    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'
+    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中
+    若玩家身上增益/减益 '禅院教诲[id:202090]' 的层数超过 4
+    若技能 '幻灭踢[id:100784,cd:3]' 在射程内
 4: Spell: 猛虎掌[id:100780]
-    if talent '猛虎掌[id:100780]' is taken
-    if player has resources to cast spell '猛虎掌[id:100780]'
-    if spell '猛虎掌[id:100780]' is off cooldown
-    if spell '猛虎掌[id:100780]' is within allowed range
+    若已点出天赋 '猛虎掌[id:100780]'
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中
+    若技能 '猛虎掌[id:100780]' 在射程内
 5: Spell: 碎玉闪电[id:117952]
-    if talent '碎玉闪电[id:117952]' is taken
-    if player has resources to cast spell '碎玉闪电[id:117952]'
-    if spell '碎玉闪电[id:117952]' is off cooldown
-    if target is more than 15 yards away
-    if spell '碎玉闪电[id:117952]' can be successfully cast
+    若已点出天赋 '碎玉闪电[id:117952]'
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
+    若技能 '碎玉闪电[id:117952]' 不在冷却中
+    若目标距离大于 15 码
+    若技能 '碎玉闪电[id:117952]' 可以成功施放
 6: Spell: 碎玉闪电[id:117952]
-    if talent '碎玉闪电[id:117952]' is taken
-    if player has resources to cast spell '碎玉闪电[id:117952]'
-    if spell '碎玉闪电[id:117952]' is off cooldown
-    if player has buff/debuff '青玉赋能[id:467317]'
+    若已点出天赋 '碎玉闪电[id:117952]'
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
+    若技能 '碎玉闪电[id:117952]' 不在冷却中
+    若玩家拥有增益/减益 '青玉赋能[id:467317]'
 7: Spell: 碧火踏[id:388193]
-    if talent '碧火踏[id:388193]' is taken
-    if player has resources to cast spell '碧火踏[id:388193]'
-    if spell '碧火踏[id:388193]' is off cooldown
-    if target is less than 10 yards away
-    if player does not have buff/debuff 'Unknown Spell[id:389387]'
-    if player has buff/debuff '仙鹤之道[id:388779]'
+    若已点出天赋 '碧火踏[id:388193]'
+    若玩家有足够资源施放技能 '碧火踏[id:388193]'
+    若技能 '碧火踏[id:388193]' 不在冷却中
+    若目标距离小于 10 码
+    若玩家没有增益/减益 'Unknown Spell[id:389387]'
+    若玩家拥有增益/减益 '仙鹤之道[id:388779]'
 8: Spell: 神鹤引项踢[id:101546]
-    if talent '神鹤引项踢[id:101546]' is taken
-    if player has resources to cast spell '神鹤引项踢[id:101546]'
-    if spell '神鹤引项踢[id:101546]' is off cooldown
-    if target is less than 10 yards away
-    if player has buff/debuff '赤精之舞[id:438443]'
-    if spell '神鹤引项踢[id:101546]' can be successfully cast
+    若已点出天赋 '神鹤引项踢[id:101546]'
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中
+    若目标距离小于 10 码
+    若玩家拥有增益/减益 '赤精之舞[id:438443]'
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放
 9: Spell: 旭日东升踢[id:107428]
-    if talent '旭日东升踢[id:107428]' is taken
-    if player has resources to cast spell '旭日东升踢[id:107428]'
-    if spell '旭日东升踢[id:107428]' is off cooldown
-    if target is less than 20 yards away
-    if talent '旭日东升踢[id:107428]' is taken
+    若已点出天赋 '旭日东升踢[id:107428]'
+    若玩家有足够资源施放技能 '旭日东升踢[id:107428]'
+    若技能 '旭日东升踢[id:107428]' 不在冷却中
+    若目标距离小于 20 码
+    若已点出天赋 '旭日东升踢[id:107428]'
 10: Spell: 旭日东升踢[id:107428]
 11: Spell: 轮回之触[id:322109,cd:180]
-    if talent '轮回之触[id:322109,cd:180]' is taken
-    if player has resources to cast spell '轮回之触[id:322109,cd:180]'
-    if spell '轮回之触[id:322109,cd:180]' is off cooldown
-    if spell '轮回之触[id:322109,cd:180]' is within allowed range
+    若已点出天赋 '轮回之触[id:322109,cd:180]'
+    若玩家有足够资源施放技能 '轮回之触[id:322109,cd:180]'
+    若技能 '轮回之触[id:322109,cd:180]' 不在冷却中
+    若技能 '轮回之触[id:322109,cd:180]' 在射程内

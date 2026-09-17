@@ -1,75 +1,75 @@
 Augmentation
 0: Spell: 黑檀之力[id:395152,cd:30]
-    if talent '黑檀之力[id:395152,cd:30]' is taken
-    if player has resources to cast spell '黑檀之力[id:395152,cd:30]'
-    if spell '黑檀之力[id:395152,cd:30]' is off cooldown
-    if player does not have buff/debuff '黑檀之力[id:395296]'
+    若已点出天赋 '黑檀之力[id:395152,cd:30]'
+    若玩家有足够资源施放技能 '黑檀之力[id:395152,cd:30]'
+    若技能 '黑檀之力[id:395152,cd:30]' 不在冷却中
+    若玩家没有增益/减益 '黑檀之力[id:395296]'
 1: Spell: 先知先觉[id:409311]
-    if talent '先知先觉[id:409311]' is taken
-    if player has resources to cast spell '先知先觉[id:409311]'
-    if spell '先知先觉[id:409311]' is off cooldown
-    if player does not have buff/debuff '先知先觉[id:410089]'
+    若已点出天赋 '先知先觉[id:409311]'
+    若玩家有足够资源施放技能 '先知先觉[id:409311]'
+    若技能 '先知先觉[id:409311]' 不在冷却中
+    若玩家没有增益/减益 '先知先觉[id:410089]'
 2: Spell: 火焰吐息[id:357208]
-    if talent '火焰吐息[id:357208]' is taken
-    if player has resources to cast spell '火焰吐息[id:357208]'
-    if spell '火焰吐息[id:357208]' is off cooldown
-    if spell '火焰吐息[id:357208]' can be successfully cast
+    若已点出天赋 '火焰吐息[id:357208]'
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
+    若技能 '火焰吐息[id:357208]' 不在冷却中
+    若技能 '火焰吐息[id:357208]' 可以成功施放
 3: Spell: 地壳激变[id:396286,cd:40]
-    if talent '地壳激变[id:396286,cd:40]' is taken
-    if player has resources to cast spell '地壳激变[id:396286,cd:40]'
-    if spell '地壳激变[id:396286,cd:40]' is off cooldown
-    if spell '地壳激变[id:396286,cd:40]' can be successfully cast
+    若已点出天赋 '地壳激变[id:396286,cd:40]'
+    若玩家有足够资源施放技能 '地壳激变[id:396286,cd:40]'
+    若技能 '地壳激变[id:396286,cd:40]' 不在冷却中
+    若技能 '地壳激变[id:396286,cd:40]' 可以成功施放
 4: Spell: 裂解[id:356995]
-    if talent '裂解[id:356995]' is taken
-    if player has resources to cast spell '裂解[id:356995]'
-    if spell '裂解[id:356995]' is off cooldown
+    若已点出天赋 '裂解[id:356995]'
+    若玩家有足够资源施放技能 '裂解[id:356995]'
+    若技能 '裂解[id:356995]' 不在冷却中
 5: Spell: 炽火龙鳞[id:360827,cd:30]
-    if talent '炽火龙鳞[id:360827,cd:30]' is taken
-    if player has resources to cast spell '炽火龙鳞[id:360827,cd:30]'
-    if spell '炽火龙鳞[id:360827,cd:30]' is off cooldown
-    if player does not have buff/debuff '炽火龙鳞[id:1245013]'
-    if target is less than 30 yards away
+    若已点出天赋 '炽火龙鳞[id:360827,cd:30]'
+    若玩家有足够资源施放技能 '炽火龙鳞[id:360827,cd:30]'
+    若技能 '炽火龙鳞[id:360827,cd:30]' 不在冷却中
+    若玩家没有增益/减益 '炽火龙鳞[id:1245013]'
+    若目标距离小于 30 码
 6: Spell: 活化烈焰[id:361469]
-    if talent '活化烈焰[id:361469]' is taken
-    if player has resources to cast spell '活化烈焰[id:361469]'
-    if spell '活化烈焰[id:361469]' is off cooldown
-    if target is hostile
-    if spell '活化烈焰[id:361469]' can be successfully cast
+    若已点出天赋 '活化烈焰[id:361469]'
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
+    若技能 '活化烈焰[id:361469]' 不在冷却中
+    若目标是敌对单位
+    若技能 '活化烈焰[id:361469]' 可以成功施放
 7: Spell: 活化烈焰[id:361469]
 8: Spell: 裂解[id:356995]
-    if talent '裂解[id:356995]' is taken
-    if player has resources to cast spell '裂解[id:356995]'
-    if spell '裂解[id:356995]' is off cooldown
-    if spell '裂解[id:356995]' can be successfully cast
-    if player has more than 2 essence
-    if player has buff/debuff '精华迸发[id:392268]'
+    若已点出天赋 '裂解[id:356995]'
+    若玩家有足够资源施放技能 '裂解[id:356995]'
+    若技能 '裂解[id:356995]' 不在冷却中
+    若技能 '裂解[id:356995]' 可以成功施放
+    若玩家精华高于 2
+    若玩家拥有增益/减益 '精华迸发[id:392268]'
 9: Spell: 裂解[id:356995]
-    if talent '裂解[id:356995]' is taken
-    if player has resources to cast spell '裂解[id:356995]'
-    if spell '裂解[id:356995]' is off cooldown
-    if spell '裂解[id:356995]' can be successfully cast
-    if player has more than 4 essence
+    若已点出天赋 '裂解[id:356995]'
+    若玩家有足够资源施放技能 '裂解[id:356995]'
+    若技能 '裂解[id:356995]' 不在冷却中
+    若技能 '裂解[id:356995]' 可以成功施放
+    若玩家精华高于 4
 10: Spell: 深呼吸[id:357210]
-    if talent '深呼吸[id:357210]' is taken
-    if player has resources to cast spell '深呼吸[id:357210]'
-    if spell '深呼吸[id:357210]' is off cooldown
-    if player does not have buff/debuff '回归[id:371807]'
-    if target is less than 40 yards away
-    if player does not have buff/debuff '回归[id:403760]'
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '深呼吸[id:357210]'
+    若玩家有足够资源施放技能 '深呼吸[id:357210]'
+    若技能 '深呼吸[id:357210]' 不在冷却中
+    若玩家没有增益/减益 '回归[id:371807]'
+    若目标距离小于 40 码
+    若玩家没有增益/减益 '回归[id:403760]'
+    仅自动化施放（不属于游戏的辅助战斗循环）
 11: Spell: 时间跳跃[id:404977,cd:180]
-    if talent '时间跳跃[id:404977,cd:180]' is taken
-    if player has resources to cast spell '时间跳跃[id:404977,cd:180]'
-    if spell '时间跳跃[id:404977,cd:180]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '时间跳跃[id:404977,cd:180]'
+    若玩家有足够资源施放技能 '时间跳跃[id:404977,cd:180]'
+    若技能 '时间跳跃[id:404977,cd:180]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 12: Spell: 扭转天平[id:370553,cd:120]
-    if talent '扭转天平[id:370553,cd:120]' is taken
-    if player has resources to cast spell '扭转天平[id:370553,cd:120]'
-    if spell '扭转天平[id:370553,cd:120]' is off cooldown
-    if spell '扭转天平[id:370553,cd:120]' is off cooldown
-    automation only (not part of the game's Assisted Combat rotation)
+    若已点出天赋 '扭转天平[id:370553,cd:120]'
+    若玩家有足够资源施放技能 '扭转天平[id:370553,cd:120]'
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
+    仅自动化施放（不属于游戏的辅助战斗循环）
 13: Spell: 青铜龙的祝福[id:364342,cd:15]
-    if talent '青铜龙的祝福[id:364342,cd:15]' is taken
-    if player has resources to cast spell '青铜龙的祝福[id:364342,cd:15]'
-    if spell '青铜龙的祝福[id:364342,cd:15]' is off cooldown
-    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'
+    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'
+    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'
+    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中
+    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'

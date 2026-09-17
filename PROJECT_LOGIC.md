@@ -125,15 +125,17 @@ ChrClasses 1 ── n ChrSpecialization 1 ── 1 AssistedCombat 1 ── n Ass
 
 ```csv
 Type,Enum,Active,Description,Value1,Value2,Value3
-0,ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED,Y,if talent {spell} is taken,UNUSED,UNUSED,UNUSED
-15,ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET,Y,if target does not have buff/debuff {arg1},Spell:Buff,UNUSED,UNUSED
-63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,if player has more than {arg1} charges of spell {spell},Charge Count,UNUSED,UNUSED
-70,ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY,Y,automation only (not part of the game's Assisted Combat rotation),UNUSED,UNUSED,UNUSED
+0,ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED,Y,若已点出天赋 {spell},UNUSED,UNUSED,UNUSED
+15,ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET,Y,若目标没有增益/减益 {arg1},Spell:Buff,UNUSED,UNUSED
+63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,若技能 {spell} 的充能层数超过 {arg1},Charge Count,UNUSED,UNUSED
+70,ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY,Y,仅自动化施放（不属于游戏的辅助战斗循环）,UNUSED,UNUSED,UNUSED
 ```
 
 `ValueN` 列的意义：当它以 **`spell` 开头**（不分大小写，如 `Spell`、`Spell:Buff`）时，
 渲染阶段会把 `ConditionValueN` 当成技能 ID，先去 `SpellName` 表查名字再填进模板。
 `Active` 列只是人工标注，渲染不读取（12.1 数据里 13 / 24 / 26 / 36 四种类型标着 N 但实际出现）。
+本期只把 `Description` 列的模板文案整体汉化；`Type` / `Enum` / `Active` / `Value1`–`Value3`
+（包括 `Spell:Buff` 这类机器语义标签）保持英文不变。
 
 ### 4.4 关键约定
 
@@ -401,7 +403,7 @@ SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
    SimulationCraft midnight 分支把该类型视为「仅属于暴雪自动化（自动施放）」的标记，
    不产生条件表达式。本期数据 46 条（46 个 step，均为该 step 最后一条条件，涉及 27 个专精），
    `ConditionValue1..3` 全为 0。渲染为映射表新增的说明行：
-   `automation only (not part of the game's Assisted Combat rotation)`。
+   `仅自动化施放（不属于游戏的辅助战斗循环）`。
 2. **类型 63/64 的 `Value1` 语义 = 充能层数**：映射表原来的 `Spell Charges` 以 "spell" 开头，
    被当作技能 ID 去查名字，旧产物因此出现 `'Spells' charges`（查不到 ID 时甚至查到别的技能名）。
    现改为 `Charge Count`，直接输出数字。12.1 的 10 条类型 63 规则 `ConditionValue1` 全为 2，类型 64 无数据。
@@ -439,7 +441,9 @@ SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
 ### 10.4 部分条件类型的参数语义与实际数据不符（未修正）
 
 - 类型 13（`AURA_COUNT_NEAR_PLAYER_GREATER`）的 `Value3` 是技能 ID（6 条规则全为 703 锁喉 / 1943 割裂），
-  但映射表标 `UNUSED`，因此输出里是数字而不是技能名（对照类型 51 的 `Spell:Buff`）。
+  但映射表标 `UNUSED`，因此中文模板里的 `{arg3}` 仍渲染为裸数字（如
+  `若玩家周围 10 码内带有增益/减益 1943 的目标数量超过 1 个`），不会解析成技能名
+  （对照类型 51 的 `Spell:Buff`）。
 - 类型 9（`AURA_ON_PLAYER`）有 3 条规则的 `ConditionValue2` 非 0、1 条规则的 `ConditionValue3` 非 0，
   看起来也是技能 ID，但映射表标 `UNUSED`，这些值被忽略。
 
