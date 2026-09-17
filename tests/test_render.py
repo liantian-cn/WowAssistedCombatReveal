@@ -26,7 +26,7 @@ def test_charge_rule_renders_number(condition_map, plan_steps, spell_index):
     index, _ = spell_index
     step, rule = find_rule(plan_steps, condition_type=63)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert line == f"    若技能 '{index.labelled(step['SpellID'])}' 的充能层数超过 2"
+    assert line == f"    若技能 '{index.labelled(step['SpellID'])}' 的充能层数大于等于 2"
     assert "'Spells'" not in line
     assert "Charge Count" not in line
     # 层数是数值参数，不带标签；技能名照常带
@@ -38,7 +38,7 @@ def test_numeric_arguments_have_no_id_label(condition_map, plan_steps, spell_ind
     index, _ = spell_index
     step, rule = find_rule(plan_steps, condition_type=12)
     line = render.render_rule(condition_map, rule, step["SpellID"], index)
-    assert re.fullmatch(r"    若玩家周围 \d+ 码内的目标数量超过 \d+ 个", line)
+    assert re.fullmatch(r"    若玩家周围 \d+ 码内的目标数量大于 \d+ 个", line)
 
 
 def test_automation_only_rule_line(condition_map, plan_steps, spell_index):

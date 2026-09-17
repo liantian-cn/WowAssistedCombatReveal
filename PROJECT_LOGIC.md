@@ -127,7 +127,7 @@ ChrClasses 1 ── n ChrSpecialization 1 ── 1 AssistedCombat 1 ── n Ass
 Type,Enum,Active,Description,Value1,Value2,Value3
 0,ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED,Y,若已点出天赋 {spell},UNUSED,UNUSED,UNUSED
 15,ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET,Y,若目标没有增益/减益 {arg1},Spell:Buff,UNUSED,UNUSED
-63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,若技能 {spell} 的充能层数超过 {arg1},Charge Count,UNUSED,UNUSED
+63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,若技能 {spell} 的充能层数大于等于 {arg1},Charge Count,UNUSED,UNUSED
 70,ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY,Y,仅自动化施放（不属于游戏的辅助战斗循环）,UNUSED,UNUSED,UNUSED
 ```
 
@@ -140,6 +140,11 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 ### 4.4 关键约定
 
 - 距离单位是**码（yards）**，时间单位是**毫秒**，`*_PCT_*` 是百分比整数。
+- **比较措辞只用四个数学用语**：`大于` / `大于等于` / `小于` / `小于等于`，不再出现 高于/低于/超过/少于
+  这类描述。每个条件类型取哪个运算符，以 SimulationCraft 的 `parse_assisted_combat_rule`
+  （`engine/player/player.cpp`）为准；SimC 自己标注这些运算符未经游戏侧验证，而数据侧读法只有
+  `>=` / `<=` 自洽（证据与取舍见第 9 节第 6 条）。SimC 对距离条件并不对称
+  （类型 3 = `target.distance<=`、类型 4 = `target.distance>`），本项目照抄该不对称写法。
 - 涉及「光环/增益」的条件，值填的是**技能 ID**（例如条件类型 15 + 值 `703` = 目标身上没有锁喉）。
 - `AssistedCombatStep.OrderIndex` 与 `AssistedCombatRule.OrderIndex` 是游戏内的排序字段，
   但本管线**不按它排序**（见第 9 节）。
@@ -414,6 +419,20 @@ SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
 5. **技能冷却标签（本期新增）**：`SpellCooldowns.<版本>.csv` 从"预置未用"变为运行必需；
    冷却取第 3/4 列较大值（同一 SpellID 多行再取大），原始毫秒 > 1000 时在标签后追加
    `,cd:<整数秒>`（半进，见 7.6 / 第 8 节）。本期输出 935 处标签带 cd，涉及 141 个技能 ID。
+6. **条件模板的比较措辞统一为四个数学用语（本期修正）**：`ConditionTypeMap.csv` 里 55 行带比较的
+   `Description` 从 高于/低于/超过/少于/至少还剩 改为 `大于` / `大于等于` / `小于` / `小于等于`，
+   运算符逐条对齐 SimulationCraft midnight 分支的 `parse_assisted_combat_rule`
+   （`engine/player/player.cpp:3772-4124`，`AC_*` 枚举见 `engine/dbc/data_enums.hh`），
+   例如 `AC_HOLY_POWER_GREATER` → `holy_power>=`、`AC_COMBO_POINTS_GREATER` → `combo_points>=`、
+   `AC_ARCANE_CHARGES_GREATER` → `buff.arcane_charge.stack>=`、`AC_SPELL_CHARGES_GREATER` →
+   `charges>=`。SimC 自己在 `player.cpp:3799` 标注
+   `TODO: verify < vs <= and > vs >= on all condition types`，而数据侧读法只有 `>=` / `<=` 自洽：
+   规则 6392 是「神圣能量 5」（等于该资源上限，严格 `>` 时规则恒假）、规则
+   41712 / 41720 / 41728 / 41736 是「连击点 5 / 6 / 6 / 7」（随天赋变化的连击点上限）、
+   奥术充能 4（等于充能上限）。两类特殊处理：类型 3/4 的距离条件照 SimC 原样保持不对称
+   （类型 3 = `target.distance<=` → 「小于等于」，类型 4 = `target.distance>` → 「大于」）；
+   类型 17/18 旧文案「至少还剩」与 SimC 的 `{}.remains<=` 相反，本次一并改为
+   「剩余时间小于等于」，属于语义修正而非仅换词。
 
 ---
 
@@ -442,8 +461,9 @@ SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
 
 - 类型 13（`AURA_COUNT_NEAR_PLAYER_GREATER`）的 `Value3` 是技能 ID（6 条规则全为 703 锁喉 / 1943 割裂），
   但映射表标 `UNUSED`，因此中文模板里的 `{arg3}` 仍渲染为裸数字（如
-  `若玩家周围 10 码内带有增益/减益 1943 的目标数量超过 1 个`），不会解析成技能名
-  （对照类型 51 的 `Spell:Buff`）。
+  `若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个`），不会解析成技能名
+  （对照类型 51 的 `Spell:Buff`，同一位置渲染为带标签的技能名，如
+  `若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 1 个`）。
 - 类型 9（`AURA_ON_PLAYER`）有 3 条规则的 `ConditionValue2` 非 0、1 条规则的 `ConditionValue3` 非 0，
   看起来也是技能 ID，但映射表标 `UNUSED`，这些值被忽略。
 
