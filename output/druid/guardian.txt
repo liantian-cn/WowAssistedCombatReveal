@@ -1,75 +1,75 @@
 Guardian
-0: Spell: Thrash[id:77758]
+0: Spell: 痛击[id:77758]
     if target is less than 8 yards away
-    if talent 'Thrash[id:77758]' is taken
-    if player has resources to cast spell 'Thrash[id:77758]'
-    if spell 'Thrash[id:77758]' is off cooldown
+    if talent '痛击[id:77758]' is taken
+    if player has resources to cast spell '痛击[id:77758]'
+    if spell '痛击[id:77758]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-1: Spell: Bear Form[id:5487]
-    if talent 'Bear Form[id:5487]' is taken
-    if player has resources to cast spell 'Bear Form[id:5487]'
-    if spell 'Bear Form[id:5487]' is off cooldown
-    if player does not have buff/debuff 'Bear Form[id:5487]'
-2: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if target does not have buff/debuff 'Moonfire[id:164812]'
-3: Spell: Mangle[id:33917]
-    if talent 'Mangle[id:33917]' is taken
-    if player has resources to cast spell 'Mangle[id:33917]'
-    if spell 'Mangle[id:33917]' is off cooldown
-    if spell 'Mangle[id:33917]' is within allowed range
-4: Spell: Maul[id:6807]
-    if talent 'Maul[id:6807]' is taken
-    if player has resources to cast spell 'Maul[id:6807]'
-    if spell 'Maul[id:6807]' is off cooldown
+1: Spell: 熊形态[id:5487]
+    if talent '熊形态[id:5487]' is taken
+    if player has resources to cast spell '熊形态[id:5487]'
+    if spell '熊形态[id:5487]' is off cooldown
+    if player does not have buff/debuff '熊形态[id:5487]'
+2: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if target does not have buff/debuff '月火术[id:164812]'
+3: Spell: 裂伤[id:33917]
+    if talent '裂伤[id:33917]' is taken
+    if player has resources to cast spell '裂伤[id:33917]'
+    if spell '裂伤[id:33917]' is off cooldown
+    if spell '裂伤[id:33917]' is within allowed range
+4: Spell: 重殴[id:6807]
+    if talent '重殴[id:6807]' is taken
+    if player has resources to cast spell '重殴[id:6807]'
+    if spell '重殴[id:6807]' is off cooldown
     if player has more than 80 rage
-    if spell 'Maul[id:6807]' is within allowed range
-5: Spell: Thrash[id:77758]
+    if spell '重殴[id:6807]' is within allowed range
+5: Spell: 痛击[id:77758]
     if target is less than 8 yards away
-    if talent 'Thrash[id:77758]' is taken
-    if player has resources to cast spell 'Thrash[id:77758]'
-    if spell 'Thrash[id:77758]' is off cooldown
-6: Spell: Swipe[id:213764]
-    if talent 'Swipe[id:213764]' is taken
-    if player has resources to cast spell 'Swipe[id:213764]'
-    if spell 'Swipe[id:213764]' is off cooldown
+    if talent '痛击[id:77758]' is taken
+    if player has resources to cast spell '痛击[id:77758]'
+    if spell '痛击[id:77758]' is off cooldown
+6: Spell: 横扫[id:213764]
+    if talent '横扫[id:213764]' is taken
+    if player has resources to cast spell '横扫[id:213764]'
+    if spell '横扫[id:213764]' is off cooldown
     if target is less than 8 yards away
-7: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if player has buff/debuff 'Galactic Guardian[id:213708]'
-8: Spell: Lunar Beam[id:204066]
+7: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if player has buff/debuff '星河守护者[id:213708]'
+8: Spell: 明月普照[id:204066]
     if target is less than 8 yards away
-    if talent 'Lunar Beam[id:204066]' is taken
-    if player has resources to cast spell 'Lunar Beam[id:204066]'
-    if spell 'Lunar Beam[id:204066]' is off cooldown
-9: Spell: Swipe[id:213764]
-10: Spell: Convoke the Spirits[id:391528]
-    if talent 'Convoke the Spirits[id:391528]' is taken
-    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
-    if spell 'Convoke the Spirits[id:391528]' is off cooldown
+    if talent '明月普照[id:204066]' is taken
+    if player has resources to cast spell '明月普照[id:204066]'
+    if spell '明月普照[id:204066]' is off cooldown
+9: Spell: 横扫[id:213764]
+10: Spell: 万灵之召[id:391528]
+    if talent '万灵之召[id:391528]' is taken
+    if player has resources to cast spell '万灵之召[id:391528]'
+    if spell '万灵之召[id:391528]' is off cooldown
     if target is less than 5 yards away
-11: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if spell 'Moonfire[id:8921]' is within allowed range
+11: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if spell '月火术[id:8921]' is within allowed range
     if target is more than 10 yards away
-12: Spell: Berserk[id:50334]
-    if talent 'Berserk[id:50334]' is taken
-    if player has resources to cast spell 'Berserk[id:50334]'
-    if spell 'Berserk[id:50334]' is off cooldown
+12: Spell: 狂暴[id:50334]
+    if talent '狂暴[id:50334]' is taken
+    if player has resources to cast spell '狂暴[id:50334]'
+    if spell '狂暴[id:50334]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: Convoke the Spirits[id:391528]
-    if talent 'Convoke the Spirits[id:391528]' is taken
-    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
-    if spell 'Convoke the Spirits[id:391528]' is off cooldown
+13: Spell: 万灵之召[id:391528]
+    if talent '万灵之召[id:391528]' is taken
+    if player has resources to cast spell '万灵之召[id:391528]'
+    if spell '万灵之召[id:391528]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: Mark of the Wild[id:1126]
-    if talent 'Mark of the Wild[id:1126]' is taken
-    if player has resources to cast spell 'Mark of the Wild[id:1126]'
-    if spell 'Mark of the Wild[id:1126]' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'
+14: Spell: 野性印记[id:1126]
+    if talent '野性印记[id:1126]' is taken
+    if player has resources to cast spell '野性印记[id:1126]'
+    if spell '野性印记[id:1126]' is off cooldown
+    if player has buff/debuff '野性印记高亮[id:1271910]'

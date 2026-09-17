@@ -1,48 +1,48 @@
 Restoration
-0: Spell: Chain Lightning[id:188443]
+0: Spell: 闪电链[id:188443]
     if there are more than 3 targets within 10 yards of target
-    if talent 'Chain Lightning[id:188443]' is taken
-    if player has resources to cast spell 'Chain Lightning[id:188443]'
-    if spell 'Chain Lightning[id:188443]' is off cooldown
-    if spell 'Chain Lightning[id:188443]' can be successfully cast
-1: Spell: Flame Shock[id:470411]
-    if target does not have buff/debuff 'Flame Shock[id:188389]'
-    if talent 'Flame Shock[id:470411]' is taken
-    if player has resources to cast spell 'Flame Shock[id:470411]'
-    if spell 'Flame Shock[id:470411]' is off cooldown
-2: Spell: Lava Burst[id:51505]
-    if talent 'Lava Burst[id:51505]' is taken
-    if player has resources to cast spell 'Lava Burst[id:51505]'
-    if spell 'Lava Burst[id:51505]' is off cooldown
-3: Spell: Lightning Bolt[id:188196]
-    if talent 'Lightning Bolt[id:188196]' is taken
-    if player has resources to cast spell 'Lightning Bolt[id:188196]'
-    if spell 'Lightning Bolt[id:188196]' is off cooldown
-    if spell 'Lightning Bolt[id:188196]' can be successfully cast
-4: Spell: Lava Burst[id:51505]
-5: Spell: Lava Burst[id:51505]
-    if talent 'Lava Burst[id:51505]' is taken
-    if player has resources to cast spell 'Lava Burst[id:51505]'
-    if spell 'Lava Burst[id:51505]' is off cooldown
-    if player has more than 2 charges of spell 'Lava Burst[id:51505]'
-    if spell 'Lava Burst[id:51505]' can be successfully cast
-6: Spell: Water Shield[id:52127]
-    if talent 'Water Shield[id:52127]' is taken
-    if player has resources to cast spell 'Water Shield[id:52127]'
-    if spell 'Water Shield[id:52127]' is off cooldown
-    if player does not have buff/debuff 'Water Shield[id:52127]'
-7: Spell: Earthliving Weapon[id:382021]
-    if talent 'Earthliving Weapon[id:382021]' is taken
-    if player has resources to cast spell 'Earthliving Weapon[id:382021]'
-    if spell 'Earthliving Weapon[id:382021]' is off cooldown
-    if player does not have buff/debuff 'Earthliving Weapon[id:382022]'
-8: Spell: Tidecaller's Guard[id:457481]
-    if talent 'Tidecaller's Guard[id:457481]' is taken
-    if player has resources to cast spell 'Tidecaller's Guard[id:457481]'
-    if spell 'Tidecaller's Guard[id:457481]' is off cooldown
-    if player does not have buff/debuff 'Tidecaller's Guard[id:457496]'
-9: Spell: Skyfury[id:462854]
-    if talent 'Skyfury[id:462854]' is taken
-    if player has resources to cast spell 'Skyfury[id:462854]'
-    if spell 'Skyfury[id:462854]' is off cooldown
-    if player has buff/debuff 'Skyfury Highlight[id:1271904]'
+    if talent '闪电链[id:188443]' is taken
+    if player has resources to cast spell '闪电链[id:188443]'
+    if spell '闪电链[id:188443]' is off cooldown
+    if spell '闪电链[id:188443]' can be successfully cast
+1: Spell: 烈焰震击[id:470411]
+    if target does not have buff/debuff '烈焰震击[id:188389]'
+    if talent '烈焰震击[id:470411]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411]'
+    if spell '烈焰震击[id:470411]' is off cooldown
+2: Spell: 熔岩爆裂[id:51505]
+    if talent '熔岩爆裂[id:51505]' is taken
+    if player has resources to cast spell '熔岩爆裂[id:51505]'
+    if spell '熔岩爆裂[id:51505]' is off cooldown
+3: Spell: 闪电箭[id:188196]
+    if talent '闪电箭[id:188196]' is taken
+    if player has resources to cast spell '闪电箭[id:188196]'
+    if spell '闪电箭[id:188196]' is off cooldown
+    if spell '闪电箭[id:188196]' can be successfully cast
+4: Spell: 熔岩爆裂[id:51505]
+5: Spell: 熔岩爆裂[id:51505]
+    if talent '熔岩爆裂[id:51505]' is taken
+    if player has resources to cast spell '熔岩爆裂[id:51505]'
+    if spell '熔岩爆裂[id:51505]' is off cooldown
+    if player has more than 2 charges of spell '熔岩爆裂[id:51505]'
+    if spell '熔岩爆裂[id:51505]' can be successfully cast
+6: Spell: 水之护盾[id:52127]
+    if talent '水之护盾[id:52127]' is taken
+    if player has resources to cast spell '水之护盾[id:52127]'
+    if spell '水之护盾[id:52127]' is off cooldown
+    if player does not have buff/debuff '水之护盾[id:52127]'
+7: Spell: 大地生命武器[id:382021]
+    if talent '大地生命武器[id:382021]' is taken
+    if player has resources to cast spell '大地生命武器[id:382021]'
+    if spell '大地生命武器[id:382021]' is off cooldown
+    if player does not have buff/debuff '大地生命武器[id:382022]'
+8: Spell: 唤潮者的护卫[id:457481]
+    if talent '唤潮者的护卫[id:457481]' is taken
+    if player has resources to cast spell '唤潮者的护卫[id:457481]'
+    if spell '唤潮者的护卫[id:457481]' is off cooldown
+    if player does not have buff/debuff '唤潮者的护卫[id:457496]'
+9: Spell: 天怒[id:462854]
+    if talent '天怒[id:462854]' is taken
+    if player has resources to cast spell '天怒[id:462854]'
+    if spell '天怒[id:462854]' is off cooldown
+    if player has buff/debuff '天怒高亮[id:1271904]'

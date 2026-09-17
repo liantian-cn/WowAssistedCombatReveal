@@ -1,19 +1,19 @@
 Preservation
-0: Spell: Fire Breath[id:357208]
-    if talent 'Fire Breath[id:357208]' is taken
-    if player has resources to cast spell 'Fire Breath[id:357208]'
-    if spell 'Fire Breath[id:357208]' is off cooldown
-    if spell 'Fire Breath[id:357208]' can be successfully cast
-    if target does not have buff/debuff 'Fire Breath[id:357209]'
-1: Spell: Living Flame[id:361469]
-    if talent 'Living Flame[id:361469]' is taken
-    if player has resources to cast spell 'Living Flame[id:361469]'
-    if spell 'Living Flame[id:361469]' is off cooldown
+0: Spell: 火焰吐息[id:357208]
+    if talent '火焰吐息[id:357208]' is taken
+    if player has resources to cast spell '火焰吐息[id:357208]'
+    if spell '火焰吐息[id:357208]' is off cooldown
+    if spell '火焰吐息[id:357208]' can be successfully cast
+    if target does not have buff/debuff '火焰吐息[id:357209]'
+1: Spell: 活化烈焰[id:361469]
+    if talent '活化烈焰[id:361469]' is taken
+    if player has resources to cast spell '活化烈焰[id:361469]'
+    if spell '活化烈焰[id:361469]' is off cooldown
     if target is hostile
-    if spell 'Living Flame[id:361469]' can be successfully cast
-2: Spell: Living Flame[id:361469]
-3: Spell: Blessing of the Bronze[id:364342]
-    if talent 'Blessing of the Bronze[id:364342]' is taken
-    if player has resources to cast spell 'Blessing of the Bronze[id:364342]'
-    if spell 'Blessing of the Bronze[id:364342]' is off cooldown
-    if player has buff/debuff 'Blessing of the Bronze Highlight[id:1271912]'
+    if spell '活化烈焰[id:361469]' can be successfully cast
+2: Spell: 活化烈焰[id:361469]
+3: Spell: 青铜龙的祝福[id:364342]
+    if talent '青铜龙的祝福[id:364342]' is taken
+    if player has resources to cast spell '青铜龙的祝福[id:364342]'
+    if spell '青铜龙的祝福[id:364342]' is off cooldown
+    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'

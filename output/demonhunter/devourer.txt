@@ -1,61 +1,61 @@
 Devourer
-0: Spell: Void Ray[id:473728]
-    if talent 'Void Ray[id:473728]' is taken
-    if player has resources to cast spell 'Void Ray[id:473728]'
-    if spell 'Void Ray[id:473728]' is off cooldown
+0: Spell: 虚空射线[id:473728]
+    if talent '虚空射线[id:473728]' is taken
+    if player has resources to cast spell '虚空射线[id:473728]'
+    if spell '虚空射线[id:473728]' is off cooldown
     if target is less than 30 yards away
-1: Spell: Immolation Aura[id:258920]
-    if talent 'Immolation Aura[id:258920]' is taken
-    if player has resources to cast spell 'Immolation Aura[id:258920]'
-    if spell 'Immolation Aura[id:258920]' is off cooldown
-    if player does not have buff/debuff 'Spontaneous Immolation[id:1246556]'
-    if player does not have buff/debuff 'Soul Immolation[id:1241937]'
-2: Spell: Void Metamorphosis[id:1217605]
-    if talent 'Void Metamorphosis[id:1217605]' is taken
-    if player has resources to cast spell 'Void Metamorphosis[id:1217605]'
-    if spell 'Void Metamorphosis[id:1217605]' is off cooldown
+1: Spell: 献祭光环[id:258920]
+    if talent '献祭光环[id:258920]' is taken
+    if player has resources to cast spell '献祭光环[id:258920]'
+    if spell '献祭光环[id:258920]' is off cooldown
+    if player does not have buff/debuff '自发献祭[id:1246556]'
+    if player does not have buff/debuff '灵魂献祭[id:1241937]'
+2: Spell: 虚空变形[id:1217605]
+    if talent '虚空变形[id:1217605]' is taken
+    if player has resources to cast spell '虚空变形[id:1217605]'
+    if spell '虚空变形[id:1217605]' is off cooldown
     if target is less than 25 yards away
-    if player does not have buff/debuff 'Void Metamorphosis[id:1217605]'
+    if player does not have buff/debuff '虚空变形[id:1217605]'
     automation only (not part of the game's Assisted Combat rotation)
-3: Spell: Consume[id:473662]
-    if talent 'Consume[id:473662]' is taken
-    if player has resources to cast spell 'Consume[id:473662]'
-    if spell 'Consume[id:473662]' is off cooldown
-    if spell 'Consume[id:473662]' is within allowed range
-4: Spell: Consume[id:473662]
-5: Spell: Reap[id:1226019]
-    if talent 'Reap[id:1226019]' is taken
-    if player has resources to cast spell 'Reap[id:1226019]'
-    if spell 'Reap[id:1226019]' is off cooldown
-    if spell 'Reap[id:1226019]' is within allowed range
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments[id:1245577]'
-6: Spell: Void Metamorphosis[id:1217605]
-    if talent 'Void Metamorphosis[id:1217605]' is taken
-    if player has resources to cast spell 'Void Metamorphosis[id:1217605]'
-    if spell 'Void Metamorphosis[id:1217605]' is off cooldown
-    if player has buff/debuff 'Collapsing Star[id:1221171]'
+3: Spell: 吞噬[id:473662]
+    if talent '吞噬[id:473662]' is taken
+    if player has resources to cast spell '吞噬[id:473662]'
+    if spell '吞噬[id:473662]' is off cooldown
+    if spell '吞噬[id:473662]' is within allowed range
+4: Spell: 吞噬[id:473662]
+5: Spell: 收割[id:1226019]
+    if talent '收割[id:1226019]' is taken
+    if player has resources to cast spell '收割[id:1226019]'
+    if spell '收割[id:1226019]' is off cooldown
+    if spell '收割[id:1226019]' is within allowed range
+    if player has more than 4 stacks of buff/debuff '灵魂残片[id:1245577]'
+6: Spell: 虚空变形[id:1217605]
+    if talent '虚空变形[id:1217605]' is taken
+    if player has resources to cast spell '虚空变形[id:1217605]'
+    if spell '虚空变形[id:1217605]' is off cooldown
+    if player has buff/debuff '坍缩之星[id:1221171]'
     if target is less than 30 yards away
-7: Spell: The Hunt[id:1246167]
-    if talent 'The Hunt[id:1246167]' is taken
-    if player has resources to cast spell 'The Hunt[id:1246167]'
-    if spell 'The Hunt[id:1246167]' is off cooldown
+7: Spell: 恶魔追击[id:1246167]
+    if talent '恶魔追击[id:1246167]' is taken
+    if player has resources to cast spell '恶魔追击[id:1246167]'
+    if spell '恶魔追击[id:1246167]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'The Hunt[id:1246167]' is within allowed range
-8: Spell: Voidblade[id:1245412]
-    if talent 'Voidblade[id:1245412]' is taken
-    if player has resources to cast spell 'Voidblade[id:1245412]'
-    if spell 'Voidblade[id:1245412]' is off cooldown
+    if spell '恶魔追击[id:1246167]' is within allowed range
+8: Spell: 虚空之刃[id:1245412]
+    if talent '虚空之刃[id:1245412]' is taken
+    if player has resources to cast spell '虚空之刃[id:1245412]'
+    if spell '虚空之刃[id:1245412]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'Voidblade[id:1245412]' is within allowed range
-9: Spell: Reap[id:1226019]
-    if talent 'Reap[id:1226019]' is taken
-    if player has resources to cast spell 'Reap[id:1226019]'
-    if spell 'Reap[id:1226019]' is off cooldown
-    if player has buff/debuff 'Moment of Craving[id:1238495]'
-    if spell 'Reap[id:1226019]' is within allowed range
-10: Spell: Void Ray[id:473728]
-    if talent 'Void Ray[id:473728]' is taken
-    if player has resources to cast spell 'Void Ray[id:473728]'
-    if spell 'Void Ray[id:473728]' is off cooldown
+    if spell '虚空之刃[id:1245412]' is within allowed range
+9: Spell: 收割[id:1226019]
+    if talent '收割[id:1226019]' is taken
+    if player has resources to cast spell '收割[id:1226019]'
+    if spell '收割[id:1226019]' is off cooldown
+    if player has buff/debuff '噬欲时刻[id:1238495]'
+    if spell '收割[id:1226019]' is within allowed range
+10: Spell: 虚空射线[id:473728]
+    if talent '虚空射线[id:473728]' is taken
+    if player has resources to cast spell '虚空射线[id:473728]'
+    if spell '虚空射线[id:473728]' is off cooldown
     if target is less than 25 yards away
-    if player has buff/debuff 'Void Metamorphosis[id:1217605]'
+    if player has buff/debuff '虚空变形[id:1217605]'

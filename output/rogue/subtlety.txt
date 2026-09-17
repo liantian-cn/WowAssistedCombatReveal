@@ -1,136 +1,136 @@
 Subtlety
-0: Spell: Instant Poison[id:315584]
-    if talent 'Instant Poison[id:315584]' is taken
-    if player has resources to cast spell 'Instant Poison[id:315584]'
-    if spell 'Instant Poison[id:315584]' is off cooldown
-    if player does not have buff/debuff 'Instant Poison[id:315584]'
+0: Spell: 速效药膏[id:315584]
+    if talent '速效药膏[id:315584]' is taken
+    if player has resources to cast spell '速效药膏[id:315584]'
+    if spell '速效药膏[id:315584]' is off cooldown
+    if player does not have buff/debuff '速效药膏[id:315584]'
     if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-1: Spell: Shadow Dance[id:185313]
-    if player has resources to cast spell 'Shadow Dance[id:185313]'
-    if spell 'Shadow Dance[id:185313]' is off cooldown
-    if talent 'Shadow Dance[id:185313]' is taken
+1: Spell: 暗影之舞[id:185313]
+    if player has resources to cast spell '暗影之舞[id:185313]'
+    if spell '暗影之舞[id:185313]' is off cooldown
+    if talent '暗影之舞[id:185313]' is taken
     if there are more than 1 targets within 10 yards of player
-    if spell 'Shadow Dance[id:185313]' is off cooldown
-2: Spell: Secret Technique[id:280719]
-    if player has resources to cast spell 'Secret Technique[id:280719]'
-    if spell 'Secret Technique[id:280719]' is off cooldown
-    if talent 'Secret Technique[id:280719]' is taken
-    if player has buff/debuff 'Shadow Dance[id:185422]'
+    if spell '暗影之舞[id:185313]' is off cooldown
+2: Spell: 影分身[id:280719]
+    if player has resources to cast spell '影分身[id:280719]'
+    if spell '影分身[id:280719]' is off cooldown
+    if talent '影分身[id:280719]' is taken
+    if player has buff/debuff '暗影之舞[id:185422]'
     if player has more than 5 combo points
-    if spell 'Secret Technique[id:280719]' is within allowed range
-    if player does not have buff/debuff 'Darkest Night[id:457280]'
-3: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if spell '影分身[id:280719]' is within allowed range
+    if player does not have buff/debuff '至黑之夜[id:457280]'
+3: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 5 combo points
-    if player has buff/debuff 'Coup de Grace[id:462128]'
-    if spell 'Eviscerate[id:196819]' is within allowed range
-4: Spell: Goremaw's Bite[id:426591]
-    if talent 'Goremaw's Bite[id:426591]' is taken
-    if player has resources to cast spell 'Goremaw's Bite[id:426591]'
-    if spell 'Goremaw's Bite[id:426591]' is off cooldown
+    if player has buff/debuff '致命一击[id:462128]'
+    if spell '刺骨[id:196819]' is within allowed range
+4: Spell: 赤喉之咬[id:426591]
+    if talent '赤喉之咬[id:426591]' is taken
+    if player has resources to cast spell '赤喉之咬[id:426591]'
+    if spell '赤喉之咬[id:426591]' is off cooldown
     if player has less than 2 combo points
-    if spell 'Goremaw's Bite[id:426591]' is within allowed range
-5: Spell: Black Powder[id:319175]
-    if player has resources to cast spell 'Black Powder[id:319175]'
-    if spell 'Black Powder[id:319175]' is off cooldown
-    if talent 'Black Powder[id:319175]' is taken
+    if spell '赤喉之咬[id:426591]' is within allowed range
+5: Spell: 黑火药[id:319175]
+    if player has resources to cast spell '黑火药[id:319175]'
+    if spell '黑火药[id:319175]' is off cooldown
+    if talent '黑火药[id:319175]' is taken
     if there are more than 3 targets within 10 yards of player
     if player has more than 5 combo points
-    if player does not have buff/debuff 'Darkest Night[id:457280]'
-6: Spell: Shuriken Storm[id:197835]
-    if player has resources to cast spell 'Shuriken Storm[id:197835]'
-    if spell 'Shuriken Storm[id:197835]' is off cooldown
-    if talent 'Shuriken Storm[id:197835]' is taken
+    if player does not have buff/debuff '至黑之夜[id:457280]'
+6: Spell: 袖剑风暴[id:197835]
+    if player has resources to cast spell '袖剑风暴[id:197835]'
+    if spell '袖剑风暴[id:197835]' is off cooldown
+    if talent '袖剑风暴[id:197835]' is taken
     if there are more than 3 targets within 10 yards of player
-7: Spell: Shadowstrike[id:185438]
-    if player has resources to cast spell 'Shadowstrike[id:185438]'
-    if spell 'Shadowstrike[id:185438]' is off cooldown
-    if talent 'Shadowstrike[id:185438]' is taken
-    if spell 'Shadowstrike[id:185438]' is within allowed range
-8: Spell: Sinister Strike[id:1752]
-    if player has resources to cast spell 'Sinister Strike[id:1752]'
-    if spell 'Sinister Strike[id:1752]' is off cooldown
-    if talent 'Sinister Strike[id:1752]' is taken
-    if player does not have buff/debuff 'Shadow Dance[id:185422]'
-    if spell 'Sinister Strike[id:1752]' is within allowed range
-9: Spell: Shuriken Toss[id:114014]
-    if player has resources to cast spell 'Shuriken Toss[id:114014]'
-    if spell 'Shuriken Toss[id:114014]' is off cooldown
-    if talent 'Shuriken Toss[id:114014]' is taken
-    if spell 'Shuriken Toss[id:114014]' is within allowed range
-    if player does not have buff/debuff 'Stealth[id:1784]'
-    if player does not have buff/debuff 'Vanish[id:11327]'
+7: Spell: 暗影打击[id:185438]
+    if player has resources to cast spell '暗影打击[id:185438]'
+    if spell '暗影打击[id:185438]' is off cooldown
+    if talent '暗影打击[id:185438]' is taken
+    if spell '暗影打击[id:185438]' is within allowed range
+8: Spell: 影袭[id:1752]
+    if player has resources to cast spell '影袭[id:1752]'
+    if spell '影袭[id:1752]' is off cooldown
+    if talent '影袭[id:1752]' is taken
+    if player does not have buff/debuff '暗影之舞[id:185422]'
+    if spell '影袭[id:1752]' is within allowed range
+9: Spell: 飞镖投掷[id:114014]
+    if player has resources to cast spell '飞镖投掷[id:114014]'
+    if spell '飞镖投掷[id:114014]' is off cooldown
+    if talent '飞镖投掷[id:114014]' is taken
+    if spell '飞镖投掷[id:114014]' is within allowed range
+    if player does not have buff/debuff '潜行[id:1784]'
+    if player does not have buff/debuff '消失[id:11327]'
     if target is more than 15 yards away
-    if player does not have buff/debuff 'Stealth[id:115191]'
-10: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if player does not have buff/debuff '潜行[id:115191]'
+10: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 5 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player does not have buff/debuff 'Darkest Night[id:457280]'
-11: Spell: Sinister Strike[id:1752]
-12: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if spell '刺骨[id:196819]' is within allowed range
+    if player does not have buff/debuff '至黑之夜[id:457280]'
+11: Spell: 影袭[id:1752]
+12: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 5 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player has buff/debuff 'Darkest Night[id:457280]'
-13: Spell: Shuriken Storm[id:197835]
-    if player has resources to cast spell 'Shuriken Storm[id:197835]'
-    if spell 'Shuriken Storm[id:197835]' is off cooldown
-    if talent 'Shuriken Storm[id:197835]' is taken
+    if spell '刺骨[id:196819]' is within allowed range
+    if player has buff/debuff '至黑之夜[id:457280]'
+13: Spell: 袖剑风暴[id:197835]
+    if player has resources to cast spell '袖剑风暴[id:197835]'
+    if spell '袖剑风暴[id:197835]' is off cooldown
+    if talent '袖剑风暴[id:197835]' is taken
     if there are more than 3 targets within 10 yards of player
-    if player has buff/debuff 'Deeper Stratagem[id:193531]'
-    if player has buff/debuff 'Secret Stratagem[id:394320]'
+    if player has buff/debuff '深邃诡计[id:193531]'
+    if player has buff/debuff '隐秘诡计[id:394320]'
     if player has less than 5 combo points
-14: Spell: Shadowstrike[id:185438]
-    if player has resources to cast spell 'Shadowstrike[id:185438]'
-    if spell 'Shadowstrike[id:185438]' is off cooldown
-    if talent 'Shadowstrike[id:185438]' is taken
-    if spell 'Shadowstrike[id:185438]' is within allowed range
-    if player has buff/debuff 'Deeper Stratagem[id:193531]'
-    if player has buff/debuff 'Secret Stratagem[id:394320]'
+14: Spell: 暗影打击[id:185438]
+    if player has resources to cast spell '暗影打击[id:185438]'
+    if spell '暗影打击[id:185438]' is off cooldown
+    if talent '暗影打击[id:185438]' is taken
+    if spell '暗影打击[id:185438]' is within allowed range
+    if player has buff/debuff '深邃诡计[id:193531]'
+    if player has buff/debuff '隐秘诡计[id:394320]'
     if player has less than 5 combo points
     if there are less than 3 targets within 10 yards of player
-15: Spell: Sinister Strike[id:1752]
-    if player has resources to cast spell 'Sinister Strike[id:1752]'
-    if spell 'Sinister Strike[id:1752]' is off cooldown
-    if talent 'Sinister Strike[id:1752]' is taken
-    if player does not have buff/debuff 'Shadow Dance[id:185422]'
-    if spell 'Sinister Strike[id:1752]' is within allowed range
-    if player has buff/debuff 'Deeper Stratagem[id:193531]'
-    if player has buff/debuff 'Secret Stratagem[id:394320]'
+15: Spell: 影袭[id:1752]
+    if player has resources to cast spell '影袭[id:1752]'
+    if spell '影袭[id:1752]' is off cooldown
+    if talent '影袭[id:1752]' is taken
+    if player does not have buff/debuff '暗影之舞[id:185422]'
+    if spell '影袭[id:1752]' is within allowed range
+    if player has buff/debuff '深邃诡计[id:193531]'
+    if player has buff/debuff '隐秘诡计[id:394320]'
     if player has less than 5 combo points
     if there are less than 2 targets within 10 yards of player
-16: Spell: Wound Poison[id:8679]
-    if talent 'Wound Poison[id:8679]' is taken
-    if player has resources to cast spell 'Wound Poison[id:8679]'
-    if spell 'Wound Poison[id:8679]' is off cooldown
-    if player does not have buff/debuff 'Wound Poison[id:8679]'
+16: Spell: 致伤药膏[id:8679]
+    if talent '致伤药膏[id:8679]' is taken
+    if player has resources to cast spell '致伤药膏[id:8679]'
+    if spell '致伤药膏[id:8679]' is off cooldown
+    if player does not have buff/debuff '致伤药膏[id:8679]'
     if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-17: Spell: Atrophic Poison[id:381637]
-    if talent 'Atrophic Poison[id:381637]' is taken
-    if player has resources to cast spell 'Atrophic Poison[id:381637]'
-    if spell 'Atrophic Poison[id:381637]' is off cooldown
-    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
-18: Spell: Numbing Poison[id:5761]
-    if talent 'Numbing Poison[id:5761]' is taken
-    if player has resources to cast spell 'Numbing Poison[id:5761]'
-    if spell 'Numbing Poison[id:5761]' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison[id:5761]'
-19: Spell: Crippling Poison[id:3408]
-    if talent 'Crippling Poison[id:3408]' is taken
-    if player has resources to cast spell 'Crippling Poison[id:3408]'
-    if spell 'Crippling Poison[id:3408]' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison[id:5761]'
-    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
-    if player does not have buff/debuff 'Crippling Poison[id:3408]'
-20: Spell: Shadow Blades[id:121471]
-    if talent 'Shadow Blades[id:121471]' is taken
-    if player has resources to cast spell 'Shadow Blades[id:121471]'
-    if spell 'Shadow Blades[id:121471]' is off cooldown
+17: Spell: 萎缩药膏[id:381637]
+    if talent '萎缩药膏[id:381637]' is taken
+    if player has resources to cast spell '萎缩药膏[id:381637]'
+    if spell '萎缩药膏[id:381637]' is off cooldown
+    if player does not have buff/debuff '萎缩药膏[id:381637]'
+18: Spell: 迟钝药膏[id:5761]
+    if talent '迟钝药膏[id:5761]' is taken
+    if player has resources to cast spell '迟钝药膏[id:5761]'
+    if spell '迟钝药膏[id:5761]' is off cooldown
+    if player does not have buff/debuff '迟钝药膏[id:5761]'
+19: Spell: 减速药膏[id:3408]
+    if talent '减速药膏[id:3408]' is taken
+    if player has resources to cast spell '减速药膏[id:3408]'
+    if spell '减速药膏[id:3408]' is off cooldown
+    if player does not have buff/debuff '迟钝药膏[id:5761]'
+    if player does not have buff/debuff '萎缩药膏[id:381637]'
+    if player does not have buff/debuff '减速药膏[id:3408]'
+20: Spell: 暗影之刃[id:121471]
+    if talent '暗影之刃[id:121471]' is taken
+    if player has resources to cast spell '暗影之刃[id:121471]'
+    if spell '暗影之刃[id:121471]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

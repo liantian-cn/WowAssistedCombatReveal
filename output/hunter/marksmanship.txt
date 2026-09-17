@@ -1,92 +1,92 @@
 Marksmanship
-0: Spell: Multi-Shot[id:257620]
-    if talent 'Multi-Shot[id:257620]' is taken
-    if player has resources to cast spell 'Multi-Shot[id:257620]'
-    if spell 'Multi-Shot[id:257620]' is off cooldown
-    if spell 'Multi-Shot[id:257620]' is within allowed range
-    if player has buff/debuff 'Trick Shots[id:257622]' with at least 2000 ms left
+0: Spell: 多重射击[id:257620]
+    if talent '多重射击[id:257620]' is taken
+    if player has resources to cast spell '多重射击[id:257620]'
+    if spell '多重射击[id:257620]' is off cooldown
+    if spell '多重射击[id:257620]' is within allowed range
+    if player has buff/debuff '技巧射击[id:257622]' with at least 2000 ms left
     if there are more than 3 targets within 10 yards of target
-1: Spell: Multi-Shot[id:257620]
-    if talent 'Multi-Shot[id:257620]' is taken
-    if player has resources to cast spell 'Multi-Shot[id:257620]'
-    if spell 'Multi-Shot[id:257620]' is off cooldown
-    if spell 'Multi-Shot[id:257620]' is within allowed range
-    if player has buff/debuff 'Precise Shots[id:260242]'
+1: Spell: 多重射击[id:257620]
+    if talent '多重射击[id:257620]' is taken
+    if player has resources to cast spell '多重射击[id:257620]'
+    if spell '多重射击[id:257620]' is off cooldown
+    if spell '多重射击[id:257620]' is within allowed range
+    if player has buff/debuff '弹无虚发[id:260242]'
     if there are more than 3 targets within 10 yards of target
-2: Spell: Rapid Fire[id:257044]
-    if talent 'Rapid Fire[id:257044]' is taken
-    if player has resources to cast spell 'Rapid Fire[id:257044]'
-    if spell 'Rapid Fire[id:257044]' is off cooldown
-    if spell 'Rapid Fire[id:257044]' is within allowed range
-3: Spell: Volley[id:260243]
-    if talent 'Volley[id:260243]' is taken
-    if player has resources to cast spell 'Volley[id:260243]'
-    if spell 'Volley[id:260243]' is off cooldown
+2: Spell: 急速射击[id:257044]
+    if talent '急速射击[id:257044]' is taken
+    if player has resources to cast spell '急速射击[id:257044]'
+    if spell '急速射击[id:257044]' is off cooldown
+    if spell '急速射击[id:257044]' is within allowed range
+3: Spell: 乱射[id:260243]
+    if talent '乱射[id:260243]' is taken
+    if player has resources to cast spell '乱射[id:260243]'
+    if spell '乱射[id:260243]' is off cooldown
     if target is less than 50 yards away
-4: Spell: Aimed Shot[id:19434]
-    if talent 'Aimed Shot[id:19434]' is taken
-    if player has resources to cast spell 'Aimed Shot[id:19434]'
-    if spell 'Aimed Shot[id:19434]' is off cooldown
-    if spell 'Aimed Shot[id:19434]' is within allowed range
-5: Spell: Kill Shot[id:53351]
-    if talent 'Kill Shot[id:53351]' is taken
-    if player has resources to cast spell 'Kill Shot[id:53351]'
-    if spell 'Kill Shot[id:53351]' is off cooldown
-    if spell 'Kill Shot[id:53351]' is within allowed range
-6: Spell: Steady Shot[id:56641]
-    if talent 'Steady Shot[id:56641]' is taken
-    if player has resources to cast spell 'Steady Shot[id:56641]'
-    if spell 'Steady Shot[id:56641]' is off cooldown
-    if spell 'Steady Shot[id:56641]' is within allowed range
-    if spell 'Steady Shot[id:56641]' can be successfully cast
-7: Spell: Multi-Shot[id:2643]
-    if talent 'Multi-Shot[id:2643]' is taken
-    if player has resources to cast spell 'Multi-Shot[id:2643]'
-    if spell 'Multi-Shot[id:2643]' is off cooldown
-    if spell 'Multi-Shot[id:2643]' is within allowed range
+4: Spell: 瞄准射击[id:19434]
+    if talent '瞄准射击[id:19434]' is taken
+    if player has resources to cast spell '瞄准射击[id:19434]'
+    if spell '瞄准射击[id:19434]' is off cooldown
+    if spell '瞄准射击[id:19434]' is within allowed range
+5: Spell: 夺命射击[id:53351]
+    if talent '夺命射击[id:53351]' is taken
+    if player has resources to cast spell '夺命射击[id:53351]'
+    if spell '夺命射击[id:53351]' is off cooldown
+    if spell '夺命射击[id:53351]' is within allowed range
+6: Spell: 稳固射击[id:56641]
+    if talent '稳固射击[id:56641]' is taken
+    if player has resources to cast spell '稳固射击[id:56641]'
+    if spell '稳固射击[id:56641]' is off cooldown
+    if spell '稳固射击[id:56641]' is within allowed range
+    if spell '稳固射击[id:56641]' can be successfully cast
+7: Spell: 多重射击[id:2643]
+    if talent '多重射击[id:2643]' is taken
+    if player has resources to cast spell '多重射击[id:2643]'
+    if spell '多重射击[id:2643]' is off cooldown
+    if spell '多重射击[id:2643]' is within allowed range
     if there are more than 3 targets within 10 yards of target
     if player has more than 90 focus
-8: Spell: Kill Shot[id:53351]
-    if talent 'Kill Shot[id:53351]' is taken
-    if player has resources to cast spell 'Kill Shot[id:53351]'
-    if spell 'Kill Shot[id:53351]' is off cooldown
-    if spell 'Kill Shot[id:53351]' is within allowed range
-    if player has buff/debuff 'Black Arrow[id:466932]'
-9: Spell: Arcane Shot[id:185358]
-    if talent 'Arcane Shot[id:185358]' is taken
-    if player has resources to cast spell 'Arcane Shot[id:185358]'
-    if spell 'Arcane Shot[id:185358]' is off cooldown
-    if spell 'Arcane Shot[id:185358]' is within allowed range
-    if player has buff/debuff 'Precise Shots[id:260242]'
-10: Spell: Multi-Shot[id:257620]
-    if talent 'Multi-Shot[id:257620]' is taken
-    if player has resources to cast spell 'Multi-Shot[id:257620]'
-    if spell 'Multi-Shot[id:257620]' is off cooldown
-    if spell 'Multi-Shot[id:257620]' is within allowed range
-    if player does not have buff/debuff 'Trick Shots[id:257622]'
+8: Spell: 夺命射击[id:53351]
+    if talent '夺命射击[id:53351]' is taken
+    if player has resources to cast spell '夺命射击[id:53351]'
+    if spell '夺命射击[id:53351]' is off cooldown
+    if spell '夺命射击[id:53351]' is within allowed range
+    if player has buff/debuff '黑蚀箭[id:466932]'
+9: Spell: 奥术射击[id:185358]
+    if talent '奥术射击[id:185358]' is taken
+    if player has resources to cast spell '奥术射击[id:185358]'
+    if spell '奥术射击[id:185358]' is off cooldown
+    if spell '奥术射击[id:185358]' is within allowed range
+    if player has buff/debuff '弹无虚发[id:260242]'
+10: Spell: 多重射击[id:257620]
+    if talent '多重射击[id:257620]' is taken
+    if player has resources to cast spell '多重射击[id:257620]'
+    if spell '多重射击[id:257620]' is off cooldown
+    if spell '多重射击[id:257620]' is within allowed range
+    if player does not have buff/debuff '技巧射击[id:257622]'
     if there are more than 3 targets within 10 yards of target
-11: Spell: Aimed Shot[id:19434]
-    if talent 'Aimed Shot[id:19434]' is taken
-12: Spell: Aimed Shot[id:19434]
-    if talent 'Aimed Shot[id:19434]' is taken
-    if player has resources to cast spell 'Aimed Shot[id:19434]'
-    if spell 'Aimed Shot[id:19434]' is off cooldown
-    if spell 'Aimed Shot[id:19434]' is within allowed range
-    if spell 'Aimed Shot[id:19434]' can be successfully cast
-    if player has more than 2 charges of spell 'Aimed Shot[id:19434]'
-13: Spell: Steady Shot[id:56641]
-14: Spell: Arcane Shot[id:185358]
-    if talent 'Arcane Shot[id:185358]' is taken
-    if player has resources to cast spell 'Arcane Shot[id:185358]'
-    if spell 'Arcane Shot[id:185358]' is off cooldown
-    if player does not have buff/debuff 'Precise Shots[id:260240]'
-15: Spell: Trueshot[id:288613]
-    if talent 'Trueshot[id:288613]' is taken
-    if player has resources to cast spell 'Trueshot[id:288613]'
-    if spell 'Trueshot[id:288613]' is off cooldown
+11: Spell: 瞄准射击[id:19434]
+    if talent '瞄准射击[id:19434]' is taken
+12: Spell: 瞄准射击[id:19434]
+    if talent '瞄准射击[id:19434]' is taken
+    if player has resources to cast spell '瞄准射击[id:19434]'
+    if spell '瞄准射击[id:19434]' is off cooldown
+    if spell '瞄准射击[id:19434]' is within allowed range
+    if spell '瞄准射击[id:19434]' can be successfully cast
+    if player has more than 2 charges of spell '瞄准射击[id:19434]'
+13: Spell: 稳固射击[id:56641]
+14: Spell: 奥术射击[id:185358]
+    if talent '奥术射击[id:185358]' is taken
+    if player has resources to cast spell '奥术射击[id:185358]'
+    if spell '奥术射击[id:185358]' is off cooldown
+    if player does not have buff/debuff '弹无虚发[id:260240]'
+15: Spell: 百发百中[id:288613]
+    if talent '百发百中[id:288613]' is taken
+    if player has resources to cast spell '百发百中[id:288613]'
+    if spell '百发百中[id:288613]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-16: Spell: Explosive Shot[id:212431]
-    if talent 'Explosive Shot[id:212431]' is taken
-    if player has resources to cast spell 'Explosive Shot[id:212431]'
-    if spell 'Explosive Shot[id:212431]' is off cooldown
-    if spell 'Explosive Shot[id:212431]' is within allowed range
+16: Spell: 爆炸射击[id:212431]
+    if talent '爆炸射击[id:212431]' is taken
+    if player has resources to cast spell '爆炸射击[id:212431]'
+    if spell '爆炸射击[id:212431]' is off cooldown
+    if spell '爆炸射击[id:212431]' is within allowed range

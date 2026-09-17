@@ -1,64 +1,64 @@
 Protection
-0: Spell: Divine Toll[id:375576]
-    if talent 'Divine Toll[id:375576]' is taken
-    if player has resources to cast spell 'Divine Toll[id:375576]'
-    if spell 'Divine Toll[id:375576]' is off cooldown
-    if spell 'Divine Toll[id:375576]' is within allowed range
-1: Spell: Avenger's Shield[id:31935]
-    if talent 'Avenger's Shield[id:31935]' is taken
-    if player has resources to cast spell 'Avenger's Shield[id:31935]'
-    if spell 'Avenger's Shield[id:31935]' is off cooldown
-    if spell 'Avenger's Shield[id:31935]' is within allowed range
-2: Spell: Hammer of Wrath[id:24275]
-    if talent 'Hammer of Wrath[id:24275]' is taken
-    if player has resources to cast spell 'Hammer of Wrath[id:24275]'
-    if spell 'Hammer of Wrath[id:24275]' is off cooldown
-    if spell 'Hammer of Wrath[id:24275]' is within allowed range
-3: Spell: Judgment[id:275779]
-    if talent 'Judgment[id:275779]' is taken
-    if player has resources to cast spell 'Judgment[id:275779]'
-    if spell 'Judgment[id:275779]' is off cooldown
-    if spell 'Judgment[id:275779]' is within allowed range
-4: Spell: Divine Toll[id:375576]
-    if talent 'Divine Toll[id:375576]' is taken
-    if player has resources to cast spell 'Divine Toll[id:375576]'
-    if spell 'Divine Toll[id:375576]' is off cooldown
+0: Spell: 圣洁鸣钟[id:375576]
+    if talent '圣洁鸣钟[id:375576]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576]'
+    if spell '圣洁鸣钟[id:375576]' is off cooldown
+    if spell '圣洁鸣钟[id:375576]' is within allowed range
+1: Spell: 复仇者之盾[id:31935]
+    if talent '复仇者之盾[id:31935]' is taken
+    if player has resources to cast spell '复仇者之盾[id:31935]'
+    if spell '复仇者之盾[id:31935]' is off cooldown
+    if spell '复仇者之盾[id:31935]' is within allowed range
+2: Spell: 愤怒之锤[id:24275]
+    if talent '愤怒之锤[id:24275]' is taken
+    if player has resources to cast spell '愤怒之锤[id:24275]'
+    if spell '愤怒之锤[id:24275]' is off cooldown
+    if spell '愤怒之锤[id:24275]' is within allowed range
+3: Spell: 审判[id:275779]
+    if talent '审判[id:275779]' is taken
+    if player has resources to cast spell '审判[id:275779]'
+    if spell '审判[id:275779]' is off cooldown
+    if spell '审判[id:275779]' is within allowed range
+4: Spell: 圣洁鸣钟[id:375576]
+    if talent '圣洁鸣钟[id:375576]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576]'
+    if spell '圣洁鸣钟[id:375576]' is off cooldown
     if there are more than 3 targets within 30 yards of player
     if player has less than 2 holy power
-5: Spell: Divine Toll[id:375576]
-    if talent 'Divine Toll[id:375576]' is taken
-    if player has resources to cast spell 'Divine Toll[id:375576]'
-    if spell 'Divine Toll[id:375576]' is off cooldown
+5: Spell: 圣洁鸣钟[id:375576]
+    if talent '圣洁鸣钟[id:375576]' is taken
+    if player has resources to cast spell '圣洁鸣钟[id:375576]'
+    if spell '圣洁鸣钟[id:375576]' is off cooldown
     if there are less than 2 targets within 30 yards of player
     if player has less than 3 holy power
-6: Spell: Crusader Strike[id:35395]
-    if talent 'Crusader Strike[id:35395]' is taken
-    if player has resources to cast spell 'Crusader Strike[id:35395]'
-    if spell 'Crusader Strike[id:35395]' is off cooldown
+6: Spell: 十字军打击[id:35395]
+    if talent '十字军打击[id:35395]' is taken
+    if player has resources to cast spell '十字军打击[id:35395]'
+    if spell '十字军打击[id:35395]' is off cooldown
     if target is less than 5 yards away
-7: Spell: Consecration[id:26573]
-    if talent 'Consecration[id:26573]' is taken
-    if player has resources to cast spell 'Consecration[id:26573]'
-    if spell 'Consecration[id:26573]' is off cooldown
-    if player does not have buff/debuff 'Consecration[id:188370]'
-8: Spell: Judgment[id:275779]
-9: Spell: Shield of the Righteous[id:53600]
-    if talent 'Shield of the Righteous[id:53600]' is taken
-    if player has resources to cast spell 'Shield of the Righteous[id:53600]'
-    if spell 'Shield of the Righteous[id:53600]' is off cooldown
-    if player does not have buff/debuff 'Shield of the Righteous[id:132403]'
-10: Spell: Shield of the Righteous[id:53600]
-    if talent 'Shield of the Righteous[id:53600]' is taken
-    if player has resources to cast spell 'Shield of the Righteous[id:53600]'
-    if spell 'Shield of the Righteous[id:53600]' is off cooldown
+7: Spell: 奉献[id:26573]
+    if talent '奉献[id:26573]' is taken
+    if player has resources to cast spell '奉献[id:26573]'
+    if spell '奉献[id:26573]' is off cooldown
+    if player does not have buff/debuff '奉献[id:188370]'
+8: Spell: 审判[id:275779]
+9: Spell: 正义盾击[id:53600]
+    if talent '正义盾击[id:53600]' is taken
+    if player has resources to cast spell '正义盾击[id:53600]'
+    if spell '正义盾击[id:53600]' is off cooldown
+    if player does not have buff/debuff '正义盾击[id:132403]'
+10: Spell: 正义盾击[id:53600]
+    if talent '正义盾击[id:53600]' is taken
+    if player has resources to cast spell '正义盾击[id:53600]'
+    if spell '正义盾击[id:53600]' is off cooldown
     if player has more than 40% health
-11: Spell: Avenging Wrath[id:31884]
-    if talent 'Avenging Wrath[id:31884]' is taken
-    if player has resources to cast spell 'Avenging Wrath[id:31884]'
-    if spell 'Avenging Wrath[id:31884]' is off cooldown
+11: Spell: 复仇之怒[id:31884]
+    if talent '复仇之怒[id:31884]' is taken
+    if player has resources to cast spell '复仇之怒[id:31884]'
+    if spell '复仇之怒[id:31884]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: Sentinel[id:389539]
-    if talent 'Sentinel[id:389539]' is taken
-    if player has resources to cast spell 'Sentinel[id:389539]'
-    if spell 'Sentinel[id:389539]' is off cooldown
+12: Spell: 戒卫[id:389539]
+    if talent '戒卫[id:389539]' is taken
+    if player has resources to cast spell '戒卫[id:389539]'
+    if spell '戒卫[id:389539]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

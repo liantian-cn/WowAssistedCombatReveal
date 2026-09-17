@@ -1,67 +1,67 @@
 Vengeance
-0: Spell: Throw Glaive[id:204157]
-    if talent 'Throw Glaive[id:204157]' is taken
-    if player has resources to cast spell 'Throw Glaive[id:204157]'
-    if spell 'Throw Glaive[id:204157]' is off cooldown
-    if spell 'Throw Glaive[id:204157]' is within allowed range
-    if player has buff/debuff 'Reaver's Glaive[id:444764]'
-1: Spell: Shear[id:203782]
-    if talent 'Shear[id:203782]' is taken
-    if player has resources to cast spell 'Shear[id:203782]'
-    if spell 'Shear[id:203782]' is off cooldown
-    if spell 'Shear[id:203782]' is within allowed range
-    if player has buff/debuff 'Rending Strike[id:442442]'
-2: Spell: Soul Cleave[id:228477]
-    if talent 'Soul Cleave[id:228477]' is taken
-    if player has resources to cast spell 'Soul Cleave[id:228477]'
-    if spell 'Soul Cleave[id:228477]' is off cooldown
-    if spell 'Soul Cleave[id:228477]' is within allowed range
-    if player has buff/debuff 'Glaive Flurry[id:442435]'
-3: Spell: Soul Carver[id:207407]
-    if talent 'Soul Carver[id:207407]' is taken
-    if player has resources to cast spell 'Soul Carver[id:207407]'
-    if spell 'Soul Carver[id:207407]' is off cooldown
-    if spell 'Soul Carver[id:207407]' is within allowed range
-4: Spell: Sigil of Spite[id:390163]
-    if talent 'Sigil of Spite[id:390163]' is taken
-    if player has resources to cast spell 'Sigil of Spite[id:390163]'
-    if spell 'Sigil of Spite[id:390163]' is off cooldown
+0: Spell: 投掷利刃[id:204157]
+    if talent '投掷利刃[id:204157]' is taken
+    if player has resources to cast spell '投掷利刃[id:204157]'
+    if spell '投掷利刃[id:204157]' is off cooldown
+    if spell '投掷利刃[id:204157]' is within allowed range
+    if player has buff/debuff '收割者战刃[id:444764]'
+1: Spell: 裂魂[id:203782]
+    if talent '裂魂[id:203782]' is taken
+    if player has resources to cast spell '裂魂[id:203782]'
+    if spell '裂魂[id:203782]' is off cooldown
+    if spell '裂魂[id:203782]' is within allowed range
+    if player has buff/debuff '撕裂猛击[id:442442]'
+2: Spell: 灵魂裂劈[id:228477]
+    if talent '灵魂裂劈[id:228477]' is taken
+    if player has resources to cast spell '灵魂裂劈[id:228477]'
+    if spell '灵魂裂劈[id:228477]' is off cooldown
+    if spell '灵魂裂劈[id:228477]' is within allowed range
+    if player has buff/debuff '战刃乱舞[id:442435]'
+3: Spell: 灵魂切削[id:207407]
+    if talent '灵魂切削[id:207407]' is taken
+    if player has resources to cast spell '灵魂切削[id:207407]'
+    if spell '灵魂切削[id:207407]' is off cooldown
+    if spell '灵魂切削[id:207407]' is within allowed range
+4: Spell: 怨念咒符[id:390163]
+    if talent '怨念咒符[id:390163]' is taken
+    if player has resources to cast spell '怨念咒符[id:390163]'
+    if spell '怨念咒符[id:390163]' is off cooldown
     if target is less than 30 yards away
-5: Spell: Sigil of Flame[id:204596]
-    if talent 'Sigil of Flame[id:204596]' is taken
-    if player has resources to cast spell 'Sigil of Flame[id:204596]'
-    if spell 'Sigil of Flame[id:204596]' is off cooldown
+5: Spell: 烈焰咒符[id:204596]
+    if talent '烈焰咒符[id:204596]' is taken
+    if player has resources to cast spell '烈焰咒符[id:204596]'
+    if spell '烈焰咒符[id:204596]' is off cooldown
     if target is less than 30 yards away
-    if target does not have buff/debuff 'Sigil of Flame[id:204598]'
-6: Spell: Immolation Aura[id:258920]
-    if talent 'Immolation Aura[id:258920]' is taken
-    if player has resources to cast spell 'Immolation Aura[id:258920]'
-    if spell 'Immolation Aura[id:258920]' is off cooldown
+    if target does not have buff/debuff '烈焰咒符[id:204598]'
+6: Spell: 献祭光环[id:258920]
+    if talent '献祭光环[id:258920]' is taken
+    if player has resources to cast spell '献祭光环[id:258920]'
+    if spell '献祭光环[id:258920]' is off cooldown
     if there are more than 1 targets within 8 yards of player
-7: Spell: Spirit Bomb[id:247454]
-    if talent 'Spirit Bomb[id:247454]' is taken
-    if player has resources to cast spell 'Spirit Bomb[id:247454]'
-    if spell 'Spirit Bomb[id:247454]' is off cooldown
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments[id:203981]'
-8: Spell: Fracture[id:263642]
-    if talent 'Fracture[id:263642]' is taken
-    if player has resources to cast spell 'Fracture[id:263642]'
-    if spell 'Fracture[id:263642]' is off cooldown
-    if spell 'Fracture[id:263642]' is within allowed range
-    if talent 'Fracture[id:263642]' is taken
-9: Spell: Soul Cleave[id:228477]
-    if talent 'Soul Cleave[id:228477]' is taken
-    if player has resources to cast spell 'Soul Cleave[id:228477]'
-    if spell 'Soul Cleave[id:228477]' is off cooldown
-    if spell 'Soul Cleave[id:228477]' is within allowed range
-10: Spell: Throw Glaive[id:204157]
-    if talent 'Throw Glaive[id:204157]' is taken
-    if player has resources to cast spell 'Throw Glaive[id:204157]'
-    if spell 'Throw Glaive[id:204157]' is off cooldown
-    if spell 'Throw Glaive[id:204157]' is within allowed range
-11: Spell: Soul Cleave[id:228477]
-12: Spell: Metamorphosis[id:187827]
-    if talent 'Metamorphosis[id:187827]' is taken
-    if player has resources to cast spell 'Metamorphosis[id:187827]'
-    if spell 'Metamorphosis[id:187827]' is off cooldown
+7: Spell: 幽魂炸弹[id:247454]
+    if talent '幽魂炸弹[id:247454]' is taken
+    if player has resources to cast spell '幽魂炸弹[id:247454]'
+    if spell '幽魂炸弹[id:247454]' is off cooldown
+    if player has more than 4 stacks of buff/debuff '灵魂残片[id:203981]'
+8: Spell: 破裂[id:263642]
+    if talent '破裂[id:263642]' is taken
+    if player has resources to cast spell '破裂[id:263642]'
+    if spell '破裂[id:263642]' is off cooldown
+    if spell '破裂[id:263642]' is within allowed range
+    if talent '破裂[id:263642]' is taken
+9: Spell: 灵魂裂劈[id:228477]
+    if talent '灵魂裂劈[id:228477]' is taken
+    if player has resources to cast spell '灵魂裂劈[id:228477]'
+    if spell '灵魂裂劈[id:228477]' is off cooldown
+    if spell '灵魂裂劈[id:228477]' is within allowed range
+10: Spell: 投掷利刃[id:204157]
+    if talent '投掷利刃[id:204157]' is taken
+    if player has resources to cast spell '投掷利刃[id:204157]'
+    if spell '投掷利刃[id:204157]' is off cooldown
+    if spell '投掷利刃[id:204157]' is within allowed range
+11: Spell: 灵魂裂劈[id:228477]
+12: Spell: 恶魔变形[id:187827]
+    if talent '恶魔变形[id:187827]' is taken
+    if player has resources to cast spell '恶魔变形[id:187827]'
+    if spell '恶魔变形[id:187827]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

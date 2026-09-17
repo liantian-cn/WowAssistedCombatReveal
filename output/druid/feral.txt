@@ -1,140 +1,140 @@
 Feral
-0: Spell: Primal Wrath[id:285381]
+0: Spell: 原始之怒[id:285381]
     if target is less than 10 yards away
-    if talent 'Primal Wrath[id:285381]' is taken
-    if player has resources to cast spell 'Primal Wrath[id:285381]'
-    if spell 'Primal Wrath[id:285381]' is off cooldown
+    if talent '原始之怒[id:285381]' is taken
+    if player has resources to cast spell '原始之怒[id:285381]'
+    if spell '原始之怒[id:285381]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-    if target does not have buff/debuff 'Rip[id:1079]'
+    if target does not have buff/debuff '割裂[id:1079]'
     if player has more than 5 combo points
-1: Spell: Ferocious Bite[id:22568]
-    if talent 'Ferocious Bite[id:22568]' is taken
-    if player has resources to cast spell 'Ferocious Bite[id:22568]'
-    if spell 'Ferocious Bite[id:22568]' is off cooldown
+1: Spell: 凶猛撕咬[id:22568]
+    if talent '凶猛撕咬[id:22568]' is taken
+    if player has resources to cast spell '凶猛撕咬[id:22568]'
+    if spell '凶猛撕咬[id:22568]' is off cooldown
     if player has more than 5 combo points
-    if spell 'Ferocious Bite[id:22568]' is within allowed range
-2: Spell: Ferocious Bite[id:22568]
-    if talent 'Ferocious Bite[id:22568]' is taken
-    if spell 'Ferocious Bite[id:22568]' is off cooldown
-    if player has buff/debuff 'Apex Predator's Craving[id:391882]'
-    if spell 'Ferocious Bite[id:22568]' is within allowed range
-3: Spell: Cat Form[id:768]
-    if talent 'Cat Form[id:768]' is taken
-    if player has resources to cast spell 'Cat Form[id:768]'
-    if spell 'Cat Form[id:768]' is off cooldown
-    if player does not have buff/debuff 'Cat Form[id:768]'
-4: Spell: Feral Frenzy[id:274837]
-    if talent 'Feral Frenzy[id:274837]' is taken
-    if player has resources to cast spell 'Feral Frenzy[id:274837]'
-    if spell 'Feral Frenzy[id:274837]' is off cooldown
+    if spell '凶猛撕咬[id:22568]' is within allowed range
+2: Spell: 凶猛撕咬[id:22568]
+    if talent '凶猛撕咬[id:22568]' is taken
+    if spell '凶猛撕咬[id:22568]' is off cooldown
+    if player has buff/debuff '顶级捕食者的渴望[id:391882]'
+    if spell '凶猛撕咬[id:22568]' is within allowed range
+3: Spell: 猎豹形态[id:768]
+    if talent '猎豹形态[id:768]' is taken
+    if player has resources to cast spell '猎豹形态[id:768]'
+    if spell '猎豹形态[id:768]' is off cooldown
+    if player does not have buff/debuff '猎豹形态[id:768]'
+4: Spell: 野性狂乱[id:274837]
+    if talent '野性狂乱[id:274837]' is taken
+    if player has resources to cast spell '野性狂乱[id:274837]'
+    if spell '野性狂乱[id:274837]' is off cooldown
     if player has less than 1 combo points
-    if spell 'Feral Frenzy[id:274837]' is within allowed range
-    if player has buff/debuff 'Tiger's Fury[id:5217]'
-5: Spell: Rake[id:1822]
-    if talent 'Rake[id:1822]' is taken
-    if player has resources to cast spell 'Rake[id:1822]'
-    if spell 'Rake[id:1822]' is off cooldown
-    if target does not have buff/debuff 'Rake[id:155722]'
-    if spell 'Rake[id:1822]' is within allowed range
-6: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if player has buff/debuff 'Lunar Inspiration[id:155580]'
-    if target does not have buff/debuff 'Moonfire[id:155625]'
-7: Spell: Swipe[id:213764]
-    if talent 'Swipe[id:213764]' is taken
-    if player has resources to cast spell 'Swipe[id:213764]'
-    if spell 'Swipe[id:213764]' is off cooldown
+    if spell '野性狂乱[id:274837]' is within allowed range
+    if player has buff/debuff '猛虎之怒[id:5217]'
+5: Spell: 斜掠[id:1822]
+    if talent '斜掠[id:1822]' is taken
+    if player has resources to cast spell '斜掠[id:1822]'
+    if spell '斜掠[id:1822]' is off cooldown
+    if target does not have buff/debuff '斜掠[id:155722]'
+    if spell '斜掠[id:1822]' is within allowed range
+6: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if player has buff/debuff '月之灵[id:155580]'
+    if target does not have buff/debuff '月火术[id:155625]'
+7: Spell: 横扫[id:213764]
+    if talent '横扫[id:213764]' is taken
+    if player has resources to cast spell '横扫[id:213764]'
+    if spell '横扫[id:213764]' is off cooldown
     if target is less than 8 yards away
     if there are more than 3 targets within 10 yards of player
-8: Spell: Shred[id:5221]
-    if talent 'Shred[id:5221]' is taken
-    if player has resources to cast spell 'Shred[id:5221]'
-    if spell 'Shred[id:5221]' is off cooldown
-    if spell 'Shred[id:5221]' is within allowed range
-9: Spell: Rip[id:1079]
-    if talent 'Rip[id:1079]' is taken
-    if player has resources to cast spell 'Rip[id:1079]'
-    if spell 'Rip[id:1079]' is off cooldown
-    if target does not have buff/debuff 'Rip[id:1079]'
+8: Spell: 撕碎[id:5221]
+    if talent '撕碎[id:5221]' is taken
+    if player has resources to cast spell '撕碎[id:5221]'
+    if spell '撕碎[id:5221]' is off cooldown
+    if spell '撕碎[id:5221]' is within allowed range
+9: Spell: 割裂[id:1079]
+    if talent '割裂[id:1079]' is taken
+    if player has resources to cast spell '割裂[id:1079]'
+    if spell '割裂[id:1079]' is off cooldown
+    if target does not have buff/debuff '割裂[id:1079]'
     if player has more than 5 combo points
-    if spell 'Rip[id:1079]' is within allowed range
-10: Spell: Tiger's Fury[id:5217]
-    if talent 'Tiger's Fury[id:5217]' is taken
-    if player has resources to cast spell 'Tiger's Fury[id:5217]'
-    if spell 'Tiger's Fury[id:5217]' is off cooldown
+    if spell '割裂[id:1079]' is within allowed range
+10: Spell: 猛虎之怒[id:5217]
+    if talent '猛虎之怒[id:5217]' is taken
+    if player has resources to cast spell '猛虎之怒[id:5217]'
+    if spell '猛虎之怒[id:5217]' is off cooldown
     if player has more than 5 combo points
     if target is less than 8 yards away
-11: Spell: Rake[id:1822]
-12: Spell: Convoke the Spirits[id:391528]
-    if talent 'Convoke the Spirits[id:391528]' is taken
-    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
-    if spell 'Convoke the Spirits[id:391528]' is off cooldown
+11: Spell: 斜掠[id:1822]
+12: Spell: 万灵之召[id:391528]
+    if talent '万灵之召[id:391528]' is taken
+    if player has resources to cast spell '万灵之召[id:391528]'
+    if spell '万灵之召[id:391528]' is off cooldown
     if target is less than 5 yards away
     if player has less than 3 combo points
-    if player has buff/debuff 'Tiger's Fury[id:5217]'
-13: Spell: Rake[id:1822]
-    if talent 'Rake[id:1822]' is taken
-    if player has resources to cast spell 'Rake[id:1822]'
-    if spell 'Rake[id:1822]' is off cooldown
-    if player has buff/debuff 'Prowl[id:5215]'
-14: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if player has buff/debuff 'Lunar Inspiration[id:155580]'
+    if player has buff/debuff '猛虎之怒[id:5217]'
+13: Spell: 斜掠[id:1822]
+    if talent '斜掠[id:1822]' is taken
+    if player has resources to cast spell '斜掠[id:1822]'
+    if spell '斜掠[id:1822]' is off cooldown
+    if player has buff/debuff '潜行[id:5215]'
+14: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if player has buff/debuff '月之灵[id:155580]'
     if target is more than 15 yards away
-15: Spell: Frantic Frenzy[id:1243807]
+15: Spell: 怒意狂乱[id:1243807]
     if target is less than 8 yards away
-    if talent 'Frantic Frenzy[id:1243807]' is taken
-    if player has resources to cast spell 'Frantic Frenzy[id:1243807]'
-    if spell 'Frantic Frenzy[id:1243807]' is off cooldown
+    if talent '怒意狂乱[id:1243807]' is taken
+    if player has resources to cast spell '怒意狂乱[id:1243807]'
+    if spell '怒意狂乱[id:1243807]' is off cooldown
     if player has less than 1 combo points
-    if player has buff/debuff 'Tiger's Fury[id:5217]'
-16: Spell: Chomp[id:1244258]
-    if talent 'Chomp[id:1244258]' is taken
-    if player has resources to cast spell 'Chomp[id:1244258]'
-    if spell 'Chomp[id:1244258]' is off cooldown
-    if spell 'Chomp[id:1244258]' is within allowed range
-    if player has buff/debuff 'Chomp Enabler[id:1244393]'
-17: Spell: Feral Frenzy[id:274837]
-    if talent 'Feral Frenzy[id:274837]' is taken
-    if player has resources to cast spell 'Feral Frenzy[id:274837]'
-    if spell 'Feral Frenzy[id:274837]' is off cooldown
+    if player has buff/debuff '猛虎之怒[id:5217]'
+16: Spell: 啃噬[id:1244258]
+    if talent '啃噬[id:1244258]' is taken
+    if player has resources to cast spell '啃噬[id:1244258]'
+    if spell '啃噬[id:1244258]' is off cooldown
+    if spell '啃噬[id:1244258]' is within allowed range
+    if player has buff/debuff '啃噬启用器[id:1244393]'
+17: Spell: 野性狂乱[id:274837]
+    if talent '野性狂乱[id:274837]' is taken
+    if player has resources to cast spell '野性狂乱[id:274837]'
+    if spell '野性狂乱[id:274837]' is off cooldown
     if player has less than 1 combo points
-    if spell 'Feral Frenzy[id:274837]' is within allowed range
-    if spell 'Tiger's Fury[id:5217]' is on cooldown
-18: Spell: Frantic Frenzy[id:1243807]
-    if talent 'Frantic Frenzy[id:1243807]' is taken
-    if player has resources to cast spell 'Frantic Frenzy[id:1243807]'
-    if spell 'Frantic Frenzy[id:1243807]' is off cooldown
+    if spell '野性狂乱[id:274837]' is within allowed range
+    if spell '猛虎之怒[id:5217]' is on cooldown
+18: Spell: 怒意狂乱[id:1243807]
+    if talent '怒意狂乱[id:1243807]' is taken
+    if player has resources to cast spell '怒意狂乱[id:1243807]'
+    if spell '怒意狂乱[id:1243807]' is off cooldown
     if player has less than 1 combo points
     if target is less than 8 yards away
-    if spell 'Tiger's Fury[id:5217]' is on cooldown
-19: Spell: Waiting for Energy[id:1249752]
-    if talent 'Waiting for Energy[id:1249752]' is taken
-    if player has resources to cast spell 'Waiting for Energy[id:1249752]'
-    if spell 'Waiting for Energy[id:1249752]' is off cooldown
+    if spell '猛虎之怒[id:5217]' is on cooldown
+19: Spell: 等待能量[id:1249752]
+    if talent '等待能量[id:1249752]' is taken
+    if player has resources to cast spell '等待能量[id:1249752]'
+    if spell '等待能量[id:1249752]' is off cooldown
     if player has more than 5 combo points
-    if player does not have buff/debuff 'Apex Predator's Craving[id:391882]'
+    if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
     if player has less than 49 energy
-    if player does not have buff/debuff 'Incarnation: Avatar of Ashamane[id:102543]'
-20: Spell: Waiting for Energy[id:1249752]
-    if talent 'Waiting for Energy[id:1249752]' is taken
-    if player has resources to cast spell 'Waiting for Energy[id:1249752]'
-    if spell 'Waiting for Energy[id:1249752]' is off cooldown
+    if player does not have buff/debuff '化身：阿莎曼之灵[id:102543]'
+20: Spell: 等待能量[id:1249752]
+    if talent '等待能量[id:1249752]' is taken
+    if player has resources to cast spell '等待能量[id:1249752]'
+    if spell '等待能量[id:1249752]' is off cooldown
     if player has more than 5 combo points
     if player has less than 37 energy
-    if player does not have buff/debuff 'Apex Predator's Craving[id:391882]'
-    if player has buff/debuff 'Incarnation: Avatar of Ashamane[id:102543]'
-21: Spell: Berserk[id:106951]
-    if talent 'Berserk[id:106951]' is taken
-    if player has resources to cast spell 'Berserk[id:106951]'
-    if spell 'Berserk[id:106951]' is off cooldown
+    if player does not have buff/debuff '顶级捕食者的渴望[id:391882]'
+    if player has buff/debuff '化身：阿莎曼之灵[id:102543]'
+21: Spell: 狂暴[id:106951]
+    if talent '狂暴[id:106951]' is taken
+    if player has resources to cast spell '狂暴[id:106951]'
+    if spell '狂暴[id:106951]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-22: Spell: Mark of the Wild[id:1126]
-    if talent 'Mark of the Wild[id:1126]' is taken
-    if player has resources to cast spell 'Mark of the Wild[id:1126]'
-    if spell 'Mark of the Wild[id:1126]' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'
+22: Spell: 野性印记[id:1126]
+    if talent '野性印记[id:1126]' is taken
+    if player has resources to cast spell '野性印记[id:1126]'
+    if spell '野性印记[id:1126]' is off cooldown
+    if player has buff/debuff '野性印记高亮[id:1271910]'

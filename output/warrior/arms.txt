@@ -1,94 +1,94 @@
 Arms
-0: Spell: Cleave[id:845]
-    if target does not have buff/debuff 'Rend[id:388539]'
-    if talent 'Cleave[id:845]' is taken
-    if player has resources to cast spell 'Cleave[id:845]'
-    if spell 'Cleave[id:845]' is off cooldown
-    if talent 'Cleave[id:845]' is taken
+0: Spell: 顺劈斩[id:845]
+    if target does not have buff/debuff '撕裂[id:388539]'
+    if talent '顺劈斩[id:845]' is taken
+    if player has resources to cast spell '顺劈斩[id:845]'
+    if spell '顺劈斩[id:845]' is off cooldown
+    if talent '顺劈斩[id:845]' is taken
     if there are more than 3 targets within 10 yards of player
-1: Spell: Rend[id:772]
-    if talent 'Rend[id:772]' is taken
-    if player has resources to cast spell 'Rend[id:772]'
-    if spell 'Rend[id:772]' is off cooldown
-    if target does not have buff/debuff 'Rend[id:388539]'
-2: Spell: Sweeping Strikes[id:260708]
+1: Spell: 撕裂[id:772]
+    if talent '撕裂[id:772]' is taken
+    if player has resources to cast spell '撕裂[id:772]'
+    if spell '撕裂[id:772]' is off cooldown
+    if target does not have buff/debuff '撕裂[id:388539]'
+2: Spell: 横扫攻击[id:260708]
     if there are more than 2 targets within 10 yards of player
-    if talent 'Sweeping Strikes[id:260708]' is taken
-    if player has resources to cast spell 'Sweeping Strikes[id:260708]'
-    if spell 'Sweeping Strikes[id:260708]' is off cooldown
-3: Spell: Ravager[id:228920]
-    if talent 'Ravager[id:228920]' is taken
-    if player has resources to cast spell 'Ravager[id:228920]'
-    if spell 'Ravager[id:228920]' is off cooldown
-    if spell 'Ravager[id:228920]' is within allowed range
-4: Spell: Colossus Smash[id:167105]
+    if talent '横扫攻击[id:260708]' is taken
+    if player has resources to cast spell '横扫攻击[id:260708]'
+    if spell '横扫攻击[id:260708]' is off cooldown
+3: Spell: 破坏者[id:228920]
+    if talent '破坏者[id:228920]' is taken
+    if player has resources to cast spell '破坏者[id:228920]'
+    if spell '破坏者[id:228920]' is off cooldown
+    if spell '破坏者[id:228920]' is within allowed range
+4: Spell: 巨人打击[id:167105]
     if target is less than 5 yards away
-    if talent 'Colossus Smash[id:167105]' is taken
-    if player has resources to cast spell 'Colossus Smash[id:167105]'
-    if spell 'Colossus Smash[id:167105]' is off cooldown
-5: Spell: Demolish[id:436358]
-    if talent 'Demolish[id:436358]' is taken
-    if player has resources to cast spell 'Demolish[id:436358]'
-    if spell 'Demolish[id:436358]' is off cooldown
-    if spell 'Demolish[id:436358]' is within allowed range
-6: Spell: Bladestorm[id:227847]
+    if talent '巨人打击[id:167105]' is taken
+    if player has resources to cast spell '巨人打击[id:167105]'
+    if spell '巨人打击[id:167105]' is off cooldown
+5: Spell: 崩摧[id:436358]
+    if talent '崩摧[id:436358]' is taken
+    if player has resources to cast spell '崩摧[id:436358]'
+    if spell '崩摧[id:436358]' is off cooldown
+    if spell '崩摧[id:436358]' is within allowed range
+6: Spell: 剑刃风暴[id:227847]
     if target is less than 10 yards away
-    if talent 'Bladestorm[id:227847]' is taken
-    if player has resources to cast spell 'Bladestorm[id:227847]'
-    if spell 'Bladestorm[id:227847]' is off cooldown
-7: Spell: Mortal Strike[id:12294]
-    if talent 'Mortal Strike[id:12294]' is taken
-    if player has resources to cast spell 'Mortal Strike[id:12294]'
-    if spell 'Mortal Strike[id:12294]' is off cooldown
-    if spell 'Mortal Strike[id:12294]' is within allowed range
-8: Spell: Overpower[id:7384]
-    if talent 'Overpower[id:7384]' is taken
-    if player has resources to cast spell 'Overpower[id:7384]'
-    if spell 'Overpower[id:7384]' is off cooldown
-    if spell 'Overpower[id:7384]' is within allowed range
-9: Spell: Execute[id:163201]
-    if talent 'Execute[id:163201]' is taken
-    if player has resources to cast spell 'Execute[id:163201]'
-    if spell 'Execute[id:163201]' is off cooldown
-    if spell 'Execute[id:163201]' is within allowed range
-10: Spell: Slam[id:1464]
+    if talent '剑刃风暴[id:227847]' is taken
+    if player has resources to cast spell '剑刃风暴[id:227847]'
+    if spell '剑刃风暴[id:227847]' is off cooldown
+7: Spell: 致死打击[id:12294]
+    if talent '致死打击[id:12294]' is taken
+    if player has resources to cast spell '致死打击[id:12294]'
+    if spell '致死打击[id:12294]' is off cooldown
+    if spell '致死打击[id:12294]' is within allowed range
+8: Spell: 压制[id:7384]
+    if talent '压制[id:7384]' is taken
+    if player has resources to cast spell '压制[id:7384]'
+    if spell '压制[id:7384]' is off cooldown
+    if spell '压制[id:7384]' is within allowed range
+9: Spell: 斩杀[id:163201]
+    if talent '斩杀[id:163201]' is taken
+    if player has resources to cast spell '斩杀[id:163201]'
+    if spell '斩杀[id:163201]' is off cooldown
+    if spell '斩杀[id:163201]' is within allowed range
+10: Spell: 猛击[id:1464]
     if player has more than 500 rage
-    if talent 'Slam[id:1464]' is taken
-    if player has resources to cast spell 'Slam[id:1464]'
-    if spell 'Slam[id:1464]' is off cooldown
-    if spell 'Slam[id:1464]' is within allowed range
-11: Spell: Heroic Throw[id:57755]
-    if talent 'Heroic Throw[id:57755]' is taken
-    if player has resources to cast spell 'Heroic Throw[id:57755]'
-    if spell 'Heroic Throw[id:57755]' is off cooldown
-    if spell 'Heroic Throw[id:57755]' is within allowed range
+    if talent '猛击[id:1464]' is taken
+    if player has resources to cast spell '猛击[id:1464]'
+    if spell '猛击[id:1464]' is off cooldown
+    if spell '猛击[id:1464]' is within allowed range
+11: Spell: 英勇投掷[id:57755]
+    if talent '英勇投掷[id:57755]' is taken
+    if player has resources to cast spell '英勇投掷[id:57755]'
+    if spell '英勇投掷[id:57755]' is off cooldown
+    if spell '英勇投掷[id:57755]' is within allowed range
     if target is more than 15 yards away
-12: Spell: Whirlwind[id:1680]
+12: Spell: 旋风斩[id:1680]
     if target is less than 5 yards away
-    if talent 'Whirlwind[id:1680]' is taken
-    if player has resources to cast spell 'Whirlwind[id:1680]'
-    if spell 'Whirlwind[id:1680]' is off cooldown
+    if talent '旋风斩[id:1680]' is taken
+    if player has resources to cast spell '旋风斩[id:1680]'
+    if spell '旋风斩[id:1680]' is off cooldown
     if there are more than 3 targets within 10 yards of player
-13: Spell: Mortal Strike[id:12294]
-    if talent 'Mortal Strike[id:12294]' is taken
-14: Spell: Slam[id:1464]
-15: Spell: Whirlwind[id:1680]
+13: Spell: 致死打击[id:12294]
+    if talent '致死打击[id:12294]' is taken
+14: Spell: 猛击[id:1464]
+15: Spell: 旋风斩[id:1680]
     if there are more than 3 targets within 10 yards of player
-    if talent 'Whirlwind[id:1680]' is taken
-    if spell 'Whirlwind[id:1680]' is off cooldown
-    if player has resources to cast spell 'Whirlwind[id:1680]'
-16: Spell: Avatar[id:107574]
-    if talent 'Avatar[id:107574]' is taken
-    if player has resources to cast spell 'Avatar[id:107574]'
-    if spell 'Avatar[id:107574]' is off cooldown
-    if spell 'Avatar[id:107574]' is off cooldown
-17: Spell: Slam[id:1464]
-    if player has buff/debuff 'Master of Warfare[id:1269391]'
-    if player has resources to cast spell 'Slam[id:1464]'
-    if spell 'Slam[id:1464]' is off cooldown
-    if spell 'Slam[id:1464]' is within allowed range
-18: Spell: Battle Shout[id:6673]
-    if talent 'Battle Shout[id:6673]' is taken
-    if player has resources to cast spell 'Battle Shout[id:6673]'
-    if spell 'Battle Shout[id:6673]' is off cooldown
-    if player has buff/debuff 'Battle Shout Highlight[id:1271909]'
+    if talent '旋风斩[id:1680]' is taken
+    if spell '旋风斩[id:1680]' is off cooldown
+    if player has resources to cast spell '旋风斩[id:1680]'
+16: Spell: 天神下凡[id:107574]
+    if talent '天神下凡[id:107574]' is taken
+    if player has resources to cast spell '天神下凡[id:107574]'
+    if spell '天神下凡[id:107574]' is off cooldown
+    if spell '天神下凡[id:107574]' is off cooldown
+17: Spell: 猛击[id:1464]
+    if player has buff/debuff '战争大师[id:1269391]'
+    if player has resources to cast spell '猛击[id:1464]'
+    if spell '猛击[id:1464]' is off cooldown
+    if spell '猛击[id:1464]' is within allowed range
+18: Spell: 战斗怒吼[id:6673]
+    if talent '战斗怒吼[id:6673]' is taken
+    if player has resources to cast spell '战斗怒吼[id:6673]'
+    if spell '战斗怒吼[id:6673]' is off cooldown
+    if player has buff/debuff '战斗怒吼高亮[id:1271909]'

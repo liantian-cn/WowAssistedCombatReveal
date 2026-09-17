@@ -1,63 +1,63 @@
 Brewmaster
-0: Spell: Touch of Death[id:322109]
-    if talent 'Touch of Death[id:322109]' is taken
-    if player has resources to cast spell 'Touch of Death[id:322109]'
-    if spell 'Touch of Death[id:322109]' is off cooldown
-    if spell 'Touch of Death[id:322109]' is within allowed range
-1: Spell: Blackout Kick[id:205523]
-    if talent 'Blackout Kick[id:205523]' is taken
-    if player has resources to cast spell 'Blackout Kick[id:205523]'
-    if spell 'Blackout Kick[id:205523]' is off cooldown
-    if spell 'Blackout Kick[id:205523]' is within allowed range
-    if player does not have buff/debuff 'Blackout Combo[id:228563]'
-2: Spell: Chi Burst[id:123986]
-    if talent 'Chi Burst[id:123986]' is taken
-    if player has resources to cast spell 'Chi Burst[id:123986]'
-    if spell 'Chi Burst[id:123986]' is off cooldown
+0: Spell: 轮回之触[id:322109]
+    if talent '轮回之触[id:322109]' is taken
+    if player has resources to cast spell '轮回之触[id:322109]'
+    if spell '轮回之触[id:322109]' is off cooldown
+    if spell '轮回之触[id:322109]' is within allowed range
+1: Spell: 幻灭踢[id:205523]
+    if talent '幻灭踢[id:205523]' is taken
+    if player has resources to cast spell '幻灭踢[id:205523]'
+    if spell '幻灭踢[id:205523]' is off cooldown
+    if spell '幻灭踢[id:205523]' is within allowed range
+    if player does not have buff/debuff '幻灭连击[id:228563]'
+2: Spell: 真气爆裂[id:123986]
+    if talent '真气爆裂[id:123986]' is taken
+    if player has resources to cast spell '真气爆裂[id:123986]'
+    if spell '真气爆裂[id:123986]' is off cooldown
     if target is less than 30 yards away
-3: Spell: Keg Smash[id:121253]
-    if talent 'Keg Smash[id:121253]' is taken
-    if player has resources to cast spell 'Keg Smash[id:121253]'
-    if spell 'Keg Smash[id:121253]' is off cooldown
-    if spell 'Keg Smash[id:121253]' is within allowed range
-    if player has more than 2 charges of spell 'Keg Smash[id:121253]'
-4: Spell: Breath of Fire[id:115181]
-    if talent 'Breath of Fire[id:115181]' is taken
-    if player has resources to cast spell 'Breath of Fire[id:115181]'
-    if spell 'Breath of Fire[id:115181]' is off cooldown
+3: Spell: 醉酿投[id:121253]
+    if talent '醉酿投[id:121253]' is taken
+    if player has resources to cast spell '醉酿投[id:121253]'
+    if spell '醉酿投[id:121253]' is off cooldown
+    if spell '醉酿投[id:121253]' is within allowed range
+    if player has more than 2 charges of spell '醉酿投[id:121253]'
+4: Spell: 火焰之息[id:115181]
+    if talent '火焰之息[id:115181]' is taken
+    if player has resources to cast spell '火焰之息[id:115181]'
+    if spell '火焰之息[id:115181]' is off cooldown
     if target is less than 12 yards away
-5: Spell: Exploding Keg[id:325153]
-    if talent 'Exploding Keg[id:325153]' is taken
-    if player has resources to cast spell 'Exploding Keg[id:325153]'
-    if spell 'Exploding Keg[id:325153]' is off cooldown
+5: Spell: 爆炸酒桶[id:325153]
+    if talent '爆炸酒桶[id:325153]' is taken
+    if player has resources to cast spell '爆炸酒桶[id:325153]'
+    if spell '爆炸酒桶[id:325153]' is off cooldown
     if target is less than 40 yards away
-6: Spell: Rushing Jade Wind[id:116847]
-    if talent 'Rushing Jade Wind[id:116847]' is taken
-    if player has resources to cast spell 'Rushing Jade Wind[id:116847]'
-    if spell 'Rushing Jade Wind[id:116847]' is off cooldown
-7: Spell: Spinning Crane Kick[id:322729]
-    if talent 'Spinning Crane Kick[id:322729]' is taken
-    if player has resources to cast spell 'Spinning Crane Kick[id:322729]'
-    if spell 'Spinning Crane Kick[id:322729]' is off cooldown
+6: Spell: 碧玉疾风[id:116847]
+    if talent '碧玉疾风[id:116847]' is taken
+    if player has resources to cast spell '碧玉疾风[id:116847]'
+    if spell '碧玉疾风[id:116847]' is off cooldown
+7: Spell: 神鹤引项踢[id:322729]
+    if talent '神鹤引项踢[id:322729]' is taken
+    if player has resources to cast spell '神鹤引项踢[id:322729]'
+    if spell '神鹤引项踢[id:322729]' is off cooldown
     if there are more than 3 targets within 8 yards of player
-    if spell 'Spinning Crane Kick[id:322729]' can be successfully cast
-8: Spell: Tiger Palm[id:100780]
-    if talent 'Tiger Palm[id:100780]' is taken
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if spell 'Tiger Palm[id:100780]' is within allowed range
-    if player does not have buff/debuff 'Press the Advantage[id:418359]'
-9: Spell: Tiger Palm[id:100780]
-    if talent 'Tiger Palm[id:100780]' is taken
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if spell 'Tiger Palm[id:100780]' is within allowed range
-    if player does not have buff/debuff 'Press the Advantage[id:418359]'
-    if player has buff/debuff 'Blackout Combo[id:228563]'
+    if spell '神鹤引项踢[id:322729]' can be successfully cast
+8: Spell: 猛虎掌[id:100780]
+    if talent '猛虎掌[id:100780]' is taken
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if spell '猛虎掌[id:100780]' is within allowed range
+    if player does not have buff/debuff '顺水推舟[id:418359]'
+9: Spell: 猛虎掌[id:100780]
+    if talent '猛虎掌[id:100780]' is taken
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if spell '猛虎掌[id:100780]' is within allowed range
+    if player does not have buff/debuff '顺水推舟[id:418359]'
+    if player has buff/debuff '幻灭连击[id:228563]'
     if there are less than 2 targets within 10 yards of player
-10: Spell: Keg Smash[id:121253]
-    if talent 'Keg Smash[id:121253]' is taken
-    if player has resources to cast spell 'Keg Smash[id:121253]'
-    if spell 'Keg Smash[id:121253]' is off cooldown
-    if spell 'Keg Smash[id:121253]' is within allowed range
-11: Spell: Keg Smash[id:121253]
+10: Spell: 醉酿投[id:121253]
+    if talent '醉酿投[id:121253]' is taken
+    if player has resources to cast spell '醉酿投[id:121253]'
+    if spell '醉酿投[id:121253]' is off cooldown
+    if spell '醉酿投[id:121253]' is within allowed range
+11: Spell: 醉酿投[id:121253]

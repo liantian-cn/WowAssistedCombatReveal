@@ -1,41 +1,41 @@
 Discipline
-0: Spell: Shadow Word: Pain[id:589]
-    if talent 'Shadow Word: Pain[id:589]' is taken
-    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
-    if spell 'Shadow Word: Pain[id:589]' is off cooldown
-    if target does not have buff/debuff 'Shadow Word: Pain[id:589]'
-1: Spell: Holy Nova[id:132157]
-    if talent 'Holy Nova[id:132157]' is taken
-    if player has resources to cast spell 'Holy Nova[id:132157]'
-    if spell 'Holy Nova[id:132157]' is off cooldown
+0: Spell: 暗言术：痛[id:589]
+    if talent '暗言术：痛[id:589]' is taken
+    if player has resources to cast spell '暗言术：痛[id:589]'
+    if spell '暗言术：痛[id:589]' is off cooldown
+    if target does not have buff/debuff '暗言术：痛[id:589]'
+1: Spell: 神圣新星[id:132157]
+    if talent '神圣新星[id:132157]' is taken
+    if player has resources to cast spell '神圣新星[id:132157]'
+    if spell '神圣新星[id:132157]' is off cooldown
     if there are more than 12 targets within 0 yards of player
-2: Spell: Penance[id:47540]
-    if talent 'Penance[id:47540]' is taken
-    if player has resources to cast spell 'Penance[id:47540]'
-    if spell 'Penance[id:47540]' is off cooldown
-3: Spell: Mind Blast[id:8092]
-    if talent 'Mind Blast[id:8092]' is taken
-    if player has resources to cast spell 'Mind Blast[id:8092]'
-    if spell 'Mind Blast[id:8092]' is off cooldown
-4: Spell: Shadow Word: Death[id:32379]
-    if talent 'Shadow Word: Death[id:32379]' is taken
-    if player has resources to cast spell 'Shadow Word: Death[id:32379]'
-    if spell 'Shadow Word: Death[id:32379]' is off cooldown
+2: Spell: 苦修[id:47540]
+    if talent '苦修[id:47540]' is taken
+    if player has resources to cast spell '苦修[id:47540]'
+    if spell '苦修[id:47540]' is off cooldown
+3: Spell: 心灵震爆[id:8092]
+    if talent '心灵震爆[id:8092]' is taken
+    if player has resources to cast spell '心灵震爆[id:8092]'
+    if spell '心灵震爆[id:8092]' is off cooldown
+4: Spell: 暗言术：灭[id:32379]
+    if talent '暗言术：灭[id:32379]' is taken
+    if player has resources to cast spell '暗言术：灭[id:32379]'
+    if spell '暗言术：灭[id:32379]' is off cooldown
     if target has less than 20% health
-5: Spell: Smite[id:585]
-    if talent 'Smite[id:585]' is taken
-    if player has resources to cast spell 'Smite[id:585]'
-    if spell 'Smite[id:585]' is off cooldown
-    if spell 'Smite[id:585]' can be successfully cast
-6: Spell: Smite[id:585]
-    if talent 'Smite[id:585]' is taken
-    if player has resources to cast spell 'Smite[id:585]'
-    if spell 'Smite[id:585]' is off cooldown
-    if player has buff/debuff 'Void Blast[id:450404]'
-    if spell 'Smite[id:585]' can be successfully cast
-7: Spell: Penance[id:47540]
-8: Spell: Power Word: Fortitude[id:21562]
-    if talent 'Power Word: Fortitude[id:21562]' is taken
-    if player has resources to cast spell 'Power Word: Fortitude[id:21562]'
-    if spell 'Power Word: Fortitude[id:21562]' is off cooldown
-    if player has buff/debuff 'Power Word: Fortitude Highlight[id:1271911]'
+5: Spell: 惩击[id:585]
+    if talent '惩击[id:585]' is taken
+    if player has resources to cast spell '惩击[id:585]'
+    if spell '惩击[id:585]' is off cooldown
+    if spell '惩击[id:585]' can be successfully cast
+6: Spell: 惩击[id:585]
+    if talent '惩击[id:585]' is taken
+    if player has resources to cast spell '惩击[id:585]'
+    if spell '惩击[id:585]' is off cooldown
+    if player has buff/debuff '虚空冲击[id:450404]'
+    if spell '惩击[id:585]' can be successfully cast
+7: Spell: 苦修[id:47540]
+8: Spell: 真言术：韧[id:21562]
+    if talent '真言术：韧[id:21562]' is taken
+    if player has resources to cast spell '真言术：韧[id:21562]'
+    if spell '真言术：韧[id:21562]' is off cooldown
+    if player has buff/debuff '真言术：韧高亮[id:1271911]'

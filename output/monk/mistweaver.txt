@@ -1,68 +1,68 @@
 Mistweaver
-0: Spell: Jadefire Stomp[id:388193]
-    if talent 'Jadefire Stomp[id:388193]' is taken
-    if player has resources to cast spell 'Jadefire Stomp[id:388193]'
-    if spell 'Jadefire Stomp[id:388193]' is off cooldown
+0: Spell: 碧火踏[id:388193]
+    if talent '碧火踏[id:388193]' is taken
+    if player has resources to cast spell '碧火踏[id:388193]'
+    if spell '碧火踏[id:388193]' is off cooldown
     if target is less than 10 yards away
-    if player does not have buff/debuff 'Jadefire Teachings[id:388026]'
-    if player has buff/debuff 'Jadefire Teachings[id:467293]'
-1: Spell: Rising Sun Kick[id:107428]
-    if talent 'Rising Sun Kick[id:107428]' is taken
-    if player has resources to cast spell 'Rising Sun Kick[id:107428]'
-    if spell 'Rising Sun Kick[id:107428]' is off cooldown
-    if spell 'Rising Sun Kick[id:107428]' is within allowed range
-2: Spell: Spinning Crane Kick[id:101546]
-    if talent 'Spinning Crane Kick[id:101546]' is taken
-    if player has resources to cast spell 'Spinning Crane Kick[id:101546]'
-    if spell 'Spinning Crane Kick[id:101546]' is off cooldown
+    if player does not have buff/debuff '碧火之训[id:388026]'
+    if player has buff/debuff '碧火之训[id:467293]'
+1: Spell: 旭日东升踢[id:107428]
+    if talent '旭日东升踢[id:107428]' is taken
+    if player has resources to cast spell '旭日东升踢[id:107428]'
+    if spell '旭日东升踢[id:107428]' is off cooldown
+    if spell '旭日东升踢[id:107428]' is within allowed range
+2: Spell: 神鹤引项踢[id:101546]
+    if talent '神鹤引项踢[id:101546]' is taken
+    if player has resources to cast spell '神鹤引项踢[id:101546]'
+    if spell '神鹤引项踢[id:101546]' is off cooldown
     if there are more than 4 targets within 10 yards of player
     if target is less than 10 yards away
-    if spell 'Spinning Crane Kick[id:101546]' can be successfully cast
-3: Spell: Blackout Kick[id:100784]
-    if talent 'Blackout Kick[id:100784]' is taken
-    if player has resources to cast spell 'Blackout Kick[id:100784]'
-    if spell 'Blackout Kick[id:100784]' is off cooldown
-    if player has more than 4 stacks of buff/debuff 'Teachings of the Monastery[id:202090]'
-    if spell 'Blackout Kick[id:100784]' is within allowed range
-4: Spell: Tiger Palm[id:100780]
-    if talent 'Tiger Palm[id:100780]' is taken
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if spell 'Tiger Palm[id:100780]' is within allowed range
-5: Spell: Crackling Jade Lightning[id:117952]
-    if talent 'Crackling Jade Lightning[id:117952]' is taken
-    if player has resources to cast spell 'Crackling Jade Lightning[id:117952]'
-    if spell 'Crackling Jade Lightning[id:117952]' is off cooldown
+    if spell '神鹤引项踢[id:101546]' can be successfully cast
+3: Spell: 幻灭踢[id:100784]
+    if talent '幻灭踢[id:100784]' is taken
+    if player has resources to cast spell '幻灭踢[id:100784]'
+    if spell '幻灭踢[id:100784]' is off cooldown
+    if player has more than 4 stacks of buff/debuff '禅院教诲[id:202090]'
+    if spell '幻灭踢[id:100784]' is within allowed range
+4: Spell: 猛虎掌[id:100780]
+    if talent '猛虎掌[id:100780]' is taken
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if spell '猛虎掌[id:100780]' is within allowed range
+5: Spell: 碎玉闪电[id:117952]
+    if talent '碎玉闪电[id:117952]' is taken
+    if player has resources to cast spell '碎玉闪电[id:117952]'
+    if spell '碎玉闪电[id:117952]' is off cooldown
     if target is more than 15 yards away
-    if spell 'Crackling Jade Lightning[id:117952]' can be successfully cast
-6: Spell: Crackling Jade Lightning[id:117952]
-    if talent 'Crackling Jade Lightning[id:117952]' is taken
-    if player has resources to cast spell 'Crackling Jade Lightning[id:117952]'
-    if spell 'Crackling Jade Lightning[id:117952]' is off cooldown
-    if player has buff/debuff 'Jade Empowerment[id:467317]'
-7: Spell: Jadefire Stomp[id:388193]
-    if talent 'Jadefire Stomp[id:388193]' is taken
-    if player has resources to cast spell 'Jadefire Stomp[id:388193]'
-    if spell 'Jadefire Stomp[id:388193]' is off cooldown
+    if spell '碎玉闪电[id:117952]' can be successfully cast
+6: Spell: 碎玉闪电[id:117952]
+    if talent '碎玉闪电[id:117952]' is taken
+    if player has resources to cast spell '碎玉闪电[id:117952]'
+    if spell '碎玉闪电[id:117952]' is off cooldown
+    if player has buff/debuff '青玉赋能[id:467317]'
+7: Spell: 碧火踏[id:388193]
+    if talent '碧火踏[id:388193]' is taken
+    if player has resources to cast spell '碧火踏[id:388193]'
+    if spell '碧火踏[id:388193]' is off cooldown
     if target is less than 10 yards away
     if player does not have buff/debuff 'Unknown Spell[id:389387]'
-    if player has buff/debuff 'Way of the Crane[id:388779]'
-8: Spell: Spinning Crane Kick[id:101546]
-    if talent 'Spinning Crane Kick[id:101546]' is taken
-    if player has resources to cast spell 'Spinning Crane Kick[id:101546]'
-    if spell 'Spinning Crane Kick[id:101546]' is off cooldown
+    if player has buff/debuff '仙鹤之道[id:388779]'
+8: Spell: 神鹤引项踢[id:101546]
+    if talent '神鹤引项踢[id:101546]' is taken
+    if player has resources to cast spell '神鹤引项踢[id:101546]'
+    if spell '神鹤引项踢[id:101546]' is off cooldown
     if target is less than 10 yards away
-    if player has buff/debuff 'Dance of Chi-Ji[id:438443]'
-    if spell 'Spinning Crane Kick[id:101546]' can be successfully cast
-9: Spell: Rising Sun Kick[id:107428]
-    if talent 'Rising Sun Kick[id:107428]' is taken
-    if player has resources to cast spell 'Rising Sun Kick[id:107428]'
-    if spell 'Rising Sun Kick[id:107428]' is off cooldown
+    if player has buff/debuff '赤精之舞[id:438443]'
+    if spell '神鹤引项踢[id:101546]' can be successfully cast
+9: Spell: 旭日东升踢[id:107428]
+    if talent '旭日东升踢[id:107428]' is taken
+    if player has resources to cast spell '旭日东升踢[id:107428]'
+    if spell '旭日东升踢[id:107428]' is off cooldown
     if target is less than 20 yards away
-    if talent 'Rising Sun Kick[id:107428]' is taken
-10: Spell: Rising Sun Kick[id:107428]
-11: Spell: Touch of Death[id:322109]
-    if talent 'Touch of Death[id:322109]' is taken
-    if player has resources to cast spell 'Touch of Death[id:322109]'
-    if spell 'Touch of Death[id:322109]' is off cooldown
-    if spell 'Touch of Death[id:322109]' is within allowed range
+    if talent '旭日东升踢[id:107428]' is taken
+10: Spell: 旭日东升踢[id:107428]
+11: Spell: 轮回之触[id:322109]
+    if talent '轮回之触[id:322109]' is taken
+    if player has resources to cast spell '轮回之触[id:322109]'
+    if spell '轮回之触[id:322109]' is off cooldown
+    if spell '轮回之触[id:322109]' is within allowed range

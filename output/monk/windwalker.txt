@@ -1,126 +1,126 @@
 Windwalker
-0: Spell: Strike of the Windlord[id:392983]
-    if spell 'Strike of the Windlord[id:392983]' is within allowed range
-    if spell 'Strike of the Windlord[id:392983]' is off cooldown
-    if player has resources to cast spell 'Strike of the Windlord[id:392983]'
-    if talent 'Strike of the Windlord[id:392983]' is taken
-    if player does not have buff/debuff 'Heart of the Jade Serpent[id:443421]'
-    if player does not have buff/debuff 'Heart of the Jade Serpent[id:443616]'
-    if player does not have buff/debuff 'Combo Strikes: Strike of the Windlord[id:1249766]'
-1: Spell: Spinning Crane Kick[id:101546]
-    if player has more than 2 stacks of buff/debuff 'Dance of Chi-Ji[id:325202]'
-    if spell 'Spinning Crane Kick[id:101546]' is off cooldown
-    if player has resources to cast spell 'Spinning Crane Kick[id:101546]'
-    if talent 'Spinning Crane Kick[id:101546]' is taken
-    if spell 'Spinning Crane Kick[id:101546]' can be successfully cast
-    if player does not have buff/debuff 'Combo Strikes: Spinning Crane Kick[id:1249754]'
-2: Spell: Crackling Jade Lightning[id:117952]
-    if spell 'Crackling Jade Lightning[id:117952]' is within allowed range
-    if spell 'Crackling Jade Lightning[id:117952]' is off cooldown
-    if player has resources to cast spell 'Crackling Jade Lightning[id:117952]'
-    if talent 'Crackling Jade Lightning[id:117952]' is taken
-    if player has more than 20 stacks of buff/debuff 'The Emperor's Capacitor[id:393039]'
-    if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning[id:1249764]'
-3: Spell: Fists of Fury[id:113656]
-    if spell 'Fists of Fury[id:113656]' is off cooldown
-    if player has resources to cast spell 'Fists of Fury[id:113656]'
-    if talent 'Fists of Fury[id:113656]' is taken
+0: Spell: 风领主之击[id:392983]
+    if spell '风领主之击[id:392983]' is within allowed range
+    if spell '风领主之击[id:392983]' is off cooldown
+    if player has resources to cast spell '风领主之击[id:392983]'
+    if talent '风领主之击[id:392983]' is taken
+    if player does not have buff/debuff '青龙之心[id:443421]'
+    if player does not have buff/debuff '青龙之心[id:443616]'
+    if player does not have buff/debuff '组合拳：风领主之击[id:1249766]'
+1: Spell: 神鹤引项踢[id:101546]
+    if player has more than 2 stacks of buff/debuff '赤精之舞[id:325202]'
+    if spell '神鹤引项踢[id:101546]' is off cooldown
+    if player has resources to cast spell '神鹤引项踢[id:101546]'
+    if talent '神鹤引项踢[id:101546]' is taken
+    if spell '神鹤引项踢[id:101546]' can be successfully cast
+    if player does not have buff/debuff '组合拳：神鹤引项踢[id:1249754]'
+2: Spell: 碎玉闪电[id:117952]
+    if spell '碎玉闪电[id:117952]' is within allowed range
+    if spell '碎玉闪电[id:117952]' is off cooldown
+    if player has resources to cast spell '碎玉闪电[id:117952]'
+    if talent '碎玉闪电[id:117952]' is taken
+    if player has more than 20 stacks of buff/debuff '皇帝的容电器[id:393039]'
+    if player does not have buff/debuff '组合拳：碎玉闪电[id:1249764]'
+3: Spell: 怒雷破[id:113656]
+    if spell '怒雷破[id:113656]' is off cooldown
+    if player has resources to cast spell '怒雷破[id:113656]'
+    if talent '怒雷破[id:113656]' is taken
     if target is less than 8 yards away
-    if player does not have buff/debuff 'Combo Strikes: Fists of Fury[id:1249758]'
-4: Spell: Rising Sun Kick[id:107428]
-    if spell 'Rising Sun Kick[id:107428]' is within allowed range
-    if spell 'Rising Sun Kick[id:107428]' is off cooldown
-    if player has resources to cast spell 'Rising Sun Kick[id:107428]'
-    if talent 'Rising Sun Kick[id:107428]' is taken
-    if player does not have buff/debuff 'Combo Strikes: Rising Sun Kick[id:1249753]'
-5: Spell: Whirling Dragon Punch[id:152175]
+    if player does not have buff/debuff '组合拳：怒雷破[id:1249758]'
+4: Spell: 旭日东升踢[id:107428]
+    if spell '旭日东升踢[id:107428]' is within allowed range
+    if spell '旭日东升踢[id:107428]' is off cooldown
+    if player has resources to cast spell '旭日东升踢[id:107428]'
+    if talent '旭日东升踢[id:107428]' is taken
+    if player does not have buff/debuff '组合拳：旭日东升踢[id:1249753]'
+5: Spell: 升龙霸[id:152175]
     if target is less than 5 yards away
-    if spell 'Whirling Dragon Punch[id:152175]' is off cooldown
-    if player has resources to cast spell 'Whirling Dragon Punch[id:152175]'
-    if player does not have buff/debuff 'Heart of the Jade Serpent[id:443421]'
-    if talent 'Whirling Dragon Punch[id:152175]' is taken
-    if player does not have buff/debuff 'Combo Strikes: Whirling Dragon Punch[id:1249765]'
-6: Spell: Blackout Kick[id:100784]
-    if spell 'Blackout Kick[id:100784]' is within allowed range
-    if spell 'Blackout Kick[id:100784]' is off cooldown
-    if player has resources to cast spell 'Blackout Kick[id:100784]'
-    if talent 'Blackout Kick[id:100784]' is taken
-    if player has buff/debuff 'Blackout Kick![id:116768]'
-    if player does not have buff/debuff 'Combo Strikes: Blackout Kick[id:1249757]'
-7: Spell: Spinning Crane Kick[id:101546]
-    if spell 'Spinning Crane Kick[id:101546]' is off cooldown
-    if player has resources to cast spell 'Spinning Crane Kick[id:101546]'
+    if spell '升龙霸[id:152175]' is off cooldown
+    if player has resources to cast spell '升龙霸[id:152175]'
+    if player does not have buff/debuff '青龙之心[id:443421]'
+    if talent '升龙霸[id:152175]' is taken
+    if player does not have buff/debuff '组合拳：升龙霸[id:1249765]'
+6: Spell: 幻灭踢[id:100784]
+    if spell '幻灭踢[id:100784]' is within allowed range
+    if spell '幻灭踢[id:100784]' is off cooldown
+    if player has resources to cast spell '幻灭踢[id:100784]'
+    if talent '幻灭踢[id:100784]' is taken
+    if player has buff/debuff '幻灭踢！[id:116768]'
+    if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
+7: Spell: 神鹤引项踢[id:101546]
+    if spell '神鹤引项踢[id:101546]' is off cooldown
+    if player has resources to cast spell '神鹤引项踢[id:101546]'
     if there are more than 3 targets within 9 yards of player
-    if talent 'Spinning Crane Kick[id:101546]' is taken
-    if spell 'Spinning Crane Kick[id:101546]' can be successfully cast
-    if player does not have buff/debuff 'Combo Strikes: Spinning Crane Kick[id:1249754]'
-8: Spell: Chi Burst[id:461404]
-    if spell 'Chi Burst[id:461404]' is off cooldown
-    if player has resources to cast spell 'Chi Burst[id:461404]'
-    if talent 'Chi Burst[id:461404]' is taken
-9: Spell: Blackout Kick[id:100784]
-    if spell 'Blackout Kick[id:100784]' is within allowed range
-    if spell 'Blackout Kick[id:100784]' is off cooldown
-    if player has resources to cast spell 'Blackout Kick[id:100784]'
-    if talent 'Blackout Kick[id:100784]' is taken
+    if talent '神鹤引项踢[id:101546]' is taken
+    if spell '神鹤引项踢[id:101546]' can be successfully cast
+    if player does not have buff/debuff '组合拳：神鹤引项踢[id:1249754]'
+8: Spell: 真气爆裂[id:461404]
+    if spell '真气爆裂[id:461404]' is off cooldown
+    if player has resources to cast spell '真气爆裂[id:461404]'
+    if talent '真气爆裂[id:461404]' is taken
+9: Spell: 幻灭踢[id:100784]
+    if spell '幻灭踢[id:100784]' is within allowed range
+    if spell '幻灭踢[id:100784]' is off cooldown
+    if player has resources to cast spell '幻灭踢[id:100784]'
+    if talent '幻灭踢[id:100784]' is taken
     if there are less than 2 targets within 9 yards of player
-    if player does not have buff/debuff 'Combo Strikes: Blackout Kick[id:1249757]'
-10: Spell: Tiger Palm[id:100780]
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if talent 'Tiger Palm[id:100780]' is taken
-    if spell 'Tiger Palm[id:100780]' is within allowed range
-    if player does not have buff/debuff 'Combo Strikes: Tiger Palm[id:1249756]'
-11: Spell: Crackling Jade Lightning[id:117952]
-    if spell 'Crackling Jade Lightning[id:117952]' is off cooldown
-    if player has resources to cast spell 'Crackling Jade Lightning[id:117952]'
-    if talent 'Crackling Jade Lightning[id:117952]' is taken
+    if player does not have buff/debuff '组合拳：幻灭踢[id:1249757]'
+10: Spell: 猛虎掌[id:100780]
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if talent '猛虎掌[id:100780]' is taken
+    if spell '猛虎掌[id:100780]' is within allowed range
+    if player does not have buff/debuff '组合拳：猛虎掌[id:1249756]'
+11: Spell: 碎玉闪电[id:117952]
+    if spell '碎玉闪电[id:117952]' is off cooldown
+    if player has resources to cast spell '碎玉闪电[id:117952]'
+    if talent '碎玉闪电[id:117952]' is taken
     if player has more than 75 energy
-    if spell 'Crackling Jade Lightning[id:117952]' can be successfully cast
+    if spell '碎玉闪电[id:117952]' can be successfully cast
     if target is more than 15 yards away
-    if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning[id:1249764]'
-12: Spell: Jadefire Stomp[id:388193]
+    if player does not have buff/debuff '组合拳：碎玉闪电[id:1249764]'
+12: Spell: 碧火踏[id:388193]
     if target is less than 20 yards away
-    if spell 'Jadefire Stomp[id:388193]' is off cooldown
-    if player has resources to cast spell 'Jadefire Stomp[id:388193]'
-    if talent 'Jadefire Stomp[id:388193]' is taken
-13: Spell: Tiger Palm[id:100780]
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if talent 'Tiger Palm[id:100780]' is taken
-    if spell 'Tiger Palm[id:100780]' is within allowed range
+    if spell '碧火踏[id:388193]' is off cooldown
+    if player has resources to cast spell '碧火踏[id:388193]'
+    if talent '碧火踏[id:388193]' is taken
+13: Spell: 猛虎掌[id:100780]
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if talent '猛虎掌[id:100780]' is taken
+    if spell '猛虎掌[id:100780]' is within allowed range
     if player has less than 4 chi
     if player has more than 101 energy
-    if player does not have buff/debuff 'Heart of the Jade Serpent[id:443421]'
-    if player does not have buff/debuff 'Combo Strikes: Tiger Palm[id:1249756]'
-14: Spell: Rising Sun Kick[id:107428]
-15: Spell: Touch of Death[id:322109]
-    if talent 'Touch of Death[id:322109]' is taken
-    if player has resources to cast spell 'Touch of Death[id:322109]'
-    if spell 'Touch of Death[id:322109]' is off cooldown
-    if spell 'Touch of Death[id:322109]' is within allowed range
-16: Spell: Tiger Palm[id:100780]
-    if spell 'Tiger Palm[id:100780]' is off cooldown
-    if player has resources to cast spell 'Tiger Palm[id:100780]'
-    if talent 'Tiger Palm[id:100780]' is taken
-    if spell 'Tiger Palm[id:100780]' is within allowed range
-    if player does not have buff/debuff 'Blackout Kick[id:261916]'
-17: Spell: Flying Serpent Kick[id:101545]
-    if talent 'Flying Serpent Kick[id:101545]' is taken
-    if spell 'Flying Serpent Kick[id:101545]' is off cooldown
-    if player has resources to cast spell 'Flying Serpent Kick[id:101545]'
-    if talent 'Flying Serpent Kick[id:101545]' is taken
+    if player does not have buff/debuff '青龙之心[id:443421]'
+    if player does not have buff/debuff '组合拳：猛虎掌[id:1249756]'
+14: Spell: 旭日东升踢[id:107428]
+15: Spell: 轮回之触[id:322109]
+    if talent '轮回之触[id:322109]' is taken
+    if player has resources to cast spell '轮回之触[id:322109]'
+    if spell '轮回之触[id:322109]' is off cooldown
+    if spell '轮回之触[id:322109]' is within allowed range
+16: Spell: 猛虎掌[id:100780]
+    if spell '猛虎掌[id:100780]' is off cooldown
+    if player has resources to cast spell '猛虎掌[id:100780]'
+    if talent '猛虎掌[id:100780]' is taken
+    if spell '猛虎掌[id:100780]' is within allowed range
+    if player does not have buff/debuff '幻灭踢[id:261916]'
+17: Spell: 翔龙在天[id:101545]
+    if talent '翔龙在天[id:101545]' is taken
+    if spell '翔龙在天[id:101545]' is off cooldown
+    if player has resources to cast spell '翔龙在天[id:101545]'
+    if talent '翔龙在天[id:101545]' is taken
     automation only (not part of the game's Assisted Combat rotation)
-18: Spell: Zenith[id:1249625]
-    if spell 'Zenith[id:1249625]' is off cooldown
-    if player has resources to cast spell 'Zenith[id:1249625]'
-    if player does not have buff/debuff 'Zenith[id:1249625]'
-    if talent 'Zenith[id:1249625]' is taken
+18: Spell: 乾元之巅[id:1249625]
+    if spell '乾元之巅[id:1249625]' is off cooldown
+    if player has resources to cast spell '乾元之巅[id:1249625]'
+    if player does not have buff/debuff '乾元之巅[id:1249625]'
+    if talent '乾元之巅[id:1249625]' is taken
     automation only (not part of the game's Assisted Combat rotation)
-19: Spell: Celestial Conduit[id:443028]
-    if spell 'Celestial Conduit[id:443028]' is off cooldown
-    if player has resources to cast spell 'Celestial Conduit[id:443028]'
-    if talent 'Celestial Conduit[id:443028]' is taken
+19: Spell: 天神御身[id:443028]
+    if spell '天神御身[id:443028]' is off cooldown
+    if player has resources to cast spell '天神御身[id:443028]'
+    if talent '天神御身[id:443028]' is taken
     automation only (not part of the game's Assisted Combat rotation)
-20: Spell: Rising Sun Kick[id:107428]
-    if player has buff/debuff 'Rushing Wind Kick[id:1250554]'
+20: Spell: 旭日东升踢[id:107428]
+    if player has buff/debuff '疾风呼啸踢[id:1250554]'

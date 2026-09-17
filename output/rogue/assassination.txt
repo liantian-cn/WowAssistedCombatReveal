@@ -1,247 +1,247 @@
 Assassination
-0: Spell: Garrote[id:703]
-    if target does not have buff/debuff 'Garrote[id:703]'
-    if talent 'Garrote[id:703]' is taken
-    if player has resources to cast spell 'Garrote[id:703]'
-    if spell 'Garrote[id:703]' is off cooldown
-    if spell 'Garrote[id:703]' is within allowed range
-1: Spell: Rupture[id:1943]
-    if target does not have buff/debuff 'Rupture[id:1943]'
+0: Spell: 锁喉[id:703]
+    if target does not have buff/debuff '锁喉[id:703]'
+    if talent '锁喉[id:703]' is taken
+    if player has resources to cast spell '锁喉[id:703]'
+    if spell '锁喉[id:703]' is off cooldown
+    if spell '锁喉[id:703]' is within allowed range
+1: Spell: 割裂[id:1943]
+    if target does not have buff/debuff '割裂[id:1943]'
     if player has more than 5 combo points
-    if talent 'Rupture[id:1943]' is taken
-    if player has resources to cast spell 'Rupture[id:1943]'
-    if spell 'Rupture[id:1943]' is off cooldown
-    if spell 'Rupture[id:1943]' is within allowed range
-    if player does not have buff/debuff 'Darkest Night[id:457280]'
-2: Spell: Kingsbane[id:385627]
-    if talent 'Kingsbane[id:385627]' is taken
-    if player has resources to cast spell 'Kingsbane[id:385627]'
-    if spell 'Kingsbane[id:385627]' is off cooldown
-    if spell 'Kingsbane[id:385627]' is within allowed range
-    if target has buff/debuff 'Garrote[id:703]'
-    if target has buff/debuff 'Rupture[id:1943]'
-    if player has buff/debuff 'Implacable[id:1265387]'
+    if talent '割裂[id:1943]' is taken
+    if player has resources to cast spell '割裂[id:1943]'
+    if spell '割裂[id:1943]' is off cooldown
+    if spell '割裂[id:1943]' is within allowed range
+    if player does not have buff/debuff '至黑之夜[id:457280]'
+2: Spell: 君王之灾[id:385627]
+    if talent '君王之灾[id:385627]' is taken
+    if player has resources to cast spell '君王之灾[id:385627]'
+    if spell '君王之灾[id:385627]' is off cooldown
+    if spell '君王之灾[id:385627]' is within allowed range
+    if target has buff/debuff '锁喉[id:703]'
+    if target has buff/debuff '割裂[id:1943]'
+    if player has buff/debuff '无赦[id:1265387]'
     if player has less than 1 combo points
-3: Spell: Eviscerate[id:196819]
+3: Spell: 刺骨[id:196819]
     if player has more than 5 combo points
-    if talent 'Eviscerate[id:196819]' is taken
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player does not have buff/debuff 'Darkest Night[id:457280]'
-4: Spell: Sinister Strike[id:1752]
-    if talent 'Sinister Strike[id:1752]' is taken
-    if player has resources to cast spell 'Sinister Strike[id:1752]'
-    if spell 'Sinister Strike[id:1752]' is off cooldown
-    if spell 'Sinister Strike[id:1752]' is within allowed range
-5: Spell: Ambush[id:8676]
-    if player has buff/debuff 'Blindside[id:121153]'
-    if talent 'Ambush[id:8676]' is taken
-    if player has resources to cast spell 'Ambush[id:8676]'
-    if spell 'Ambush[id:8676]' is off cooldown
-    if spell 'Ambush[id:8676]' is within allowed range
-6: Spell: Fan of Knives[id:51723]
+    if talent '刺骨[id:196819]' is taken
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if spell '刺骨[id:196819]' is within allowed range
+    if player does not have buff/debuff '至黑之夜[id:457280]'
+4: Spell: 影袭[id:1752]
+    if talent '影袭[id:1752]' is taken
+    if player has resources to cast spell '影袭[id:1752]'
+    if spell '影袭[id:1752]' is off cooldown
+    if spell '影袭[id:1752]' is within allowed range
+5: Spell: 伏击[id:8676]
+    if player has buff/debuff '侧袭[id:121153]'
+    if talent '伏击[id:8676]' is taken
+    if player has resources to cast spell '伏击[id:8676]'
+    if spell '伏击[id:8676]' is off cooldown
+    if spell '伏击[id:8676]' is within allowed range
+6: Spell: 刀扇[id:51723]
     if there are more than 3 targets within 10 yards of player
-    if talent 'Fan of Knives[id:51723]' is taken
-    if player has resources to cast spell 'Fan of Knives[id:51723]'
-    if spell 'Fan of Knives[id:51723]' is off cooldown
-7: Spell: Poisoned Knife[id:185565]
-    if talent 'Poisoned Knife[id:185565]' is taken
-    if player has resources to cast spell 'Poisoned Knife[id:185565]'
-    if spell 'Poisoned Knife[id:185565]' is off cooldown
-    if spell 'Poisoned Knife[id:185565]' is within allowed range
-    if player does not have buff/debuff 'Stealth[id:1784]'
-    if player does not have buff/debuff 'Vanish[id:11327]'
+    if talent '刀扇[id:51723]' is taken
+    if player has resources to cast spell '刀扇[id:51723]'
+    if spell '刀扇[id:51723]' is off cooldown
+7: Spell: 剧毒之刃[id:185565]
+    if talent '剧毒之刃[id:185565]' is taken
+    if player has resources to cast spell '剧毒之刃[id:185565]'
+    if spell '剧毒之刃[id:185565]' is off cooldown
+    if spell '剧毒之刃[id:185565]' is within allowed range
+    if player does not have buff/debuff '潜行[id:1784]'
+    if player does not have buff/debuff '消失[id:11327]'
     if player has more than 70 energy
     if target is more than 15 yards away
-8: Spell: Deadly Poison[id:2823]
-    if talent 'Deadly Poison[id:2823]' is taken
-    if player has resources to cast spell 'Deadly Poison[id:2823]'
-    if spell 'Deadly Poison[id:2823]' is off cooldown
-    if player does not have buff/debuff 'Deadly Poison[id:2823]'
-    if player does not have buff/debuff 'Wound Poison[id:8679]'
-    if player does not have buff/debuff 'Dragon-Tempered Blades[id:381801]'
-9: Spell: Sinister Strike[id:1752]
-10: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+8: Spell: 夺命药膏[id:2823]
+    if talent '夺命药膏[id:2823]' is taken
+    if player has resources to cast spell '夺命药膏[id:2823]'
+    if spell '夺命药膏[id:2823]' is off cooldown
+    if player does not have buff/debuff '夺命药膏[id:2823]'
+    if player does not have buff/debuff '致伤药膏[id:8679]'
+    if player does not have buff/debuff '龙淬之锋[id:381801]'
+9: Spell: 影袭[id:1752]
+10: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 5 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player has buff/debuff 'Darkest Night[id:457280]'
-    if player does not have buff/debuff 'Deeper Stratagem[id:193531]'
-    if player does not have buff/debuff 'Sanguine Stratagem[id:457512]'
-11: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if spell '刺骨[id:196819]' is within allowed range
+    if player has buff/debuff '至黑之夜[id:457280]'
+    if player does not have buff/debuff '深邃诡计[id:193531]'
+    if player does not have buff/debuff '血色谋策[id:457512]'
+11: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 6 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player has buff/debuff 'Darkest Night[id:457280]'
-    if player does not have buff/debuff 'Sanguine Stratagem[id:457512]'
-    if player has buff/debuff 'Deeper Stratagem[id:193531]'
-12: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if spell '刺骨[id:196819]' is within allowed range
+    if player has buff/debuff '至黑之夜[id:457280]'
+    if player does not have buff/debuff '血色谋策[id:457512]'
+    if player has buff/debuff '深邃诡计[id:193531]'
+12: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 6 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player has buff/debuff 'Darkest Night[id:457280]'
-    if player does not have buff/debuff 'Deeper Stratagem[id:193531]'
-    if player has buff/debuff 'Sanguine Stratagem[id:457512]'
-13: Spell: Eviscerate[id:196819]
-    if player has resources to cast spell 'Eviscerate[id:196819]'
-    if spell 'Eviscerate[id:196819]' is off cooldown
-    if talent 'Eviscerate[id:196819]' is taken
+    if spell '刺骨[id:196819]' is within allowed range
+    if player has buff/debuff '至黑之夜[id:457280]'
+    if player does not have buff/debuff '深邃诡计[id:193531]'
+    if player has buff/debuff '血色谋策[id:457512]'
+13: Spell: 刺骨[id:196819]
+    if player has resources to cast spell '刺骨[id:196819]'
+    if spell '刺骨[id:196819]' is off cooldown
+    if talent '刺骨[id:196819]' is taken
     if player has more than 7 combo points
-    if spell 'Eviscerate[id:196819]' is within allowed range
-    if player has buff/debuff 'Darkest Night[id:457280]'
-    if player has buff/debuff 'Deeper Stratagem[id:193531]'
-    if player has buff/debuff 'Sanguine Stratagem[id:457512]'
-14: Spell: Slice and Dice[id:315496]
-    if player does not have buff/debuff 'Slice and Dice[id:315496]'
+    if spell '刺骨[id:196819]' is within allowed range
+    if player has buff/debuff '至黑之夜[id:457280]'
+    if player has buff/debuff '深邃诡计[id:193531]'
+    if player has buff/debuff '血色谋策[id:457512]'
+14: Spell: 切割[id:315496]
+    if player does not have buff/debuff '切割[id:315496]'
     if player has more than 5 combo points
-    if talent 'Slice and Dice[id:315496]' is taken
-    if player has resources to cast spell 'Slice and Dice[id:315496]'
-    if spell 'Slice and Dice[id:315496]' is off cooldown
-    if player does not have buff/debuff 'Cut to the Chase[id:51667]'
-15: Spell: Ambush[id:8676]
-    if talent 'Ambush[id:8676]' is taken
-    if player has resources to cast spell 'Ambush[id:8676]'
-    if spell 'Ambush[id:8676]' is off cooldown
+    if talent '切割[id:315496]' is taken
+    if player has resources to cast spell '切割[id:315496]'
+    if spell '切割[id:315496]' is off cooldown
+    if player does not have buff/debuff '穷追猛砍[id:51667]'
+15: Spell: 伏击[id:8676]
+    if talent '伏击[id:8676]' is taken
+    if player has resources to cast spell '伏击[id:8676]'
+    if spell '伏击[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth[id:1784]'
-    if player does not have buff/debuff 'Improved Garrote[id:381632]'
-16: Spell: Ambush[id:8676]
-    if talent 'Ambush[id:8676]' is taken
-    if player has resources to cast spell 'Ambush[id:8676]'
-    if spell 'Ambush[id:8676]' is off cooldown
+    if player has buff/debuff '潜行[id:1784]'
+    if player does not have buff/debuff '强化锁喉[id:381632]'
+16: Spell: 伏击[id:8676]
+    if talent '伏击[id:8676]' is taken
+    if player has resources to cast spell '伏击[id:8676]'
+    if spell '伏击[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth[id:115191]'
-    if player does not have buff/debuff 'Improved Garrote[id:381632]'
-17: Spell: Ambush[id:8676]
-    if talent 'Ambush[id:8676]' is taken
-    if player has resources to cast spell 'Ambush[id:8676]'
-    if spell 'Ambush[id:8676]' is off cooldown
+    if player has buff/debuff '潜行[id:115191]'
+    if player does not have buff/debuff '强化锁喉[id:381632]'
+17: Spell: 伏击[id:8676]
+    if talent '伏击[id:8676]' is taken
+    if player has resources to cast spell '伏击[id:8676]'
+    if spell '伏击[id:8676]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Vanish[id:11327]'
-    if player does not have buff/debuff 'Improved Garrote[id:381632]'
-18: Spell: Garrote[id:703]
-    if talent 'Garrote[id:703]' is taken
-    if player has resources to cast spell 'Garrote[id:703]'
-    if spell 'Garrote[id:703]' is off cooldown
+    if player has buff/debuff '消失[id:11327]'
+    if player does not have buff/debuff '强化锁喉[id:381632]'
+18: Spell: 锁喉[id:703]
+    if talent '锁喉[id:703]' is taken
+    if player has resources to cast spell '锁喉[id:703]'
+    if spell '锁喉[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth[id:1784]'
-19: Spell: Garrote[id:703]
-    if talent 'Garrote[id:703]' is taken
-    if player has resources to cast spell 'Garrote[id:703]'
-    if spell 'Garrote[id:703]' is off cooldown
+    if player has buff/debuff '潜行[id:1784]'
+19: Spell: 锁喉[id:703]
+    if talent '锁喉[id:703]' is taken
+    if player has resources to cast spell '锁喉[id:703]'
+    if spell '锁喉[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Stealth[id:115191]'
-20: Spell: Garrote[id:703]
-    if talent 'Garrote[id:703]' is taken
-    if player has resources to cast spell 'Garrote[id:703]'
-    if spell 'Garrote[id:703]' is off cooldown
+    if player has buff/debuff '潜行[id:115191]'
+20: Spell: 锁喉[id:703]
+    if talent '锁喉[id:703]' is taken
+    if player has resources to cast spell '锁喉[id:703]'
+    if spell '锁喉[id:703]' is off cooldown
     if target is less than 40 yards away
-    if player has buff/debuff 'Vanish[id:11327]'
-21: Spell: Atrophic Poison[id:381637]
-    if talent 'Atrophic Poison[id:381637]' is taken
-    if player has resources to cast spell 'Atrophic Poison[id:381637]'
-    if spell 'Atrophic Poison[id:381637]' is off cooldown
-    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
-22: Spell: Deadly Poison[id:2823]
-    if talent 'Deadly Poison[id:2823]' is taken
-    if player has resources to cast spell 'Deadly Poison[id:2823]'
-    if spell 'Deadly Poison[id:2823]' is off cooldown
-    if player does not have buff/debuff 'Deadly Poison[id:2823]'
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
-23: Spell: Amplifying Poison[id:381664]
-    if talent 'Amplifying Poison[id:381664]' is taken
-    if player has resources to cast spell 'Amplifying Poison[id:381664]'
-    if spell 'Amplifying Poison[id:381664]' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
-    if player does not have buff/debuff 'Wound Poison[id:8679]'
+    if player has buff/debuff '消失[id:11327]'
+21: Spell: 萎缩药膏[id:381637]
+    if talent '萎缩药膏[id:381637]' is taken
+    if player has resources to cast spell '萎缩药膏[id:381637]'
+    if spell '萎缩药膏[id:381637]' is off cooldown
+    if player does not have buff/debuff '萎缩药膏[id:381637]'
+22: Spell: 夺命药膏[id:2823]
+    if talent '夺命药膏[id:2823]' is taken
+    if player has resources to cast spell '夺命药膏[id:2823]'
+    if spell '夺命药膏[id:2823]' is off cooldown
+    if player does not have buff/debuff '夺命药膏[id:2823]'
+    if player has buff/debuff '龙淬之锋[id:381801]'
+23: Spell: 增效药膏[id:381664]
+    if talent '增效药膏[id:381664]' is taken
+    if player has resources to cast spell '增效药膏[id:381664]'
+    if spell '增效药膏[id:381664]' is off cooldown
+    if player does not have buff/debuff '增效药膏[id:381664]'
+    if player has buff/debuff '龙淬之锋[id:381801]'
+    if player does not have buff/debuff '致伤药膏[id:8679]'
     if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-24: Spell: Wound Poison[id:8679]
-    if talent 'Wound Poison[id:8679]' is taken
-    if player has resources to cast spell 'Wound Poison[id:8679]'
-    if spell 'Wound Poison[id:8679]' is off cooldown
-    if player does not have buff/debuff 'Wound Poison[id:8679]'
+24: Spell: 致伤药膏[id:8679]
+    if talent '致伤药膏[id:8679]' is taken
+    if player has resources to cast spell '致伤药膏[id:8679]'
+    if spell '致伤药膏[id:8679]' is off cooldown
+    if player does not have buff/debuff '致伤药膏[id:8679]'
     if player has buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
-25: Spell: Instant Poison[id:315584]
-    if talent 'Instant Poison[id:315584]' is taken
-    if player has resources to cast spell 'Instant Poison[id:315584]'
-    if spell 'Instant Poison[id:315584]' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
-    if player does not have buff/debuff 'Wound Poison[id:8679]'
-    if player does not have buff/debuff 'Instant Poison[id:315584]'
-26: Spell: Numbing Poison[id:5761]
-    if talent 'Numbing Poison[id:5761]' is taken
-    if player has resources to cast spell 'Numbing Poison[id:5761]'
-    if spell 'Numbing Poison[id:5761]' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison[id:5761]'
-27: Spell: Crippling Poison[id:3408]
-    if talent 'Crippling Poison[id:3408]' is taken
-    if player has resources to cast spell 'Crippling Poison[id:3408]'
-    if spell 'Crippling Poison[id:3408]' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison[id:5761]'
-    if player does not have buff/debuff 'Atrophic Poison[id:381637]'
-    if player does not have buff/debuff 'Crippling Poison[id:3408]'
-    if player does not have buff/debuff 'Dragon-Tempered Blades[id:381801]'
-28: Spell: Amplifying Poison[id:381664]
-    if talent 'Amplifying Poison[id:381664]' is taken
-    if player has resources to cast spell 'Amplifying Poison[id:381664]'
-    if spell 'Amplifying Poison[id:381664]' is off cooldown
-    if player does not have buff/debuff 'Amplifying Poison[id:381664]'
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
+    if player does not have buff/debuff '增效药膏[id:381664]'
+    if player has buff/debuff '龙淬之锋[id:381801]'
+25: Spell: 速效药膏[id:315584]
+    if talent '速效药膏[id:315584]' is taken
+    if player has resources to cast spell '速效药膏[id:315584]'
+    if spell '速效药膏[id:315584]' is off cooldown
+    if player does not have buff/debuff '增效药膏[id:381664]'
+    if player has buff/debuff '龙淬之锋[id:381801]'
+    if player does not have buff/debuff '致伤药膏[id:8679]'
+    if player does not have buff/debuff '速效药膏[id:315584]'
+26: Spell: 迟钝药膏[id:5761]
+    if talent '迟钝药膏[id:5761]' is taken
+    if player has resources to cast spell '迟钝药膏[id:5761]'
+    if spell '迟钝药膏[id:5761]' is off cooldown
+    if player does not have buff/debuff '迟钝药膏[id:5761]'
+27: Spell: 减速药膏[id:3408]
+    if talent '减速药膏[id:3408]' is taken
+    if player has resources to cast spell '减速药膏[id:3408]'
+    if spell '减速药膏[id:3408]' is off cooldown
+    if player does not have buff/debuff '迟钝药膏[id:5761]'
+    if player does not have buff/debuff '萎缩药膏[id:381637]'
+    if player does not have buff/debuff '减速药膏[id:3408]'
+    if player does not have buff/debuff '龙淬之锋[id:381801]'
+28: Spell: 增效药膏[id:381664]
+    if talent '增效药膏[id:381664]' is taken
+    if player has resources to cast spell '增效药膏[id:381664]'
+    if spell '增效药膏[id:381664]' is off cooldown
+    if player does not have buff/debuff '增效药膏[id:381664]'
+    if player has buff/debuff '龙淬之锋[id:381801]'
     if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)[id:134735]'
-29: Spell: Crippling Poison[id:3408]
-    if talent 'Crippling Poison[id:3408]' is taken
-    if player has resources to cast spell 'Crippling Poison[id:3408]'
-    if spell 'Crippling Poison[id:3408]' is off cooldown
-    if player has buff/debuff 'Dragon-Tempered Blades[id:381801]'
-    if player does not have buff/debuff 'Crippling Poison[id:3408]'
-30: Spell: Deathmark[id:360194]
-    if talent 'Deathmark[id:360194]' is taken
-    if player has resources to cast spell 'Deathmark[id:360194]'
-    if spell 'Deathmark[id:360194]' is off cooldown
-    if target has buff/debuff 'Garrote[id:703]'
-    if target has buff/debuff 'Rupture[id:1943]'
+29: Spell: 减速药膏[id:3408]
+    if talent '减速药膏[id:3408]' is taken
+    if player has resources to cast spell '减速药膏[id:3408]'
+    if spell '减速药膏[id:3408]' is off cooldown
+    if player has buff/debuff '龙淬之锋[id:381801]'
+    if player does not have buff/debuff '减速药膏[id:3408]'
+30: Spell: 死亡印记[id:360194]
+    if talent '死亡印记[id:360194]' is taken
+    if player has resources to cast spell '死亡印记[id:360194]'
+    if spell '死亡印记[id:360194]' is off cooldown
+    if target has buff/debuff '锁喉[id:703]'
+    if target has buff/debuff '割裂[id:1943]'
     automation only (not part of the game's Assisted Combat rotation)
-    if spell 'Deathmark[id:360194]' is within allowed range
-31: Spell: Kingsbane[id:385627]
-    if target has buff/debuff 'Rupture[id:1943]'
-    if target has buff/debuff 'Garrote[id:703]'
-    if spell 'Kingsbane[id:385627]' is within allowed range
-    if spell 'Kingsbane[id:385627]' is off cooldown
-    if player has resources to cast spell 'Kingsbane[id:385627]'
-    if talent 'Kingsbane[id:385627]' is taken
-    if player does not have buff/debuff 'Implacable[id:1265387]'
-32: Spell: Crimson Tempest[id:1247227]
-    if spell 'Crimson Tempest[id:1247227]' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
-    if talent 'Crimson Tempest[id:1247227]' is taken
+    if spell '死亡印记[id:360194]' is within allowed range
+31: Spell: 君王之灾[id:385627]
+    if target has buff/debuff '割裂[id:1943]'
+    if target has buff/debuff '锁喉[id:703]'
+    if spell '君王之灾[id:385627]' is within allowed range
+    if spell '君王之灾[id:385627]' is off cooldown
+    if player has resources to cast spell '君王之灾[id:385627]'
+    if talent '君王之灾[id:385627]' is taken
+    if player does not have buff/debuff '无赦[id:1265387]'
+32: Spell: 猩红风暴[id:1247227]
+    if spell '猩红风暴[id:1247227]' is off cooldown
+    if player has resources to cast spell '猩红风暴[id:1247227]'
+    if talent '猩红风暴[id:1247227]' is taken
     if there are more than 7 targets within 10 yards of player
-    if there are less than 5 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
+    if there are less than 5 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
-33: Spell: Crimson Tempest[id:1247227]
-    if spell 'Crimson Tempest[id:1247227]' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
-    if talent 'Crimson Tempest[id:1247227]' is taken
+33: Spell: 猩红风暴[id:1247227]
+    if spell '猩红风暴[id:1247227]' is off cooldown
+    if player has resources to cast spell '猩红风暴[id:1247227]'
+    if talent '猩红风暴[id:1247227]' is taken
     if there are more than 5 targets within 10 yards of player
-    if there are less than 3 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
+    if there are less than 3 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703
-34: Spell: Crimson Tempest[id:1247227]
-    if spell 'Crimson Tempest[id:1247227]' is off cooldown
-    if player has resources to cast spell 'Crimson Tempest[id:1247227]'
-    if talent 'Crimson Tempest[id:1247227]' is taken
+34: Spell: 猩红风暴[id:1247227]
+    if spell '猩红风暴[id:1247227]' is off cooldown
+    if player has resources to cast spell '猩红风暴[id:1247227]'
+    if talent '猩红风暴[id:1247227]' is taken
     if there are more than 3 targets within 10 yards of player
-    if there are less than 1 targets within 10 yards of player with buff/debuff 'Garrote[id:703]'
+    if there are less than 1 targets within 10 yards of player with buff/debuff '锁喉[id:703]'
     if there are more than 1 targets within 10 yards of player with buff/debuff 1943
     if there are more than 1 targets within 10 yards of player with buff/debuff 703

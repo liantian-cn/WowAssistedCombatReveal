@@ -1,67 +1,67 @@
 Survival
-0: Spell: Wildfire Bomb[id:259495]
-    if talent 'Wildfire Bomb[id:259495]' is taken
-    if player has resources to cast spell 'Wildfire Bomb[id:259495]'
-    if spell 'Wildfire Bomb[id:259495]' is off cooldown
-    if spell 'Wildfire Bomb[id:259495]' is within allowed range
-1: Spell: Boomstick[id:1261193]
-    if talent 'Boomstick[id:1261193]' is taken
-    if player has resources to cast spell 'Boomstick[id:1261193]'
-    if spell 'Boomstick[id:1261193]' is off cooldown
+0: Spell: 野火炸弹[id:259495]
+    if talent '野火炸弹[id:259495]' is taken
+    if player has resources to cast spell '野火炸弹[id:259495]'
+    if spell '野火炸弹[id:259495]' is off cooldown
+    if spell '野火炸弹[id:259495]' is within allowed range
+1: Spell: 爆裂火铳[id:1261193]
+    if talent '爆裂火铳[id:1261193]' is taken
+    if player has resources to cast spell '爆裂火铳[id:1261193]'
+    if spell '爆裂火铳[id:1261193]' is off cooldown
     if there are more than 3 targets within 10 yards of target
     if target is less than 15 yards away
-2: Spell: Kill Command[id:259489]
-    if talent 'Kill Command[id:259489]' is taken
-    if player has resources to cast spell 'Kill Command[id:259489]'
-    if spell 'Kill Command[id:259489]' is off cooldown
-    if spell 'Kill Command[id:259489]' is within allowed range
+2: Spell: 杀戮命令[id:259489]
+    if talent '杀戮命令[id:259489]' is taken
+    if player has resources to cast spell '杀戮命令[id:259489]'
+    if spell '杀戮命令[id:259489]' is off cooldown
+    if spell '杀戮命令[id:259489]' is within allowed range
     if player has less than 40 focus
-3: Spell: Boomstick[id:1261193]
-    if talent 'Boomstick[id:1261193]' is taken
-    if player has resources to cast spell 'Boomstick[id:1261193]'
-    if spell 'Boomstick[id:1261193]' is off cooldown
+3: Spell: 爆裂火铳[id:1261193]
+    if talent '爆裂火铳[id:1261193]' is taken
+    if player has resources to cast spell '爆裂火铳[id:1261193]'
+    if spell '爆裂火铳[id:1261193]' is off cooldown
     if target is less than 15 yards away
-4: Spell: Raptor Strike[id:186270]
-    if talent 'Raptor Strike[id:186270]' is taken
-    if player has resources to cast spell 'Raptor Strike[id:186270]'
-    if spell 'Raptor Strike[id:186270]' is off cooldown
+4: Spell: 猛禽一击[id:186270]
+    if talent '猛禽一击[id:186270]' is taken
+    if player has resources to cast spell '猛禽一击[id:186270]'
+    if spell '猛禽一击[id:186270]' is off cooldown
     if target is less than 5 yards away
-5: Spell: Call Pet 1[id:883]
-    if talent 'Call Pet 1[id:883]' is taken
-    if player has resources to cast spell 'Call Pet 1[id:883]'
-    if spell 'Call Pet 1[id:883]' is off cooldown
+5: Spell: 召唤宠物 1[id:883]
+    if talent '召唤宠物 1[id:883]' is taken
+    if player has resources to cast spell '召唤宠物 1[id:883]'
+    if spell '召唤宠物 1[id:883]' is off cooldown
     if player has no pet
-6: Spell: Raptor Strike[id:186270]
-    if talent 'Raptor Strike[id:186270]' is taken
-7: Spell: Arcane Shot[id:185358]
-    if talent 'Arcane Shot[id:185358]' is taken
-    if player has resources to cast spell 'Arcane Shot[id:185358]'
-    if spell 'Arcane Shot[id:185358]' is off cooldown
-8: Spell: Steady Shot[id:56641]
-9: Spell: Revive Pet[id:982]
-    if talent 'Revive Pet[id:982]' is taken
-    if player has resources to cast spell 'Revive Pet[id:982]'
-    if spell 'Revive Pet[id:982]' is off cooldown
-    if player has buff/debuff 'Track Pets[id:1244922]'
-10: Spell: Takedown[id:1250646]
-    if talent 'Takedown[id:1250646]' is taken
-    if player has resources to cast spell 'Takedown[id:1250646]'
-    if spell 'Takedown[id:1250646]' is off cooldown
+6: Spell: 猛禽一击[id:186270]
+    if talent '猛禽一击[id:186270]' is taken
+7: Spell: 奥术射击[id:185358]
+    if talent '奥术射击[id:185358]' is taken
+    if player has resources to cast spell '奥术射击[id:185358]'
+    if spell '奥术射击[id:185358]' is off cooldown
+8: Spell: 稳固射击[id:56641]
+9: Spell: 复活宠物[id:982]
+    if talent '复活宠物[id:982]' is taken
+    if player has resources to cast spell '复活宠物[id:982]'
+    if spell '复活宠物[id:982]' is off cooldown
+    if player has buff/debuff '追踪宠物[id:1244922]'
+10: Spell: 狩魂一击[id:1250646]
+    if talent '狩魂一击[id:1250646]' is taken
+    if player has resources to cast spell '狩魂一击[id:1250646]'
+    if spell '狩魂一击[id:1250646]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-11: Spell: Kill Command[id:259489]
-    if player does not have buff/debuff 'Tip of the Spear[id:260286]'
-    if talent 'Kill Command[id:259489]' is taken
-    if player has resources to cast spell 'Kill Command[id:259489]'
-    if spell 'Kill Command[id:259489]' is off cooldown
-    if spell 'Kill Command[id:259489]' is within allowed range
-12: Spell: Flamefang Pitch[id:1251592]
-    if talent 'Flamefang Pitch[id:1251592]' is taken
-    if player has resources to cast spell 'Flamefang Pitch[id:1251592]'
-    if spell 'Flamefang Pitch[id:1251592]' is off cooldown
+11: Spell: 杀戮命令[id:259489]
+    if player does not have buff/debuff '利矛之刃[id:260286]'
+    if talent '杀戮命令[id:259489]' is taken
+    if player has resources to cast spell '杀戮命令[id:259489]'
+    if spell '杀戮命令[id:259489]' is off cooldown
+    if spell '杀戮命令[id:259489]' is within allowed range
+12: Spell: 燎焰沥青[id:1251592]
+    if talent '燎焰沥青[id:1251592]' is taken
+    if player has resources to cast spell '燎焰沥青[id:1251592]'
+    if spell '燎焰沥青[id:1251592]' is off cooldown
     if there are more than 3 targets within 10 yards of target
     if target is less than 40 yards away
-13: Spell: Flamefang Pitch[id:1251592]
-    if talent 'Flamefang Pitch[id:1251592]' is taken
-    if player has resources to cast spell 'Flamefang Pitch[id:1251592]'
-    if spell 'Flamefang Pitch[id:1251592]' is off cooldown
+13: Spell: 燎焰沥青[id:1251592]
+    if talent '燎焰沥青[id:1251592]' is taken
+    if player has resources to cast spell '燎焰沥青[id:1251592]'
+    if spell '燎焰沥青[id:1251592]' is off cooldown
     if target is less than 40 yards away

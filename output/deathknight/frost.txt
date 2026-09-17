@@ -1,120 +1,120 @@
 Frost
-0: Spell: Reaper's Mark[id:439843]
-    if spell 'Reaper's Mark[id:439843]' is within allowed range
-    if talent 'Reaper's Mark[id:439843]' is taken
-    if player has resources to cast spell 'Reaper's Mark[id:439843]'
-    if spell 'Reaper's Mark[id:439843]' is off cooldown
-1: Spell: Frostscythe[id:207230]
-    if talent 'Frostscythe[id:207230]' is taken
-    if player has resources to cast spell 'Frostscythe[id:207230]'
-    if spell 'Frostscythe[id:207230]' is off cooldown
+0: Spell: 死神印记[id:439843]
+    if spell '死神印记[id:439843]' is within allowed range
+    if talent '死神印记[id:439843]' is taken
+    if player has resources to cast spell '死神印记[id:439843]'
+    if spell '死神印记[id:439843]' is off cooldown
+1: Spell: 冰霜之镰[id:207230]
+    if talent '冰霜之镰[id:207230]' is taken
+    if player has resources to cast spell '冰霜之镰[id:207230]'
+    if spell '冰霜之镰[id:207230]' is off cooldown
     if target is less than 8 yards away
     if there are more than 3 targets within 10 yards of player
-    if player has buff/debuff 'Killing Machine[id:51124]'
-2: Spell: Obliterate[id:49020]
-    if player has buff/debuff 'Killing Machine[id:51124]'
-    if talent 'Obliterate[id:49020]' is taken
-    if player has resources to cast spell 'Obliterate[id:49020]'
-    if spell 'Obliterate[id:49020]' is off cooldown
-    if spell 'Obliterate[id:49020]' is within allowed range
-3: Spell: Remorseless Winter[id:196770]
+    if player has buff/debuff '杀戮机器[id:51124]'
+2: Spell: 湮灭[id:49020]
+    if player has buff/debuff '杀戮机器[id:51124]'
+    if talent '湮灭[id:49020]' is taken
+    if player has resources to cast spell '湮灭[id:49020]'
+    if spell '湮灭[id:49020]' is off cooldown
+    if spell '湮灭[id:49020]' is within allowed range
+3: Spell: 冷酷严冬[id:196770]
     if target is less than 10 yards away
-    if talent 'Remorseless Winter[id:196770]' is taken
-    if player has resources to cast spell 'Remorseless Winter[id:196770]'
-    if spell 'Remorseless Winter[id:196770]' is off cooldown
-    if player does not have buff/debuff 'Frozen Dominion[id:377226]'
-4: Spell: Howling Blast[id:49184]
-    if player has buff/debuff 'Rime[id:59052]'
-    if talent 'Howling Blast[id:49184]' is taken
-    if player has resources to cast spell 'Howling Blast[id:49184]'
-    if spell 'Howling Blast[id:49184]' is off cooldown
-5: Spell: Glacial Advance[id:194913]
+    if talent '冷酷严冬[id:196770]' is taken
+    if player has resources to cast spell '冷酷严冬[id:196770]'
+    if spell '冷酷严冬[id:196770]' is off cooldown
+    if player does not have buff/debuff '冰霜统御[id:377226]'
+4: Spell: 凛风冲击[id:49184]
+    if player has buff/debuff '白霜[id:59052]'
+    if talent '凛风冲击[id:49184]' is taken
+    if player has resources to cast spell '凛风冲击[id:49184]'
+    if spell '凛风冲击[id:49184]' is off cooldown
+5: Spell: 冰川突进[id:194913]
     if target is less than 10 yards away
     if there are more than 3 targets within 10 yards of player
-    if talent 'Glacial Advance[id:194913]' is taken
-    if player has resources to cast spell 'Glacial Advance[id:194913]'
-    if spell 'Glacial Advance[id:194913]' is off cooldown
+    if talent '冰川突进[id:194913]' is taken
+    if player has resources to cast spell '冰川突进[id:194913]'
+    if spell '冰川突进[id:194913]' is off cooldown
     if player has more than 80 runic power
-6: Spell: Soul Reaper[id:343294]
-    if talent 'Soul Reaper[id:343294]' is taken
-    if player has resources to cast spell 'Soul Reaper[id:343294]'
-    if spell 'Soul Reaper[id:343294]' is off cooldown
+6: Spell: 灵魂收割[id:343294]
+    if talent '灵魂收割[id:343294]' is taken
+    if player has resources to cast spell '灵魂收割[id:343294]'
+    if spell '灵魂收割[id:343294]' is off cooldown
     if target has less than 35% health
-    if spell 'Soul Reaper[id:343294]' is within allowed range
+    if spell '灵魂收割[id:343294]' is within allowed range
     if there are less than 2 targets within 10 yards of target
-7: Spell: Frost Strike[id:49143]
+7: Spell: 冰霜打击[id:49143]
     if player has more than 80 runic power
-    if talent 'Frost Strike[id:49143]' is taken
-    if player has resources to cast spell 'Frost Strike[id:49143]'
-    if spell 'Frost Strike[id:49143]' is off cooldown
-    if spell 'Frost Strike[id:49143]' is within allowed range
-8: Spell: Obliterate[id:49020]
-    if talent 'Obliterate[id:49020]' is taken
-    if player has resources to cast spell 'Obliterate[id:49020]'
-    if spell 'Obliterate[id:49020]' is off cooldown
-    if spell 'Obliterate[id:49020]' is within allowed range
-9: Spell: Frost Strike[id:49143]
-    if talent 'Frost Strike[id:49143]' is taken
-    if player has resources to cast spell 'Frost Strike[id:49143]'
-    if spell 'Frost Strike[id:49143]' is off cooldown
-    if spell 'Frost Strike[id:49143]' is within allowed range
-10: Spell: Howling Blast[id:49184]
-    if talent 'Howling Blast[id:49184]' is taken
-    if spell 'Howling Blast[id:49184]' is off cooldown
-    if spell 'Howling Blast[id:49184]' is within allowed range
+    if talent '冰霜打击[id:49143]' is taken
+    if player has resources to cast spell '冰霜打击[id:49143]'
+    if spell '冰霜打击[id:49143]' is off cooldown
+    if spell '冰霜打击[id:49143]' is within allowed range
+8: Spell: 湮灭[id:49020]
+    if talent '湮灭[id:49020]' is taken
+    if player has resources to cast spell '湮灭[id:49020]'
+    if spell '湮灭[id:49020]' is off cooldown
+    if spell '湮灭[id:49020]' is within allowed range
+9: Spell: 冰霜打击[id:49143]
+    if talent '冰霜打击[id:49143]' is taken
+    if player has resources to cast spell '冰霜打击[id:49143]'
+    if spell '冰霜打击[id:49143]' is off cooldown
+    if spell '冰霜打击[id:49143]' is within allowed range
+10: Spell: 凛风冲击[id:49184]
+    if talent '凛风冲击[id:49184]' is taken
+    if spell '凛风冲击[id:49184]' is off cooldown
+    if spell '凛风冲击[id:49184]' is within allowed range
     if target is more than 15 yards away
-11: Spell: Pillar of Frost[id:51271]
-    if talent 'Pillar of Frost[id:51271]' is taken
-    if player has resources to cast spell 'Pillar of Frost[id:51271]'
-    if spell 'Pillar of Frost[id:51271]' is off cooldown
-    if spell 'Pillar of Frost[id:51271]' is off cooldown
+11: Spell: 冰霜之柱[id:51271]
+    if talent '冰霜之柱[id:51271]' is taken
+    if player has resources to cast spell '冰霜之柱[id:51271]'
+    if spell '冰霜之柱[id:51271]' is off cooldown
+    if spell '冰霜之柱[id:51271]' is off cooldown
     if target is less than 8 yards away
-12: Spell: Frostscythe[id:207230]
-    if talent 'Frostscythe[id:207230]' is taken
-    if player has resources to cast spell 'Frostscythe[id:207230]'
-    if spell 'Frostscythe[id:207230]' is off cooldown
+12: Spell: 冰霜之镰[id:207230]
+    if talent '冰霜之镰[id:207230]' is taken
+    if player has resources to cast spell '冰霜之镰[id:207230]'
+    if spell '冰霜之镰[id:207230]' is off cooldown
     if target is less than 8 yards away
     if there are more than 3 targets within 10 yards of player
-13: Spell: Glacial Advance[id:194913]
+13: Spell: 冰川突进[id:194913]
     if target is less than 10 yards away
     if there are more than 3 targets within 10 yards of player
-    if talent 'Glacial Advance[id:194913]' is taken
-    if player has resources to cast spell 'Glacial Advance[id:194913]'
-    if spell 'Glacial Advance[id:194913]' is off cooldown
-14: Spell: Frost Strike[id:49143]
-    if talent 'Frost Strike[id:49143]' is taken
-    if player has resources to cast spell 'Frost Strike[id:49143]'
-    if spell 'Frost Strike[id:49143]' is off cooldown
+    if talent '冰川突进[id:194913]' is taken
+    if player has resources to cast spell '冰川突进[id:194913]'
+    if spell '冰川突进[id:194913]' is off cooldown
+14: Spell: 冰霜打击[id:49143]
+    if talent '冰霜打击[id:49143]' is taken
+    if player has resources to cast spell '冰霜打击[id:49143]'
+    if spell '冰霜打击[id:49143]' is off cooldown
     if target is less than 8 yards away
-    if player has buff/debuff 'Frostbane[id:1229310]'
-15: Spell: Empower Rune Weapon[id:47568]
-    if talent 'Empower Rune Weapon[id:47568]' is taken
-    if player has resources to cast spell 'Empower Rune Weapon[id:47568]'
-    if spell 'Empower Rune Weapon[id:47568]' is off cooldown
-    if spell 'Empower Rune Weapon[id:47568]' is within allowed range
+    if player has buff/debuff '冰霜灾祸[id:1229310]'
+15: Spell: 符文武器增效[id:47568]
+    if talent '符文武器增效[id:47568]' is taken
+    if player has resources to cast spell '符文武器增效[id:47568]'
+    if spell '符文武器增效[id:47568]' is off cooldown
+    if spell '符文武器增效[id:47568]' is within allowed range
     if player has less than 800 runic power
-    if player has less than 1 stacks of buff/debuff 'Killing Machine[id:51124]'
-16: Spell: Empower Rune Weapon[id:47568]
-    if talent 'Empower Rune Weapon[id:47568]' is taken
-    if player has resources to cast spell 'Empower Rune Weapon[id:47568]'
-    if spell 'Empower Rune Weapon[id:47568]' is off cooldown
-    if spell 'Empower Rune Weapon[id:47568]' is within allowed range
+    if player has less than 1 stacks of buff/debuff '杀戮机器[id:51124]'
+16: Spell: 符文武器增效[id:47568]
+    if talent '符文武器增效[id:47568]' is taken
+    if player has resources to cast spell '符文武器增效[id:47568]'
+    if spell '符文武器增效[id:47568]' is off cooldown
+    if spell '符文武器增效[id:47568]' is within allowed range
     if player has less than 80 runic power
-    if player does not have buff/debuff 'Killing Machine[id:51124]'
-17: Spell: Rune Strike[id:316239]
-18: Spell: Frostwyrm's Fury[id:279302]
-    if talent 'Frostwyrm's Fury[id:279302]' is taken
-    if player has resources to cast spell 'Frostwyrm's Fury[id:279302]'
-    if spell 'Frostwyrm's Fury[id:279302]' is off cooldown
+    if player does not have buff/debuff '杀戮机器[id:51124]'
+17: Spell: 符文打击[id:316239]
+18: Spell: 冰霜巨龙之怒[id:279302]
+    if talent '冰霜巨龙之怒[id:279302]' is taken
+    if player has resources to cast spell '冰霜巨龙之怒[id:279302]'
+    if spell '冰霜巨龙之怒[id:279302]' is off cooldown
     if target is less than 30 yards away
-    if player has buff/debuff 'Pillar of Frost[id:51271]'
-19: Spell: Frostwyrm's Fury[id:279302]
-    if talent 'Frostwyrm's Fury[id:279302]' is taken
-    if player has resources to cast spell 'Frostwyrm's Fury[id:279302]'
-    if spell 'Frostwyrm's Fury[id:279302]' is off cooldown
+    if player has buff/debuff '冰霜之柱[id:51271]'
+19: Spell: 冰霜巨龙之怒[id:279302]
+    if talent '冰霜巨龙之怒[id:279302]' is taken
+    if player has resources to cast spell '冰霜巨龙之怒[id:279302]'
+    if spell '冰霜巨龙之怒[id:279302]' is off cooldown
     if target is less than 30 yards away
-20: Spell: Breath of Sindragosa[id:1249658]
-    if talent 'Breath of Sindragosa[id:1249658]' is taken
-    if player has resources to cast spell 'Breath of Sindragosa[id:1249658]'
-    if spell 'Breath of Sindragosa[id:1249658]' is off cooldown
+20: Spell: 冰龙吐息[id:1249658]
+    if talent '冰龙吐息[id:1249658]' is taken
+    if player has resources to cast spell '冰龙吐息[id:1249658]'
+    if spell '冰龙吐息[id:1249658]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

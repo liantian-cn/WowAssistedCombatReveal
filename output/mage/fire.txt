@@ -1,98 +1,98 @@
 Fire
-0: Spell: Fire Blast[id:108853]
-    if talent 'Fire Blast[id:108853]' is taken
-    if player has resources to cast spell 'Fire Blast[id:108853]'
-    if spell 'Fire Blast[id:108853]' is off cooldown
-    if player has buff/debuff 'Heating Up[id:48107]'
-    if player does not have buff/debuff 'Hyperthermia[id:383874]'
-1: Spell: Flamestrike[id:2120]
-    if talent 'Flamestrike[id:2120]' is taken
-    if player has resources to cast spell 'Flamestrike[id:2120]'
-    if spell 'Flamestrike[id:2120]' is off cooldown
-    if player has buff/debuff 'Hot Streak![id:48108]'
+0: Spell: 火焰冲击[id:108853]
+    if talent '火焰冲击[id:108853]' is taken
+    if player has resources to cast spell '火焰冲击[id:108853]'
+    if spell '火焰冲击[id:108853]' is off cooldown
+    if player has buff/debuff '热力迸发[id:48107]'
+    if player does not have buff/debuff '过热高温[id:383874]'
+1: Spell: 烈焰风暴[id:2120]
+    if talent '烈焰风暴[id:2120]' is taken
+    if player has resources to cast spell '烈焰风暴[id:2120]'
+    if spell '烈焰风暴[id:2120]' is off cooldown
+    if player has buff/debuff '炽热连击！[id:48108]'
     if there are more than 3 targets within 10 yards of target
-2: Spell: Pyroblast[id:11366]
-    if talent 'Pyroblast[id:11366]' is taken
-    if player has resources to cast spell 'Pyroblast[id:11366]'
-    if spell 'Pyroblast[id:11366]' is off cooldown
-    if player has buff/debuff 'Hot Streak![id:48108]'
-3: Spell: Meteor[id:153561]
-    if talent 'Meteor[id:153561]' is taken
-    if player has resources to cast spell 'Meteor[id:153561]'
-    if spell 'Meteor[id:153561]' is off cooldown
-4: Spell: Fireball[id:133]
-    if talent 'Fireball[id:133]' is taken
-    if player has resources to cast spell 'Fireball[id:133]'
-    if spell 'Fireball[id:133]' is off cooldown
-    if spell 'Fireball[id:133]' can be successfully cast
-5: Spell: Fireball[id:133]
-6: Spell: Frostfire Bolt[id:431044]
-    if talent 'Frostfire Bolt[id:431044]' is taken
-    if player has resources to cast spell 'Frostfire Bolt[id:431044]'
-    if spell 'Frostfire Bolt[id:431044]' is off cooldown
-    if spell 'Frostfire Bolt[id:431044]' can be successfully cast
-7: Spell: Combustion[id:190319]
-    if talent 'Combustion[id:190319]' is taken
-    if player has resources to cast spell 'Combustion[id:190319]'
-    if spell 'Combustion[id:190319]' is off cooldown
+2: Spell: 炎爆术[id:11366]
+    if talent '炎爆术[id:11366]' is taken
+    if player has resources to cast spell '炎爆术[id:11366]'
+    if spell '炎爆术[id:11366]' is off cooldown
+    if player has buff/debuff '炽热连击！[id:48108]'
+3: Spell: 流星[id:153561]
+    if talent '流星[id:153561]' is taken
+    if player has resources to cast spell '流星[id:153561]'
+    if spell '流星[id:153561]' is off cooldown
+4: Spell: 火球术[id:133]
+    if talent '火球术[id:133]' is taken
+    if player has resources to cast spell '火球术[id:133]'
+    if spell '火球术[id:133]' is off cooldown
+    if spell '火球术[id:133]' can be successfully cast
+5: Spell: 火球术[id:133]
+6: Spell: 霜火之箭[id:431044]
+    if talent '霜火之箭[id:431044]' is taken
+    if player has resources to cast spell '霜火之箭[id:431044]'
+    if spell '霜火之箭[id:431044]' is off cooldown
+    if spell '霜火之箭[id:431044]' can be successfully cast
+7: Spell: 燃烧[id:190319]
+    if talent '燃烧[id:190319]' is taken
+    if player has resources to cast spell '燃烧[id:190319]'
+    if spell '燃烧[id:190319]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-8: Spell: Pyroblast[id:11366]
-    if talent 'Pyroblast[id:11366]' is taken
-    if player has resources to cast spell 'Pyroblast[id:11366]'
-    if spell 'Pyroblast[id:11366]' is off cooldown
-    if player has buff/debuff 'Hyperthermia[id:383874]'
-9: Spell: Flamestrike[id:2120]
-    if talent 'Flamestrike[id:2120]' is taken
-    if player has resources to cast spell 'Flamestrike[id:2120]'
-    if spell 'Flamestrike[id:2120]' is off cooldown
-    if player has buff/debuff 'Hyperthermia[id:383874]'
+8: Spell: 炎爆术[id:11366]
+    if talent '炎爆术[id:11366]' is taken
+    if player has resources to cast spell '炎爆术[id:11366]'
+    if spell '炎爆术[id:11366]' is off cooldown
+    if player has buff/debuff '过热高温[id:383874]'
+9: Spell: 烈焰风暴[id:2120]
+    if talent '烈焰风暴[id:2120]' is taken
+    if player has resources to cast spell '烈焰风暴[id:2120]'
+    if spell '烈焰风暴[id:2120]' is off cooldown
+    if player has buff/debuff '过热高温[id:383874]'
     if there are more than 3 targets within 10 yards of target
-10: Spell: Arcane Intellect[id:1459]
-    if talent 'Arcane Intellect[id:1459]' is taken
-    if player has resources to cast spell 'Arcane Intellect[id:1459]'
-    if spell 'Arcane Intellect[id:1459]' is off cooldown
-    if player has buff/debuff 'Arcane Intellect Highlight[id:1271907]'
-11: Spell: Flamestrike[id:1254851]
-    if talent 'Flamestrike[id:1254851]' is taken
-    if player has resources to cast spell 'Flamestrike[id:1254851]'
-    if spell 'Flamestrike[id:1254851]' is off cooldown
-    if player has buff/debuff 'Hyperthermia[id:383874]'
+10: Spell: 奥术智慧[id:1459]
+    if talent '奥术智慧[id:1459]' is taken
+    if player has resources to cast spell '奥术智慧[id:1459]'
+    if spell '奥术智慧[id:1459]' is off cooldown
+    if player has buff/debuff '奥术智慧高亮[id:1271907]'
+11: Spell: 烈焰风暴[id:1254851]
+    if talent '烈焰风暴[id:1254851]' is taken
+    if player has resources to cast spell '烈焰风暴[id:1254851]'
+    if spell '烈焰风暴[id:1254851]' is off cooldown
+    if player has buff/debuff '过热高温[id:383874]'
     if there are more than 3 targets within 10 yards of target
-12: Spell: Flamestrike[id:1254851]
-    if talent 'Flamestrike[id:1254851]' is taken
-    if player has resources to cast spell 'Flamestrike[id:1254851]'
-    if spell 'Flamestrike[id:1254851]' is off cooldown
-    if player has buff/debuff 'Hot Streak![id:48108]'
+12: Spell: 烈焰风暴[id:1254851]
+    if talent '烈焰风暴[id:1254851]' is taken
+    if player has resources to cast spell '烈焰风暴[id:1254851]'
+    if spell '烈焰风暴[id:1254851]' is off cooldown
+    if player has buff/debuff '炽热连击！[id:48108]'
     if there are more than 3 targets within 10 yards of target
-13: Spell: Scorch[id:2948]
-    if spell 'Scorch[id:2948]' can be successfully cast
-    if spell 'Scorch[id:2948]' is off cooldown
-    if player has resources to cast spell 'Scorch[id:2948]'
-    if talent 'Scorch[id:2948]' is taken
+13: Spell: 灼烧[id:2948]
+    if spell '灼烧[id:2948]' can be successfully cast
+    if spell '灼烧[id:2948]' is off cooldown
+    if player has resources to cast spell '灼烧[id:2948]'
+    if talent '灼烧[id:2948]' is taken
     if target has less than 30% health
-14: Spell: Scorch[id:2948]
-    if talent 'Scorch[id:2948]' is taken
-    if player has resources to cast spell 'Scorch[id:2948]'
-    if spell 'Scorch[id:2948]' is off cooldown
-    if spell 'Scorch[id:2948]' can be successfully cast
-    if player has buff/debuff 'Heat Shimmer[id:458964]'
-15: Spell: Flamestrike[id:2120]
-    if talent 'Flamestrike[id:2120]' is taken
-    if player has resources to cast spell 'Flamestrike[id:2120]'
-    if spell 'Flamestrike[id:2120]' is off cooldown
+14: Spell: 灼烧[id:2948]
+    if talent '灼烧[id:2948]' is taken
+    if player has resources to cast spell '灼烧[id:2948]'
+    if spell '灼烧[id:2948]' is off cooldown
+    if spell '灼烧[id:2948]' can be successfully cast
+    if player has buff/debuff '热能闪光[id:458964]'
+15: Spell: 烈焰风暴[id:2120]
+    if talent '烈焰风暴[id:2120]' is taken
+    if player has resources to cast spell '烈焰风暴[id:2120]'
+    if spell '烈焰风暴[id:2120]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Pyroclasm[id:269651]'
-    if spell 'Flamestrike[id:2120]' can be successfully cast
-16: Spell: Flamestrike[id:1254851]
-    if player has buff/debuff 'Pyroclasm[id:269651]'
+    if player has buff/debuff '火焰冲撞[id:269651]'
+    if spell '烈焰风暴[id:2120]' can be successfully cast
+16: Spell: 烈焰风暴[id:1254851]
+    if player has buff/debuff '火焰冲撞[id:269651]'
     if there are more than 3 targets within 10 yards of target
-    if spell 'Flamestrike[id:1254851]' is off cooldown
-    if player has resources to cast spell 'Flamestrike[id:1254851]'
-    if talent 'Flamestrike[id:1254851]' is taken
-    if spell 'Flamestrike[id:1254851]' can be successfully cast
-17: Spell: Pyroblast[id:11366]
-    if spell 'Pyroblast[id:11366]' is off cooldown
-    if player has resources to cast spell 'Pyroblast[id:11366]'
-    if talent 'Pyroblast[id:11366]' is taken
-    if player has buff/debuff 'Pyroclasm[id:269651]'
-    if spell 'Pyroblast[id:11366]' can be successfully cast
+    if spell '烈焰风暴[id:1254851]' is off cooldown
+    if player has resources to cast spell '烈焰风暴[id:1254851]'
+    if talent '烈焰风暴[id:1254851]' is taken
+    if spell '烈焰风暴[id:1254851]' can be successfully cast
+17: Spell: 炎爆术[id:11366]
+    if spell '炎爆术[id:11366]' is off cooldown
+    if player has resources to cast spell '炎爆术[id:11366]'
+    if talent '炎爆术[id:11366]' is taken
+    if player has buff/debuff '火焰冲撞[id:269651]'
+    if spell '炎爆术[id:11366]' can be successfully cast

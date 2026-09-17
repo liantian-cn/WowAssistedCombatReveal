@@ -1,80 +1,80 @@
 Restoration
-0: Spell: Rip[id:1079]
-    if talent 'Rip[id:1079]' is taken
-    if player has resources to cast spell 'Rip[id:1079]'
-    if spell 'Rip[id:1079]' is off cooldown
-    if player has buff/debuff 'Cat Form[id:768]'
+0: Spell: 割裂[id:1079]
+    if talent '割裂[id:1079]' is taken
+    if player has resources to cast spell '割裂[id:1079]'
+    if spell '割裂[id:1079]' is off cooldown
+    if player has buff/debuff '猎豹形态[id:768]'
     if player has more than 5 combo points
-    if target does not have buff/debuff 'Rip[id:1079]'
-    if spell 'Rip[id:1079]' is within allowed range
-1: Spell: Ferocious Bite[id:22568]
-    if talent 'Ferocious Bite[id:22568]' is taken
-    if player has resources to cast spell 'Ferocious Bite[id:22568]'
-    if spell 'Ferocious Bite[id:22568]' is off cooldown
-    if player has buff/debuff 'Cat Form[id:768]'
+    if target does not have buff/debuff '割裂[id:1079]'
+    if spell '割裂[id:1079]' is within allowed range
+1: Spell: 凶猛撕咬[id:22568]
+    if talent '凶猛撕咬[id:22568]' is taken
+    if player has resources to cast spell '凶猛撕咬[id:22568]'
+    if spell '凶猛撕咬[id:22568]' is off cooldown
+    if player has buff/debuff '猎豹形态[id:768]'
     if player has more than 5 combo points
-    if spell 'Ferocious Bite[id:22568]' is within allowed range
-2: Spell: Thrash[id:106830]
-    if talent 'Thrash[id:106830]' is taken
-    if player has resources to cast spell 'Thrash[id:106830]'
-    if spell 'Thrash[id:106830]' is off cooldown
+    if spell '凶猛撕咬[id:22568]' is within allowed range
+2: Spell: 痛击[id:106830]
+    if talent '痛击[id:106830]' is taken
+    if player has resources to cast spell '痛击[id:106830]'
+    if spell '痛击[id:106830]' is off cooldown
     if target is less than 5 yards away
-    if player has buff/debuff 'Cat Form[id:768]'
-    if target does not have buff/debuff 'Thrash[id:405233]'
+    if player has buff/debuff '猎豹形态[id:768]'
+    if target does not have buff/debuff '痛击[id:405233]'
     if there are more than 3 targets within 10 yards of player
-3: Spell: Swipe[id:106785]
-    if talent 'Swipe[id:106785]' is taken
-    if player has resources to cast spell 'Swipe[id:106785]'
-    if spell 'Swipe[id:106785]' is off cooldown
+3: Spell: 横扫[id:106785]
+    if talent '横扫[id:106785]' is taken
+    if player has resources to cast spell '横扫[id:106785]'
+    if spell '横扫[id:106785]' is off cooldown
     if target is less than 5 yards away
-    if player has buff/debuff 'Cat Form[id:768]'
+    if player has buff/debuff '猎豹形态[id:768]'
     if there are more than 3 targets within 10 yards of player
-4: Spell: Shred[id:5221]
-    if talent 'Shred[id:5221]' is taken
-    if player has resources to cast spell 'Shred[id:5221]'
-    if spell 'Shred[id:5221]' is off cooldown
-    if player has buff/debuff 'Cat Form[id:768]'
-    if spell 'Shred[id:5221]' is within allowed range
-5: Spell: Rake[id:1822]
-    if talent 'Rake[id:1822]' is taken
-    if player has resources to cast spell 'Rake[id:1822]'
-    if spell 'Rake[id:1822]' is off cooldown
-    if player has buff/debuff 'Cat Form[id:768]'
-    if target does not have buff/debuff 'Rake[id:155722]'
-    if spell 'Rake[id:1822]' is within allowed range
-6: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if target does not have buff/debuff 'Moonfire[id:164812]'
-    if player does not have buff/debuff 'Cat Form[id:768]'
-7: Spell: Sunfire[id:93402]
-    if talent 'Sunfire[id:93402]' is taken
-    if player has resources to cast spell 'Sunfire[id:93402]'
-    if spell 'Sunfire[id:93402]' is off cooldown
-    if target does not have buff/debuff 'Sunfire[id:164815]'
-    if player does not have buff/debuff 'Cat Form[id:768]'
-8: Spell: Starfire[id:197628]
-    if talent 'Starfire[id:197628]' is taken
-    if player has resources to cast spell 'Starfire[id:197628]'
-    if spell 'Starfire[id:197628]' is off cooldown
+4: Spell: 撕碎[id:5221]
+    if talent '撕碎[id:5221]' is taken
+    if player has resources to cast spell '撕碎[id:5221]'
+    if spell '撕碎[id:5221]' is off cooldown
+    if player has buff/debuff '猎豹形态[id:768]'
+    if spell '撕碎[id:5221]' is within allowed range
+5: Spell: 斜掠[id:1822]
+    if talent '斜掠[id:1822]' is taken
+    if player has resources to cast spell '斜掠[id:1822]'
+    if spell '斜掠[id:1822]' is off cooldown
+    if player has buff/debuff '猎豹形态[id:768]'
+    if target does not have buff/debuff '斜掠[id:155722]'
+    if spell '斜掠[id:1822]' is within allowed range
+6: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if target does not have buff/debuff '月火术[id:164812]'
+    if player does not have buff/debuff '猎豹形态[id:768]'
+7: Spell: 阳炎术[id:93402]
+    if talent '阳炎术[id:93402]' is taken
+    if player has resources to cast spell '阳炎术[id:93402]'
+    if spell '阳炎术[id:93402]' is off cooldown
+    if target does not have buff/debuff '阳炎术[id:164815]'
+    if player does not have buff/debuff '猎豹形态[id:768]'
+8: Spell: 星火术[id:197628]
+    if talent '星火术[id:197628]' is taken
+    if player has resources to cast spell '星火术[id:197628]'
+    if spell '星火术[id:197628]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Cat Form[id:768]'
-    if spell 'Starfire[id:197628]' can be successfully cast
-9: Spell: Starsurge[id:197626]
-    if talent 'Starsurge[id:197626]' is taken
-    if player has resources to cast spell 'Starsurge[id:197626]'
-    if spell 'Starsurge[id:197626]' is off cooldown
-    if player does not have buff/debuff 'Cat Form[id:768]'
-10: Spell: Wrath[id:5176]
-    if talent 'Wrath[id:5176]' is taken
-    if player has resources to cast spell 'Wrath[id:5176]'
-    if spell 'Wrath[id:5176]' is off cooldown
-    if player does not have buff/debuff 'Cat Form[id:768]'
-    if spell 'Wrath[id:5176]' can be successfully cast
-11: Spell: Moonfire[id:8921]
-12: Spell: Mark of the Wild[id:1126]
-    if talent 'Mark of the Wild[id:1126]' is taken
-    if player has resources to cast spell 'Mark of the Wild[id:1126]'
-    if spell 'Mark of the Wild[id:1126]' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'
+    if player does not have buff/debuff '猎豹形态[id:768]'
+    if spell '星火术[id:197628]' can be successfully cast
+9: Spell: 星涌术[id:197626]
+    if talent '星涌术[id:197626]' is taken
+    if player has resources to cast spell '星涌术[id:197626]'
+    if spell '星涌术[id:197626]' is off cooldown
+    if player does not have buff/debuff '猎豹形态[id:768]'
+10: Spell: 愤怒[id:5176]
+    if talent '愤怒[id:5176]' is taken
+    if player has resources to cast spell '愤怒[id:5176]'
+    if spell '愤怒[id:5176]' is off cooldown
+    if player does not have buff/debuff '猎豹形态[id:768]'
+    if spell '愤怒[id:5176]' can be successfully cast
+11: Spell: 月火术[id:8921]
+12: Spell: 野性印记[id:1126]
+    if talent '野性印记[id:1126]' is taken
+    if player has resources to cast spell '野性印记[id:1126]'
+    if spell '野性印记[id:1126]' is off cooldown
+    if player has buff/debuff '野性印记高亮[id:1271910]'

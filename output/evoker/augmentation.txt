@@ -1,75 +1,75 @@
 Augmentation
-0: Spell: Ebon Might[id:395152]
-    if talent 'Ebon Might[id:395152]' is taken
-    if player has resources to cast spell 'Ebon Might[id:395152]'
-    if spell 'Ebon Might[id:395152]' is off cooldown
-    if player does not have buff/debuff 'Ebon Might[id:395296]'
-1: Spell: Prescience[id:409311]
-    if talent 'Prescience[id:409311]' is taken
-    if player has resources to cast spell 'Prescience[id:409311]'
-    if spell 'Prescience[id:409311]' is off cooldown
-    if player does not have buff/debuff 'Prescience[id:410089]'
-2: Spell: Fire Breath[id:357208]
-    if talent 'Fire Breath[id:357208]' is taken
-    if player has resources to cast spell 'Fire Breath[id:357208]'
-    if spell 'Fire Breath[id:357208]' is off cooldown
-    if spell 'Fire Breath[id:357208]' can be successfully cast
-3: Spell: Upheaval[id:396286]
-    if talent 'Upheaval[id:396286]' is taken
-    if player has resources to cast spell 'Upheaval[id:396286]'
-    if spell 'Upheaval[id:396286]' is off cooldown
-    if spell 'Upheaval[id:396286]' can be successfully cast
-4: Spell: Disintegrate[id:356995]
-    if talent 'Disintegrate[id:356995]' is taken
-    if player has resources to cast spell 'Disintegrate[id:356995]'
-    if spell 'Disintegrate[id:356995]' is off cooldown
-5: Spell: Blistering Scales[id:360827]
-    if talent 'Blistering Scales[id:360827]' is taken
-    if player has resources to cast spell 'Blistering Scales[id:360827]'
-    if spell 'Blistering Scales[id:360827]' is off cooldown
-    if player does not have buff/debuff 'Blistering Scales[id:1245013]'
+0: Spell: 黑檀之力[id:395152]
+    if talent '黑檀之力[id:395152]' is taken
+    if player has resources to cast spell '黑檀之力[id:395152]'
+    if spell '黑檀之力[id:395152]' is off cooldown
+    if player does not have buff/debuff '黑檀之力[id:395296]'
+1: Spell: 先知先觉[id:409311]
+    if talent '先知先觉[id:409311]' is taken
+    if player has resources to cast spell '先知先觉[id:409311]'
+    if spell '先知先觉[id:409311]' is off cooldown
+    if player does not have buff/debuff '先知先觉[id:410089]'
+2: Spell: 火焰吐息[id:357208]
+    if talent '火焰吐息[id:357208]' is taken
+    if player has resources to cast spell '火焰吐息[id:357208]'
+    if spell '火焰吐息[id:357208]' is off cooldown
+    if spell '火焰吐息[id:357208]' can be successfully cast
+3: Spell: 地壳激变[id:396286]
+    if talent '地壳激变[id:396286]' is taken
+    if player has resources to cast spell '地壳激变[id:396286]'
+    if spell '地壳激变[id:396286]' is off cooldown
+    if spell '地壳激变[id:396286]' can be successfully cast
+4: Spell: 裂解[id:356995]
+    if talent '裂解[id:356995]' is taken
+    if player has resources to cast spell '裂解[id:356995]'
+    if spell '裂解[id:356995]' is off cooldown
+5: Spell: 炽火龙鳞[id:360827]
+    if talent '炽火龙鳞[id:360827]' is taken
+    if player has resources to cast spell '炽火龙鳞[id:360827]'
+    if spell '炽火龙鳞[id:360827]' is off cooldown
+    if player does not have buff/debuff '炽火龙鳞[id:1245013]'
     if target is less than 30 yards away
-6: Spell: Living Flame[id:361469]
-    if talent 'Living Flame[id:361469]' is taken
-    if player has resources to cast spell 'Living Flame[id:361469]'
-    if spell 'Living Flame[id:361469]' is off cooldown
+6: Spell: 活化烈焰[id:361469]
+    if talent '活化烈焰[id:361469]' is taken
+    if player has resources to cast spell '活化烈焰[id:361469]'
+    if spell '活化烈焰[id:361469]' is off cooldown
     if target is hostile
-    if spell 'Living Flame[id:361469]' can be successfully cast
-7: Spell: Living Flame[id:361469]
-8: Spell: Disintegrate[id:356995]
-    if talent 'Disintegrate[id:356995]' is taken
-    if player has resources to cast spell 'Disintegrate[id:356995]'
-    if spell 'Disintegrate[id:356995]' is off cooldown
-    if spell 'Disintegrate[id:356995]' can be successfully cast
+    if spell '活化烈焰[id:361469]' can be successfully cast
+7: Spell: 活化烈焰[id:361469]
+8: Spell: 裂解[id:356995]
+    if talent '裂解[id:356995]' is taken
+    if player has resources to cast spell '裂解[id:356995]'
+    if spell '裂解[id:356995]' is off cooldown
+    if spell '裂解[id:356995]' can be successfully cast
     if player has more than 2 essence
-    if player has buff/debuff 'Essence Burst[id:392268]'
-9: Spell: Disintegrate[id:356995]
-    if talent 'Disintegrate[id:356995]' is taken
-    if player has resources to cast spell 'Disintegrate[id:356995]'
-    if spell 'Disintegrate[id:356995]' is off cooldown
-    if spell 'Disintegrate[id:356995]' can be successfully cast
+    if player has buff/debuff '精华迸发[id:392268]'
+9: Spell: 裂解[id:356995]
+    if talent '裂解[id:356995]' is taken
+    if player has resources to cast spell '裂解[id:356995]'
+    if spell '裂解[id:356995]' is off cooldown
+    if spell '裂解[id:356995]' can be successfully cast
     if player has more than 4 essence
-10: Spell: Deep Breath[id:357210]
-    if talent 'Deep Breath[id:357210]' is taken
-    if player has resources to cast spell 'Deep Breath[id:357210]'
-    if spell 'Deep Breath[id:357210]' is off cooldown
-    if player does not have buff/debuff 'Recall[id:371807]'
+10: Spell: 深呼吸[id:357210]
+    if talent '深呼吸[id:357210]' is taken
+    if player has resources to cast spell '深呼吸[id:357210]'
+    if spell '深呼吸[id:357210]' is off cooldown
+    if player does not have buff/debuff '回归[id:371807]'
     if target is less than 40 yards away
-    if player does not have buff/debuff 'Recall[id:403760]'
+    if player does not have buff/debuff '回归[id:403760]'
     automation only (not part of the game's Assisted Combat rotation)
-11: Spell: Time Skip[id:404977]
-    if talent 'Time Skip[id:404977]' is taken
-    if player has resources to cast spell 'Time Skip[id:404977]'
-    if spell 'Time Skip[id:404977]' is off cooldown
+11: Spell: 时间跳跃[id:404977]
+    if talent '时间跳跃[id:404977]' is taken
+    if player has resources to cast spell '时间跳跃[id:404977]'
+    if spell '时间跳跃[id:404977]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: Tip the Scales[id:370553]
-    if talent 'Tip the Scales[id:370553]' is taken
-    if player has resources to cast spell 'Tip the Scales[id:370553]'
-    if spell 'Tip the Scales[id:370553]' is off cooldown
-    if spell 'Tip the Scales[id:370553]' is off cooldown
+12: Spell: 扭转天平[id:370553]
+    if talent '扭转天平[id:370553]' is taken
+    if player has resources to cast spell '扭转天平[id:370553]'
+    if spell '扭转天平[id:370553]' is off cooldown
+    if spell '扭转天平[id:370553]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: Blessing of the Bronze[id:364342]
-    if talent 'Blessing of the Bronze[id:364342]' is taken
-    if player has resources to cast spell 'Blessing of the Bronze[id:364342]'
-    if spell 'Blessing of the Bronze[id:364342]' is off cooldown
-    if player has buff/debuff 'Blessing of the Bronze Highlight[id:1271912]'
+13: Spell: 青铜龙的祝福[id:364342]
+    if talent '青铜龙的祝福[id:364342]' is taken
+    if player has resources to cast spell '青铜龙的祝福[id:364342]'
+    if spell '青铜龙的祝福[id:364342]' is off cooldown
+    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'

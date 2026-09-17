@@ -1,120 +1,120 @@
 Destruction
-0: Spell: Cataclysm[id:152108]
-    if talent 'Cataclysm[id:152108]' is taken
-    if player has resources to cast spell 'Cataclysm[id:152108]'
-    if spell 'Cataclysm[id:152108]' is off cooldown
-1: Spell: Rain of Fire[id:5740]
-    if talent 'Rain of Fire[id:5740]' is taken
-    if player has resources to cast spell 'Rain of Fire[id:5740]'
-    if spell 'Rain of Fire[id:5740]' is off cooldown
+0: Spell: 大灾变[id:152108]
+    if talent '大灾变[id:152108]' is taken
+    if player has resources to cast spell '大灾变[id:152108]'
+    if spell '大灾变[id:152108]' is off cooldown
+1: Spell: 火焰之雨[id:5740]
+    if talent '火焰之雨[id:5740]' is taken
+    if player has resources to cast spell '火焰之雨[id:5740]'
+    if spell '火焰之雨[id:5740]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-2: Spell: Rain of Fire[id:1214467]
-    if talent 'Rain of Fire[id:1214467]' is taken
-    if player has resources to cast spell 'Rain of Fire[id:1214467]'
-    if spell 'Rain of Fire[id:1214467]' is off cooldown
+2: Spell: 火焰之雨[id:1214467]
+    if talent '火焰之雨[id:1214467]' is taken
+    if player has resources to cast spell '火焰之雨[id:1214467]'
+    if spell '火焰之雨[id:1214467]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-3: Spell: Chaos Bolt[id:116858]
-    if talent 'Chaos Bolt[id:116858]' is taken
-    if player has resources to cast spell 'Chaos Bolt[id:116858]'
-    if spell 'Chaos Bolt[id:116858]' is off cooldown
+3: Spell: 混乱之箭[id:116858]
+    if talent '混乱之箭[id:116858]' is taken
+    if player has resources to cast spell '混乱之箭[id:116858]'
+    if spell '混乱之箭[id:116858]' is off cooldown
     if there are less than 2 targets within 10 yards of target
     if player has more than 20 soul shards
-    if spell 'Chaos Bolt[id:116858]' can be successfully cast
-    if player has buff/debuff 'Ritual of Ruin[id:387157]'
-4: Spell: Corruption[id:172]
-    if talent 'Corruption[id:172]' is taken
-    if player has resources to cast spell 'Corruption[id:172]'
-    if spell 'Corruption[id:172]' is off cooldown
-    if target does not have buff/debuff 'Wither[id:445474]'
-    if player has buff/debuff 'Wither[id:445465]'
-5: Spell: Corruption[id:172]
-    if player has resources to cast spell 'Corruption[id:172]'
-    if spell 'Corruption[id:172]' is off cooldown
-    if target does not have buff/debuff 'Immolate[id:157736]'
-    if player does not have buff/debuff 'Wither[id:445465]'
-    if talent 'Corruption[id:172]' is taken
-6: Spell: Shadowburn[id:17877]
-    if talent 'Shadowburn[id:17877]' is taken
-    if player has resources to cast spell 'Shadowburn[id:17877]'
-    if spell 'Shadowburn[id:17877]' is off cooldown
+    if spell '混乱之箭[id:116858]' can be successfully cast
+    if player has buff/debuff '毁灭仪式[id:387157]'
+4: Spell: 腐蚀术[id:172]
+    if talent '腐蚀术[id:172]' is taken
+    if player has resources to cast spell '腐蚀术[id:172]'
+    if spell '腐蚀术[id:172]' is off cooldown
+    if target does not have buff/debuff '枯萎[id:445474]'
+    if player has buff/debuff '枯萎[id:445465]'
+5: Spell: 腐蚀术[id:172]
+    if player has resources to cast spell '腐蚀术[id:172]'
+    if spell '腐蚀术[id:172]' is off cooldown
+    if target does not have buff/debuff '献祭[id:157736]'
+    if player does not have buff/debuff '枯萎[id:445465]'
+    if talent '腐蚀术[id:172]' is taken
+6: Spell: 暗影灼烧[id:17877]
+    if talent '暗影灼烧[id:17877]' is taken
+    if player has resources to cast spell '暗影灼烧[id:17877]'
+    if spell '暗影灼烧[id:17877]' is off cooldown
     if there are less than 2 targets within 10 yards of target
-7: Spell: Conflagrate[id:17962]
-    if talent 'Conflagrate[id:17962]' is taken
-    if player has resources to cast spell 'Conflagrate[id:17962]'
-    if spell 'Conflagrate[id:17962]' is off cooldown
-    if player does not have buff/debuff 'Backdraft[id:117828]'
+7: Spell: 燃烧[id:17962]
+    if talent '燃烧[id:17962]' is taken
+    if player has resources to cast spell '燃烧[id:17962]'
+    if spell '燃烧[id:17962]' is off cooldown
+    if player does not have buff/debuff '爆燃[id:117828]'
     if player has more than 15 soul shards
     if there are less than 2 targets within 10 yards of target
-8: Spell: Conflagrate[id:17962]
-    if talent 'Conflagrate[id:17962]' is taken
-    if player has resources to cast spell 'Conflagrate[id:17962]'
-    if spell 'Conflagrate[id:17962]' is off cooldown
-    if player has more than 2 charges of spell 'Conflagrate[id:17962]'
-9: Spell: Shadow Bolt[id:686]
-    if talent 'Shadow Bolt[id:686]' is taken
-    if player has resources to cast spell 'Shadow Bolt[id:686]'
-    if spell 'Shadow Bolt[id:686]' is off cooldown
-    if spell 'Shadow Bolt[id:686]' can be successfully cast
-10: Spell: Soul Fire[id:6353]
-    if talent 'Soul Fire[id:6353]' is taken
-    if player has resources to cast spell 'Soul Fire[id:6353]'
-    if spell 'Soul Fire[id:6353]' is off cooldown
+8: Spell: 燃烧[id:17962]
+    if talent '燃烧[id:17962]' is taken
+    if player has resources to cast spell '燃烧[id:17962]'
+    if spell '燃烧[id:17962]' is off cooldown
+    if player has more than 2 charges of spell '燃烧[id:17962]'
+9: Spell: 暗影箭[id:686]
+    if talent '暗影箭[id:686]' is taken
+    if player has resources to cast spell '暗影箭[id:686]'
+    if spell '暗影箭[id:686]' is off cooldown
+    if spell '暗影箭[id:686]' can be successfully cast
+10: Spell: 灵魂之火[id:6353]
+    if talent '灵魂之火[id:6353]' is taken
+    if player has resources to cast spell '灵魂之火[id:6353]'
+    if spell '灵魂之火[id:6353]' is off cooldown
     if player has less than 40 soul shards
-11: Spell: Shadow Bolt[id:686]
-12: Spell: Shadow Bolt[id:686]
-    if talent 'Shadow Bolt[id:686]' is taken
-    if player has resources to cast spell 'Shadow Bolt[id:686]'
-    if spell 'Shadow Bolt[id:686]' is off cooldown
-    if player has more than 2 stacks of buff/debuff 'Backdraft[id:117828]'
-13: Spell: Chaos Bolt[id:116858]
-    if talent 'Chaos Bolt[id:116858]' is taken
-    if player has resources to cast spell 'Chaos Bolt[id:116858]'
-    if spell 'Chaos Bolt[id:116858]' is off cooldown
+11: Spell: 暗影箭[id:686]
+12: Spell: 暗影箭[id:686]
+    if talent '暗影箭[id:686]' is taken
+    if player has resources to cast spell '暗影箭[id:686]'
+    if spell '暗影箭[id:686]' is off cooldown
+    if player has more than 2 stacks of buff/debuff '爆燃[id:117828]'
+13: Spell: 混乱之箭[id:116858]
+    if talent '混乱之箭[id:116858]' is taken
+    if player has resources to cast spell '混乱之箭[id:116858]'
+    if spell '混乱之箭[id:116858]' is off cooldown
     if there are less than 2 targets within 10 yards of target
-14: Spell: Chaos Bolt[id:116858]
-    if talent 'Chaos Bolt[id:116858]' is taken
-    if player has resources to cast spell 'Chaos Bolt[id:116858]'
-    if spell 'Chaos Bolt[id:116858]' is off cooldown
+14: Spell: 混乱之箭[id:116858]
+    if talent '混乱之箭[id:116858]' is taken
+    if player has resources to cast spell '混乱之箭[id:116858]'
+    if spell '混乱之箭[id:116858]' is off cooldown
     if there are less than 2 targets within 10 yards of target
     if player has more than 40 soul shards
-    if spell 'Chaos Bolt[id:116858]' can be successfully cast
-15: Spell: Malevolence[id:442726]
-    if talent 'Malevolence[id:442726]' is taken
-    if player has resources to cast spell 'Malevolence[id:442726]'
-    if spell 'Malevolence[id:442726]' is off cooldown
-16: Spell: Shadow Bolt[id:686]
-    if player has buff/debuff 'Infernal Bolt[id:433891]' with at least 5000 ms left
-    if talent 'Shadow Bolt[id:686]' is taken
-    if player has resources to cast spell 'Shadow Bolt[id:686]'
-    if spell 'Shadow Bolt[id:686]' is off cooldown
-17: Spell: Channel Demonfire[id:196447]
-    if talent 'Channel Demonfire[id:196447]' is taken
-    if player has resources to cast spell 'Channel Demonfire[id:196447]'
-    if spell 'Channel Demonfire[id:196447]' is off cooldown
+    if spell '混乱之箭[id:116858]' can be successfully cast
+15: Spell: 怨毒[id:442726]
+    if talent '怨毒[id:442726]' is taken
+    if player has resources to cast spell '怨毒[id:442726]'
+    if spell '怨毒[id:442726]' is off cooldown
+16: Spell: 暗影箭[id:686]
+    if player has buff/debuff '狱火箭[id:433891]' with at least 5000 ms left
+    if talent '暗影箭[id:686]' is taken
+    if player has resources to cast spell '暗影箭[id:686]'
+    if spell '暗影箭[id:686]' is off cooldown
+17: Spell: 引导恶魔之火[id:196447]
+    if talent '引导恶魔之火[id:196447]' is taken
+    if player has resources to cast spell '引导恶魔之火[id:196447]'
+    if spell '引导恶魔之火[id:196447]' is off cooldown
     if target is less than 40 yards away
-18: Spell: Summon Felhunter[id:691]
-    if talent 'Summon Felhunter[id:691]' is taken
-    if player has resources to cast spell 'Summon Felhunter[id:691]'
-    if spell 'Summon Felhunter[id:691]' is off cooldown
+18: Spell: 召唤地狱猎犬[id:691]
+    if talent '召唤地狱猎犬[id:691]' is taken
+    if player has resources to cast spell '召唤地狱猎犬[id:691]'
+    if spell '召唤地狱猎犬[id:691]' is off cooldown
     if player has no pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
-    if spell 'Summon Felhunter[id:691]' can be successfully cast
+    if player does not have buff/debuff '牺牲魔典[id:196099]'
+    if spell '召唤地狱猎犬[id:691]' can be successfully cast
     if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT][id:1288970]'
-19: Spell: Summon Imp[id:688]
-    if talent 'Summon Imp[id:688]' is taken
-    if player has resources to cast spell 'Summon Imp[id:688]'
-    if spell 'Summon Imp[id:688]' is off cooldown
+19: Spell: 召唤小鬼[id:688]
+    if talent '召唤小鬼[id:688]' is taken
+    if player has resources to cast spell '召唤小鬼[id:688]'
+    if spell '召唤小鬼[id:688]' is off cooldown
     if player has no pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
+    if player does not have buff/debuff '牺牲魔典[id:196099]'
     if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT][id:1288970]'
-20: Spell: Grimoire of Sacrifice[id:108503]
-    if talent 'Grimoire of Sacrifice[id:108503]' is taken
-    if player has resources to cast spell 'Grimoire of Sacrifice[id:108503]'
-    if spell 'Grimoire of Sacrifice[id:108503]' is off cooldown
+20: Spell: 牺牲魔典[id:108503]
+    if talent '牺牲魔典[id:108503]' is taken
+    if player has resources to cast spell '牺牲魔典[id:108503]'
+    if spell '牺牲魔典[id:108503]' is off cooldown
     if player has pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice[id:196099]'
-21: Spell: Summon Infernal[id:1122]
-    if talent 'Summon Infernal[id:1122]' is taken
-    if player has resources to cast spell 'Summon Infernal[id:1122]'
-    if spell 'Summon Infernal[id:1122]' is off cooldown
+    if player does not have buff/debuff '牺牲魔典[id:196099]'
+21: Spell: 召唤地狱火[id:1122]
+    if talent '召唤地狱火[id:1122]' is taken
+    if player has resources to cast spell '召唤地狱火[id:1122]'
+    if spell '召唤地狱火[id:1122]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)

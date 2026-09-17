@@ -1,86 +1,86 @@
 Blood
-0: Spell: Reaper's Mark[id:439843]
-    if talent 'Reaper's Mark[id:439843]' is taken
-    if player has resources to cast spell 'Reaper's Mark[id:439843]'
-    if spell 'Reaper's Mark[id:439843]' is off cooldown
-    if target does not have buff/debuff 'Reaper's Mark[id:434765]'
-    if spell 'Reaper's Mark[id:439843]' is within allowed range
-1: Spell: Marrowrend[id:195182]
-    if talent 'Marrowrend[id:195182]' is taken
-    if player has resources to cast spell 'Marrowrend[id:195182]'
-    if spell 'Marrowrend[id:195182]' is off cooldown
-    if player has buff/debuff 'Exterminate[id:441416]'
-    if spell 'Marrowrend[id:195182]' is within allowed range
-2: Spell: Consumption[id:1263824]
-    if talent 'Consumption[id:1263824]' is taken
-    if player has resources to cast spell 'Consumption[id:1263824]'
-    if spell 'Consumption[id:1263824]' is off cooldown
+0: Spell: 死神印记[id:439843]
+    if talent '死神印记[id:439843]' is taken
+    if player has resources to cast spell '死神印记[id:439843]'
+    if spell '死神印记[id:439843]' is off cooldown
+    if target does not have buff/debuff '死神印记[id:434765]'
+    if spell '死神印记[id:439843]' is within allowed range
+1: Spell: 精髓分裂[id:195182]
+    if talent '精髓分裂[id:195182]' is taken
+    if player has resources to cast spell '精髓分裂[id:195182]'
+    if spell '精髓分裂[id:195182]' is off cooldown
+    if player has buff/debuff '破灭[id:441416]'
+    if spell '精髓分裂[id:195182]' is within allowed range
+2: Spell: 吞噬[id:1263824]
+    if talent '吞噬[id:1263824]' is taken
+    if player has resources to cast spell '吞噬[id:1263824]'
+    if spell '吞噬[id:1263824]' is off cooldown
     if target is less than 5 yards away
-3: Spell: Death and Decay[id:43265]
+3: Spell: 枯萎凋零[id:43265]
     if target is less than 6 yards away
-    if player does not have buff/debuff 'Death and Decay[id:188290]'
-    if talent 'Death and Decay[id:43265]' is taken
-    if player has resources to cast spell 'Death and Decay[id:43265]'
-    if spell 'Death and Decay[id:43265]' is off cooldown
-4: Spell: Blood Boil[id:50842]
+    if player does not have buff/debuff '枯萎凋零[id:188290]'
+    if talent '枯萎凋零[id:43265]' is taken
+    if player has resources to cast spell '枯萎凋零[id:43265]'
+    if spell '枯萎凋零[id:43265]' is off cooldown
+4: Spell: 血液沸腾[id:50842]
     if target is less than 10 yards away
-    if talent 'Blood Boil[id:50842]' is taken
-    if player has resources to cast spell 'Blood Boil[id:50842]'
-    if spell 'Blood Boil[id:50842]' is off cooldown
-    if there are less than 0 targets within 50 yards of player with buff/debuff 'Blood Plague[id:55078]'
-    if player has more than 2 charges of spell 'Blood Boil[id:50842]'
-5: Spell: Death Strike[id:49998]
-    if talent 'Death Strike[id:49998]' is taken
-    if player has resources to cast spell 'Death Strike[id:49998]'
-    if spell 'Death Strike[id:49998]' is off cooldown
+    if talent '血液沸腾[id:50842]' is taken
+    if player has resources to cast spell '血液沸腾[id:50842]'
+    if spell '血液沸腾[id:50842]' is off cooldown
+    if there are less than 0 targets within 50 yards of player with buff/debuff '血之疫病[id:55078]'
+    if player has more than 2 charges of spell '血液沸腾[id:50842]'
+5: Spell: 灵界打击[id:49998]
+    if talent '灵界打击[id:49998]' is taken
+    if player has resources to cast spell '灵界打击[id:49998]'
+    if spell '灵界打击[id:49998]' is off cooldown
     if player has more than 800 runic power
-    if spell 'Death Strike[id:49998]' is within allowed range
-6: Spell: Rune Strike[id:316239]
-    if talent 'Rune Strike[id:316239]' is taken
-    if player has resources to cast spell 'Rune Strike[id:316239]'
-    if spell 'Rune Strike[id:316239]' is within allowed range
-7: Spell: Rune Strike[id:316239]
-    if talent 'Rune Strike[id:316239]' is taken
-    if player has resources to cast spell 'Rune Strike[id:316239]'
-    if spell 'Rune Strike[id:316239]' is off cooldown
-    if player has buff/debuff 'Vampiric Strike[id:433899]'
-    if spell 'Rune Strike[id:316239]' is within allowed range
+    if spell '灵界打击[id:49998]' is within allowed range
+6: Spell: 符文打击[id:316239]
+    if talent '符文打击[id:316239]' is taken
+    if player has resources to cast spell '符文打击[id:316239]'
+    if spell '符文打击[id:316239]' is within allowed range
+7: Spell: 符文打击[id:316239]
+    if talent '符文打击[id:316239]' is taken
+    if player has resources to cast spell '符文打击[id:316239]'
+    if spell '符文打击[id:316239]' is off cooldown
+    if player has buff/debuff '吸血鬼打击[id:433899]'
+    if spell '符文打击[id:316239]' is within allowed range
     if target is less than 8 yards away
-8: Spell: Rune Strike[id:316239]
-    if talent 'Rune Strike[id:316239]' is taken
-    if player has resources to cast spell 'Rune Strike[id:316239]'
-    if spell 'Rune Strike[id:316239]' is off cooldown
-    if player has buff/debuff 'Gift of the San'layn[id:434153]'
-    if spell 'Rune Strike[id:316239]' is within allowed range
+8: Spell: 符文打击[id:316239]
+    if talent '符文打击[id:316239]' is taken
+    if player has resources to cast spell '符文打击[id:316239]'
+    if spell '符文打击[id:316239]' is off cooldown
+    if player has buff/debuff '萨莱因之赐[id:434153]'
+    if spell '符文打击[id:316239]' is within allowed range
     if target is less than 8 yards away
-9: Spell: Rune Strike[id:316239]
+9: Spell: 符文打击[id:316239]
     if target is less than 12 yards away
-10: Spell: Dancing Rune Weapon[id:49028]
-    if talent 'Dancing Rune Weapon[id:49028]' is taken
-    if player has resources to cast spell 'Dancing Rune Weapon[id:49028]'
-    if spell 'Dancing Rune Weapon[id:49028]' is off cooldown
+10: Spell: 符文刃舞[id:49028]
+    if talent '符文刃舞[id:49028]' is taken
+    if player has resources to cast spell '符文刃舞[id:49028]'
+    if spell '符文刃舞[id:49028]' is off cooldown
     if target is less than 20 yards away
-11: Spell: Marrowrend[id:195182]
-    if talent 'Marrowrend[id:195182]' is taken
-    if player has resources to cast spell 'Marrowrend[id:195182]'
-    if spell 'Marrowrend[id:195182]' is off cooldown
-    if spell 'Marrowrend[id:195182]' is within allowed range
-    if player has less than 6 stacks of buff/debuff 'Bone Shield[id:195181]'
-12: Spell: Marrowrend[id:195182]
-    if talent 'Marrowrend[id:195182]' is taken
-    if player has resources to cast spell 'Marrowrend[id:195182]'
-    if spell 'Marrowrend[id:195182]' is off cooldown
-    if spell 'Marrowrend[id:195182]' is within allowed range
-    if player does not have buff/debuff 'Bone Shield[id:195181]'
-13: Spell: Death's Caress[id:195292]
-    if talent 'Death's Caress[id:195292]' is taken
-    if player has resources to cast spell 'Death's Caress[id:195292]'
-    if spell 'Death's Caress[id:195292]' is off cooldown
-    if spell 'Death's Caress[id:195292]' is within allowed range
-14: Spell: Death and Decay[id:43265]
-15: Spell: Death Strike[id:49998]
-    if talent 'Death Strike[id:49998]' is taken
-    if player has resources to cast spell 'Death Strike[id:49998]'
-    if spell 'Death Strike[id:49998]' is off cooldown
-    if spell 'Death Strike[id:49998]' is within allowed range
+11: Spell: 精髓分裂[id:195182]
+    if talent '精髓分裂[id:195182]' is taken
+    if player has resources to cast spell '精髓分裂[id:195182]'
+    if spell '精髓分裂[id:195182]' is off cooldown
+    if spell '精髓分裂[id:195182]' is within allowed range
+    if player has less than 6 stacks of buff/debuff '白骨之盾[id:195181]'
+12: Spell: 精髓分裂[id:195182]
+    if talent '精髓分裂[id:195182]' is taken
+    if player has resources to cast spell '精髓分裂[id:195182]'
+    if spell '精髓分裂[id:195182]' is off cooldown
+    if spell '精髓分裂[id:195182]' is within allowed range
+    if player does not have buff/debuff '白骨之盾[id:195181]'
+13: Spell: 死神的抚摩[id:195292]
+    if talent '死神的抚摩[id:195292]' is taken
+    if player has resources to cast spell '死神的抚摩[id:195292]'
+    if spell '死神的抚摩[id:195292]' is off cooldown
+    if spell '死神的抚摩[id:195292]' is within allowed range
+14: Spell: 枯萎凋零[id:43265]
+15: Spell: 灵界打击[id:49998]
+    if talent '灵界打击[id:49998]' is taken
+    if player has resources to cast spell '灵界打击[id:49998]'
+    if spell '灵界打击[id:49998]' is off cooldown
+    if spell '灵界打击[id:49998]' is within allowed range
     if player has less than 50% health

@@ -1,36 +1,36 @@
 Holy
-0: Spell: Holy Word: Chastise[id:88625]
-    if talent 'Holy Word: Chastise[id:88625]' is taken
-    if player has resources to cast spell 'Holy Word: Chastise[id:88625]'
-    if spell 'Holy Word: Chastise[id:88625]' is off cooldown
-1: Spell: Shadow Word: Pain[id:589]
-    if talent 'Shadow Word: Pain[id:589]' is taken
-    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
-    if spell 'Shadow Word: Pain[id:589]' is off cooldown
-    if player has buff/debuff 'Burning Vehemence[id:372307]'
-2: Spell: Holy Nova[id:132157]
-    if talent 'Holy Nova[id:132157]' is taken
-    if player has resources to cast spell 'Holy Nova[id:132157]'
-    if spell 'Holy Nova[id:132157]' is off cooldown
-    if player does not have buff/debuff 'Burning Vehemence[id:372307]'
+0: Spell: 圣言术：罚[id:88625]
+    if talent '圣言术：罚[id:88625]' is taken
+    if player has resources to cast spell '圣言术：罚[id:88625]'
+    if spell '圣言术：罚[id:88625]' is off cooldown
+1: Spell: 暗言术：痛[id:589]
+    if talent '暗言术：痛[id:589]' is taken
+    if player has resources to cast spell '暗言术：痛[id:589]'
+    if spell '暗言术：痛[id:589]' is off cooldown
+    if player has buff/debuff '炽燃圣火[id:372307]'
+2: Spell: 神圣新星[id:132157]
+    if talent '神圣新星[id:132157]' is taken
+    if player has resources to cast spell '神圣新星[id:132157]'
+    if spell '神圣新星[id:132157]' is off cooldown
+    if player does not have buff/debuff '炽燃圣火[id:372307]'
     if there are more than 5 targets within 10 yards of player
-3: Spell: Smite[id:585]
-    if talent 'Smite[id:585]' is taken
-    if player has resources to cast spell 'Smite[id:585]'
-    if spell 'Smite[id:585]' is off cooldown
-    if spell 'Smite[id:585]' can be successfully cast
-4: Spell: Shadow Word: Pain[id:589]
-    if talent 'Shadow Word: Pain[id:589]' is taken
-    if player has resources to cast spell 'Shadow Word: Pain[id:589]'
-    if spell 'Shadow Word: Pain[id:589]' is off cooldown
-5: Spell: Holy Nova[id:132157]
-    if talent 'Holy Nova[id:132157]' is taken
-    if player has resources to cast spell 'Holy Nova[id:132157]'
-    if spell 'Holy Nova[id:132157]' is off cooldown
+3: Spell: 惩击[id:585]
+    if talent '惩击[id:585]' is taken
+    if player has resources to cast spell '惩击[id:585]'
+    if spell '惩击[id:585]' is off cooldown
+    if spell '惩击[id:585]' can be successfully cast
+4: Spell: 暗言术：痛[id:589]
+    if talent '暗言术：痛[id:589]' is taken
+    if player has resources to cast spell '暗言术：痛[id:589]'
+    if spell '暗言术：痛[id:589]' is off cooldown
+5: Spell: 神圣新星[id:132157]
+    if talent '神圣新星[id:132157]' is taken
+    if player has resources to cast spell '神圣新星[id:132157]'
+    if spell '神圣新星[id:132157]' is off cooldown
     if there are more than 5 targets within 10 yards of player
-6: Spell: Smite[id:585]
-7: Spell: Power Word: Fortitude[id:21562]
-    if talent 'Power Word: Fortitude[id:21562]' is taken
-    if player has resources to cast spell 'Power Word: Fortitude[id:21562]'
-    if spell 'Power Word: Fortitude[id:21562]' is off cooldown
-    if player has buff/debuff 'Power Word: Fortitude Highlight[id:1271911]'
+6: Spell: 惩击[id:585]
+7: Spell: 真言术：韧[id:21562]
+    if talent '真言术：韧[id:21562]' is taken
+    if player has resources to cast spell '真言术：韧[id:21562]'
+    if spell '真言术：韧[id:21562]' is off cooldown
+    if player has buff/debuff '真言术：韧高亮[id:1271911]'

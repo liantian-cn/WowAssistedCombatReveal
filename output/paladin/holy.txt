@@ -1,46 +1,46 @@
 Holy
-0: Spell: Consecration[id:26573]
-    if talent 'Consecration[id:26573]' is taken
-    if player has resources to cast spell 'Consecration[id:26573]'
-    if spell 'Consecration[id:26573]' is off cooldown
+0: Spell: 奉献[id:26573]
+    if talent '奉献[id:26573]' is taken
+    if player has resources to cast spell '奉献[id:26573]'
+    if spell '奉献[id:26573]' is off cooldown
     if there are more than 8 targets within 10 yards of player
-1: Spell: Judgment[id:275773]
-    if talent 'Judgment[id:275773]' is taken
-    if player has resources to cast spell 'Judgment[id:275773]'
-    if spell 'Judgment[id:275773]' is off cooldown
-2: Spell: Hammer of Wrath[id:24275]
-    if player has buff/debuff 'Veneration[id:392939]'
-    if talent 'Hammer of Wrath[id:24275]' is taken
-    if player has resources to cast spell 'Hammer of Wrath[id:24275]'
-    if spell 'Hammer of Wrath[id:24275]' is off cooldown
-3: Spell: Hammer of Wrath[id:24275]
-    if talent 'Hammer of Wrath[id:24275]' is taken
-    if player has resources to cast spell 'Hammer of Wrath[id:24275]'
-    if spell 'Hammer of Wrath[id:24275]' is off cooldown
-    if player has buff/debuff 'Avenging Wrath[id:31884]'
-4: Spell: Hammer of Wrath[id:24275]
-    if talent 'Hammer of Wrath[id:24275]' is taken
-    if player has resources to cast spell 'Hammer of Wrath[id:24275]'
-    if spell 'Hammer of Wrath[id:24275]' is off cooldown
-    if player has buff/debuff 'Avenging Crusader[id:216331]'
-5: Spell: Avenging Crusader[id:216331]
-    if player has buff/debuff 'Avenging Crusader[id:216331]'
-    if player has resources to cast spell 'Avenging Crusader[id:216331]'
-    if spell 'Avenging Crusader[id:216331]' is off cooldown
-    if spell 'Avenging Crusader[id:216331]' is within allowed range
-6: Spell: Hammer of Wrath[id:24275]
-    if talent 'Hammer of Wrath[id:24275]' is taken
-    if player has resources to cast spell 'Hammer of Wrath[id:24275]'
-    if spell 'Hammer of Wrath[id:24275]' is off cooldown
+1: Spell: 审判[id:275773]
+    if talent '审判[id:275773]' is taken
+    if player has resources to cast spell '审判[id:275773]'
+    if spell '审判[id:275773]' is off cooldown
+2: Spell: 愤怒之锤[id:24275]
+    if player has buff/debuff '崇圣[id:392939]'
+    if talent '愤怒之锤[id:24275]' is taken
+    if player has resources to cast spell '愤怒之锤[id:24275]'
+    if spell '愤怒之锤[id:24275]' is off cooldown
+3: Spell: 愤怒之锤[id:24275]
+    if talent '愤怒之锤[id:24275]' is taken
+    if player has resources to cast spell '愤怒之锤[id:24275]'
+    if spell '愤怒之锤[id:24275]' is off cooldown
+    if player has buff/debuff '复仇之怒[id:31884]'
+4: Spell: 愤怒之锤[id:24275]
+    if talent '愤怒之锤[id:24275]' is taken
+    if player has resources to cast spell '愤怒之锤[id:24275]'
+    if spell '愤怒之锤[id:24275]' is off cooldown
+    if player has buff/debuff '复仇十字军[id:216331]'
+5: Spell: 复仇十字军[id:216331]
+    if player has buff/debuff '复仇十字军[id:216331]'
+    if player has resources to cast spell '复仇十字军[id:216331]'
+    if spell '复仇十字军[id:216331]' is off cooldown
+    if spell '复仇十字军[id:216331]' is within allowed range
+6: Spell: 愤怒之锤[id:24275]
+    if talent '愤怒之锤[id:24275]' is taken
+    if player has resources to cast spell '愤怒之锤[id:24275]'
+    if spell '愤怒之锤[id:24275]' is off cooldown
     if target has less than 20% health
-7: Spell: Consecration[id:26573]
-    if talent 'Consecration[id:26573]' is taken
-    if player has resources to cast spell 'Consecration[id:26573]'
-    if spell 'Consecration[id:26573]' is off cooldown
+7: Spell: 奉献[id:26573]
+    if talent '奉献[id:26573]' is taken
+    if player has resources to cast spell '奉献[id:26573]'
+    if spell '奉献[id:26573]' is off cooldown
     if target is less than 8 yards away
-    if player does not have buff/debuff 'Righteous Judgment[id:414113]'
-8: Spell: Judgment[id:275773]
-9: Spell: Holy Shock[id:20473]
-    if talent 'Holy Shock[id:20473]' is taken
-    if player has resources to cast spell 'Holy Shock[id:20473]'
-    if spell 'Holy Shock[id:20473]' is off cooldown
+    if player does not have buff/debuff '公正审判[id:414113]'
+8: Spell: 审判[id:275773]
+9: Spell: 神圣震击[id:20473]
+    if talent '神圣震击[id:20473]' is taken
+    if player has resources to cast spell '神圣震击[id:20473]'
+    if spell '神圣震击[id:20473]' is off cooldown

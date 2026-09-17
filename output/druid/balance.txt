@@ -1,166 +1,166 @@
 Balance
-0: Spell: Sunfire[id:93402]
-    if talent 'Sunfire[id:93402]' is taken
-    if player has resources to cast spell 'Sunfire[id:93402]'
-    if spell 'Sunfire[id:93402]' is off cooldown
-    if target does not have buff/debuff 'Sunfire[id:164815]'
-1: Spell: Moonfire[id:8921]
-    if talent 'Moonfire[id:8921]' is taken
-    if player has resources to cast spell 'Moonfire[id:8921]'
-    if spell 'Moonfire[id:8921]' is off cooldown
-    if target does not have buff/debuff 'Moonfire[id:164812]'
-    if player does not have buff/debuff 'Harmony of the Grove[id:428735]'
-2: Spell: Starfall[id:191034]
-    if talent 'Starfall[id:191034]' is taken
-    if player has resources to cast spell 'Starfall[id:191034]'
-    if spell 'Starfall[id:191034]' is off cooldown
+0: Spell: 阳炎术[id:93402]
+    if talent '阳炎术[id:93402]' is taken
+    if player has resources to cast spell '阳炎术[id:93402]'
+    if spell '阳炎术[id:93402]' is off cooldown
+    if target does not have buff/debuff '阳炎术[id:164815]'
+1: Spell: 月火术[id:8921]
+    if talent '月火术[id:8921]' is taken
+    if player has resources to cast spell '月火术[id:8921]'
+    if spell '月火术[id:8921]' is off cooldown
+    if target does not have buff/debuff '月火术[id:164812]'
+    if player does not have buff/debuff '林中和谐[id:428735]'
+2: Spell: 星辰坠落[id:191034]
+    if talent '星辰坠落[id:191034]' is taken
+    if player has resources to cast spell '星辰坠落[id:191034]'
+    if spell '星辰坠落[id:191034]' is off cooldown
     if there are more than 3 targets within 45 yards of player
-3: Spell: Force of Nature[id:205636]
-    if talent 'Force of Nature[id:205636]' is taken
-    if player has resources to cast spell 'Force of Nature[id:205636]'
-    if spell 'Force of Nature[id:205636]' is off cooldown
-    if player has buff/debuff 'Dream Surge[id:433831]'
-4: Spell: Starsurge[id:78674]
-    if talent 'Starsurge[id:78674]' is taken
-    if player has resources to cast spell 'Starsurge[id:78674]'
-    if spell 'Starsurge[id:78674]' is off cooldown
+3: Spell: 自然之力[id:205636]
+    if talent '自然之力[id:205636]' is taken
+    if player has resources to cast spell '自然之力[id:205636]'
+    if spell '自然之力[id:205636]' is off cooldown
+    if player has buff/debuff '梦境涌现[id:433831]'
+4: Spell: 星涌术[id:78674]
+    if talent '星涌术[id:78674]' is taken
+    if player has resources to cast spell '星涌术[id:78674]'
+    if spell '星涌术[id:78674]' is off cooldown
     if there are less than 2 targets within 45 yards of player
-5: Spell: Fury of Elune[id:202770]
-    if talent 'Fury of Elune[id:202770]' is taken
-    if player has resources to cast spell 'Fury of Elune[id:202770]'
-    if spell 'Fury of Elune[id:202770]' is off cooldown
-    if spell 'Fury of Elune[id:202770]' is within allowed range
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
+5: Spell: 艾露恩之怒[id:202770]
+    if talent '艾露恩之怒[id:202770]' is taken
+    if player has resources to cast spell '艾露恩之怒[id:202770]'
+    if spell '艾露恩之怒[id:202770]' is off cooldown
+    if spell '艾露恩之怒[id:202770]' is within allowed range
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
     if player has more than 550 lunar power
-6: Spell: New Moon[id:274281]
-    if talent 'New Moon[id:274281]' is taken
-    if player has resources to cast spell 'New Moon[id:274281]'
-    if spell 'New Moon[id:274281]' is off cooldown
-7: Spell: Wild Mushroom[id:88747]
-    if talent 'Wild Mushroom[id:88747]' is taken
-    if player has resources to cast spell 'Wild Mushroom[id:88747]'
-    if spell 'Wild Mushroom[id:88747]' is off cooldown
-    if target does not have buff/debuff 'Fungal Growth[id:81281]'
-8: Spell: Wrath[id:190984]
-    if talent 'Wrath[id:190984]' is taken
-    if player has resources to cast spell 'Wrath[id:190984]'
-    if spell 'Wrath[id:190984]' is off cooldown
-    if spell 'Wrath[id:190984]' can be successfully cast
-    if spell 'Wrath[id:190984]' is within allowed range
-9: Spell: Starfire[id:194153]
+6: Spell: 新月[id:274281]
+    if talent '新月[id:274281]' is taken
+    if player has resources to cast spell '新月[id:274281]'
+    if spell '新月[id:274281]' is off cooldown
+7: Spell: 野性蘑菇[id:88747]
+    if talent '野性蘑菇[id:88747]' is taken
+    if player has resources to cast spell '野性蘑菇[id:88747]'
+    if spell '野性蘑菇[id:88747]' is off cooldown
+    if target does not have buff/debuff '真菌蔓延[id:81281]'
+8: Spell: 愤怒[id:190984]
+    if talent '愤怒[id:190984]' is taken
+    if player has resources to cast spell '愤怒[id:190984]'
+    if spell '愤怒[id:190984]' is off cooldown
+    if spell '愤怒[id:190984]' can be successfully cast
+    if spell '愤怒[id:190984]' is within allowed range
+9: Spell: 星火术[id:194153]
     if there are more than 3 targets within 10 yards of target
-    if talent 'Starfire[id:194153]' is taken
-    if player has resources to cast spell 'Starfire[id:194153]'
-    if spell 'Starfire[id:194153]' is off cooldown
-    if spell 'Starfire[id:194153]' can be successfully cast
-    if spell 'Starfire[id:194153]' is within allowed range
-10: Spell: Starfire[id:194153]
-    if talent 'Starfire[id:194153]' is taken
-    if player has resources to cast spell 'Starfire[id:194153]'
-    if spell 'Starfire[id:194153]' is off cooldown
-    if player has buff/debuff 'Lunar Calling[id:429523]'
-    if spell 'Starfire[id:194153]' can be successfully cast
-    if spell 'Starfire[id:194153]' is within allowed range
-11: Spell: Starfall[id:191034]
-    if talent 'Starfall[id:191034]' is taken
-    if player has resources to cast spell 'Starfall[id:191034]'
-    if spell 'Starfall[id:191034]' is off cooldown
+    if talent '星火术[id:194153]' is taken
+    if player has resources to cast spell '星火术[id:194153]'
+    if spell '星火术[id:194153]' is off cooldown
+    if spell '星火术[id:194153]' can be successfully cast
+    if spell '星火术[id:194153]' is within allowed range
+10: Spell: 星火术[id:194153]
+    if talent '星火术[id:194153]' is taken
+    if player has resources to cast spell '星火术[id:194153]'
+    if spell '星火术[id:194153]' is off cooldown
+    if player has buff/debuff '皎月呼唤[id:429523]'
+    if spell '星火术[id:194153]' can be successfully cast
+    if spell '星火术[id:194153]' is within allowed range
+11: Spell: 星辰坠落[id:191034]
+    if talent '星辰坠落[id:191034]' is taken
+    if player has resources to cast spell '星辰坠落[id:191034]'
+    if spell '星辰坠落[id:191034]' is off cooldown
     if there are more than 3 targets within 45 yards of player
     if player has more than 900 lunar power
-12: Spell: Starsurge[id:78674]
-    if talent 'Starsurge[id:78674]' is taken
-    if player has resources to cast spell 'Starsurge[id:78674]'
-    if spell 'Starsurge[id:78674]' is off cooldown
+12: Spell: 星涌术[id:78674]
+    if talent '星涌术[id:78674]' is taken
+    if player has resources to cast spell '星涌术[id:78674]'
+    if spell '星涌术[id:78674]' is off cooldown
     if player has more than 900 lunar power
     if there are less than 2 targets within 45 yards of player
-13: Spell: Moonkin Form[id:24858]
-    if talent 'Moonkin Form[id:24858]' is taken
-    if player has resources to cast spell 'Moonkin Form[id:24858]'
-    if spell 'Moonkin Form[id:24858]' is off cooldown
-    if player does not have buff/debuff 'Moonkin Form[id:24858]'
-14: Spell: Starfall[id:191034]
-    if talent 'Starfall[id:191034]' is taken
-    if player has resources to cast spell 'Starfall[id:191034]'
-    if spell 'Starfall[id:191034]' is off cooldown
-    if player has buff/debuff 'Starweaver's Warp[id:393942]'
-15: Spell: Starsurge[id:78674]
-    if talent 'Starsurge[id:78674]' is taken
-    if player has resources to cast spell 'Starsurge[id:78674]'
-    if spell 'Starsurge[id:78674]' is off cooldown
-    if player has buff/debuff 'Starweaver's Weft[id:393944]'
-16: Spell: Moonfire[id:8921]
-17: Spell: Starsurge[id:78674]
-    if talent 'Starsurge[id:78674]' is taken
-    if player has resources to cast spell 'Starsurge[id:78674]'
-    if spell 'Starsurge[id:78674]' is off cooldown
+13: Spell: 枭兽形态[id:24858]
+    if talent '枭兽形态[id:24858]' is taken
+    if player has resources to cast spell '枭兽形态[id:24858]'
+    if spell '枭兽形态[id:24858]' is off cooldown
+    if player does not have buff/debuff '枭兽形态[id:24858]'
+14: Spell: 星辰坠落[id:191034]
+    if talent '星辰坠落[id:191034]' is taken
+    if player has resources to cast spell '星辰坠落[id:191034]'
+    if spell '星辰坠落[id:191034]' is off cooldown
+    if player has buff/debuff '织星者的经纱[id:393942]'
+15: Spell: 星涌术[id:78674]
+    if talent '星涌术[id:78674]' is taken
+    if player has resources to cast spell '星涌术[id:78674]'
+    if spell '星涌术[id:78674]' is off cooldown
+    if player has buff/debuff '织星者的纬纱[id:393944]'
+16: Spell: 月火术[id:8921]
+17: Spell: 星涌术[id:78674]
+    if talent '星涌术[id:78674]' is taken
+    if player has resources to cast spell '星涌术[id:78674]'
+    if spell '星涌术[id:78674]' is off cooldown
     if player has more than 500 lunar power
-18: Spell: Starfire[id:194153]
-    if talent 'Starfire[id:194153]' is taken
-    if player has resources to cast spell 'Starfire[id:194153]'
-    if spell 'Starfire[id:194153]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
-    if player has buff/debuff 'Eclipse[id:1239669]'
+18: Spell: 星火术[id:194153]
+    if talent '星火术[id:194153]' is taken
+    if player has resources to cast spell '星火术[id:194153]'
+    if spell '星火术[id:194153]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
+    if player has buff/debuff '日月之蚀[id:1239669]'
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Lunar Eclipse Override[id:1233353]'
-19: Spell: Wrath[id:190984]
-    if talent 'Wrath[id:190984]' is taken
-    if player has resources to cast spell 'Wrath[id:190984]'
-    if spell 'Wrath[id:190984]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
-    if player has buff/debuff 'Lunar Eclipse Override[id:1233353]'
-    if player has buff/debuff 'Eclipse[id:1239669]'
-    if player does not have buff/debuff 'Lunar Calling[id:429523]'
+    if player does not have buff/debuff '月蚀覆盖[id:1233353]'
+19: Spell: 愤怒[id:190984]
+    if talent '愤怒[id:190984]' is taken
+    if player has resources to cast spell '愤怒[id:190984]'
+    if spell '愤怒[id:190984]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
+    if player has buff/debuff '月蚀覆盖[id:1233353]'
+    if player has buff/debuff '日月之蚀[id:1239669]'
+    if player does not have buff/debuff '皎月呼唤[id:429523]'
     if there are less than 2 targets within 10 yards of target
-20: Spell: Starfire[id:194153]
-    if talent 'Starfire[id:194153]' is taken
-    if player has resources to cast spell 'Starfire[id:194153]'
-    if spell 'Starfire[id:194153]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
-    if player has buff/debuff 'Lunar Eclipse Override[id:1233353]'
+20: Spell: 星火术[id:194153]
+    if talent '星火术[id:194153]' is taken
+    if player has resources to cast spell '星火术[id:194153]'
+    if spell '星火术[id:194153]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
+    if player has buff/debuff '月蚀覆盖[id:1233353]'
     if player has less than 599 lunar power
-21: Spell: Wrath[id:190984]
-    if talent 'Wrath[id:190984]' is taken
-    if player has resources to cast spell 'Wrath[id:190984]'
-    if spell 'Wrath[id:190984]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
-    if player does not have buff/debuff 'Lunar Eclipse Override[id:1233353]'
+21: Spell: 愤怒[id:190984]
+    if talent '愤怒[id:190984]' is taken
+    if player has resources to cast spell '愤怒[id:190984]'
+    if spell '愤怒[id:190984]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
+    if player does not have buff/debuff '月蚀覆盖[id:1233353]'
     if player has less than 599 lunar power
-22: Spell: Solar Eclipse[id:1233346]
-    if player has buff/debuff 'Eclipse[id:1239669]'
-    if player has resources to cast spell 'Solar Eclipse[id:1233346]'
-    if spell 'Solar Eclipse[id:1233346]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
+22: Spell: 日蚀[id:1233346]
+    if player has buff/debuff '日月之蚀[id:1239669]'
+    if player has resources to cast spell '日蚀[id:1233346]'
+    if spell '日蚀[id:1233346]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
     if player has more than 600 lunar power
-23: Spell: Celestial Alignment[id:194223]
-    if talent 'Celestial Alignment[id:194223]' is taken
-    if player has resources to cast spell 'Celestial Alignment[id:194223]'
-    if spell 'Celestial Alignment[id:194223]' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)[id:48517]'
-    if player does not have buff/debuff 'Eclipse (Lunar)[id:48518]'
+23: Spell: 超凡之盟[id:194223]
+    if talent '超凡之盟[id:194223]' is taken
+    if player has resources to cast spell '超凡之盟[id:194223]'
+    if spell '超凡之盟[id:194223]' is off cooldown
+    if player does not have buff/debuff '日蚀[id:48517]'
+    if player does not have buff/debuff '月蚀[id:48518]'
     automation only (not part of the game's Assisted Combat rotation)
-24: Spell: Convoke the Spirits[id:391528]
-    if talent 'Convoke the Spirits[id:391528]' is taken
-    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
-    if spell 'Convoke the Spirits[id:391528]' is off cooldown
-    if player has buff/debuff 'Eclipse (Solar)[id:48517]'
-25: Spell: Convoke the Spirits[id:391528]
-    if talent 'Convoke the Spirits[id:391528]' is taken
-    if player has resources to cast spell 'Convoke the Spirits[id:391528]'
-    if spell 'Convoke the Spirits[id:391528]' is off cooldown
-    if player has buff/debuff 'Eclipse (Lunar)[id:48518]'
-26: Spell: Mark of the Wild[id:1126]
-    if talent 'Mark of the Wild[id:1126]' is taken
-    if player has resources to cast spell 'Mark of the Wild[id:1126]'
-    if spell 'Mark of the Wild[id:1126]' is off cooldown
-    if player has buff/debuff 'Mark of the Wild Highlight[id:1271910]'
-27: Spell: Fury of Elune[id:202770]
-    if talent 'Fury of Elune[id:202770]' is taken
-    if player has resources to cast spell 'Fury of Elune[id:202770]'
-    if spell 'Fury of Elune[id:202770]' is off cooldown
-    if spell 'Fury of Elune[id:202770]' is within allowed range
+24: Spell: 万灵之召[id:391528]
+    if talent '万灵之召[id:391528]' is taken
+    if player has resources to cast spell '万灵之召[id:391528]'
+    if spell '万灵之召[id:391528]' is off cooldown
+    if player has buff/debuff '日蚀[id:48517]'
+25: Spell: 万灵之召[id:391528]
+    if talent '万灵之召[id:391528]' is taken
+    if player has resources to cast spell '万灵之召[id:391528]'
+    if spell '万灵之召[id:391528]' is off cooldown
+    if player has buff/debuff '月蚀[id:48518]'
+26: Spell: 野性印记[id:1126]
+    if talent '野性印记[id:1126]' is taken
+    if player has resources to cast spell '野性印记[id:1126]'
+    if spell '野性印记[id:1126]' is off cooldown
+    if player has buff/debuff '野性印记高亮[id:1271910]'
+27: Spell: 艾露恩之怒[id:202770]
+    if talent '艾露恩之怒[id:202770]' is taken
+    if player has resources to cast spell '艾露恩之怒[id:202770]'
+    if spell '艾露恩之怒[id:202770]' is off cooldown
+    if spell '艾露恩之怒[id:202770]' is within allowed range

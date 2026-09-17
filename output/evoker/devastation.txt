@@ -1,86 +1,86 @@
 Devastation
-0: Spell: Fire Breath[id:357208]
-    if talent 'Fire Breath[id:357208]' is taken
-    if player has resources to cast spell 'Fire Breath[id:357208]'
-    if spell 'Fire Breath[id:357208]' is off cooldown
-    if spell 'Fire Breath[id:357208]' can be successfully cast
-    if player has buff/debuff 'Consume Flame[id:444088]'
-    if target does not have buff/debuff 'Fire Breath[id:357209]'
-1: Spell: Eternity Surge[id:359073]
-    if talent 'Eternity Surge[id:359073]' is taken
-    if player has resources to cast spell 'Eternity Surge[id:359073]'
-    if spell 'Eternity Surge[id:359073]' is off cooldown
-    if spell 'Eternity Surge[id:359073]' can be successfully cast
-2: Spell: Disintegrate[id:356995]
-    if talent 'Disintegrate[id:356995]' is taken
-    if player has resources to cast spell 'Disintegrate[id:356995]'
-    if spell 'Disintegrate[id:356995]' is off cooldown
+0: Spell: 火焰吐息[id:357208]
+    if talent '火焰吐息[id:357208]' is taken
+    if player has resources to cast spell '火焰吐息[id:357208]'
+    if spell '火焰吐息[id:357208]' is off cooldown
+    if spell '火焰吐息[id:357208]' can be successfully cast
+    if player has buff/debuff '吞噬烈焰[id:444088]'
+    if target does not have buff/debuff '火焰吐息[id:357209]'
+1: Spell: 永恒之涌[id:359073]
+    if talent '永恒之涌[id:359073]' is taken
+    if player has resources to cast spell '永恒之涌[id:359073]'
+    if spell '永恒之涌[id:359073]' is off cooldown
+    if spell '永恒之涌[id:359073]' can be successfully cast
+2: Spell: 裂解[id:356995]
+    if talent '裂解[id:356995]' is taken
+    if player has resources to cast spell '裂解[id:356995]'
+    if spell '裂解[id:356995]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Mass Disintegrate[id:436336]'
-3: Spell: Pyre[id:357211]
-    if talent 'Pyre[id:357211]' is taken
-    if player has resources to cast spell 'Pyre[id:357211]'
-    if spell 'Pyre[id:357211]' is off cooldown
+    if player has buff/debuff '群体裂解[id:436336]'
+3: Spell: 葬火[id:357211]
+    if talent '葬火[id:357211]' is taken
+    if player has resources to cast spell '葬火[id:357211]'
+    if spell '葬火[id:357211]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-4: Spell: Living Flame[id:361469]
-    if talent 'Living Flame[id:361469]' is taken
-    if player has resources to cast spell 'Living Flame[id:361469]'
-    if spell 'Living Flame[id:361469]' is off cooldown
+4: Spell: 活化烈焰[id:361469]
+    if talent '活化烈焰[id:361469]' is taken
+    if player has resources to cast spell '活化烈焰[id:361469]'
+    if spell '活化烈焰[id:361469]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Burnout[id:375802]'
-    if player has buff/debuff 'Leaping Flames[id:370901]'
-5: Spell: Azure Strike[id:362969]
-    if talent 'Azure Strike[id:362969]' is taken
-    if player has resources to cast spell 'Azure Strike[id:362969]'
-    if spell 'Azure Strike[id:362969]' is off cooldown
+    if player has buff/debuff '燃尽[id:375802]'
+    if player has buff/debuff '飞扑烈焰[id:370901]'
+5: Spell: 碧蓝打击[id:362969]
+    if talent '碧蓝打击[id:362969]' is taken
+    if player has resources to cast spell '碧蓝打击[id:362969]'
+    if spell '碧蓝打击[id:362969]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-6: Spell: Disintegrate[id:356995]
-    if talent 'Disintegrate[id:356995]' is taken
-    if player has resources to cast spell 'Disintegrate[id:356995]'
-    if spell 'Disintegrate[id:356995]' is off cooldown
-7: Spell: Living Flame[id:361469]
-    if talent 'Living Flame[id:361469]' is taken
-    if player has resources to cast spell 'Living Flame[id:361469]'
-    if spell 'Living Flame[id:361469]' is off cooldown
-    if spell 'Living Flame[id:361469]' can be successfully cast
-8: Spell: Living Flame[id:361469]
-9: Spell: Fire Breath[id:357208]
-    if talent 'Fire Breath[id:357208]' is taken
-    if player has resources to cast spell 'Fire Breath[id:357208]'
-    if spell 'Fire Breath[id:357208]' is off cooldown
-    if spell 'Fire Breath[id:357208]' can be successfully cast
-    if player does not have buff/debuff 'Consume Flame[id:444088]'
-10: Spell: Azure Strike[id:362969]
-    if talent 'Azure Strike[id:362969]' is taken
-    if player has resources to cast spell 'Azure Strike[id:362969]'
-    if spell 'Azure Strike[id:362969]' is off cooldown
-    if player has buff/debuff 'Azure Sweep[id:1265871]'
-11: Spell: Dragonrage[id:375087]
-    if talent 'Dragonrage[id:375087]' is taken
-    if player has resources to cast spell 'Dragonrage[id:375087]'
-    if spell 'Dragonrage[id:375087]' is off cooldown
+6: Spell: 裂解[id:356995]
+    if talent '裂解[id:356995]' is taken
+    if player has resources to cast spell '裂解[id:356995]'
+    if spell '裂解[id:356995]' is off cooldown
+7: Spell: 活化烈焰[id:361469]
+    if talent '活化烈焰[id:361469]' is taken
+    if player has resources to cast spell '活化烈焰[id:361469]'
+    if spell '活化烈焰[id:361469]' is off cooldown
+    if spell '活化烈焰[id:361469]' can be successfully cast
+8: Spell: 活化烈焰[id:361469]
+9: Spell: 火焰吐息[id:357208]
+    if talent '火焰吐息[id:357208]' is taken
+    if player has resources to cast spell '火焰吐息[id:357208]'
+    if spell '火焰吐息[id:357208]' is off cooldown
+    if spell '火焰吐息[id:357208]' can be successfully cast
+    if player does not have buff/debuff '吞噬烈焰[id:444088]'
+10: Spell: 碧蓝打击[id:362969]
+    if talent '碧蓝打击[id:362969]' is taken
+    if player has resources to cast spell '碧蓝打击[id:362969]'
+    if spell '碧蓝打击[id:362969]' is off cooldown
+    if player has buff/debuff '碧蓝横扫[id:1265871]'
+11: Spell: 狂龙之怒[id:375087]
+    if talent '狂龙之怒[id:375087]' is taken
+    if player has resources to cast spell '狂龙之怒[id:375087]'
+    if spell '狂龙之怒[id:375087]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-12: Spell: Deep Breath[id:357210]
-    if talent 'Deep Breath[id:357210]' is taken
-    if player has resources to cast spell 'Deep Breath[id:357210]'
-    if spell 'Deep Breath[id:357210]' is off cooldown
-    if player does not have buff/debuff 'Recall[id:371807]'
+12: Spell: 深呼吸[id:357210]
+    if talent '深呼吸[id:357210]' is taken
+    if player has resources to cast spell '深呼吸[id:357210]'
+    if spell '深呼吸[id:357210]' is off cooldown
+    if player does not have buff/debuff '回归[id:371807]'
     if target is less than 40 yards away
     automation only (not part of the game's Assisted Combat rotation)
-13: Spell: Tip the Scales[id:370553]
-    if talent 'Tip the Scales[id:370553]' is taken
-    if player has resources to cast spell 'Tip the Scales[id:370553]'
-    if spell 'Tip the Scales[id:370553]' is off cooldown
-    if spell 'Tip the Scales[id:370553]' is off cooldown
+13: Spell: 扭转天平[id:370553]
+    if talent '扭转天平[id:370553]' is taken
+    if player has resources to cast spell '扭转天平[id:370553]'
+    if spell '扭转天平[id:370553]' is off cooldown
+    if spell '扭转天平[id:370553]' is off cooldown
     automation only (not part of the game's Assisted Combat rotation)
-14: Spell: Blessing of the Bronze[id:364342]
-    if talent 'Blessing of the Bronze[id:364342]' is taken
-    if player has resources to cast spell 'Blessing of the Bronze[id:364342]'
-    if spell 'Blessing of the Bronze[id:364342]' is off cooldown
-    if player has buff/debuff 'Blessing of the Bronze Highlight[id:1271912]'
-15: Spell: Dragonrage[id:375087]
-    if talent 'Dragonrage[id:375087]' is taken
-    if player has resources to cast spell 'Dragonrage[id:375087]'
-    if spell 'Dragonrage[id:375087]' is off cooldown
-    if player has buff/debuff 'Unbound Flame[id:1292323]'
-    if player has less than 1 stacks of buff/debuff 'Essence Burst[id:359618]'
+14: Spell: 青铜龙的祝福[id:364342]
+    if talent '青铜龙的祝福[id:364342]' is taken
+    if player has resources to cast spell '青铜龙的祝福[id:364342]'
+    if spell '青铜龙的祝福[id:364342]' is off cooldown
+    if player has buff/debuff '青铜龙的祝福高亮[id:1271912]'
+15: Spell: 狂龙之怒[id:375087]
+    if talent '狂龙之怒[id:375087]' is taken
+    if player has resources to cast spell '狂龙之怒[id:375087]'
+    if spell '狂龙之怒[id:375087]' is off cooldown
+    if player has buff/debuff '释缚烈焰[id:1292323]'
+    if player has less than 1 stacks of buff/debuff '精华迸发[id:359618]'

@@ -1,152 +1,152 @@
 Enhancement
-0: Spell: Surging Totem[id:444995]
-    if talent 'Surging Totem[id:444995]' is taken
-    if player has resources to cast spell 'Surging Totem[id:444995]'
-    if spell 'Surging Totem[id:444995]' is off cooldown
-    if player does not have buff/debuff 'Surging Totem[id:1221347]'
-1: Spell: Flame Shock[id:470411]
-    if talent 'Flame Shock[id:470411]' is taken
-    if player has resources to cast spell 'Flame Shock[id:470411]'
-    if spell 'Flame Shock[id:470411]' is off cooldown
-    if target does not have buff/debuff 'Flame Shock[id:188389]'
-2: Spell: Lava Lash[id:60103]
-    if talent 'Lava Lash[id:60103]' is taken
-    if player has resources to cast spell 'Lava Lash[id:60103]'
-    if spell 'Lava Lash[id:60103]' is off cooldown
+0: Spell: 涌动图腾[id:444995]
+    if talent '涌动图腾[id:444995]' is taken
+    if player has resources to cast spell '涌动图腾[id:444995]'
+    if spell '涌动图腾[id:444995]' is off cooldown
+    if player does not have buff/debuff '涌动图腾[id:1221347]'
+1: Spell: 烈焰震击[id:470411]
+    if talent '烈焰震击[id:470411]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411]'
+    if spell '烈焰震击[id:470411]' is off cooldown
+    if target does not have buff/debuff '烈焰震击[id:188389]'
+2: Spell: 熔岩猛击[id:60103]
+    if talent '熔岩猛击[id:60103]' is taken
+    if player has resources to cast spell '熔岩猛击[id:60103]'
+    if spell '熔岩猛击[id:60103]' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if there are less than 2 targets within 30 yards of player with buff/debuff 'Flame Shock[id:188389]'
-    if spell 'Lava Lash[id:60103]' is within allowed range
-3: Spell: Sundering[id:197214]
-    if talent 'Sundering[id:197214]' is taken
-    if player has resources to cast spell 'Sundering[id:197214]'
-    if spell 'Sundering[id:197214]' is off cooldown
-    if player does not have buff/debuff 'Primordial Storm[id:1218125]'
-4: Spell: Doom Winds[id:384352]
-    if talent 'Doom Winds[id:384352]' is taken
-    if player has resources to cast spell 'Doom Winds[id:384352]'
-    if spell 'Doom Winds[id:384352]' is off cooldown
+    if there are less than 2 targets within 30 yards of player with buff/debuff '烈焰震击[id:188389]'
+    if spell '熔岩猛击[id:60103]' is within allowed range
+3: Spell: 裂地术[id:197214]
+    if talent '裂地术[id:197214]' is taken
+    if player has resources to cast spell '裂地术[id:197214]'
+    if spell '裂地术[id:197214]' is off cooldown
+    if player does not have buff/debuff '始源风暴[id:1218125]'
+4: Spell: 毁灭之风[id:384352]
+    if talent '毁灭之风[id:384352]' is taken
+    if player has resources to cast spell '毁灭之风[id:384352]'
+    if spell '毁灭之风[id:384352]' is off cooldown
     if target is less than 8 yards away
     automation only (not part of the game's Assisted Combat rotation)
-5: Spell: Lightning Bolt[id:188196]
-    if player has buff/debuff 'Tempest[id:454015]'
-    if talent 'Lightning Bolt[id:188196]' is taken
-    if player has resources to cast spell 'Lightning Bolt[id:188196]'
-    if spell 'Lightning Bolt[id:188196]' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player does not have buff/debuff 'Raging Maelstrom[id:384149]'
-6: Spell: Chain Lightning[id:188443]
-    if talent 'Chain Lightning[id:188443]' is taken
-    if player has resources to cast spell 'Chain Lightning[id:188443]'
-    if spell 'Chain Lightning[id:188443]' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
+5: Spell: 闪电箭[id:188196]
+    if player has buff/debuff '狂风怒号[id:454015]'
+    if talent '闪电箭[id:188196]' is taken
+    if player has resources to cast spell '闪电箭[id:188196]'
+    if spell '闪电箭[id:188196]' is off cooldown
+    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+6: Spell: 闪电链[id:188443]
+    if talent '闪电链[id:188443]' is taken
+    if player has resources to cast spell '闪电链[id:188443]'
+    if spell '闪电链[id:188443]' is off cooldown
+    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Raging Maelstrom[id:384149]'
-7: Spell: Lightning Bolt[id:188196]
-    if talent 'Lightning Bolt[id:188196]' is taken
-    if player has resources to cast spell 'Lightning Bolt[id:188196]'
-    if spell 'Lightning Bolt[id:188196]' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player does not have buff/debuff 'Raging Maelstrom[id:384149]'
-8: Spell: Crash Lightning[id:187874]
-    if talent 'Crash Lightning[id:187874]' is taken
-    if player has resources to cast spell 'Crash Lightning[id:187874]'
-    if spell 'Crash Lightning[id:187874]' is off cooldown
+    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+7: Spell: 闪电箭[id:188196]
+    if talent '闪电箭[id:188196]' is taken
+    if player has resources to cast spell '闪电箭[id:188196]'
+    if spell '闪电箭[id:188196]' is off cooldown
+    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player does not have buff/debuff '暴怒漩涡[id:384149]'
+8: Spell: 毁灭闪电[id:187874]
+    if talent '毁灭闪电[id:187874]' is taken
+    if player has resources to cast spell '毁灭闪电[id:187874]'
+    if spell '毁灭闪电[id:187874]' is off cooldown
     if target is less than 10 yards away
-9: Spell: Lava Lash[id:60103]
-    if player has buff/debuff 'Lively Totems[id:445034]'
-    if talent 'Lava Lash[id:60103]' is taken
-    if player has resources to cast spell 'Lava Lash[id:60103]'
-    if spell 'Lava Lash[id:60103]' is off cooldown
-    if spell 'Lava Lash[id:60103]' is within allowed range
-10: Spell: Stormstrike[id:17364]
-    if talent 'Stormstrike[id:17364]' is taken
-    if player has resources to cast spell 'Stormstrike[id:17364]'
-    if spell 'Stormstrike[id:17364]' is off cooldown
-    if spell 'Stormstrike[id:17364]' is within allowed range
-11: Spell: Lava Lash[id:60103]
-    if talent 'Lava Lash[id:60103]' is taken
-    if player has resources to cast spell 'Lava Lash[id:60103]'
-    if spell 'Lava Lash[id:60103]' is off cooldown
-    if spell 'Lava Lash[id:60103]' is within allowed range
-12: Spell: Flame Shock[id:470411]
-    if talent 'Flame Shock[id:470411]' is taken
-    if player has resources to cast spell 'Flame Shock[id:470411]'
-    if spell 'Flame Shock[id:470411]' is off cooldown
-13: Spell: Frost Shock[id:196840]
-    if talent 'Frost Shock[id:196840]' is taken
-    if player has resources to cast spell 'Frost Shock[id:196840]'
-    if spell 'Frost Shock[id:196840]' is off cooldown
-14: Spell: Stormstrike[id:17364]
-15: Spell: Lightning Bolt[id:188196]
-    if player has buff/debuff 'Tempest[id:454015]'
-    if talent 'Lightning Bolt[id:188196]' is taken
-    if player has resources to cast spell 'Lightning Bolt[id:188196]'
-    if spell 'Lightning Bolt[id:188196]' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player has buff/debuff 'Raging Maelstrom[id:384149]'
-16: Spell: Sundering[id:197214]
-    if player has resources to cast spell 'Sundering[id:197214]'
-    if player has buff/debuff 'Primordial Storm[id:1218125]'
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player has buff/debuff 'Raging Maelstrom[id:384149]'
-17: Spell: Chain Lightning[id:188443]
-    if talent 'Chain Lightning[id:188443]' is taken
-    if player has resources to cast spell 'Chain Lightning[id:188443]'
-    if spell 'Chain Lightning[id:188443]' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
+9: Spell: 熔岩猛击[id:60103]
+    if player has buff/debuff '生机图腾[id:445034]'
+    if talent '熔岩猛击[id:60103]' is taken
+    if player has resources to cast spell '熔岩猛击[id:60103]'
+    if spell '熔岩猛击[id:60103]' is off cooldown
+    if spell '熔岩猛击[id:60103]' is within allowed range
+10: Spell: 风暴打击[id:17364]
+    if talent '风暴打击[id:17364]' is taken
+    if player has resources to cast spell '风暴打击[id:17364]'
+    if spell '风暴打击[id:17364]' is off cooldown
+    if spell '风暴打击[id:17364]' is within allowed range
+11: Spell: 熔岩猛击[id:60103]
+    if talent '熔岩猛击[id:60103]' is taken
+    if player has resources to cast spell '熔岩猛击[id:60103]'
+    if spell '熔岩猛击[id:60103]' is off cooldown
+    if spell '熔岩猛击[id:60103]' is within allowed range
+12: Spell: 烈焰震击[id:470411]
+    if talent '烈焰震击[id:470411]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411]'
+    if spell '烈焰震击[id:470411]' is off cooldown
+13: Spell: 冰霜震击[id:196840]
+    if talent '冰霜震击[id:196840]' is taken
+    if player has resources to cast spell '冰霜震击[id:196840]'
+    if spell '冰霜震击[id:196840]' is off cooldown
+14: Spell: 风暴打击[id:17364]
+15: Spell: 闪电箭[id:188196]
+    if player has buff/debuff '狂风怒号[id:454015]'
+    if talent '闪电箭[id:188196]' is taken
+    if player has resources to cast spell '闪电箭[id:188196]'
+    if spell '闪电箭[id:188196]' is off cooldown
+    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player has buff/debuff '暴怒漩涡[id:384149]'
+16: Spell: 裂地术[id:197214]
+    if player has resources to cast spell '裂地术[id:197214]'
+    if player has buff/debuff '始源风暴[id:1218125]'
+    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player has buff/debuff '暴怒漩涡[id:384149]'
+17: Spell: 闪电链[id:188443]
+    if talent '闪电链[id:188443]' is taken
+    if player has resources to cast spell '闪电链[id:188443]'
+    if spell '闪电链[id:188443]' is off cooldown
+    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Raging Maelstrom[id:384149]'
-18: Spell: Lightning Bolt[id:188196]
-    if talent 'Lightning Bolt[id:188196]' is taken
-    if player has resources to cast spell 'Lightning Bolt[id:188196]'
-    if spell 'Lightning Bolt[id:188196]' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player has buff/debuff 'Raging Maelstrom[id:384149]'
-19: Spell: Stormstrike[id:17364]
-    if talent 'Stormstrike[id:17364]' is taken
-    if player has resources to cast spell 'Stormstrike[id:17364]'
-    if spell 'Stormstrike[id:17364]' is off cooldown
-    if spell 'Stormstrike[id:17364]' is within allowed range
-    if player has buff/debuff 'Ascendance[id:114051]'
-    if player has buff/debuff 'Thorim's Invocation[id:384444]'
-20: Spell: Windfury Weapon[id:33757]
-    if talent 'Windfury Weapon[id:33757]' is taken
-    if player has resources to cast spell 'Windfury Weapon[id:33757]'
-    if spell 'Windfury Weapon[id:33757]' is off cooldown
-    if player does not have buff/debuff 'Windfury Weapon[id:319773]'
-21: Spell: Flametongue Weapon[id:318038]
-    if talent 'Flametongue Weapon[id:318038]' is taken
-    if player has resources to cast spell 'Flametongue Weapon[id:318038]'
-    if spell 'Flametongue Weapon[id:318038]' is off cooldown
-    if player does not have buff/debuff 'Flametongue Weapon[id:319778]'
-22: Spell: Flame Shock[id:470411]
-    if talent 'Flame Shock[id:470411]' is taken
-    if player has resources to cast spell 'Flame Shock[id:470411]'
-    if spell 'Flame Shock[id:470411]' is off cooldown
+    if player has buff/debuff '暴怒漩涡[id:384149]'
+18: Spell: 闪电箭[id:188196]
+    if talent '闪电箭[id:188196]' is taken
+    if player has resources to cast spell '闪电箭[id:188196]'
+    if spell '闪电箭[id:188196]' is off cooldown
+    if player has more than 10 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player has buff/debuff '暴怒漩涡[id:384149]'
+19: Spell: 风暴打击[id:17364]
+    if talent '风暴打击[id:17364]' is taken
+    if player has resources to cast spell '风暴打击[id:17364]'
+    if spell '风暴打击[id:17364]' is off cooldown
+    if spell '风暴打击[id:17364]' is within allowed range
+    if player has buff/debuff '升腾[id:114051]'
+    if player has buff/debuff '托里姆的祈咒[id:384444]'
+20: Spell: 风怒武器[id:33757]
+    if talent '风怒武器[id:33757]' is taken
+    if player has resources to cast spell '风怒武器[id:33757]'
+    if spell '风怒武器[id:33757]' is off cooldown
+    if player does not have buff/debuff '风怒武器[id:319773]'
+21: Spell: 火舌武器[id:318038]
+    if talent '火舌武器[id:318038]' is taken
+    if player has resources to cast spell '火舌武器[id:318038]'
+    if spell '火舌武器[id:318038]' is off cooldown
+    if player does not have buff/debuff '火舌武器[id:319778]'
+22: Spell: 烈焰震击[id:470411]
+    if talent '烈焰震击[id:470411]' is taken
+    if player has resources to cast spell '烈焰震击[id:470411]'
+    if spell '烈焰震击[id:470411]' is off cooldown
     if player has buff/debuff 'Unknown Spell[id:470058]'
-23: Spell: Lightning Shield[id:192106]
-    if talent 'Lightning Shield[id:192106]' is taken
-    if player has resources to cast spell 'Lightning Shield[id:192106]'
-    if spell 'Lightning Shield[id:192106]' is off cooldown
-    if player does not have buff/debuff 'Lightning Shield[id:192106]'
-24: Spell: Crash Lightning[id:187874]
-    if talent 'Crash Lightning[id:187874]' is taken
-    if player has resources to cast spell 'Crash Lightning[id:187874]'
-    if spell 'Crash Lightning[id:187874]' is off cooldown
-    if player has buff/debuff 'Ascendance[id:114051]'
-    if player has buff/debuff 'Thorim's Invocation[id:384444]'
+23: Spell: 闪电之盾[id:192106]
+    if talent '闪电之盾[id:192106]' is taken
+    if player has resources to cast spell '闪电之盾[id:192106]'
+    if spell '闪电之盾[id:192106]' is off cooldown
+    if player does not have buff/debuff '闪电之盾[id:192106]'
+24: Spell: 毁灭闪电[id:187874]
+    if talent '毁灭闪电[id:187874]' is taken
+    if player has resources to cast spell '毁灭闪电[id:187874]'
+    if spell '毁灭闪电[id:187874]' is off cooldown
+    if player has buff/debuff '升腾[id:114051]'
+    if player has buff/debuff '托里姆的祈咒[id:384444]'
     if target is less than 10 yards away
-25: Spell: Voltaic Blaze[id:470057]
-    if talent 'Voltaic Blaze[id:470057]' is taken
-    if player has resources to cast spell 'Voltaic Blaze[id:470057]'
-    if spell 'Voltaic Blaze[id:470057]' is off cooldown
-26: Spell: Skyfury[id:462854]
-    if talent 'Skyfury[id:462854]' is taken
-    if player has resources to cast spell 'Skyfury[id:462854]'
-    if spell 'Skyfury[id:462854]' is off cooldown
-    if player has buff/debuff 'Skyfury Highlight[id:1271904]'
-27: Spell: Sundering[id:197214]
-    if player has resources to cast spell 'Sundering[id:197214]'
-    if player has buff/debuff 'Primordial Storm[id:1218125]'
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon[id:344179]'
-    if player does not have buff/debuff 'Raging Maelstrom[id:384149]'
+25: Spell: 流电炽焰[id:470057]
+    if talent '流电炽焰[id:470057]' is taken
+    if player has resources to cast spell '流电炽焰[id:470057]'
+    if spell '流电炽焰[id:470057]' is off cooldown
+26: Spell: 天怒[id:462854]
+    if talent '天怒[id:462854]' is taken
+    if player has resources to cast spell '天怒[id:462854]'
+    if spell '天怒[id:462854]' is off cooldown
+    if player has buff/debuff '天怒高亮[id:1271904]'
+27: Spell: 裂地术[id:197214]
+    if player has resources to cast spell '裂地术[id:197214]'
+    if player has buff/debuff '始源风暴[id:1218125]'
+    if player has more than 5 stacks of buff/debuff '漩涡武器[id:344179]'
+    if player does not have buff/debuff '暴怒漩涡[id:384149]'
