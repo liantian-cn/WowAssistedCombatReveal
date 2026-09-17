@@ -1,247 +1,247 @@
 Assassination
 0: Spell: 锁喉[id:703,cd:6]
-    若目标没有增益/减益 '锁喉[id:703,cd:6]'
-    若已点出天赋 '锁喉[id:703,cd:6]'
-    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
-    若技能 '锁喉[id:703,cd:6]' 不在冷却中
-    若技能 '锁喉[id:703,cd:6]' 在射程内
+    若目标没有增益/减益 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若已点出天赋 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '锁喉[id:703,cd:6]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 1: Spell: 割裂[id:1943]
-    若目标没有增益/减益 '割裂[id:1943]'
-    若玩家连击点大于等于 5
-    若已点出天赋 '割裂[id:1943]'
-    若玩家有足够资源施放技能 '割裂[id:1943]'
-    若技能 '割裂[id:1943]' 不在冷却中
-    若技能 '割裂[id:1943]' 在射程内
-    若玩家没有增益/减益 '至黑之夜[id:457280]'
+    若目标没有增益/减益 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若已点出天赋 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '割裂[id:1943]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '割裂[id:1943]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 君王之灾[id:385627,cd:60]
-    若已点出天赋 '君王之灾[id:385627,cd:60]'
-    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'
-    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中
-    若技能 '君王之灾[id:385627,cd:60]' 在射程内
-    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
-    若目标拥有增益/减益 '割裂[id:1943]'
-    若玩家拥有增益/减益 '无赦[id:1265387]'
-    若玩家连击点小于等于 1
+    若已点出天赋 '君王之灾[id:385627,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '君王之灾[id:385627,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标拥有增益/减益 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若玩家拥有增益/减益 '无赦[id:1265387]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家连击点小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
 3: Spell: 刺骨[id:196819]
-    若玩家连击点大于等于 5
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家没有增益/减益 '至黑之夜[id:457280]'
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 4: Spell: 影袭[id:1752]
-    若已点出天赋 '影袭[id:1752]'
-    若玩家有足够资源施放技能 '影袭[id:1752]'
-    若技能 '影袭[id:1752]' 不在冷却中
-    若技能 '影袭[id:1752]' 在射程内
+    若已点出天赋 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '影袭[id:1752]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '影袭[id:1752]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 5: Spell: 伏击[id:8676]
-    若玩家拥有增益/减益 '侧袭[id:121153]'
-    若已点出天赋 '伏击[id:8676]'
-    若玩家有足够资源施放技能 '伏击[id:8676]'
-    若技能 '伏击[id:8676]' 不在冷却中
-    若技能 '伏击[id:8676]' 在射程内
+    若玩家拥有增益/减益 '侧袭[id:121153]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '伏击[id:8676]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '伏击[id:8676]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 6: Spell: 刀扇[id:51723]
-    若玩家周围 10 码内的目标数量大于 3 个
-    若已点出天赋 '刀扇[id:51723]'
-    若玩家有足够资源施放技能 '刀扇[id:51723]'
-    若技能 '刀扇[id:51723]' 不在冷却中
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '刀扇[id:51723]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '刀扇[id:51723]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刀扇[id:51723]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 7: Spell: 剧毒之刃[id:185565]
-    若已点出天赋 '剧毒之刃[id:185565]'
-    若玩家有足够资源施放技能 '剧毒之刃[id:185565]'
-    若技能 '剧毒之刃[id:185565]' 不在冷却中
-    若技能 '剧毒之刃[id:185565]' 在射程内
-    若玩家没有增益/减益 '潜行[id:1784,cd:2]'
-    若玩家没有增益/减益 '消失[id:11327]'
-    若玩家能量大于等于 70
-    若目标距离大于 15 码
+    若已点出天赋 '剧毒之刃[id:185565]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '剧毒之刃[id:185565]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '剧毒之刃[id:185565]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '剧毒之刃[id:185565]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '潜行[id:1784,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '消失[id:11327]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家能量大于等于 70        -- ASSISTED_COMBAT_RULE_TYPE_ENERGY_GREATER
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
 8: Spell: 夺命药膏[id:2823]
-    若已点出天赋 '夺命药膏[id:2823]'
-    若玩家有足够资源施放技能 '夺命药膏[id:2823]'
-    若技能 '夺命药膏[id:2823]' 不在冷却中
-    若玩家没有增益/减益 '夺命药膏[id:2823]'
-    若玩家没有增益/减益 '致伤药膏[id:8679]'
-    若玩家没有增益/减益 '龙淬之锋[id:381801]'
+    若已点出天赋 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '夺命药膏[id:2823]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 9: Spell: 影袭[id:1752]
 10: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 5
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家拥有增益/减益 '至黑之夜[id:457280]'
-    若玩家没有增益/减益 '深邃诡计[id:193531]'
-    若玩家没有增益/减益 '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '血色谋策[id:457512]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 11: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 6
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家拥有增益/减益 '至黑之夜[id:457280]'
-    若玩家没有增益/减益 '血色谋策[id:457512]'
-    若玩家拥有增益/减益 '深邃诡计[id:193531]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 6        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '血色谋策[id:457512]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 12: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 6
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家拥有增益/减益 '至黑之夜[id:457280]'
-    若玩家没有增益/减益 '深邃诡计[id:193531]'
-    若玩家拥有增益/减益 '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 6        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '血色谋策[id:457512]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 13: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 7
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家拥有增益/减益 '至黑之夜[id:457280]'
-    若玩家拥有增益/减益 '深邃诡计[id:193531]'
-    若玩家拥有增益/减益 '血色谋策[id:457512]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 7        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '血色谋策[id:457512]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 14: Spell: 切割[id:315496]
-    若玩家没有增益/减益 '切割[id:315496]'
-    若玩家连击点大于等于 5
-    若已点出天赋 '切割[id:315496]'
-    若玩家有足够资源施放技能 '切割[id:315496]'
-    若技能 '切割[id:315496]' 不在冷却中
-    若玩家没有增益/减益 '穷追猛砍[id:51667]'
+    若玩家没有增益/减益 '切割[id:315496]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若已点出天赋 '切割[id:315496]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '切割[id:315496]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '切割[id:315496]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '穷追猛砍[id:51667]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 15: Spell: 伏击[id:8676]
-    若已点出天赋 '伏击[id:8676]'
-    若玩家有足够资源施放技能 '伏击[id:8676]'
-    若技能 '伏击[id:8676]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'
-    若玩家没有增益/减益 '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '伏击[id:8676]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '强化锁喉[id:381632]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 16: Spell: 伏击[id:8676]
-    若已点出天赋 '伏击[id:8676]'
-    若玩家有足够资源施放技能 '伏击[id:8676]'
-    若技能 '伏击[id:8676]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'
-    若玩家没有增益/减益 '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '伏击[id:8676]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '强化锁喉[id:381632]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 17: Spell: 伏击[id:8676]
-    若已点出天赋 '伏击[id:8676]'
-    若玩家有足够资源施放技能 '伏击[id:8676]'
-    若技能 '伏击[id:8676]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '消失[id:11327]'
-    若玩家没有增益/减益 '强化锁喉[id:381632]'
+    若已点出天赋 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '伏击[id:8676]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '伏击[id:8676]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '消失[id:11327]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '强化锁喉[id:381632]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 18: Spell: 锁喉[id:703,cd:6]
-    若已点出天赋 '锁喉[id:703,cd:6]'
-    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
-    若技能 '锁喉[id:703,cd:6]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'
+    若已点出天赋 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '潜行[id:1784,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 19: Spell: 锁喉[id:703,cd:6]
-    若已点出天赋 '锁喉[id:703,cd:6]'
-    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
-    若技能 '锁喉[id:703,cd:6]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'
+    若已点出天赋 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '潜行[id:115191,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 20: Spell: 锁喉[id:703,cd:6]
-    若已点出天赋 '锁喉[id:703,cd:6]'
-    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'
-    若技能 '锁喉[id:703,cd:6]' 不在冷却中
-    若目标距离小于等于 40 码
-    若玩家拥有增益/减益 '消失[id:11327]'
+    若已点出天赋 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '锁喉[id:703,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '消失[id:11327]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 21: Spell: 萎缩药膏[id:381637]
-    若已点出天赋 '萎缩药膏[id:381637]'
-    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'
-    若技能 '萎缩药膏[id:381637]' 不在冷却中
-    若玩家没有增益/减益 '萎缩药膏[id:381637]'
+    若已点出天赋 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '萎缩药膏[id:381637]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 22: Spell: 夺命药膏[id:2823]
-    若已点出天赋 '夺命药膏[id:2823]'
-    若玩家有足够资源施放技能 '夺命药膏[id:2823]'
-    若技能 '夺命药膏[id:2823]' 不在冷却中
-    若玩家没有增益/减益 '夺命药膏[id:2823]'
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若已点出天赋 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '夺命药膏[id:2823]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '夺命药膏[id:2823]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 23: Spell: 增效药膏[id:381664]
-    若已点出天赋 '增效药膏[id:381664]'
-    若玩家有足够资源施放技能 '增效药膏[id:381664]'
-    若技能 '增效药膏[id:381664]' 不在冷却中
-    若玩家没有增益/减益 '增效药膏[id:381664]'
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
-    若玩家没有增益/减益 '致伤药膏[id:8679]'
-    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '增效药膏[id:381664]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 24: Spell: 致伤药膏[id:8679]
-    若已点出天赋 '致伤药膏[id:8679]'
-    若玩家有足够资源施放技能 '致伤药膏[id:8679]'
-    若技能 '致伤药膏[id:8679]' 不在冷却中
-    若玩家没有增益/减益 '致伤药膏[id:8679]'
-    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
-    若玩家没有增益/减益 '增效药膏[id:381664]'
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
+    若已点出天赋 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '致伤药膏[id:8679]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 25: Spell: 速效药膏[id:315584]
-    若已点出天赋 '速效药膏[id:315584]'
-    若玩家有足够资源施放技能 '速效药膏[id:315584]'
-    若技能 '速效药膏[id:315584]' 不在冷却中
-    若玩家没有增益/减益 '增效药膏[id:381664]'
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
-    若玩家没有增益/减益 '致伤药膏[id:8679]'
-    若玩家没有增益/减益 '速效药膏[id:315584]'
+    若已点出天赋 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '速效药膏[id:315584]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 26: Spell: 迟钝药膏[id:5761]
-    若已点出天赋 '迟钝药膏[id:5761]'
-    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'
-    若技能 '迟钝药膏[id:5761]' 不在冷却中
-    若玩家没有增益/减益 '迟钝药膏[id:5761]'
+    若已点出天赋 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '迟钝药膏[id:5761]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 27: Spell: 减速药膏[id:3408]
-    若已点出天赋 '减速药膏[id:3408]'
-    若玩家有足够资源施放技能 '减速药膏[id:3408]'
-    若技能 '减速药膏[id:3408]' 不在冷却中
-    若玩家没有增益/减益 '迟钝药膏[id:5761]'
-    若玩家没有增益/减益 '萎缩药膏[id:381637]'
-    若玩家没有增益/减益 '减速药膏[id:3408]'
-    若玩家没有增益/减益 '龙淬之锋[id:381801]'
+    若已点出天赋 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '减速药膏[id:3408]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 28: Spell: 增效药膏[id:381664]
-    若已点出天赋 '增效药膏[id:381664]'
-    若玩家有足够资源施放技能 '增效药膏[id:381664]'
-    若技能 '增效药膏[id:381664]' 不在冷却中
-    若玩家没有增益/减益 '增效药膏[id:381664]'
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
-    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '增效药膏[id:381664]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '增效药膏[id:381664]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 29: Spell: 减速药膏[id:3408]
-    若已点出天赋 '减速药膏[id:3408]'
-    若玩家有足够资源施放技能 '减速药膏[id:3408]'
-    若技能 '减速药膏[id:3408]' 不在冷却中
-    若玩家拥有增益/减益 '龙淬之锋[id:381801]'
-    若玩家没有增益/减益 '减速药膏[id:3408]'
+    若已点出天赋 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '减速药膏[id:3408]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '龙淬之锋[id:381801]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 30: Spell: 死亡印记[id:360194,cd:120]
-    若已点出天赋 '死亡印记[id:360194,cd:120]'
-    若玩家有足够资源施放技能 '死亡印记[id:360194,cd:120]'
-    若技能 '死亡印记[id:360194,cd:120]' 不在冷却中
-    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
-    若目标拥有增益/减益 '割裂[id:1943]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
-    若技能 '死亡印记[id:360194,cd:120]' 在射程内
+    若已点出天赋 '死亡印记[id:360194,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '死亡印记[id:360194,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '死亡印记[id:360194,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标拥有增益/减益 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
+    若技能 '死亡印记[id:360194,cd:120]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 31: Spell: 君王之灾[id:385627,cd:60]
-    若目标拥有增益/减益 '割裂[id:1943]'
-    若目标拥有增益/减益 '锁喉[id:703,cd:6]'
-    若技能 '君王之灾[id:385627,cd:60]' 在射程内
-    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中
-    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'
-    若已点出天赋 '君王之灾[id:385627,cd:60]'
-    若玩家没有增益/减益 '无赦[id:1265387]'
+    若目标拥有增益/减益 '割裂[id:1943]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标拥有增益/减益 '锁喉[id:703,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若技能 '君王之灾[id:385627,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '君王之灾[id:385627,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '君王之灾[id:385627,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '君王之灾[id:385627,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '无赦[id:1265387]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 32: Spell: 猩红风暴[id:1247227]
-    若技能 '猩红风暴[id:1247227]' 不在冷却中
-    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
-    若已点出天赋 '猩红风暴[id:1247227]'
-    若玩家周围 10 码内的目标数量大于 7 个
-    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 5 个
-    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个
-    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个
+    若技能 '猩红风暴[id:1247227]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 7 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 5 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_LESS
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER
 33: Spell: 猩红风暴[id:1247227]
-    若技能 '猩红风暴[id:1247227]' 不在冷却中
-    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
-    若已点出天赋 '猩红风暴[id:1247227]'
-    若玩家周围 10 码内的目标数量大于 5 个
-    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 3 个
-    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个
-    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个
+    若技能 '猩红风暴[id:1247227]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 5 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_LESS
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER
 34: Spell: 猩红风暴[id:1247227]
-    若技能 '猩红风暴[id:1247227]' 不在冷却中
-    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'
-    若已点出天赋 '猩红风暴[id:1247227]'
-    若玩家周围 10 码内的目标数量大于 3 个
-    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 1 个
-    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个
-    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个
+    若技能 '猩红风暴[id:1247227]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猩红风暴[id:1247227]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 '锁喉[id:703,cd:6]' 的目标数量小于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_LESS
+    若玩家周围 10 码内带有增益/减益 1943 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER
+    若玩家周围 10 码内带有增益/减益 703 的目标数量大于等于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER

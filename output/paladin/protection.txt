@@ -1,64 +1,64 @@
 Protection
 0: Spell: 圣洁鸣钟[id:375576,cd:60]
-    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'
-    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'
-    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中
-    若技能 '圣洁鸣钟[id:375576,cd:60]' 在射程内
+    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 1: Spell: 复仇者之盾[id:31935,cd:15]
-    若已点出天赋 '复仇者之盾[id:31935,cd:15]'
-    若玩家有足够资源施放技能 '复仇者之盾[id:31935,cd:15]'
-    若技能 '复仇者之盾[id:31935,cd:15]' 不在冷却中
-    若技能 '复仇者之盾[id:31935,cd:15]' 在射程内
+    若已点出天赋 '复仇者之盾[id:31935,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '复仇者之盾[id:31935,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '复仇者之盾[id:31935,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '复仇者之盾[id:31935,cd:15]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 2: Spell: 愤怒之锤[id:24275]
-    若已点出天赋 '愤怒之锤[id:24275]'
-    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'
-    若技能 '愤怒之锤[id:24275]' 不在冷却中
-    若技能 '愤怒之锤[id:24275]' 在射程内
+    若已点出天赋 '愤怒之锤[id:24275]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '愤怒之锤[id:24275]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '愤怒之锤[id:24275]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '愤怒之锤[id:24275]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 3: Spell: 审判[id:275779]
-    若已点出天赋 '审判[id:275779]'
-    若玩家有足够资源施放技能 '审判[id:275779]'
-    若技能 '审判[id:275779]' 不在冷却中
-    若技能 '审判[id:275779]' 在射程内
+    若已点出天赋 '审判[id:275779]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '审判[id:275779]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '审判[id:275779]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '审判[id:275779]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 4: Spell: 圣洁鸣钟[id:375576,cd:60]
-    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'
-    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'
-    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中
-    若玩家周围 30 码内的目标数量大于 3 个
-    若玩家神圣能量小于等于 2
+    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 30 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家神圣能量小于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_HOLY_POWER_LESS
 5: Spell: 圣洁鸣钟[id:375576,cd:60]
-    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'
-    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'
-    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中
-    若玩家周围 30 码内的目标数量小于等于 2 个
-    若玩家神圣能量小于等于 3
+    若已点出天赋 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '圣洁鸣钟[id:375576,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '圣洁鸣钟[id:375576,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 30 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
+    若玩家神圣能量小于等于 3        -- ASSISTED_COMBAT_RULE_TYPE_HOLY_POWER_LESS
 6: Spell: 十字军打击[id:35395]
-    若已点出天赋 '十字军打击[id:35395]'
-    若玩家有足够资源施放技能 '十字军打击[id:35395]'
-    若技能 '十字军打击[id:35395]' 不在冷却中
-    若目标距离小于等于 5 码
+    若已点出天赋 '十字军打击[id:35395]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '十字军打击[id:35395]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '十字军打击[id:35395]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 7: Spell: 奉献[id:26573,cd:9]
-    若已点出天赋 '奉献[id:26573,cd:9]'
-    若玩家有足够资源施放技能 '奉献[id:26573,cd:9]'
-    若技能 '奉献[id:26573,cd:9]' 不在冷却中
-    若玩家没有增益/减益 '奉献[id:188370]'
+    若已点出天赋 '奉献[id:26573,cd:9]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '奉献[id:26573,cd:9]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '奉献[id:26573,cd:9]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '奉献[id:188370]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 8: Spell: 审判[id:275779]
 9: Spell: 正义盾击[id:53600]
-    若已点出天赋 '正义盾击[id:53600]'
-    若玩家有足够资源施放技能 '正义盾击[id:53600]'
-    若技能 '正义盾击[id:53600]' 不在冷却中
-    若玩家没有增益/减益 '正义盾击[id:132403]'
+    若已点出天赋 '正义盾击[id:53600]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '正义盾击[id:53600]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '正义盾击[id:53600]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '正义盾击[id:132403]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 10: Spell: 正义盾击[id:53600]
-    若已点出天赋 '正义盾击[id:53600]'
-    若玩家有足够资源施放技能 '正义盾击[id:53600]'
-    若技能 '正义盾击[id:53600]' 不在冷却中
-    若玩家生命值大于等于 40%
+    若已点出天赋 '正义盾击[id:53600]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '正义盾击[id:53600]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '正义盾击[id:53600]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家生命值大于等于 40%        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_GREATER
 11: Spell: 复仇之怒[id:31884,cd:120]
-    若已点出天赋 '复仇之怒[id:31884,cd:120]'
-    若玩家有足够资源施放技能 '复仇之怒[id:31884,cd:120]'
-    若技能 '复仇之怒[id:31884,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '复仇之怒[id:31884,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '复仇之怒[id:31884,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '复仇之怒[id:31884,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 12: Spell: 戒卫[id:389539,cd:120]
-    若已点出天赋 '戒卫[id:389539,cd:120]'
-    若玩家有足够资源施放技能 '戒卫[id:389539,cd:120]'
-    若技能 '戒卫[id:389539,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '戒卫[id:389539,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '戒卫[id:389539,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '戒卫[id:389539,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY

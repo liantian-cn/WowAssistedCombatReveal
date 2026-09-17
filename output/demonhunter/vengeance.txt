@@ -1,67 +1,67 @@
 Vengeance
 0: Spell: 投掷利刃[id:204157]
-    若已点出天赋 '投掷利刃[id:204157]'
-    若玩家有足够资源施放技能 '投掷利刃[id:204157]'
-    若技能 '投掷利刃[id:204157]' 不在冷却中
-    若技能 '投掷利刃[id:204157]' 在射程内
-    若玩家拥有增益/减益 '收割者战刃[id:444764]'
+    若已点出天赋 '投掷利刃[id:204157]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '投掷利刃[id:204157]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '投掷利刃[id:204157]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '投掷利刃[id:204157]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '收割者战刃[id:444764]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 1: Spell: 裂魂[id:203782]
-    若已点出天赋 '裂魂[id:203782]'
-    若玩家有足够资源施放技能 '裂魂[id:203782]'
-    若技能 '裂魂[id:203782]' 不在冷却中
-    若技能 '裂魂[id:203782]' 在射程内
-    若玩家拥有增益/减益 '撕裂猛击[id:442442]'
+    若已点出天赋 '裂魂[id:203782]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '裂魂[id:203782]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '裂魂[id:203782]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '裂魂[id:203782]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '撕裂猛击[id:442442]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 2: Spell: 灵魂裂劈[id:228477]
-    若已点出天赋 '灵魂裂劈[id:228477]'
-    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'
-    若技能 '灵魂裂劈[id:228477]' 不在冷却中
-    若技能 '灵魂裂劈[id:228477]' 在射程内
-    若玩家拥有增益/减益 '战刃乱舞[id:442435]'
+    若已点出天赋 '灵魂裂劈[id:228477]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂裂劈[id:228477]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '灵魂裂劈[id:228477]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '战刃乱舞[id:442435]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 3: Spell: 灵魂切削[id:207407,cd:60]
-    若已点出天赋 '灵魂切削[id:207407,cd:60]'
-    若玩家有足够资源施放技能 '灵魂切削[id:207407,cd:60]'
-    若技能 '灵魂切削[id:207407,cd:60]' 不在冷却中
-    若技能 '灵魂切削[id:207407,cd:60]' 在射程内
+    若已点出天赋 '灵魂切削[id:207407,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂切削[id:207407,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂切削[id:207407,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '灵魂切削[id:207407,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 4: Spell: 怨念咒符[id:390163]
-    若已点出天赋 '怨念咒符[id:390163]'
-    若玩家有足够资源施放技能 '怨念咒符[id:390163]'
-    若技能 '怨念咒符[id:390163]' 不在冷却中
-    若目标距离小于等于 30 码
+    若已点出天赋 '怨念咒符[id:390163]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '怨念咒符[id:390163]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '怨念咒符[id:390163]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 30 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 5: Spell: 烈焰咒符[id:204596]
-    若已点出天赋 '烈焰咒符[id:204596]'
-    若玩家有足够资源施放技能 '烈焰咒符[id:204596]'
-    若技能 '烈焰咒符[id:204596]' 不在冷却中
-    若目标距离小于等于 30 码
-    若目标没有增益/减益 '烈焰咒符[id:204598]'
+    若已点出天赋 '烈焰咒符[id:204596]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '烈焰咒符[id:204596]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '烈焰咒符[id:204596]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 30 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若目标没有增益/减益 '烈焰咒符[id:204598]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 6: Spell: 献祭光环[id:258920,cd:2]
-    若已点出天赋 '献祭光环[id:258920,cd:2]'
-    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
-    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
-    若玩家周围 8 码内的目标数量大于 1 个
+    若已点出天赋 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 8 码内的目标数量大于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 7: Spell: 幽魂炸弹[id:247454,cd:25]
-    若已点出天赋 '幽魂炸弹[id:247454,cd:25]'
-    若玩家有足够资源施放技能 '幽魂炸弹[id:247454,cd:25]'
-    若技能 '幽魂炸弹[id:247454,cd:25]' 不在冷却中
-    若玩家身上增益/减益 '灵魂残片[id:203981]' 的层数大于等于 4
+    若已点出天赋 '幽魂炸弹[id:247454,cd:25]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '幽魂炸弹[id:247454,cd:25]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '幽魂炸弹[id:247454,cd:25]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家身上增益/减益 '灵魂残片[id:203981]' 的层数大于等于 4        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_GREATER
 8: Spell: 破裂[id:263642]
-    若已点出天赋 '破裂[id:263642]'
-    若玩家有足够资源施放技能 '破裂[id:263642]'
-    若技能 '破裂[id:263642]' 不在冷却中
-    若技能 '破裂[id:263642]' 在射程内
-    若已点出天赋 '破裂[id:263642]'
+    若已点出天赋 '破裂[id:263642]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '破裂[id:263642]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '破裂[id:263642]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '破裂[id:263642]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若已点出天赋 '破裂[id:263642]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 9: Spell: 灵魂裂劈[id:228477]
-    若已点出天赋 '灵魂裂劈[id:228477]'
-    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'
-    若技能 '灵魂裂劈[id:228477]' 不在冷却中
-    若技能 '灵魂裂劈[id:228477]' 在射程内
+    若已点出天赋 '灵魂裂劈[id:228477]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂裂劈[id:228477]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂裂劈[id:228477]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '灵魂裂劈[id:228477]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 投掷利刃[id:204157]
-    若已点出天赋 '投掷利刃[id:204157]'
-    若玩家有足够资源施放技能 '投掷利刃[id:204157]'
-    若技能 '投掷利刃[id:204157]' 不在冷却中
-    若技能 '投掷利刃[id:204157]' 在射程内
+    若已点出天赋 '投掷利刃[id:204157]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '投掷利刃[id:204157]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '投掷利刃[id:204157]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '投掷利刃[id:204157]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 11: Spell: 灵魂裂劈[id:228477]
 12: Spell: 恶魔变形[id:187827]
-    若已点出天赋 '恶魔变形[id:187827]'
-    若玩家有足够资源施放技能 '恶魔变形[id:187827]'
-    若技能 '恶魔变形[id:187827]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '恶魔变形[id:187827]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '恶魔变形[id:187827]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '恶魔变形[id:187827]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY

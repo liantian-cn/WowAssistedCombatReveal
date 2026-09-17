@@ -1,55 +1,55 @@
 Beast Mastery
 0: Spell: 狂野怒火[id:19574,cd:90]
-    若已点出天赋 '狂野怒火[id:19574,cd:90]'
-    若玩家有足够资源施放技能 '狂野怒火[id:19574,cd:90]'
-    若技能 '狂野怒火[id:19574,cd:90]' 不在冷却中
+    若已点出天赋 '狂野怒火[id:19574,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '狂野怒火[id:19574,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '狂野怒火[id:19574,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 1: Spell: 狂野鞭笞[id:1264359,cd:8]
-    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'
-    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'
-    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中
-    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内
-    若玩家身上的增益/减益 '野兽顺劈[id:268877]' 剩余时间小于等于 2000 毫秒
-    若目标周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家身上的增益/减益 '野兽顺劈[id:268877]' 剩余时间小于等于 2000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_AURA_DURATION_PLAYER
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 2: Spell: 杀戮命令[id:34026]
-    若已点出天赋 '杀戮命令[id:34026]'
-    若玩家有足够资源施放技能 '杀戮命令[id:34026]'
-    若技能 '杀戮命令[id:34026]' 不在冷却中
-    若技能 '杀戮命令[id:34026]' 在射程内
+    若已点出天赋 '杀戮命令[id:34026]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '杀戮命令[id:34026]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '杀戮命令[id:34026]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '杀戮命令[id:34026]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 3: Spell: 倒刺射击[id:217200]
-    若已点出天赋 '倒刺射击[id:217200]'
-    若玩家有足够资源施放技能 '倒刺射击[id:217200]'
-    若技能 '倒刺射击[id:217200]' 不在冷却中
-    若技能 '倒刺射击[id:217200]' 在射程内
+    若已点出天赋 '倒刺射击[id:217200]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '倒刺射击[id:217200]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '倒刺射击[id:217200]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '倒刺射击[id:217200]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 4: Spell: 奥术射击[id:185358]
-    若已点出天赋 '奥术射击[id:185358]'
-    若玩家有足够资源施放技能 '奥术射击[id:185358]'
-    若技能 '奥术射击[id:185358]' 不在冷却中
+    若已点出天赋 '奥术射击[id:185358]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '奥术射击[id:185358]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '奥术射击[id:185358]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 5: Spell: 黑蚀箭[id:466930]
-    若已点出天赋 '黑蚀箭[id:466930]'
-    若玩家有足够资源施放技能 '黑蚀箭[id:466930]'
-    若技能 '黑蚀箭[id:466930]' 不在冷却中
-    若技能 '黑蚀箭[id:466930]' 在射程内
+    若已点出天赋 '黑蚀箭[id:466930]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '黑蚀箭[id:466930]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '黑蚀箭[id:466930]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '黑蚀箭[id:466930]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 6: Spell: 狂野鞭笞[id:1264359,cd:8]
-    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'
-    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'
-    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中
-    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内
-    若目标周围 10 码内的目标数量大于 3 个
-    若玩家没有增益/减益 '野兽顺劈[id:268877]'
+    若已点出天赋 '狂野鞭笞[id:1264359,cd:8]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '狂野鞭笞[id:1264359,cd:8]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '狂野鞭笞[id:1264359,cd:8]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家没有增益/减益 '野兽顺劈[id:268877]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 7: Spell: 召唤宠物 1[id:883]
-    若玩家没有宠物
-    若已点出天赋 '召唤宠物 1[id:883]'
-    若玩家有足够资源施放技能 '召唤宠物 1[id:883]'
-    若技能 '召唤宠物 1[id:883]' 不在冷却中
+    若玩家没有宠物        -- ASSISTED_COMBAT_RULE_TYPE_HAS_NO_PET
+    若已点出天赋 '召唤宠物 1[id:883]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '召唤宠物 1[id:883]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '召唤宠物 1[id:883]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 8: Spell: 稳固射击[id:56641]
-    若已点出天赋 '稳固射击[id:56641]'
-    若玩家有足够资源施放技能 '稳固射击[id:56641]'
-    若技能 '稳固射击[id:56641]' 不在冷却中
-    若玩家没有增益/减益 '兽群战术[id:321014]'
-    若技能 '稳固射击[id:56641]' 可以成功施放
+    若已点出天赋 '稳固射击[id:56641]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '稳固射击[id:56641]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '稳固射击[id:56641]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '兽群战术[id:321014]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若技能 '稳固射击[id:56641]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 9: Spell: 奥术射击[id:185358]
 10: Spell: 复活宠物[id:982]
-    若已点出天赋 '复活宠物[id:982]'
-    若玩家有足够资源施放技能 '复活宠物[id:982]'
-    若技能 '复活宠物[id:982]' 不在冷却中
-    若玩家拥有增益/减益 '追踪宠物[id:1244922]'
+    若已点出天赋 '复活宠物[id:982]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '复活宠物[id:982]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '复活宠物[id:982]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '追踪宠物[id:1244922]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

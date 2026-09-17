@@ -61,7 +61,7 @@ app/
   db2.py                 # 5 张 CSV → classes/specs/assist_plan/steps/rules 嵌套结构
   spells.py              # SpellName 表单次流式扫描，建立"本次需要"的技能名索引（负责 cd 标签）
   cooldowns.py           # SpellCooldowns 表单次流式扫描，两列取大得到技能冷却毫秒
-  render.py              # 条件映射表加载 + 模板渲染（4 空格缩进条件行）
+  render.py              # 条件映射表加载 + 模板渲染（4 空格缩进条件行 + 末尾类型注释）
   output.py              # 命名规则与写文件
 csv_table/               # DB2 导出 CSV：必需的 5 张业务表 + SpellName + SpellCooldowns
 output/                  # 生成结果（40 个专精文本，按项目约定入库）
@@ -167,7 +167,7 @@ flowchart TD
     E --> F0["cooldowns.read_cooldown_index()<br/>SpellCooldowns 单次流式扫描（只留所需 ID）"]
     F0 --> F["spells.read_spell_index()<br/>SpellName 单次流式扫描（只留所需 ID）"]
     D --> G["逐专精：db2.spec_rotation()"]
-    F --> H["render.render_rotation()<br/>模板 + 缩进条件行"]
+    F --> H["render.render_rotation()<br/>模板 + 缩进条件行 + 类型注释"]
     B --> H
     G --> H
     H --> I["output.write_rotation()<br/>output/&lt;职业&gt;/&lt;专精&gt;.txt"]
@@ -289,11 +289,14 @@ classes = {
 | --- | --- |
 | `load_condition_map(path)` | 读取映射表（参数同 db2） |
 | `condition_props(condition_map, type, rule_id)` | 取映射行；缺行时抛带类型与规则 ID 的 `ValueError` |
-| `render_rule(condition_map, rule, spell_id, spell_index)` | 渲染一条规则为一行（含 4 空格缩进）；`spell_id` 是该步的技能 ID |
+| `render_rule(condition_map, rule, spell_id, spell_index)` | 渲染一条规则为一行（含 4 空格缩进与末尾 `        -- <Enum>` 类型注释）；`spell_id` 是该步的技能 ID |
 | `render_rotation(condition_map, steps, spell_index)` | 渲染整段文本（不含首行专精名） |
 
 渲染逻辑与旧版一致：`spell` = 当前步骤技能名（带单引号），`arg1..arg3` = `ConditionValue1..3`，
-Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + template + '"')` 得到最终行。
+Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + template + '"')` 得到最终行，
+行尾再统一追加 `COMMENT_GAP + "-- " + Enum`（`Enum` 取自映射表 `Enum` 列），
+因此每条条件行（含 automation-only 说明行）都带上自己的原始枚举名。
+
 名称一律经 `SpellIndex.labelled()` 取值，因此步骤标题与条件行里的名称、ID 标签必然一致
 （标题行用同一个 `spell_id`）。
 
@@ -345,14 +348,20 @@ Spell 型列先解析成带单引号的技能名；模板执行 `eval('f"' + tem
 ## 8. 输出格式细节
 
 固定结构（行结构与旧版 `out/*.txt` 一致；技能名带 `[id:<spellID>]` 标签、冷却 > 1 秒时再带
-`,cd:<秒>`，文本不再与旧产物逐字节一致）：
+`,cd:<秒>`、条件行末尾再带 `        -- <Enum>` 类型注释，文本不再与旧产物逐字节一致）：
 
 ```
-<专精名>                                       ← 首行：输出层显式写入
-<N>: Spell: <技能名>[id:<spellID>]              ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
-    <条件1>                                     ← 4 空格缩进，模板渲染结果
-    <条件2>
+<专精名>                                  ← 首行：输出层显式写入，不加注释
+<N>: Spell: <技能名>[id:<spellID>]        ← N 从 0 开始，是遍历序号，与 OrderIndex 无关
+    <条件1>        -- <Enum>              ← 4 空格缩进 + 模板渲染结果 + 8 空格 + "-- " + 枚举名
+    <条件2>        -- <Enum>
 ```
+
+条件行末尾的类型注释：间隔固定 **8 个空格**、分隔符固定 `-- `（`--` 后 1 个空格）、
+随后是 `ConditionTypeMap.csv` 的 `Enum` 列原始枚举名（如 `ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST`），
+把中文条件描述与 DB2 `AssistedCombatRule.ConditionType` 直接对照。所有条件行统一追加
+（含 `ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY` 说明行，12.1.0.69814 数据共 3116 条 = 规则数），
+**步骤标题行与首行专精名不加**；条件文本长度不定，间隔不做列对齐。
 
 冷却大于 1 秒的技能，标签写作 `<技能名>[id:<spellID>,cd:<整数秒>]`（如
 `死神印记[id:439843,cd:45]`、`眼棱[id:198013,cd:30]`）。
@@ -387,12 +396,14 @@ SpellName 表里没有的 ID 输出 `Unknown Spell[id:<spellID>]`。
 | SpellCooldowns 命中 / 冷却 > 1 秒 | 334 / 141（其余 217 个需求 ID 在冷却表里没有记录） |
 | 输出里的 `[id:` 标签 | 3431 处（693 个步骤标题 + 2738 条条件行；其中 3 处为 `Unknown Spell[id:…]`） |
 | 输出里带 `,cd:` 的标签 | 935 处（208 个步骤标题 + 727 条条件行，141 个不同技能 ID） |
+| 输出里的条件行类型注释 | 3116 处（= 规则数；步骤标题行与首行专精名不加） |
 | 输出文件 | 40 个 / 13 个职业目录 |
 
 ### 8.2 与旧版 11.2 产物的比对结论（第一期验证）
 
-> 第二期起技能名追加 `[id:<spellID>]` 标签、本期起冷却 > 1 秒的技能再追加 `,cd:<整数秒>`，
-> 产物不再与旧版逐字节一致；下列结论只针对行结构，仍然成立。
+> 第二期起技能名追加 `[id:<spellID>]` 标签、本期起冷却 > 1 秒的技能再追加 `,cd:<整数秒>`、
+> 条件行末尾再追加 `        -- <Enum>` 类型注释，产物不再与旧版逐字节一致；
+> 下列结论只针对行结构，仍然成立。
 
 - 文件集合：旧 39 个 → 新 40 个（新增 Demon Hunter / Devourer）；
 - 结构：两者的首行形态、`N: Spell:` 编号连续性、条件行 4 空格缩进都一致，无异常；

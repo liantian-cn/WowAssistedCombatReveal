@@ -1,104 +1,104 @@
 Unholy
 0: Spell: 爆发[id:77575]
-    若已点出天赋 '爆发[id:77575]'
-    若玩家有足够资源施放技能 '爆发[id:77575]'
-    若技能 '爆发[id:77575]' 不在冷却中
-    若目标没有增益/减益 '恶性病变[id:191587]'
+    若已点出天赋 '爆发[id:77575]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '爆发[id:77575]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '爆发[id:77575]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '恶性病变[id:191587]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 1: Spell: 黑暗突变[id:1233448,cd:45]
-    若已点出天赋 '黑暗突变[id:1233448,cd:45]'
-    若玩家有足够资源施放技能 '黑暗突变[id:1233448,cd:45]'
-    若技能 '黑暗突变[id:1233448,cd:45]' 不在冷却中
-    若玩家有宠物
+    若已点出天赋 '黑暗突变[id:1233448,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '黑暗突变[id:1233448,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '黑暗突变[id:1233448,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有宠物        -- ASSISTED_COMBAT_RULE_TYPE_HAS_PET
 2: Spell: 天灾打击[id:55090]
-    若已点出天赋 '天灾打击[id:55090]'
-    若玩家有足够资源施放技能 '天灾打击[id:55090]'
-    若技能 '天灾打击[id:55090]' 不在冷却中
-    若技能 '天灾打击[id:55090]' 在射程内
-    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数小于等于 1
+    若已点出天赋 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '天灾打击[id:55090]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '天灾打击[id:55090]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_LESS
 3: Spell: 凋零缠绕[id:47541]
-    若已点出天赋 '凋零缠绕[id:47541]'
-    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'
-    若技能 '凋零缠绕[id:47541]' 不在冷却中
-    若玩家拥有增益/减益 '末日突降[id:81340]'
-    若目标周围 10 码内的目标数量小于等于 3 个
+    若已点出天赋 '凋零缠绕[id:47541]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '凋零缠绕[id:47541]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '末日突降[id:81340]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标周围 10 码内的目标数量小于等于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
 4: Spell: 扩散[id:207317]
-    若已点出天赋 '扩散[id:207317]'
-    若玩家有足够资源施放技能 '扩散[id:207317]'
-    若技能 '扩散[id:207317]' 不在冷却中
-    若目标拥有增益/减益 '恶性病变[id:191587]'
-    若目标周围 10 码内的目标数量大于 4 个
-    若玩家拥有增益/减益 '末日突降[id:81340]'
+    若已点出天赋 '扩散[id:207317]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '扩散[id:207317]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '扩散[id:207317]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标拥有增益/减益 '恶性病变[id:191587]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标周围 10 码内的目标数量大于 4 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家拥有增益/减益 '末日突降[id:81340]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 5: Spell: 凋零缠绕[id:47541]
-    若已点出天赋 '凋零缠绕[id:47541]'
-    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'
-    若技能 '凋零缠绕[id:47541]' 不在冷却中
+    若已点出天赋 '凋零缠绕[id:47541]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '凋零缠绕[id:47541]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '凋零缠绕[id:47541]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 6: Spell: 符文打击[id:316239]
-    若已点出天赋 '符文打击[id:316239]'
-    若玩家有足够资源施放技能 '符文打击[id:316239]'
-    若技能 '符文打击[id:316239]' 不在冷却中
-    若技能 '符文打击[id:316239]' 在射程内
+    若已点出天赋 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文打击[id:316239]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '符文打击[id:316239]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 7: Spell: 灵魂收割[id:343294,cd:15]
-    若已点出天赋 '灵魂收割[id:343294,cd:15]'
-    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'
-    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中
-    若目标生命值小于等于 35%
-    若技能 '灵魂收割[id:343294,cd:15]' 在射程内
+    若已点出天赋 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标生命值小于等于 35%        -- ASSISTED_COMBAT_RULE_TYPE_HEALTH_PCT_LESS
+    若技能 '灵魂收割[id:343294,cd:15]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 8: Spell: 天灾打击[id:55090]
-    若已点出天赋 '天灾打击[id:55090]'
-    若玩家有足够资源施放技能 '天灾打击[id:55090]'
-    若技能 '天灾打击[id:55090]' 不在冷却中
-    若目标拥有增益/减益 'Unknown Spell[id:194310]'
-    若技能 '天灾打击[id:55090]' 在射程内
+    若已点出天赋 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '天灾打击[id:55090]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标拥有增益/减益 'Unknown Spell[id:194310]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若技能 '天灾打击[id:55090]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 9: Spell: 腐化[id:1247378]
-    若已点出天赋 '腐化[id:1247378]'
-    若玩家有足够资源施放技能 '腐化[id:1247378]'
-    若技能 '腐化[id:1247378]' 不在冷却中
-    若玩家拥有增益/减益 '次级食尸鬼[id:1242998]'
-    若技能 '腐化[id:1247378]' 在射程内
+    若已点出天赋 '腐化[id:1247378]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '腐化[id:1247378]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '腐化[id:1247378]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '次级食尸鬼[id:1242998]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '腐化[id:1247378]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 亡者复生[id:46585,cd:120]
-    若已点出天赋 '亡者复生[id:46585,cd:120]'
-    若玩家有足够资源施放技能 '亡者复生[id:46585,cd:120]'
-    若技能 '亡者复生[id:46585,cd:120]' 不在冷却中
-    若玩家没有宠物
+    若已点出天赋 '亡者复生[id:46585,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '亡者复生[id:46585,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '亡者复生[id:46585,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有宠物        -- ASSISTED_COMBAT_RULE_TYPE_HAS_NO_PET
 11: Spell: 符文打击[id:316239]
 12: Spell: 脓疮打击[id:85948]
-    若玩家拥有增益/减益 '脓疮毒镰[id:458123]'
-    若玩家有足够资源施放技能 '脓疮打击[id:85948]'
-    若目标没有增益/减益 '脓疮毒镰[id:1241077]'
+    若玩家拥有增益/减益 '脓疮毒镰[id:458123]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家有足够资源施放技能 '脓疮打击[id:85948]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若目标没有增益/减益 '脓疮毒镰[id:1241077]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 13: Spell: 符文打击[id:316239]
-    若技能 '符文打击[id:316239]' 在射程内
-    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数小于等于 2
-    若技能 '符文打击[id:316239]' 不在冷却中
-    若玩家有足够资源施放技能 '符文打击[id:316239]'
-    若已点出天赋 '符文打击[id:316239]'
+    若技能 '符文打击[id:316239]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数小于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_LESS
+    若技能 '符文打击[id:316239]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 14: Spell: 爆发[id:77575]
-    若已点出天赋 '爆发[id:77575]'
-    若玩家有足够资源施放技能 '爆发[id:77575]'
-    若技能 '爆发[id:77575]' 不在冷却中
-    若玩家拥有增益/减益 '瘟疫降临[id:1271975]'
+    若已点出天赋 '爆发[id:77575]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '爆发[id:77575]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '爆发[id:77575]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '瘟疫降临[id:1271975]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 15: Spell: 亡者大军[id:42650,cd:90]
-    若已点出天赋 '亡者大军[id:42650,cd:90]'
-    若玩家有足够资源施放技能 '亡者大军[id:42650,cd:90]'
-    若技能 '亡者大军[id:42650,cd:90]' 不在冷却中
+    若已点出天赋 '亡者大军[id:42650,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '亡者大军[id:42650,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '亡者大军[id:42650,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 16: Spell: 凋零缠绕[id:47541]
-    若玩家符文能量大于等于 500
-    若目标周围 10 码内的目标数量小于等于 3 个
-    若技能 '凋零缠绕[id:47541]' 不在冷却中
-    若玩家拥有增益/减益 '禁断知识[id:1242223]'
+    若玩家符文能量大于等于 500        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_GREATER
+    若目标周围 10 码内的目标数量小于等于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
+    若技能 '凋零缠绕[id:47541]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '禁断知识[id:1242223]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 17: Spell: 扩散[id:207317]
-    若玩家符文能量大于等于 500
-    若目标周围 10 码内的目标数量大于 4 个
-    若目标拥有增益/减益 '恶性病变[id:191587]'
-    若玩家拥有增益/减益 '禁断知识[id:1242223]'
+    若玩家符文能量大于等于 500        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_GREATER
+    若目标周围 10 码内的目标数量大于 4 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若目标拥有增益/减益 '恶性病变[id:191587]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若玩家拥有增益/减益 '禁断知识[id:1242223]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 18: Spell: 天灾打击[id:55090]
-    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数大于等于 3
-    若技能 '天灾打击[id:55090]' 在射程内
-    若技能 '天灾打击[id:55090]' 不在冷却中
-    若玩家有足够资源施放技能 '天灾打击[id:55090]'
-    若已点出天赋 '天灾打击[id:55090]'
+    若玩家身上增益/减益 '次级食尸鬼[id:1254252]' 的层数大于等于 3        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_GREATER
+    若技能 '天灾打击[id:55090]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '天灾打击[id:55090]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '天灾打击[id:55090]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 19: Spell: 灵魂收割[id:343294,cd:15]
-    若已点出天赋 '灵魂收割[id:343294,cd:15]'
-    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'
-    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中
-    若技能 '灵魂收割[id:343294,cd:15]' 在射程内
-    若玩家拥有增益/减益 '割魂索命[id:1242654]'
+    若已点出天赋 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '灵魂收割[id:343294,cd:15]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '割魂索命[id:1242654]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

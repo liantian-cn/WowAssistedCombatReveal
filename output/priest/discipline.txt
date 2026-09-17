@@ -1,41 +1,41 @@
 Discipline
 0: Spell: 暗言术：痛[id:589]
-    若已点出天赋 '暗言术：痛[id:589]'
-    若玩家有足够资源施放技能 '暗言术：痛[id:589]'
-    若技能 '暗言术：痛[id:589]' 不在冷却中
-    若目标没有增益/减益 '暗言术：痛[id:589]'
+    若已点出天赋 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：痛[id:589]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 1: Spell: 神圣新星[id:132157]
-    若已点出天赋 '神圣新星[id:132157]'
-    若玩家有足够资源施放技能 '神圣新星[id:132157]'
-    若技能 '神圣新星[id:132157]' 不在冷却中
-    若玩家周围 0 码内的目标数量大于 12 个
+    若已点出天赋 '神圣新星[id:132157]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '神圣新星[id:132157]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '神圣新星[id:132157]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 0 码内的目标数量大于 12 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 2: Spell: 苦修[id:47540,cd:2]
-    若已点出天赋 '苦修[id:47540,cd:2]'
-    若玩家有足够资源施放技能 '苦修[id:47540,cd:2]'
-    若技能 '苦修[id:47540,cd:2]' 不在冷却中
+    若已点出天赋 '苦修[id:47540,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '苦修[id:47540,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '苦修[id:47540,cd:2]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 4: Spell: 暗言术：灭[id:32379]
-    若已点出天赋 '暗言术：灭[id:32379]'
-    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
-    若技能 '暗言术：灭[id:32379]' 不在冷却中
-    若目标生命值小于等于 20%
+    若已点出天赋 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：灭[id:32379]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标生命值小于等于 20%        -- ASSISTED_COMBAT_RULE_TYPE_HEALTH_PCT_LESS
 5: Spell: 惩击[id:585]
-    若已点出天赋 '惩击[id:585]'
-    若玩家有足够资源施放技能 '惩击[id:585]'
-    若技能 '惩击[id:585]' 不在冷却中
-    若技能 '惩击[id:585]' 可以成功施放
+    若已点出天赋 '惩击[id:585]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '惩击[id:585]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '惩击[id:585]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '惩击[id:585]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 6: Spell: 惩击[id:585]
-    若已点出天赋 '惩击[id:585]'
-    若玩家有足够资源施放技能 '惩击[id:585]'
-    若技能 '惩击[id:585]' 不在冷却中
-    若玩家拥有增益/减益 '虚空冲击[id:450404]'
-    若技能 '惩击[id:585]' 可以成功施放
+    若已点出天赋 '惩击[id:585]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '惩击[id:585]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '惩击[id:585]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '惩击[id:585]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 7: Spell: 苦修[id:47540,cd:2]
 8: Spell: 真言术：韧[id:21562]
-    若已点出天赋 '真言术：韧[id:21562]'
-    若玩家有足够资源施放技能 '真言术：韧[id:21562]'
-    若技能 '真言术：韧[id:21562]' 不在冷却中
-    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'
+    若已点出天赋 '真言术：韧[id:21562]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '真言术：韧[id:21562]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '真言术：韧[id:21562]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

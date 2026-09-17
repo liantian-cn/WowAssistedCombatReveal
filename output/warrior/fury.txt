@@ -1,115 +1,115 @@
 Fury
 0: Spell: 暴怒[id:184367]
-    若玩家没有增益/减益 '激怒[id:184362]'
-    若已点出天赋 '暴怒[id:184367]'
-    若玩家有足够资源施放技能 '暴怒[id:184367]'
-    若技能 '暴怒[id:184367]' 不在冷却中
-    若技能 '暴怒[id:184367]' 在射程内
+    若玩家没有增益/减益 '激怒[id:184362]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '暴怒[id:184367]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暴怒[id:184367]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暴怒[id:184367]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '暴怒[id:184367]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 1: Spell: 雷霆一击[id:6343,cd:6]
-    若玩家拥有增益/减益 '雷霆轰击[id:435615]'
-    若目标距离小于等于 5 码
-    若玩家拥有增益/减益 '激怒[id:184362]'
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
-    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
+    若玩家拥有增益/减益 '雷霆轰击[id:435615]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '激怒[id:184362]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 2: Spell: 奥丁之怒[id:385059,cd:45]
-    若目标距离小于等于 12 码
-    若已点出天赋 '奥丁之怒[id:385059,cd:45]'
-    若玩家有足够资源施放技能 '奥丁之怒[id:385059,cd:45]'
-    若技能 '奥丁之怒[id:385059,cd:45]' 不在冷却中
+    若目标距离小于等于 12 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '奥丁之怒[id:385059,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '奥丁之怒[id:385059,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '奥丁之怒[id:385059,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 雷霆一击[id:6343,cd:6]
-    若目标距离小于等于 5 码
-    若玩家拥有增益/减益 '崩解闪电[id:436707]'
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家没有增益/减益 '旋风斩[id:85739]'
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
-    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '旋风斩[id:85739]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 4: Spell: 旋风斩[id:190411]
-    若目标距离小于等于 10 码
-    若玩家没有增益/减益 '崩解闪电[id:436707]'
-    若已点出天赋 '旋风斩[id:190411]'
-    若玩家没有增益/减益 '旋风斩[id:85739]'
-    若玩家周围 0 码内的目标数量大于 3 个
-    若已点出天赋 '旋风斩[id:190411]'
-    若玩家有足够资源施放技能 '旋风斩[id:190411]'
-    若技能 '旋风斩[id:190411]' 不在冷却中
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家没有增益/减益 '崩解闪电[id:436707]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '旋风斩[id:190411]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '旋风斩[id:85739]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家周围 0 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '旋风斩[id:190411]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '旋风斩[id:190411]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '旋风斩[id:190411]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 5: Spell: 剑刃风暴[id:227847,cd:90]
-    若目标距离小于等于 10 码
-    若玩家拥有增益/减益 '激怒[id:184362]'
-    若已点出天赋 '剑刃风暴[id:227847,cd:90]'
-    若玩家有足够资源施放技能 '剑刃风暴[id:227847,cd:90]'
-    若技能 '剑刃风暴[id:227847,cd:90]' 不在冷却中
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '激怒[id:184362]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '剑刃风暴[id:227847,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '剑刃风暴[id:227847,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '剑刃风暴[id:227847,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 6: Spell: 暴怒[id:184367]
-    若已点出天赋 '暴怒[id:184367]'
-    若玩家有足够资源施放技能 '暴怒[id:184367]'
-    若技能 '暴怒[id:184367]' 不在冷却中
-    若技能 '暴怒[id:184367]' 在射程内
+    若已点出天赋 '暴怒[id:184367]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暴怒[id:184367]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暴怒[id:184367]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '暴怒[id:184367]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 7: Spell: 斩杀[id:5308,cd:6]
-    若已点出天赋 '斩杀[id:5308,cd:6]'
-    若玩家有足够资源施放技能 '斩杀[id:5308,cd:6]'
-    若技能 '斩杀[id:5308,cd:6]' 不在冷却中
-    若技能 '斩杀[id:5308,cd:6]' 在射程内
+    若已点出天赋 '斩杀[id:5308,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '斩杀[id:5308,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '斩杀[id:5308,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '斩杀[id:5308,cd:6]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 8: Spell: 雷霆一击[id:6343,cd:6]
-    若目标距离小于等于 5 码
-    若玩家拥有增益/减益 '崩解闪电[id:436707]'
-    若玩家周围 0 码内的目标数量大于 3 个
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
-    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家周围 0 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 9: Spell: 怒击[id:85288]
-    若已点出天赋 '怒击[id:85288]'
-    若玩家有足够资源施放技能 '怒击[id:85288]'
-    若技能 '怒击[id:85288]' 不在冷却中
-    若技能 '怒击[id:85288]' 在射程内
+    若已点出天赋 '怒击[id:85288]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '怒击[id:85288]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '怒击[id:85288]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '怒击[id:85288]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 嗜血[id:23881,cd:5]
-    若已点出天赋 '嗜血[id:23881,cd:5]'
-    若玩家有足够资源施放技能 '嗜血[id:23881,cd:5]'
-    若技能 '嗜血[id:23881,cd:5]' 不在冷却中
-    若技能 '嗜血[id:23881,cd:5]' 在射程内
+    若已点出天赋 '嗜血[id:23881,cd:5]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '嗜血[id:23881,cd:5]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '嗜血[id:23881,cd:5]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '嗜血[id:23881,cd:5]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 11: Spell: 雷霆一击[id:6343,cd:6]
-    若目标距离小于等于 5 码
-    若玩家拥有增益/减益 '崩解闪电[id:436707]'
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
-    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 12: Spell: 英勇投掷[id:57755,cd:6]
-    若已点出天赋 '英勇投掷[id:57755,cd:6]'
-    若玩家有足够资源施放技能 '英勇投掷[id:57755,cd:6]'
-    若技能 '英勇投掷[id:57755,cd:6]' 不在冷却中
-    若技能 '英勇投掷[id:57755,cd:6]' 在射程内
-    若目标距离大于 15 码
+    若已点出天赋 '英勇投掷[id:57755,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '英勇投掷[id:57755,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '英勇投掷[id:57755,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '英勇投掷[id:57755,cd:6]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
 13: Spell: 猛击[id:1464]
-    若玩家没有增益/减益 '暴怒！[id:209694]'
+    若玩家没有增益/减益 '暴怒！[id:209694]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 14: Spell: 鲁莽[id:1719,cd:90]
-    若已点出天赋 '鲁莽[id:1719,cd:90]'
-    若玩家有足够资源施放技能 '鲁莽[id:1719,cd:90]'
-    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中
-    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '鲁莽[id:1719,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '鲁莽[id:1719,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '鲁莽[id:1719,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 15: Spell: 天神下凡[id:107574,cd:90]
-    若已点出天赋 '天神下凡[id:107574,cd:90]'
-    若玩家有足够资源施放技能 '天神下凡[id:107574,cd:90]'
-    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
-    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '天神下凡[id:107574,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '天神下凡[id:107574,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '天神下凡[id:107574,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 16: Spell: 雷霆一击[id:6343,cd:6]
-    若目标没有增益/减益 '撕裂[id:388539]'
-    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'
-    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中
-    若玩家拥有增益/减益 '血怒风暴[id:1299025]'
-    若已点出天赋 '雷霆一击[id:6343,cd:6]'
-    若玩家拥有增益/减益 '崩解闪电[id:436707]'
+    若目标没有增益/减益 '撕裂[id:388539]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家有足够资源施放技能 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆一击[id:6343,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '血怒风暴[id:1299025]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '雷霆一击[id:6343,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '崩解闪电[id:436707]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 17: Spell: 旋风斩[id:190411]
-    若技能 '旋风斩[id:190411]' 不在冷却中
+    若技能 '旋风斩[id:190411]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 18: Spell: 战斗怒吼[id:6673]
-    若已点出天赋 '战斗怒吼[id:6673]'
-    若玩家有足够资源施放技能 '战斗怒吼[id:6673]'
-    若技能 '战斗怒吼[id:6673]' 不在冷却中
-    若玩家拥有增益/减益 '战斗怒吼高亮[id:1271909]'
+    若已点出天赋 '战斗怒吼[id:6673]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '战斗怒吼[id:6673]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '战斗怒吼[id:6673]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '战斗怒吼高亮[id:1271909]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 19: Spell: 旋风斩[id:190411]
-    若目标没有增益/减益 '撕裂[id:388539]'
-    若已点出天赋 '旋风斩[id:190411]'
-    若玩家有足够资源施放技能 '旋风斩[id:190411]'
-    若技能 '旋风斩[id:190411]' 不在冷却中
-    若玩家拥有增益/减益 '血怒风暴[id:1299025]'
+    若目标没有增益/减益 '撕裂[id:388539]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若已点出天赋 '旋风斩[id:190411]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '旋风斩[id:190411]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '旋风斩[id:190411]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '血怒风暴[id:1299025]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

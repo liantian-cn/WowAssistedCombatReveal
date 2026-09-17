@@ -1,151 +1,151 @@
 Shadow
 0: Spell: 触须猛击[id:1227280]
-    若已点出天赋 '触须猛击[id:1227280]'
-    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
-    若技能 '触须猛击[id:1227280]' 不在冷却中
-    若目标周围 8 码内的目标数量大于 3 个
+    若已点出天赋 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '触须猛击[id:1227280]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 8 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 1: Spell: 暗影形态[id:232698]
-    若玩家没有增益/减益 '暗影形态[id:232698]'
-    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'
-    若已点出天赋 '暗影形态[id:232698]'
-    若玩家有足够资源施放技能 '暗影形态[id:232698]'
-    若技能 '暗影形态[id:232698]' 不在冷却中
+    若玩家没有增益/减益 '暗影形态[id:232698]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '暗影形态[id:232698]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗影形态[id:232698]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗影形态[id:232698]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 2: Spell: 光晕[id:120644,cd:60]
-    若已点出天赋 '光晕[id:120644,cd:60]'
-    若玩家有足够资源施放技能 '光晕[id:120644,cd:60]'
-    若技能 '光晕[id:120644,cd:60]' 不在冷却中
+    若已点出天赋 '光晕[id:120644,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '光晕[id:120644,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '光晕[id:120644,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 暗言术：癫[id:335467]
-    若已点出天赋 '暗言术：癫[id:335467]'
-    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
-    若技能 '暗言术：癫[id:335467]' 不在冷却中
-    若玩家狂乱值大于等于 9000
-    若玩家没有增益/减益 '灵媒[id:407430]'
+    若已点出天赋 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：癫[id:335467]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家狂乱值大于等于 9000        -- ASSISTED_COMBAT_RULE_TYPE_INSANITY_GREATER
+    若玩家没有增益/减益 '灵媒[id:407430]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 4: Spell: 暗言术：癫[id:335467]
-    若已点出天赋 '暗言术：癫[id:335467]'
-    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
-    若技能 '暗言术：癫[id:335467]' 不在冷却中
-    若玩家狂乱值大于等于 14000
-    若玩家拥有增益/减益 '灵媒[id:407430]'
+    若已点出天赋 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：癫[id:335467]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家狂乱值大于等于 14000        -- ASSISTED_COMBAT_RULE_TYPE_INSANITY_GREATER
+    若玩家拥有增益/减益 '灵媒[id:407430]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 5: Spell: 吸血鬼之触[id:34914]
-    若已点出天赋 '吸血鬼之触[id:34914]'
-    若玩家有足够资源施放技能 '吸血鬼之触[id:34914]'
-    若技能 '吸血鬼之触[id:34914]' 不在冷却中
-    若目标没有增益/减益 '吸血鬼之触[id:34914]'
-    若玩家没有增益/减益 '触须猛击[id:1243723]'
+    若已点出天赋 '吸血鬼之触[id:34914]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '吸血鬼之触[id:34914]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '吸血鬼之触[id:34914]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '吸血鬼之触[id:34914]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家没有增益/减益 '触须猛击[id:1243723]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 6: Spell: 暗言术：痛[id:589]
-    若已点出天赋 '暗言术：痛[id:589]'
-    若玩家有足够资源施放技能 '暗言术：痛[id:589]'
-    若技能 '暗言术：痛[id:589]' 不在冷却中
-    若目标没有增益/减益 '暗言术：痛[id:589]'
-    若玩家没有增益/减益 '哀难[id:238558]'
+    若已点出天赋 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：痛[id:589]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '暗言术：痛[id:589]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家没有增益/减益 '哀难[id:238558]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 7: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家拥有增益/减益 '虚空冲击[id:450404]'
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 8: Spell: 虚空洪流[id:263165,cd:30]
-    若已点出天赋 '虚空洪流[id:263165,cd:30]'
-    若玩家有足够资源施放技能 '虚空洪流[id:263165,cd:30]'
-    若技能 '虚空洪流[id:263165,cd:30]' 不在冷却中
+    若已点出天赋 '虚空洪流[id:263165,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '虚空洪流[id:263165,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '虚空洪流[id:263165,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 9: Spell: 暗言术：癫[id:335467]
-    若已点出天赋 '暗言术：癫[id:335467]'
-    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
-    若技能 '暗言术：癫[id:335467]' 不在冷却中
-    若目标没有增益/减益 '暗言术：癫[id:335467]'
+    若已点出天赋 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：癫[id:335467]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 10: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家没有增益/减益 '虚空冲击[id:450405]'
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '虚空冲击[id:450405]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 11: Spell: 暗言术：灭[id:32379]
-    若已点出天赋 '暗言术：灭[id:32379]'
-    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
-    若技能 '暗言术：灭[id:32379]' 不在冷却中
-    若玩家拥有增益/减益 '亡语者[id:392507]'
-    若目标生命值小于等于 35%
+    若已点出天赋 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：灭[id:32379]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '亡语者[id:392507]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标生命值小于等于 35%        -- ASSISTED_COMBAT_RULE_TYPE_HEALTH_PCT_LESS
 12: Spell: 暗言术：灭[id:32379]
-    若已点出天赋 '暗言术：灭[id:32379]'
-    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'
-    若技能 '暗言术：灭[id:32379]' 不在冷却中
-    若目标生命值小于等于 20%
+    若已点出天赋 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：灭[id:32379]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：灭[id:32379]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标生命值小于等于 20%        -- ASSISTED_COMBAT_RULE_TYPE_HEALTH_PCT_LESS
 13: Spell: 精神鞭笞[id:15407]
-    若已点出天赋 '精神鞭笞[id:15407]'
-    若玩家有足够资源施放技能 '精神鞭笞[id:15407]'
-    若技能 '精神鞭笞[id:15407]' 不在冷却中
-    若技能 '精神鞭笞[id:15407]' 可以成功施放
+    若已点出天赋 '精神鞭笞[id:15407]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '精神鞭笞[id:15407]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '精神鞭笞[id:15407]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '精神鞭笞[id:15407]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 14: Spell: 虚空形态[id:228260,cd:120]
-    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
-    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
-    若已点出天赋 '虚空形态[id:228260,cd:120]'
-    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 15: Spell: 心灵震爆[id:8092]
 16: Spell: 暗言术：癫[id:335467]
-    若已点出天赋 '暗言术：癫[id:335467]'
-    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
-    若技能 '暗言术：癫[id:335467]' 不在冷却中
-    若目标身上的增益/减益 '暗言术：癫[id:335467]' 剩余时间小于等于 1500 毫秒
+    若已点出天赋 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：癫[id:335467]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标身上的增益/减益 '暗言术：癫[id:335467]' 剩余时间小于等于 1500 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_AURA_DURATION_TARGET
 17: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家拥有增益/减益 '虚空冲击[id:450404]'
-    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2
-    若技能 '心灵震爆[id:8092]' 可以成功施放
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '虚空冲击[id:450404]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
+    若技能 '心灵震爆[id:8092]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 18: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家拥有增益/减益 '虚空冲击[id:450405]'
-    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2
-    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却小于等于 5000 毫秒
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '虚空冲击[id:450405]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
+    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却小于等于 5000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_REMAINING_LESS
 19: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家拥有增益/减益 '虚空冲击[id:450405]'
-    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却大于等于 5000 毫秒
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '虚空冲击[id:450405]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '虚空洪流[id:263165,cd:30]' 的剩余冷却大于等于 5000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_REMAINING_GREATER
 20: Spell: 暗言术：癫[id:335467]
-    若已点出天赋 '暗言术：癫[id:335467]'
-    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'
-    若技能 '暗言术：癫[id:335467]' 不在冷却中
+    若已点出天赋 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗言术：癫[id:335467]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗言术：癫[id:335467]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 21: Spell: 心灵震爆[id:8092]
-    若已点出天赋 '心灵震爆[id:8092]'
-    若玩家有足够资源施放技能 '心灵震爆[id:8092]'
-    若技能 '心灵震爆[id:8092]' 不在冷却中
-    若玩家没有增益/减益 '虚空冲击[id:450405]'
-    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2
-    若技能 '心灵震爆[id:8092]' 可以成功施放
+    若已点出天赋 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '心灵震爆[id:8092]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '心灵震爆[id:8092]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '虚空冲击[id:450405]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若技能 '心灵震爆[id:8092]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
+    若技能 '心灵震爆[id:8092]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 22: Spell: 触须猛击[id:1227280]
-    若已点出天赋 '触须猛击[id:1227280]'
-    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
-    若技能 '触须猛击[id:1227280]' 不在冷却中
-    若目标周围 8 码内的目标数量小于等于 2 个
-    若目标没有增益/减益 '吸血鬼之触[id:34914]'
-    若玩家没有增益/减益 '触须猛击[id:1243723]'
+    若已点出天赋 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '触须猛击[id:1227280]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 8 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
+    若目标没有增益/减益 '吸血鬼之触[id:34914]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家没有增益/减益 '触须猛击[id:1243723]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 23: Spell: 虚空形态[id:228260,cd:120]
-    若已点出天赋 '虚空形态[id:228260,cd:120]'
-    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
-    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
-    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'
+    若已点出天赋 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
+    若玩家没有增益/减益 '虚空形态[id:194249,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 24: Spell: 能量灌注[id:10060,cd:120]
-    若已点出天赋 '能量灌注[id:10060,cd:120]'
-    若玩家有足够资源施放技能 '能量灌注[id:10060,cd:120]'
-    若技能 '能量灌注[id:10060,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
-    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'
+    若已点出天赋 '能量灌注[id:10060,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '能量灌注[id:10060,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '能量灌注[id:10060,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
+    若玩家拥有增益/减益 '虚空形态[id:194249,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 25: Spell: 真言术：韧[id:21562]
-    若已点出天赋 '真言术：韧[id:21562]'
-    若玩家有足够资源施放技能 '真言术：韧[id:21562]'
-    若技能 '真言术：韧[id:21562]' 不在冷却中
-    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'
+    若已点出天赋 '真言术：韧[id:21562]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '真言术：韧[id:21562]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '真言术：韧[id:21562]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '真言术：韧高亮[id:1271911]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 26: Spell: 虚空形态[id:228260,cd:120]
-    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'
-    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中
-    若已点出天赋 '虚空形态[id:228260,cd:120]'
-    若玩家拥有增益/减益 '碾压虚空[id:1279437]'
+    若玩家有足够资源施放技能 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '虚空形态[id:228260,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '虚空形态[id:228260,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '碾压虚空[id:1279437]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 27: Spell: 触须猛击[id:1227280]
-    若玩家有足够资源施放技能 '触须猛击[id:1227280]'
-    若已点出天赋 '触须猛击[id:1227280]'
-    若技能 '触须猛击[id:1227280]' 不在冷却中
-    若技能 '触须猛击[id:1227280]' 的充能层数大于等于 2
+    若玩家有足够资源施放技能 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '触须猛击[id:1227280]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '触须猛击[id:1227280]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '触须猛击[id:1227280]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER

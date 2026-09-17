@@ -1,140 +1,140 @@
 Feral
 0: Spell: 原始之怒[id:285381]
-    若目标距离小于等于 10 码
-    若已点出天赋 '原始之怒[id:285381]'
-    若玩家有足够资源施放技能 '原始之怒[id:285381]'
-    若技能 '原始之怒[id:285381]' 不在冷却中
-    若玩家周围 10 码内的目标数量大于 3 个
-    若目标没有增益/减益 '割裂[id:1079]'
-    若玩家连击点大于等于 5
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '原始之怒[id:285381]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '原始之怒[id:285381]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '原始之怒[id:285381]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若目标没有增益/减益 '割裂[id:1079]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
 1: Spell: 凶猛撕咬[id:22568]
-    若已点出天赋 '凶猛撕咬[id:22568]'
-    若玩家有足够资源施放技能 '凶猛撕咬[id:22568]'
-    若技能 '凶猛撕咬[id:22568]' 不在冷却中
-    若玩家连击点大于等于 5
-    若技能 '凶猛撕咬[id:22568]' 在射程内
+    若已点出天赋 '凶猛撕咬[id:22568]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '凶猛撕咬[id:22568]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '凶猛撕咬[id:22568]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '凶猛撕咬[id:22568]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 2: Spell: 凶猛撕咬[id:22568]
-    若已点出天赋 '凶猛撕咬[id:22568]'
-    若技能 '凶猛撕咬[id:22568]' 不在冷却中
-    若玩家拥有增益/减益 '顶级捕食者的渴望[id:391882]'
-    若技能 '凶猛撕咬[id:22568]' 在射程内
+    若已点出天赋 '凶猛撕咬[id:22568]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '凶猛撕咬[id:22568]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '顶级捕食者的渴望[id:391882]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '凶猛撕咬[id:22568]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 3: Spell: 猎豹形态[id:768]
-    若已点出天赋 '猎豹形态[id:768]'
-    若玩家有足够资源施放技能 '猎豹形态[id:768]'
-    若技能 '猎豹形态[id:768]' 不在冷却中
-    若玩家没有增益/减益 '猎豹形态[id:768]'
+    若已点出天赋 '猎豹形态[id:768]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '猎豹形态[id:768]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '猎豹形态[id:768]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '猎豹形态[id:768]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 4: Spell: 野性狂乱[id:274837,cd:45]
-    若已点出天赋 '野性狂乱[id:274837,cd:45]'
-    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'
-    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中
-    若玩家连击点小于等于 1
-    若技能 '野性狂乱[id:274837,cd:45]' 在射程内
-    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
+    若已点出天赋 '野性狂乱[id:274837,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若技能 '野性狂乱[id:274837,cd:45]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 5: Spell: 斜掠[id:1822]
-    若已点出天赋 '斜掠[id:1822]'
-    若玩家有足够资源施放技能 '斜掠[id:1822]'
-    若技能 '斜掠[id:1822]' 不在冷却中
-    若目标没有增益/减益 '斜掠[id:155722]'
-    若技能 '斜掠[id:1822]' 在射程内
+    若已点出天赋 '斜掠[id:1822]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '斜掠[id:1822]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '斜掠[id:1822]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '斜掠[id:155722]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若技能 '斜掠[id:1822]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 6: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若玩家拥有增益/减益 '月之灵[id:155580]'
-    若目标没有增益/减益 '月火术[id:155625]'
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '月之灵[id:155580]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标没有增益/减益 '月火术[id:155625]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 7: Spell: 横扫[id:213764]
-    若已点出天赋 '横扫[id:213764]'
-    若玩家有足够资源施放技能 '横扫[id:213764]'
-    若技能 '横扫[id:213764]' 不在冷却中
-    若目标距离小于等于 8 码
-    若玩家周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '横扫[id:213764]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '横扫[id:213764]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '横扫[id:213764]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 8: Spell: 撕碎[id:5221]
-    若已点出天赋 '撕碎[id:5221]'
-    若玩家有足够资源施放技能 '撕碎[id:5221]'
-    若技能 '撕碎[id:5221]' 不在冷却中
-    若技能 '撕碎[id:5221]' 在射程内
+    若已点出天赋 '撕碎[id:5221]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '撕碎[id:5221]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '撕碎[id:5221]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '撕碎[id:5221]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 9: Spell: 割裂[id:1079]
-    若已点出天赋 '割裂[id:1079]'
-    若玩家有足够资源施放技能 '割裂[id:1079]'
-    若技能 '割裂[id:1079]' 不在冷却中
-    若目标没有增益/减益 '割裂[id:1079]'
-    若玩家连击点大于等于 5
-    若技能 '割裂[id:1079]' 在射程内
+    若已点出天赋 '割裂[id:1079]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '割裂[id:1079]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '割裂[id:1079]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '割裂[id:1079]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '割裂[id:1079]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 猛虎之怒[id:5217,cd:30]
-    若已点出天赋 '猛虎之怒[id:5217,cd:30]'
-    若玩家有足够资源施放技能 '猛虎之怒[id:5217,cd:30]'
-    若技能 '猛虎之怒[id:5217,cd:30]' 不在冷却中
-    若玩家连击点大于等于 5
-    若目标距离小于等于 8 码
+    若已点出天赋 '猛虎之怒[id:5217,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '猛虎之怒[id:5217,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '猛虎之怒[id:5217,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 11: Spell: 斜掠[id:1822]
 12: Spell: 万灵之召[id:391528,cd:120]
-    若已点出天赋 '万灵之召[id:391528,cd:120]'
-    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
-    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
-    若目标距离小于等于 5 码
-    若玩家连击点小于等于 3
-    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家连击点小于等于 3        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 13: Spell: 斜掠[id:1822]
-    若已点出天赋 '斜掠[id:1822]'
-    若玩家有足够资源施放技能 '斜掠[id:1822]'
-    若技能 '斜掠[id:1822]' 不在冷却中
-    若玩家拥有增益/减益 '潜行[id:5215,cd:6]'
+    若已点出天赋 '斜掠[id:1822]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '斜掠[id:1822]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '斜掠[id:1822]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '潜行[id:5215,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 14: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若玩家拥有增益/减益 '月之灵[id:155580]'
-    若目标距离大于 15 码
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '月之灵[id:155580]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
 15: Spell: 怒意狂乱[id:1243807,cd:45]
-    若目标距离小于等于 8 码
-    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'
-    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'
-    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中
-    若玩家连击点小于等于 1
-    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若玩家拥有增益/减益 '猛虎之怒[id:5217,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 16: Spell: 啃噬[id:1244258,cd:20]
-    若已点出天赋 '啃噬[id:1244258,cd:20]'
-    若玩家有足够资源施放技能 '啃噬[id:1244258,cd:20]'
-    若技能 '啃噬[id:1244258,cd:20]' 不在冷却中
-    若技能 '啃噬[id:1244258,cd:20]' 在射程内
-    若玩家拥有增益/减益 '啃噬启用器[id:1244393]'
+    若已点出天赋 '啃噬[id:1244258,cd:20]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '啃噬[id:1244258,cd:20]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '啃噬[id:1244258,cd:20]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '啃噬[id:1244258,cd:20]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '啃噬启用器[id:1244393]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 17: Spell: 野性狂乱[id:274837,cd:45]
-    若已点出天赋 '野性狂乱[id:274837,cd:45]'
-    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'
-    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中
-    若玩家连击点小于等于 1
-    若技能 '野性狂乱[id:274837,cd:45]' 在射程内
-    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却
+    若已点出天赋 '野性狂乱[id:274837,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性狂乱[id:274837,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性狂乱[id:274837,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若技能 '野性狂乱[id:274837,cd:45]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_ON_COOLDOWN
 18: Spell: 怒意狂乱[id:1243807,cd:45]
-    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'
-    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'
-    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中
-    若玩家连击点小于等于 1
-    若目标距离小于等于 8 码
-    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却
+    若已点出天赋 '怒意狂乱[id:1243807,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '怒意狂乱[id:1243807,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '怒意狂乱[id:1243807,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若技能 '猛虎之怒[id:5217,cd:30]' 正在冷却        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_ON_COOLDOWN
 19: Spell: 等待能量[id:1249752]
-    若已点出天赋 '等待能量[id:1249752]'
-    若玩家有足够资源施放技能 '等待能量[id:1249752]'
-    若技能 '等待能量[id:1249752]' 不在冷却中
-    若玩家连击点大于等于 5
-    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'
-    若玩家能量小于等于 49
-    若玩家没有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'
+    若已点出天赋 '等待能量[id:1249752]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '等待能量[id:1249752]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '等待能量[id:1249752]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家能量小于等于 49        -- ASSISTED_COMBAT_RULE_TYPE_ENERGY_LESS
+    若玩家没有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 20: Spell: 等待能量[id:1249752]
-    若已点出天赋 '等待能量[id:1249752]'
-    若玩家有足够资源施放技能 '等待能量[id:1249752]'
-    若技能 '等待能量[id:1249752]' 不在冷却中
-    若玩家连击点大于等于 5
-    若玩家能量小于等于 37
-    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'
-    若玩家拥有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'
+    若已点出天赋 '等待能量[id:1249752]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '等待能量[id:1249752]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '等待能量[id:1249752]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若玩家能量小于等于 37        -- ASSISTED_COMBAT_RULE_TYPE_ENERGY_LESS
+    若玩家没有增益/减益 '顶级捕食者的渴望[id:391882]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '化身：阿莎曼之灵[id:102543,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 21: Spell: 狂暴[id:106951,cd:180]
-    若已点出天赋 '狂暴[id:106951,cd:180]'
-    若玩家有足够资源施放技能 '狂暴[id:106951,cd:180]'
-    若技能 '狂暴[id:106951,cd:180]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '狂暴[id:106951,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '狂暴[id:106951,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '狂暴[id:106951,cd:180]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 22: Spell: 野性印记[id:1126]
-    若已点出天赋 '野性印记[id:1126]'
-    若玩家有足够资源施放技能 '野性印记[id:1126]'
-    若技能 '野性印记[id:1126]' 不在冷却中
-    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性印记[id:1126]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

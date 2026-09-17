@@ -1,19 +1,19 @@
 Preservation
 0: Spell: 火焰吐息[id:357208]
-    若已点出天赋 '火焰吐息[id:357208]'
-    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
-    若技能 '火焰吐息[id:357208]' 不在冷却中
-    若技能 '火焰吐息[id:357208]' 可以成功施放
-    若目标没有增益/减益 '火焰吐息[id:357209]'
+    若已点出天赋 '火焰吐息[id:357208]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '火焰吐息[id:357208]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '火焰吐息[id:357208]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若目标没有增益/减益 '火焰吐息[id:357209]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 1: Spell: 活化烈焰[id:361469]
-    若已点出天赋 '活化烈焰[id:361469]'
-    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
-    若技能 '活化烈焰[id:361469]' 不在冷却中
-    若目标是敌对单位
-    若技能 '活化烈焰[id:361469]' 可以成功施放
+    若已点出天赋 '活化烈焰[id:361469]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '活化烈焰[id:361469]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标是敌对单位        -- ASSISTED_COMBAT_RULE_TYPE_HOSTILE_TARGET
+    若技能 '活化烈焰[id:361469]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 2: Spell: 活化烈焰[id:361469]
 3: Spell: 青铜龙的祝福[id:364342,cd:15]
-    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'
-    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'
-    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中
-    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'
+    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

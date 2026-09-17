@@ -1,75 +1,75 @@
 Augmentation
 0: Spell: 黑檀之力[id:395152,cd:30]
-    若已点出天赋 '黑檀之力[id:395152,cd:30]'
-    若玩家有足够资源施放技能 '黑檀之力[id:395152,cd:30]'
-    若技能 '黑檀之力[id:395152,cd:30]' 不在冷却中
-    若玩家没有增益/减益 '黑檀之力[id:395296]'
+    若已点出天赋 '黑檀之力[id:395152,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '黑檀之力[id:395152,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '黑檀之力[id:395152,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '黑檀之力[id:395296]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 1: Spell: 先知先觉[id:409311]
-    若已点出天赋 '先知先觉[id:409311]'
-    若玩家有足够资源施放技能 '先知先觉[id:409311]'
-    若技能 '先知先觉[id:409311]' 不在冷却中
-    若玩家没有增益/减益 '先知先觉[id:410089]'
+    若已点出天赋 '先知先觉[id:409311]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '先知先觉[id:409311]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '先知先觉[id:409311]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '先知先觉[id:410089]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 火焰吐息[id:357208]
-    若已点出天赋 '火焰吐息[id:357208]'
-    若玩家有足够资源施放技能 '火焰吐息[id:357208]'
-    若技能 '火焰吐息[id:357208]' 不在冷却中
-    若技能 '火焰吐息[id:357208]' 可以成功施放
+    若已点出天赋 '火焰吐息[id:357208]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '火焰吐息[id:357208]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '火焰吐息[id:357208]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '火焰吐息[id:357208]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 3: Spell: 地壳激变[id:396286,cd:40]
-    若已点出天赋 '地壳激变[id:396286,cd:40]'
-    若玩家有足够资源施放技能 '地壳激变[id:396286,cd:40]'
-    若技能 '地壳激变[id:396286,cd:40]' 不在冷却中
-    若技能 '地壳激变[id:396286,cd:40]' 可以成功施放
+    若已点出天赋 '地壳激变[id:396286,cd:40]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '地壳激变[id:396286,cd:40]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '地壳激变[id:396286,cd:40]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '地壳激变[id:396286,cd:40]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 4: Spell: 裂解[id:356995]
-    若已点出天赋 '裂解[id:356995]'
-    若玩家有足够资源施放技能 '裂解[id:356995]'
-    若技能 '裂解[id:356995]' 不在冷却中
+    若已点出天赋 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '裂解[id:356995]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 5: Spell: 炽火龙鳞[id:360827,cd:30]
-    若已点出天赋 '炽火龙鳞[id:360827,cd:30]'
-    若玩家有足够资源施放技能 '炽火龙鳞[id:360827,cd:30]'
-    若技能 '炽火龙鳞[id:360827,cd:30]' 不在冷却中
-    若玩家没有增益/减益 '炽火龙鳞[id:1245013]'
-    若目标距离小于等于 30 码
+    若已点出天赋 '炽火龙鳞[id:360827,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '炽火龙鳞[id:360827,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '炽火龙鳞[id:360827,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '炽火龙鳞[id:1245013]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标距离小于等于 30 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 6: Spell: 活化烈焰[id:361469]
-    若已点出天赋 '活化烈焰[id:361469]'
-    若玩家有足够资源施放技能 '活化烈焰[id:361469]'
-    若技能 '活化烈焰[id:361469]' 不在冷却中
-    若目标是敌对单位
-    若技能 '活化烈焰[id:361469]' 可以成功施放
+    若已点出天赋 '活化烈焰[id:361469]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '活化烈焰[id:361469]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '活化烈焰[id:361469]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标是敌对单位        -- ASSISTED_COMBAT_RULE_TYPE_HOSTILE_TARGET
+    若技能 '活化烈焰[id:361469]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 7: Spell: 活化烈焰[id:361469]
 8: Spell: 裂解[id:356995]
-    若已点出天赋 '裂解[id:356995]'
-    若玩家有足够资源施放技能 '裂解[id:356995]'
-    若技能 '裂解[id:356995]' 不在冷却中
-    若技能 '裂解[id:356995]' 可以成功施放
-    若玩家精华大于等于 2
-    若玩家拥有增益/减益 '精华迸发[id:392268]'
+    若已点出天赋 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '裂解[id:356995]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '裂解[id:356995]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若玩家精华大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_ESSENCE_GREATER
+    若玩家拥有增益/减益 '精华迸发[id:392268]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 9: Spell: 裂解[id:356995]
-    若已点出天赋 '裂解[id:356995]'
-    若玩家有足够资源施放技能 '裂解[id:356995]'
-    若技能 '裂解[id:356995]' 不在冷却中
-    若技能 '裂解[id:356995]' 可以成功施放
-    若玩家精华大于等于 4
+    若已点出天赋 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '裂解[id:356995]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '裂解[id:356995]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '裂解[id:356995]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若玩家精华大于等于 4        -- ASSISTED_COMBAT_RULE_TYPE_ESSENCE_GREATER
 10: Spell: 深呼吸[id:357210]
-    若已点出天赋 '深呼吸[id:357210]'
-    若玩家有足够资源施放技能 '深呼吸[id:357210]'
-    若技能 '深呼吸[id:357210]' 不在冷却中
-    若玩家没有增益/减益 '回归[id:371807]'
-    若目标距离小于等于 40 码
-    若玩家没有增益/减益 '回归[id:403760]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '深呼吸[id:357210]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '深呼吸[id:357210]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '深呼吸[id:357210]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '回归[id:371807]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标距离小于等于 40 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家没有增益/减益 '回归[id:403760]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 11: Spell: 时间跳跃[id:404977,cd:180]
-    若已点出天赋 '时间跳跃[id:404977,cd:180]'
-    若玩家有足够资源施放技能 '时间跳跃[id:404977,cd:180]'
-    若技能 '时间跳跃[id:404977,cd:180]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '时间跳跃[id:404977,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '时间跳跃[id:404977,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '时间跳跃[id:404977,cd:180]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 12: Spell: 扭转天平[id:370553,cd:120]
-    若已点出天赋 '扭转天平[id:370553,cd:120]'
-    若玩家有足够资源施放技能 '扭转天平[id:370553,cd:120]'
-    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
-    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '扭转天平[id:370553,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '扭转天平[id:370553,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '扭转天平[id:370553,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 13: Spell: 青铜龙的祝福[id:364342,cd:15]
-    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'
-    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'
-    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中
-    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'
+    若已点出天赋 '青铜龙的祝福[id:364342,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '青铜龙的祝福[id:364342,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '青铜龙的祝福[id:364342,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '青铜龙的祝福高亮[id:1271912]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

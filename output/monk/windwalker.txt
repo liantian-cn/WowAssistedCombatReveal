@@ -1,126 +1,126 @@
 Windwalker
 0: Spell: 风领主之击[id:392983,cd:35]
-    若技能 '风领主之击[id:392983,cd:35]' 在射程内
-    若技能 '风领主之击[id:392983,cd:35]' 不在冷却中
-    若玩家有足够资源施放技能 '风领主之击[id:392983,cd:35]'
-    若已点出天赋 '风领主之击[id:392983,cd:35]'
-    若玩家没有增益/减益 '青龙之心[id:443421]'
-    若玩家没有增益/减益 '青龙之心[id:443616]'
-    若玩家没有增益/减益 '组合拳：风领主之击[id:1249766]'
+    若技能 '风领主之击[id:392983,cd:35]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '风领主之击[id:392983,cd:35]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '风领主之击[id:392983,cd:35]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '风领主之击[id:392983,cd:35]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '青龙之心[id:443421]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '青龙之心[id:443616]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '组合拳：风领主之击[id:1249766]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 1: Spell: 神鹤引项踢[id:101546]
-    若玩家身上增益/减益 '赤精之舞[id:325202]' 的层数大于等于 2
-    若技能 '神鹤引项踢[id:101546]' 不在冷却中
-    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
-    若已点出天赋 '神鹤引项踢[id:101546]'
-    若技能 '神鹤引项踢[id:101546]' 可以成功施放
-    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'
+    若玩家身上增益/减益 '赤精之舞[id:325202]' 的层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_GREATER
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '神鹤引项踢[id:101546]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 碎玉闪电[id:117952]
-    若技能 '碎玉闪电[id:117952]' 在射程内
-    若技能 '碎玉闪电[id:117952]' 不在冷却中
-    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
-    若已点出天赋 '碎玉闪电[id:117952]'
-    若玩家身上增益/减益 '皇帝的容电器[id:393039]' 的层数大于等于 20
-    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'
+    若技能 '碎玉闪电[id:117952]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '碎玉闪电[id:117952]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '碎玉闪电[id:117952]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家身上增益/减益 '皇帝的容电器[id:393039]' 的层数大于等于 20        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_GREATER
+    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 3: Spell: 怒雷破[id:113656,cd:24]
-    若技能 '怒雷破[id:113656,cd:24]' 不在冷却中
-    若玩家有足够资源施放技能 '怒雷破[id:113656,cd:24]'
-    若已点出天赋 '怒雷破[id:113656,cd:24]'
-    若目标距离小于等于 8 码
-    若玩家没有增益/减益 '组合拳：怒雷破[id:1249758]'
+    若技能 '怒雷破[id:113656,cd:24]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '怒雷破[id:113656,cd:24]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '怒雷破[id:113656,cd:24]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家没有增益/减益 '组合拳：怒雷破[id:1249758]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 4: Spell: 旭日东升踢[id:107428]
-    若技能 '旭日东升踢[id:107428]' 在射程内
-    若技能 '旭日东升踢[id:107428]' 不在冷却中
-    若玩家有足够资源施放技能 '旭日东升踢[id:107428]'
-    若已点出天赋 '旭日东升踢[id:107428]'
-    若玩家没有增益/减益 '组合拳：旭日东升踢[id:1249753]'
+    若技能 '旭日东升踢[id:107428]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '旭日东升踢[id:107428]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '旭日东升踢[id:107428]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '旭日东升踢[id:107428]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '组合拳：旭日东升踢[id:1249753]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 5: Spell: 升龙霸[id:152175,cd:35]
-    若目标距离小于等于 5 码
-    若技能 '升龙霸[id:152175,cd:35]' 不在冷却中
-    若玩家有足够资源施放技能 '升龙霸[id:152175,cd:35]'
-    若玩家没有增益/减益 '青龙之心[id:443421]'
-    若已点出天赋 '升龙霸[id:152175,cd:35]'
-    若玩家没有增益/减益 '组合拳：升龙霸[id:1249765]'
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若技能 '升龙霸[id:152175,cd:35]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '升龙霸[id:152175,cd:35]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若玩家没有增益/减益 '青龙之心[id:443421]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '升龙霸[id:152175,cd:35]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '组合拳：升龙霸[id:1249765]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 6: Spell: 幻灭踢[id:100784,cd:3]
-    若技能 '幻灭踢[id:100784,cd:3]' 在射程内
-    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中
-    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'
-    若已点出天赋 '幻灭踢[id:100784,cd:3]'
-    若玩家拥有增益/减益 '幻灭踢！[id:116768]'
-    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'
+    若技能 '幻灭踢[id:100784,cd:3]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '幻灭踢[id:100784,cd:3]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '幻灭踢！[id:116768]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 7: Spell: 神鹤引项踢[id:101546]
-    若技能 '神鹤引项踢[id:101546]' 不在冷却中
-    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'
-    若玩家周围 9 码内的目标数量大于 3 个
-    若已点出天赋 '神鹤引项踢[id:101546]'
-    若技能 '神鹤引项踢[id:101546]' 可以成功施放
-    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'
+    若技能 '神鹤引项踢[id:101546]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '神鹤引项踢[id:101546]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若玩家周围 9 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '神鹤引项踢[id:101546]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '神鹤引项踢[id:101546]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若玩家没有增益/减益 '组合拳：神鹤引项踢[id:1249754]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 8: Spell: 真气爆裂[id:461404]
-    若技能 '真气爆裂[id:461404]' 不在冷却中
-    若玩家有足够资源施放技能 '真气爆裂[id:461404]'
-    若已点出天赋 '真气爆裂[id:461404]'
+    若技能 '真气爆裂[id:461404]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '真气爆裂[id:461404]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '真气爆裂[id:461404]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 9: Spell: 幻灭踢[id:100784,cd:3]
-    若技能 '幻灭踢[id:100784,cd:3]' 在射程内
-    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中
-    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'
-    若已点出天赋 '幻灭踢[id:100784,cd:3]'
-    若玩家周围 9 码内的目标数量小于等于 2 个
-    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'
+    若技能 '幻灭踢[id:100784,cd:3]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若技能 '幻灭踢[id:100784,cd:3]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '幻灭踢[id:100784,cd:3]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '幻灭踢[id:100784,cd:3]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 9 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
+    若玩家没有增益/减益 '组合拳：幻灭踢[id:1249757]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 10: Spell: 猛虎掌[id:100780]
-    若技能 '猛虎掌[id:100780]' 不在冷却中
-    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
-    若已点出天赋 '猛虎掌[id:100780]'
-    若技能 '猛虎掌[id:100780]' 在射程内
-    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '猛虎掌[id:100780]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 11: Spell: 碎玉闪电[id:117952]
-    若技能 '碎玉闪电[id:117952]' 不在冷却中
-    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'
-    若已点出天赋 '碎玉闪电[id:117952]'
-    若玩家能量大于等于 75
-    若技能 '碎玉闪电[id:117952]' 可以成功施放
-    若目标距离大于 15 码
-    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'
+    若技能 '碎玉闪电[id:117952]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '碎玉闪电[id:117952]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '碎玉闪电[id:117952]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家能量大于等于 75        -- ASSISTED_COMBAT_RULE_TYPE_ENERGY_GREATER
+    若技能 '碎玉闪电[id:117952]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
+    若玩家没有增益/减益 '组合拳：碎玉闪电[id:1249764]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 12: Spell: 碧火踏[id:388193]
-    若目标距离小于等于 20 码
-    若技能 '碧火踏[id:388193]' 不在冷却中
-    若玩家有足够资源施放技能 '碧火踏[id:388193]'
-    若已点出天赋 '碧火踏[id:388193]'
+    若目标距离小于等于 20 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若技能 '碧火踏[id:388193]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '碧火踏[id:388193]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '碧火踏[id:388193]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 13: Spell: 猛虎掌[id:100780]
-    若技能 '猛虎掌[id:100780]' 不在冷却中
-    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
-    若已点出天赋 '猛虎掌[id:100780]'
-    若技能 '猛虎掌[id:100780]' 在射程内
-    若玩家真气小于等于 4
-    若玩家能量大于等于 101
-    若玩家没有增益/减益 '青龙之心[id:443421]'
-    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '猛虎掌[id:100780]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家真气小于等于 4        -- ASSISTED_COMBAT_RULE_TYPE_CHI_LESS
+    若玩家能量大于等于 101        -- ASSISTED_COMBAT_RULE_TYPE_ENERGY_GREATER
+    若玩家没有增益/减益 '青龙之心[id:443421]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '组合拳：猛虎掌[id:1249756]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 14: Spell: 旭日东升踢[id:107428]
 15: Spell: 轮回之触[id:322109,cd:180]
-    若已点出天赋 '轮回之触[id:322109,cd:180]'
-    若玩家有足够资源施放技能 '轮回之触[id:322109,cd:180]'
-    若技能 '轮回之触[id:322109,cd:180]' 不在冷却中
-    若技能 '轮回之触[id:322109,cd:180]' 在射程内
+    若已点出天赋 '轮回之触[id:322109,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '轮回之触[id:322109,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '轮回之触[id:322109,cd:180]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '轮回之触[id:322109,cd:180]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 16: Spell: 猛虎掌[id:100780]
-    若技能 '猛虎掌[id:100780]' 不在冷却中
-    若玩家有足够资源施放技能 '猛虎掌[id:100780]'
-    若已点出天赋 '猛虎掌[id:100780]'
-    若技能 '猛虎掌[id:100780]' 在射程内
-    若玩家没有增益/减益 '幻灭踢[id:261916]'
+    若技能 '猛虎掌[id:100780]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '猛虎掌[id:100780]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '猛虎掌[id:100780]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '幻灭踢[id:261916]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 17: Spell: 翔龙在天[id:101545,cd:30]
-    若已点出天赋 '翔龙在天[id:101545,cd:30]'
-    若技能 '翔龙在天[id:101545,cd:30]' 不在冷却中
-    若玩家有足够资源施放技能 '翔龙在天[id:101545,cd:30]'
-    若已点出天赋 '翔龙在天[id:101545,cd:30]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '翔龙在天[id:101545,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '翔龙在天[id:101545,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '翔龙在天[id:101545,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '翔龙在天[id:101545,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 18: Spell: 乾元之巅[id:1249625,cd:16]
-    若技能 '乾元之巅[id:1249625,cd:16]' 不在冷却中
-    若玩家有足够资源施放技能 '乾元之巅[id:1249625,cd:16]'
-    若玩家没有增益/减益 '乾元之巅[id:1249625,cd:16]'
-    若已点出天赋 '乾元之巅[id:1249625,cd:16]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若技能 '乾元之巅[id:1249625,cd:16]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '乾元之巅[id:1249625,cd:16]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若玩家没有增益/减益 '乾元之巅[id:1249625,cd:16]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '乾元之巅[id:1249625,cd:16]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 19: Spell: 天神御身[id:443028,cd:90]
-    若技能 '天神御身[id:443028,cd:90]' 不在冷却中
-    若玩家有足够资源施放技能 '天神御身[id:443028,cd:90]'
-    若已点出天赋 '天神御身[id:443028,cd:90]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若技能 '天神御身[id:443028,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '天神御身[id:443028,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '天神御身[id:443028,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 20: Spell: 旭日东升踢[id:107428]
-    若玩家拥有增益/减益 '疾风呼啸踢[id:1250554]'
+    若玩家拥有增益/减益 '疾风呼啸踢[id:1250554]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

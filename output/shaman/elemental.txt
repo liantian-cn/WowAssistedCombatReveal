@@ -1,158 +1,158 @@
 Elemental
 0: Spell: 地震术[id:61882]
-    若已点出天赋 '地震术[id:61882]'
-    若玩家有足够资源施放技能 '地震术[id:61882]'
-    若技能 '地震术[id:61882]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
-    若玩家没有增益/减益 '大分裂的回响[id:384087]'
+    若已点出天赋 '地震术[id:61882]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '地震术[id:61882]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '地震术[id:61882]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家没有增益/减益 '大分裂的回响[id:384087]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 1: Spell: 地震术[id:462620]
-    若已点出天赋 '地震术[id:462620]'
-    若玩家有足够资源施放技能 '地震术[id:462620]'
-    若技能 '地震术[id:462620]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
-    若玩家没有增益/减益 '大分裂的回响[id:384087]'
+    若已点出天赋 '地震术[id:462620]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '地震术[id:462620]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '地震术[id:462620]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家没有增益/减益 '大分裂的回响[id:384087]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 元素冲击[id:117014]
-    若已点出天赋 '元素冲击[id:117014]'
-    若玩家有足够资源施放技能 '元素冲击[id:117014]'
-    若技能 '元素冲击[id:117014]' 不在冷却中
+    若已点出天赋 '元素冲击[id:117014]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '元素冲击[id:117014]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '元素冲击[id:117014]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 大地震击[id:8042]
-    若已点出天赋 '大地震击[id:8042]'
-    若玩家有足够资源施放技能 '大地震击[id:8042]'
-    若技能 '大地震击[id:8042]' 不在冷却中
+    若已点出天赋 '大地震击[id:8042]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '大地震击[id:8042]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '大地震击[id:8042]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 4: Spell: 风暴守护者[id:191634,cd:60]
-    若已点出天赋 '风暴守护者[id:191634,cd:60]'
-    若玩家有足够资源施放技能 '风暴守护者[id:191634,cd:60]'
-    若技能 '风暴守护者[id:191634,cd:60]' 不在冷却中
-    若玩家没有增益/减益 '风暴守护者[id:191634,cd:60]'
+    若已点出天赋 '风暴守护者[id:191634,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '风暴守护者[id:191634,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '风暴守护者[id:191634,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '风暴守护者[id:191634,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 5: Spell: 闪电箭[id:188196]
-    若已点出天赋 '闪电箭[id:188196]'
-    若玩家有足够资源施放技能 '闪电箭[id:188196]'
-    若技能 '闪电箭[id:188196]' 不在冷却中
-    若玩家拥有增益/减益 '狂风怒号[id:454015]'
+    若已点出天赋 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电箭[id:188196]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '狂风怒号[id:454015]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 6: Spell: 闪电链[id:188443]
-    若已点出天赋 '闪电链[id:188443]'
-    若玩家有足够资源施放技能 '闪电链[id:188443]'
-    若技能 '闪电链[id:188443]' 不在冷却中
-    若玩家拥有增益/减益 '风暴守护者[id:191634,cd:60]'
-    若目标周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电链[id:188443]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '风暴守护者[id:191634,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 7: Spell: 闪电箭[id:188196]
-    若已点出天赋 '闪电箭[id:188196]'
-    若玩家有足够资源施放技能 '闪电箭[id:188196]'
-    若技能 '闪电箭[id:188196]' 不在冷却中
-    若玩家拥有增益/减益 '风暴守护者[id:191634,cd:60]'
+    若已点出天赋 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电箭[id:188196]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '风暴守护者[id:191634,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 8: Spell: 烈焰震击[id:470411,cd:6]
-    若已点出天赋 '烈焰震击[id:470411,cd:6]'
-    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
-    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
-    若目标没有增益/减益 '烈焰震击[id:188389]'
-    若目标周围 10 码内的目标数量小于等于 2 个
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '烈焰震击[id:188389]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若目标周围 10 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
 9: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若玩家没有增益/减益 '元素宗师[id:260734]'
-    若玩家拥有增益/减益 '元素宗师[id:16166]'
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '元素宗师[id:260734]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '元素宗师[id:16166]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 10: Spell: 闪电链[id:188443]
-    若已点出天赋 '闪电链[id:188443]'
-    若玩家有足够资源施放技能 '闪电链[id:188443]'
-    若技能 '闪电链[id:188443]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
-    若技能 '闪电链[id:188443]' 可以成功施放
+    若已点出天赋 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电链[id:188443]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若技能 '闪电链[id:188443]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 11: Spell: 闪电箭[id:188196]
-    若已点出天赋 '闪电箭[id:188196]'
-    若玩家有足够资源施放技能 '闪电箭[id:188196]'
-    若技能 '闪电箭[id:188196]' 不在冷却中
-    若技能 '闪电箭[id:188196]' 可以成功施放
+    若已点出天赋 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电箭[id:188196]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '闪电箭[id:188196]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 12: Spell: 先祖迅捷[id:443454,cd:30]
-    若已点出天赋 '先祖迅捷[id:443454,cd:30]'
-    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
-    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
+    若已点出天赋 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 13: Spell: 先祖迅捷[id:443454,cd:30]
-    若已点出天赋 '先祖迅捷[id:443454,cd:30]'
-    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
+    若已点出天赋 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 14: Spell: 先祖迅捷[id:443454,cd:30]
-    若已点出天赋 '先祖迅捷[id:443454,cd:30]'
-    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
-    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中
+    若已点出天赋 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '先祖迅捷[id:443454,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '先祖迅捷[id:443454,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 15: Spell: 熔岩爆裂[id:51505]
 16: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若技能 '熔岩爆裂[id:51505]' 的充能层数大于等于 2
-    若技能 '熔岩爆裂[id:51505]' 可以成功施放
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '熔岩爆裂[id:51505]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
+    若技能 '熔岩爆裂[id:51505]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 17: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若玩家拥有增益/减益 '元素宗师[id:16166]'
-    若玩家没有增益/减益 '元素宗师[id:260734]'
-    若目标拥有增益/减益 '烈焰震击[id:188389]'
-    若目标周围 10 码内的目标数量小于等于 2 个
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '元素宗师[id:16166]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '元素宗师[id:260734]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标拥有增益/减益 '烈焰震击[id:188389]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标周围 10 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
 18: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若玩家没有增益/减益 '元素宗师[id:16166]'
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '元素宗师[id:16166]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 19: Spell: 闪电链[id:188443]
-    若已点出天赋 '闪电链[id:188443]'
-    若玩家有足够资源施放技能 '闪电链[id:188443]'
-    若技能 '闪电链[id:188443]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
-    若玩家身上的增益/减益 '风暴守护者[id:191634,cd:60]' 剩余时间小于等于 3000 毫秒
+    若已点出天赋 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电链[id:188443]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家身上的增益/减益 '风暴守护者[id:191634,cd:60]' 剩余时间小于等于 3000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_AURA_DURATION_PLAYER
 20: Spell: 闪电箭[id:188196]
-    若已点出天赋 '闪电箭[id:188196]'
-    若玩家有足够资源施放技能 '闪电箭[id:188196]'
-    若技能 '闪电箭[id:188196]' 不在冷却中
-    若玩家身上的增益/减益 '风暴守护者[id:191634,cd:60]' 剩余时间小于等于 3000 毫秒
+    若已点出天赋 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电箭[id:188196]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家身上的增益/减益 '风暴守护者[id:191634,cd:60]' 剩余时间小于等于 3000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_AURA_DURATION_PLAYER
 21: Spell: 火舌武器[id:318038]
-    若已点出天赋 '火舌武器[id:318038]'
-    若玩家有足够资源施放技能 '火舌武器[id:318038]'
-    若技能 '火舌武器[id:318038]' 不在冷却中
-    若玩家没有增益/减益 '火舌武器[id:319778]'
+    若已点出天赋 '火舌武器[id:318038]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '火舌武器[id:318038]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '火舌武器[id:318038]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '火舌武器[id:319778]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 22: Spell: 雷霆打击结界[id:462757]
-    若已点出天赋 '雷霆打击结界[id:462757]'
-    若玩家有足够资源施放技能 '雷霆打击结界[id:462757]'
-    若技能 '雷霆打击结界[id:462757]' 不在冷却中
-    若玩家没有增益/减益 '雷霆打击结界[id:462742]'
+    若已点出天赋 '雷霆打击结界[id:462757]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '雷霆打击结界[id:462757]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '雷霆打击结界[id:462757]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '雷霆打击结界[id:462742]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 23: Spell: 烈焰震击[id:470411,cd:6]
-    若已点出天赋 '烈焰震击[id:470411,cd:6]'
-    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
-    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 2 个
-    若玩家没有增益/减益 '净化烈焰[id:1259471]'
-    若目标没有增益/减益 '烈焰震击[id:188389]'
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家没有增益/减益 '净化烈焰[id:1259471]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标没有增益/减益 '烈焰震击[id:188389]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 24: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 2 个
-    若玩家拥有增益/减益 '净化烈焰[id:1259491]'
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家拥有增益/减益 '净化烈焰[id:1259491]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 25: Spell: 烈焰震击[id:470411,cd:6]
-    若已点出天赋 '烈焰震击[id:470411,cd:6]'
-    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
-    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 2 个
-    若玩家拥有增益/减益 '净化烈焰[id:1259471]'
-    若玩家没有增益/减益 '净化烈焰[id:1259491]'
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家拥有增益/减益 '净化烈焰[id:1259471]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '净化烈焰[id:1259491]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 26: Spell: 升腾[id:114050,cd:180]
-    若已点出天赋 '升腾[id:114050,cd:180]'
-    若玩家有足够资源施放技能 '升腾[id:114050,cd:180]'
-    若技能 '升腾[id:114050,cd:180]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '升腾[id:114050,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '升腾[id:114050,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '升腾[id:114050,cd:180]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 27: Spell: 闪电之盾[id:192106]
-    若已点出天赋 '闪电之盾[id:192106]'
-    若玩家有足够资源施放技能 '闪电之盾[id:192106]'
-    若技能 '闪电之盾[id:192106]' 不在冷却中
-    若玩家没有增益/减益 '闪电之盾[id:192106]'
+    若已点出天赋 '闪电之盾[id:192106]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电之盾[id:192106]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电之盾[id:192106]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '闪电之盾[id:192106]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 28: Spell: 天怒[id:462854]
-    若已点出天赋 '天怒[id:462854]'
-    若玩家有足够资源施放技能 '天怒[id:462854]'
-    若技能 '天怒[id:462854]' 不在冷却中
-    若玩家拥有增益/减益 '天怒高亮[id:1271904]'
+    若已点出天赋 '天怒[id:462854]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '天怒[id:462854]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '天怒[id:462854]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '天怒高亮[id:1271904]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

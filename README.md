@@ -57,41 +57,53 @@ python -m venv .venv
 ## 输出格式
 
 每个文件 = 首行专精显示名 + 步骤块（行结构与旧版 `out/*.txt` 一致；技能名后追加
-`[id:<spellID>]`，冷却大于 1 秒时再追加 `,cd:<整数秒>`，文本不再与旧产物逐字节相同）。
+`[id:<spellID>]`，冷却大于 1 秒时再追加 `,cd:<整数秒>`，条件行末尾追加 `-- <枚举名>` 类型注释，
+文本不再与旧产物逐字节相同）。
 下面片段原样复制自 `output/hunter/marksmanship.txt`（仅中间步骤用省略号跳过）：
 
 ```
 Marksmanship
 0: Spell: 多重射击[id:257620]
-    若已点出天赋 '多重射击[id:257620]'
-    若玩家有足够资源施放技能 '多重射击[id:257620]'
-    若技能 '多重射击[id:257620]' 不在冷却中
-    若技能 '多重射击[id:257620]' 在射程内
-    若玩家身上的增益/减益 '技巧射击[id:257622]' 剩余时间小于等于 2000 毫秒
-    若目标周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '多重射击[id:257620]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '多重射击[id:257620]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '多重射击[id:257620]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '多重射击[id:257620]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家身上的增益/减益 '技巧射击[id:257622]' 剩余时间小于等于 2000 毫秒        -- ASSISTED_COMBAT_RULE_TYPE_AURA_DURATION_PLAYER
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 1: Spell: 多重射击[id:257620]
-    若已点出天赋 '多重射击[id:257620]'
-    若玩家有足够资源施放技能 '多重射击[id:257620]'
-    若技能 '多重射击[id:257620]' 不在冷却中
-    若技能 '多重射击[id:257620]' 在射程内
-    若玩家拥有增益/减益 '弹无虚发[id:260242]'
-    若目标周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '多重射击[id:257620]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '多重射击[id:257620]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '多重射击[id:257620]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '多重射击[id:257620]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '弹无虚发[id:260242]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 2: Spell: 急速射击[id:257044,cd:16]
-    若已点出天赋 '急速射击[id:257044,cd:16]'
-    若玩家有足够资源施放技能 '急速射击[id:257044,cd:16]'
-    若技能 '急速射击[id:257044,cd:16]' 不在冷却中
-    若技能 '急速射击[id:257044,cd:16]' 在射程内
+    若已点出天赋 '急速射击[id:257044,cd:16]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '急速射击[id:257044,cd:16]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '急速射击[id:257044,cd:16]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '急速射击[id:257044,cd:16]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 （中间步骤略）
 4: Spell: 瞄准射击[id:19434]
-    若已点出天赋 '瞄准射击[id:19434]'
-    若玩家有足够资源施放技能 '瞄准射击[id:19434]'
-    若技能 '瞄准射击[id:19434]' 不在冷却中
-    若技能 '瞄准射击[id:19434]' 在射程内
+    若已点出天赋 '瞄准射击[id:19434]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '瞄准射击[id:19434]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '瞄准射击[id:19434]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '瞄准射击[id:19434]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 5: Spell: 夺命射击[id:53351]
+（中间步骤略）
+15: Spell: 百发百中[id:288613,cd:120]
+    若已点出天赋 '百发百中[id:288613,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '百发百中[id:288613,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '百发百中[id:288613,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 ```
 
 - 首行的专精名由输出层显式写入（旧版是 `find_rotation` 里调试 `print` 的副产物）；
 - `N` 从 0 开始，是对方案步骤的遍历序号，**与游戏内 `OrderIndex` 无关**（见下节）；
+- **每条条件行末尾追加 `        -- <Enum>` 类型注释**：固定 8 个空格 + `--` + 1 个空格 +
+  `ConditionTypeMap.csv` 的 `Enum` 列原始枚举名（如 `ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST`），
+  把中文条件描述与 DB2 `AssistedCombatRule.ConditionType` 直接对照；所有条件行都带注释
+  （含 `ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY` 说明行），**步骤标题行与首行专精名不带**；
+  间隔固定 8 空格、按条件文本自然错开，不做列对齐（条件文本长度不定）；
 - **由 spellID 解析出的名称一律带 `[id:<spellID>]` 后缀**：步骤标题（不加引号）、`{spell}`
   占位符、Spell 型条件参数（技能 / 光环 / 天赋，单引号包裹）都适用，便于把文本与 DB2 的
   技能 ID 直接对照；SpellName 表里查不到名称时输出 `Unknown Spell[id:<spellID>]`；
@@ -102,7 +114,8 @@ Marksmanship
   时保持原样，如 `瞄准射击[id:19434]`（0ms）、`正义盾击[id:53600]`（正好 1000ms）；
 - 数值型参数不受影响（层数、距离、百分比、毫秒等，如 `充能层数大于等于 2`、
   `10 码内`、`50% 生命值`），这些数字后面不会出现 `[id:`；
-- 条件行固定 4 空格缩进，模板来自 `ConditionTypeMap.csv`；
+- 条件行固定 4 空格缩进，渲染文本后是 8 空格 + `-- <Enum>` 类型注释，模板来自
+  `ConditionTypeMap.csv`；
 - 文件编码 UTF-8（无 BOM）、换行 CRLF，与旧产物一致。
 
 ## 仓库结构
@@ -113,7 +126,7 @@ app/
   db2.py                 # 5 张 CSV → classes/specs/plan/steps/rules 嵌套结构
   spells.py              # SpellName 表单次流式扫描，建立技能名索引（负责 cd 标签格式）
   cooldowns.py           # SpellCooldowns 表单次流式扫描，两列取大得到冷却毫秒
-  render.py              # 条件映射表 + 模板渲染
+  render.py              # 条件映射表 + 模板渲染（4 空格缩进条件行 + 末尾类型注释）
   output.py              # 命名规则与写文件
 csv_table/               # DB2 导出 CSV（5 张业务表 + SpellName + SpellCooldowns，运行必需）
 output/                  # 生成结果（40 个文件，按项目约定入库）
@@ -147,4 +160,5 @@ PROJECT_LOGIC.md         # 数据流、模块职责、已知问题（详细文�
 本仓库是他的 `wow_assist_mapper` 思路的延续：把辅助战斗数据翻译成可读文本；
 第一期重构只调整工程结构（`main.py` + `app/`、离线技能名、可测试），输出行为与旧版保持一致；
 第二期起由 spellID 解析出的技能名统一追加 `[id:<spellID>]` 标签；本期起冷却大于 1 秒的技能
-再追加 `,cd:<整数秒>`，输出文本因此不再与旧版逐字节相同。
+再追加 `,cd:<整数秒>`、条件行末尾再追加 `        -- <Enum>` 类型注释（枚举名来自
+`ConditionTypeMap.csv` 的 `Enum` 列），输出文本因此进一步偏离旧产物、不再逐字节相同。

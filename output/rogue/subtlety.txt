@@ -1,136 +1,136 @@
 Subtlety
 0: Spell: 速效药膏[id:315584]
-    若已点出天赋 '速效药膏[id:315584]'
-    若玩家有足够资源施放技能 '速效药膏[id:315584]'
-    若技能 '速效药膏[id:315584]' 不在冷却中
-    若玩家没有增益/减益 '速效药膏[id:315584]'
-    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '速效药膏[id:315584]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '速效药膏[id:315584]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 1: Spell: 暗影之舞[id:185313,cd:6]
-    若玩家有足够资源施放技能 '暗影之舞[id:185313,cd:6]'
-    若技能 '暗影之舞[id:185313,cd:6]' 不在冷却中
-    若已点出天赋 '暗影之舞[id:185313,cd:6]'
-    若玩家周围 10 码内的目标数量大于 1 个
-    若技能 '暗影之舞[id:185313,cd:6]' 不在冷却中
+    若玩家有足够资源施放技能 '暗影之舞[id:185313,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗影之舞[id:185313,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '暗影之舞[id:185313,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若技能 '暗影之舞[id:185313,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 2: Spell: 影分身[id:280719]
-    若玩家有足够资源施放技能 '影分身[id:280719]'
-    若技能 '影分身[id:280719]' 不在冷却中
-    若已点出天赋 '影分身[id:280719]'
-    若玩家拥有增益/减益 '暗影之舞[id:185422]'
-    若玩家连击点大于等于 5
-    若技能 '影分身[id:280719]' 在射程内
-    若玩家没有增益/减益 '至黑之夜[id:457280]'
+    若玩家有足够资源施放技能 '影分身[id:280719]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '影分身[id:280719]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '影分身[id:280719]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '暗影之舞[id:185422]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '影分身[id:280719]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 3: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 5
-    若玩家拥有增益/减益 '致命一击[id:462128]'
-    若技能 '刺骨[id:196819]' 在射程内
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若玩家拥有增益/减益 '致命一击[id:462128]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 4: Spell: 赤喉之咬[id:426591,cd:45]
-    若已点出天赋 '赤喉之咬[id:426591,cd:45]'
-    若玩家有足够资源施放技能 '赤喉之咬[id:426591,cd:45]'
-    若技能 '赤喉之咬[id:426591,cd:45]' 不在冷却中
-    若玩家连击点小于等于 2
-    若技能 '赤喉之咬[id:426591,cd:45]' 在射程内
+    若已点出天赋 '赤喉之咬[id:426591,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '赤喉之咬[id:426591,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '赤喉之咬[id:426591,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家连击点小于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若技能 '赤喉之咬[id:426591,cd:45]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 5: Spell: 黑火药[id:319175]
-    若玩家有足够资源施放技能 '黑火药[id:319175]'
-    若技能 '黑火药[id:319175]' 不在冷却中
-    若已点出天赋 '黑火药[id:319175]'
-    若玩家周围 10 码内的目标数量大于 3 个
-    若玩家连击点大于等于 5
-    若玩家没有增益/减益 '至黑之夜[id:457280]'
+    若玩家有足够资源施放技能 '黑火药[id:319175]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '黑火药[id:319175]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '黑火药[id:319175]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若玩家没有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 6: Spell: 袖剑风暴[id:197835]
-    若玩家有足够资源施放技能 '袖剑风暴[id:197835]'
-    若技能 '袖剑风暴[id:197835]' 不在冷却中
-    若已点出天赋 '袖剑风暴[id:197835]'
-    若玩家周围 10 码内的目标数量大于 3 个
+    若玩家有足够资源施放技能 '袖剑风暴[id:197835]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '袖剑风暴[id:197835]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '袖剑风暴[id:197835]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 7: Spell: 暗影打击[id:185438]
-    若玩家有足够资源施放技能 '暗影打击[id:185438]'
-    若技能 '暗影打击[id:185438]' 不在冷却中
-    若已点出天赋 '暗影打击[id:185438]'
-    若技能 '暗影打击[id:185438]' 在射程内
+    若玩家有足够资源施放技能 '暗影打击[id:185438]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗影打击[id:185438]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '暗影打击[id:185438]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '暗影打击[id:185438]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 8: Spell: 影袭[id:1752]
-    若玩家有足够资源施放技能 '影袭[id:1752]'
-    若技能 '影袭[id:1752]' 不在冷却中
-    若已点出天赋 '影袭[id:1752]'
-    若玩家没有增益/减益 '暗影之舞[id:185422]'
-    若技能 '影袭[id:1752]' 在射程内
+    若玩家有足够资源施放技能 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '影袭[id:1752]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '暗影之舞[id:185422]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若技能 '影袭[id:1752]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 9: Spell: 飞镖投掷[id:114014]
-    若玩家有足够资源施放技能 '飞镖投掷[id:114014]'
-    若技能 '飞镖投掷[id:114014]' 不在冷却中
-    若已点出天赋 '飞镖投掷[id:114014]'
-    若技能 '飞镖投掷[id:114014]' 在射程内
-    若玩家没有增益/减益 '潜行[id:1784,cd:2]'
-    若玩家没有增益/减益 '消失[id:11327]'
-    若目标距离大于 15 码
-    若玩家没有增益/减益 '潜行[id:115191,cd:2]'
+    若玩家有足够资源施放技能 '飞镖投掷[id:114014]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '飞镖投掷[id:114014]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '飞镖投掷[id:114014]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '飞镖投掷[id:114014]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '潜行[id:1784,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '消失[id:11327]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
+    若玩家没有增益/减益 '潜行[id:115191,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 10: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 5
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家没有增益/减益 '至黑之夜[id:457280]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 11: Spell: 影袭[id:1752]
 12: Spell: 刺骨[id:196819]
-    若玩家有足够资源施放技能 '刺骨[id:196819]'
-    若技能 '刺骨[id:196819]' 不在冷却中
-    若已点出天赋 '刺骨[id:196819]'
-    若玩家连击点大于等于 5
-    若技能 '刺骨[id:196819]' 在射程内
-    若玩家拥有增益/减益 '至黑之夜[id:457280]'
+    若玩家有足够资源施放技能 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刺骨[id:196819]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '刺骨[id:196819]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家连击点大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER
+    若技能 '刺骨[id:196819]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '至黑之夜[id:457280]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 13: Spell: 袖剑风暴[id:197835]
-    若玩家有足够资源施放技能 '袖剑风暴[id:197835]'
-    若技能 '袖剑风暴[id:197835]' 不在冷却中
-    若已点出天赋 '袖剑风暴[id:197835]'
-    若玩家周围 10 码内的目标数量大于 3 个
-    若玩家拥有增益/减益 '深邃诡计[id:193531]'
-    若玩家拥有增益/减益 '隐秘诡计[id:394320]'
-    若玩家连击点小于等于 5
+    若玩家有足够资源施放技能 '袖剑风暴[id:197835]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '袖剑风暴[id:197835]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '袖剑风暴[id:197835]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '隐秘诡计[id:394320]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家连击点小于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
 14: Spell: 暗影打击[id:185438]
-    若玩家有足够资源施放技能 '暗影打击[id:185438]'
-    若技能 '暗影打击[id:185438]' 不在冷却中
-    若已点出天赋 '暗影打击[id:185438]'
-    若技能 '暗影打击[id:185438]' 在射程内
-    若玩家拥有增益/减益 '深邃诡计[id:193531]'
-    若玩家拥有增益/减益 '隐秘诡计[id:394320]'
-    若玩家连击点小于等于 5
-    若玩家周围 10 码内的目标数量小于等于 3 个
+    若玩家有足够资源施放技能 '暗影打击[id:185438]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗影打击[id:185438]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '暗影打击[id:185438]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '暗影打击[id:185438]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '隐秘诡计[id:394320]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家连击点小于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若玩家周围 10 码内的目标数量小于等于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
 15: Spell: 影袭[id:1752]
-    若玩家有足够资源施放技能 '影袭[id:1752]'
-    若技能 '影袭[id:1752]' 不在冷却中
-    若已点出天赋 '影袭[id:1752]'
-    若玩家没有增益/减益 '暗影之舞[id:185422]'
-    若技能 '影袭[id:1752]' 在射程内
-    若玩家拥有增益/减益 '深邃诡计[id:193531]'
-    若玩家拥有增益/减益 '隐秘诡计[id:394320]'
-    若玩家连击点小于等于 5
-    若玩家周围 10 码内的目标数量小于等于 2 个
+    若玩家有足够资源施放技能 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '影袭[id:1752]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若已点出天赋 '影袭[id:1752]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家没有增益/减益 '暗影之舞[id:185422]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若技能 '影袭[id:1752]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '深邃诡计[id:193531]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '隐秘诡计[id:394320]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家连击点小于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS
+    若玩家周围 10 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
 16: Spell: 致伤药膏[id:8679]
-    若已点出天赋 '致伤药膏[id:8679]'
-    若玩家有足够资源施放技能 '致伤药膏[id:8679]'
-    若技能 '致伤药膏[id:8679]' 不在冷却中
-    若玩家没有增益/减益 '致伤药膏[id:8679]'
-    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'
+    若已点出天赋 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '致伤药膏[id:8679]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '致伤药膏[id:8679]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 'PvP Rules Enabled (HARDCODED)[id:134735]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 17: Spell: 萎缩药膏[id:381637]
-    若已点出天赋 '萎缩药膏[id:381637]'
-    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'
-    若技能 '萎缩药膏[id:381637]' 不在冷却中
-    若玩家没有增益/减益 '萎缩药膏[id:381637]'
+    若已点出天赋 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '萎缩药膏[id:381637]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 18: Spell: 迟钝药膏[id:5761]
-    若已点出天赋 '迟钝药膏[id:5761]'
-    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'
-    若技能 '迟钝药膏[id:5761]' 不在冷却中
-    若玩家没有增益/减益 '迟钝药膏[id:5761]'
+    若已点出天赋 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '迟钝药膏[id:5761]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 19: Spell: 减速药膏[id:3408]
-    若已点出天赋 '减速药膏[id:3408]'
-    若玩家有足够资源施放技能 '减速药膏[id:3408]'
-    若技能 '减速药膏[id:3408]' 不在冷却中
-    若玩家没有增益/减益 '迟钝药膏[id:5761]'
-    若玩家没有增益/减益 '萎缩药膏[id:381637]'
-    若玩家没有增益/减益 '减速药膏[id:3408]'
+    若已点出天赋 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '减速药膏[id:3408]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '迟钝药膏[id:5761]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '萎缩药膏[id:381637]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '减速药膏[id:3408]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 20: Spell: 暗影之刃[id:121471,cd:90]
-    若已点出天赋 '暗影之刃[id:121471,cd:90]'
-    若玩家有足够资源施放技能 '暗影之刃[id:121471,cd:90]'
-    若技能 '暗影之刃[id:121471,cd:90]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '暗影之刃[id:121471,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暗影之刃[id:121471,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暗影之刃[id:121471,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY

@@ -4,9 +4,14 @@ import re
 from pathlib import Path
 
 import main
-from app import output, render
+from app import db2, output, render
 
-AUTOMATION_ONLY_LINE = "    仅自动化施放（不属于游戏的辅助战斗循环）"
+# 条件行末尾的类型注释：固定 8 空格 + "-- " + ConditionTypeMap.csv 的 Enum 列枚举名
+COMMENT_GAP = "        "
+# 校验用正则：注释前必须**恰好** 8 个空格——`[^ ]` 排除"第 9 个空格"的情况
+# （只写 ` {8}` 时 9 个空格也能匹配成功），行尾锚定，枚举名允许大写字母/数字/下划线
+COMMENT_RE = re.compile(r"[^ ] {8}-- (ASSISTED_COMBAT_RULE_TYPE_[A-Z0-9_]+)$")
+AUTOMATION_ONLY_TEXT = "仅自动化施放（不属于游戏的辅助战斗循环）"
 UNKNOWN_SPELL_IDS = (194310, 389387, 470058)
 
 
@@ -38,7 +43,9 @@ def test_generate_all_specs(generated):
 
 
 def test_output_file_structure(generated):
-    """每个文件：首行 = 专精显示名（与文件名对应）；步骤编号从 0 连续且标题带 ID；条件行 4 空格缩进。"""
+    """每个文件：首行 = 专精显示名（与文件名对应）；步骤编号从 0 连续、标题带 ID 且不带注释；
+    条件行 4 空格缩进且末尾恰好一个类型注释。
+    """
     _output_dir, files = outputs(generated)
     for path in files:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -48,10 +55,58 @@ def test_output_file_structure(generated):
         for line in lines[1:]:
             if ": Spell: " in line:
                 assert re.match(r"^\d+: Spell: .+\[id:\d+(,cd:\d+)?\]$", line), f"{path}: 步骤行格式错误 {line!r}"
+                assert "-- " not in line, f"{path}: 步骤标题行不应带注释 {line!r}"
                 numbers.append(int(line.split(":", 1)[0]))
             else:
-                assert line.startswith("    ") and len(line) > 4, f"{path}: 条件行格式错误 {line!r}"
+                assert line.startswith("    ") and len(line) > 4, f"{path}: 条件行缺少 4 空格缩进 {line!r}"
+                assert line.count("-- ASSISTED_COMBAT_RULE_TYPE_") == 1, f"{path}: 条件行注释不止一处 {line!r}"
+                assert COMMENT_RE.search(line), f"{path}: 条件行注释格式错误 {line!r}"
         assert numbers == list(range(len(numbers))), f"{path}: 步骤编号不连续 {numbers}"
+
+
+def test_condition_lines_carry_one_type_comment_each(generated, plan_steps):
+    """整库：条件行数 == 规则数（12.1.0.69814 为 3116），每条条件行末尾恰好一个类型注释。"""
+    expected = sum(len(step["rules"]) for step in plan_steps)
+    assert expected == 3116
+    _output_dir, files = outputs(generated)
+    condition_lines = 0
+    text = ""
+    for path in files:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        text += "\n".join(lines) + "\n"
+        condition_lines += sum(1 for line in lines[1:] if ": Spell: " not in line)
+    assert condition_lines == expected
+    assert text.count("-- ASSISTED_COMBAT_RULE_TYPE_") == expected
+
+
+def test_condition_comments_match_condition_type_map(generated, classes, condition_map):
+    """每条条件行注释的枚举名 == 该规则 ConditionType 在映射表 Enum 列的值。
+
+    期望值按 `iter_specs_with_plan` 的数据顺序逐条算出（不写死枚举表），
+    与输出文件里的条件行逐行对齐比较，因此计数、顺序、取值任一处不符都会失败。
+    """
+    expected = {}
+    for class_name, spec_data in db2.iter_specs_with_plan(classes):
+        comments = []
+        for step in db2.spec_rotation(spec_data):
+            for rule in step["rules"].values():
+                props = render.condition_props(condition_map, rule["raw"]["ConditionType"], rule["ID"])
+                comments.append(str(props["Enum"]))
+        key = f"{output.class_directory_name(class_name)}/{output.spec_file_name(spec_data['Name'])}"
+        expected[key] = comments
+
+    _output_dir, files = outputs(generated)
+    assert len(files) == len(expected) == 40
+    for path in files:
+        key = f"{path.parent.name}/{path.name}"
+        comments = []
+        for line in path.read_text(encoding="utf-8").splitlines()[1:]:
+            if ": Spell: " in line:
+                continue
+            match = COMMENT_RE.search(line)
+            assert match, f"{path}: 条件行缺少类型注释 {line!r}"
+            comments.append(match.group(1))
+        assert comments == expected[key], f"{path}: 条件行注释与 ConditionType 映射不一致"
 
 
 def test_all_resolved_names_carry_id_labels(generated, plan_steps, condition_map, spell_index):
@@ -93,10 +148,12 @@ def test_charge_lines_use_numbers(generated):
     assert len(re.findall(r"若技能 '.+\[id:\d+(,cd:\d+)?\]' 的充能层数大于等于 \d+", text)) == 10
 
 
-def test_automation_only_lines(generated):
-    """类型 70 共 46 条，渲染为映射表新增的说明行。"""
+def test_automation_only_lines(generated, condition_map):
+    """类型 70 共 46 条，渲染为映射表里的说明行，并同样带类型注释。"""
+    enum = str(render.condition_props(condition_map, 70, 0)["Enum"])
+    line = f"    {AUTOMATION_ONLY_TEXT}{COMMENT_GAP}-- {enum}"
     _output_dir, files = outputs(generated)
-    count = sum(path.read_text(encoding="utf-8").count(AUTOMATION_ONLY_LINE) for path in files)
+    count = sum(path.read_text(encoding="utf-8").count(line) for path in files)
     assert count == 46
 
 

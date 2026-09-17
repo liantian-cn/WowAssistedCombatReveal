@@ -1,86 +1,86 @@
 Blood
 0: Spell: 死神印记[id:439843,cd:45]
-    若已点出天赋 '死神印记[id:439843,cd:45]'
-    若玩家有足够资源施放技能 '死神印记[id:439843,cd:45]'
-    若技能 '死神印记[id:439843,cd:45]' 不在冷却中
-    若目标没有增益/减益 '死神印记[id:434765]'
-    若技能 '死神印记[id:439843,cd:45]' 在射程内
+    若已点出天赋 '死神印记[id:439843,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '死神印记[id:439843,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '死神印记[id:439843,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '死神印记[id:434765]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若技能 '死神印记[id:439843,cd:45]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 1: Spell: 精髓分裂[id:195182]
-    若已点出天赋 '精髓分裂[id:195182]'
-    若玩家有足够资源施放技能 '精髓分裂[id:195182]'
-    若技能 '精髓分裂[id:195182]' 不在冷却中
-    若玩家拥有增益/减益 '破灭[id:441416]'
-    若技能 '精髓分裂[id:195182]' 在射程内
+    若已点出天赋 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '精髓分裂[id:195182]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '破灭[id:441416]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '精髓分裂[id:195182]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 2: Spell: 吞噬[id:1263824,cd:45]
-    若已点出天赋 '吞噬[id:1263824,cd:45]'
-    若玩家有足够资源施放技能 '吞噬[id:1263824,cd:45]'
-    若技能 '吞噬[id:1263824,cd:45]' 不在冷却中
-    若目标距离小于等于 5 码
+    若已点出天赋 '吞噬[id:1263824,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '吞噬[id:1263824,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '吞噬[id:1263824,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 3: Spell: 枯萎凋零[id:43265]
-    若目标距离小于等于 6 码
-    若玩家没有增益/减益 '枯萎凋零[id:188290]'
-    若已点出天赋 '枯萎凋零[id:43265]'
-    若玩家有足够资源施放技能 '枯萎凋零[id:43265]'
-    若技能 '枯萎凋零[id:43265]' 不在冷却中
+    若目标距离小于等于 6 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家没有增益/减益 '枯萎凋零[id:188290]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若已点出天赋 '枯萎凋零[id:43265]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '枯萎凋零[id:43265]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '枯萎凋零[id:43265]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 4: Spell: 血液沸腾[id:50842]
-    若目标距离小于等于 10 码
-    若已点出天赋 '血液沸腾[id:50842]'
-    若玩家有足够资源施放技能 '血液沸腾[id:50842]'
-    若技能 '血液沸腾[id:50842]' 不在冷却中
-    若玩家周围 50 码内带有增益/减益 '血之疫病[id:55078]' 的目标数量小于等于 0 个
-    若技能 '血液沸腾[id:50842]' 的充能层数大于等于 2
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '血液沸腾[id:50842]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '血液沸腾[id:50842]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '血液沸腾[id:50842]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 50 码内带有增益/减益 '血之疫病[id:55078]' 的目标数量小于等于 0 个        -- ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_LESS
+    若技能 '血液沸腾[id:50842]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
 5: Spell: 灵界打击[id:49998]
-    若已点出天赋 '灵界打击[id:49998]'
-    若玩家有足够资源施放技能 '灵界打击[id:49998]'
-    若技能 '灵界打击[id:49998]' 不在冷却中
-    若玩家符文能量大于等于 800
-    若技能 '灵界打击[id:49998]' 在射程内
+    若已点出天赋 '灵界打击[id:49998]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵界打击[id:49998]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵界打击[id:49998]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家符文能量大于等于 800        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_GREATER
+    若技能 '灵界打击[id:49998]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 6: Spell: 符文打击[id:316239]
-    若已点出天赋 '符文打击[id:316239]'
-    若玩家有足够资源施放技能 '符文打击[id:316239]'
-    若技能 '符文打击[id:316239]' 在射程内
+    若已点出天赋 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文打击[id:316239]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 7: Spell: 符文打击[id:316239]
-    若已点出天赋 '符文打击[id:316239]'
-    若玩家有足够资源施放技能 '符文打击[id:316239]'
-    若技能 '符文打击[id:316239]' 不在冷却中
-    若玩家拥有增益/减益 '吸血鬼打击[id:433899]'
-    若技能 '符文打击[id:316239]' 在射程内
-    若目标距离小于等于 8 码
+    若已点出天赋 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文打击[id:316239]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '吸血鬼打击[id:433899]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '符文打击[id:316239]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 8: Spell: 符文打击[id:316239]
-    若已点出天赋 '符文打击[id:316239]'
-    若玩家有足够资源施放技能 '符文打击[id:316239]'
-    若技能 '符文打击[id:316239]' 不在冷却中
-    若玩家拥有增益/减益 '萨莱因之赐[id:434153]'
-    若技能 '符文打击[id:316239]' 在射程内
-    若目标距离小于等于 8 码
+    若已点出天赋 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文打击[id:316239]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文打击[id:316239]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '萨莱因之赐[id:434153]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '符文打击[id:316239]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 9: Spell: 符文打击[id:316239]
-    若目标距离小于等于 12 码
+    若目标距离小于等于 12 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 10: Spell: 符文刃舞[id:49028,cd:120]
-    若已点出天赋 '符文刃舞[id:49028,cd:120]'
-    若玩家有足够资源施放技能 '符文刃舞[id:49028,cd:120]'
-    若技能 '符文刃舞[id:49028,cd:120]' 不在冷却中
-    若目标距离小于等于 20 码
+    若已点出天赋 '符文刃舞[id:49028,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文刃舞[id:49028,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文刃舞[id:49028,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 20 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 11: Spell: 精髓分裂[id:195182]
-    若已点出天赋 '精髓分裂[id:195182]'
-    若玩家有足够资源施放技能 '精髓分裂[id:195182]'
-    若技能 '精髓分裂[id:195182]' 不在冷却中
-    若技能 '精髓分裂[id:195182]' 在射程内
-    若玩家身上增益/减益 '白骨之盾[id:195181]' 的层数小于等于 6
+    若已点出天赋 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '精髓分裂[id:195182]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '精髓分裂[id:195182]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家身上增益/减益 '白骨之盾[id:195181]' 的层数小于等于 6        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_LESS
 12: Spell: 精髓分裂[id:195182]
-    若已点出天赋 '精髓分裂[id:195182]'
-    若玩家有足够资源施放技能 '精髓分裂[id:195182]'
-    若技能 '精髓分裂[id:195182]' 不在冷却中
-    若技能 '精髓分裂[id:195182]' 在射程内
-    若玩家没有增益/减益 '白骨之盾[id:195181]'
+    若已点出天赋 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '精髓分裂[id:195182]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '精髓分裂[id:195182]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '精髓分裂[id:195182]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '白骨之盾[id:195181]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 13: Spell: 死神的抚摩[id:195292,cd:6]
-    若已点出天赋 '死神的抚摩[id:195292,cd:6]'
-    若玩家有足够资源施放技能 '死神的抚摩[id:195292,cd:6]'
-    若技能 '死神的抚摩[id:195292,cd:6]' 不在冷却中
-    若技能 '死神的抚摩[id:195292,cd:6]' 在射程内
+    若已点出天赋 '死神的抚摩[id:195292,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '死神的抚摩[id:195292,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '死神的抚摩[id:195292,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '死神的抚摩[id:195292,cd:6]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 14: Spell: 枯萎凋零[id:43265]
 15: Spell: 灵界打击[id:49998]
-    若已点出天赋 '灵界打击[id:49998]'
-    若玩家有足够资源施放技能 '灵界打击[id:49998]'
-    若技能 '灵界打击[id:49998]' 不在冷却中
-    若技能 '灵界打击[id:49998]' 在射程内
-    若玩家生命值小于等于 50%
+    若已点出天赋 '灵界打击[id:49998]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵界打击[id:49998]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵界打击[id:49998]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '灵界打击[id:49998]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家生命值小于等于 50%        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_LESS

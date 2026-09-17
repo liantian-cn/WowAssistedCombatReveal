@@ -1,62 +1,62 @@
 Frost
 0: Spell: 暴风雪[id:190356,cd:12]
-    若已点出天赋 '暴风雪[id:190356,cd:12]'
-    若玩家有足够资源施放技能 '暴风雪[id:190356,cd:12]'
-    若技能 '暴风雪[id:190356,cd:12]' 不在冷却中
-    若目标周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '暴风雪[id:190356,cd:12]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '暴风雪[id:190356,cd:12]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '暴风雪[id:190356,cd:12]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
 1: Spell: 寒冰宝珠[id:84714,cd:60]
-    若已点出天赋 '寒冰宝珠[id:84714,cd:60]'
-    若玩家有足够资源施放技能 '寒冰宝珠[id:84714,cd:60]'
-    若技能 '寒冰宝珠[id:84714,cd:60]' 不在冷却中
+    若已点出天赋 '寒冰宝珠[id:84714,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '寒冰宝珠[id:84714,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '寒冰宝珠[id:84714,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 2: Spell: 冰风暴[id:44614]
-    若已点出天赋 '冰风暴[id:44614]'
-    若玩家有足够资源施放技能 '冰风暴[id:44614]'
-    若技能 '冰风暴[id:44614]' 不在冷却中
+    若已点出天赋 '冰风暴[id:44614]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰风暴[id:44614]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰风暴[id:44614]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 冰枪术[id:30455]
-    若已点出天赋 '冰枪术[id:30455]'
-    若玩家有足够资源施放技能 '冰枪术[id:30455]'
-    若技能 '冰枪术[id:30455]' 不在冷却中
-    若玩家拥有增益/减益 '寒冰指[id:44544]'
-    若目标拥有增益/减益 '冻结[id:1221389]'
+    若已点出天赋 '冰枪术[id:30455]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰枪术[id:30455]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰枪术[id:30455]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '寒冰指[id:44544]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标拥有增益/减益 '冻结[id:1221389]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
 4: Spell: 冰枪术[id:30455]
-    若已点出天赋 '冰枪术[id:30455]'
-    若玩家有足够资源施放技能 '冰枪术[id:30455]'
-    若技能 '冰枪术[id:30455]' 不在冷却中
-    若目标身上增益/减益 '冻结[id:1221389]' 的层数大于等于 5
+    若已点出天赋 '冰枪术[id:30455]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰枪术[id:30455]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰枪术[id:30455]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数大于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_AURA_APPLICATION_GREATER
 5: Spell: 寒冰箭[id:116]
-    若已点出天赋 '寒冰箭[id:116]'
-    若玩家有足够资源施放技能 '寒冰箭[id:116]'
-    若技能 '寒冰箭[id:116]' 不在冷却中
-    若技能 '寒冰箭[id:116]' 可以成功施放
+    若已点出天赋 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '寒冰箭[id:116]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '寒冰箭[id:116]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 6: Spell: 寒冰箭[id:116]
-    若已点出天赋 '寒冰箭[id:116]'
-    若玩家有足够资源施放技能 '寒冰箭[id:116]'
-    若技能 '寒冰箭[id:116]' 不在冷却中
-    若玩家拥有增益/减益 '霜火增效[id:431177]'
+    若已点出天赋 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '寒冰箭[id:116]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '霜火增效[id:431177]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 7: Spell: 寒冰箭[id:116]
 8: Spell: 冰霜射线[id:205021]
-    若已点出天赋 '冰霜射线[id:205021]'
-    若玩家有足够资源施放技能 '冰霜射线[id:205021]'
-    若技能 '冰霜射线[id:205021]' 不在冷却中
-    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 5
+    若已点出天赋 '冰霜射线[id:205021]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜射线[id:205021]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜射线[id:205021]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 5        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_AURA_APPLICATION_LESS
 9: Spell: 冰霜射线[id:205021]
-    若玩家拥有增益/减益 '彗星风暴！[id:1247778]'
-    若玩家有足够资源施放技能 '冰霜射线[id:205021]'
-    若技能 '冰霜射线[id:205021]' 不在冷却中
+    若玩家拥有增益/减益 '彗星风暴！[id:1247778]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家有足够资源施放技能 '冰霜射线[id:205021]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜射线[id:205021]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 10: Spell: 奥术智慧[id:1459]
-    若已点出天赋 '奥术智慧[id:1459]'
-    若玩家有足够资源施放技能 '奥术智慧[id:1459]'
-    若技能 '奥术智慧[id:1459]' 不在冷却中
-    若玩家拥有增益/减益 '奥术智慧高亮[id:1271907]'
+    若已点出天赋 '奥术智慧[id:1459]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '奥术智慧[id:1459]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '奥术智慧[id:1459]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '奥术智慧高亮[id:1271907]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 11: Spell: 寒冰箭[id:116]
-    若玩家有足够资源施放技能 '寒冰箭[id:116]'
-    若技能 '寒冰箭[id:116]' 不在冷却中
-    若玩家拥有增益/减益 '冰川尖刺！[id:1222865]'
-    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 16
-    若已点出天赋 '寒冰箭[id:116]'
+    若玩家有足够资源施放技能 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '寒冰箭[id:116]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '冰川尖刺！[id:1222865]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 16        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_AURA_APPLICATION_LESS
+    若已点出天赋 '寒冰箭[id:116]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
 12: Spell: 冰风暴[id:44614]
-    若技能 '冰风暴[id:44614]' 不在冷却中
-    若玩家有足够资源施放技能 '冰风暴[id:44614]'
-    若已点出天赋 '冰风暴[id:44614]'
-    若玩家拥有增益/减益 '冰冷智慧[id:190446]'
-    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 16
+    若技能 '冰风暴[id:44614]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家有足够资源施放技能 '冰风暴[id:44614]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若已点出天赋 '冰风暴[id:44614]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家拥有增益/减益 '冰冷智慧[id:190446]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标身上增益/减益 '冻结[id:1221389]' 的层数小于等于 16        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_AURA_APPLICATION_LESS

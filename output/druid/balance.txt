@@ -1,166 +1,166 @@
 Balance
 0: Spell: 阳炎术[id:93402]
-    若已点出天赋 '阳炎术[id:93402]'
-    若玩家有足够资源施放技能 '阳炎术[id:93402]'
-    若技能 '阳炎术[id:93402]' 不在冷却中
-    若目标没有增益/减益 '阳炎术[id:164815]'
+    若已点出天赋 '阳炎术[id:93402]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '阳炎术[id:93402]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '阳炎术[id:93402]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '阳炎术[id:164815]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 1: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若目标没有增益/减益 '月火术[id:164812]'
-    若玩家没有增益/减益 '林中和谐[id:428735,cd:15]'
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '月火术[id:164812]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若玩家没有增益/减益 '林中和谐[id:428735,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 星辰坠落[id:191034]
-    若已点出天赋 '星辰坠落[id:191034]'
-    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
-    若技能 '星辰坠落[id:191034]' 不在冷却中
-    若玩家周围 45 码内的目标数量大于 3 个
+    若已点出天赋 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星辰坠落[id:191034]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 45 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 3: Spell: 自然之力[id:205636,cd:60]
-    若已点出天赋 '自然之力[id:205636,cd:60]'
-    若玩家有足够资源施放技能 '自然之力[id:205636,cd:60]'
-    若技能 '自然之力[id:205636,cd:60]' 不在冷却中
-    若玩家拥有增益/减益 '梦境涌现[id:433831]'
+    若已点出天赋 '自然之力[id:205636,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '自然之力[id:205636,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '自然之力[id:205636,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '梦境涌现[id:433831]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 4: Spell: 星涌术[id:78674]
-    若已点出天赋 '星涌术[id:78674]'
-    若玩家有足够资源施放技能 '星涌术[id:78674]'
-    若技能 '星涌术[id:78674]' 不在冷却中
-    若玩家周围 45 码内的目标数量小于等于 2 个
+    若已点出天赋 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星涌术[id:78674]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 45 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
 5: Spell: 艾露恩之怒[id:202770,cd:60]
-    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'
-    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'
-    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中
-    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家星界能量大于等于 550
+    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家星界能量大于等于 550        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER
 6: Spell: 新月[id:274281]
-    若已点出天赋 '新月[id:274281]'
-    若玩家有足够资源施放技能 '新月[id:274281]'
-    若技能 '新月[id:274281]' 不在冷却中
+    若已点出天赋 '新月[id:274281]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '新月[id:274281]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '新月[id:274281]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 7: Spell: 野性蘑菇[id:88747]
-    若已点出天赋 '野性蘑菇[id:88747]'
-    若玩家有足够资源施放技能 '野性蘑菇[id:88747]'
-    若技能 '野性蘑菇[id:88747]' 不在冷却中
-    若目标没有增益/减益 '真菌蔓延[id:81281]'
+    若已点出天赋 '野性蘑菇[id:88747]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性蘑菇[id:88747]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性蘑菇[id:88747]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '真菌蔓延[id:81281]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 8: Spell: 愤怒[id:190984]
-    若已点出天赋 '愤怒[id:190984]'
-    若玩家有足够资源施放技能 '愤怒[id:190984]'
-    若技能 '愤怒[id:190984]' 不在冷却中
-    若技能 '愤怒[id:190984]' 可以成功施放
-    若技能 '愤怒[id:190984]' 在射程内
+    若已点出天赋 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '愤怒[id:190984]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '愤怒[id:190984]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若技能 '愤怒[id:190984]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 9: Spell: 星火术[id:194153]
-    若目标周围 10 码内的目标数量大于 3 个
-    若已点出天赋 '星火术[id:194153]'
-    若玩家有足够资源施放技能 '星火术[id:194153]'
-    若技能 '星火术[id:194153]' 不在冷却中
-    若技能 '星火术[id:194153]' 可以成功施放
-    若技能 '星火术[id:194153]' 在射程内
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若已点出天赋 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星火术[id:194153]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '星火术[id:194153]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若技能 '星火术[id:194153]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 星火术[id:194153]
-    若已点出天赋 '星火术[id:194153]'
-    若玩家有足够资源施放技能 '星火术[id:194153]'
-    若技能 '星火术[id:194153]' 不在冷却中
-    若玩家拥有增益/减益 '皎月呼唤[id:429523]'
-    若技能 '星火术[id:194153]' 可以成功施放
-    若技能 '星火术[id:194153]' 在射程内
+    若已点出天赋 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星火术[id:194153]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '皎月呼唤[id:429523]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '星火术[id:194153]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
+    若技能 '星火术[id:194153]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 11: Spell: 星辰坠落[id:191034]
-    若已点出天赋 '星辰坠落[id:191034]'
-    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
-    若技能 '星辰坠落[id:191034]' 不在冷却中
-    若玩家周围 45 码内的目标数量大于 3 个
-    若玩家星界能量大于等于 900
+    若已点出天赋 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星辰坠落[id:191034]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 45 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家星界能量大于等于 900        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER
 12: Spell: 星涌术[id:78674]
-    若已点出天赋 '星涌术[id:78674]'
-    若玩家有足够资源施放技能 '星涌术[id:78674]'
-    若技能 '星涌术[id:78674]' 不在冷却中
-    若玩家星界能量大于等于 900
-    若玩家周围 45 码内的目标数量小于等于 2 个
+    若已点出天赋 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星涌术[id:78674]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家星界能量大于等于 900        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER
+    若玩家周围 45 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_LESS
 13: Spell: 枭兽形态[id:24858]
-    若已点出天赋 '枭兽形态[id:24858]'
-    若玩家有足够资源施放技能 '枭兽形态[id:24858]'
-    若技能 '枭兽形态[id:24858]' 不在冷却中
-    若玩家没有增益/减益 '枭兽形态[id:24858]'
+    若已点出天赋 '枭兽形态[id:24858]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '枭兽形态[id:24858]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '枭兽形态[id:24858]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '枭兽形态[id:24858]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 14: Spell: 星辰坠落[id:191034]
-    若已点出天赋 '星辰坠落[id:191034]'
-    若玩家有足够资源施放技能 '星辰坠落[id:191034]'
-    若技能 '星辰坠落[id:191034]' 不在冷却中
-    若玩家拥有增益/减益 '织星者的经纱[id:393942]'
+    若已点出天赋 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星辰坠落[id:191034]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星辰坠落[id:191034]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '织星者的经纱[id:393942]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 15: Spell: 星涌术[id:78674]
-    若已点出天赋 '星涌术[id:78674]'
-    若玩家有足够资源施放技能 '星涌术[id:78674]'
-    若技能 '星涌术[id:78674]' 不在冷却中
-    若玩家拥有增益/减益 '织星者的纬纱[id:393944]'
+    若已点出天赋 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星涌术[id:78674]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '织星者的纬纱[id:393944]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 16: Spell: 月火术[id:8921]
 17: Spell: 星涌术[id:78674]
-    若已点出天赋 '星涌术[id:78674]'
-    若玩家有足够资源施放技能 '星涌术[id:78674]'
-    若技能 '星涌术[id:78674]' 不在冷却中
-    若玩家星界能量大于等于 500
+    若已点出天赋 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星涌术[id:78674]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星涌术[id:78674]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家星界能量大于等于 500        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER
 18: Spell: 星火术[id:194153]
-    若已点出天赋 '星火术[id:194153]'
-    若玩家有足够资源施放技能 '星火术[id:194153]'
-    若技能 '星火术[id:194153]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
-    若目标周围 10 码内的目标数量大于 3 个
-    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'
+    若已点出天赋 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星火术[id:194153]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 19: Spell: 愤怒[id:190984]
-    若已点出天赋 '愤怒[id:190984]'
-    若玩家有足够资源施放技能 '愤怒[id:190984]'
-    若技能 '愤怒[id:190984]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'
-    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
-    若玩家没有增益/减益 '皎月呼唤[id:429523]'
-    若目标周围 10 码内的目标数量小于等于 2 个
+    若已点出天赋 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '愤怒[id:190984]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家没有增益/减益 '皎月呼唤[id:429523]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若目标周围 10 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
 20: Spell: 星火术[id:194153]
-    若已点出天赋 '星火术[id:194153]'
-    若玩家有足够资源施放技能 '星火术[id:194153]'
-    若技能 '星火术[id:194153]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'
-    若玩家星界能量小于等于 599
+    若已点出天赋 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '星火术[id:194153]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '星火术[id:194153]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家拥有增益/减益 '月蚀覆盖[id:1233353]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家星界能量小于等于 599        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_LESS
 21: Spell: 愤怒[id:190984]
-    若已点出天赋 '愤怒[id:190984]'
-    若玩家有足够资源施放技能 '愤怒[id:190984]'
-    若技能 '愤怒[id:190984]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'
-    若玩家星界能量小于等于 599
+    若已点出天赋 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '愤怒[id:190984]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '愤怒[id:190984]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀覆盖[id:1233353]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家星界能量小于等于 599        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_LESS
 22: Spell: 日蚀[id:1233346]
-    若玩家拥有增益/减益 '日月之蚀[id:1239669]'
-    若玩家有足够资源施放技能 '日蚀[id:1233346]'
-    若技能 '日蚀[id:1233346]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    若玩家星界能量大于等于 600
+    若玩家拥有增益/减益 '日月之蚀[id:1239669]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若玩家有足够资源施放技能 '日蚀[id:1233346]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '日蚀[id:1233346]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家星界能量大于等于 600        -- ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER
 23: Spell: 超凡之盟[id:194223]
-    若已点出天赋 '超凡之盟[id:194223]'
-    若玩家有足够资源施放技能 '超凡之盟[id:194223]'
-    若技能 '超凡之盟[id:194223]' 不在冷却中
-    若玩家没有增益/减益 '日蚀[id:48517]'
-    若玩家没有增益/减益 '月蚀[id:48518]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '超凡之盟[id:194223]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '超凡之盟[id:194223]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '超凡之盟[id:194223]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    若玩家没有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 24: Spell: 万灵之召[id:391528,cd:120]
-    若已点出天赋 '万灵之召[id:391528,cd:120]'
-    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
-    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
-    若玩家拥有增益/减益 '日蚀[id:48517]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '日蚀[id:48517]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 25: Spell: 万灵之召[id:391528,cd:120]
-    若已点出天赋 '万灵之召[id:391528,cd:120]'
-    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
-    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
-    若玩家拥有增益/减益 '月蚀[id:48518]'
+    若已点出天赋 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '月蚀[id:48518]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 26: Spell: 野性印记[id:1126]
-    若已点出天赋 '野性印记[id:1126]'
-    若玩家有足够资源施放技能 '野性印记[id:1126]'
-    若技能 '野性印记[id:1126]' 不在冷却中
-    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性印记[id:1126]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 27: Spell: 艾露恩之怒[id:202770,cd:60]
-    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'
-    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'
-    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中
-    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内
+    若已点出天赋 '艾露恩之怒[id:202770,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '艾露恩之怒[id:202770,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '艾露恩之怒[id:202770,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '艾露恩之怒[id:202770,cd:60]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE

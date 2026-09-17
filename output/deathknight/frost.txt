@@ -1,120 +1,120 @@
 Frost
 0: Spell: 死神印记[id:439843,cd:45]
-    若技能 '死神印记[id:439843,cd:45]' 在射程内
-    若已点出天赋 '死神印记[id:439843,cd:45]'
-    若玩家有足够资源施放技能 '死神印记[id:439843,cd:45]'
-    若技能 '死神印记[id:439843,cd:45]' 不在冷却中
+    若技能 '死神印记[id:439843,cd:45]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若已点出天赋 '死神印记[id:439843,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '死神印记[id:439843,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '死神印记[id:439843,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 1: Spell: 冰霜之镰[id:207230]
-    若已点出天赋 '冰霜之镰[id:207230]'
-    若玩家有足够资源施放技能 '冰霜之镰[id:207230]'
-    若技能 '冰霜之镰[id:207230]' 不在冷却中
-    若目标距离小于等于 8 码
-    若玩家周围 10 码内的目标数量大于 3 个
-    若玩家拥有增益/减益 '杀戮机器[id:51124]'
+    若已点出天赋 '冰霜之镰[id:207230]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜之镰[id:207230]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜之镰[id:207230]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若玩家拥有增益/减益 '杀戮机器[id:51124]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 2: Spell: 湮灭[id:49020]
-    若玩家拥有增益/减益 '杀戮机器[id:51124]'
-    若已点出天赋 '湮灭[id:49020]'
-    若玩家有足够资源施放技能 '湮灭[id:49020]'
-    若技能 '湮灭[id:49020]' 不在冷却中
-    若技能 '湮灭[id:49020]' 在射程内
+    若玩家拥有增益/减益 '杀戮机器[id:51124]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '湮灭[id:49020]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '湮灭[id:49020]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '湮灭[id:49020]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '湮灭[id:49020]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 3: Spell: 冷酷严冬[id:196770,cd:20]
-    若目标距离小于等于 10 码
-    若已点出天赋 '冷酷严冬[id:196770,cd:20]'
-    若玩家有足够资源施放技能 '冷酷严冬[id:196770,cd:20]'
-    若技能 '冷酷严冬[id:196770,cd:20]' 不在冷却中
-    若玩家没有增益/减益 '冰霜统御[id:377226]'
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '冷酷严冬[id:196770,cd:20]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冷酷严冬[id:196770,cd:20]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冷酷严冬[id:196770,cd:20]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '冰霜统御[id:377226]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 4: Spell: 凛风冲击[id:49184]
-    若玩家拥有增益/减益 '白霜[id:59052]'
-    若已点出天赋 '凛风冲击[id:49184]'
-    若玩家有足够资源施放技能 '凛风冲击[id:49184]'
-    若技能 '凛风冲击[id:49184]' 不在冷却中
+    若玩家拥有增益/减益 '白霜[id:59052]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若已点出天赋 '凛风冲击[id:49184]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '凛风冲击[id:49184]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '凛风冲击[id:49184]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 5: Spell: 冰川突进[id:194913]
-    若目标距离小于等于 10 码
-    若玩家周围 10 码内的目标数量大于 3 个
-    若已点出天赋 '冰川突进[id:194913]'
-    若玩家有足够资源施放技能 '冰川突进[id:194913]'
-    若技能 '冰川突进[id:194913]' 不在冷却中
-    若玩家符文能量大于等于 80
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '冰川突进[id:194913]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰川突进[id:194913]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰川突进[id:194913]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家符文能量大于等于 80        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_GREATER
 6: Spell: 灵魂收割[id:343294,cd:15]
-    若已点出天赋 '灵魂收割[id:343294,cd:15]'
-    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'
-    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中
-    若目标生命值小于等于 35%
-    若技能 '灵魂收割[id:343294,cd:15]' 在射程内
-    若目标周围 10 码内的目标数量小于等于 2 个
+    若已点出天赋 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '灵魂收割[id:343294,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '灵魂收割[id:343294,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标生命值小于等于 35%        -- ASSISTED_COMBAT_RULE_TYPE_HEALTH_PCT_LESS
+    若技能 '灵魂收割[id:343294,cd:15]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标周围 10 码内的目标数量小于等于 2 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_LESS
 7: Spell: 冰霜打击[id:49143]
-    若玩家符文能量大于等于 80
-    若已点出天赋 '冰霜打击[id:49143]'
-    若玩家有足够资源施放技能 '冰霜打击[id:49143]'
-    若技能 '冰霜打击[id:49143]' 不在冷却中
-    若技能 '冰霜打击[id:49143]' 在射程内
+    若玩家符文能量大于等于 80        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_GREATER
+    若已点出天赋 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜打击[id:49143]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '冰霜打击[id:49143]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 8: Spell: 湮灭[id:49020]
-    若已点出天赋 '湮灭[id:49020]'
-    若玩家有足够资源施放技能 '湮灭[id:49020]'
-    若技能 '湮灭[id:49020]' 不在冷却中
-    若技能 '湮灭[id:49020]' 在射程内
+    若已点出天赋 '湮灭[id:49020]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '湮灭[id:49020]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '湮灭[id:49020]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '湮灭[id:49020]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 9: Spell: 冰霜打击[id:49143]
-    若已点出天赋 '冰霜打击[id:49143]'
-    若玩家有足够资源施放技能 '冰霜打击[id:49143]'
-    若技能 '冰霜打击[id:49143]' 不在冷却中
-    若技能 '冰霜打击[id:49143]' 在射程内
+    若已点出天赋 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜打击[id:49143]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '冰霜打击[id:49143]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 凛风冲击[id:49184]
-    若已点出天赋 '凛风冲击[id:49184]'
-    若技能 '凛风冲击[id:49184]' 不在冷却中
-    若技能 '凛风冲击[id:49184]' 在射程内
-    若目标距离大于 15 码
+    若已点出天赋 '凛风冲击[id:49184]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若技能 '凛风冲击[id:49184]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '凛风冲击[id:49184]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标距离大于 15 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
 11: Spell: 冰霜之柱[id:51271,cd:45]
-    若已点出天赋 '冰霜之柱[id:51271,cd:45]'
-    若玩家有足够资源施放技能 '冰霜之柱[id:51271,cd:45]'
-    若技能 '冰霜之柱[id:51271,cd:45]' 不在冷却中
-    若技能 '冰霜之柱[id:51271,cd:45]' 不在冷却中
-    若目标距离小于等于 8 码
+    若已点出天赋 '冰霜之柱[id:51271,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜之柱[id:51271,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜之柱[id:51271,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '冰霜之柱[id:51271,cd:45]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 12: Spell: 冰霜之镰[id:207230]
-    若已点出天赋 '冰霜之镰[id:207230]'
-    若玩家有足够资源施放技能 '冰霜之镰[id:207230]'
-    若技能 '冰霜之镰[id:207230]' 不在冷却中
-    若目标距离小于等于 8 码
-    若玩家周围 10 码内的目标数量大于 3 个
+    若已点出天赋 '冰霜之镰[id:207230]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜之镰[id:207230]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜之镰[id:207230]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 13: Spell: 冰川突进[id:194913]
-    若目标距离小于等于 10 码
-    若玩家周围 10 码内的目标数量大于 3 个
-    若已点出天赋 '冰川突进[id:194913]'
-    若玩家有足够资源施放技能 '冰川突进[id:194913]'
-    若技能 '冰川突进[id:194913]' 不在冷却中
+    若目标距离小于等于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
+    若已点出天赋 '冰川突进[id:194913]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰川突进[id:194913]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰川突进[id:194913]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 14: Spell: 冰霜打击[id:49143]
-    若已点出天赋 '冰霜打击[id:49143]'
-    若玩家有足够资源施放技能 '冰霜打击[id:49143]'
-    若技能 '冰霜打击[id:49143]' 不在冷却中
-    若目标距离小于等于 8 码
-    若玩家拥有增益/减益 '冰霜灾祸[id:1229310]'
+    若已点出天赋 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜打击[id:49143]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜打击[id:49143]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '冰霜灾祸[id:1229310]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 15: Spell: 符文武器增效[id:47568]
-    若已点出天赋 '符文武器增效[id:47568]'
-    若玩家有足够资源施放技能 '符文武器增效[id:47568]'
-    若技能 '符文武器增效[id:47568]' 不在冷却中
-    若技能 '符文武器增效[id:47568]' 在射程内
-    若玩家符文能量小于等于 800
-    若玩家身上增益/减益 '杀戮机器[id:51124]' 的层数小于等于 1
+    若已点出天赋 '符文武器增效[id:47568]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文武器增效[id:47568]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文武器增效[id:47568]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '符文武器增效[id:47568]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家符文能量小于等于 800        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_LESS
+    若玩家身上增益/减益 '杀戮机器[id:51124]' 的层数小于等于 1        -- ASSISTED_COMBAT_RULE_TYPE_PLAYER_AURA_APPLICATION_LESS
 16: Spell: 符文武器增效[id:47568]
-    若已点出天赋 '符文武器增效[id:47568]'
-    若玩家有足够资源施放技能 '符文武器增效[id:47568]'
-    若技能 '符文武器增效[id:47568]' 不在冷却中
-    若技能 '符文武器增效[id:47568]' 在射程内
-    若玩家符文能量小于等于 80
-    若玩家没有增益/减益 '杀戮机器[id:51124]'
+    若已点出天赋 '符文武器增效[id:47568]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '符文武器增效[id:47568]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '符文武器增效[id:47568]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '符文武器增效[id:47568]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家符文能量小于等于 80        -- ASSISTED_COMBAT_RULE_TYPE_RUNIC_POWER_LESS
+    若玩家没有增益/减益 '杀戮机器[id:51124]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 17: Spell: 符文打击[id:316239]
 18: Spell: 冰霜巨龙之怒[id:279302,cd:90]
-    若已点出天赋 '冰霜巨龙之怒[id:279302,cd:90]'
-    若玩家有足够资源施放技能 '冰霜巨龙之怒[id:279302,cd:90]'
-    若技能 '冰霜巨龙之怒[id:279302,cd:90]' 不在冷却中
-    若目标距离小于等于 30 码
-    若玩家拥有增益/减益 '冰霜之柱[id:51271,cd:45]'
+    若已点出天赋 '冰霜巨龙之怒[id:279302,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜巨龙之怒[id:279302,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜巨龙之怒[id:279302,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 30 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '冰霜之柱[id:51271,cd:45]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 19: Spell: 冰霜巨龙之怒[id:279302,cd:90]
-    若已点出天赋 '冰霜巨龙之怒[id:279302,cd:90]'
-    若玩家有足够资源施放技能 '冰霜巨龙之怒[id:279302,cd:90]'
-    若技能 '冰霜巨龙之怒[id:279302,cd:90]' 不在冷却中
-    若目标距离小于等于 30 码
+    若已点出天赋 '冰霜巨龙之怒[id:279302,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰霜巨龙之怒[id:279302,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰霜巨龙之怒[id:279302,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 30 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 20: Spell: 冰龙吐息[id:1249658,cd:90]
-    若已点出天赋 '冰龙吐息[id:1249658,cd:90]'
-    若玩家有足够资源施放技能 '冰龙吐息[id:1249658,cd:90]'
-    若技能 '冰龙吐息[id:1249658,cd:90]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '冰龙吐息[id:1249658,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '冰龙吐息[id:1249658,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '冰龙吐息[id:1249658,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY

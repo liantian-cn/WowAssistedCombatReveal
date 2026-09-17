@@ -1,48 +1,48 @@
 Restoration
 0: Spell: 闪电链[id:188443]
-    若目标周围 10 码内的目标数量大于 3 个
-    若已点出天赋 '闪电链[id:188443]'
-    若玩家有足够资源施放技能 '闪电链[id:188443]'
-    若技能 '闪电链[id:188443]' 不在冷却中
-    若技能 '闪电链[id:188443]' 可以成功施放
+    若目标周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER
+    若已点出天赋 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电链[id:188443]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电链[id:188443]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '闪电链[id:188443]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 1: Spell: 烈焰震击[id:470411,cd:6]
-    若目标没有增益/减益 '烈焰震击[id:188389]'
-    若已点出天赋 '烈焰震击[id:470411,cd:6]'
-    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'
-    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中
+    若目标没有增益/减益 '烈焰震击[id:188389]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
+    若已点出天赋 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '烈焰震击[id:470411,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '烈焰震击[id:470411,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 2: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 3: Spell: 闪电箭[id:188196]
-    若已点出天赋 '闪电箭[id:188196]'
-    若玩家有足够资源施放技能 '闪电箭[id:188196]'
-    若技能 '闪电箭[id:188196]' 不在冷却中
-    若技能 '闪电箭[id:188196]' 可以成功施放
+    若已点出天赋 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '闪电箭[id:188196]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '闪电箭[id:188196]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '闪电箭[id:188196]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 4: Spell: 熔岩爆裂[id:51505]
 5: Spell: 熔岩爆裂[id:51505]
-    若已点出天赋 '熔岩爆裂[id:51505]'
-    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'
-    若技能 '熔岩爆裂[id:51505]' 不在冷却中
-    若技能 '熔岩爆裂[id:51505]' 的充能层数大于等于 2
-    若技能 '熔岩爆裂[id:51505]' 可以成功施放
+    若已点出天赋 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熔岩爆裂[id:51505]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熔岩爆裂[id:51505]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '熔岩爆裂[id:51505]' 的充能层数大于等于 2        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER
+    若技能 '熔岩爆裂[id:51505]' 可以成功施放        -- ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS
 6: Spell: 水之护盾[id:52127]
-    若已点出天赋 '水之护盾[id:52127]'
-    若玩家有足够资源施放技能 '水之护盾[id:52127]'
-    若技能 '水之护盾[id:52127]' 不在冷却中
-    若玩家没有增益/减益 '水之护盾[id:52127]'
+    若已点出天赋 '水之护盾[id:52127]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '水之护盾[id:52127]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '水之护盾[id:52127]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '水之护盾[id:52127]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 7: Spell: 大地生命武器[id:382021]
-    若已点出天赋 '大地生命武器[id:382021]'
-    若玩家有足够资源施放技能 '大地生命武器[id:382021]'
-    若技能 '大地生命武器[id:382021]' 不在冷却中
-    若玩家没有增益/减益 '大地生命武器[id:382022]'
+    若已点出天赋 '大地生命武器[id:382021]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '大地生命武器[id:382021]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '大地生命武器[id:382021]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '大地生命武器[id:382022]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 8: Spell: 唤潮者的护卫[id:457481]
-    若已点出天赋 '唤潮者的护卫[id:457481]'
-    若玩家有足够资源施放技能 '唤潮者的护卫[id:457481]'
-    若技能 '唤潮者的护卫[id:457481]' 不在冷却中
-    若玩家没有增益/减益 '唤潮者的护卫[id:457496]'
+    若已点出天赋 '唤潮者的护卫[id:457481]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '唤潮者的护卫[id:457481]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '唤潮者的护卫[id:457481]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '唤潮者的护卫[id:457496]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 9: Spell: 天怒[id:462854]
-    若已点出天赋 '天怒[id:462854]'
-    若玩家有足够资源施放技能 '天怒[id:462854]'
-    若技能 '天怒[id:462854]' 不在冷却中
-    若玩家拥有增益/减益 '天怒高亮[id:1271904]'
+    若已点出天赋 '天怒[id:462854]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '天怒[id:462854]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '天怒[id:462854]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '天怒高亮[id:1271904]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

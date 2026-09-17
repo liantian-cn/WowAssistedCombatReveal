@@ -1,75 +1,75 @@
 Guardian
 0: Spell: 痛击[id:77758,cd:6]
-    若目标距离小于等于 8 码
-    若已点出天赋 '痛击[id:77758,cd:6]'
-    若玩家有足够资源施放技能 '痛击[id:77758,cd:6]'
-    若技能 '痛击[id:77758,cd:6]' 不在冷却中
-    若玩家周围 10 码内的目标数量大于 3 个
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '痛击[id:77758,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '痛击[id:77758,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '痛击[id:77758,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 10 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 1: Spell: 熊形态[id:5487]
-    若已点出天赋 '熊形态[id:5487]'
-    若玩家有足够资源施放技能 '熊形态[id:5487]'
-    若技能 '熊形态[id:5487]' 不在冷却中
-    若玩家没有增益/减益 '熊形态[id:5487]'
+    若已点出天赋 '熊形态[id:5487]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '熊形态[id:5487]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '熊形态[id:5487]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家没有增益/减益 '熊形态[id:5487]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER
 2: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若目标没有增益/减益 '月火术[id:164812]'
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标没有增益/减益 '月火术[id:164812]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET
 3: Spell: 裂伤[id:33917]
-    若已点出天赋 '裂伤[id:33917]'
-    若玩家有足够资源施放技能 '裂伤[id:33917]'
-    若技能 '裂伤[id:33917]' 不在冷却中
-    若技能 '裂伤[id:33917]' 在射程内
+    若已点出天赋 '裂伤[id:33917]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '裂伤[id:33917]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '裂伤[id:33917]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '裂伤[id:33917]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 4: Spell: 重殴[id:6807]
-    若已点出天赋 '重殴[id:6807]'
-    若玩家有足够资源施放技能 '重殴[id:6807]'
-    若技能 '重殴[id:6807]' 不在冷却中
-    若玩家怒气大于等于 80
-    若技能 '重殴[id:6807]' 在射程内
+    若已点出天赋 '重殴[id:6807]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '重殴[id:6807]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '重殴[id:6807]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家怒气大于等于 80        -- ASSISTED_COMBAT_RULE_TYPE_RAGE_GREATER
+    若技能 '重殴[id:6807]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 5: Spell: 痛击[id:77758,cd:6]
-    若目标距离小于等于 8 码
-    若已点出天赋 '痛击[id:77758,cd:6]'
-    若玩家有足够资源施放技能 '痛击[id:77758,cd:6]'
-    若技能 '痛击[id:77758,cd:6]' 不在冷却中
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '痛击[id:77758,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '痛击[id:77758,cd:6]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '痛击[id:77758,cd:6]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 6: Spell: 横扫[id:213764]
-    若已点出天赋 '横扫[id:213764]'
-    若玩家有足够资源施放技能 '横扫[id:213764]'
-    若技能 '横扫[id:213764]' 不在冷却中
-    若目标距离小于等于 8 码
+    若已点出天赋 '横扫[id:213764]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '横扫[id:213764]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '横扫[id:213764]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 7: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若玩家拥有增益/减益 '星河守护者[id:213708]'
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '星河守护者[id:213708]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 8: Spell: 明月普照[id:204066,cd:60]
-    若目标距离小于等于 8 码
-    若已点出天赋 '明月普照[id:204066,cd:60]'
-    若玩家有足够资源施放技能 '明月普照[id:204066,cd:60]'
-    若技能 '明月普照[id:204066,cd:60]' 不在冷却中
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若已点出天赋 '明月普照[id:204066,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '明月普照[id:204066,cd:60]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '明月普照[id:204066,cd:60]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 9: Spell: 横扫[id:213764]
 10: Spell: 万灵之召[id:391528,cd:120]
-    若已点出天赋 '万灵之召[id:391528,cd:120]'
-    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
-    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
-    若目标距离小于等于 5 码
+    若已点出天赋 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 11: Spell: 月火术[id:8921]
-    若已点出天赋 '月火术[id:8921]'
-    若玩家有足够资源施放技能 '月火术[id:8921]'
-    若技能 '月火术[id:8921]' 不在冷却中
-    若技能 '月火术[id:8921]' 在射程内
-    若目标距离大于 10 码
+    若已点出天赋 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '月火术[id:8921]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '月火术[id:8921]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '月火术[id:8921]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若目标距离大于 10 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_GREATER
 12: Spell: 狂暴[id:50334,cd:180]
-    若已点出天赋 '狂暴[id:50334,cd:180]'
-    若玩家有足够资源施放技能 '狂暴[id:50334,cd:180]'
-    若技能 '狂暴[id:50334,cd:180]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '狂暴[id:50334,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '狂暴[id:50334,cd:180]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '狂暴[id:50334,cd:180]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 13: Spell: 万灵之召[id:391528,cd:120]
-    若已点出天赋 '万灵之召[id:391528,cd:120]'
-    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'
-    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '万灵之召[id:391528,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '万灵之召[id:391528,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 14: Spell: 野性印记[id:1126]
-    若已点出天赋 '野性印记[id:1126]'
-    若玩家有足够资源施放技能 '野性印记[id:1126]'
-    若技能 '野性印记[id:1126]' 不在冷却中
-    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'
+    若已点出天赋 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '野性印记[id:1126]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '野性印记[id:1126]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '野性印记高亮[id:1271910]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER

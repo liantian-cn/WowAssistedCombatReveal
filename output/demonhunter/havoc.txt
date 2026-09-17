@@ -1,104 +1,104 @@
 Havoc
 0: Spell: 刃舞[id:188499,cd:15]
-    若已点出天赋 '刃舞[id:188499,cd:15]'
-    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
-    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
-    若玩家拥有增益/减益 '恶魔变形[id:162264]'
-    若目标拥有增益/减益 '精华破碎[id:320338]'
-    若目标距离小于等于 5 码
+    若已点出天赋 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标拥有增益/减益 '精华破碎[id:320338]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 1: Spell: 混乱打击[id:162794]
-    若已点出天赋 '混乱打击[id:162794]'
-    若玩家有足够资源施放技能 '混乱打击[id:162794]'
-    若技能 '混乱打击[id:162794]' 不在冷却中
-    若技能 '混乱打击[id:162794]' 在射程内
-    若玩家拥有增益/减益 '恶魔变形[id:162264]'
-    若目标拥有增益/减益 '精华破碎[id:320338]'
+    若已点出天赋 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '混乱打击[id:162794]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '混乱打击[id:162794]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标拥有增益/减益 '精华破碎[id:320338]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET
 2: Spell: 投掷利刃[id:185123]
-    若已点出天赋 '投掷利刃[id:185123]'
-    若玩家有足够资源施放技能 '投掷利刃[id:185123]'
-    若技能 '投掷利刃[id:185123]' 不在冷却中
-    若技能 '投掷利刃[id:185123]' 在射程内
-    若玩家拥有增益/减益 '收割者战刃[id:444686]'
+    若已点出天赋 '投掷利刃[id:185123]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '投掷利刃[id:185123]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '投掷利刃[id:185123]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '投掷利刃[id:185123]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '收割者战刃[id:444686]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 3: Spell: 献祭光环[id:258920,cd:2]
-    若已点出天赋 '献祭光环[id:258920,cd:2]'
-    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
-    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
-    若玩家周围 8 码内的目标数量大于 3 个
+    若已点出天赋 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 8 码内的目标数量大于 3 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 4: Spell: 精华破碎[id:258860,cd:40]
-    若已点出天赋 '精华破碎[id:258860,cd:40]'
-    若玩家有足够资源施放技能 '精华破碎[id:258860,cd:40]'
-    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中
-    若目标距离小于等于 8 码
-    若玩家拥有增益/减益 '恶魔变形[id:162264]'
-    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中
+    若已点出天赋 '精华破碎[id:258860,cd:40]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '精华破碎[id:258860,cd:40]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若技能 '精华破碎[id:258860,cd:40]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
 5: Spell: 刃舞[id:188499,cd:15]
-    若已点出天赋 '刃舞[id:188499,cd:15]'
-    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
-    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
-    若玩家拥有增益/减益 '恶魔变形[id:162264]'
-    若目标距离小于等于 5 码
+    若已点出天赋 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 6: Spell: 眼棱[id:198013,cd:30]
-    若已点出天赋 '眼棱[id:198013,cd:30]'
-    若玩家有足够资源施放技能 '眼棱[id:198013,cd:30]'
-    若技能 '眼棱[id:198013,cd:30]' 不在冷却中
-    若目标距离小于等于 8 码
+    若已点出天赋 '眼棱[id:198013,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '眼棱[id:198013,cd:30]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '眼棱[id:198013,cd:30]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 8 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 7: Spell: 刃舞[id:188499,cd:15]
-    若已点出天赋 '刃舞[id:188499,cd:15]'
-    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'
-    若技能 '刃舞[id:188499,cd:15]' 不在冷却中
-    若目标距离小于等于 5 码
+    若已点出天赋 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '刃舞[id:188499,cd:15]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '刃舞[id:188499,cd:15]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若目标距离小于等于 5 码        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_DISTANCE_LESS
 8: Spell: 混乱打击[id:162794]
-    若已点出天赋 '混乱打击[id:162794]'
-    若玩家有足够资源施放技能 '混乱打击[id:162794]'
-    若技能 '混乱打击[id:162794]' 不在冷却中
-    若技能 '混乱打击[id:162794]' 在射程内
-    若玩家拥有增益/减益 '恶魔变形[id:162264]'
+    若已点出天赋 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '混乱打击[id:162794]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '混乱打击[id:162794]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
+    若玩家拥有增益/减益 '恶魔变形[id:162264]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
 9: Spell: 混乱打击[id:162794]
-    若已点出天赋 '混乱打击[id:162794]'
-    若玩家有足够资源施放技能 '混乱打击[id:162794]'
-    若技能 '混乱打击[id:162794]' 不在冷却中
-    若技能 '混乱打击[id:162794]' 在射程内
+    若已点出天赋 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '混乱打击[id:162794]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '混乱打击[id:162794]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '混乱打击[id:162794]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 10: Spell: 投掷利刃[id:185123]
-    若已点出天赋 '投掷利刃[id:185123]'
-    若玩家有足够资源施放技能 '投掷利刃[id:185123]'
-    若技能 '投掷利刃[id:185123]' 不在冷却中
-    若技能 '投掷利刃[id:185123]' 在射程内
+    若已点出天赋 '投掷利刃[id:185123]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '投掷利刃[id:185123]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '投掷利刃[id:185123]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若技能 '投掷利刃[id:185123]' 在射程内        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_IN_RANGE
 11: Spell: 混乱打击[id:162794]
 12: Spell: 献祭光环[id:258920,cd:2]
-    若已点出天赋 '献祭光环[id:258920,cd:2]'
-    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'
-    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中
-    若玩家周围 8 码内的目标数量大于 1 个
+    若已点出天赋 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '献祭光环[id:258920,cd:2]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '献祭光环[id:258920,cd:2]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家周围 8 码内的目标数量大于 1 个        -- ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER
 13: Spell: 恶魔变形[id:191427,cd:120]
-    若已点出天赋 '恶魔变形[id:191427,cd:120]'
-    若玩家有足够资源施放技能 '恶魔变形[id:191427,cd:120]'
-    若技能 '恶魔变形[id:191427,cd:120]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '恶魔变形[id:191427,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '恶魔变形[id:191427,cd:120]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '恶魔变形[id:191427,cd:120]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 14: Spell: 邪能冲撞[id:344865]
-    若已点出天赋 '邪能冲撞[id:344865]'
-    若玩家有足够资源施放技能 '邪能冲撞[id:344865]'
-    若技能 '邪能冲撞[id:344865]' 不在冷却中
-    若玩家拥有增益/减益 '冲撞惯性[id:1215159]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '邪能冲撞[id:344865]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '邪能冲撞[id:344865]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '邪能冲撞[id:344865]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '冲撞惯性[id:1215159]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 15: Spell: 邪能之刃[id:232893,cd:12]
-    若已点出天赋 '邪能之刃[id:232893,cd:12]'
-    若玩家有足够资源施放技能 '邪能之刃[id:232893,cd:12]'
-    若技能 '邪能之刃[id:232893,cd:12]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '邪能之刃[id:232893,cd:12]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '邪能之刃[id:232893,cd:12]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '邪能之刃[id:232893,cd:12]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 16: Spell: 复仇回避[id:198793]
-    若已点出天赋 '复仇回避[id:198793]'
-    若玩家有足够资源施放技能 '复仇回避[id:198793]'
-    若技能 '复仇回避[id:198793]' 不在冷却中
-    若玩家拥有增益/减益 '冲撞惯性[id:427640]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '复仇回避[id:198793]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '复仇回避[id:198793]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '复仇回避[id:198793]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '冲撞惯性[id:427640]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 17: Spell: 恶魔追击[id:370965,cd:90]
-    若已点出天赋 '恶魔追击[id:370965,cd:90]'
-    若玩家有足够资源施放技能 '恶魔追击[id:370965,cd:90]'
-    若技能 '恶魔追击[id:370965,cd:90]' 不在冷却中
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '恶魔追击[id:370965,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '恶魔追击[id:370965,cd:90]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '恶魔追击[id:370965,cd:90]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
 18: Spell: 复仇回避[id:198793]
-    若已点出天赋 '复仇回避[id:198793]'
-    若玩家有足够资源施放技能 '复仇回避[id:198793]'
-    若技能 '复仇回避[id:198793]' 不在冷却中
-    若玩家拥有增益/减益 '能量放射[id:206476]'
-    仅自动化施放（不属于游戏的辅助战斗循环）
+    若已点出天赋 '复仇回避[id:198793]'        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_LEARNED
+    若玩家有足够资源施放技能 '复仇回避[id:198793]'        -- ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST
+    若技能 '复仇回避[id:198793]' 不在冷却中        -- ASSISTED_COMBAT_RULE_TYPE_SPELL_OFF_COOLDOWN
+    若玩家拥有增益/减益 '能量放射[id:206476]'        -- ASSISTED_COMBAT_RULE_TYPE_AURA_ON_PLAYER
+    仅自动化施放（不属于游戏的辅助战斗循环）        -- ASSISTED_COMBAT_RULE_TYPE_AUTOMATION_ONLY
